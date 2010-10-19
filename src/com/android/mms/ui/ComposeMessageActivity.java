@@ -95,6 +95,7 @@ import android.text.style.URLSpan;
 import android.text.util.Linkify;
 import android.util.Config;
 import android.util.Log;
+import android.util.PhoneGoggles;
 import android.view.ContextMenu;
 import android.view.inputmethod.EditorInfo;
 import android.view.KeyEvent;
@@ -3130,17 +3131,37 @@ public class ComposeMessageActivity extends Activity
         }
 
         if (!mSendingMessage) {
-            // send can change the recipients. Make sure we remove the listeners first and then add
-            // them back once the recipient list has settled.
-            removeRecipientsListeners();
-            mWorkingMessage.send();
-            mSentMessage = true;
-            mSendingMessage = true;
-            addRecipientsListeners();
-        }
-        // But bail out if we are supposed to exit after the message is sent.
-        if (mExitOnSent) {
-            finish();
+            PhoneGoggles.processCommunication(this,
+                    mRecipientsEditor.getNumbers(),
+                    new Runnable() {
+                        @Override
+                        public void run() {
+                            // send can change the recipients. Make sure we remove the listeners first and then add
+                            // them back once the recipient list has settled.
+                            removeRecipientsListeners();
+                            mWorkingMessage.send();
+                            mSentMessage = true;
+                            mSendingMessage = true;
+                            addRecipientsListeners();
+
+                            // But bail out if we are supposed to exit after the message is sent.
+                            if (mExitOnSent) {
+                                finish();
+                            }
+                        }
+                    },
+                    new Runnable() {
+                        public void run() {
+                            saveDraft();
+                            finish();
+                        }
+                    }, Settings.System.PHONE_GOGGLES_SMS_ENABLED,
+                    R.string.dialog_phone_goggles_title,
+                    R.string.dialog_phone_goggles_title_unlocked,
+                    R.string.dialog_phone_goggles_content,
+                    R.string.dialog_phone_goggles_unauthorized,
+                    R.string.dialog_phone_goggles_ok,
+                    R.string.dialog_phone_goggles_cancel);
         }
     }
 
