@@ -214,8 +214,6 @@ public class ComposeMessageActivity extends Activity
 
     private static final int DELETE_MESSAGE_TOKEN  = 9700;
 
-    private static final int CHARS_REMAINING_BEFORE_COUNTER_SHOWN = 10;
-
     private static final long NO_DATE_FOR_DIALOG = -1L;
 
     private static final String EXIT_ECM_RESULT = "exit_ecm_result";
@@ -235,7 +233,7 @@ public class ComposeMessageActivity extends Activity
     private View mTopPanel;                 // View containing the recipient and subject editors
     private View mBottomPanel;              // View containing the text editor, send button, ec.
     private EditText mTextEditor;           // Text editor to type your message into
-    private TextView mTextCounter;          // Shows the number of characters used in text editor
+    private String mButtonText = "";        // Shows the number of characters used in text editor
     private Button mSendButton;             // Press to detonate
     private EditText mSubjectTextEditor;    // Text editor for MMS subject
 
@@ -404,8 +402,8 @@ public class ComposeMessageActivity extends Activity
     }
 
     private void resetCounter() {
-        mTextCounter.setText("");
-        mTextCounter.setVisibility(View.GONE);
+        mButtonText = "";
+        createSendButtonText(false, true);
     }
 
     private void updateCounter(CharSequence text, int start, int before, int count) {
@@ -416,7 +414,7 @@ public class ComposeMessageActivity extends Activity
             // then won't have to calculate the length unnecessarily.
             final boolean textRemoved = (before > count);
             if (!textRemoved) {
-                setSendButtonText(workingMessage.requiresMms());
+                createSendButtonText(workingMessage.requiresMms(), false);
                 return;
             }
         }
@@ -429,28 +427,26 @@ public class ComposeMessageActivity extends Activity
              *   int[3] is the encoding type that should be used for the message.
              */
         int msgCount = params[0];
+        int usedInCurrentMessage = params[1];
         int remainingInCurrentMessage = params[2];
 
-        // Show the counter only if:
-        // - We are not in MMS mode
-        // - We are going to send more than one message OR we are getting close
+        // Show the counter only if we are not in MMS mode
+        // and if something gets actually typed into the textfield
         boolean showCounter = false;
         if (!workingMessage.requiresMms() &&
-                (msgCount > 1 ||
-                 remainingInCurrentMessage <= CHARS_REMAINING_BEFORE_COUNTER_SHOWN)) {
+                (usedInCurrentMessage > 0)) {
             showCounter = true;
         }
 
-        setSendButtonText(workingMessage.requiresMms());
+        createSendButtonText(workingMessage.requiresMms(), false);
 
         if (showCounter) {
             // Update the remaining characters and number of messages required.
-            String counterText = msgCount > 1 ? remainingInCurrentMessage + " / " + msgCount
+            mButtonText = msgCount > 1 ? remainingInCurrentMessage + " / " + msgCount
                     : String.valueOf(remainingInCurrentMessage);
-            mTextCounter.setText(counterText);
-            mTextCounter.setVisibility(View.VISIBLE);
+            createSendButtonText(workingMessage.requiresMms(), false);
         } else {
-            mTextCounter.setVisibility(View.GONE);
+            createSendButtonText(workingMessage.requiresMms(), true);
         }
     }
 
@@ -2201,23 +2197,22 @@ public class ComposeMessageActivity extends Activity
         runOnUiThread(new Runnable() {
             public void run() {
                 toastConvertInfo(mms);
-                setSendButtonText(mms);
+                createSendButtonText(mms, false);
             }
         });
     }
 
-    private void setSendButtonText(boolean isMms) {
+    private void createSendButtonText(boolean mms, boolean hide) {
         Button sendButton = mSendButton;
         sendButton.setText(R.string.send);
-
-        if (isMms) {
-            // Create and append the "MMS" text in a smaller font than the "Send" text.
+        //Append text "MMS" or the remaining SMS characters to the Send button
+        if (!hide) {
+            String buttonText = mms ? getString(R.string.mms) : mButtonText;
             sendButton.append("\n");
-            SpannableString spannable = new SpannableString(getString(R.string.mms));
+            SpannableString spannable = new SpannableString(buttonText);
             int mmsTextSize = (int) (sendButton.getTextSize() * 0.75f);
             spannable.setSpan(new AbsoluteSizeSpan(mmsTextSize), 0, spannable.length(), 0);
             sendButton.append(spannable);
-            mTextCounter.setText("");
         }
     }
 
@@ -2906,31 +2901,11 @@ public class ComposeMessageActivity extends Activity
             updateSendButtonState();
 
             updateCounter(s, start, before, count);
-
-            ensureCorrectButtonHeight();
         }
 
         public void afterTextChanged(Editable s) {
         }
     };
-
-    /**
-     * Ensures that if the text edit box extends past two lines then the
-     * button will be shifted up to allow enough space for the character
-     * counter string to be placed beneath it.
-     */
-    private void ensureCorrectButtonHeight() {
-        int currentTextLines = mTextEditor.getLineCount();
-        if (currentTextLines <= 2) {
-            mTextCounter.setVisibility(View.GONE);
-        }
-        else if (currentTextLines > 2 && mTextCounter.getVisibility() == View.GONE) {
-            // Making the counter invisible ensures that it is used to correctly
-            // calculate the position of the send button even if we choose not to
-            // display the text.
-            mTextCounter.setVisibility(View.INVISIBLE);
-        }
-    }
 
     private final TextWatcher mSubjectEditorWatcher = new TextWatcher() {
         public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
@@ -2956,7 +2931,6 @@ public class ComposeMessageActivity extends Activity
         mTextEditor = (EditText) findViewById(R.id.embedded_text_editor);
         mTextEditor.setOnEditorActionListener(this);
         mTextEditor.addTextChangedListener(mTextEditorWatcher);
-        mTextCounter = (TextView) findViewById(R.id.text_counter);
         mSendButton = (Button) findViewById(R.id.send_button);
         mSendButton.setOnClickListener(this);
         mTopPanel = findViewById(R.id.recipients_subject_linear);
@@ -3207,7 +3181,7 @@ public class ComposeMessageActivity extends Activity
             mAttachmentEditor.setCanSend(false);
         }
 
-        setSendButtonText(mWorkingMessage.requiresMms());
+        createSendButtonText(mWorkingMessage.requiresMms(), false);
         mSendButton.setEnabled(enable);
         mSendButton.setFocusable(enable);
     }
