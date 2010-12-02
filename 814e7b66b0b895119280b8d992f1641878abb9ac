@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAABX//908\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 21
+      },
+      "writtenOn": "2010-12-02T04:57:23Z",
+      "side": 1,
+      "message": "Technically, you need a space after the comma.",
+      "revId": "814e7b66b0b895119280b8d992f1641878abb9ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAABX//904\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 447,
+      "author": {
+        "id": 21
+      },
+      "writtenOn": "2010-12-02T04:57:23Z",
+      "side": 1,
+      "message": "Space after the comma here and on the line below, too.",
+      "revId": "814e7b66b0b895119280b8d992f1641878abb9ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
