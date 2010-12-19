@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAABn///lc\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2010-12-19T19:10:09Z",
+      "side": 1,
+      "message": "This should be false",
+      "revId": "3f3334b61359122bb8c67a65f4d2b34102292471",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
