@@ -769,5 +769,8 @@
     <!-- Toggle setting for enable/disable Black Background -->
     <string name="pref_title_mms_black_background">Black Background</string>
     <string name="pref_summary_mms_black_background">Enable/disable black background\n(Restart Mms)</string>
+
+    <!-- Setting item for folder to save MMS Attachments to -->
+    <string name="pref_title_save_location">Attachment save folder</string>
 </resources>
 
