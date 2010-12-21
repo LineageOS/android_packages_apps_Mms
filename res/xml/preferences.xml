@@ -99,6 +99,10 @@
                         android:summary=""
                         android:dialogTitle="@string/pref_title_save_location"
                         android:defaultValue="download" />
+    <CheckBoxPreference android:key="pref_key_mms_back_to_all_threads"
+                        android:title="@string/pref_title_mms_back_to_all_threads"
+                        android:summary="@string/pref_summary_mms_back_to_all_threads"
+                        android:defaultValue="false" />
     <CheckBoxPreference android:key="pref_key_mms_black_background"
                         android:title="@string/pref_title_mms_black_background"
                         android:summary="@string/pref_summary_mms_black_background"
