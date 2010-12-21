@@ -61,6 +61,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String BLACK_BACKGROUND         = "pref_key_mms_black_background";
     public static final String MMS_SAVE_LOCATION        = "pref_save_location";
     public static final String BACK_TO_ALL_THREADS      = "pref_key_mms_back_to_all_threads";
+    public static final String USER_AGENT               = "pref_key_mms_user_agent";
+    public static final String USER_AGENT_CUSTOM        = "pref_key_mms_user_agent_custom";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
