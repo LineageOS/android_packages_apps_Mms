@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAABn//+2c\u003d",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 493,
+      "author": {
+        "id": 10
+      },
+      "writtenOn": "2010-12-30T09:14:14Z",
+      "side": 1,
+      "message": "Nice, this should avoid the problem we had last time. We still need to test this a bit thoroughly to see if SMSC drift something we should really be concerned with.",
+      "revId": "64734209a661d37529f6db422a25293aeb8b8512",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
