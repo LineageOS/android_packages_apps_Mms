@@ -68,6 +68,11 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String SENT_TIMESTAMP           = "pref_key_mms_use_sent_timestamp";
     public static final String MESSAGE_FONT_SIZE     = "pref_key_mms_message_font_size";
     public static final String EMAIL_ADDR_COMPLETION        = "pref_key_mms_email_addr_completion";
+    public static final String NOTIFICATION_LED         = "pref_key_mms_notification_led";
+    public static final String NOTIFICATION_LED_COLOR   = "pref_key_mms_notification_led_color";
+    public static final String NOTIFICATION_LED_BLINK_RATE = "pref_key_mms_notification_led_blink_rate";
+    public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
+    public static final String NOTIFICATION_VIBRATE_CALL = "pref_key_mms_notification_vibrate_call";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;

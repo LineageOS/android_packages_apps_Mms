@@ -44,6 +44,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.media.AudioManager;
@@ -54,6 +55,7 @@ import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.PhoneLookup;
 import android.provider.Telephony.Mms;
 import android.provider.Telephony.Sms;
+import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.TextUtils;
@@ -61,6 +63,7 @@ import android.text.style.StyleSpan;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
@@ -567,6 +570,10 @@ public class MessagingNotification {
                 vibrateWhen = context.getString(R.string.prefDefault_vibrateWhen);
             }
 
+            TelephonyManager mTM = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            boolean callStateIdle = mTM.getCallState() == TelephonyManager.CALL_STATE_IDLE;
+            boolean vibrateOnCall = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_CALL, true);
+
             boolean vibrateAlways = vibrateWhen.equals("always");
             boolean vibrateSilent = vibrateWhen.equals("silent");
             AudioManager audioManager =
@@ -574,8 +581,14 @@ public class MessagingNotification {
             boolean nowSilent =
                 audioManager.getRingerMode() == AudioManager.RINGER_MODE_VIBRATE;
 
-            if (vibrateAlways || vibrateSilent && nowSilent) {
-                notification.defaults |= Notification.DEFAULT_VIBRATE;
+            if ((vibrateAlways || vibrateSilent && nowSilent) && (vibrateOnCall || (!vibrateOnCall && callStateIdle))) {
+                /* WAS: notification.defaults |= Notification.DEFAULT_VIBRATE;*/
+                String mVibratePattern = sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, "0,1200");
+                if(!mVibratePattern.equals("")) {
+                    notification.vibrate = parseVibratePattern(mVibratePattern);
+                } else {
+                    notification.defaults |= Notification.DEFAULT_VIBRATE;
+                }
             }
 
             String ringtoneStr = sp.getString(MessagingPreferenceActivity.NOTIFICATION_RINGTONE,
@@ -584,7 +597,17 @@ public class MessagingNotification {
         }
 
         notification.flags |= Notification.FLAG_SHOW_LIGHTS;
-        notification.defaults |= Notification.DEFAULT_LIGHTS;
+        /* WAS: notification.defaults |= Notification.DEFAULT_LIGHTS;*/
+        // Patch for changing LED notification settings
+        boolean mBlinkLed = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_LED, true);
+        if(mBlinkLed) {
+            // default color is green: 0xff00ff00
+            int mLedColor = Color.parseColor(sp.getString(MessagingPreferenceActivity.NOTIFICATION_LED_COLOR, "green"));
+            notification.ledARGB = mLedColor;
+            int mLedBlinkRate = Integer.parseInt(sp.getString(MessagingPreferenceActivity.NOTIFICATION_LED_BLINK_RATE, "2"));
+            notification.ledOnMS = 500;
+            notification.ledOffMS = mLedBlinkRate * 1000;
+        }
 
         // set up delete intent
         notification.deleteIntent = PendingIntent.getBroadcast(context, 0,
@@ -809,4 +832,39 @@ public class MessagingNotification {
     }
 
 
+	/**
+    * Parse the user provided custom vibrate pattern into a long[]
+    * Borrowed from SMSPopup
+    */
+    public static long[] parseVibratePattern(String stringPattern) {
+      ArrayList<Long> arrayListPattern = new ArrayList<Long>();
+      Long l;
+      String[] splitPattern = stringPattern.split(",");
+      int VIBRATE_PATTERN_MAX_SECONDS = 60000;
+      int VIBRATE_PATTERN_MAX_PATTERN = 100;
+
+      for (int i = 0; i < splitPattern.length; i++) {
+        try {
+          l = Long.parseLong(splitPattern[i].trim());
+        } catch (NumberFormatException e) {
+          return null;
+        }
+        if (l > VIBRATE_PATTERN_MAX_SECONDS) {
+          return null;
+        }
+        arrayListPattern.add(l);
+      }
+
+      // TODO: can i just cast the whole ArrayList into long[]?
+      int size = arrayListPattern.size();
+      if (size > 0 && size < VIBRATE_PATTERN_MAX_PATTERN) {
+        long[] pattern = new long[size];
+        for (int i = 0; i < pattern.length; i++) {
+          pattern[i] = arrayListPattern.get(i);
+        }
+        return pattern;
+      }
+
+      return null;
+    }
 }
