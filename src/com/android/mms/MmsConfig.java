@@ -60,6 +60,7 @@ public class MmsConfig {
     private static int mMinimumSlideElementDuration = 7;        // default to 7 sec
     private static boolean mNotifyWapMMSC = false;
     private static boolean mAllowAttachAudio = true;
+    private static boolean mRGBLEDNotification = true;		// default to true
 
     // This is the max amount of storage multiplied by mMaxMessageSize that we
     // allow of unsent messages before blocking the user from sending any more
@@ -180,6 +181,10 @@ public class MmsConfig {
         return mAllowAttachAudio;
     }
 
+    public static boolean getRGBLEDNotification() {
+        return mRGBLEDNotification;
+    }
+
     public static final void beginDocument(XmlPullParser parser, String firstElementName) throws XmlPullParserException, IOException
     {
         int type;
@@ -242,6 +247,8 @@ public class MmsConfig {
                             mAliasEnabled = "true".equalsIgnoreCase(text);
                         } else if ("allowAttachAudio".equalsIgnoreCase(value)) {
                             mAllowAttachAudio = "true".equalsIgnoreCase(text);
+                        } else if ("hasRGBLED".equalsIgnoreCase(value)) {
+                            mRGBLEDNotification = "true".equalsIgnoreCase(text);
                         }
                     } else if ("int".equals(tag)) {
                         // int config tags go here

@@ -114,6 +114,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
             storageOptions.removePreference(findPreference("pref_key_mms_delete_limit"));
         }
 
+        // No RGB LED, disable LED color pref
+        if (!MmsConfig.getRGBLEDNotification())
+            findPreference(NOTIFICATION_LED_COLOR).setEnabled(false);
+
         // If needed, migrate vibration setting from a previous version
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         if (!sharedPreferences.contains(NOTIFICATION_VIBRATE_WHEN) &&
