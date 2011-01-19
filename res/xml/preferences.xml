@@ -99,6 +99,10 @@
                         android:dialogTitle="@string/prefDialogTitle_vibrateWhen" />
   </PreferenceCategory>
   <PreferenceCategory android:title="@string/pref_extra_settings">
+    <CheckBoxPreference android:key="pref_key_mms_send_on_enter"
+                        android:title="@string/pref_title_mms_send_on_enter"
+                        android:summary="@string/pref_summary_mms_send_on_enter"
+                        android:defaultValue="true" />
     <com.android.mms.preferences.UserAgentListPreference
                         android:key="pref_key_mms_user_agent"
                         android:defaultValue="default"
