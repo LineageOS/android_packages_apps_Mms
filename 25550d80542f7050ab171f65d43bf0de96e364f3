@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAB3//+rY\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 849,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-19T07:03:44Z",
+      "side": 1,
+      "message": "Something like this should work:\narrayListPattern.toArray(new Long[arrayListPattern.size()])",
+      "revId": "25550d80542f7050ab171f65d43bf0de96e364f3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
