@@ -804,5 +804,10 @@
     <string name="pref_title_mms_message_font_size">Message font size</string>
     <string name="pref_summary_mms_message_font_size">Change font size of message view</string>
     <string name="pref_dialogtitle_mms_message_font_size">Select font size</string>
+
+    <!-- Send on enter -->
+    <string name="pref_title_mms_send_on_enter">Send on Enter</string>
+    <string name="pref_summary_mms_send_on_enter">Enable/disable send message when Enter key pressed</string>
+
 </resources>
 
