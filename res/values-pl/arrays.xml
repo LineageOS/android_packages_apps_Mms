@@ -56,4 +56,48 @@
     <item msgid="6334637439528489607">"Śmieje się"</item>
     <item msgid="7602915122893958066">"Zakłopotany"</item>
   </string-array>
+  <string-array name="pref_mms_user_agent_entries">
+        <item>Domyślny Android</item>
+        <item>Nokia N95</item>
+        <item>iPhone (3.0)</item>
+        <item>BlackBerry 8800</item>
+        <item>Sony Ericsson W800i</item>
+        <item>SoftBank X01T</item>
+        <item>@string/pref_mms_custom_option</item>
+    </string-array>
+    <string-array name="pref_mms_user_agent_values">
+        <item>domyślny</item>
+        <item>NokiaN95/11.0.026; Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1</item>
+        <item>iPhoneOS/3.0 (7A341)</item>
+        <item>BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100</item>
+        <item>SonyEricssonW800i/R1L</item>
+        <item>SoftBank/1.0/X01T/SCJ001</item>
+        <item>własny</item>
+    </string-array>
+    <string-array name="pref_mms_message_font_size_entries">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>18 (domyślny)</item>
+        <item>20</item>
+  </string-array>
+
+
+    <string-array name="pref_mms_notification_vibrate_pattern_entries">
+      <item>Zwykły</item>
+      <item>Średnia długość</item>
+      <item>Długo</item>
+      <item>Kilka krótkich</item>
+      <item>Kilka długich</item>
+      <item>@string/pref_mms_custom_option</item>
+   </string-array>
+    <string-array name="pref_mms_notification_vibrate_pattern_values">
+      <item></item>
+      <item>0,1200</item>
+      <item>0,2500</item>
+      <item>0,300,100,300,100,300,100,300,100,300</item>
+      <item>0,800,200,800,200,800</item>
+      <item>własny</item>
+   </string-array>
+
 </resources>
