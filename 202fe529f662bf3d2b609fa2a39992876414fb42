@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAACH///nk\u003d",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-29T06:43:02Z",
+      "side": 1,
+      "message": "Spaces please :)",
+      "revId": "202fe529f662bf3d2b609fa2a39992876414fb42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACH///ng\u003d",
+        "filename": "res/layout/template_editor.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-29T06:43:02Z",
+      "side": 1,
+      "message": "4 spaces not tabs",
+      "revId": "202fe529f662bf3d2b609fa2a39992876414fb42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACH///nc\u003d",
+        "filename": "res/layout/templates_list.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-29T06:43:02Z",
+      "side": 1,
+      "message": "tabs :(",
+      "revId": "202fe529f662bf3d2b609fa2a39992876414fb42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACH///nU\u003d",
+        "filename": "res/menu/templates_list_context_menu.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-29T06:43:02Z",
+      "side": 1,
+      "message": "tabs :(",
+      "revId": "202fe529f662bf3d2b609fa2a39992876414fb42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACH///nY\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-29T06:43:02Z",
+      "side": 1,
+      "message": "tabs :(",
+      "revId": "202fe529f662bf3d2b609fa2a39992876414fb42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACH///nQ\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-01-29T06:43:02Z",
+      "side": 1,
+      "message": "tabs",
+      "revId": "202fe529f662bf3d2b609fa2a39992876414fb42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
