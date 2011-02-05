@@ -397,6 +397,7 @@
     <string name="pref_summary_templates_manage">Gestisci i tuoi modelli</string>
     <string name="pref_title_templates_show_gesture">Gesture</string>
     <string name="pref_summary_templates_show_gesture">Mostra traccia della gesture</string>
+    <string name="pref_title_template_gestures_sensitivity">Sensibilità gesture</string>
     <string name="template_save">Salva</string>
     <string name="template_insert_hint">Inserisci qui il testo del modello</string>
     <string name="template_empty_text">Il testo non può essere vuoto</string>
