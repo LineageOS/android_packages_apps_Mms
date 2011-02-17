@@ -782,7 +782,7 @@
     <string name="pref_summary_mms_black_background">Enable/disable black background\n(Restart Mms)</string>
 
     <!-- Toggle setting for always show character counter -->
- <string name="pref_title_show_counter_always">Always show character counter</string>
+    <string name="pref_title_show_counter_always">Always show character counter</string>
     <string name="pref_summary_show_counter_always">Always show the character counter when composing messages</string>
 
     <!-- Custom user-agent -->
