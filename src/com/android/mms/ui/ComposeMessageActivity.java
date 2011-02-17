@@ -475,12 +475,18 @@ public class ComposeMessageActivity extends Activity
         // Show the counter only if:
         // - We are not in MMS mode
         // - We are going to send more than one message OR we are getting close
-        boolean showCounter = false;
+        // - The pref_key_show_counter_always preference is TRUE
+	boolean showCounter = false;
         if (!workingMessage.requiresMms() &&
                 (msgCount > 1 ||
                  remainingInCurrentMessage <= CHARS_REMAINING_BEFORE_COUNTER_SHOWN)) {
             showCounter = true;
         }
+	// Show the counter if the pref_key_show_counter_always preference is TRUE
+	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+	if(prefs.getBoolean("pref_key_show_counter_always",false)== true){
+		showCounter = true;
+	}
 
         setSendButtonText(workingMessage.requiresMms());
 
