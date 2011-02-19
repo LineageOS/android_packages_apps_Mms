@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAACX//+dg\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 785,
+      "author": {
+        "id": 27
+      },
+      "writtenOn": "2011-02-19T02:37:21Z",
+      "side": 1,
+      "message": "Needs indentation",
+      "revId": "fe5a13931255287b3c81936e455f37f85472795b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACX//+dc\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 27
+      },
+      "writtenOn": "2011-02-19T02:37:21Z",
+      "side": 1,
+      "message": "Whitespace",
+      "revId": "fe5a13931255287b3c81936e455f37f85472795b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACX//+dY\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 479,
+      "author": {
+        "id": 27
+      },
+      "writtenOn": "2011-02-19T02:37:21Z",
+      "side": 1,
+      "message": "Tabs in this file (both here and the function below)",
+      "revId": "fe5a13931255287b3c81936e455f37f85472795b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
