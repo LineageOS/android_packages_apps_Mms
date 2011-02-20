@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAACn///2c\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-02-20T05:48:34Z",
+      "side": 1,
+      "message": "No tabs pl0x",
+      "revId": "77c0c4b450b3b4b85c10a7515a383c603949fedd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACn///2g\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 485,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-02-20T05:48:34Z",
+      "side": 1,
+      "message": "No tabs pls",
+      "revId": "77c0c4b450b3b4b85c10a7515a383c603949fedd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
