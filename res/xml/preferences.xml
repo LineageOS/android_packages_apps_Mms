@@ -193,3 +193,4 @@
             android:entryValues="@array/pref_templates_gestures_sensitivity_values" />
     </PreferenceCategory>
 </PreferenceScreen>
+

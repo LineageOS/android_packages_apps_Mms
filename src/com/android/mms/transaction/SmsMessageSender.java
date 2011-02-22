@@ -198,3 +198,4 @@ public class SmsMessageSender implements MessageSender {
         Log.d(LogTag.TAG, "[SmsMsgSender] " + msg);
     }
 }
+

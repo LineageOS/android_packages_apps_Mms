@@ -277,3 +277,4 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     }
 
 }
+
