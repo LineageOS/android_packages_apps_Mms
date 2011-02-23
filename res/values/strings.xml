@@ -807,6 +807,10 @@
     <string name="pref_title_mms_use_sent_timestamp">Use original timestamps</string>
     <string name="pref_summary_mms_use_sent_timestamp">Display and store sent date instead of reception date</string>
 
+    <!-- Timestamp GMT Corection -->
+    <string name="pref_title_mms_use_sent_timestamp_gmt_correction">Consider GMT-setting</string>
+    <string name="pref_summary_mms_use_sent_timestamp_gmt_correction">Use original timestamps with GMT-Correction</string>
+
     <!-- Only mobile numbers -->
     <string name="pref_title_only_mobile_numbers">Only mobile numbers</string>
     <string name="pref_summary_only_mobile_numbers">Enable to only show mobile numbers in recipient field</string>

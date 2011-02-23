@@ -498,6 +498,11 @@ public class SmsReceiverService extends Service {
             time = sms.getTimestampMillis();
             time -= TimeZone.getDefault().getOffset(time);
         }
+	
+	if (PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getBoolean(MessagingPreferenceActivity.SENT_TIMESTAMP_GMT_CORRECTION, true)) {
+	    // Use Gmt-Correction
+	    time -= TimeZone.getDefault().getOffset(time);
+	}
 
         values.put(Inbox.DATE, time);
         values.put(Inbox.PROTOCOL, sms.getProtocolIdentifier());
