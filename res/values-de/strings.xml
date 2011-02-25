@@ -359,7 +359,7 @@
     <string name="pref_summary_mms_black_background">Ein/Ausschalten des schwarzen Hintergrunds\n(MMS Neustart)</string>
 
     <!-- Toggle setting for always show character counter -->
-    <string name="pref_title_show_counter_always">Zeicherzähler immer ein</string>
+    <string name="pref_title_show_counter_always">Zeichenzähler immer ein</string>
     <string name="pref_summary_show_counter_always">Beim Verfassen einer Nachricht immer den Zähler für bereits eingebene Zeichen anzeigen</string>
 
     <!-- Custom user-agent -->
