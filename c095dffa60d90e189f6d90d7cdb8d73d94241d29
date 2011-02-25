@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAACn///YQ\u003d",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 499,
+      "author": {
+        "id": 129
+      },
+      "writtenOn": "2011-02-25T01:20:25Z",
+      "side": 1,
+      "message": "this time correction should go away, you do not want to subtract the offset two times, right?",
+      "revId": "c095dffa60d90e189f6d90d7cdb8d73d94241d29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAACn///YM\u003d",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 502,
+      "author": {
+        "id": 129
+      },
+      "writtenOn": "2011-02-25T01:20:25Z",
+      "side": 1,
+      "message": "the default should be false and/or this if statement should nested in the previous if, otherwise you will subtract the offset from System.currentTimeMillis()",
+      "revId": "c095dffa60d90e189f6d90d7cdb8d73d94241d29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
