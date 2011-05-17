@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAFH///hw\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1211,
+      "author": {
+        "id": 805
+      },
+      "writtenOn": "2011-05-17T09:00:16Z",
+      "side": 1,
+      "message": "Only works for sms.  Needs some code to handle mms.\nAlso needs the return statement.",
+      "revId": "f264c3182974e5162d70052a0dc6446cf8f4c44e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
