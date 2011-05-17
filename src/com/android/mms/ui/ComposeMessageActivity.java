@@ -244,7 +244,8 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_LOCK_MESSAGE          = 28;
     private static final int MENU_UNLOCK_MESSAGE        = 29;
     private static final int MENU_COPY_TO_DRM_PROVIDER  = 30;
-    private static final int MENU_INSERT_TEMPLATE 		= 31;
+    private static final int MENU_INSERT_TEMPLATE       = 31;
+    private static final int MENU_RESEND_MESSAGE        = 32;
 
     private static final int RECIPIENTS_MAX_LENGTH = 312;
 
@@ -951,6 +952,9 @@ public class ComposeMessageActivity extends Activity
                     .setOnMenuItemClickListener(l);
             }
 
+            menu.add(0, MENU_RESEND_MESSAGE, 0, R.string.menu_resend)
+                .setOnMenuItemClickListener(l);
+
             if (msgItem.isMms()) {
                 switch (msgItem.mBoxId) {
                     case Mms.MESSAGE_BOX_INBOX:
@@ -1201,6 +1205,23 @@ public class ComposeMessageActivity extends Activity
 
                 case MENU_LOCK_MESSAGE: {
                     lockMessage(msgItem, true);
+                    return true;
+                }
+
+                case MENU_RESEND_MESSAGE: {
+                    if (msgItem.isSms()) {
+                        mWorkingMessage.setText(msgItem.mBody);
+                    } else {
+                        PduBody body = PduBodyCache.getPduBody(ComposeMessageActivity.this,
+                                ContentUris.withAppendedId(Mms.CONTENT_URI, msgId));
+                        for(int i = 0; i < body.getPartsNum(); i++) {
+                            mWorkingMessage.setAttachment(msgItem.mAttachmentType,
+                                    body.getPart(i).getDataUri(), true);
+                        }
+                        mWorkingMessage.setSubject(msgItem.mSubject, true);
+                        mWorkingMessage.setText(msgItem.mBody);
+                    }
+                    confirmSendMessageIfNeeded();
                     return true;
                 }
 
