@@ -341,11 +341,11 @@
 
     <!-- Back to all threads -->
     <string name="pref_title_mms_back_to_all_threads">Todos os tópicos</string>
-    <string name="pref_summary_mms_back_to_all_threads">Mostra todos os tópicos quando o botão Voltar é pressionado</string>
+    <string name="pref_summary_mms_back_to_all_threads">Retorna sempre à vista de tópicos ao premir o botão voltar</string>
 
     <!-- Toggle setting for enable/disable Black Background -->
     <string name="pref_title_mms_black_background">Fundo preto</string>
-    <string name="pref_summary_mms_black_background">Habilitar/desabilitar fundo preto\n(Reinicie Mms)</string>
+    <string name="pref_summary_mms_black_background">Activar/Desactivar fundo preto\n(Requer reinício da aplicação)</string>
 
     <!-- Toggle setting for always show character counter -->
     <string name="pref_title_show_counter_always">Contador de caracteres</string>
@@ -363,7 +363,11 @@
 
     <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Formato de hora original</string>
-    <string name="pref_summary_mms_use_sent_timestamp">Mostra e grava data de envio em vez da data recebida</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Mostra data de envio do operador em vez da data de recepção por parte do operador, para mensagens recebidas</string>
+
+    <!-- Timestamp GMT Corection -->
+    <string name="pref_title_mms_use_sent_timestamp_gmt_correction">Formato de Hora GMT</string>
+    <string name="pref_summary_mms_use_sent_timestamp_gmt_correction">Seleccionar se o envio de data/hora pelo operador não estiver em GMT</string>
 
     <!-- Only mobile numbers -->
     <string name="pref_title_only_mobile_numbers">Números de telemóvel</string>
@@ -392,9 +396,9 @@
     <string name="pref_summary_mms_send_on_enter">Enviar mensagem ao pressionar a tecla Enter</string>
 
     <!-- Sms templates -->
-    <string name="prefs_templates_settings">Temas de SMS</string>
-    <string name="pref_title_templates_manage">Temas</string>
-    <string name="pref_summary_templates_manage">Gestão de temas de SMS</string>
+    <string name="prefs_templates_settings">Modelos de SMS</string>
+    <string name="pref_title_templates_manage">Modelos</string>
+    <string name="pref_summary_templates_manage">Gestão de modelos de SMS</string>
     <string name="pref_title_templates_show_gesture">Gestos</string>
     <string name="pref_summary_templates_show_gesture">Mostrar traços de gestos</string>
     <string name="pref_title_template_gestures_sensitivity">Sensibilidade dos gestos</string>
@@ -422,8 +426,8 @@
     <string name="toast_phone_goggles">Não tem permissão para enviar SMS agora. Por favor tente mais tarde.</string>
     <string name="dialog_phone_goggles_title">SMS bloqueado</string>
     <string name="dialog_phone_goggles_title_unlocked">SMS autorizado</string>
-    <string name="dialog_phone_goggles_content">Enviar um SMS poderá não ser uma boa ideia neste momento. Tem a certeza que deseja continuar?</string>
-    <string name="dialog_phone_goggles_unauthorized">Enviar um SMS poderá não ser uma boa ideia neste momento.</string>
+    <string name="dialog_phone_goggles_content">O envio de SMS poderá não ser o mais indicado neste momento. Tem a certeza que deseja continuar?</string>
+    <string name="dialog_phone_goggles_unauthorized">O envio de SMS poderá não ser o mais indicado neste momento.</string>
     <string name="dialog_phone_goggles_ok">Enviar</string>
     <string name="dialog_phone_goggles_cancel">Guardar Rascunho</string>
     <string name="cannot_find_contact">O contacto que seleccionou não pode ser adicionado.</string>
