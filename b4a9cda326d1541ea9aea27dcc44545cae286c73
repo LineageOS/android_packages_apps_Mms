@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAFH///R8\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 291
+      },
+      "writtenOn": "2011-05-18T19:47:51Z",
+      "side": 1,
+      "message": "Somewhat confusing, considering this is a feature to always go back to topic view and not to show all topics. Maybe something like \"Retorna sempre à vista de tópicos ao premir o botão voltar\"",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAFH///SA\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 348,
+      "author": {
+        "id": 291
+      },
+      "writtenOn": "2011-05-18T19:47:51Z",
+      "side": 1,
+      "message": "\"Activar/Desactivar\" sounds better plus in the end (\"Requer reinicio da aplicação\")",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAFH///R4\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 291
+      },
+      "writtenOn": "2011-05-18T19:47:51Z",
+      "side": 1,
+      "message": "Maybe clarify that this is for received messages?",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAFH///R0\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 291
+      },
+      "writtenOn": "2011-05-18T19:47:51Z",
+      "side": 1,
+      "message": "The 3 above are translated as \"themes\". Templates are not themes. They are pre-defined texts. I would personally go with \"SMS pré-definidos\"",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAFH///Rw\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 426,
+      "author": {
+        "id": 291
+      },
+      "writtenOn": "2011-05-18T19:47:51Z",
+      "side": 1,
+      "message": "The 2 above are also somewhat funny. I don\u0027t know the original text, but they seem a bit odd. Still on this one, is a personal call. I would probably change it to something more professional but its ok.",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
