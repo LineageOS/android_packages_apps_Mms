@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAFH///P8\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1043
+      },
+      "writtenOn": "2011-05-18T21:50:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAFH///R8\u003d",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAFH///SA\u003d",
         "filename": "res/values-pt-rPT/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2011-05-18T19:47:51Z",
       "side": 1,
       "message": "\"Activar/Desactivar\" sounds better plus in the end (\"Requer reinicio da aplicação\")",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAFH///P4\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 348,
+      "author": {
+        "id": 1043
+      },
+      "writtenOn": "2011-05-18T21:50:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAFH///SA\u003d",
       "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAFH///PI\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 1043
+      },
+      "writtenOn": "2011-05-18T21:50:31Z",
+      "side": 1,
+      "message": "In the original, the term \"timestamp\" is being used which in portuguese roughly translates to \"carimbo de tempo\" ou \"carimbo temporal\". I\u0027ve followed your advice and tried my best for trurning this string understandable/usable..",
+      "parentUuid": "AAAAFH///R4\u003d",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAFH///R0\u003d",
         "filename": "res/values-pt-rPT/strings.xml",
         "patchSetId": 1
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAFH///PE\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1043
+      },
+      "writtenOn": "2011-05-18T21:50:31Z",
+      "side": 1,
+      "message": "I\u0027ve followed the pt-BR strings.xml.. Should have started from the EN one from the beginning! :)\nDone here too (\"templates\" is more close in translation to \"modelos\", but if you know what this function is, i\u0027ll change it to \"pré-definidos\" if it describes better)",
+      "parentUuid": "AAAAFH///R0\u003d",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAFH///Rw\u003d",
         "filename": "res/values-pt-rPT/strings.xml",
         "patchSetId": 1
@@ -81,6 +153,24 @@
       "writtenOn": "2011-05-18T19:47:51Z",
       "side": 1,
       "message": "The 2 above are also somewhat funny. I don\u0027t know the original text, but they seem a bit odd. Still on this one, is a personal call. I would probably change it to something more professional but its ok.",
+      "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAFH///O0\u003d",
+        "filename": "res/values-pt-rPT/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 426,
+      "author": {
+        "id": 1043
+      },
+      "writtenOn": "2011-05-18T21:50:31Z",
+      "side": 1,
+      "message": "Here are the original texts:\n- Sending a SMS may not be wise at this time. Are you sure you want to continue?\n- Sending a SMS may not be wise at this time.\n\nAgain, i\u0027ve started from pt-BR.. Our brazillian friends do some strange translations (in PT: \"estes brasileiros fazem com cada tradução!) :)\n\nDone..",
+      "parentUuid": "AAAAFH///Rw\u003d",
       "revId": "b4a9cda326d1541ea9aea27dcc44545cae286c73",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
