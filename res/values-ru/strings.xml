@@ -173,7 +173,7 @@
        <!-- Settings item for SMS Split 160 characters setting -->
     <string name="pref_title_sms_split_160">Разбивать SMS</string>
         <!-- Settings item description for boolean SMS Split 160 characters setting -->
-    <string name="pref_summary_sms_split_160">Разбивать сообщения каждые 160 символов</string>
+    <string name="pref_summary_sms_split_160">Разбивать сообщения каждые 160 символов (англ.) или 70 символов (рус.)</string>
         <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Счётчик фрагментов</string>
         <!-- Settings item description for boolean SMS Split 160 characters setting -->
