@@ -3170,6 +3170,10 @@ public class ComposeMessageActivity extends Activity
      * Initialize all UI elements from resources.
      */
     private void initResourceRefs() {
+        /* Load the sharedPrefs */
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        /* Get the maximun text message length from the preferences */
+        int maxTextLength = Integer.parseInt(prefs.getString("max_text_length", "2000"));
         mMsgListView = (MessageListView) findViewById(R.id.history);
         mMsgListView.setDivider(null);      // no divider so we look like IM conversation.
         mBottomPanel = findViewById(R.id.bottom_panel);
@@ -3177,7 +3181,7 @@ public class ComposeMessageActivity extends Activity
         mTextEditor.setOnEditorActionListener(this);
         mTextEditor.addTextChangedListener(mTextEditorWatcher);
         mTextEditor.setFilters(new InputFilter[] {
-                new LengthFilter(MmsConfig.getMaxTextLimit())});
+                new LengthFilter(maxTextLength)});
         mTextCounter = (TextView) findViewById(R.id.text_counter);
         mSendButton = (Button) findViewById(R.id.send_button);
         mSendButton.setOnClickListener(this);
