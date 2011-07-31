@@ -167,6 +167,8 @@
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Ontvangstbevestiging voor elk verzonden bericht aanvragen"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Leesbevestiging voor elk verzonden bericht aanvragen"</string>
     <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Ontvangstbevestiging voor elk verzonden bericht aanvragen"</string>
+    <string name="pref_title_max_sms_length">Maximale tekstlengte sms-berichten</string>
+    <string name="pref_summary_max_sms_length">De maximale lengte toegestaan voor samengestelde berichten</string>
     <string name="pref_summary_auto_delete" msgid="7719538116486177613">"Oude berichten verwijderen wanneer limiet wordt bereikt"</string>
     <string name="pref_summary_delete_limit" msgid="597128041393045216">"<xliff:g id="COUNT">%1$s</xliff:g> berichten per conversatie"</string>
     <string name="pref_title_manage_sim_messages" msgid="7820895261757881177">"Berichten op SIM-kaart beheren"</string>
