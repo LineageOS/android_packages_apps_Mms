@@ -46,6 +46,12 @@
                       android:key="pref_key_sms_delivery_reports"
                       android:summary="@string/pref_summary_sms_delivery_reports"
                       android:title="@string/pref_title_sms_delivery_reports" />
+    <EditTextPreference android:defaultValue="2000"
+                      android:key="max_text_length"
+                      android:summary="@string/pref_summary_max_sms_length"
+                      android:title="@string/pref_title_max_sms_length"
+                      android:numeric="integer"
+                      android:maxLength="5"/>
     <CheckBoxPreference android:defaultValue="false"
                       android:key="pref_key_sms_split_160"
                       android:summary="@string/pref_summary_sms_split_160"

@@ -339,6 +339,10 @@
     <string name="pref_summary_mms_read_reports">Request a read report for each message you send</string>
     <!-- Settings item description for boolean SMS delivery report setting -->
     <string name="pref_summary_sms_delivery_reports">Request a delivery report for each message you send</string>
+    <!-- Settings item for max SMS length setting -->
+    <string name="pref_title_max_sms_length">Max SMS text length</string>
+    <!-- Settings item description for max SMS length setting -->
+    <string name="pref_summary_max_sms_length">The maximum length allowed for composed messages</string>
     <!-- Settings item for SMS Split 160 characters setting -->
     <string name="pref_title_sms_split_160">SMS split</string>
     <!-- Settings item description for boolean SMS Split 160 characters setting -->

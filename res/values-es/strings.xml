@@ -172,6 +172,10 @@
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Solicitar un informe de entrega al enviar un mensaje"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Solicitar un informe de mensaje leído al enviar un mensaje"</string>
     <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Solicitar un informe de entrega cada vez que se envíe un mensaje"</string>
+    <!-- Settings item for max SMS length setting -->
+    <string name="pref_title_max_sms_length">Longitud máxima de SMS</string>
+    <!-- Settings item description for max SMS length setting -->
+    <string name="pref_summary_max_sms_length">Limitar el número máximo de caracteres para un mensaje SMS</string>
     <!-- Settings item for SMS Split 160 characters setting -->
     <string name="pref_title_sms_split_160">División SMS</string>
     <!-- Settings item description for boolean SMS Split 160 characters setting -->
