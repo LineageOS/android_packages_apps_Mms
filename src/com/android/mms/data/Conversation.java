@@ -774,10 +774,11 @@ public class Conversation {
         ContentResolver resolver = context.getContentResolver();
         Cursor cursor = resolver.query(Sms.Inbox.CONTENT_URI,
                 SEEN_PROJECTION,
-                "seen=0",
+                "read=0",
                 null,
                 null);
-
+       
+       
         int count = 0;
 
         if (cursor != null) {
@@ -787,21 +788,22 @@ public class Conversation {
                 cursor.close();
             }
         }
-
+       
         if (count == 0) {
             return;
         }
 
+       
         if (Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
             Log.d(TAG, "mark " + count + " SMS msgs as seen");
         }
 
         ContentValues values = new ContentValues(1);
-        values.put("seen", 1);
+        values.put("read", 1);
 
         resolver.update(Sms.Inbox.CONTENT_URI,
                 values,
-                "seen=0",
+                "read=0",
                 null);
     }
 
