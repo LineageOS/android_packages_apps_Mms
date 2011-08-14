@@ -770,6 +770,19 @@ public class Conversation {
         }).start();
     }
 
+    public static void markAllConversationsAsRead(final Context context) {
+        if (DEBUG) {
+            LogTag.debug("Conversation.markAllConversationsAsRead");
+        }
+
+        new Thread(new Runnable() {
+            public void run() {
+                blockingMarkAllSmsMessagesAsRead(context);
+                blockingMarkAllMmsMessagesAsRead(context);
+            }
+        }).start();
+    }
+
     private static void blockingMarkAllSmsMessagesAsSeen(final Context context) {
         ContentResolver resolver = context.getContentResolver();
         Cursor cursor = resolver.query(Sms.Inbox.CONTENT_URI,
@@ -805,6 +818,41 @@ public class Conversation {
                 null);
     }
 
+    private static void blockingMarkAllSmsMessagesAsRead(final Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(Sms.Inbox.CONTENT_URI,
+                SEEN_PROJECTION,
+                "read=0",
+                null,
+                null);
+
+        int count = 0;
+
+        if (cursor != null) {
+            try {
+                count = cursor.getCount();
+            } finally {
+                cursor.close();
+            }
+        }
+
+        if (count == 0) {
+            return;
+        }
+
+        if (Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
+            Log.d(TAG, "mark " + count + " SMS msgs as read");
+        }
+
+        ContentValues values = new ContentValues(1);
+        values.put("read", 1);
+
+        resolver.update(Sms.Inbox.CONTENT_URI,
+                values,
+                "read=0",
+                null);
+    }
+
     private static void blockingMarkAllMmsMessagesAsSeen(final Context context) {
         ContentResolver resolver = context.getContentResolver();
         Cursor cursor = resolver.query(Mms.Inbox.CONTENT_URI,
@@ -837,6 +885,42 @@ public class Conversation {
         resolver.update(Mms.Inbox.CONTENT_URI,
                 values,
                 "seen=0",
+                null);
+
+    }
+
+    private static void blockingMarkAllMmsMessagesAsRead(final Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(Mms.Inbox.CONTENT_URI,
+                SEEN_PROJECTION,
+                "read=0",
+                null,
+                null);
+
+        int count = 0;
+
+        if (cursor != null) {
+            try {
+                count = cursor.getCount();
+            } finally {
+                cursor.close();
+            }
+        }
+
+        if (count == 0) {
+            return;
+        }
+
+        if (Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
+            Log.d(TAG, "mark " + count + " MMS msgs as read");
+        }
+
+        ContentValues values = new ContentValues(1);
+        values.put("read", 1);
+
+        resolver.update(Mms.Inbox.CONTENT_URI,
+                values,
+                "read=0",
                 null);
 
     }
