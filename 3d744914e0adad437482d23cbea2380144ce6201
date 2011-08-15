@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAHn//9ws\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "Please convert the tabs to spaces.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wM\u003d",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 757,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "This function likely also needs the \u0027alsoRead\u0027 parameter...",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wk\u003d",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 777,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "The function says it\u0027s marking messages as seen. After your patch, it marks them as read. If you need to, either duplicate the function or (preferred) give it a parameter, e.g.\n\nprivate static void blockingMarkAllSmsAsSeen(final Context context, final boolean alsoRead)\n\nThen also make sure to adapt the selection and fill the ContentValues accordingly. If alsoRead is false, only set seen, else set seen and read.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wo\u003d",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 780,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "Please do not introduce useless newlines and especially not trailing whitespace.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wg\u003d",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 811,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "It looks like this function should be treated the same as the SMS equivalent above.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wc\u003d",
+        "filename": "src/com/android/mms/ui/ConversationList.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "Please align the \u0027\u003d 5\u0027 with the other values.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wY\u003d",
+        "filename": "src/com/android/mms/ui/ConversationList.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "Mark as seen !\u003d mark as read.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wU\u003d",
+        "filename": "src/com/android/mms/ui/ConversationList.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAHn//9wQ\u003d",
+        "filename": "src/com/android/mms/ui/ConversationList.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 340,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2011-08-15T10:43:35Z",
+      "side": 1,
+      "message": "Please convert tab -\u003e spaces.",
+      "revId": "3d744914e0adad437482d23cbea2380144ce6201",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
