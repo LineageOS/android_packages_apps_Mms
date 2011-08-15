@@ -109,7 +109,7 @@ public class MessagingNotification {
 
     private static final String NEW_INCOMING_SM_CONSTRAINT =
             "(" + Sms.TYPE + " = " + Sms.MESSAGE_TYPE_INBOX
-            + " AND " + Sms.SEEN + " = 0)";
+            + " AND " + Sms.READ + " = 0)";
 
     private static final String NEW_DELIVERY_SM_CONSTRAINT =
         "(" + Sms.TYPE + " = " + Sms.MESSAGE_TYPE_SENT
@@ -117,7 +117,7 @@ public class MessagingNotification {
 
     private static final String NEW_INCOMING_MM_CONSTRAINT =
             "(" + Mms.MESSAGE_BOX + "=" + Mms.MESSAGE_BOX_INBOX
-            + " AND " + Mms.SEEN + "=0"
+            + " AND " + Mms.READ + "=0"
             + " AND (" + Mms.MESSAGE_TYPE + "=" + MESSAGE_TYPE_NOTIFICATION_IND
             + " OR " + Mms.MESSAGE_TYPE + "=" + MESSAGE_TYPE_RETRIEVE_CONF + "))";
 
