@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAH3///l0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2011-08-25T02:01:39Z",
+      "side": 1,
+      "message": "Wie wäre es mit:\n\nAlle Nachrichten als gelesen markieren\n\nIst zwar etwas lang, aber meiner Meinung nach verständlicher.",
+      "revId": "d288f0847d8e5cefa9ee47f33f8db552b7182394",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
