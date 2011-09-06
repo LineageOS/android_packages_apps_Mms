@@ -32,16 +32,12 @@
     <string name="menu_call" msgid="5877123227307074690">"Позвонить"</string>
     <string name="menu_delete_all" msgid="8853352701914512057">"Удалить цепочки"</string>
     <string name="menu_delete" msgid="1851666911396479006">"Удалить цепочку"</string>
-    <string name="menu_undelivered_messages" msgid="3896857623211780616">"Недоставленные сообщения"</string>
     <string name="menu_view" msgid="7448852683948080108">"Просмотреть цепочку"</string>
     <string name="refreshing">Обновление\u2026</string>
     <string name="has_draft" msgid="2487465595514636160">"Черновик"</string>
     <!-- unknown quoting pattern: original -1, translation 1 -->
-    <string name="broadcast_from_to" msgid="2050376286109362539">"<xliff:g id="SENDER">%1$s</xliff:g> &amp;gt; <xliff:g id="RECIPIENT">%2$s</xliff:g>"</string>
-    <string name="anonymous_recipient" msgid="2501437626187039034">"Аноним"</string>
     <string name="no_subject_view" msgid="7795086723069563537">"(Без темы)"</string>
     <string name="messagelist_sender_self" msgid="3579016854116401602">"Я"</string>
-    <string name="view_picture" msgid="4356315935277709195">"Просмотреть картинку"</string>
     <string name="view_slideshow" msgid="4990460971211388453">"Просмотреть слайд-шоу"</string>
     <string name="view_message_details" msgid="2443165773568096234">"Сведения о сообщении"</string>
     <string name="view_delivery_report" msgid="8219095994071575215">"Просмотреть отчет"</string>
@@ -77,7 +73,6 @@
     <string name="remove_music" msgid="858889733416015223">"Удалить музыку"</string>
     <string name="add_video" msgid="7816866867806595144">"Добавить видео"</string>
     <string name="remove_video" msgid="5258603891528497799">"Удалить видео"</string>
-    <string name="compose_title" msgid="558578836596816068">"Новое сообщение"</string>
     <string name="to_hint" msgid="224029549150332986">"Кому:"</string>
     <string name="subject_hint" msgid="4296714962311604126">"Тема"</string>
     <string name="add_attachment" msgid="7103751293360532684">"Прикрепить файл"</string>
@@ -91,8 +86,6 @@
     <string name="all_threads" msgid="2663426830306307194">"Все цепочки"</string>
     <string name="type_to_compose_text_enter_to_send" msgid="7553404984078924360">"Введите текст"</string>
     <string name="open_keyboard_to_compose_message" msgid="1668723196441776085">"Открыть клавиатуру, чтобы ввести сообщение"</string>
-    <string name="image_too_large" msgid="261880224164478061">"Картинка слишком большая"</string>
-    <string name="ask_for_automatically_resize" msgid="7657603662407738758">"Уменьшить картинки перед отправкой?"</string>
     <string name="compressing" msgid="1961357529661045180">"Картинка слишком большая. Выполняется сжатие…"</string>
     <string name="unsupported_media_format" msgid="5037111178813903722">"Неподдерживаемый формат <xliff:g id="NAME">%1$s</xliff:g>"</string>
     <string name="select_different_media" msgid="7573116916321879964">"Измените выбор: <xliff:g id="NAME">%1$s</xliff:g>."</string>
@@ -117,14 +110,11 @@
     <string name="cannot_add_slide_anymore" msgid="8437666385579890987">"Больше нельзя добавить слайдов."</string>
     <string name="cannot_add_picture_and_video" msgid="4721981351130823908">"Нельзя добавить на слайд и картинку, и видео."</string>
     <string name="cannot_save_message" msgid="5026354972915392301">"Не удается сохранить сообщение."</string>
-    <string name="cannot_load_message" msgid="2577010607550849892">"Не удается загрузить сообщение."</string>
     <string name="message_saved_as_draft" msgid="2503018972659880692">"Черновик сообщения сохранен."</string>
-    <string name="locked_message_cannot_be_deleted" msgid="6369452071783350219">"Заблокированное сообщение нельзя удалить"</string>
     <string name="too_many_recipients" msgid="4239709214735078881">"У этого сообщения слишком много получателей (<xliff:g id="CURRENTCOUNT">%1$s</xliff:g>). Максимальное число получателей: <xliff:g id="MAXLIMIT">%2$s</xliff:g>."</string>
     <string name="too_many_attachments" msgid="3774037894899750070">"Для вложений установлено ограничение: <xliff:g id="MAXLIMIT">%1$s</xliff:g>. Будет добавлено вложений: <xliff:g id="CURRENTCOUNT">%2$s</xliff:g>."</string>
     <string name="adding_attachments_title" msgid="2034535554212405529">"Добавление вложений"</string>
     <string name="adding_attachments" msgid="2423616900586221924">"Подождите, пока элементы будут добавлены в слайд-шоу."</string>
-    <string name="multiple_recipients" msgid="8747754491343248141">"Получателей: <xliff:g id="RECIPIENTCOUNT">%1$s</xliff:g>"</string>
     <string name="cannot_play_audio" msgid="575086601128003093">"Не удается воспроизвести аудио."</string>
     <string name="preview" msgid="5438149136136446756">"Просмотреть"</string>
     <string name="preview_slideshow" msgid="6824095909448728427">"Предварительный просмотр"</string>
@@ -159,7 +149,6 @@
     <string name="set" msgid="4642365398263275979">"Сохранить"</string>
     <string name="play" msgid="1888432400937785115">"Воспроизвести"</string>
     <string name="edit" msgid="5912118407791492696">"Изменить"</string>
-    <string name="resize" msgid="4308912589984220360">"Уменьшить"</string>
     <string name="try_to_send" msgid="1996751738286080976">"Попытаться отправить"</string>
     <string name="preferences_title" msgid="6650089610332670157">"Настройки"</string>
     <string name="restore_default" msgid="7165341506551155053">"Восстановить значения по умолчанию"</string>
@@ -206,14 +195,12 @@
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Автоматически загружать MMS-сообщения в роуминге"</string>
     <string name="pref_title_save_location">Папка для сохранения вложений</string>   
     <string name="pref_summary_save_location">Папка для сохранения вложений сообщений</string>
-    <string name="to_label" msgid="2355268818058389047">"Кому: "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Удалить"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Удалить заблокированное сообщение?"</string>
     <string name="confirm_delete_conversation" msgid="6115966687389279855">"Вся цепочка будет удалена."</string>
     <string name="confirm_delete_all_conversations" msgid="9036166685235092757">"Все цепочки будут удалены."</string>
     <string name="confirm_delete_message" msgid="9121480656609809591">"Сообщение будет удалено."</string>
     <string name="confirm_delete_locked_message" msgid="5863578342246077057">"Действительно удалить это заблокированное сообщение?"</string>
-    <string name="confirm_delete_all_messages" msgid="5836389073199814660">"Вся цепочка будет удалена."</string>
     <string name="confirm_delete_all_SIM_messages" msgid="65701806463341097">"Все сообщения на SIM-карте будут удалены."</string>
     <string name="confirm_delete_SIM_message" msgid="767624259182679915">"Это сообщение будет удалено с SIM-карты."</string>
     <string name="delete_unlocked" msgid="7545321606698162261">"Удалить заблокированные сообщения"</string>
@@ -239,10 +226,7 @@
     <string name="message_class_label" msgid="5115748690481550562">"Класс сообщений: "</string>
     <string name="error_code_label" msgid="5810068247647058769">"Код ошибки: "</string>
     <string name="menu_edit" msgid="3056513240155967777">"Изменить"</string>
-    <string name="menu_retry_sending" msgid="3146582005568302643">"Попытаться отправить повторно"</string>
-    <string name="menu_retry_sending_all" msgid="1870529976966340616">"Попытаться отправить повторно все сообщения"</string>
     <string name="menu_delete_messages" msgid="2610286783513247420">"Удалить сообщения"</string>
-    <string name="retrying_dialog_body" msgid="4738260459043003431">"Отправить сообщение <xliff:g id="MESSAGE">%s</xliff:g> не удалось из-за проблем с соединением."\n"Повторная отправка…"</string>
     <string name="menu_lock" msgid="136863583207382259">"Заблокировать сообщение"</string>
     <string name="menu_unlock" msgid="5264877122797287929">"Разблокировать сообщение"</string>
     <string name="sim_copy_to_phone_memory" msgid="5895767417844881971">"Копировать в память телефона"</string>
@@ -315,17 +299,11 @@
   </plurals>
     <string name="delivery_report_activity" msgid="2957463094232916364">"Отчет о доставке"</string>
     <string name="storage_limits_activity" msgid="8810530813311077716">"Пределы хранилища"</string>
-    <string name="add_attachment_activity" msgid="5324811371129695320">"Добавить приложение:"</string>
-    <string name="select_layout_activity" msgid="5041916695464513848">"Выберите расположение"</string>
     <string name="change_duration_activity" msgid="7048606979485031693">"Изменить продолжительность"</string>
-    <string name="edit_text_activity" msgid="5915226413346879213">"Изменить текст"</string>
     <string name="edit_slideshow_activity" msgid="8751493388760050529">"Изменить слайд-шоу"</string>
     <string name="edit_slide_activity" msgid="8752829671778696983">"Изменить слайд"</string>
-    <string name="pick_numbers_activity" msgid="2083330191224178637">"Выберите номера"</string>
     <string name="slideshow_activity" msgid="5658249461317434432">"Слайд-шоу"</string>
     <string name="class_0_message_activity" msgid="8474176218999130627">"Сообщение класса 0"</string>
-    <string name="send_using_mms_activity" msgid="3703434556280345726">"Отправить как MMS"</string>
-    <string name="select_contact_method_activity" msgid="1743384358979323991">"Выбрать способ связи"</string>
     <string name="search_label" msgid="6042598929386174964">"Сообщения"</string>
     <string name="search_hint" msgid="7183732852849365466">"Поиск сообщений"</string>
     <string name="search" msgid="7560238620274735199">"SMS/MMS"</string>
@@ -410,7 +388,6 @@
     <string name="template_cancel_confirm_title">Внимание</string>
     <string name="template_cancel_confirm_text">Желаете отменить?</string>
     <string name="gestures_already_present">Предупреждение: похожий жест уже связан с другим шаблоном!</string>
-    <string name="toast_phone_goggles">Вы не можете отправить SMS в данный момент. Пожалуйста, повторите попытку позже.</string>
     <string name="dialog_phone_goggles_title">SMS заблокировано</string>
     <string name="dialog_phone_goggles_title_unlocked">SMS разрешена</string>
     <string name="dialog_phone_goggles_content">Отправка SMS может быть не уместна в это время. Вы уверены, что хотите продолжить?</string>

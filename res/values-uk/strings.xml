@@ -31,15 +31,11 @@
     <string name="menu_call" msgid="5877123227307074690">"Набрати"</string>
     <string name="menu_delete_all">Видалити ланцюжки</string>
     <string name="menu_delete">Видалити ланцюжок</string>
-    <string name="menu_undelivered_messages" msgid="3896857623211780616">"Недоставл. повідомл."</string>
     <string name="menu_view">Переглянути ланцюжок</string>
     <string name="refreshing" msgid="987335057871404222">"Оновлення..."</string>
     <string name="has_draft" msgid="2487465595514636160">"Чернетка"</string>
-    <string name="broadcast_from_to" msgid="2050376286109362539">"<xliff:g id="SENDER">%1$s</xliff:g>до <xliff:g id="RECIPIENT">%2$s</xliff:g>"</string>
-    <string name="anonymous_recipient" msgid="2501437626187039034">"Анонім"</string>
     <string name="no_subject_view" msgid="7795086723069563537">"(Без теми)"</string>
     <string name="messagelist_sender_self" msgid="3579016854116401602">"Я"</string>
-    <string name="view_picture">Переглянути зображення</string>
     <string name="view_slideshow">Переглянути слайд-шоу</string>
     <string name="view_message_details">Деталі повідомлення</string>
     <string name="view_delivery_report">Переглянути звіт</string>
@@ -75,7 +71,6 @@
     <string name="remove_music" msgid="858889733416015223">"Видалити музику"</string>
     <string name="add_video" msgid="7816866867806595144">"Додати відео"</string>
     <string name="remove_video" msgid="5258603891528497799">"Видалити відео"</string>
-    <string name="compose_title" msgid="558578836596816068">"Написати"</string>
     <string name="to_hint" msgid="224029549150332986">"Кому"</string>
     <string name="subject_hint" msgid="4296714962311604126">"Тема"</string>
     <string name="add_attachment">Долучити</string>
@@ -89,8 +84,6 @@
     <string name="all_threads" msgid="2663426830306307194">"Усі ланцюжки"</string>
     <string name="type_to_compose_text_enter_to_send">Текст повідомлення</string>
     <string name="open_keyboard_to_compose_message">Відкрийте клавіатуру, уведіть текст</string>
-    <string name="image_too_large">Зображення завелике</string>
-    <string name="ask_for_automatically_resize">Змінити розмір зображення перед надсиланням?</string>
     <string name="compressing" msgid="1961357529661045180">"Зображення завелике. Стискання..."</string>
     <string name="unsupported_media_format" msgid="5037111178813903722">"Непідтримуваний формат <xliff:g id="NAME">%1$s</xliff:g>"</string>
     <string name="select_different_media" msgid="7573116916321879964">"Виберіть ін. <xliff:g id="NAME">%1$s</xliff:g>."</string>
@@ -114,14 +107,11 @@
     <string name="cannot_add_slide_anymore">Неможливо додати додаткові слайди.</string>
     <string name="cannot_add_picture_and_video">Неможливо додати відео та зображення в один слайд.</string>
     <string name="cannot_save_message">Не вдалося зберегти повідомлення.</string>
-    <string name="cannot_load_message">Не вдалося завантажити повідомлення.</string>
     <string name="message_saved_as_draft">Повідомлення збережено як чернетку.</string>
-    <string name="locked_message_cannot_be_deleted">Неможливо видалити заблоковане повідомлення.</string>
     <string name="too_many_recipients" msgid="4239709214735078881">"Це повідомлення має забагато отримувачів (<xliff:g id="CURRENTCOUNT">%1$s</xliff:g>). Існує ліміт у<xliff:g id="MAXLIMIT">%2$s</xliff:g> отримувачів."</string>
     <string name="too_many_attachments" msgid="3774037894899750070">"Існує обмеження у <xliff:g id="MAXLIMIT">%1$s</xliff:g> вклад. файлів. Лише перші <xliff:g id="CURRENTCOUNT">%2$s</xliff:g> буде додано."</string>
     <string name="adding_attachments_title">Додання долучень</string>
     <string name="adding_attachments" msgid="2423616900586221924">"Зачекайте, поки елементи буде додано до слайд-шоу."</string>
-    <string name="multiple_recipients" msgid="8747754491343248141">"Отимувачів: <xliff:g id="RECIPIENTCOUNT">%1$s</xliff:g>"</string>
     <string name="cannot_play_audio">Неможливо відтворити аудіо</string>
     <string name="preview">Перегляд</string>
     <string name="preview_slideshow">Попередній перегляд</string>
@@ -156,7 +146,6 @@
     <string name="set">Установити</string>
     <string name="play">Відтворити</string>
     <string name="edit">Змінити</string>
-    <string name="resize">Змінити розмір</string>
     <string name="try_to_send">Спробувати надіслати</string>
     <string name="preferences_title" msgid="6650089610332670157">"Налаштування"</string>
     <string name="restore_default">"Відновити типові параметри"</string>
@@ -199,14 +188,12 @@
     <string name="pref_summary_mms_retrieval_during_roaming">Автоматичне завантаження MMS-повідомлень під час роумінгу</string>
     <string name="pref_title_save_location">Каталог долучень</string>
     <string name="pref_summary_save_location">Каталог для збереження долучень</string>
-    <string name="to_label" msgid="2355268818058389047">"Кому "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Видалити"</string>
     <string name="confirm_dialog_locked_title">Видалити заблоковане повідомлення?</string>
     <string name="confirm_delete_conversation" msgid="6115966687389279855">"Увесь ланцюжок буде видалено."</string>
     <string name="confirm_delete_all_conversations" msgid="9036166685235092757">"Усі ланцюжки буде видалено."</string>
     <string name="confirm_delete_message" msgid="9121480656609809591">"Повідомлення буде видалено."</string>
     <string name="confirm_delete_locked_message" msgid="5863578342246077057">"Ви дійсно бажаєте видалити це заблоковане повідомлення?"</string>
-    <string name="confirm_delete_all_messages" msgid="5836389073199814660">"Увесь ланцюжок буде видалено."</string>
     <string name="confirm_delete_all_SIM_messages">Усі повідомлення на SIM-карті буде видалено.</string>
     <string name="confirm_delete_SIM_message">Це повідомлення на SIM-карті буде видалено.</string>
     <string name="delete_unlocked" msgid="7545321606698162261">"Видал. заблок. повідомл."</string>
@@ -232,10 +219,7 @@
     <string name="message_class_label" msgid="5115748690481550562">"Клас повідомл. "</string>
     <string name="error_code_label" msgid="5810068247647058769">"Код помилки: "</string>
     <string name="menu_edit">Змінити</string>
-    <string name="menu_retry_sending">Повторити надсилання</string>
-    <string name="menu_retry_sending_all" msgid="1870529976966340616">"Повт. надсил. всього"</string>
     <string name="menu_delete_messages">Видалити повідомлення</string>
-    <string name="retrying_dialog_body" msgid="4738260459043003431">"Повідомл. <xliff:g id="MESSAGE">%s</xliff:g> не було надіслано через пробл. з підключ. "\n"Повтор. надсилання..."</string>
     <string name="menu_lock">Заблокувати повідомлення</string>
     <string name="menu_unlock">Розблокувати повідомлення</string>
     <string name="sim_copy_to_phone_memory" msgid="5895767417844881971">"Скопіюв. до пам\'яті тел."</string>
@@ -308,17 +292,11 @@
   </plurals>
     <string name="delivery_report_activity" msgid="2957463094232916364">"Звіт про доставку"</string>
     <string name="storage_limits_activity">Ліміти збереження</string>
-    <string name="add_attachment_activity">Додати долучення:</string>
-    <string name="select_layout_activity" msgid="5041916695464513848">"Вибрати макет"</string>
     <string name="change_duration_activity" msgid="7048606979485031693">"Змінити тривалість"</string>
-    <string name="edit_text_activity" msgid="5915226413346879213">"Редаг. текст"</string>
     <string name="edit_slideshow_activity" msgid="8751493388760050529">"Редаг. слайд-шоу"</string>
     <string name="edit_slide_activity" msgid="8752829671778696983">"Редаг. слайд"</string>
-    <string name="pick_numbers_activity" msgid="2083330191224178637">"Вибер. цифру"</string>
     <string name="slideshow_activity" msgid="5658249461317434432">"Слайд-шоу"</string>
     <string name="class_0_message_activity" msgid="8474176218999130627">"Повідомл. класу 0"</string>
-    <string name="send_using_mms_activity" msgid="3703434556280345726">"Надіслати мультимед. повід..."</string>
-    <string name="select_contact_method_activity" msgid="1743384358979323991">"Виберіть метод зв\'язку"</string>
     <string name="search_label" msgid="6042598929386174964">"Повідомлення"</string>
     <string name="search_hint" msgid="7183732852849365466">"Пошук повідомл."</string>
     <string name="search" msgid="7560238620274735199">"Повідомлення"</string>
@@ -401,7 +379,6 @@
     <string name="template_cancel_confirm_title">Увага</string>
     <string name="template_cancel_confirm_text">Скасувати?</string>
     <string name="gestures_already_present">Увага. Аналогічний жест пов\u2019язаний з іншим шаблоном!</string>
-    <string name="toast_phone_goggles">Вам не дозволено відправляти SMS у цей час. Будь ласка, повторіть спробу пізніше.</string>
     <string name="dialog_phone_goggles_title">SMS заблоковано</string>
     <string name="dialog_phone_goggles_title_unlocked">SMS санкційовано</string>
     <string name="dialog_phone_goggles_content">Надсилання SMS може бути небажаним у цей час. Ви впевнені, що бажаєте продовжити?</string>

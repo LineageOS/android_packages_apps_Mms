@@ -45,9 +45,6 @@
     <string name="menu_delete_all" msgid="8853352701914512057">"刪除會話群組"</string>
     <!-- Context menu item on an individual conversation for deleting that conversation -->
     <string name="menu_delete" msgid="1851666911396479006">"刪除會話串"</string>
-    <!-- This string is no longer used. It used to be the menu item for viewing all messages that
-         were unable to be delivered, i.e. send failed -->
-    <string name="menu_undelivered_messages" msgid="3896857623211780616">"無法傳送的簡訊"</string>
     <!-- Context menu item on an individual conversation for viewing that conversation -->
     <string name="menu_view" msgid="7448852683948080108">"檢視串連"</string>
     <!-- Message that appears on screen while SIM card messages are retrieved -->
@@ -56,17 +53,11 @@
     <!-- Tag appearing on conversations in the conversation list that contain a draft message -->
     <string name="has_draft" msgid="2487465595514636160">"草稿"</string>
 
-    <!-- Appearance of message sender in multi-recipient messages, e.g. "me to Megan" -->
-    <string name="broadcast_from_to" msgid="2050376286109362539">"<xliff:g id="SENDER">%1$s</xliff:g>寄送給<xliff:g id="RECIPIENT">%2$s</xliff:g>"</string>
-    <!-- Name to use when we have an unspecified sender -->
-    <string name="anonymous_recipient" msgid="2501437626187039034">"匿名"</string>
     <!-- Subject to display in the conversation list if there is no subject -->
     <string name="no_subject_view" msgid="7795086723069563537">"(沒有主旨)"</string>
 
     <!-- Name of the local user when displaying sender of an outgoing message (personal pronoun) -->
     <string name="messagelist_sender_self" msgid="3579016854116401602">"我"</string>
-    <!-- Context menu item on an individual message for viewing an attached picture -->
-    <string name="view_picture" msgid="4356315935277709195">"檢視圖片"</string>
     <!-- Context menu item on an individual message for viewing an attached slideshow -->
     <string name="view_slideshow" msgid="4990460971211388453">"檢視投影片"</string>
     <!-- Context menu item on an individual message for viewing message details such as time and date -->
@@ -145,8 +136,6 @@
     <!-- Menu item in slide edit screen for removing the video from the slide being edited -->
     <string name="remove_video" msgid="5258603891528497799">"移除影片"</string>
 
-    <!-- Title bar displayed in compose message activity before a recipient has been selected -->
-    <string name="compose_title" msgid="558578836596816068">"撰寫"</string>
     <!-- Hint displayed in message recipient text box when starting a new conversation -->
     <string name="to_hint" msgid="224029549150332986">"傳送到"</string>
     <!-- Hint displayed in subject edit text box when adding a subject -->
@@ -178,11 +167,6 @@
     <string name="type_to_compose_text_enter_to_send" msgid="7553404984078924360">"輸入內容"</string>
     <!-- Hint text in message body field when keyboard is hidden -->
     <string name="open_keyboard_to_compose_message" msgid="1668723196441776085">"開啟鍵盤以撰寫簡訊"</string>
-
-    <!-- Dialog title for warning the user that the picture they are trying to attach is too large -->
-    <string name="image_too_large" msgid="261880224164478061">"圖片太大"</string>
-    <!-- Dialog message text asking the user if he wants to resize the picture being attached -->
-    <string name="ask_for_automatically_resize" msgid="7657603662407738758">"傳送前是否自動重新調整相片大小？"</string>
 
     <!-- Toast message while an image is being resized -->
     <string name="compressing" msgid="1961357529661045180">"相片太大，壓縮中..."</string>
@@ -232,11 +216,8 @@
     <string name="cannot_add_picture_and_video" msgid="4721981351130823908">"無法將影片與相片加入同一張投影片。"</string>
     <!-- Brief message that appears when the message cannot be saved -->
     <string name="cannot_save_message" msgid="5026354972915392301">"無法儲存簡訊。"</string>
-    <string name="cannot_load_message" msgid="2577010607550849892">"無法載入簡訊。"</string>
     <!-- Brief message that appears when a message has automatically been saved as a draft -->
     <string name="message_saved_as_draft" msgid="2503018972659880692">"簡訊已存成草稿。"</string>
-    <!-- Brief message that appears when an attempt is made to delete a locked message -->
-    <string name="locked_message_cannot_be_deleted" msgid="6369452071783350219">"無法刪除鎖定的訊息。"</string>
     <!-- Brief message that appears when too many recipients have been added -->
     <string name="too_many_recipients" msgid="4239709214735078881">"這則訊息的收件者過多 (<xliff:g id="CURRENTCOUNT">%1$s</xliff:g> 位)，上限為 <xliff:g id="MAXLIMIT">%2$s</xliff:g> 位收件者。"</string>
     <!-- Brief message that appears when too many videos/pictures are imported -->
@@ -245,9 +226,6 @@
     <string name="adding_attachments_title" msgid="2034535554212405529">"正在加入附件"</string>
     <!-- Alert dialog when adding attachments is taking a while -->
     <string name="adding_attachments" msgid="2423616900586221924">"正在將此項目加入投影播放，請稍候。"</string>
-
-    <!-- Titlebar string when there are more than one recipients -->
-    <string name="multiple_recipients" msgid="8747754491343248141">"<xliff:g id="RECIPIENTCOUNT">%1$s</xliff:g> 位收件者"</string>
 
     <!-- Error message indicating that an audio attachment cannot be played -->
     <string name="cannot_play_audio" msgid="575086601128003093">"無法播放音訊。"</string>
@@ -312,8 +290,6 @@
     <string name="play" msgid="1888432400937785115">"播放"</string>
     <!-- Button text used for editing a slideshow (imperative verb) -->
     <string name="edit" msgid="5912118407791492696">"編輯"</string>
-    <!-- Button for resizing an image used in "image too large" dialog box (imperative verb) -->
-    <string name="resize" msgid="4308912589984220360">"調整大小"</string>
     <!-- Button used for trying to send a message that has some valid recipients and some
          invalid recipients, in spite of the warning presented to the user -->
     <string name="try_to_send" msgid="1996751738286080976">"嘗試傳送"</string>
@@ -415,9 +391,6 @@
     <string name="pref_title_save_location">附件儲存資料夾</string>
     <string name="pref_summary_save_location">用來儲存訊息附件的資料夾</string>
 
-    <!-- Label prepended to recipient's name in Undelivered Messages screen -->
-    <string name="to_label" msgid="2355268818058389047">"給 "</string>
-
     <!-- Confirm Delete -->
     <!-- Delete confirmation dialog title -->
     <string name="confirm_dialog_title" msgid="5810813994465120375">"刪除"</string>
@@ -431,8 +404,6 @@
     <string name="confirm_delete_message" msgid="9121480656609809591">"刪除此簡訊？"</string>
     <!-- Delete message confirmation dialog message for a locked message -->
     <string name="confirm_delete_locked_message" msgid="5863578342246077057">"確定要刪除這個鎖定的訊息嗎？"</string>
-    <!-- Delete entire thread confirmation dialog message -->
-    <string name="confirm_delete_all_messages" msgid="5836389073199814660">"刪除整個會話群組？"</string>
     <!-- Delete all the messages on the SIM dialog message -->
     <string name="confirm_delete_all_SIM_messages" msgid="65701806463341097">"即將刪除 SIM 卡上的所有訊息。"</string>
     <!-- Delete the selected message on the SIM dialog message -->
@@ -486,15 +457,9 @@
 
    <!-- Menu title for editing a message -->
    <string name="menu_edit" msgid="3056513240155967777">"編輯"</string>
-   <!-- Menu title the user can use for trying to resend a message. -->
-   <string name="menu_retry_sending" msgid="3146582005568302643">"重新傳送"</string>
-   <!-- Menu title the user can use for trying to resend all the messages. -->
-   <string name="menu_retry_sending_all" msgid="1870529976966340616">"全部重新傳送"</string>
    <!-- Menu title for deleting undelivered messages or messages on
         the SIM card. -->
    <string name="menu_delete_messages" msgid="2610286783513247420">"刪除簡訊"</string>
-   <!-- Dialog text displayed when trying to resend an unsent message. -->
-   <string name="retrying_dialog_body" msgid="4738260459043003431">"由於連線問題，此簡訊 (<xliff:g id="MESSAGE">%s</xliff:g>) 傳送失敗。"\n"重新傳送中..."</string>
    <!-- Menu title for locking a message -->
    <string name="menu_lock" msgid="136863583207382259">"鎖定訊息"</string>
    <!-- Menu title for unlocking a message -->
@@ -678,17 +643,8 @@
     <!-- Title of the activity that tells the user about storage limits. -->
     <string name="storage_limits_activity" msgid="8810530813311077716">"儲存空間上限"</string>
 
-    <!-- Title of the add-attachment activity. -->
-    <string name="add_attachment_activity" msgid="5324811371129695320">"新增附件："</string>
-
-    <!-- Title of the layout-selector activity. -->
-    <string name="select_layout_activity" msgid="5041916695464513848">"選取版面配置"</string>
-
     <!-- Title of the slide duration editor activity. -->
     <string name="change_duration_activity" msgid="7048606979485031693">"變更長度"</string>
-
-    <!-- Title of the slide text editor activity. -->
-    <string name="edit_text_activity" msgid="5915226413346879213">"編輯文字"</string>
 
     <!-- Title of the slideshow editor activity. -->
     <string name="edit_slideshow_activity" msgid="8751493388760050529">"編輯投影播放"</string>
@@ -696,20 +652,11 @@
     <!-- Title of the slide editor activity. -->
     <string name="edit_slide_activity" msgid="8752829671778696983">"編輯投影片"</string>
 
-    <!-- Title of the number picker activity. -->
-    <string name="pick_numbers_activity" msgid="2083330191224178637">"選擇號碼"</string>
-
     <!-- Title of the slideshow activity. -->
     <string name="slideshow_activity" msgid="5658249461317434432">"投影播放"</string>
 
     <!-- Title of the class-0 message activity. -->
     <string name="class_0_message_activity" msgid="8474176218999130627">"等級 0 訊息"</string>
-
-    <!-- Title of the send-using-MMS activity. -->
-    <string name="send_using_mms_activity" msgid="3703434556280345726">"傳送多媒體訊息…"</string>
-
-    <!-- Title of the select-contact-method activity. -->
-    <string name="select_contact_method_activity" msgid="1743384358979323991">"選取聯絡方式"</string>
 
     <!-- Application name shown when searching -->
     <string name="search_label" msgid="6042598929386174964">"傳送訊息"</string>
@@ -865,7 +812,6 @@
     <string name="gestures_already_present">警告：一個相似的手勢經已關聯到另一個模板！</string>
 
     <!-- Phone goggles -->
-    <string name="toast_phone_goggles">現在不容許您發出簡訊，請稍後再試一次。</string>
     <string name="dialog_phone_goggles_title">簡訊已被封鎖</string>
     <string name="dialog_phone_goggles_title_unlocked">簡訊已被授權</string>
     <string name="dialog_phone_goggles_content">此時此刻發出簡訊似乎並非明智之舉，您確定想要繼續嗎？</string>
