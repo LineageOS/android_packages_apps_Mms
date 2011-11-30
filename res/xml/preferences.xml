@@ -46,7 +46,7 @@
                       android:key="pref_key_sms_delivery_reports"
                       android:summary="@string/pref_summary_sms_delivery_reports"
                       android:title="@string/pref_title_sms_delivery_reports" />
-    <CheckBoxPreference android:defaultValue="true"
+    <CheckBoxPreference android:defaultValue="false"
                       android:key="pref_key_sms_sent_time"
                       android:summary="@string/pref_summary_sms_sent_time_summary"
                       android:title="@string/pref_title_sms_sent_time_title" />
