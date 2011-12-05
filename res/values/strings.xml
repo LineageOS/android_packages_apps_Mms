@@ -780,7 +780,8 @@
     <!-- For debugging: Dialog box text indicating there's a situation where data has unexpectedly
          changed -->
     <string name="error_state_text">The state of threads and recipients is inconsistent. Please capture a bug report and send it to android-sms-bugs@google.com</string>
-
+    <string name="label_mms_push">MMS Push</string>
+    <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Extra settings</string>
 
