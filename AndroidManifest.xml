@@ -300,5 +300,19 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".templates.TemplatesListActivity"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/template_list_title" >
+        </activity>
+
+        <activity android:name=".templates.TemplateEditor"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/template_new_title">
+        </activity>
+        <provider
+            android:name=".templates.TemplatesProvider"
+            android:authorities="com.android.cm.mms" />
+
     </application>
 </manifest>
