@@ -16,20 +16,18 @@
 
 package com.android.mms.templates;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.LoaderManager;
 import android.content.ContentUris;
+import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.content.CursorLoader;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
@@ -41,7 +39,6 @@ import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-import com.android.mms.LogTag;
 import com.android.mms.R;
 import com.android.mms.templates.TemplatesProvider.Template;
 
@@ -51,21 +48,18 @@ public class TemplatesListActivity extends Activity implements
     // codes for dialogs
     private static final int DIALOG_CANCEL_CONFIRM = 2;
 
-    // codes for activity results
-    private static final int TEMPLATE_EDITOR = 1;
-
     private static final int LOAD_TEMPLATES = 1;
-    
+
     private ListView mListView;
 
     private long mTemplateToDeleteId;
-    
+
     private SimpleCursorAdapter mAdapter;
 
     protected void createNewTemplate() {
         final Intent intent = new Intent(this, TemplateEditor.class);
         intent.putExtra(TemplateEditor.KEY_DISPLAY_TYPE, TemplateEditor.DISPLAY_TYPE_NEW_TEMPLATE);
-        startActivityForResult(intent, TEMPLATE_EDITOR);
+        startActivity(intent);
     }
 
     protected void doDeleteTemplate() {
@@ -79,19 +73,7 @@ public class TemplatesListActivity extends Activity implements
         final Intent intent = new Intent(this, TemplateEditor.class);
         intent.putExtra(TemplateEditor.KEY_DISPLAY_TYPE, TemplateEditor.DISPLAY_TYPE_EDIT_TEMPLATE);
         intent.putExtra(TemplateEditor.KEY_TEMPLATE_ID, id);
-        startActivityForResult(intent, TEMPLATE_EDITOR);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        if (requestCode == TEMPLATE_EDITOR) {
-            if (requestCode == RESULT_OK) {
-                //getLoaderManager().restartLoader(LOAD_TEMPLATES, null, this);
-            }
-        }
-
-        super.onActivityResult(requestCode, resultCode, data);
+        startActivity(intent);
     }
 
     @Override
@@ -121,17 +103,19 @@ public class TemplatesListActivity extends Activity implements
         setContentView(R.layout.templates_list);
 
         mListView = (ListView) findViewById(R.id.template_lv);
-        
+
         getLoaderManager().initLoader(LOAD_TEMPLATES, null, this);
-        
+
         mAdapter = new SimpleCursorAdapter(this,
                 android.R.layout.simple_list_item_1, null, new String[] {
-                    Template.TEXT
+                        Template.TEXT
                 }, new int[] {
-                    android.R.id.text1
+                        android.R.id.text1
                 }, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 
         mListView.setAdapter(mAdapter);
+        View emptyView = findViewById(R.id.empty);
+        mListView.setEmptyView(emptyView);
         mListView.setOnItemClickListener(new OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long id) {
@@ -139,11 +123,9 @@ public class TemplatesListActivity extends Activity implements
             }
         });
         
-        ActionBar actionBar = getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         registerForContextMenu(mListView);
-
     }
 
     @Override
@@ -186,7 +168,7 @@ public class TemplatesListActivity extends Activity implements
 
         return super.onCreateDialog(id, args);
     }
-    
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.template_list_menu, menu);
@@ -195,7 +177,7 @@ public class TemplatesListActivity extends Activity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+        switch (item.getItemId()) {
             case R.id.action_template_new:
                 createNewTemplate();
                 break;
@@ -217,7 +199,7 @@ public class TemplatesListActivity extends Activity implements
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
-       mAdapter.swapCursor(null);
+        mAdapter.swapCursor(null);
     }
 
 }

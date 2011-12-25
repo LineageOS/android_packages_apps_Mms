@@ -22,8 +22,6 @@ public class TemplatesProvider extends ContentProvider {
 
     private static final String DB_NAME = "message_templates.db";
 
-    private static final String LOG_TAG = TemplatesProvider.class.getCanonicalName();
-
     private static final String TABLE_NAME = "message_template";
 
     private static final int DB_VERSION = 1;

@@ -64,6 +64,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SqliteWrapper;
 import android.drm.mobile1.DrmException;
@@ -2552,7 +2553,7 @@ public class ComposeMessageActivity extends Activity
                 LogTag.dumpInternalTables(this);
                 break;
             case MENU_ADD_TEMPLATE:
-                showDialog(DIALOG_TEMPLATE_SELECT);
+                startLoadingTemplates();
                 break;
         }
 
@@ -3948,6 +3949,11 @@ public class ComposeMessageActivity extends Activity
         return null;
     }
 
+    private void startLoadingTemplates() {
+        setProgressBarIndeterminateVisibility(true);
+        getLoaderManager().restartLoader(LOAD_TEMPLATES, null, this);
+    }
+
     @Override
     public void onGesturePerformed(GestureOverlayView overlay, Gesture gesture) {
         ArrayList<Prediction> predictions = mLibrary.recognize(gesture);
@@ -3973,6 +3979,7 @@ public class ComposeMessageActivity extends Activity
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+
         if (loader.getId() == LOAD_TEMPLATE_BY_ID) {
             if (data != null && data.getCount() > 0) {
                 data.moveToFirst();
@@ -3980,10 +3987,11 @@ public class ComposeMessageActivity extends Activity
                 mTextEditor.append(text);
             }
         }else{
+            setProgressBarIndeterminateVisibility(false);
             if(data != null && data.getCount() > 0){
+                showDialog(DIALOG_TEMPLATE_SELECT);
                 mTemplatesCursorAdapter.swapCursor(data);
             }else{
-                dismissDialog(DIALOG_TEMPLATE_SELECT);
                 showDialog(DIALOG_TEMPLATE_NOT_AVAILABLE);
             }
         }
@@ -3991,8 +3999,6 @@ public class ComposeMessageActivity extends Activity
 
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
-        // TODO Auto-generated method stub
-
     }
 
     @Override
@@ -4013,9 +4019,7 @@ public class ComposeMessageActivity extends Activity
                     }, new int[] {
                         android.R.id.text1
                     }, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
-                getLoaderManager().initLoader(LOAD_TEMPLATES, null, this);
                 builder.setAdapter(mTemplatesCursorAdapter, new DialogInterface.OnClickListener(){
-
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                        Cursor c = (Cursor) mTemplatesCursorAdapter.getItem(which);

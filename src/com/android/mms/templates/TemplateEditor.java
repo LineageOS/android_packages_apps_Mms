@@ -37,27 +37,6 @@ import com.android.mms.ui.MessagingPreferenceActivity;
 public class TemplateEditor extends Activity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
-    private double mGestureSensitivity;
-
-    public boolean isThereASimilarGesture(Gesture gesture) {
-
-        final GestureLibrary store = TemplateGesturesLibrary.getStore(this);
-        ArrayList<Prediction> predictions = store.recognize(gesture);
-
-        for (Prediction prediction : predictions) {
-            if (prediction.score > mGestureSensitivity) {
-
-                if (editingMode
-                        && prediction.name.equals(String.valueOf(mCurrentTemplateEditingId)))
-                    continue;
-                else
-                    return true;
-            }
-        }
-
-        return false;
-    }
-
     public static final String KEY_DISPLAY_TYPE = "display_type";
 
     public static final String KEY_TEMPLATE_ID = "template_id";
@@ -77,6 +56,8 @@ public class TemplateEditor extends Activity implements
     private long mCurrentTemplateEditingId = -1;
 
     private boolean editingMode = false;
+
+    private double mGestureSensitivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -275,6 +256,25 @@ public class TemplateEditor extends Activity implements
         public void onGestureStarted(GestureOverlayView overlay, MotionEvent event) {
             mGesture = null;
         }
+    }
+
+    public boolean isThereASimilarGesture(Gesture gesture) {
+
+        final GestureLibrary store = TemplateGesturesLibrary.getStore(this);
+        ArrayList<Prediction> predictions = store.recognize(gesture);
+
+        for (Prediction prediction : predictions) {
+            if (prediction.score > mGestureSensitivity) {
+
+                if (editingMode
+                        && prediction.name.equals(String.valueOf(mCurrentTemplateEditingId)))
+                    continue;
+                else
+                    return true;
+            }
+        }
+
+        return false;
     }
 
 }
