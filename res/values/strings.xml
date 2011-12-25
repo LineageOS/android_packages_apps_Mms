@@ -764,10 +764,8 @@
     <string name="template_delete">Delete</string>
     <string name="template_ctx_menu_title">Actions</string>
     <string name="template_list_title">Templates</string>
-    <string name="template_edit_title">Edit template</string>
     <string name="template_new_title">New template</string>
     <string name="template_insert">Insert template</string>
-    <string name="template_insert_ctx_menu_title">Edit text</string>
     <string name="template_gesture_draw">Draw the gesture in the space below</string>
     <string name="template_not_present_error">You have not defined any template</string>
     <string name="template_not_present_error_title">Error</string>

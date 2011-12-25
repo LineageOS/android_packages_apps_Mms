@@ -2435,7 +2435,9 @@ public class ComposeMessageActivity extends Activity
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);    // add to actionbar
         }
 
-        menu.add(0, MENU_ADD_TEMPLATE, 0, R.string.template_insert).setIcon(android.R.drawable.ic_menu_send);
+        menu.add(0, MENU_ADD_TEMPLATE, 0, R.string.template_insert)
+                .setIcon(android.R.drawable.ic_menu_add)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
 
         if (isPreparedForSending()) {
             menu.add(0, MENU_SEND, 0, R.string.send).setIcon(android.R.drawable.ic_menu_send);
