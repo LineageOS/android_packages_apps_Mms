@@ -3735,6 +3735,9 @@ public class ComposeMessageActivity extends Activity
                     // Update the notification for failed messages since they
                     // may be deleted.
                     updateSendFailedNotification();
+                    if (mMsgListAdapter.getCount() == 1) {
+                        finish();
+                    }
                     break;
             }
             // If we're deleting the whole conversation, throw away
