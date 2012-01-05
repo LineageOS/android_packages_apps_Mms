@@ -56,6 +56,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.DialogInterface.OnClickListener;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.Cursor;
@@ -73,6 +74,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
 import android.os.SystemProperties;
+import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.provider.ContactsContract.Contacts;
@@ -465,6 +467,12 @@ public class ComposeMessageActivity extends Activity
         if (!workingMessage.requiresMms() &&
                 (msgCount > 1 ||
                  remainingInCurrentMessage <= CHARS_REMAINING_BEFORE_COUNTER_SHOWN)) {
+            showCounter = true;
+        }
+
+        // Show the counter if the pref_key_show_counter_always preference is TRUE
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if(prefs.getBoolean("pref_key_show_counter_always",false)== true){
             showCounter = true;
         }
 
