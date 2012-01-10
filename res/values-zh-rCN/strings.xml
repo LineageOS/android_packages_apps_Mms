@@ -23,6 +23,7 @@
     <string name="app_label" msgid="1503967887341230795">"信息"</string>
     <string name="new_message" msgid="1530369762346003973">"新信息"</string>
     <string name="create_new_message" msgid="8735943333953093860">"撰写新信息"</string>
+    <string name="menu_mark_all_read">全部标记为已读取</string>
     <string name="menu_call_back" msgid="7538482331117914146">"呼叫<xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_send_email" msgid="671366308915241664">"发送电子邮件至<xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_compose_new" msgid="3763437973691046238">"撰写"</string>
@@ -200,6 +201,7 @@
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"漫游时自动检索"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"漫游时自动检索信息"</string>
     <string name="pref_title_save_location">附件保存文件夹</string>
+    <string name="pref_summary_save_location">保存信息附件的文件夹</string>
     <string name="to_label" msgid="2355268818058389047">"接收者 "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"删除"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"是否删除锁定的讯息？"</string>
@@ -374,7 +376,11 @@
 
     <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">使用原始时间戳</string>
-    <string name="pref_summary_mms_use_sent_timestamp">以收到日期代替发送日期显示并存储</string>
+    <string name="pref_summary_mms_use_sent_timestamp">以发送日期代替接收日期显示并存储</string>
+
+    <!-- Timestamp GMT Corection -->
+    <string name="pref_title_mms_use_sent_timestamp_gmt_correction">使用GMT时间戳</string>
+    <string name="pref_summary_mms_use_sent_timestamp_gmt_correction">如果发送时间戳无GMT时区修正，则开启此项</string>
 
     <!-- Only mobile numbers -->
     <string name="pref_title_only_mobile_numbers">仅显示电话号码</string>
