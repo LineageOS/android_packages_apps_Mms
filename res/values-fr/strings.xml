@@ -388,6 +388,33 @@
     <string name="pref_title_mms_send_on_enter">Envoyer avec entrée</string>
     <string name="pref_summary_mms_send_on_enter">Envoyer le message lorsque la touche entrée est appuyée</string>
 
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">Modèles SMS</string>
+    <string name="pref_title_templates_manage">Modèles</string>
+    <string name="pref_summary_templates_manage">Gérer vos modèles de SMS</string>
+    <string name="pref_title_templates_show_gesture">Geste</string>
+    <string name="pref_summary_templates_show_gesture">Voir la trace du geste</string>
+    <string name="pref_title_template_gestures_sensitivity">Sensibilité des gestes</string>
+    <string name="template_save">Sauvegarder</string>
+    <string name="template_insert_hint">Insérer ici le texte du modèle</string>
+    <string name="template_empty_text">Le champ texte ne peut pas être vide</string>
+    <string name="template_explanation">Insérer ou modifier le texte du modèle et, en option, dessinez un geste à lui associer</string>
+    <string name="template_edit">Modifier</string>
+    <string name="template_delete">Supprimer</string>
+    <string name="template_ctx_menu_title">Actions</string>
+    <string name="template_list_title">Modèles</string>
+    <string name="template_edit_title">Modifier modèle</string>
+    <string name="template_new_title">Nouveau modèle</string>
+    <string name="template_insert">Insérer modèle</string>
+    <string name="template_insert_ctx_menu_title">Modifier texte</string>
+    <string name="template_gesture_draw">Dessinez le geste dans l\'espace ci-dessous</string>
+    <string name="template_not_present_error">Vous n\'avez pas défini de modèle</string>
+    <string name="template_not_present_error_title">Erreur</string>
+    <string name="template_select">Sélectionnez un modèle</string>
+    <string name="template_cancel_confirm_title">Attention</string>
+    <string name="template_cancel_confirm_text">Voulez-vous annuler ?</string>
+    <string name="gestures_already_present">Attention : un geste similaire est associé à un autre modèle</string>
+
     <!-- Phone goggles -->
     <string name="toast_phone_goggles">Vous n\'êtes pas autorisé a envoyer des SMS pour le moment. Veuillez réitérer votre demande plus tard.</string>
     <string name="dialog_phone_goggles_title">Appel bloqué</string>
