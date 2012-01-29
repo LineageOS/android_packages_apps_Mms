@@ -413,7 +413,7 @@
     <string name="template_select">Sélectionnez un modèle</string>
     <string name="template_cancel_confirm_title">Attention</string>
     <string name="template_cancel_confirm_text">Voulez-vous annuler ?</string>
-    <string name="gestures_already_present">Attention : Un geste similaire est associé à un autre modèle</string>
+    <string name="gestures_already_present">Attention : un geste similaire est associé à un autre modèle</string>
 
     <!-- Phone goggles -->
     <string name="toast_phone_goggles">Vous n\'êtes pas autorisé a envoyer des SMS pour le moment. Veuillez réitérer votre demande plus tard.</string>
