@@ -350,8 +350,9 @@
     <string name="sending_message" msgid="222836893217450538">"Идет отправка…"</string>
     <string name="error_state" msgid="5177386717626893507">"Данные были изменены"</string>
     <string name="error_state_text" msgid="5006221625000536698">"Цепочки не соответствуют получателям. Сделайте снимок экрана и отправьте сообщение об ошибке по адресу android-sms-bugs@google.com."</string>
-	
-	<string name="pref_extra_settings">Дополнительные настройки</string>
+    <string name="label_mms_push">Передача MMS</string>
+    <string name="desc_mms_push">Передавать MMS из исходящих в сеть</string>
+    <string name="pref_extra_settings">Дополнительные настройки</string>
     <string name="pref_title_mms_back_to_all_threads">Вернуться ко всем сообщениям</string>
     <string name="pref_summary_mms_back_to_all_threads">По нажатию кнопки назад возвращаться ко всем сообщениям.</string>
     <string name="pref_title_mms_black_background">Чёрный фон</string>
