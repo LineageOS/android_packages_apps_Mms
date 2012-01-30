@@ -52,6 +52,24 @@
       "revId": "8a40cd55d677d0ffe3798d69ed16182fea439cb2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAP3///u4\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 410,
+      "author": {
+        "id": 2602
+      },
+      "writtenOn": "2012-01-30T03:36:57Z",
+      "side": 1,
+      "message": "Désolé je ne suis plus sur ordinateur mais sur un téléphone.  Quel est le problème de compilation afin que je puisse le fixer demain ?",
+      "parentUuid": "AAAAP3///vA\u003d",
+      "revId": "8a40cd55d677d0ffe3798d69ed16182fea439cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
