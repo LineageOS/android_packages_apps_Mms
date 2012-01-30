@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAP3///xQ\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1039
+      },
+      "writtenOn": "2012-01-30T01:49:00Z",
+      "side": 1,
+      "message": "typo sur sensibilité, et geste(s) au pluriel semble plus correct",
+      "revId": "5aba8309c1922f0f4ce8929bfbf13b25e0cc0a1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAP3///xI\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 399,
+      "author": {
+        "id": 1039
+      },
+      "writtenOn": "2012-01-30T01:49:00Z",
+      "side": 1,
+      "message": "le\" texte du modèle\"",
+      "revId": "5aba8309c1922f0f4ce8929bfbf13b25e0cc0a1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAP3///xM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1039
+      },
+      "writtenOn": "2012-01-30T01:49:00Z",
+      "side": 1,
+      "message": "Le \"texte du modèle\"",
+      "revId": "5aba8309c1922f0f4ce8929bfbf13b25e0cc0a1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAP3///xE\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 401,
+      "author": {
+        "id": 1039
+      },
+      "writtenOn": "2012-01-30T01:49:00Z",
+      "side": 1,
+      "message": "texte du modèle",
+      "revId": "5aba8309c1922f0f4ce8929bfbf13b25e0cc0a1e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
