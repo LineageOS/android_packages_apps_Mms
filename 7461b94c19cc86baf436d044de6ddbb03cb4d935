@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7Vs\u003d",
+        "filename": "res/values-nl/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7Yg\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7YY\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2012-03-08T22:03:30Z",
       "side": 1,
       "message": "Moet die hoofdletter daar staan?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Vo\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7YY\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -104,6 +140,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7Vk\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7X8\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7X4\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -121,6 +175,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7Vg\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7X4\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7X0\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -132,6 +204,24 @@
       "writtenOn": "2012-03-08T22:03:30Z",
       "side": 1,
       "message": "\u0027Nee\u0027?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Vc\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7X0\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -172,6 +262,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7Uw\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done. 2 tegen 1 :D",
+      "parentUuid": "AAAAQX//7Xo\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7Xg\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -189,6 +297,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7VY\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7Xg\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7Xc\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -200,6 +326,24 @@
       "writtenOn": "2012-03-08T22:03:30Z",
       "side": 1,
       "message": "Moet hier een hoofdletter?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7VU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7Xc\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -240,6 +384,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7VQ\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7XE\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7Z4\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -251,6 +413,24 @@
       "writtenOn": "2012-03-08T19:19:23Z",
       "side": 1,
       "message": "Heb je deze optie al eens uitgeprobeerd? Als je dit aanvinkt dat komen er in het adresveld bij het schrijven van een nieuw bericht enkel nummers die in je telefoonboek als categorie \"mobiel\" hebben. Heel handig, want dan kan je via t9 een naam typen en krijg je niet alle tel.nrs. van die persoon te zien, maar alleen de nummers uit de categorie mobiel. Als het hierboven in de title niet past, zou ik het toch zeker wel in de summary hieronder toevoegen.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7VM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 371,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Ok :)\nZal aanpassen",
+      "parentUuid": "AAAAQX//7Z4\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -274,6 +454,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7VI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 373,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7W8\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7W0\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -285,6 +483,24 @@
       "writtenOn": "2012-03-08T22:03:30Z",
       "side": 1,
       "message": "Als je begint met \u0027uit\u0027, zou ik zeggen \u0027uit/aan\u0027... Maar dat klinkt ook niet zo mooi.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7VE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Zie of het nu beter is...",
+      "parentUuid": "AAAAQX//7W0\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -308,6 +524,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7VA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7Ww\u003d",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7Ws\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -319,6 +553,24 @@
       "writtenOn": "2012-03-08T22:03:30Z",
       "side": 1,
       "message": "sms-sjablonen*",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7U8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7Ws\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -353,6 +605,24 @@
       "writtenOn": "2012-03-08T22:03:30Z",
       "side": 1,
       "message": "Ik heb liever \u0027weet\u0027 dan \u0027bent\u0027...",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7U0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 416,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T23:21:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7Wk\u003d",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
