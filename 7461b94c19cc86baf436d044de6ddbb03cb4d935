@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAQX//7Z4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 371,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-03-08T19:19:23Z",
+      "side": 1,
+      "message": "Heb je deze optie al eens uitgeprobeerd? Als je dit aanvinkt dat komen er in het adresveld bij het schrijven van een nieuw bericht enkel nummers die in je telefoonboek als categorie \"mobiel\" hebben. Heel handig, want dan kan je via t9 een naam typen en krijg je niet alle tel.nrs. van die persoon te zien, maar alleen de nummers uit de categorie mobiel. Als het hierboven in de title niet past, zou ik het toch zeker wel in de summary hieronder toevoegen.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
