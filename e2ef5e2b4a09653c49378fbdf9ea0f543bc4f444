@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7b8\u003d",
+        "filename": "res/values-nl/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Is different in Belgium then.... Will change it back",
+      "parentUuid": "AAAAQX//7do\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7dk\u003d",
         "filename": "res/values-nl/arrays.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "1 (meest gevoelig) - 12 (minst gevoelig)?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7b4\u003d",
+        "filename": "res/values-nl/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Is omgekeerd -.-\nZal hierna CMParts doen en het daar ook aanpassen",
+      "parentUuid": "AAAAQX//7dk\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7b0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7dg\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7dY\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "Is het voor de consistentie niet beter hier dan \"Converteren naar SMS-bericht\\2026\" van te maken?\n\nMisschien ook goed om consequent SMS/MMS met hoofdletter te doen?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bw\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Was hier ook over aan het denken. Blijkt dat het officieel sms en MMS is :/",
+      "parentUuid": "AAAAQX//7dY\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -104,6 +176,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7bs\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Bij instellingen \u003e geluid staat het zoals hier :/ voorstel klinkt idd veel beter...",
+      "parentUuid": "AAAAQX//7dQ\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7dM\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -115,6 +205,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "SMS-bericht?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bo\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7dM\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -155,6 +263,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7bk\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 348,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7dE\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7dA\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -166,6 +292,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "de \\n moet volgens mij buiten de \" zitten (\"\\n\") (8 regels hieronder heb je dat wel correct gedaan).",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bg\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 358,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7dA\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -189,6 +333,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7bc\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7c8\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7c4\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -200,6 +362,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "MMS\u0027en -\u003e MMS?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bY\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7c4\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -223,6 +403,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7bU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 369,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7c0\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7cw\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -234,6 +432,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "voor -\u003e bij?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bQ\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 372,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7cw\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -257,6 +473,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7bM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7cs\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7co\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -268,6 +502,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "mobiele telefoonnummers?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "te lang. En zegt ook niet veel meer...\nElk nummer da sms-berichten verstuurd is goed :/",
+      "parentUuid": "AAAAQX//7co\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -308,6 +560,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7bE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "te lang. Heb gewoon aanvullen genomen.",
+      "parentUuid": "AAAAQX//7cg\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7cc\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -319,6 +589,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "\"Laat automatische aanvulling van e-mailadressen toe\"?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7bA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7cc\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -342,6 +630,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7a8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7cY\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7cU\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -353,6 +659,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "ik zou aan/uit omdraaien: \"aan, uit, aan, uit\" - trillen begint met aan",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7as\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 393,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Nee, eerste is uit.",
+      "parentUuid": "AAAAQX//7cU\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -376,6 +700,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7aw\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7cQ\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7cM\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -387,6 +729,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "\"Verzend het bericht als op enter wordt gedrukt\"",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7ao\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 396,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAQX//7cM\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -410,6 +770,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAQX//7a4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "Zag de fout nog ni :P. Done",
+      "parentUuid": "AAAAQX//7cI\u003d",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7cE\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -421,6 +799,24 @@
       "writtenOn": "2012-03-08T16:38:23Z",
       "side": 1,
       "message": "\"Maak of bewerk sjabloon en teken eventueel een gebaar en voeg dit toe\"?",
+      "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7a0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 407,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-08T17:38:21Z",
+      "side": 1,
+      "message": "\"Maak of bewerk sjabloon. Teken eventueel een gebaar om hieraan toe te wijzen.\"?",
+      "parentUuid": "AAAAQX//7cE\u003d",
       "revId": "e2ef5e2b4a09653c49378fbdf9ea0f543bc4f444",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
