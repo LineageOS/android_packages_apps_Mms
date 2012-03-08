@@ -2,6 +2,244 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAQX//7Yg\u003d",
+        "filename": "res/values-nl/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Staan al deze smileys niet in res/values/arrays.xml? Want anders kunnen deze gewoon weg.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7YY\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Moet die hoofdletter daar staan?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7YU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Staat deze regel niet precies hetzelfde in res/values/strings.xml?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7YM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Staat deze niet precies hetzelfde in res/values/strings.xml?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7YI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Staat deze niet precies hetzelfde in res/values/strings.xml?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7X8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Verwijderen (net zoals hieronder)?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7X4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "\u0027Ja\u0027?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7X0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "\u0027Nee\u0027?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Xs\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Volgens mij wordt \u0027herstellen\u0027 meer gebruikt dan \u0027terugzetten\u0027 in CM...",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Xo\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Volgens mij wordt \u0027mms\u0027 nu ook zonder hoofdletters geschreven (zie: http://nl.wikipedia.org/wiki/Multimedia_Messaging_Service).",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Xg\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Ik denk dat \u0027indien\u0027 hier wel weg mag.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Xc\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Moet hier een hoofdletter?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7XU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Staat hetzelfde niet in res/values/strings.xml?",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7XE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "applicatie* (GB)",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAQX//7Z4\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -13,6 +251,108 @@
       "writtenOn": "2012-03-08T19:19:23Z",
       "side": 1,
       "message": "Heb je deze optie al eens uitgeprobeerd? Als je dit aanvinkt dat komen er in het adresveld bij het schrijven van een nieuw bericht enkel nummers die in je telefoonboek als categorie \"mobiel\" hebben. Heel handig, want dan kan je via t9 een naam typen en krijg je niet alle tel.nrs. van die persoon te zien, maar alleen de nummers uit de categorie mobiel. Als het hierboven in de title niet past, zou ik het toch zeker wel in de summary hieronder toevoegen.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7W8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 373,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Ik heb liever \u0027staat\u0027 dan \u0027laat\u0027 (wordt volgens mij ook meer gebruikt in CM).",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7W0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Als je begint met \u0027uit\u0027, zou ik zeggen \u0027uit/aan\u0027... Maar dat klinkt ook niet zo mooi.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Ww\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Sms-sjablonen*",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Ws\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "sms-sjablonen*",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Wo\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Ik heb liever geen uitroepteken.",
+      "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Wk\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 416,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-03-08T22:03:30Z",
+      "side": 1,
+      "message": "Ik heb liever \u0027weet\u0027 dan \u0027bent\u0027...",
       "revId": "7461b94c19cc86baf436d044de6ddbb03cb4d935",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
