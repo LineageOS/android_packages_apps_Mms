@@ -23,7 +23,7 @@
     <item msgid="5037069969500587717">":-("</item>
     <item msgid="1706022067142803863">";-)"</item>
     <item msgid="1248733150365342132">":-P"</item>
-    <item msgid="817475806953665071">"Err:502"</item>
+    <item msgid="817475806953665071">"=-O"</item>
     <item msgid="2791428909459014455">":-*"</item>
     <item msgid="3521914049512875091">":O"</item>
     <item msgid="1245726345240784103">"B-)"</item>
@@ -55,5 +55,44 @@
     <item msgid="850324578089267455">"Lippen op elkaar"</item>
     <item msgid="6334637439528489607">"Lachend"</item>
     <item msgid="7602915122893958066">"Verward"</item>
+  </string-array>
+  <string-array name="pref_mms_user_agent_entries">
+    <item>Standaard Android</item>
+    <item>Nokia N95</item>
+    <item>iPhone (3.0)</item>
+    <item>BlackBerry 8800</item>
+    <item>Sony Ericsson W800i</item>
+    <item>SoftBank X01T</item>
+    <item>@string/pref_mms_custom_option</item>
+  </string-array>
+  <string-array name="pref_mms_message_font_size_entries">
+    <item>10</item>
+    <item>12</item>
+    <item>14</item>
+    <item>16</item>
+    <item>18 (standaard)</item>
+    <item>20</item>
+  </string-array>
+  <string-array name="pref_mms_notification_vibrate_pattern_entries">
+    <item>Normaal</item>
+    <item>Gemiddeld trillen</item>
+    <item>Lang trillen</item>
+    <item>Meerdere kort</item>
+    <item>Meerdere lang</item>
+    <item>@string/pref_mms_custom_option</item>
+  </string-array>
+  <string-array name="pref_templates_gestures_sensitivity_entries">
+    <item>1 (minst gevoelig)</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12 (gevoeligst)</item>
   </string-array>
 </resources>
