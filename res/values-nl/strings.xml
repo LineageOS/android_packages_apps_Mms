@@ -109,9 +109,9 @@
     <string name="cannot_send_message" msgid="3918913277571649400">"Kan dit bericht niet verzenden"</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"Uw bericht heeft geen geldige ontvangers."</string>
     <string name="cannot_forward_drm_obj" msgid="84606990079390099">"Het DRM-object in het bericht kan niet worden doorgestuurd."</string>
-    <string name="cannot_find_contact">"Het contactpersoon dat u heeft geselecteerd kan niet worden toegevoegd."</string>
+    <string name="cannot_find_contact">"De geselecteerde contactpersoon kon niet worden toegevoegd."</string>
     <string name="converting_to_picture_message" msgid="2980023239017588627">"Converteren naar MMS-bericht\u2026"</string>
-    <string name="converting_to_text_message" msgid="6374423235426015422">"Converteren naar sms\u2026"</string>
+    <string name="converting_to_text_message" msgid="6374423235426015422">"Converteren naar sms-bericht\2026"</string>
     <string name="cannot_add_slide_anymore" msgid="8437666385579890987">"Kan geen dia\'s meer toevoegen."</string>
     <string name="cannot_add_picture_and_video" msgid="4721981351130823908">"Kan video en afbeelding niet toevoegen aan dezelfde dia."</string>
     <string name="cannot_save_message" msgid="5026354972915392301">"Bericht kan niet worden opgeslagen."</string>
@@ -217,7 +217,7 @@
     <string name="cannot_get_details" msgid="6493664168168047746">"Kan details niet ophalen"</string>
     <string name="message_details_title" msgid="9223295113731634528">"Berichtdetails"</string>
     <string name="message_type_label" msgid="7975373966795945566">"Type: "</string>
-    <string name="text_message" msgid="8196464345251877972">"Sms"</string>
+    <string name="text_message" msgid="8196464345251877972">"Sms-bericht"</string>
     <string name="multimedia_message" msgid="1512644521083533071">"MMS-bericht"</string>
     <string name="multimedia_notification" msgid="4124031788554972308">"Melding van MMS"</string>
     <string name="from_label" msgid="2055117571548171397">"Van: "</string>
@@ -263,7 +263,7 @@
     <string name="attach_sound" msgid="3149325985970669609">"Audio"</string>
     <string name="attach_record_sound" msgid="6011431304469858929">"Audio opnemen"</string>
     <string name="attach_slideshow" msgid="3497422151091037063">"Diavoorstelling"</string>
-    <string name="attach_contact_info">"Contact informatie"</string>
+    <string name="attach_contact_info">"Contactinformatie"</string>
     <string name="select_bottom_text" msgid="4201966447623311931">"Tekst onderaan"</string>
     <string name="select_top_text" msgid="6734183477539197815">"Tekst bovenaan"</string>
     <string name="delivery_toast_body" msgid="4478305651728684364">"Bericht ontvangen door %s"</string>
@@ -350,40 +350,30 @@
     <string name="label_mms_push">"MMS forceren"</string>
     <string name="desc_mms_push">"Forceer MMS van postvak uit naar het netwerk"</string>
     <string name="pref_extra_settings">"Extra instellingen"</string>
-
     <string name="pref_title_mms_back_to_all_threads">"Terug naar conversaties"</string>
     <string name="pref_summary_mms_back_to_all_threads">"Ga altijd naar alle conversaties als de terugknop word ingedrukt"</string>
-
     <string name="pref_title_mms_black_background">"Donkere achtergrond"</string>
-    <string name="pref_summary_mms_black_background">"Maak de achtergrond donker\n(Herstart de app)"</string>
-
+    <string name="pref_summary_mms_black_background">"Maak de achtergrond donker"\n"(Herstart de app)"</string>
     <string name="pref_title_show_counter_always">"Toon aantal karakters"</string>
     <string name="pref_summary_show_counter_always">"Toon altijd het aantal karakters bij het opstellen van een sms"</string>
-
-    <string name="pref_mms_custom_option">"Anders.."</string>
+    <string name="pref_mms_custom_option">"Anders\u2026"</string>
     <string name="pref_title_mms_user_agent">"Aangepaste useragent"</string>
-    <string name="pref_summary_mms_user_agent">"Laat uw gsm zich voordoen als een ander model voor het verzenden van MMS'en"</string>
+    <string name="pref_summary_mms_user_agent">"Laat uw gsm zich voordoen als een ander model voor het verzenden van MMS-berichten"</string>
     <string name="pref_mms_user_agent_custom_set">"Aangepaste useragent ingesteld op:"\n</string>
-
     <string name="pref_title_mms_full_timestamp">"Volledige tijdsaanduiding"</string>
-    <string name="pref_summary_mms_full_timestamp">"Laat zowel de datum als de tijd van zien bij berichten"</string>
+    <string name="pref_summary_mms_full_timestamp">"Laat zowel de datum als de tijd zien bij berichten"</string>
 
     <string name="pref_title_mms_use_sent_timestamp">"Gebruik zendtijdstip"</string>
-    <string name="pref_summary_mms_use_sent_timestamp">"Laat het tijdstip van verzenden zien voor ontvangen berichten."</string>
-
+    <string name="pref_summary_mms_use_sent_timestamp">"Laat het tijdstip van verzenden zien bij ontvangen berichten."</string>
     <string name="pref_title_mms_use_sent_timestamp_gmt_correction">"Zendtijdstip GMT"</string>
-    <string name="pref_summary_mms_use_sent_timestamp_gmt_correction">"Gebruik dit als de operator zijn zendtijdstip nog niet aangepast is aan de tijdzone"</string>
-
+    <string name="pref_summary_mms_use_sent_timestamp_gmt_correction">"Gebruik dit als de operator zijn zendtijdstip nog niet aangepast is aan de GTM tijdzone"</string>
     <string name="pref_title_only_mobile_numbers">"Enkel telefoonnummers"</string>
     <string name="pref_summary_only_mobile_numbers">"Laat enkel het telefoonnummer van de ontvanger zien"</string>
-
-    <string name="pref_title_mms_email_addr_completion">"E-mail vervollediging"</string>
-    <string name="pref_summary_mms_email_addr_completion">"Laat e-mailadres autoaanvulling van ontvangers toe"</string>
-
-    <string name="pref_title_mms_message_font_size">"Bericht lettergrootte"</string>
+    <string name="pref_title_mms_email_addr_completion">"E-mail aanvullen"</string>
+    <string name="pref_summary_mms_email_addr_completion">"Laat automatische aanvulling van e-mailadressen als ontvanger toe"</string>
+    <string name="pref_title_mms_message_font_size">"Lettergrootte bericht"</string>
     <string name="pref_summary_mms_message_font_size">"Kies de lettergrootte voor het lezen van berichten"</string>
     <string name="pref_dialogtitle_mms_message_font_size">"Kies lettergrootte"</string>
-
     <string name="pref_title_mms_notification_vibrate_settings">"Trilinstellingen"</string>
     <string name="pref_title_mms_notification_vibrate_pattern">"Trilpatroon"</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">"Kies trilpatroon"</string>
@@ -391,9 +381,8 @@
     <string name="pref_summary_mms_notification_vibrate_call">"Laat trillen toe tijdens een gesprek"</string>
     <string name="pref_title_mms_notification_vibrate_custom">"Ander trilpatroon"</string>
     <string name="pref_text_mms_notification_vibrate_custom">"Steeds aan/uit in milliseconden: uit, aan, uit, aan\u2026"</string>
-
-    <string name="pref_title_mms_send_on_enter">"Verstuur op enter"</string>
-    <string name="pref_summary_mms_send_on_enter">"Laat toe het bericht te verzenden als op enter wordt gedrukt"</string>
+    <string name="pref_title_mms_send_on_enter">"Verstuur bij enter"</string>
+    <string name="pref_summary_mms_send_on_enter">"Verzend het bericht als op enter wordt gedrukt"</string>
 
     <string name="prefs_templates_settings">"Sms sjablonen"</string>
     <string name="pref_title_templates_manage">"Sjablonen"</string>
@@ -401,10 +390,10 @@
     <string name="pref_title_templates_show_gesture">"Gebaren"</string>
     <string name="pref_summary_templates_show_gesture">"Laat gebarenpaden zien"</string>
     <string name="pref_title_template_gestures_sensitivity">"Gevoeligheid"</string>
-    <string name="template_save">"Opstaan"</string>
+    <string name="template_save">"Opslaan"</string>
     <string name="template_insert_hint">"Voer hier de sjabloontekst in"</string>
     <string name="template_empty_text">"Tekstveld mag niet leeg zijn"</string>
-    <string name="template_explanation">"Voer sjabloon in of bewerk het. Eventueel kan u ook een gebaar tekenen dit sjabloon."</string>
+    <string name="template_explanation">"Maak of bewerk sjabloon. Teken eventueel een gebaar om hieraan toe te wijzen."</string>
     <string name="template_edit">"Bewerk"</string>
     <string name="template_delete">"Verwijder"</string>
     <string name="template_ctx_menu_title">"Acties"</string>
