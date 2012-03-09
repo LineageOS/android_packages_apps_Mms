@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARH///6s\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-03-09T18:11:22Z",
+      "side": 1,
+      "message": "Aangezien dit in het onderwerpveld van een mms komt zonder onderwerp is geen het eerste woord, moet dat dan geen hoofdletter zijn?",
+      "revId": "52a207dd985b9ec8a3464cb612c939b9bb64624a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARH///6U\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-03-09T18:11:22Z",
+      "side": 1,
+      "message": "Zie vorige opmerking over hoofdletter.",
+      "revId": "52a207dd985b9ec8a3464cb612c939b9bb64624a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
