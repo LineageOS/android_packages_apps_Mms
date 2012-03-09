@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAQX//7TM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "Steeds Thread(s) \u003d\u003e Conversatie(s)?",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7TI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "Hier dan ook altijd opteren voor \u0027mms\u0027?",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7TE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "sms-bericht",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7TA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "\u0027Ja\u0027 en \u0027Nee\u0027?",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7Ss\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 332,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "Tussenletter of niet? Mss \u0027Sms-teller\u0027",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7S8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "\u0027Gebruik zendtijdstip\u0027 of \u0027Gebruik zendtijd\u0027?",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//7S4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 361,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-09T00:26:08Z",
+      "side": 1,
+      "message": "Liever tijd of tijd(s)aanduiding dan dan datum (kan ook met seconden/weet niet van tussenletter)",
+      "revId": "a673d6f9cd81352a6f3fd1044f2501d70a1a3717",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
