@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAARH///0M\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-10T00:16:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAARH///6s\u003d",
+      "revId": "52a207dd985b9ec8a3464cb612c939b9bb64624a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAARH///6U\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 3
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAARH///0I\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-10T00:16:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAARH///6U\u003d",
+      "revId": "52a207dd985b9ec8a3464cb612c939b9bb64624a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAARH///5M\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 3
@@ -47,6 +83,24 @@
       "writtenOn": "2012-03-09T21:01:55Z",
       "side": 1,
       "message": "Misschien wat makkelijker maken voor de gebruikers door te zeggen:\n\u0027Verstuur een e-mail hierover naar android-sms-bugs@google.com\u0027?",
+      "revId": "52a207dd985b9ec8a3464cb612c939b9bb64624a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARH///0E\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 348,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-03-10T00:16:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAARH///5M\u003d",
       "revId": "52a207dd985b9ec8a3464cb612c939b9bb64624a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
