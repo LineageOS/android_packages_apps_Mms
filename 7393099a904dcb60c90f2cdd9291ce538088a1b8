@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARH///aQ\u003d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-03-11T20:52:55Z",
+      "side": 1,
+      "message": "Just in future, you don\u0027t need to say \"this removes\" or \"for the user\". Main commit messages should be as short as possible.\n\n\"Remove ability to change SMS split options\"",
+      "revId": "7393099a904dcb60c90f2cdd9291ce538088a1b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
