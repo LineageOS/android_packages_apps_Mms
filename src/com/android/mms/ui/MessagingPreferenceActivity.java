@@ -78,6 +78,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
 
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;
+    private CheckBoxPreference mSmsSplitCounterPref;
     private Preference mMmsLimitPref;
     private Preference mMmsDeliveryReportPref;
     private Preference mMmsReadReportPref;
@@ -99,6 +100,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
         mManageSimPref = findPreference("pref_key_manage_sim_messages");
         mSmsLimitPref = findPreference("pref_key_sms_delete_limit");
         mSmsDeliveryReportPref = findPreference("pref_key_sms_delivery_reports");
+        mSmsSplitCounterPref = (CheckBoxPreference) findPreference("pref_key_sms_split_counter");
         mMmsDeliveryReportPref = findPreference("pref_key_mms_delivery_reports");
         mMmsReadReportPref = findPreference("pref_key_mms_read_reports");
         mMmsLimitPref = findPreference("pref_key_mms_delete_limit");
@@ -134,6 +136,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
             PreferenceCategory smsCategory =
                 (PreferenceCategory)findPreference("pref_key_sms_settings");
             smsCategory.removePreference(mSmsDeliveryReportPref);
+        }
+
+        if (!MmsConfig.getMultipartSmsEnabled()) {
+            // SMS Split disabled, remove SplitCounter pref
+            PreferenceCategory smsCategory =
+                (PreferenceCategory)findPreference("pref_key_sms_settings");
+            smsCategory.removePreference(mSmsSplitCounterPref);
         }
 
         if (!MmsConfig.getMmsEnabled()) {
