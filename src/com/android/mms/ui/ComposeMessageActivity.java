@@ -371,7 +371,7 @@ public class ComposeMessageActivity extends Activity
 
                     // Try normalizing the character into Unicode NFKD form.
                     // This splits most accented characters into their base
-                    // character and a diacritic mark character, which can be
+                    // character and diacritic mark character(s), which can be
                     // stripped out with a regex. It also expands some ligatures
                     // into their component pair of characters.
                     s = Normalizer.normalize(s, Normalizer.Form.NFKD);
@@ -1838,7 +1838,7 @@ public class ComposeMessageActivity extends Activity
         LengthFilter lengthFilter = new LengthFilter(MmsConfig.getMaxTextLimit());
 
         if (stripUnicode) {
-            mTextEditor.setFilters(new InputFilter[] { lengthFilter, new StripUnicode() });
+            mTextEditor.setFilters(new InputFilter[] { new StripUnicode(), lengthFilter });
         } else {
             mTextEditor.setFilters(new InputFilter[] { lengthFilter });
         }
