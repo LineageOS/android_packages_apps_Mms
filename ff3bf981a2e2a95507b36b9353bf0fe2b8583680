@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARX///nc\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 596,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-03-17T17:16:39Z",
+      "side": 1,
+      "message": "Why not just change the \"null\" to some default value??",
+      "revId": "ff3bf981a2e2a95507b36b9353bf0fe2b8583680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
