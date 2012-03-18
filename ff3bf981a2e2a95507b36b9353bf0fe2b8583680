@@ -52,6 +52,24 @@
       "revId": "ff3bf981a2e2a95507b36b9353bf0fe2b8583680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX///gY\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 596,
+      "author": {
+        "id": 2958
+      },
+      "writtenOn": "2012-03-18T01:33:44Z",
+      "side": 1,
+      "message": "It doesn\u0027t really, other than it will be garbage collected right away since that value is only used in the .equals() call. Why use extra memory when you don\u0027t need to is all I thought. Also, having a constant executing the .equals() is just \"safer\".",
+      "parentUuid": "AAAARX///gk\u003d",
+      "revId": "ff3bf981a2e2a95507b36b9353bf0fe2b8583680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
