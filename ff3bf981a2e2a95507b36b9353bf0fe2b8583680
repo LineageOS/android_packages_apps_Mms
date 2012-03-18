@@ -34,6 +34,24 @@
       "revId": "ff3bf981a2e2a95507b36b9353bf0fe2b8583680",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX///gk\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 596,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-03-18T01:24:52Z",
+      "side": 1,
+      "message": "Why does it matter about creating an extra object?",
+      "parentUuid": "AAAARX///jQ\u003d",
+      "revId": "ff3bf981a2e2a95507b36b9353bf0fe2b8583680",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
