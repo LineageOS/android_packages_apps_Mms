@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARX//+WY\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-03-23T23:02:06Z",
+      "side": 1,
+      "message": "\"Anstatt Empfangszeitpunkt den Sendezeitpunkt der Nachricht anzeigen und speichern\"",
+      "revId": "6fde6b60439a0f5e89bd5dd95a7d89be66d7b569",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX//+WU\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 353,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-03-23T23:02:06Z",
+      "side": 1,
+      "message": "Leading \"Das\" could be removed",
+      "revId": "6fde6b60439a0f5e89bd5dd95a7d89be66d7b569",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX//+WQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 358,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-03-23T23:02:06Z",
+      "side": 1,
+      "message": "Maybe it\u0027s just me, but I would use a hyphen there - \"SMS-Vorlagen\"",
+      "revId": "6fde6b60439a0f5e89bd5dd95a7d89be66d7b569",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX//+WE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-03-23T23:02:06Z",
+      "side": 1,
+      "message": "\"Es ist keine ...\" - we don\u0027t say \"Du\" anywhere else, do we?",
+      "revId": "6fde6b60439a0f5e89bd5dd95a7d89be66d7b569",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX//+WA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-03-23T23:02:06Z",
+      "side": 1,
+      "message": "Just \"Vorlage auswählen\"",
+      "revId": "6fde6b60439a0f5e89bd5dd95a7d89be66d7b569",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARX//+V8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-03-23T23:02:06Z",
+      "side": 1,
+      "message": "Just \"Aktion abbrechen?\"",
+      "revId": "6fde6b60439a0f5e89bd5dd95a7d89be66d7b569",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
