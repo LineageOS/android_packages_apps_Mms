@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAARn///FY\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 547,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-03-31T15:05:50Z",
+      "side": 1,
+      "message": "This will be done through custom led notifications.",
+      "revId": "5440012f6dc9a006d632eeff8c8a4b88d9747c1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
