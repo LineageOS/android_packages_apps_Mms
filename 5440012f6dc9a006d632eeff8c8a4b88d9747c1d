@@ -16,6 +16,24 @@
       "revId": "5440012f6dc9a006d632eeff8c8a4b88d9747c1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAARn///Ag\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 547,
+      "author": {
+        "id": 1424
+      },
+      "writtenOn": "2012-04-01T01:44:50Z",
+      "side": 1,
+      "message": "Definitely, but the app should contain a default for the sake of modularity. (FWIW, I\u0027m using this on stock 4.0.4 until RCs are out.) I\u0027ve no familiarity with the CMSettings override system - is there a better way to make it default to green?",
+      "parentUuid": "AAAARn///FY\u003d",
+      "revId": "5440012f6dc9a006d632eeff8c8a4b88d9747c1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
