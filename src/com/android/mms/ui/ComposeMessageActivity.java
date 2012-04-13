@@ -127,7 +127,9 @@ import android.view.View.OnKeyListener;
 import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -165,6 +167,7 @@ import com.android.mms.templates.TemplatesProvider.Template;
 import com.android.mms.transaction.MessagingNotification;
 import com.android.mms.ui.MessageUtils.ResizeImageResultCallback;
 import com.android.mms.ui.RecipientsEditor.RecipientContextMenuInfo;
+import com.android.mms.util.EmojiParser;
 import com.android.mms.util.SendingProgressTokenManager;
 import com.android.mms.util.SmileyParser;
 
@@ -237,7 +240,8 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_PREFERENCES           = 31;
 
     private static final int MENU_ADD_TEMPLATE          = 32;
-
+    private static final int MENU_INSERT_EMOJI         = 33;
+    
     private static final int DIALOG_TEMPLATE_SELECT     = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
 
@@ -301,6 +305,7 @@ public class ComposeMessageActivity extends Activity
     private WorkingMessage mWorkingMessage;         // The message currently being composed.
 
     private AlertDialog mSmileyDialog;
+    private AlertDialog mEmojiDialog;
     private ProgressDialog mProgressDialog;
 
     private boolean mWaitingForSubActivity;
@@ -2537,6 +2542,12 @@ public class ComposeMessageActivity extends Activity
         if (!mWorkingMessage.hasSlideshow()) {
             menu.add(0, MENU_INSERT_SMILEY, 0, R.string.menu_insert_smiley).setIcon(
                     R.drawable.ic_menu_emoticons);
+            SharedPreferences prefs = PreferenceManager
+					.getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
+			boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
+			if (enableEmojis) {
+				menu.add(0, MENU_INSERT_EMOJI, 0, R.string.menu_insert_emoji);
+			}
         }
 
         if (mMsgListAdapter.getCount() > 0) {
@@ -2620,6 +2631,9 @@ public class ComposeMessageActivity extends Activity
             case MENU_INSERT_SMILEY:
                 showSmileyDialog();
                 break;
+            case MENU_INSERT_EMOJI:
+    			showEmojiDialog();
+    			break;
             case MENU_VIEW_CONTACT: {
                 // View the contact for the first (and only) recipient.
                 ContactList list = getRecipients();
@@ -3259,7 +3273,15 @@ public class ComposeMessageActivity extends Activity
 
         // TextView.setTextKeepState() doesn't like null input.
         if (text != null) {
-            mTextEditor.setTextKeepState(text);
+        	// Restore the emojis if necessary
+			SharedPreferences prefs = PreferenceManager
+					.getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
+			boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
+			if (enableEmojis) {
+				mTextEditor.setTextKeepState(EmojiParser.getInstance().addSmileySpans(text));
+			} else {
+				mTextEditor.setTextKeepState(text);
+			}
         } else {
             mTextEditor.setText("");
         }
@@ -3975,6 +3997,68 @@ public class ComposeMessageActivity extends Activity
 
         mSmileyDialog.show();
     }
+    
+    private void showEmojiDialog() {
+		if (mEmojiDialog == null) {
+			int[] icons = EmojiParser.DEFAULT_EMOJI_RES_IDS;
+			final String[] texts = getResources().getStringArray(EmojiParser.DEFAULT_EMOJI_TEXTS);
+
+			final int N = icons.length;
+
+			List<Map<String, ?>> entries = new ArrayList<Map<String, ?>>();
+			for (int i = 0; i < N; i++) {
+				// We might have different ASCII for the same icon, skip it if
+				// the icon is already added.
+				boolean added = false;
+				for (int j = 0; j < i; j++) {
+					if (icons[i] == icons[j]) {
+						added = true;
+						break;
+					}
+				}
+				if (!added) {
+					HashMap<String, Object> entry = new HashMap<String, Object>();
+
+					entry.put("icon", icons[i]);
+					// entry. put("name", names[i]);
+					entry.put("text", texts[i]);
+
+					entries.add(entry);
+				}
+			}
+
+			GridView gridView = new GridView(this);
+			gridView.setNumColumns(GridView.AUTO_FIT);
+			gridView.setColumnWidth(60);
+			// gridView.setHorizontalSpacing(16);
+			// gridView.setVerticalSpacing(16);
+			gridView.setGravity(0x11);
+			// gridView.setStretchMode(GridView.NO_STRETCH);
+			gridView.setAdapter(new ImageAdapter(this, icons));
+			gridView.setOnItemClickListener(new OnItemClickListener() {
+				public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+					CharSequence emoji = EmojiParser.getInstance().addSmileySpans(texts[position]);
+					if (mSubjectTextEditor != null && mSubjectTextEditor.hasFocus()) {
+						mSubjectTextEditor.append(emoji);
+					} else {
+						mTextEditor.append(emoji);
+					}
+					mEmojiDialog.dismiss();
+				}
+			});
+
+			AlertDialog.Builder b = new AlertDialog.Builder(this);
+
+			b.setTitle(getString(R.string.menu_insert_emoji));
+
+			b.setCancelable(true);
+			b.setView(gridView);
+
+			mEmojiDialog = b.create();
+		}
+
+		mEmojiDialog.show();
+	}
 
     public void onUpdate(final Contact updated) {
         // Using an existing handler for the post, rather than conjuring up a new one.
