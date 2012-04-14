@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASX///jo\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-04-14T15:27:12Z",
+      "side": 1,
+      "message": "You should go over all these files and ensure that there is no extra whitespaces (red).",
+      "revId": "b58ac271122c03005782358a7e0867bf71fb567a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASX///jk\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-04-14T15:27:12Z",
+      "side": 1,
+      "message": "Also, you should ensure that the indentation is in 4 spaces, and not in tabs.\nRef: http://source.android.com/source/code-style.html#use-spaces-for-indentation",
+      "revId": "b58ac271122c03005782358a7e0867bf71fb567a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASX///jg\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-04-14T15:27:12Z",
+      "side": 1,
+      "message": "Same thing about extra whitespaces in this file as well :)",
+      "revId": "b58ac271122c03005782358a7e0867bf71fb567a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASX///jQ\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 2636,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-04-14T15:27:12Z",
+      "side": 1,
+      "message": "Indentation.",
+      "revId": "b58ac271122c03005782358a7e0867bf71fb567a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASX///jU\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 3277,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-04-14T15:27:12Z",
+      "side": 1,
+      "message": "This section should be indented.",
+      "revId": "b58ac271122c03005782358a7e0867bf71fb567a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASX///jM\u003d",
+        "filename": "src/com/android/mms/util/EmojiParser.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-04-14T15:27:12Z",
+      "side": 1,
+      "message": "This file is tab indented, should be spaces.",
+      "revId": "b58ac271122c03005782358a7e0867bf71fb567a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
