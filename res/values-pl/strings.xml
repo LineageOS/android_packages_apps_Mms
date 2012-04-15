@@ -173,6 +173,8 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Wibracje również przy powiadomieniu"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Wybierz dzwonek"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Ustaw liczbę zapisywanych wiadomości"</string>
+    <string name="pref_title_sms_split_counter">Wskaźnik podziału</string>
+    <string name="pref_summary_sms_split_counter">Dodaje wskaźnik do wiadomości np. (1/2)</string>
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"Zawsze"</item>
     <item msgid="6069709696037750627">"Tylko po wyciszeniu"</item>
@@ -328,4 +330,41 @@
     <item quantity="other" msgid="7338580381574463136">"Osoby: <xliff:g id="NUMBER">%1$s</xliff:g>"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Czy zatrzymać podwójne powiadomienia SMS z domyślnej aplikacji SMS?"</string>
+    <string name="prefs_templates_settings">Szablony sms</string>
+    <string name="pref_title_templates_manage">Szablony</string>
+    <string name="pref_summary_templates_manage">Zarządzaj swoimi szablonami sms</string>
+    <string name="pref_title_templates_show_gesture">Gest</string>
+    <string name="pref_summary_templates_show_gesture">Pokaż ślad gestu</string>
+    <string name="pref_title_template_gestures_sensitivity">Czułość gestu</string>
+    <string name="template_save">Zapisz</string>
+    <string name="template_insert_hint">Tu wstaw tekst szablonu</string>
+    <string name="template_empty_text">Pole tekstowe nie może być puste</string>
+    <string name="template_explanation">Wstaw lub modyfikuj tekst szablonu i ewentualnie narysuj gest dla niego</string>
+    <string name="template_edit">Edytuj</string>
+    <string name="template_delete">Usuń</string>
+    <string name="template_ctx_menu_title">Akcje</string>
+    <string name="template_list_title">Szablony</string>
+    <string name="template_new_title">Nowy szablon</string>
+    <string name="template_insert">Wstaw szablon</string>
+    <string name="template_gesture_draw">Narysuj gest w polu poniżej</string>
+    <string name="template_not_present_error">Nie zdefiniowałeś żadnego szablonu</string>
+    <string name="template_not_present_error_title">Błąd</string>
+    <string name="template_select">Wybierz szablon</string>
+    <string name="template_cancel_confirm_title">Ostrzeżenie</string>
+    <string name="template_cancel_confirm_text">Czy chcesz anulować?</string>
+    <string name="gestures_already_present">Uwaga: podobny gest jest skojarzony z innym szablonem</string>
+    <string name="pref_extra_settings">Dodatkowe ustawienia</string>
+    <string name="pref_title_strip_unicode">Opuść Unikod</string>
+    <string name="pref_summary_strip_unicode">Zamień znaki (ogonki itp.), które nie są wspierane w 160-znakowych sms-ach</string>
+    <string name="pref_title_mms_full_timestamp">Pełne znaczniki czasu</string>
+    <string name="pref_summary_mms_full_timestamp">Wyświetlaj zarówno datę jak i czas w znacznikach czasu</string>
+    <string name="pref_title_mms_use_sent_timestamp">Oryginalne znaczniki czasu</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Wyświetlaj datę wysłaniazamiast daty otrzymania jako znacznik czasu</string>
+    <string name="pref_title_mms_notification_vibrate_settings">Ustawienia wibracji</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Wzór wibrowania</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Zmień sposób wibrowania</string>
+    <string name="pref_title_mms_notification_vibrate_call">Wibracje podczas połączenia</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Zezwól na wibrację podczas rozmowy</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Własny wzór wibracji</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Format off/on w milisekundach: off, on, off, on, ...</string>
 </resources>
