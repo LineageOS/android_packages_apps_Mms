@@ -389,7 +389,7 @@ public class MessageListItem extends LinearLayout implements
         EmojiParser emojiParser = EmojiParser.getInstance();
         if (hasSubject) {
             CharSequence smilizedSubject = parser.addSmileySpans(subject);
-            CharSequence emojizedSubject = emojiParser.addSmileySpans(smilizedSubject);
+            CharSequence emojizedSubject = emojiParser.addEmojiSpans(smilizedSubject);
             // Can't use the normal getString() with extra arguments for string replacement
             // because it doesn't preserve the SpannableText returned by addSmileySpans.
             // We have to manually replace the %s with our text.
@@ -407,7 +407,7 @@ public class MessageListItem extends LinearLayout implements
                     buf.append(" - ");
                 }
                 CharSequence smileyBody = parser.addSmileySpans(body);
-                buf.append(emojiParser.addSmileySpans(smileyBody));
+                buf.append(emojiParser.addEmojiSpans(smileyBody));
             }
         }
 
