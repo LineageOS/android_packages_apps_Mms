@@ -3281,7 +3281,7 @@ public class ComposeMessageActivity extends Activity
                     .getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
             boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
             if (enableEmojis) {
-                mTextEditor.setTextKeepState(EmojiParser.getInstance().addSmileySpans(text));
+                mTextEditor.setTextKeepState(EmojiParser.getInstance().addEmojiSpans(text));
             } else {
                 mTextEditor.setTextKeepState(text);
             }
@@ -4004,7 +4004,6 @@ public class ComposeMessageActivity extends Activity
     private void showEmojiDialog() {
         if (mEmojiDialog == null) {
             int[] icons = EmojiParser.DEFAULT_EMOJI_RES_IDS;
-            final String[] texts = getResources().getStringArray(EmojiParser.DEFAULT_EMOJI_TEXTS);
 
             GridView gridView = new GridView(this);
             gridView.setNumColumns(GridView.AUTO_FIT);
@@ -4013,7 +4012,8 @@ public class ComposeMessageActivity extends Activity
             gridView.setAdapter(new ImageAdapter(this, icons));
             gridView.setOnItemClickListener(new OnItemClickListener() {
                 public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                    CharSequence emoji = EmojiParser.getInstance().addSmileySpans(texts[position]);
+                    // We use the new unified Unicode 6.1 emoji code points
+                    CharSequence emoji = EmojiParser.getInstance().addEmojiSpans(EmojiParser.mEmojiTexts[position]);
                     if (mSubjectTextEditor != null && mSubjectTextEditor.hasFocus()) {
                         mSubjectTextEditor.append(emoji);
                     } else {
