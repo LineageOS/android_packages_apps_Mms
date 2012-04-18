@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn///YU\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 3135
+      },
+      "writtenOn": "2012-04-18T06:34:18Z",
+      "side": 1,
+      "message": "I would change this to \"Contador de división...\"",
+      "revId": "379cda9fbb459602e49fe74c9417de441c325189",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
