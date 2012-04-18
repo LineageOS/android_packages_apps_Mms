@@ -354,4 +354,30 @@
     <string name="template_cancel_confirm_title">Warning</string>
     <string name="template_cancel_confirm_text">Vuoi davvero cancellare questo modello?</string>
     <string name="gestures_already_present">Attenzione! Una gesture simile è associata ad un altro template</string>
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Impostazioni extra</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Strip unicode</string>
+    <string name="pref_summary_strip_unicode">Sostituisci i caratteri più comuni che non sono supportati negli SMS di 160 caratteri</string>
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Abilita emojis</string>
+    <string name="pref_summary_enable_emojis">Abilita il supporto per le emojis di softbank in unicode, una collezione di 471 emoticons</string>
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Timestamp completi</string>
+    <string name="pref_summary_mms_full_timestamp">Visualizza data e ora nei timestamp</string>
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Timestamp originali</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Visualizza la data di invio ivece di quella ricevuta nei timestamp</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">Impostazioni vibrazione</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Schema vibrazione</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Cambia schema di vibrazione</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibrazione in chiamate</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante una chiamata</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Modalità di vibrazione personalizzata</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Formato off/on in millisecondi: off, on, off, on, ...</string>
+
 </resources>

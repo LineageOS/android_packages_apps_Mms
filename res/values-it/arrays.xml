@@ -80,4 +80,22 @@
         <item>12 (Preciso)</item>
     </string-array>
 
+     <string-array name="pref_mms_notification_vibrate_pattern_entries">
+       <item>Normale</item>
+       <item>Vibrazione media</item>
+       <item>Vibrazione lunga</item>
+       <item>Multipla e breve</item>
+       <item>Multipla e lunga</item>
+       <item>@string/pref_title_mms_notification_vibrate_custom</item>
+    </string-array>
+
+    <string-array name="pref_mms_notification_vibrate_pattern_values">
+       <item></item>
+       <item>0,1200</item>
+       <item>0,2500</item>
+       <item>0,300,100,300,100,300,100,300,100,300</item>
+       <item>0,800,200,800,200,800</item>
+       <item>Personalizzato</item>
+    </string-array>
+
 </resources>
