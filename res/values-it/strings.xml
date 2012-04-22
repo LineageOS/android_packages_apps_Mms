@@ -17,7 +17,6 @@
  * limitations under the License.
  */
  -->
-
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label" msgid="1503967887341230795">"Messaggi"</string>
@@ -328,7 +327,6 @@
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> persone"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Interrompere notifiche di messaggi di testo duplicati dell\'applicazione Messaggi predefinita?"</string>
-
     <!-- Sms templates -->
     <string name="prefs_templates_settings">Modelli sms</string>
     <string name="pref_title_templates_manage">Modelli</string>
@@ -354,4 +352,26 @@
     <string name="template_cancel_confirm_title">Warning</string>
     <string name="template_cancel_confirm_text">Vuoi davvero cancellare questo modello?</string>
     <string name="gestures_already_present">Attenzione! Una gesture simile è associata ad un altro template</string>
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Impostazioni Extra</string>
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Rimuovi unicode</string>
+    <string name="pref_summary_strip_unicode">Sostituisci i caratteri comuni che non sono supportati nei messaggi SMS a 160 caratteri</string>
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Attiva emojis</string>
+    <string name="pref_summary_enable_emojis"> Attiva il supporto per softbank unicode emojis, un set di 471 emoticons carine</string>
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Timestamp Interi</string>
+    <string name="pref_summary_mms_full_timestamp">Mostra sia la data che l\'ora nei timestamp</string>
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Timestamp originali</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Mostra la data di invio anzichè quella di ricezione nei timestamp</string>
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">Impostazioni Vibrazione</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Pattern vibrazione</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Cambia il pattern di vibrazione</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibra alla Chiamata</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante la chiamata</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Pattern di vibrazione personalizzato</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Formato off/on in millisecondi: off, on, off, on, ...</string>
 </resources>
