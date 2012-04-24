@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn//+do\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2012-04-24T15:04:28Z",
+      "side": 1,
+      "message": "Please remove this newline ;)",
+      "revId": "f1fc9511758d987aa3a098eec094a91ce124da6a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
