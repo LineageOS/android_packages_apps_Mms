@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn//9ns\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 779,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-04-29T19:36:15Z",
+      "side": 1,
+      "message": "Would be good to change this as well.  Reading the android design guidelines, the use of first person \u0027you\u0027 is discouraged. Changing it below is perfect but it should be changed here as well.",
+      "revId": "dfb2f08245c264d24846e4b8eb49e4529a2a363e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
