@@ -168,6 +168,8 @@
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Kézbesítési jelentés kérése minden elküldött üzenetről"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Olvasási visszaigazolás kérése minden elküldött üzenetről"</string>
     <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Kézbesítési jelentés kérése minden elküldött üzenetről"</string>
+    <string name="pref_title_max_sms_length">SMS maximális hossza</string>
+    <string name="pref_summary_max_sms_length">Üzenet írásakor maximálisan megengedett karakterszám (alapértelmezett:2000)</string>
     <string name="pref_summary_auto_delete" msgid="7719538116486177613">"Régi üzenetek törlése a korlát elérésekor"</string>
     <string name="pref_summary_delete_limit" msgid="597128041393045216">"<xliff:g id="COUNT">%1$s</xliff:g> üzenet beszélgetésenként"</string>
     <string name="pref_title_manage_sim_messages" msgid="7820895261757881177">"SIM-kártyán tárolt üzenetek kezelése"</string>
