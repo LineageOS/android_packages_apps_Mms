@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn//9Ls\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2012-05-02T23:25:22Z",
+      "side": 1,
+      "message": "Csak a szokásos magyarsági kötekedésem: szerintem jobban hangzik, hogy ...megengedett maximális karakterszám",
+      "revId": "37eb4832be1f19d1ccb4f64db2e911278d55a51f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
