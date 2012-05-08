@@ -809,7 +809,7 @@
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on in milliseconds: off, on, off, on, ...</string>
 
     <string name="pref_title_sms_EnableMultipartSMS">"SMS to MMS"</string>
- 	<string name="pref_summary_sms_EnableMultipartSMS">"Transform long text messages in MMS"</string>
- 	<string name="pref_title_sms_SmsToMmsTextThreshold">"SMS count"</string>
- 	<string name="pref_summary_sms_SmsToMmsTextThreshold">"<xliff:g id="COUNT">%1$s</xliff:g> messages before MMS conversion"</string>
+    <string name="pref_summary_sms_EnableMultipartSMS">"Transform long text messages in MMS"</string>
+    <string name="pref_title_sms_SmsToMmsTextThreshold">"SMS count"</string>
+    <string name="pref_summary_sms_SmsToMmsTextThreshold">"<xliff:g id="COUNT">%1$s</xliff:g> messages before MMS conversion"</string>
 </resources>

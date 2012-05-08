@@ -256,7 +256,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     }
     
     private void setSmsToMmsTextThreshold() {
-    	mSmsToMmsTextThreshold.setSummary(
+        mSmsToMmsTextThreshold.setSummary(
                 getString(R.string.pref_summary_sms_SmsToMmsTextThreshold,
                         MmsConfig.getSmsToMmsTextThreshold()-1));
     }
@@ -303,7 +303,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                     R.string.pref_title_mms_delete).show();
         } else if (preference == mSmsToMmsTextThreshold) {
             new NumberPickerDialog(this,
-            		mSmsToMmsTextThresholdListener,
+                    mSmsToMmsTextThresholdListener,
                     MmsConfig.getSmsToMmsTextThreshold()-1,
                     MmsConfig.getSmsToMmsTextThresholdMin()-1,
                     MmsConfig.getSmsToMmsTextThresholdMax()-1,
@@ -317,8 +317,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             // Update the actual "enable notifications" value that is stored in secure settings.
             enableNotifications(mEnableNotificationsPref.isChecked(), this);
         } else if (preference == mEnableMultipartSMS) {
-        	//should be false when the checkbox is checked
-        	MmsConfig.setEnableMultipartSMS(!mEnableMultipartSMS.isChecked());
+            //should be false when the checkbox is checked
+            MmsConfig.setEnableMultipartSMS(!mEnableMultipartSMS.isChecked());
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -352,7 +352,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     NumberPickerDialog.OnNumberSetListener mSmsToMmsTextThresholdListener =
             new NumberPickerDialog.OnNumberSetListener() {
                 public void onNumberSet(int limit) {
-                	SharedPreferences.Editor editPrefs =
+                    SharedPreferences.Editor editPrefs =
                             PreferenceManager.getDefaultSharedPreferences(MessagingPreferenceActivity.this).edit();
                     editPrefs.putInt("pref_key_sms_SmsToMmsTextThreshold", limit);
                     editPrefs.apply();

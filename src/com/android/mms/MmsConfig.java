@@ -67,8 +67,8 @@ public class MmsConfig {
 
     // See the comment below for mEnableMultipartSMS.
     private static int mSmsToMmsTextThreshold = 4;
-    private static int mSmsToMmsTextThresholdMin = 1;			// default value
-    private static int mSmsToMmsTextThresholdMax = 100;			// default value
+    private static int mSmsToMmsTextThresholdMin = 1;            // default value
+    private static int mSmsToMmsTextThresholdMax = 100;            // default value
 
     // This flag is somewhat confusing. If mEnableMultipartSMS is true, long sms messages are
     // always sent as multi-part sms messages, with no checked limit on the number of segments.
@@ -120,7 +120,7 @@ public class MmsConfig {
         return mSmsToMmsTextThreshold;
     }
     public static void setSmsToMmsTextThreshold(int threshold) {
-    	mSmsToMmsTextThreshold = threshold;
+        mSmsToMmsTextThreshold = threshold;
     }
     public static int getSmsToMmsTextThresholdMin() {
         return mSmsToMmsTextThresholdMin;
@@ -217,7 +217,7 @@ public class MmsConfig {
         return mEnableMultipartSMS;
     }
     public static void setEnableMultipartSMS(boolean enable) {
-    	mEnableMultipartSMS = enable;
+        mEnableMultipartSMS = enable;
     }
 
     public static boolean getSplitSmsEnabled() {
