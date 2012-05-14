@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAS3//+Kw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Not sure we should have punctuation at the end of these strings.",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAS3//+Ks\u003d",
+        "filename": "res/values-en-rGB/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Trailing space...",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAS3//+K4\u003d",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Extremely tiny nitpick: Make the \"default value\" comment align with the ones above when you are editing the tabs below anyway.",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAS3//+K8\u003d",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Trailing spaces... (marked in red in Gerrit).",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAS3//+LI\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Remove trailing space.",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAS3//+LE\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Same here, trailing space.",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAS3//+LA\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 351,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-05-14T19:16:54Z",
+      "side": 1,
+      "message": "Trailing space...",
+      "revId": "82461a0eedce324b8e9e9c897c6b0a8646353e39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
