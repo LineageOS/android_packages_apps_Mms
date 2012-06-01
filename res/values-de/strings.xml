@@ -283,6 +283,7 @@
     <string name="saved_ringtone" msgid="3847363932276708626">"Klingelton gespeichert"</string>
     <string name="saved_ringtone_fail" msgid="4778500070919251116">"Klingelton konnte nicht gespeichert werden."</string>
     <string name="menu_insert_smiley" msgid="4964504393061025071">"Smiley einfügen"</string>
+    <string name="menu_insert_emoji">"Emojis einfügen"</string>
     <string name="select_link_title" msgid="3371818607625768447">"Aktion wählen"</string>
     <string name="slide_number" msgid="1923958526266726635">"Dia <xliff:g id="NUMBER">%s</xliff:g>"</string>
   <plurals name="slide_duration">
@@ -338,6 +339,13 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Weitere Einstellungen</string>
 
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Unicode entfernen</string>
+    <string name="pref_summary_strip_unicode">Zeichen entfernen, die in SMS-Nachrichten nicht unterstützt werden</string>
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Emoji-Unterstützung</string>
+    <string name="pref_summary_enable_emojis">Unterstützung für Emojis aktivieren</string>
+
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Volle Datumsangabe</string>
     <string name="pref_summary_mms_full_timestamp">Datum und Zeit der Nachricht anzeigen</string>
@@ -377,6 +385,8 @@
     <string name="template_select">Vorlage auswählen</string>
     <string name="template_cancel_confirm_title">Warnung</string>
     <string name="template_cancel_confirm_text">Diese Aktion abbrechen?</string>
+    <string name="gestures_already_present">Achtung: Eine ähnliche Geste ist bereits mit einer anderen Vorlage verknüpft!</string>
+
     <string name="pref_title_sms_EnableMultipartSMS">"SMS zu MMS"</string>
     <string name="pref_summary_sms_EnableMultipartSMS">"wandelt lange SMS-Nachricht in MMS um"</string>
     <string name="pref_title_sms_SmsToMmsTextThreshold">"SMS Anzahl"</string>
