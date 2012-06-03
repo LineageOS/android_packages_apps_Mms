@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAT3///co\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 1353
+      },
+      "writtenOn": "2012-06-03T02:36:27Z",
+      "side": 1,
+      "message": "\"Entfernt Zeichen, die in…\" (Komma)",
+      "revId": "307a0eda2e061f2d12ab511bfd5c85cc6df8b553",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3///ck\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 1353
+      },
+      "writtenOn": "2012-06-03T02:36:27Z",
+      "side": 1,
+      "message": "Emoji-Unterstützung (Bindestrich)",
+      "revId": "307a0eda2e061f2d12ab511bfd5c85cc6df8b553",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3///cU\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 1353
+      },
+      "writtenOn": "2012-06-03T02:36:27Z",
+      "side": 1,
+      "message": "Auch wenn im Original Emoticons steht - ich würde hier trotzdem Emojis schreiben, weil das ja auch welche sind und keine Smileys. Oder? Ich weiß nicht. Ich habe \"Emoji\" gerade zugegebenermaßen das erste Mal gehört und in der Wikipedia nachgeschaut, da sah mir das nach diesen japanischen Smileys aus. Das Zeug in packages/apps/Mms/res/drawable-hdpi ist aber irgendwie alles Mögliche…\n\nIch weiß nicht. Ich würde im Zweifel eher Emojis statt Emoticons schreiben, ist mir aber an sich wurst :)",
+      "revId": "307a0eda2e061f2d12ab511bfd5c85cc6df8b553",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
