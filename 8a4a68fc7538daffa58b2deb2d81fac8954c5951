@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAT3//+yk\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 3368,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-04T14:43:57Z",
+      "side": 1,
+      "message": "Why is the entire block below 4 spaces further in?",
+      "revId": "8a4a68fc7538daffa58b2deb2d81fac8954c5951",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
