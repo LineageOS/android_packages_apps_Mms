@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAT3//+5U\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-04T04:53:53Z",
+      "side": 1,
+      "message": "This looks really weird spacing wise. Please change tabs to spaces and adjust it to fit the rest of the layout.",
+      "revId": "c11279380d8fabf74f724232e45d2466166aebfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3//+5Q\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 297,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-04T04:53:53Z",
+      "side": 1,
+      "message": "At least ine double space where it shouldn\u0027t be. Also, not tabs please.",
+      "revId": "c11279380d8fabf74f724232e45d2466166aebfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3//+5M\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2228,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-04T04:53:53Z",
+      "side": 1,
+      "message": "Tabs to spaces please and make sure the layout is fitting.",
+      "revId": "c11279380d8fabf74f724232e45d2466166aebfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3//+5I\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3361,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-04T04:53:53Z",
+      "side": 1,
+      "message": "Same here, tabs and layout...",
+      "revId": "c11279380d8fabf74f724232e45d2466166aebfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAT3//+5E\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2012-06-04T04:53:53Z",
+      "side": 1,
+      "message": "Tabs and layout issues all over...",
+      "revId": "c11279380d8fabf74f724232e45d2466166aebfc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
