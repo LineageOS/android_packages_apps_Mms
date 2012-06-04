@@ -294,8 +294,8 @@ public class ComposeMessageActivity extends Activity
     private RecipientsEditor mRecipientsEditor;  // UI control for editing recipients
     private ImageButton mRecipientsPicker;       // UI control for recipients picker
 
-    private boolean mIsKeyboardOpen;             // Whether any  keyboard is open
-    private boolean mIsHardKeyboardOpen;		 // Whether the hard keyboard is open
+    private boolean mIsKeyboardOpen;             // Whether any keyboard is open
+    private boolean mIsHardKeyboardOpen;         // Whether the hard keyboard is open
     private boolean mIsLandscape;                // Whether we're in landscape mode
 
     private boolean mPossiblePendingNotification;   // If the message list has changed, we may have
@@ -2225,10 +2225,10 @@ public class ComposeMessageActivity extends Activity
         inputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE, Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
         Log.d("MMS Input Type", Integer.toString(inputMethod));
         mTextEditor.setInputType(InputType.TYPE_CLASS_TEXT|
-				inputMethod|
-				InputType.TYPE_TEXT_FLAG_AUTO_CORRECT|
-				InputType.TYPE_TEXT_FLAG_CAP_SENTENCES|
-				InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+                                inputMethod|
+                                InputType.TYPE_TEXT_FLAG_AUTO_CORRECT|
+                                InputType.TYPE_TEXT_FLAG_CAP_SENTENCES|
+                                InputType.TYPE_TEXT_FLAG_MULTI_LINE);
     }
 
     @Override
@@ -2256,6 +2256,13 @@ public class ComposeMessageActivity extends Activity
         mConversation.blockMarkAsRead(false);
 
         if (mMsgListAdapter != null) {
+            // Close the cursor in the ListAdapter if the activity stopped.
+            Cursor cursor = mMsgListAdapter.getCursor();
+
+            if (cursor != null && !cursor.isClosed()) {
+                cursor.close();
+            }
+
             mMsgListAdapter.changeCursor(null);
         }
 
@@ -3358,28 +3365,28 @@ public class ComposeMessageActivity extends Activity
     }
 
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-    	if (event != null) {
-    		boolean sendNow;
-    		if(!mIsHardKeyboardOpen && inputMethod == InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE){
-    			//if the physical keyboard is not open and if the user has selected enter
-    			//for a new line the shift key must be pressed to send
-    			sendNow = event.isShiftPressed();
-    		}else{
-    			//otherwise enter sends and shift must be pressed for a new line
-    			sendNow = !event.isShiftPressed();
-    		}
-    		if (sendNow) {
-    			if (isPreparedForSending()) {
-    				confirmSendMessageIfNeeded();
-    			}
-    			return true;
-    		}
-    	return false;
-    	}
-    	if (isPreparedForSending()) {
-    		confirmSendMessageIfNeeded();
-    	}
-    	return true;
+        if (event != null) {
+                boolean sendNow;
+                if(!mIsHardKeyboardOpen && inputMethod == InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE){
+                        //if the physical keyboard is not open and if the user has selected enter
+                        //for a new line the shift key must be pressed to send
+                        sendNow = event.isShiftPressed();
+                }else{
+                        //otherwise enter sends and shift must be pressed for a new line
+                        sendNow = !event.isShiftPressed();
+                }
+                if (sendNow) {
+                        if (isPreparedForSending()) {
+                                confirmSendMessageIfNeeded();
+                        }
+                        return true;
+                }
+        return false;
+        }
+        if (isPreparedForSending()) {
+                confirmSendMessageIfNeeded();
+        }
+        return true;
     }
 
     private final TextWatcher mTextEditorWatcher = new TextWatcher() {
