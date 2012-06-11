@@ -52,6 +52,24 @@
       "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH///qI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-06-11T17:46:41Z",
+      "side": 1,
+      "message": "Sehe ich auch so. Die Angabe der Anzahl ist IMHO komplett irrelevant.",
+      "parentUuid": "AAAAUH///qQ\u003d",
+      "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
