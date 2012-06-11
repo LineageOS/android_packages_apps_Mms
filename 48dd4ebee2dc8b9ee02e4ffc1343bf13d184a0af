@@ -104,6 +104,24 @@
       "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH///pw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 1402
+      },
+      "writtenOn": "2012-06-11T17:51:51Z",
+      "side": 1,
+      "message": "Ich dacht mir auch gerade das die Anzahl da irgendwie eher wie in Tippfehler aussieht und irrelevant ist!",
+      "parentUuid": "AAAAUH///qI\u003d",
+      "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
