@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAUH///p8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-06-11T17:51:34Z",
+      "side": 1,
+      "message": "Ist hier ein Emoji oder mehrere Emojis gemeint? Analog zu \"Smiley einfügen\"?!",
+      "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAUH///qs\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -67,6 +84,23 @@
       "side": 1,
       "message": "Sehe ich auch so. Die Angabe der Anzahl ist IMHO komplett irrelevant.",
       "parentUuid": "AAAAUH///qQ\u003d",
+      "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH///p4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-06-11T17:51:34Z",
+      "side": 1,
+      "message": "Anzahl und Unicode Hinweis sind irrelevant.",
       "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
