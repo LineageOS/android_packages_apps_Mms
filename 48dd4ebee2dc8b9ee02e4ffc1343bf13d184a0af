@@ -34,6 +34,24 @@
       "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH///qQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 347,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2012-06-11T17:44:32Z",
+      "side": 1,
+      "message": "Habe es um ehrlich zu sein nicht ausprobiert. Ich habe mir nur die Frage gestellt was der Anwender durch Angabe der Anzahl für eine Zusatzinformation erhält.",
+      "parentUuid": "AAAAUH///qk\u003d",
+      "revId": "48dd4ebee2dc8b9ee02e4ffc1343bf13d184a0af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
