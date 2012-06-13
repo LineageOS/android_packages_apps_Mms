@@ -370,7 +370,7 @@ public class ComposeMessageActivity extends Activity
                 char c = source.charAt(i);
 
                 // Character is encodable by GSM, skip filtering
-                if (gsm.canEncode(c)) {
+                if ((gsm.canEncode(c) || c=='Ç') && c!='ç') {
                     output.append(c);
                 }
                 // Character requires Unicode, try to replace it
