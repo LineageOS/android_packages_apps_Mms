@@ -71,6 +71,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAUH//+MY\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-06-16T21:26:20Z",
+      "side": 1,
+      "message": "missende \\ voor de \u0027s (kreeg net een build error)...",
+      "revId": "0daa47cdb1219a3d808558cd53e6a9f210ea2bda",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAUH//+Qo\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
