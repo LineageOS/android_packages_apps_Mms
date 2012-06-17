@@ -1,0 +1,14 @@
+Change-Id: I28ee5e921a490ac1ce0372e30b004ce72a741ece
+Code-Review+1: Robert Burns <burnsra@gmail.com>
+Code-Review+2: Steve Kondik <shade@chemlab.org>
+Verified+1: Steve Kondik <shade@chemlab.org>
+Code-Review+1: Shareef Ali <shareefalis@gmail.com>
+Code-Review+1: Warren Togami <wtogami@gmail.com>
+Code-Review+1: Sean Donovan <swordrune10@gmail.com>
+Code-Review+1: Chris White <chriswhite41g@gmail.com>
+Code-Review+1: Simon Sickle <simonsimons34@gmail.com>
+Submitted-by: Steve Kondik <shade@chemlab.org>
+Submitted-at: Sun, 17 Jun 2012 21:22:19 +0400
+Reviewed-on: http://review.cyanogenmod.com/17822
+Project: CyanogenMod/android_packages_apps_Mms
+Branch: refs/heads/ics
