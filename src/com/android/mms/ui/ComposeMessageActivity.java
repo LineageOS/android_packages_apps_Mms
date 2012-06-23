@@ -435,6 +435,7 @@ public class ComposeMessageActivity extends Activity
                     s = s.replace("ψ", "Ψ");
                     s = s.replace("ω", "Ω");
                     s = s.replace("ς", "Σ");
+                    s = s.replace("Ç", "c");
 
                     output.append(s);
                 }
