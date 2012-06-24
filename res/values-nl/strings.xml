@@ -328,7 +328,6 @@
 
     <!-- CYANOGENMOD EDITS -->
 
-    <string name="pref_title_sms_split_160">Sms splitsen</string>
     <string name="pref_title_sms_split_counter">Sms-teller</string>
     <string name="pref_summary_sms_split_counter">Teller toevoegen aan sms-berichten; vb: (1/2)</string>
     <string name="prefs_templates_settings">Sms-sjablonen</string>

@@ -173,7 +173,6 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"Δόνηση κατά την ειδοποίηση"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Επιλέξτε ήχο κλήσης"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Ορισμός αριθμού μηνυμάτων για αποθήκευση"</string>
-    <string name="pref_title_sms_split_160">SMS split</string>
     <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Μετρητής split</string>
     <!-- Settings item description for boolean SMS Split 160 characters setting -->
