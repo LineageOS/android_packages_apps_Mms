@@ -367,7 +367,7 @@
     <string name="pref_title_mms_notification_vibrate_call">Värinä puhelussa</string>
     <string name="pref_summary_mms_notification_vibrate_call">Ota värinä käyttöön puhelun aikana</string>
     <string name="pref_title_mms_notification_vibrate_custom">Kustomoitu</string>
-    <string name="pref_text_mms_notification_vibrate_custom">Muotoile päälle/pois millisekunneissa: päälle, pois, päälle, pois...</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Muotoile päälle/pois millisekunneissa: päälle, pois, päälle, pois\u2026</string>
     <string name="pref_title_sms_EnableMultipartSMS">"Tekstiviesti multimediaviestiksi"</string>
     <string name="pref_summary_sms_EnableMultipartSMS">"Muuta pitkät viestit multimediaviesteiksi"</string>
     <string name="pref_title_sms_SmsToMmsTextThreshold">"Viestilaskuri"</string>
