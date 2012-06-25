@@ -328,4 +328,58 @@
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> personer"</item>
   </plurals>
     <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Vil du stoppe dobbelte underretninger via sms fra standardappen Meddelelser?"</string>
+  
+  <!-- CM9 Mms app Danish translation by Jacob Madsen, u2jacob@gmail.com -->
+  <!-- Sms templates -->
+  <string name="prefs_templates_settings">Sms-skabeloner</string>
+  <string name="pref_title_templates_manage">Skabeloner</string>
+  <string name="pref_summary_templates_manage">Administrér dine sms-skabeloner</string>
+  <string name="pref_title_templates_show_gesture">Gestus</string>
+  <string name="pref_summary_templates_show_gesture">Vis gestus-spor</string>
+  <string name="pref_title_template_gestures_sensitivity">Gestus-følsomhed</string>
+  <string name="template_save">Gem</string>
+  <string name="template_insert_hint">Indsæt skabelon-teksten her</string>
+  <string name="template_empty_text">Tekstfelt kan ikke være tomt</string>
+  <string name="template_explanation">Indsæt eller skift skabelon-teksten og tegn evt. en gestus for at tilknytte den</string>
+  <string name="template_edit">Redigér</string>
+  <string name="template_delete">Slet</string>
+  <string name="template_ctx_menu_title">Handlinger</string>
+  <string name="template_list_title">Skabeloner</string>
+  <string name="template_new_title">Ny skabelon</string>
+  <string name="template_insert">Indsæt skabelon</string>
+  <string name="template_gesture_draw">Tegn gestusen i området herunder</string>
+  <string name="template_not_present_error">Der er ikke defineret nogen skabeloner</string>
+  <string name="template_not_present_error_title">Fejl</string>
+  <string name="template_select">Vælg en skabelon</string>
+  <string name="template_cancel_confirm_title">Advarsel</string>
+  <string name="template_cancel_confirm_text">Skabelonen bliver slettet. Fortsæt?</string>
+  <string name="gestures_already_present">Advarsel: En lignende gestus er tilknyttet en anden skabelon!</string>
+
+   <!-- Extra Settings: -->
+  <string name="pref_extra_settings">Ekstra indstillinger</string>
+
+  <!-- Strip unicode -->
+  <string name="pref_title_strip_unicode">Fjern unicode</string>
+  <string name="pref_summary_strip_unicode">Erstat alm. tegn, som ikke understøttes i 160-tegns SMS-beskeder</string>
+  <!-- Enable emojis -->
+  <string name="pref_title_enable_emojis">Emoji-understøttelse</string>
+  <string name="pref_summary_enable_emojis">Slå understøttelse for unicode emojis til, et sæt af 471 pæne emoticons</string>
+  <!-- Full timestamps -->
+  <string name="pref_title_mms_full_timestamp">Fulde tidsstempler</string>
+  <string name="pref_summary_mms_full_timestamp">Vis både dato og tid i tidsstempler</string>
+  <!-- Which timestamps -->
+  <string name="pref_title_mms_use_sent_timestamp">Originale tidsstempler</string>
+  <string name="pref_summary_mms_use_sent_timestamp">Vis sendt dato i stedet for modtaget dato i tidsstempler</string>
+  <!-- Change Vibrate pattern/method for message notification -->
+  <string name="pref_title_mms_notification_vibrate_settings">Vibreringsindstillinger</string>
+  <string name="pref_title_mms_notification_vibrate_pattern">Vibreringsmønster</string>
+  <string name="pref_summary_mms_notification_vibrate_pattern">Skift vibreringsmønster</string>
+  <string name="pref_title_mms_notification_vibrate_call">Vibrér ved opkald</string>
+  <string name="pref_summary_mms_notification_vibrate_call">Tillad vibrering under opkald</string>
+  <string name="pref_title_mms_notification_vibrate_custom">Brugerdefinererede vibreringsmønstre</string>
+  <string name="pref_text_mms_notification_vibrate_custom">Formatér fra/til i millisekunder: fra, til, fra, til, ...</string>
+  <string name="pref_title_sms_EnableMultipartSMS">"SMS til MMS"</string>
+  <string name="pref_summary_sms_EnableMultipartSMS">"Omdan lange SMS'er til MMS"</string>
+  <string name="pref_title_sms_SmsToMmsTextThreshold">"SMS-antal"</string>
+  <string name="pref_summary_sms_SmsToMmsTextThreshold">"<xliff:g id="COUNT">%1$s</xliff:g> beskeder før MMS-konvertering"</string>
 </resources>
