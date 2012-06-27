@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAUH//71M\u003d",
+        "filename": "res/values-fi/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-06-27T14:40:19Z",
+      "side": 0,
+      "message": "This array needs 6 entries, not 5. Adding\n   \u003citem\u003e@string/pref_title_mms_notification_vibrate_custom\u003c/item\u003e\n\nas 6th item should make it work.\n(And yes, this mixture of translating the array and using string pointers is braindead).",
+      "revId": "11914985201e64e85eb4104b674c894384767c45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
