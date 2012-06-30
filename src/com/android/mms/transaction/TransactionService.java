@@ -116,6 +116,7 @@ public class TransactionService extends Service implements Observer {
     private static final int EVENT_TRANSACTION_REQUEST = 1;
     private static final int EVENT_CONTINUE_MMS_CONNECTIVITY = 3;
     private static final int EVENT_HANDLE_NEXT_PENDING_TRANSACTION = 4;
+    private static final int EVENT_CANCEL_ALL_PENDING_TRANSACTIONS = 5;
     private static final int EVENT_QUIT = 100;
 
     private static final int TOAST_MSG_QUEUED = 1;
@@ -371,6 +372,7 @@ public class TransactionService extends Service implements Observer {
     /**
      * Handle status change of Transaction (The Observable).
      */
+    @Override
     public void update(Observable observable) {
         Transaction transaction = (Transaction) observable;
         int serviceId = transaction.getServiceId();
@@ -430,6 +432,31 @@ public class TransactionService extends Service implements Observer {
                 case TransactionState.FAILED:
                     if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                         Log.v(TAG, "Transaction failed: " + serviceId);
+                    }
+
+                    intent.putExtra(STATE_URI, state.getContentUri());
+
+                    int toastType = TOAST_NONE;
+
+                    switch (transaction.getType()) {
+                        case Transaction.NOTIFICATION_TRANSACTION:
+                        case Transaction.RETRIEVE_TRANSACTION:
+                            // We're already in a non-UI thread called from
+                            // NotificationTransacation.run(), so ok to block here.
+                            MessagingNotification.blockingUpdateNewMessageIndicator(this, true,
+                                        false);
+                            MessagingNotification.updateDownloadFailedNotification(this);
+                            toastType = TOAST_DOWNLOAD_LATER;
+                            break;
+                        case Transaction.SEND_TRANSACTION:
+                            toastType = TOAST_MSG_QUEUED;
+                            RateController.getInstance().update();
+                            break;
+                    }
+
+                    // If the user is watching the application, lets show him something
+                    if (toastType != TOAST_NONE) {
+                        mToastHandler.sendEmptyMessage(toastType);
                     }
                     break;
                 default:
@@ -707,6 +734,18 @@ public class TransactionService extends Service implements Observer {
                 case EVENT_HANDLE_NEXT_PENDING_TRANSACTION:
                     processPendingTransaction(transaction, (TransactionSettings) msg.obj);
                     return;
+                case EVENT_CANCEL_ALL_PENDING_TRANSACTIONS:
+                    // We must end the MMS connectivity or the device won't deep sleep
+                    // and will drain the battery very fast!
+                    endMmsConnectivity();
+                    // For each pending MMS, set as failed and notify the user of MMs arrival
+                    while (!mPending.isEmpty()) {
+                        transaction = mPending.get(0);
+                        transaction.attach(TransactionService.this);
+                        transaction.getState().setState(TransactionState.FAILED);
+                        transaction.notifyObservers();
+                        mPending.remove(0);
+                    }
                 default:
                     Log.w(TAG, "what=" + msg.what);
                     return;
@@ -853,17 +892,8 @@ public class TransactionService extends Service implements Observer {
                 return;
             }
 
-            boolean noConnectivity =
-                intent.getBooleanExtra(ConnectivityManager.EXTRA_NO_CONNECTIVITY, false);
-
             NetworkInfo networkInfo = (NetworkInfo)
                 intent.getParcelableExtra(ConnectivityManager.EXTRA_NETWORK_INFO);
-
-            /*
-             * If we are being informed that connectivity has been established
-             * to allow MMS traffic, then proceed with processing the pending
-             * transaction, if any.
-             */
 
             if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                 Log.v(TAG, "Handle ConnectivityBroadcastReceiver.onReceive(): " + networkInfo);
@@ -889,12 +919,23 @@ public class TransactionService extends Service implements Observer {
                 return;
             }
 
+            // Check if we have an active data connection
             if (!networkInfo.isConnected()) {
                 if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                     Log.v(TAG, "   TYPE_MOBILE_MMS not connected, bail");
                 }
+                // If no data connection is set, lets cancel MMS downloads (transactions)
+                // The user can transfer them manually after a data connection is set
+                mServiceHandler.sendMessage(
+                        mServiceHandler.obtainMessage(EVENT_CANCEL_ALL_PENDING_TRANSACTIONS));
                 return;
             }
+
+            /*
+             * If we are being informed that connectivity has been established
+             * to allow MMS traffic, then proceed with processing the pending
+             * transaction, if any.
+             */
 
             TransactionSettings settings = new TransactionSettings(
                     TransactionService.this, networkInfo.getExtraInfo());
