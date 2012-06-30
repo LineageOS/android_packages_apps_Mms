@@ -2,6 +2,74 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAUH//7T4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-06-30T02:17:29Z",
+      "side": 1,
+      "message": "Bij andere programma\u0027s is dit vaak vertaald als \"Meer...\"",
+      "revId": "611cbaf336f456a8de27ec417ab3755bfc39bbba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//7T0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-06-30T02:17:29Z",
+      "side": 1,
+      "message": "van ontvanger?",
+      "revId": "611cbaf336f456a8de27ec417ab3755bfc39bbba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//7Tw\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-06-30T02:17:29Z",
+      "side": 1,
+      "message": "Versturen met Enter",
+      "revId": "611cbaf336f456a8de27ec417ab3755bfc39bbba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//7Ts\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-06-30T02:17:29Z",
+      "side": 1,
+      "message": "Sjabloontekst hier invoeren",
+      "revId": "611cbaf336f456a8de27ec417ab3755bfc39bbba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAUH//7e4\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
