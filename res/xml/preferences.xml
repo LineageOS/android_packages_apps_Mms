@@ -17,7 +17,8 @@
  * limitations under the License.
  */
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="pref_key_preference_screen">
   <PreferenceCategory android:title="@string/pref_sms_storage_title"
                       android:key="pref_key_storage_settings">
 <!--
@@ -25,7 +26,7 @@
                       android:title="@string/pref_mms_clear_search_history_title"
                       android:summary="@string/pref_mms_clear_search_history_summary" />
 -->
-     <CheckBoxPreference android:defaultValue="false"
+    <CheckBoxPreference android:defaultValue="false"
                       android:key="pref_key_auto_delete"
                       android:summary="@string/pref_summary_auto_delete"
                       android:title="@string/pref_title_auto_delete" />
@@ -163,5 +164,12 @@
                       android:dependency="pref_key_sms_EnableMultipartSMS"
                       android:summary="@string/pref_summary_sms_SmsToMmsTextThreshold"
                       android:title="@string/pref_title_sms_SmsToMmsTextThreshold" />
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/pref_misc_settings_title"
+                      android:key="pref_key_misc_settings">
+    <CheckBoxPreference android:key="pref_key_ear_detector"
+                        android:title="@string/pref_title_ear_detector"
+                        android:summary="@string/pref_summary_ear_detector"
+                        android:defaultValue="false" />
   </PreferenceCategory>
 </PreferenceScreen>

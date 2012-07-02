@@ -27,7 +27,8 @@ public class MiniPreferenceActivity extends Activity {
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        boolean notificationsEnabled = MessagingPreferenceActivity.getNotificationEnabled(this);
+        boolean notificationsEnabled = MessagingPreferenceActivity.getPrefEnabled(
+                MessagingPreferenceActivity.NOTIFICATION_ENABLED, true, this);
 
         if (!notificationsEnabled) {
             setResult(RESULT_OK);
@@ -56,8 +57,8 @@ public class MiniPreferenceActivity extends Activity {
             public void onClick(DialogInterface dialog, int which) {
                 if (which == DialogInterface.BUTTON_POSITIVE) {
                     // turn off Messaging notifications
-                    MessagingPreferenceActivity.enableNotifications(false,
-                            MiniPreferenceActivity.this);
+                    MessagingPreferenceActivity.enablePref(MessagingPreferenceActivity.NOTIFICATION_ENABLED,
+                            false, MiniPreferenceActivity.this);
                     setResult(RESULT_OK);
                 } else {
                     setResult(RESULT_CANCELED);

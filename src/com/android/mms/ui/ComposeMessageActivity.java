@@ -61,6 +61,7 @@ import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Loader;
 import android.content.SharedPreferences;
@@ -178,6 +179,8 @@ import com.android.mms.ui.RecipientsEditor.RecipientContextMenuInfo;
 import com.android.mms.util.EmojiParser;
 import com.android.mms.util.SendingProgressTokenManager;
 import com.android.mms.util.SmileyParser;
+import com.android.mms.util.EarDetector;
+import com.android.mms.util.EarDetector.EarDetectorListener;
 
 import android.text.InputFilter.LengthFilter;
 
@@ -197,7 +200,7 @@ import android.text.InputFilter.LengthFilter;
 public class ComposeMessageActivity extends Activity
         implements View.OnClickListener, TextView.OnEditorActionListener,
         MessageStatusListener, Contact.UpdateListener, OnGesturePerformedListener,
-        LoaderManager.LoaderCallbacks<Cursor>  {
+        LoaderManager.LoaderCallbacks<Cursor>, EarDetectorListener {
     public static final int REQUEST_CODE_ATTACH_IMAGE     = 100;
     public static final int REQUEST_CODE_TAKE_PICTURE     = 101;
     public static final int REQUEST_CODE_ATTACH_VIDEO     = 102;
@@ -273,6 +276,7 @@ public class ComposeMessageActivity extends Activity
     private BackgroundQueryHandler mBackgroundQueryHandler;
 
     private Conversation mConversation;     // Conversation we are working in
+    private EarDetector mEarDetector;       // EarDetector for smart calling
 
     private boolean mExitOnSent;            // Should we finish() after sending a message?
                                             // TODO: mExitOnSent is obsolete -- remove
@@ -1925,6 +1929,7 @@ public class ComposeMessageActivity extends Activity
 
         mContentResolver = getContentResolver();
         mBackgroundQueryHandler = new BackgroundQueryHandler(mContentResolver);
+        mEarDetector = new EarDetector(this, this);
 
         initialize(savedInstanceState, 0);
 
@@ -2233,9 +2238,19 @@ public class ComposeMessageActivity extends Activity
         }
     }
 
+    private boolean isEarDetectorAllowed() {
+        SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(this);
+        return p.getBoolean(MessagingPreferenceActivity.EAR_DETECTOR_ENABLED, false) &&
+                mEarDetector.isInitzialized();
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
+
+        if (isEarDetectorAllowed()) {
+            mEarDetector.enable(true);
+        }
 
         // OLD: get notified of presence updates to update the titlebar.
         // NEW: we are using ContactHeaderWidget which displays presence, but updating presence
@@ -2273,6 +2288,10 @@ public class ComposeMessageActivity extends Activity
     @Override
     protected void onPause() {
         super.onPause();
+
+        if (isEarDetectorAllowed()) {
+            mEarDetector.enable(false);
+        }
 
         // OLD: stop getting notified of presence updates to update the titlebar.
         // NEW: we are using ContactHeaderWidget which displays presence, but updating presence
@@ -2378,6 +2397,13 @@ public class ComposeMessageActivity extends Activity
             }
             mTextEditor.setFocusable(false);
             mTextEditor.setHint(R.string.open_keyboard_to_compose_message);
+        }
+    }
+
+    @Override
+    public void onEarDetected(boolean earDetected) {
+        if (earDetected) {
+            dialRecipient();
         }
     }
 

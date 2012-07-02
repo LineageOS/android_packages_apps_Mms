@@ -302,6 +302,8 @@
     <!-- Settings screen menu item for restoring all settings to default -->
     <string name="restore_default">"Restore default settings"</string>
 
+    <!-- Settings screen, section heading for misc -->
+    <string name="pref_misc_settings_title">Other settings</string>
     <!-- Settings screen, section heading for notifications -->
     <string name="pref_notification_settings_title">Notifications</string>
     <!-- Settings screen, section heading for MMS-specific settings -->
@@ -349,6 +351,10 @@
     <string name="pref_title_notification_ringtone">Choose ringtone</string>
     <!-- Settings item for setting the number of message to save for each conversation -->
     <string name="pref_messages_to_save">Set number of messages to save</string>
+    <!-- Settings item for boolean option to enable ear detector calling -->
+    <string name="pref_title_ear_detector">Ear detector calling</string>
+    <!-- Settings item description for boolean ear detector option -->
+    <string name="pref_summary_ear_detector">Call by putting phone near ear</string>
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Soft keyboard type</string>

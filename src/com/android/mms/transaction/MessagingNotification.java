@@ -472,7 +472,8 @@ public class MessagingNotification {
         }
 
 
-        if (!MessagingPreferenceActivity.getNotificationEnabled(context)) {
+        if (!MessagingPreferenceActivity.getPrefEnabled(
+                    MessagingPreferenceActivity.NOTIFICATION_ENABLED, true, context)) {
             return;
         }
 
@@ -494,7 +495,8 @@ public class MessagingNotification {
             String title,
             int messageCount,
             int uniqueThreadCount) {
-        if (!MessagingPreferenceActivity.getNotificationEnabled(context)) {
+        if (!MessagingPreferenceActivity.getPrefEnabled(
+                    MessagingPreferenceActivity.NOTIFICATION_ENABLED, true, context)) {
             return;
         }
 
@@ -667,8 +669,8 @@ public class MessagingNotification {
     private static void notifyFailed(Context context, boolean isDownload, long threadId,
                                      boolean noisy) {
         // TODO factor out common code for creating notifications
-        boolean enabled = MessagingPreferenceActivity.getNotificationEnabled(context);
-        if (!enabled) {
+        if (!MessagingPreferenceActivity.getPrefEnabled(
+                    MessagingPreferenceActivity.NOTIFICATION_ENABLED, true, context)) {
             return;
         }
 
