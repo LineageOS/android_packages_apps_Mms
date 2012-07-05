@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAUH//6Ps\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2012-07-05T18:01:51Z",
+      "side": 1,
+      "message": "String \"custom\" used in line 596 here http://review.cyanogenmod.com/#/c/10601/3/src/com/android/mms/transaction/MessagingNotification.java",
+      "revId": "4343e19cf449adf851af36497508d93ddef422f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
