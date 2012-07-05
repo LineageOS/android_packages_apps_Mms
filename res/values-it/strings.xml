@@ -174,7 +174,7 @@
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Scegli suoneria"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Imposta numero di messaggi da salvare"</string>
     <string name="pref_title_input_type">Azione tasto smile</string>
-    <string name="pref_summary_input_type">Seleziona l\'azione del tasto in basso a destra della tastiera virtuale quando componi un messaggio</string>
+    <string name="pref_summary_input_type">Seleziona l'azione del tasto in basso a destra della tastiera virtuale quando componi un messaggio</string>
     <string name="pref_title_sms_split_counter">Contatore SMS</string>
     <string name="pref_summary_sms_split_counter">Indica quanti SMS compongono il messaggio</string>
   <string-array name="prefEntries_vibrateWhen">
@@ -372,7 +372,7 @@
     <string name="pref_summary_mms_notification_vibrate_pattern">Cambia schema di vibrazione</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibrazione in chiamate</string>
     <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante una chiamata</string>
-    <string name="pref_title_mms_notification_vibrate_custom">Schema di vibrazione personalizzato</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Schema personalizzato</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatta off/on in millisecondi: off, on, off, on, ...</string>
     <string name="pref_title_sms_EnableMultipartSMS">"Da SMS a MMS"</string>
     <string name="pref_summary_sms_EnableMultipartSMS">"Trasforma lunghi messaggi di testo in MMS"</string>
