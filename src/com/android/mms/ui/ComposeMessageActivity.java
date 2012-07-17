@@ -41,6 +41,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
+import java.text.Normalizer;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -335,6 +338,114 @@ public class ComposeMessageActivity extends Activity
     //==========================================================
     // Inner classes
     //==========================================================
+
+    // InputFilter which attempts to substitute characters that cannot be
+    // encoded in the limited GSM 03.38 character set. In many cases this will
+    // prevent the keyboards auto-correction feature from inserting characters
+    // that would switch the message from 7-bit GSM encoding (160 char limit)
+    // to 16-bit Unicode encoding (70 char limit).
+
+    private class StripUnicode implements InputFilter {
+
+        private CharsetEncoder gsm =
+            Charset.forName("gsm-03.38-2000").newEncoder();
+
+        private Pattern diacritics =
+            Pattern.compile("\\p{InCombiningDiacriticalMarks}");
+
+        public CharSequence filter(CharSequence source, int start, int end,
+                                   Spanned dest, int dstart, int dend) {
+
+            Boolean unfiltered = true;
+            StringBuilder output = new StringBuilder(end - start);
+
+            for (int i = start; i < end; i++) {
+                char c = source.charAt(i);
+
+                // Character is encodable by GSM, skip filtering
+                if (gsm.canEncode(c)) {
+                    output.append(c);
+                }
+                // Character requires Unicode, try to replace it
+                else {
+                    unfiltered = false;
+                    String s = String.valueOf(c);
+
+                    // Try normalizing the character into Unicode NFKD form and
+                    // stripping out diacritic mark characters.
+                    s = Normalizer.normalize(s, Normalizer.Form.NFKD);
+                    s = diacritics.matcher(s).replaceAll("");
+
+                    // Special case characters that don't get stripped by the
+                    // above technique.
+                    s = s.replace("Œ", "OE");
+                    s = s.replace("œ", "oe");
+                    s = s.replace("\u0141", "L");
+                    s = s.replace("\u0142", "l");
+                    s = s.replace("Đ", "DJ");
+                    s = s.replace("đ", "dj");
+                    s = s.replace("Α", "A");
+                    s = s.replace("Β", "B");
+                    s = s.replace("Ε", "E");
+                    s = s.replace("Ζ", "Z");
+                    s = s.replace("Η", "H");
+                    s = s.replace("Ι", "I");
+                    s = s.replace("Κ", "K");
+                    s = s.replace("Μ", "M");
+                    s = s.replace("Ν", "N");
+                    s = s.replace("Ο", "O");
+                    s = s.replace("Ρ", "P");
+                    s = s.replace("Τ", "T");
+                    s = s.replace("Υ", "Y");
+                    s = s.replace("Χ", "X");
+                    s = s.replace("α", "A");
+                    s = s.replace("β", "B");
+                    s = s.replace("γ", "Γ");
+                    s = s.replace("δ", "Δ");
+                    s = s.replace("ε", "E");
+                    s = s.replace("ζ", "Z");
+                    s = s.replace("η", "H");
+                    s = s.replace("θ", "Θ");
+                    s = s.replace("ι", "I");
+                    s = s.replace("κ", "K");
+                    s = s.replace("λ", "Λ");
+                    s = s.replace("μ", "M");
+                    s = s.replace("ν", "N");
+                    s = s.replace("ξ", "Ξ");
+                    s = s.replace("ο", "O");
+                    s = s.replace("π", "Π");
+                    s = s.replace("ρ", "P");
+                    s = s.replace("σ", "Σ");
+                    s = s.replace("τ", "T");
+                    s = s.replace("υ", "Y");
+                    s = s.replace("φ", "Φ");
+                    s = s.replace("χ", "X");
+                    s = s.replace("ψ", "Ψ");
+                    s = s.replace("ω", "Ω");
+                    s = s.replace("ς", "Σ");
+
+                    output.append(s);
+                }
+            }
+
+            // No changes were attempted, so don't return anything
+            if (unfiltered) {
+                return null;
+            }
+            // Source is a spanned string, so copy the spans from it
+            else if (source instanceof Spanned) {
+                SpannableString spannedoutput = new SpannableString(output);
+                TextUtils.copySpansFrom(
+                    (Spanned) source, start, end, null, spannedoutput, 0);
+
+                return spannedoutput;
+            }
+            // Source is a vanilla charsequence, so return output as-is
+            else {
+                return output;
+            }
+        }
+    }
 
     private void editSlideshow() {
         Uri dataUri = mWorkingMessage.saveAsMms(false);
@@ -1746,6 +1857,7 @@ public class ComposeMessageActivity extends Activity
         mGestureSensitivity = prefs.getInt(MessagingPreferenceActivity.GESTURE_SENSITIVITY_VALUE, 3);
 
         boolean showGesture = prefs.getBoolean(MessagingPreferenceActivity.SHOW_GESTURE, false);
+        boolean stripUnicode = prefs.getBoolean(MessagingPreferenceActivity.STRIP_UNICODE, false);
 
         int layout = R.layout.compose_message_activity;
 
@@ -1769,6 +1881,14 @@ public class ComposeMessageActivity extends Activity
 
         // Initialize members for UI elements.
         initResourceRefs();
+
+        LengthFilter lengthFilter = new LengthFilter(MmsConfig.getMaxTextLimit());
+
+        if (stripUnicode) {
+            mTextEditor.setFilters(new InputFilter[] { new StripUnicode(), lengthFilter });
+        } else {
+            mTextEditor.setFilters(new InputFilter[] { lengthFilter });
+        }
 
         mContentResolver = getContentResolver();
         mBackgroundQueryHandler = new BackgroundQueryHandler(mContentResolver);

@@ -85,6 +85,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     public static final String SHOW_GESTURE = "pref_key_templates_show_gesture";
     public static final String GESTURE_SENSITIVITY = "pref_key_templates_gestures_sensitivity";
     public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
+    public static final String STRIP_UNICODE = "pref_key_strip_unicode";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
