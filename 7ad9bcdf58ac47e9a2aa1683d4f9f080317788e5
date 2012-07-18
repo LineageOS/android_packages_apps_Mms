@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAVX///7o\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 396
+      },
+      "writtenOn": "2012-07-18T16:47:40Z",
+      "side": 1,
+      "message": "I would change it to: \"Wybierz z której klawiatury...\"",
+      "revId": "7ad9bcdf58ac47e9a2aa1683d4f9f080317788e5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
