@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAVX//+Ks\u003d",
+        "filename": "res/values-ru/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 3835
+      },
+      "writtenOn": "2012-07-23T16:11:10Z",
+      "side": 1,
+      "message": "\"@string/pref_title_mms_notification_vibrate_custom\"\n\nWhat the hell? :O",
+      "revId": "564872a63ae8829ab42fe3ab63c567696b6f3eae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAVX//+K0\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 367,
+      "author": {
+        "id": 3835
+      },
+      "writtenOn": "2012-07-23T16:11:10Z",
+      "side": 1,
+      "message": "\"... v oblasti ...\" error is here.",
+      "revId": "564872a63ae8829ab42fe3ab63c567696b6f3eae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAVX//+Kw\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 3835
+      },
+      "writtenOn": "2012-07-23T16:11:10Z",
+      "side": 1,
+      "message": "\", \\u2026\"\ndo we need it?",
+      "revId": "564872a63ae8829ab42fe3ab63c567696b6f3eae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
