@@ -62,6 +62,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.provider.ContactsContract;
+import android.provider.ContactsContract.QuickContact;
 import android.provider.Telephony.Mms;
 import android.provider.Telephony.Sms;
 import android.telephony.TelephonyManager;
@@ -925,9 +927,23 @@ public class MessagingNotification {
 
         final Notification notification;
 
+        if (messageCount == 1 || uniqueThreadCount == 1) {
+            CharSequence callText = context.getText(R.string.menu_call);
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
+            callIntent.setData(mostRecentNotification.mSender.getPhoneUri());
+            PendingIntent mCallPendingIntent = PendingIntent.getActivity(context, 0, callIntent, 0);
+            noti.addAction(R.drawable.ic_menu_call, callText, mCallPendingIntent);
+
+            CharSequence viewText = context.getText(R.string.menu_view_contact);
+            Intent viewIntent = new Intent("com.android.contacts.action.QUICK_CONTACT");
+            viewIntent.setData(mostRecentNotification.mSender.getUri());
+            viewIntent.putExtra(ContactsContract.QuickContact.EXTRA_MODE, QuickContact.MODE_SMALL);
+            PendingIntent mViewPendingIntent = PendingIntent.getActivity(context, 0, viewIntent, 0);
+            noti.addAction(R.drawable.ic_menu_search_holo_dark, viewText, mViewPendingIntent);
+        }
+
         if (messageCount == 1) {
             // We've got a single message
-
             // This sets the text for the collapsed form:
             noti.setContentText(mostRecentNotification.formatBigMessage(context));
 
