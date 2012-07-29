@@ -933,13 +933,6 @@ public class MessagingNotification {
             callIntent.setData(mostRecentNotification.mSender.getPhoneUri());
             PendingIntent mCallPendingIntent = PendingIntent.getActivity(context, 0, callIntent, 0);
             noti.addAction(R.drawable.ic_menu_call, callText, mCallPendingIntent);
-
-            CharSequence viewText = context.getText(R.string.menu_view_contact);
-            Intent viewIntent = new Intent("com.android.contacts.action.QUICK_CONTACT");
-            viewIntent.setData(mostRecentNotification.mSender.getUri());
-            viewIntent.putExtra(ContactsContract.QuickContact.EXTRA_MODE, QuickContact.MODE_SMALL);
-            PendingIntent mViewPendingIntent = PendingIntent.getActivity(context, 0, viewIntent, 0);
-            noti.addAction(R.drawable.ic_menu_search_holo_dark, viewText, mViewPendingIntent);
         }
 
         if (messageCount == 1) {
