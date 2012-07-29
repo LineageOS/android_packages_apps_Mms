@@ -86,7 +86,7 @@ public class TransactionSettings {
                     sawValidApn = true;
 
                     String MMSC = cursor.getString(COLUMN_MMSC);
-                    if ( MMSC == null ) {
+                    if (MMSC == null) {
                         continue;
                     }
 
