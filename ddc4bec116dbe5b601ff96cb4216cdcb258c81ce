@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAWX///bY\u003d",
+        "filename": "res/values-da/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2012-08-19T15:04:43Z",
+      "side": 1,
+      "message": "Don\u0027t translate \"values\" arrays since these aren\u0027t for display.",
+      "revId": "ddc4bec116dbe5b601ff96cb4216cdcb258c81ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
