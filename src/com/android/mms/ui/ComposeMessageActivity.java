@@ -4415,7 +4415,7 @@ public class ComposeMessageActivity extends Activity
         // If we're not running, but resume later, the current thread ID will be set in onResume()
     }
 
-    private void startLoadingTemplates() {
+    public void startLoadingTemplates() {
         setProgressBarIndeterminateVisibility(true);
         getLoaderManager().restartLoader(LOAD_TEMPLATES, null, this);
     }
