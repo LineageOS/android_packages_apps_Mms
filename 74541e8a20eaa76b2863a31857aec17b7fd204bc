@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAW3///74\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2012-08-26T13:08:49Z",
+      "side": 1,
+      "message": "Non sò se puoi usare i doppi apici in questo modo, mi sembra di no.",
+      "revId": "74541e8a20eaa76b2863a31857aec17b7fd204bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
