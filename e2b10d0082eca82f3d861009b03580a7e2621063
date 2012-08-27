@@ -1,0 +1,10 @@
+Change-Id: Ie2b10d0082eca82f3d861009b03580a7e2621063
+Code-Review+2: Steve Kondik <shade@chemlab.org>
+Verified+1: Steve Kondik <shade@chemlab.org>
+Code-Review+1: Adnan Begovic <decad3nce@gmail.com>
+Code-Review+1: Mike Kasick <mike@kasick.org>
+Submitted-by: Steve Kondik <shade@chemlab.org>
+Submitted-at: Mon, 27 Aug 2012 07:43:34 +0400
+Reviewed-on: http://review.cyanogenmod.com/21886
+Project: CyanogenMod/android_packages_apps_Mms
+Branch: refs/heads/jellybean
