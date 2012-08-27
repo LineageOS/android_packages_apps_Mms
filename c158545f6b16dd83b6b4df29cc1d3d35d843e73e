@@ -34,6 +34,41 @@
       "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAW3///L8\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-08-27T21:57:47Z",
+      "side": 1,
+      "message": "See my comment further down.",
+      "parentUuid": "AAAAW3///Mg\u003d",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAW3///MA\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-08-27T21:57:47Z",
+      "side": 1,
+      "message": "I think the fix for the NPE is here, we should reload the mCurrentQm here so that the getThreadId() is valid.\n\nmCurrentQm \u003d mMessageList.get(mCurrentQmIndex);",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
