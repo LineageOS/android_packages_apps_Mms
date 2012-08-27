@@ -16,6 +16,24 @@
       "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAW3///Mg\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2012-08-27T21:50:31Z",
+      "side": 1,
+      "message": "I only added this since i was getting npe with multiple messages and trying to press the close button on the dialog.\n\nTry it w/o this and see if you get a NPE.",
+      "parentUuid": "AAAAW3///M0\u003d",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
