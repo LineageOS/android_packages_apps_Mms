@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAW3///Js\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-08-27T22:38:01Z",
+      "side": 1,
+      "message": "set this to -1 to start",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAW3///Ls\u003d",
         "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
         "patchSetId": 5
@@ -13,6 +30,23 @@
       "writtenOn": "2012-08-27T22:03:43Z",
       "side": 1,
       "message": "It seems that the screen turns on (it does not unlock though) when a new message comes in even though the \"Wake and unlock\" is not set.  It should not turn on at all.\n\nI wonder if we should have an \u0027else\u0027 block here that sets the window flags differently if getQmLockScreenEnabled \u003d\u003d false?",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAW3///Jk\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-08-27T22:38:01Z",
+      "side": 1,
+      "message": "// If it is a new message and that the index is valid\nif (newMessage \u0026\u0026 mCurrentQmIndex !\u003d -1) {",
       "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -66,6 +100,40 @@
       "side": 1,
       "message": "See my comment further down.",
       "parentUuid": "AAAAW3///Mg\u003d",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAW3///J8\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-08-27T22:38:01Z",
+      "side": 1,
+      "message": "Move this up to line 612",
+      "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAW3///Jg\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessage.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 297,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-08-27T22:38:01Z",
+      "side": 1,
+      "message": "maybe one should also set mCurrentQm \u003d null; here so it can be used as a check elsewhere should setCurrentItem() fail",
       "revId": "c158545f6b16dd83b6b4df29cc1d3d35d843e73e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
