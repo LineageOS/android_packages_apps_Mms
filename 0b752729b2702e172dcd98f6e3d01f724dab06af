@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXH//+3s\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2012-09-02T02:51:09Z",
+      "side": 1,
+      "message": "schermata di sblocco anzichè bloccaschermo ?",
+      "revId": "0b752729b2702e172dcd98f6e3d01f724dab06af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
