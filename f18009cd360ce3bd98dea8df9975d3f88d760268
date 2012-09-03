@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXH//+cI\u003d",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 410,
+      "author": {
+        "id": 2809
+      },
+      "writtenOn": "2012-09-03T12:45:12Z",
+      "side": 1,
+      "message": "\"Væk\" means gone... I would choose \"Vågne\" or \"Vække\" or something like that?\nWhat do you think?",
+      "revId": "f18009cd360ce3bd98dea8df9975d3f88d760268",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
