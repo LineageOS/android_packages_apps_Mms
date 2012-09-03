@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXH//+j8\u003d",
+        "filename": "res/values-es/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-03T03:33:58Z",
+      "side": 1,
+      "message": "Varias largas (uppercase)",
+      "revId": "96bedf36dd6a89905e889dfa113e2a7955d90002",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXH//+j4\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-03T03:33:58Z",
+      "side": 1,
+      "message": "I prefer \"Ajustes adicionales\". Up to you",
+      "revId": "96bedf36dd6a89905e889dfa113e2a7955d90002",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
