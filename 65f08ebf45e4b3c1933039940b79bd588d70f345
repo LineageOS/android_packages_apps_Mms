@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXH//+Eo\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-09-04T16:04:49Z",
+      "side": 1,
+      "message": "Deze nog naar arrays.xml verplaatsen?",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXH//+Ek\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-09-04T16:04:49Z",
+      "side": 1,
+      "message": "Hoofletter T?",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXH//+Eg\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-09-04T16:04:49Z",
+      "side": 1,
+      "message": "Ss",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXH//+Ec\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 353,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-09-04T16:04:49Z",
+      "side": 1,
+      "message": "vergrendelen -\u003e ontgrendelen?",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
