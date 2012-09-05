@@ -53,6 +53,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.QuickContactBadge;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
@@ -93,6 +94,7 @@ public class QuickMessage extends Activity implements
     private static final int DIALOG_TEMPLATE_SELECT        = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
     private SimpleCursorAdapter mTemplatesCursorAdapter;
+    private int mNumTemplates = 0;
 
     // View items
     private ImageView mQmPagerArrow;
@@ -130,6 +132,7 @@ public class QuickMessage extends Activity implements
         mDefaultContactImage = getResources().getDrawable(R.drawable.ic_contact_picture);
         mCloseClosesAll = MessagingPreferenceActivity.getQmCloseAllEnabled(mContext);
         mWakeAndUnlock = MessagingPreferenceActivity.getQmLockscreenEnabled(mContext);
+        mNumTemplates = getTemplatesCount();
 
         // Set the window features and layout
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -409,6 +412,13 @@ public class QuickMessage extends Activity implements
     }
 
     // Templates support
+    private int getTemplatesCount() {
+        Cursor cur = getContentResolver().query(Template.CONTENT_URI, null, null, null, null);
+        int numColumns = cur.getCount();
+        cur.close();
+        return numColumns;
+    }
+
     private void selectTemplate() {
         getLoaderManager().restartLoader(0, null, this);
     }
@@ -625,12 +635,19 @@ public class QuickMessage extends Activity implements
                 qm.setEditText(qmReplyText);
 
                 // Templates button
-                qmTemplatesButton.setOnClickListener(new OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        selectTemplate();
-                    }
-                });
+                if (mNumTemplates > 0) {
+                    // Show the templates button and set click event
+                    qmTemplatesButton.setVisibility(View.VISIBLE);
+                    qmTemplatesButton.setOnClickListener(new OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            selectTemplate();
+                        }
+                    });
+                } else {
+                    // Hide the Templates button
+                    qmTemplatesButton.setVisibility(View.GONE);
+                }
 
                 // Send button
                 qmSendButton.setOnClickListener(new OnClickListener() {
