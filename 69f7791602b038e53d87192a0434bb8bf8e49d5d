@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX///5I\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 353,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-09-07T11:21:29Z",
+      "side": 1,
+      "message": "mozna by skrocic do: \"Zarz?dzaj szablonami SMS\"",
+      "revId": "69f7791602b038e53d87192a0434bb8bf8e49d5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX///5E\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-09-07T11:21:29Z",
+      "side": 1,
+      "message": "Jesli ten tekst pojawia sie po wybraniu szablonow SMS to mozna skrocic do \"Brak zdefiniowanych szablonów\"",
+      "revId": "69f7791602b038e53d87192a0434bb8bf8e49d5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
