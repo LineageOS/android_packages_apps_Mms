@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAXX///kU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-09-08T19:04:33Z",
+      "side": 1,
+      "message": "Het is wel mooier om het in arrays.xml te zetten, maar dat betekent wel dat ik dat voor elke nieuwe AOSP-uitgave moet doen.\n\nEerlijk gezegd heb ik daar niet zo\u0027n zin in...",
+      "parentUuid": "AAAAXH//+Eo\u003d",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAXH//+Ek\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2012-09-04T16:04:49Z",
       "side": 1,
       "message": "Hoofletter T?",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX///kQ\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-09-08T19:04:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAXH//+Ek\u003d",
       "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAXX///kM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-09-08T19:04:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAXH//+Eg\u003d",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAXH//+Ec\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2012-09-04T16:04:49Z",
       "side": 1,
       "message": "vergrendelen -\u003e ontgrendelen?",
+      "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX///kI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 353,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-09-08T19:04:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAXH//+Ec\u003d",
       "revId": "65f08ebf45e4b3c1933039940b79bd588d70f345",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
