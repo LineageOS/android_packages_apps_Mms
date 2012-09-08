@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX///hk\u003d",
+        "filename": "res/values-nl/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-09-08T23:55:32Z",
+      "side": 1,
+      "message": "Deze is 2x gedefineerd.",
+      "revId": "176b6d14d6a5db1b83bdc2fae34d3059cf5e4af6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
