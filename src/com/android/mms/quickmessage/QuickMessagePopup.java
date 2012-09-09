@@ -114,6 +114,7 @@ public class QuickMessagePopup extends Activity implements
     // Configuration
     private boolean mCloseClosesAll = false;
     private boolean mWakeAndUnlock = false;
+    private boolean mDarkTheme = false;
 
     // Message pager
     private ViewPager mMessagePager;
@@ -123,15 +124,13 @@ public class QuickMessagePopup extends Activity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (DEBUG)
-            Log.d(LOG_TAG, "onCreate() called");
-
         // Initialise the message list and other variables
         mContext = this;
         mMessageList = new ArrayList<QuickMessage>();
         mDefaultContactImage = getResources().getDrawable(R.drawable.ic_contact_picture);
         mCloseClosesAll = MessagingPreferenceActivity.getQmCloseAllEnabled(mContext);
         mWakeAndUnlock = MessagingPreferenceActivity.getQmLockscreenEnabled(mContext);
+        mDarkTheme = MessagingPreferenceActivity.getQmDarkThemeEnabled(mContext);
         mNumTemplates = getTemplatesCount();
 
         // Set the window features and layout
@@ -150,6 +149,13 @@ public class QuickMessagePopup extends Activity implements
         mQmMessageCounter = (TextView) findViewById(R.id.message_counter);
         mCloseButton = (Button) findViewById(R.id.button_close);
         mViewButton = (Button) findViewById(R.id.button_view);
+
+        // Set the theme color on the pager arrow
+        if (mDarkTheme) {
+            mQmPagerArrow.setBackgroundColor(0xff1e1e1e); // dark theme
+        } else {
+            mQmPagerArrow.setBackgroundColor(0xfff3f3f3); // light theme
+        }
 
         // ViewPager Support
         mPagerAdapter = new MessagePagerAdapter();
@@ -259,30 +265,11 @@ public class QuickMessagePopup extends Activity implements
     protected void onStop() {
         super.onStop();
 
-        if (DEBUG)
-            Log.d(LOG_TAG, "onStop() called");
-
         if (mScreenUnlocked) {
             // Cancel the receiver that will clear the wake locks
             ClearAllReceiver.removeCancel(getApplicationContext());
             ClearAllReceiver.clearAll(mScreenUnlocked);
         }
-    }
-
-    @Override
-    public void onRestart() {
-        super.onRestart();
-
-        if (DEBUG)
-            Log.d(LOG_TAG, "onRestart() called");
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        if (DEBUG)
-            Log.d(LOG_TAG, "onStart() called");
     }
 
     /**
@@ -552,7 +539,12 @@ public class QuickMessagePopup extends Activity implements
 
             // Load the layout to be used
             LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View layout = inflater.inflate(R.layout.quickmessage_content, null);
+            View layout;
+            if (mDarkTheme) {
+                layout = inflater.inflate(R.layout.quickmessage_content_dark, null);
+            } else {
+                layout = inflater.inflate(R.layout.quickmessage_content_light, null);
+            }
 
             // Load the main views
             EditText qmReplyText = (EditText) layout.findViewById(R.id.embedded_text_editor);
@@ -577,9 +569,11 @@ public class QuickMessagePopup extends Activity implements
                 updateContactBadge(qmContactBadge, qm.getFromNumber()[0], false);
                 qmMessageText.setText(formatMessage(qm.getMessageBody()));
 
-                // We are using a holo.light background with a holo.dark activity theme
-                // Override the EditText background to use the holo.light theme
-                qmReplyText.setBackgroundResource(R.drawable.edit_text_holo_light);
+                if (!mDarkTheme) {
+                    // We are using a holo.light background with a holo.dark activity theme
+                    // Override the EditText background to use the holo.light theme
+                    qmReplyText.setBackgroundResource(R.drawable.edit_text_holo_light);
+                }
 
                 // Set the remaining values
                 qmReplyText.setText(qm.getReplyText());
