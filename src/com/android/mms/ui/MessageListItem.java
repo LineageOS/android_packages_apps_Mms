@@ -327,6 +327,7 @@ public class MessageListItem extends LinearLayout implements
             mMessageItem.setCachedFormattedMessage(formattedMessage);
         }
         mBodyTextView.setText(formattedMessage);
+
         if (mMessageItem.mType.equals("mms")) {
             mBodySenderView.setText(mMessageItem.mContact + ":");
             mBodySenderView.setVisibility(View.VISIBLE);

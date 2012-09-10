@@ -436,10 +436,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         editor.apply();
     }
 
-        public static boolean getGroupMMSEnabled(Context context) {
-            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-            boolean groupMMSEnabled =
-                prefs.getBoolean(MessagingPreferenceActivity.GROUP_MMS_ENABLED, true);
+    public static boolean getGroupMMSEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean groupMMSEnabled =
+            prefs.getBoolean(MessagingPreferenceActivity.GROUP_MMS_ENABLED, true);
         return groupMMSEnabled;
     }
 
