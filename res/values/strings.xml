@@ -352,6 +352,9 @@
     <string name="pref_title_notification_ringtone">Choose ringtone</string>
     <!-- Settings item for setting the number of message to save for each conversation -->
     <string name="pref_messages_to_save">Set number of messages to save</string>
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Soft keyboard type</string>
+    <string name="pref_summary_input_type">Select the soft keyboard to use when composing messages</string>
 
     <!-- The vibrate notification modes -->
     <string-array name="prefEntries_vibrateWhen">
