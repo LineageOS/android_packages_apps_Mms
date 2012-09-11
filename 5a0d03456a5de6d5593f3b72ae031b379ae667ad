@@ -16,6 +16,24 @@
       "revId": "5a0d03456a5de6d5593f3b72ae031b379ae667ad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX///HU\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-09-11T03:44:24Z",
+      "side": 1,
+      "message": "No, in this case, since the dark theme option applies to quick reply as well, it should be select-able even if the pop-up is not enabled.\n\nThere was some method behind my madness :-)",
+      "parentUuid": "AAAAXX///Hg\u003d",
+      "revId": "5a0d03456a5de6d5593f3b72ae031b379ae667ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
