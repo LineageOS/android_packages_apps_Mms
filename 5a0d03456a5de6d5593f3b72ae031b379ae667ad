@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX///Hg\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 56
+      },
+      "writtenOn": "2012-09-11T03:23:57Z",
+      "side": 1,
+      "message": "should this have a pref_key_quickmessage dependency?",
+      "revId": "5a0d03456a5de6d5593f3b72ae031b379ae667ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
