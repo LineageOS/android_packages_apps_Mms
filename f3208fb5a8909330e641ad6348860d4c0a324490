@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//+xE\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-09-12T00:12:19Z",
+      "side": 1,
+      "message": "these three should be @string/ resource references to facilitate translation",
+      "revId": "f3208fb5a8909330e641ad6348860d4c0a324490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//+xA\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-09-12T00:12:19Z",
+      "side": 1,
+      "message": "Would this not sound better as \"Select which keyboard ...\" ?",
+      "revId": "f3208fb5a8909330e641ad6348860d4c0a324490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//+w8\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-09-12T00:12:19Z",
+      "side": 1,
+      "message": "add a newline above this so spacing is preserved",
+      "revId": "f3208fb5a8909330e641ad6348860d4c0a324490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
