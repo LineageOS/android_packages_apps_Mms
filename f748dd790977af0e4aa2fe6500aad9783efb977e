@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//+fA\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 852,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-09-13T00:09:14Z",
+      "side": 1,
+      "message": "Should this not say \"Enter to send\" if you have \"Enter for a new line\" below?",
+      "revId": "f748dd790977af0e4aa2fe6500aad9783efb977e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
