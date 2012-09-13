@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYH////U\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 415,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2012-09-13T21:42:10Z",
+      "side": 1,
+      "message": "Ehhez mit szólsz? Sötét téma használata az alapértelmezett világos helyett.",
+      "revId": "a82188ccb95b51943232bf0f5c67fcaa156ffc85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
