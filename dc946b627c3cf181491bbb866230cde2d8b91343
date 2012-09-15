@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX///KI\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 401,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-15T20:19:22Z",
+      "side": 1,
+      "message": "IMHO is better \"Escribir respuesta\".",
+      "revId": "dc946b627c3cf181491bbb866230cde2d8b91343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAYX///KE\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-15T20:19:22Z",
+      "side": 1,
+      "message": "IMHO is better \"Respuesta rápida\".",
+      "revId": "dc946b627c3cf181491bbb866230cde2d8b91343",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
