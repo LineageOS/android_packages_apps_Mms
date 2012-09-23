@@ -46,6 +46,8 @@ import android.view.MenuItem;
 import com.android.mms.templates.TemplatesListActivity;
 import com.android.mms.util.Recycler;
 
+import com.android.mms.util.EmojiParser;
+
 /**
  * With this activity, users can set preferences for MMS and SMS and
  * can access and manipulate SMS messages stored on the SIM.
@@ -77,6 +79,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String FULL_TIMESTAMP            = "pref_key_mms_full_timestamp";
     public static final String SENT_TIMESTAMP            = "pref_key_mms_use_sent_timestamp";
     public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
+    public static final String ENABLE_EMOJIS_DEFAULT     = "pref_key_enable_emojis_default";
 
     // QuickMessage
     public static final String QUICKMESSAGE_ENABLED      = "pref_key_quickmessage";
@@ -110,6 +113,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mEnableQmLockscreenPref;
     private CheckBoxPreference mEnableQmCloseAllPref;
     private CheckBoxPreference mEnableQmDarkThemePref;
+
+    // EmojiSet
+    private CheckBoxPreference mEnableEmojiDefaultPref;
 
     @Override
     protected void onCreate(Bundle icicle) {
@@ -152,6 +158,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mEnableQmLockscreenPref = (CheckBoxPreference) findPreference(QM_LOCKSCREEN_ENABLED);
         mEnableQmCloseAllPref = (CheckBoxPreference) findPreference(QM_CLOSE_ALL_ENABLED);
         mEnableQmDarkThemePref = (CheckBoxPreference) findPreference(QM_DARK_THEME_ENABLED);
+
+        // EmojiSet
+        mEnableEmojiDefaultPref = (CheckBoxPreference) findPreference(ENABLE_EMOJIS_DEFAULT);
 
         mVibrateEntries = getResources().getTextArray(R.array.prefEntries_vibrateWhen);
         mVibrateValues = getResources().getTextArray(R.array.prefValues_vibrateWhen);
@@ -227,6 +236,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         setEnabledQmCloseAllPref();
         setEnabledQmDarkThemePref();
 
+        // Emoji
+        setEnableEmojiSetPref();
+
         // If needed, migrate vibration setting from a previous version
         final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         if (!sharedPreferences.contains(NOTIFICATION_VIBRATE_WHEN) &&
@@ -300,6 +312,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         // The "Use dark theme" setting is really stored in our own prefs. Read the
         // current value and set the checkbox to match.
         mEnableQmDarkThemePref.setChecked(getQmDarkThemeEnabled(this));
+    }
+
+    private void setEnableEmojiSetPref(){
+        mEnableEmojiDefaultPref.setChecked(getEnableEmojiSet(this));
     }
 
     private void setSmsDisplayLimit() {
@@ -382,6 +398,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         } else if (preference == mEnableQmDarkThemePref) {
             // Update the actual "enable dark theme" value that is stored in secure settings.
             enableQmDarkTheme(mEnableQmDarkThemePref.isChecked(), this);
+        } else if (preference == mEnableEmojiDefaultPref) {
+           //
+           enableEmojiDefaultSet(mEnableEmojiDefaultPref.isChecked(), this);
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -500,6 +519,20 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         boolean qmDarkThemeEnabled =
             prefs.getBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, false);
         return qmDarkThemeEnabled;
+    }
+
+    public static void enableEmojiDefaultSet(boolean enabled, Context context) {
+        SharedPreferences.Editor editor =
+            PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS_DEFAULT, enabled);
+        editor.apply();
+        EmojiParser.init(context);
+    }
+
+    public static boolean getEnableEmojiSet(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS_DEFAULT, false);
+        return enableEmojis;
     }
 
     private void registerListeners() {

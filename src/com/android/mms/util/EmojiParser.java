@@ -27,6 +27,10 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import com.android.mms.ui.MessagingPreferenceActivity;
+
 /**
  * A class for annotating a CharSequence with spans to convert textual Softbank
  * and Unicode emojis to graphical ones. The full Unicode proposal is available
@@ -51,7 +55,10 @@ public class EmojiParser {
 
     private EmojiParser(Context context) {
         mContext = context;
-        mSmileyToRes = buildSmileyToRes();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
+        boolean enableEmojisDefault = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS_DEFAULT, false);
+
+        mSmileyToRes = buildSmileyToRes(enableEmojisDefault);
         mPattern = buildPattern();
     }
 
@@ -216,8 +223,169 @@ public class EmojiParser {
                 R.drawable.emoji_e24e, R.drawable.emoji_e24f, R.drawable.emoji_e537
         };
 
-        public static int getSmileyResource(int which) {
-            return sIconIds[which];
+        private static final int[] sIconIdsDefault = {
+                R.drawable.emoji_e415_d, R.drawable.emoji_e056, R.drawable.emoji_e057_d,
+                R.drawable.emoji_e414, R.drawable.emoji_e405_d, R.drawable.emoji_e106_d,
+                R.drawable.emoji_e418_d, R.drawable.emoji_e417_d, R.drawable.emoji_e40d_d,
+                R.drawable.emoji_e40a_d, R.drawable.emoji_e404_d, R.drawable.emoji_e105_d,
+                R.drawable.emoji_e409_d, R.drawable.emoji_e40e_d, R.drawable.emoji_e402_d,
+                R.drawable.emoji_e108_d, R.drawable.emoji_e403_d, R.drawable.emoji_e058_d,
+                R.drawable.emoji_e407_d, R.drawable.emoji_e401_d, R.drawable.emoji_e40f_d,
+                R.drawable.emoji_e40b_d, R.drawable.emoji_e406_d, R.drawable.emoji_e413_d,
+                R.drawable.emoji_e411_d, R.drawable.emoji_e412_d, R.drawable.emoji_e410_d,
+                R.drawable.emoji_e107_d, R.drawable.emoji_e059_d, R.drawable.emoji_e416_d,
+                R.drawable.emoji_e408_d, R.drawable.emoji_e40c_d, R.drawable.emoji_e11a,
+                R.drawable.emoji_e10c, R.drawable.emoji_e32c, R.drawable.emoji_e32a,
+                R.drawable.emoji_e32d, R.drawable.emoji_e328, R.drawable.emoji_e32b,
+                R.drawable.emoji_e022, R.drawable.emoji_e023, R.drawable.emoji_e327,
+                R.drawable.emoji_e329, R.drawable.emoji_e32e, R.drawable.emoji_e32f,
+                R.drawable.emoji_e335, R.drawable.emoji_e334, R.drawable.emoji_e021,
+                R.drawable.emoji_e337, R.drawable.emoji_e020, R.drawable.emoji_e336,
+                R.drawable.emoji_e13c, R.drawable.emoji_e330, R.drawable.emoji_e331_d,
+                R.drawable.emoji_e326, R.drawable.emoji_e03e, R.drawable.emoji_e11d,
+                R.drawable.emoji_e05a, R.drawable.emoji_e00e, R.drawable.emoji_e421,
+                R.drawable.emoji_e420, R.drawable.emoji_e00d, R.drawable.emoji_e010,
+                R.drawable.emoji_e011, R.drawable.emoji_e41e, R.drawable.emoji_e012_d,
+                R.drawable.emoji_e422, R.drawable.emoji_e22e, R.drawable.emoji_e22f,
+                R.drawable.emoji_e231, R.drawable.emoji_e230, R.drawable.emoji_e427_d,
+                R.drawable.emoji_e41d_d, R.drawable.emoji_e00f, R.drawable.emoji_e41f,
+                R.drawable.emoji_e14c, R.drawable.emoji_e201, R.drawable.emoji_e115,
+                R.drawable.emoji_e428, R.drawable.emoji_e51f, R.drawable.emoji_e429,
+                R.drawable.emoji_e424_d, R.drawable.emoji_e423_d, R.drawable.emoji_e253,
+                R.drawable.emoji_e426_d, R.drawable.emoji_e111, R.drawable.emoji_e425,
+                R.drawable.emoji_e31e, R.drawable.emoji_e31f, R.drawable.emoji_e31d,
+                R.drawable.emoji_e001, R.drawable.emoji_e002, R.drawable.emoji_e005,
+                R.drawable.emoji_e004, R.drawable.emoji_e51a, R.drawable.emoji_e519,
+                R.drawable.emoji_e518, R.drawable.emoji_e515, R.drawable.emoji_e516,
+                R.drawable.emoji_e517, R.drawable.emoji_e51b, R.drawable.emoji_e152,
+                R.drawable.emoji_e04e, R.drawable.emoji_e51c, R.drawable.emoji_e51e,
+                R.drawable.emoji_e11c, R.drawable.emoji_e536, R.drawable.emoji_e003,
+                R.drawable.emoji_e41c, R.drawable.emoji_e41b, R.drawable.emoji_e419,
+                R.drawable.emoji_e41a, R.drawable.emoji_e04a, R.drawable.emoji_e04b,
+                R.drawable.emoji_e049, R.drawable.emoji_e048, R.drawable.emoji_e04c,
+                R.drawable.emoji_e13d, R.drawable.emoji_e443, R.drawable.emoji_e43e,
+                R.drawable.emoji_e04f, R.drawable.emoji_e052, R.drawable.emoji_e053,
+                R.drawable.emoji_e524, R.drawable.emoji_e52c, R.drawable.emoji_e52a,
+                R.drawable.emoji_e531, R.drawable.emoji_e050, R.drawable.emoji_e527,
+                R.drawable.emoji_e051, R.drawable.emoji_e10b, R.drawable.emoji_e52b,
+                R.drawable.emoji_e52f, R.drawable.emoji_e528, R.drawable.emoji_e01a,
+                R.drawable.emoji_e134, R.drawable.emoji_e530, R.drawable.emoji_e529,
+                R.drawable.emoji_e526, R.drawable.emoji_e52d, R.drawable.emoji_e521,
+                R.drawable.emoji_e523, R.drawable.emoji_e52e, R.drawable.emoji_e055,
+                R.drawable.emoji_e525, R.drawable.emoji_e10a, R.drawable.emoji_e109,
+                R.drawable.emoji_e522, R.drawable.emoji_e019, R.drawable.emoji_e054,
+                R.drawable.emoji_e520, R.drawable.emoji_e306, R.drawable.emoji_e030,
+                R.drawable.emoji_e304, R.drawable.emoji_e110, R.drawable.emoji_e032,
+                R.drawable.emoji_e305, R.drawable.emoji_e303, R.drawable.emoji_e118,
+                R.drawable.emoji_e447, R.drawable.emoji_e119, R.drawable.emoji_e307,
+                R.drawable.emoji_e308, R.drawable.emoji_e444, R.drawable.emoji_e441,
+                R.drawable.emoji_e436, R.drawable.emoji_e437, R.drawable.emoji_e438,
+                R.drawable.emoji_e43a, R.drawable.emoji_e439, R.drawable.emoji_e43b,
+                R.drawable.emoji_e117, R.drawable.emoji_e440, R.drawable.emoji_e442,
+                R.drawable.emoji_e446, R.drawable.emoji_e445, R.drawable.emoji_e11b,
+                R.drawable.emoji_e448, R.drawable.emoji_e033, R.drawable.emoji_e112,
+                R.drawable.emoji_e325, R.drawable.emoji_e312, R.drawable.emoji_e310,
+                R.drawable.emoji_e126, R.drawable.emoji_e127, R.drawable.emoji_e008,
+                R.drawable.emoji_e03d, R.drawable.emoji_e00c, R.drawable.emoji_e12a,
+                R.drawable.emoji_e00a, R.drawable.emoji_e00b, R.drawable.emoji_e009,
+                R.drawable.emoji_e316, R.drawable.emoji_e129, R.drawable.emoji_e141,
+                R.drawable.emoji_e142, R.drawable.emoji_e317, R.drawable.emoji_e128,
+                R.drawable.emoji_e14b, R.drawable.emoji_e211, R.drawable.emoji_e114,
+                R.drawable.emoji_e145, R.drawable.emoji_e144, R.drawable.emoji_e03f,
+                R.drawable.emoji_e313, R.drawable.emoji_e116, R.drawable.emoji_e10f,
+                R.drawable.emoji_e104, R.drawable.emoji_e103, R.drawable.emoji_e101,
+                R.drawable.emoji_e102, R.drawable.emoji_e13f, R.drawable.emoji_e140,
+                R.drawable.emoji_e11f, R.drawable.emoji_e12f, R.drawable.emoji_e031,
+                R.drawable.emoji_e30e, R.drawable.emoji_e311, R.drawable.emoji_e113,
+                R.drawable.emoji_e30f, R.drawable.emoji_e13b, R.drawable.emoji_e42b,
+                R.drawable.emoji_e42a, R.drawable.emoji_e018, R.drawable.emoji_e016,
+                R.drawable.emoji_e015, R.drawable.emoji_e014, R.drawable.emoji_e42c,
+                R.drawable.emoji_e42d, R.drawable.emoji_e017, R.drawable.emoji_e013,
+                R.drawable.emoji_e20e, R.drawable.emoji_e20c, R.drawable.emoji_e20f,
+                R.drawable.emoji_e20d, R.drawable.emoji_e131, R.drawable.emoji_e12b,
+                R.drawable.emoji_e130, R.drawable.emoji_e12d, R.drawable.emoji_e324,
+                R.drawable.emoji_e301, R.drawable.emoji_e148, R.drawable.emoji_e502,
+                R.drawable.emoji_e03c, R.drawable.emoji_e30a, R.drawable.emoji_e042,
+                R.drawable.emoji_e040, R.drawable.emoji_e041, R.drawable.emoji_e12c,
+                R.drawable.emoji_e007, R.drawable.emoji_e31a, R.drawable.emoji_e13e,
+                R.drawable.emoji_e31b, R.drawable.emoji_e006, R.drawable.emoji_e302,
+                R.drawable.emoji_e319, R.drawable.emoji_e321, R.drawable.emoji_e322,
+                R.drawable.emoji_e314, R.drawable.emoji_e503, R.drawable.emoji_e10e,
+                R.drawable.emoji_e318, R.drawable.emoji_e43c, R.drawable.emoji_e11e,
+                R.drawable.emoji_e323, R.drawable.emoji_e31c, R.drawable.emoji_e034,
+                R.drawable.emoji_e035, R.drawable.emoji_e045, R.drawable.emoji_e338,
+                R.drawable.emoji_e047, R.drawable.emoji_e30c, R.drawable.emoji_e044,
+                R.drawable.emoji_e30b, R.drawable.emoji_e043, R.drawable.emoji_e120,
+                R.drawable.emoji_e33b, R.drawable.emoji_e33f, R.drawable.emoji_e341,
+                R.drawable.emoji_e34c, R.drawable.emoji_e344, R.drawable.emoji_e342,
+                R.drawable.emoji_e33d, R.drawable.emoji_e33e, R.drawable.emoji_e340,
+                R.drawable.emoji_e34d, R.drawable.emoji_e339, R.drawable.emoji_e147,
+                R.drawable.emoji_e343, R.drawable.emoji_e33c, R.drawable.emoji_e33a,
+                R.drawable.emoji_e43f, R.drawable.emoji_e34b, R.drawable.emoji_e046,
+                R.drawable.emoji_e345, R.drawable.emoji_e346, R.drawable.emoji_e348,
+                R.drawable.emoji_e347, R.drawable.emoji_e34a, R.drawable.emoji_e349,
+                R.drawable.emoji_e036, R.drawable.emoji_e157, R.drawable.emoji_e038,
+                R.drawable.emoji_e153, R.drawable.emoji_e155, R.drawable.emoji_e14d,
+                R.drawable.emoji_e156, R.drawable.emoji_e501, R.drawable.emoji_e158,
+                R.drawable.emoji_e43d, R.drawable.emoji_e037, R.drawable.emoji_e504,
+                R.drawable.emoji_e44a, R.drawable.emoji_e146, R.drawable.emoji_e50a,
+                R.drawable.emoji_e505, R.drawable.emoji_e506, R.drawable.emoji_e122,
+                R.drawable.emoji_e508, R.drawable.emoji_e509, R.drawable.emoji_e03b,
+                R.drawable.emoji_e04d, R.drawable.emoji_e449, R.drawable.emoji_e44b,
+                R.drawable.emoji_e51d, R.drawable.emoji_e44c, R.drawable.emoji_e124,
+                R.drawable.emoji_e121, R.drawable.emoji_e433, R.drawable.emoji_e202,
+                R.drawable.emoji_e135, R.drawable.emoji_e01c, R.drawable.emoji_e01d,
+                R.drawable.emoji_e10d, R.drawable.emoji_e136, R.drawable.emoji_e42e,
+                R.drawable.emoji_e01b, R.drawable.emoji_e15a, R.drawable.emoji_e159,
+                R.drawable.emoji_e432, R.drawable.emoji_e430, R.drawable.emoji_e431,
+                R.drawable.emoji_e42f, R.drawable.emoji_e01e, R.drawable.emoji_e039,
+                R.drawable.emoji_e435, R.drawable.emoji_e01f, R.drawable.emoji_e125,
+                R.drawable.emoji_e03a, R.drawable.emoji_e14e, R.drawable.emoji_e252,
+                R.drawable.emoji_e137, R.drawable.emoji_e209, R.drawable.emoji_e154,
+                R.drawable.emoji_e133, R.drawable.emoji_e150, R.drawable.emoji_e320,
+                R.drawable.emoji_e123, R.drawable.emoji_e132, R.drawable.emoji_e143,
+                R.drawable.emoji_e50b, R.drawable.emoji_e514, R.drawable.emoji_e513,
+                R.drawable.emoji_e50c, R.drawable.emoji_e50d, R.drawable.emoji_e511,
+                R.drawable.emoji_e50f, R.drawable.emoji_e512, R.drawable.emoji_e510,
+                R.drawable.emoji_e50e, R.drawable.emoji_e21c, R.drawable.emoji_e21d,
+                R.drawable.emoji_e21e, R.drawable.emoji_e21f, R.drawable.emoji_e220,
+                R.drawable.emoji_e221, R.drawable.emoji_e222, R.drawable.emoji_e223,
+                R.drawable.emoji_e224, R.drawable.emoji_e225, R.drawable.emoji_e210,
+                R.drawable.emoji_e232, R.drawable.emoji_e233, R.drawable.emoji_e235,
+                R.drawable.emoji_e234, R.drawable.emoji_e236, R.drawable.emoji_e237,
+                R.drawable.emoji_e238, R.drawable.emoji_e239, R.drawable.emoji_e23b,
+                R.drawable.emoji_e23a, R.drawable.emoji_e23d, R.drawable.emoji_e23c,
+                R.drawable.emoji_e24d, R.drawable.emoji_e212, R.drawable.emoji_e24c,
+                R.drawable.emoji_e213, R.drawable.emoji_e214, R.drawable.emoji_e507,
+                R.drawable.emoji_e203, R.drawable.emoji_e20b, R.drawable.emoji_e22a,
+                R.drawable.emoji_e22b, R.drawable.emoji_e226, R.drawable.emoji_e227,
+                R.drawable.emoji_e22c, R.drawable.emoji_e22d, R.drawable.emoji_e215,
+                R.drawable.emoji_e216, R.drawable.emoji_e217, R.drawable.emoji_e218,
+                R.drawable.emoji_e228, R.drawable.emoji_e151, R.drawable.emoji_e138,
+                R.drawable.emoji_e139, R.drawable.emoji_e13a, R.drawable.emoji_e208,
+                R.drawable.emoji_e14f, R.drawable.emoji_e20a, R.drawable.emoji_e434,
+                R.drawable.emoji_e309, R.drawable.emoji_e315, R.drawable.emoji_e30d,
+                R.drawable.emoji_e207, R.drawable.emoji_e229, R.drawable.emoji_e206,
+                R.drawable.emoji_e205, R.drawable.emoji_e204, R.drawable.emoji_e12e,
+                R.drawable.emoji_e250, R.drawable.emoji_e251, R.drawable.emoji_e14a,
+                R.drawable.emoji_e149, R.drawable.emoji_e23f, R.drawable.emoji_e240,
+                R.drawable.emoji_e241, R.drawable.emoji_e242, R.drawable.emoji_e243,
+                R.drawable.emoji_e244, R.drawable.emoji_e245, R.drawable.emoji_e246,
+                R.drawable.emoji_e247, R.drawable.emoji_e248, R.drawable.emoji_e249,
+                R.drawable.emoji_e24a, R.drawable.emoji_e24b, R.drawable.emoji_e23e,
+                R.drawable.emoji_e532, R.drawable.emoji_e533, R.drawable.emoji_e534,
+                R.drawable.emoji_e535, R.drawable.emoji_e21a, R.drawable.emoji_e219,
+                R.drawable.emoji_e21b, R.drawable.emoji_e02f, R.drawable.emoji_e024,
+                R.drawable.emoji_e025, R.drawable.emoji_e026, R.drawable.emoji_e027,
+                R.drawable.emoji_e028, R.drawable.emoji_e029, R.drawable.emoji_e02a,
+                R.drawable.emoji_e02b, R.drawable.emoji_e02c, R.drawable.emoji_e02d,
+                R.drawable.emoji_e02e, R.drawable.emoji_e332, R.drawable.emoji_e333,
+                R.drawable.emoji_e24e, R.drawable.emoji_e24f, R.drawable.emoji_e537
+        };
+
+        public static int getSmileyResource(int which, boolean default_set) {
+            if(default_set) return sIconIdsDefault[which];
+            else return sIconIds[which];
         }
     }
 
@@ -777,7 +945,7 @@ public class EmojiParser {
      * Builds the hashtable we use for mapping the string version of a smiley
      * (e.g. ":-)") to a resource ID for the icon version.
      */
-    private HashMap<String, Integer> buildSmileyToRes() {
+    private HashMap<String, Integer> buildSmileyToRes(boolean default_set) {
 
         if (mEmojiTexts.length != mSoftbankEmojiTexts.length) {
             // Throw an exception if someone updated mEmojiTexts
@@ -790,7 +958,7 @@ public class EmojiParser {
         // Initialize the resource ids
         DEFAULT_EMOJI_RES_IDS = new int[mSoftbankEmojiTexts.length];
         for (int i = 0; i < mSoftbankEmojiTexts.length; i++) {
-            DEFAULT_EMOJI_RES_IDS[i] = Emojis.getSmileyResource(i);
+            DEFAULT_EMOJI_RES_IDS[i] = Emojis.getSmileyResource(i,default_set);
         }
 
         HashMap<String, Integer> smileyToRes = new HashMap<String, Integer>(
