@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX//84s\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 336,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-24T18:23:04Z",
+      "side": 1,
+      "message": "Enviar MMS pendientes",
+      "revId": "1c6c2c5249e549de2d6eab4921c0cdad5b439960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAYX//84o\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-24T18:23:04Z",
+      "side": 1,
+      "message": "Enviar mensajes MMS pendientes en la bandeja de salida a la red",
+      "revId": "1c6c2c5249e549de2d6eab4921c0cdad5b439960",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
