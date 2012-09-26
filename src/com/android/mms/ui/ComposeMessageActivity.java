@@ -34,6 +34,8 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
+// Add SMS to calendar remind
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -243,6 +245,8 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_PREFERENCES           = 31;
     private static final int MENU_ADD_TEMPLATE          = 32;
     private static final int MENU_INSERT_EMOJI         = 33;
+    // Add SMS to calendar remind
+    private static final int MENU_ADD_TO_CALENDAR       = 34;
 
     private static final int DIALOG_TEMPLATE_SELECT     = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
@@ -1173,6 +1177,9 @@ public class ComposeMessageActivity extends Activity
 
                 menu.add(0, MENU_COPY_MESSAGE_TEXT, 0, R.string.copy_message_text)
                 .setOnMenuItemClickListener(l);
+                // Add SMS to calendar remind
+                menu.add(0, MENU_ADD_TO_CALENDAR, 0, R.string.menu_add_to_calendar)
+                        .setOnMenuItemClickListener(l);
             }
 
             addCallAndContactMenuItems(menu, l, msgItem);
@@ -1309,6 +1316,19 @@ public class ComposeMessageActivity extends Activity
     private void copyToClipboard(String str) {
         ClipboardManager clipboard = (ClipboardManager)getSystemService(Context.CLIPBOARD_SERVICE);
         clipboard.setPrimaryClip(ClipData.newPlainText(null, str));
+    }
+
+    // Add SMS to calendar remind
+    private void addToCalendarRemind(String subject, String description ) {
+        Intent calendarIntent = new Intent(Intent.ACTION_EDIT);
+        Calendar calTime = Calendar.getInstance();
+        calendarIntent.setType("vnd.android.cursor.item/event");
+        calendarIntent.putExtra("title", subject);
+        calendarIntent.putExtra("beginTime", calTime.getTimeInMillis());
+        calTime.add(Calendar.MINUTE, 30);
+        calendarIntent.putExtra("endTime", calTime.getTimeInMillis());
+        calendarIntent.putExtra("description", description);
+        startActivity(calendarIntent);
     }
 
     private void forwardMessage(final MessageItem msgItem) {
@@ -1453,6 +1473,12 @@ public class ComposeMessageActivity extends Activity
 
                 case MENU_UNLOCK_MESSAGE: {
                     lockMessage(mMsgItem, false);
+                    return true;
+                }
+
+                // Add SMS to calendar remind
+                case MENU_ADD_TO_CALENDAR: {
+                    addToCalendarRemind(mMsgItem.mBody, mMsgItem.mSubject);
                     return true;
                 }
 
