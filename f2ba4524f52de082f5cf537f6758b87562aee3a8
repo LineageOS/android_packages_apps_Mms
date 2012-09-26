@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX//8VY\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1322,
+      "author": {
+        "id": 342
+      },
+      "writtenOn": "2012-09-26T04:17:13Z",
+      "side": 1,
+      "message": "Who calls this method to add sms to calendar remind?",
+      "revId": "f2ba4524f52de082f5cf537f6758b87562aee3a8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
