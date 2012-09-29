@@ -433,4 +433,16 @@
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Hurtigt svar</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Type af softwaretastatur</string>
+    <string name="pref_summary_input_type">Vælg det softwaretastatur, som skal bruges ved komponering af beskeder</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">Emoji</string>
+    <string name="pref_keyboard_send">Enter sender</string>
+    <string name="pref_keyboard_new_line">Enter for en ny linje</string>
+
+    <string name="label_mms_push">MMS-push</string>
+    <string name="desc_mms_push">Pusher MMS fra udbakken til netværket</string>
 </resources>
