@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
  * Copyright (C) 2007-2008 Esmertec AG.
  * Copyright (C) 2007-2008 The Android Open Source Project
+ * QuickMessage: Copyright (C) 2012 The CyanogenMod Project (DvTonder)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- -->
+-->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -387,4 +388,21 @@
     <string name="pref_summary_mms_full_timestamp">Afficher la date et l\'heure des messages</string>
     <string name="pref_title_mms_use_sent_timestamp">Date originale</string>
     <string name="pref_summary_mms_use_sent_timestamp">Afficher la date d\'envoi au lieu de la date de récéption</string>
+    <!-- QuickMessage -->
+    <string name="pref_quickmessage">QuickMessage</string>
+    <string name="pref_quickmessage_title">Activer QuickMessage</string>
+    <string name="pref_quickmessage_summary">Afficher la pop-up QuickMessage</string>
+    <string name="pref_wake_unlock_title">Réveiller et déverrouiller</string>
+    <string name="pref_wake_unlock_summary">Réveiller et déverrouiller l'appareil à l'arrivée de messages (écran de verrouillage non sécurisé seulement)</string>
+    <string name="pref_close_all_title">Tout fermer</string>
+    <string name="pref_close_all_summary">Le bonton Fermer ferme tous les messages</string>
+    <string name="pref_dark_theme_title">Utiliser le thème noir</string>
+    <string name="pref_dark_theme_summary">Si non sélectionné, le thème \'clair\' par défaut sera utilisé</string>
+    <string name="message_counter_separator">de</string>
+    <string name="button_close">Fermer</string>
+    <string name="button_view">Afficher</string>
+    <string name="button_templates">Modèles</string>
+    <string name="type_to_reply_text_enter_to_send">Entrer pour répondre</string>
+    <string name="toast_sending_message">Envoi du message</string>
+    <string name="qm_quick_reply">Réponse rapide</string>
 </resources>
