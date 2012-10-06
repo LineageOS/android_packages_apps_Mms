@@ -63,6 +63,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String SMS_DELIVERY_REPORT_MODE = "pref_key_sms_delivery_reports";
     public static final String SMS_SPLIT_COUNTER        = "pref_key_sms_split_counter";
     public static final String NOTIFICATION_ENABLED     = "pref_key_enable_notifications";
+    public static final String GROUP_MMS_ENABLED        = "pref_key_mms_group_mms";
     public static final String NOTIFICATION_VIBRATE     = "pref_key_vibrate";
     public static final String NOTIFICATION_VIBRATE_WHEN= "pref_key_vibrateWhen";
     public static final String NOTIFICATION_RINGTONE    = "pref_key_ringtone";
@@ -98,6 +99,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mSmsSplitCounterPref;
     private Preference mMmsLimitPref;
     private Preference mMmsDeliveryReportPref;
+    private CheckBoxPreference mMmsGroupMmsPref;
     private Preference mMmsReadReportPref;
     private Preference mManageSimPref;
     private Preference mClearHistoryPref;
@@ -152,6 +154,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mSmsDeliveryReportPref = findPreference("pref_key_sms_delivery_reports");
         mSmsSplitCounterPref = (CheckBoxPreference) findPreference("pref_key_sms_split_counter");
         mMmsDeliveryReportPref = findPreference("pref_key_mms_delivery_reports");
+        mMmsGroupMmsPref = (CheckBoxPreference) findPreference("pref_key_mms_group_mms");
         mMmsReadReportPref = findPreference("pref_key_mms_read_reports");
         mMmsLimitPref = findPreference("pref_key_mms_delete_limit");
         mClearHistoryPref = findPreference("pref_key_mms_clear_history");
@@ -542,6 +545,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         boolean qmDarkThemeEnabled =
             prefs.getBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, false);
         return qmDarkThemeEnabled;
+    }
+
+    public static boolean getGroupMMSEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean groupMMSEnabled = prefs.getBoolean(MessagingPreferenceActivity.GROUP_MMS_ENABLED, false);
+        return groupMMSEnabled;
     }
 
     private void registerListeners() {
