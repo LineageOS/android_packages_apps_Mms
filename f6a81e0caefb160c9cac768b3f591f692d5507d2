@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAY3///9o\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1343,
+      "author": {
+        "id": 4373
+      },
+      "writtenOn": "2012-10-06T13:07:53Z",
+      "side": 1,
+      "message": "Extra brace here prevents compile...",
+      "revId": "f6a81e0caefb160c9cac768b3f591f692d5507d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
