@@ -163,7 +163,13 @@ public class MessageItem {
                 }
                 mTimestamp = MessageUtils.formatTimeStampString(context, date, mFullTimestamp);
             }
-
+            // Use a separate thread for this so its not running on the UI thread
+            Thread getContact = new Thread() {
+              public synchronized void run() {
+                mContact = Contact.get(getMmsSender(mMsgId, mContext), false).getName();
+              }
+            };
+            getContact.start();
             mLocked = cursor.getInt(columnsMap.mColumnSmsLocked) != 0;
             mErrorCode = cursor.getInt(columnsMap.mColumnSmsErrorCode);
         } else if ("mms".equals(type)) {
@@ -186,7 +192,7 @@ public class MessageItem {
             mBody = null;
             mMessageSize = 0;
             mTextContentType = null;
-            mTimestamp = null;
+            mTimestamp = ""; // Initialze the timestamp to "" instead of null
             mMmsStatus = cursor.getInt(columnsMap.mColumnMmsStatus);
 
             // Start an async load of the pdu. If the pdu is already loaded, the callback
@@ -200,6 +206,28 @@ public class MessageItem {
         } else {
             throw new MmsException("Unknown type of the message: " + type);
         }
+    }
+
+    // Function to query the sender's address from db
+    private String getMmsSender(long msgId, Context context) {
+        String sender="";
+        final String[] projection =  new String[] { "address", "contact_id", "charset", "type" };
+        final String selection = "type=137"; // "type="+ PduHeaders.FROM,
+
+        Uri.Builder builder = Uri.parse("content://mms").buildUpon();
+        builder.appendPath(String.valueOf(msgId)).appendPath("addr");
+
+        Cursor cursor = context.getContentResolver().query(
+            builder.build(),
+            projection,
+            selection,
+            null, null);
+
+        if (cursor.moveToFirst()) {
+            sender =  cursor.getString(0);
+        }
+        cursor.close();
+        return sender;
     }
 
     private void interpretFrom(EncodedStringValue from, Uri messageUri) {
