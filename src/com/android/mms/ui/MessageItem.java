@@ -23,6 +23,7 @@ import android.content.ContentUris;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.provider.Telephony.Mms;
 import android.provider.Telephony.MmsSms;
 import android.provider.Telephony.Sms;
@@ -68,6 +69,9 @@ public class MessageItem {
     final String mType;
     final long mMsgId;
     final int mBoxId;
+
+    final String[] getMmsSenderProjection =  new String[] { "address", "contact_id", "charset", "type" };
+    final String getMmsSenderSelection = "type=137";
 
     DeliveryStatus mDeliveryStatus;
     boolean mReadReport;
@@ -163,7 +167,7 @@ public class MessageItem {
                 }
                 mTimestamp = MessageUtils.formatTimeStampString(context, date, mFullTimestamp);
             }
-
+            new getMmsSender(mMsgId, mContext).execute();
             mLocked = cursor.getInt(columnsMap.mColumnSmsLocked) != 0;
             mErrorCode = cursor.getInt(columnsMap.mColumnSmsErrorCode);
         } else if ("mms".equals(type)) {
@@ -199,6 +203,40 @@ public class MessageItem {
 
         } else {
             throw new MmsException("Unknown type of the message: " + type);
+        }
+    }
+
+    // Function to query the sender's address from db
+    private class getMmsSender extends AsyncTask<getMmsSender, Void, String> {
+        private long mMsgId;
+        private Context mContext;
+
+        public getMmsSender(long mMsgId, Context mContext) {
+            this.mMsgId = mMsgId;
+            this.mContext = mContext;
+        }
+
+        protected String doInBackground(getMmsSender... mmsSender) {
+            String sender="";
+
+            Uri.Builder builder = Uri.parse("content://mms").buildUpon();
+            builder.appendPath(String.valueOf(mMsgId)).appendPath("addr");
+
+            Cursor cursor = mContext.getContentResolver().query(
+                builder.build(),
+                getMmsSenderProjection,
+                getMmsSenderSelection,
+                null, null);
+
+            if (cursor.moveToFirst()) {
+                sender =  cursor.getString(0);
+            }
+            cursor.close();
+            return sender;
+        }
+
+        protected void onPostExecute(String sender) {
+            mContact = Contact.get(sender, false).getName();
         }
     }
 
