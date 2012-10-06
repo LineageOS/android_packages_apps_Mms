@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAY3///6c\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-06T17:57:41Z",
+      "side": 1,
+      "message": "Those comments should be removed, they are plain pointless.",
+      "revId": "f6a81e0caefb160c9cac768b3f591f692d5507d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAY3///6Y\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-06T17:57:41Z",
+      "side": 1,
+      "message": "Please use the constants in android.provider.CalendarContract instead of redefining them.",
+      "revId": "f6a81e0caefb160c9cac768b3f591f692d5507d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAY3///6U\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1333,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-06T17:57:41Z",
+      "side": 1,
+      "message": "Perhaps a better name would be \u0027addEventToCalendar\u0027?",
+      "revId": "f6a81e0caefb160c9cac768b3f591f692d5507d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAY3///9o\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 6
