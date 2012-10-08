@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAY3///gg\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 791,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2012-10-08T01:15:12Z",
+      "side": 1,
+      "message": "maybe move the return null to the next line?",
+      "revId": "97d3379e0fe089b6bc51b89b768e5b4bf48cc7bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAY3///gY\u003d",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 445,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2012-10-08T01:15:12Z",
+      "side": 1,
+      "message": "consider breaking the line up after \u0026\u0026",
+      "revId": "97d3379e0fe089b6bc51b89b768e5b4bf48cc7bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAY3///gc\u003d",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 446,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2012-10-08T01:15:12Z",
+      "side": 1,
+      "message": "this tab should be converted to spaces",
+      "revId": "97d3379e0fe089b6bc51b89b768e5b4bf48cc7bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
