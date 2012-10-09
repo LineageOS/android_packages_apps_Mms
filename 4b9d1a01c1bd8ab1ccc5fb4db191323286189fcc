@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAY3///Lg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-10-09T14:35:11Z",
+      "side": 1,
+      "message": "evtl. ist Gesten verständlicher.",
+      "revId": "4b9d1a01c1bd8ab1ccc5fb4db191323286189fcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAY3///Lc\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-10-09T14:35:11Z",
+      "side": 1,
+      "message": "Geste oder Gesten? :D",
+      "revId": "4b9d1a01c1bd8ab1ccc5fb4db191323286189fcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
