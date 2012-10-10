@@ -60,8 +60,11 @@ public class QmTextWatcher implements TextWatcher {
     public void onTextChanged(CharSequence s, int start, int before, int count) {
         getQuickReplyCounterText(s, mTextView, mSendButton, mTemplateButton, mTemplateCount);
 
-        // Poke the wakelock. If there is no active wakelock this will not do anything
-        ManageWakeLock.pokeWakeLock(mContext);
+        // For performance reasons, we will only poke the wakelock on every 20th keystroke
+        if (s.length() % 20 == 0) {
+            // If there is no active wakelock this will not do anything
+            ManageWakeLock.pokeWakeLock(mContext);
+        }
     }
 
     public static void getQuickReplyCounterText(CharSequence s, TextView textView,
