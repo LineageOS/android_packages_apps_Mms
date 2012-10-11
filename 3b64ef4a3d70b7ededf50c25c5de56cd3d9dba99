@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAY3//+n4\u003d",
+        "filename": "res/values-fi/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2012-10-11T18:59:58Z",
+      "side": 1,
+      "message": "This should be \\\u0027kirkas\\\u0027.",
+      "revId": "3b64ef4a3d70b7ededf50c25c5de56cd3d9dba99",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAY3//+oc\u003d",
         "filename": "res/values-fi/strings.xml",
         "patchSetId": 1
@@ -13,6 +30,23 @@
       "writtenOn": "2012-10-11T18:30:46Z",
       "side": 1,
       "message": "Can there be just slash, I\u0027m not sure about that.",
+      "revId": "3b64ef4a3d70b7ededf50c25c5de56cd3d9dba99",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAY3//+n8\u003d",
+        "filename": "res/values-fi/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 1391
+      },
+      "writtenOn": "2012-10-11T18:59:58Z",
+      "side": 1,
+      "message": "Yeah, that should be fine.",
       "revId": "3b64ef4a3d70b7ededf50c25c5de56cd3d9dba99",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
