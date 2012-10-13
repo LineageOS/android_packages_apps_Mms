@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAY3//+EA\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 2874
+      },
+      "writtenOn": "2012-10-13T23:49:39Z",
+      "side": 1,
+      "message": "This one is missing a whitespace or three",
+      "revId": "7e9090755c2ce10c0cce4b0b370d1cd581d5ceca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
