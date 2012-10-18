@@ -16,6 +16,24 @@
       "revId": "bb7ac6c9115b33eae466f968e2538cf3b87fc04f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH///Z4\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-18T06:13:32Z",
+      "side": 1,
+      "message": "This could be done as an asynctask so that the query does not hog the UI thread.",
+      "parentUuid": "AAAAaH///aM\u003d",
+      "revId": "bb7ac6c9115b33eae466f968e2538cf3b87fc04f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
