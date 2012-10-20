@@ -173,6 +173,11 @@
     <string name="pref_summary_notification_vibrateWhen" msgid="669655090822561447">"收到通知时还振动提醒"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"选择铃声"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"设置要保存的信息数量"</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">软键盘样式</string>
+    <string name="pref_summary_input_type">选择创建信息时使用的软键盘</string>
+
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"始终"</item>
     <item msgid="6069709696037750627">"仅在静音时"</item>
@@ -402,6 +407,11 @@
     <string name="pref_title_mms_use_sent_timestamp">原始时间戳</string>
     <string name="pref_summary_mms_use_sent_timestamp">在时间戳中显示发送时间而不是接收时间</string>
 
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">绘文字</string>
+    <string name="pref_keyboard_send">回车将发送信息</string>
+    <string name="pref_keyboard_new_line">回车将开始新的一行</string>
+
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
     <string name="pref_quickmessage">快速信息</string>
@@ -412,7 +422,7 @@
     <string name="pref_close_all_title">全部关闭</string>
     <string name="pref_close_all_summary">“关闭”按钮将关闭所有的消息</string>
     <string name="pref_dark_theme_title">使用暗色主题</string>
-    <string name="pref_dark_theme_summary">如果未被选中，默认的\'轻色\'主题将会被使用</string>
+    <string name="pref_dark_theme_summary">如果未被选中，默认的\'淡色\'主题将会被使用</string>
     <string name="message_counter_separator">之</string>
 
     <!-- QM Dialog box buttons -->
