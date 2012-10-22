@@ -2,6 +2,74 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAaH//+kk\u003d",
+        "filename": "res/layout/message_list_item_recv.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-22T19:26:04Z",
+      "side": 1,
+      "message": "To make it theme manager friendly we should be using @color references here rather than hardcoding the color in the xml.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+ko\u003d",
+        "filename": "res/layout/message_list_item_send.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-22T19:26:04Z",
+      "side": 1,
+      "message": "To make it theme manager friendly we should be using @color references here rather than hardcoding the color in the xml.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+kc\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-22T19:26:04Z",
+      "side": 1,
+      "message": "What does \u0027Slideshow options\" have to do with this feature?  Why is this here?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+kg\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-22T19:26:04Z",
+      "side": 1,
+      "message": "Should it be enabled by default?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH//+ns\u003d",
         "filename": "src/com/android/mms/ui/MessageItem.java",
         "patchSetId": 9
@@ -31,6 +99,23 @@
       "side": 1,
       "message": "I do like the idea, but in my opinion its out of the scope of this patch.",
       "parentUuid": "AAAAaH//+ns\u003d",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+ks\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 514,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-22T19:26:04Z",
+      "side": 1,
+      "message": "Should it be enabled by default?",
       "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
