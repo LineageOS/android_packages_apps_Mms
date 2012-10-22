@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAaH//+pI\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2012-10-22T09:45:32Z",
+      "side": 1,
+      "message": "I think we better use sychnorized to avoid multiple thread set this variant.",
+      "revId": "bc5b1d34d4429b80e212951b3f953ed414166766",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH///ZM\u003d",
         "filename": "src/com/android/mms/ui/MessageItem.java",
         "patchSetId": 7
@@ -13,6 +30,23 @@
       "writtenOn": "2012-10-18T06:38:34Z",
       "side": 1,
       "message": "Pretty sure I didn\u0027t do this right, but its a start",
+      "revId": "bc5b1d34d4429b80e212951b3f953ed414166766",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+pM\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2012-10-22T09:45:32Z",
+      "side": 1,
+      "message": "I am prefer to call \"cursor.close();\" to let VM easy to GC.",
       "revId": "bc5b1d34d4429b80e212951b3f953ed414166766",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
