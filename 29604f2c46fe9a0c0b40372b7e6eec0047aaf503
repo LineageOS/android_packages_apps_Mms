@@ -70,6 +70,108 @@
     },
     {
       "key": {
+        "uuid": "AAAAaH//+j8\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "Unused import?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+kI\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 1031,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "This looks a bit superfluous.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+kE\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 1033,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "SMS to multiple recipients is possible as well, so why use the usually more expensive MMS?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+j4\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 879,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "This looks superfluous.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+j0\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 883,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "See comment in WorkingMessage.java.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jw\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 2423,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "This is unneeded, changeCursor(null) will do that automatically.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH//+ns\u003d",
         "filename": "src/com/android/mms/ui/MessageItem.java",
         "patchSetId": 9
@@ -105,6 +207,92 @@
     },
     {
       "key": {
+        "uuid": "AAAAaH//+js\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "An easier way would be doing this in an AsyncTask and doing the assignment in onPostExecute.",
+      "parentUuid": "AAAAaH//+lA\u003d",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jo\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "The comment only states _what_ is done, not _why_ it\u0027s done.\n\nSo: why that change?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jg\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "Constants should be used here. Why is the PduHeaders.FROM in a comment instead of the actual code?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jk\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "Please use appropriate string constants here.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jc\u003d",
+        "filename": "src/com/android/mms/ui/MessageListItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 336,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "Use a function for that instead of duplicating?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH//+ks\u003d",
         "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
         "patchSetId": 9
@@ -116,6 +304,23 @@
       "writtenOn": "2012-10-22T19:26:04Z",
       "side": 1,
       "message": "Should it be enabled by default?",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jY\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 525,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-22T19:40:47Z",
+      "side": 1,
+      "message": "This is unneeded. The CheckBoxPreference does that automatically (if configured to be persistent).",
       "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
