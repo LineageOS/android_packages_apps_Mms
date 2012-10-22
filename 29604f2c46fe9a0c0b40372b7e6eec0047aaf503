@@ -16,6 +16,24 @@
       "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+lA\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2012-10-22T19:07:56Z",
+      "side": 1,
+      "message": "I do like the idea, but in my opinion its out of the scope of this patch.",
+      "parentUuid": "AAAAaH//+ns\u003d",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
