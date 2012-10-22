@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//+ns\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2012-10-22T11:44:35Z",
+      "side": 1,
+      "message": "Sorry for my poor English. I mean all the access mContact should be synchronized. Not only this thread. For my solution is find all get and set line for mContact. The following is my refactor way.\n1. Change the mContact to private.\n2. Add synchronized setter/getter function for private variant mContact. setContact()/getContact();\n3. Find all caller for the mContact by eclipse, it easy to find all caller.\n4. Change all the caller to setContact() or getContact().\n\n   Because the change has it\u0027s thread so I think the easy to protected the variant and force call use setter/getter to access this variant.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
