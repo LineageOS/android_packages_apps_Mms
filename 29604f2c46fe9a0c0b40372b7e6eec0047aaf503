@@ -121,6 +121,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAaH//+eA\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 1033,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2012-10-23T04:13:46Z",
+      "side": 1,
+      "message": "I believe this needs to be done so that the message sends the other recipients with it. That way the device on the other end can see them and subsequently message back to the group.",
+      "parentUuid": "AAAAaH//+kE\u003d",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH//+j4\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 9
@@ -225,6 +243,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAaH//+eQ\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2012-10-23T04:13:46Z",
+      "side": 1,
+      "message": "I\u0027ll have to look into how to do this. Thanks for your input",
+      "parentUuid": "AAAAaH//+js\u003d",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH//+jo\u003d",
         "filename": "src/com/android/mms/ui/MessageItem.java",
         "patchSetId": 9
@@ -259,6 +295,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAaH//+eM\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2012-10-23T04:13:46Z",
+      "side": 1,
+      "message": "Not sure about the comment, I\u0027ll remove it (fwiw this code was not mine to begin with).\n\nNot to mention I\u0027m no pro here either\n\nAlso, what exactly do you mean by constants should be used? I should define these up top?",
+      "parentUuid": "AAAAaH//+jg\u003d",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAaH//+jk\u003d",
         "filename": "src/com/android/mms/ui/MessageItem.java",
         "patchSetId": 9
@@ -270,6 +324,24 @@
       "writtenOn": "2012-10-22T19:40:47Z",
       "side": 1,
       "message": "Please use appropriate string constants here.",
+      "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+eI\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2012-10-23T04:13:46Z",
+      "side": 1,
+      "message": "I assume this means I should use whatever I define above here",
+      "parentUuid": "AAAAaH//+jk\u003d",
       "revId": "29604f2c46fe9a0c0b40372b7e6eec0047aaf503",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
