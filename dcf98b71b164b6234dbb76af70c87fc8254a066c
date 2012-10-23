@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//+XI\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2012-10-23T17:42:05Z",
+      "side": 1,
+      "message": "If you want to storage the checkbox prference value automatic. You should add android:persistent\u003d\"true\" in element CheckBoxPreference",
+      "revId": "dcf98b71b164b6234dbb76af70c87fc8254a066c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
