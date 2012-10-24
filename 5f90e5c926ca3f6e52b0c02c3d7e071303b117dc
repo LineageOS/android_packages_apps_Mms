@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//+NY\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-24T11:42:29Z",
+      "side": 1,
+      "message": "Those should be\n- android.provider.Telephony.Mms.Addr.ADDRESS\n- android.provider.Telephony.Mms.Addr.CONTACT_ID\n- android.provider.Telephony.Mms.Addr.CHARSET\n- android.provider.Telephony.Mms.Addr.TYPE\n\n(but please use an import ;) )\nAlso, the variable should be static and named accordingly (e.g. MMS_SENDER_PROJECTION).",
+      "revId": "5f90e5c926ca3f6e52b0c02c3d7e071303b117dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+NU\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-24T11:42:29Z",
+      "side": 1,
+      "message": "android.provider.Telephony.Mms.Addr.TYPE + \"\u003d\" + com.google.android.mms.pdu.PduHeaders.FROM",
+      "revId": "5f90e5c926ca3f6e52b0c02c3d7e071303b117dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+NQ\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-24T11:42:29Z",
+      "side": 1,
+      "message": "Please conform to naming conventions (e.g. MmsSenderQueryTask).\n\nAlso, the parameter for doInBackground doesn\u0027t seem to be\n- used\n- correct\n\nand should be Void instead.",
+      "revId": "5f90e5c926ca3f6e52b0c02c3d7e071303b117dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+NI\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-24T11:42:29Z",
+      "side": 1,
+      "message": "android.provider.Telephony.Mms.CONTENT.URI",
+      "revId": "5f90e5c926ca3f6e52b0c02c3d7e071303b117dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+NA\u003d",
+        "filename": "src/com/android/mms/ui/MessageItem.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-24T11:42:29Z",
+      "side": 1,
+      "message": "Can\u0027t / shouldn\u0027t the Contact.get also be done in doInBackground, so onPostExecute only does the assignment?",
+      "revId": "5f90e5c926ca3f6e52b0c02c3d7e071303b117dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
