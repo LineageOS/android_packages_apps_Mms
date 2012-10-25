@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//98Q\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-25T17:34:25Z",
+      "side": 1,
+      "message": "extra whitespace",
+      "revId": "2749940604229455dad49d28cd63ec8abcb7c7f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//98I\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-25T17:34:25Z",
+      "side": 1,
+      "message": "remove the comment comment and move this code up to the \u0027Initialise the message list and other variables\u0027 section above (line 171)",
+      "revId": "2749940604229455dad49d28cd63ec8abcb7c7f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//98M\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-25T17:34:25Z",
+      "side": 1,
+      "message": "using tabs here - should be spaces.  That being said, just remove the comment altogether.  No need to indicate in the source what is being fixed, that is what the commit message is for.",
+      "revId": "2749940604229455dad49d28cd63ec8abcb7c7f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//98E\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-10-25T17:34:25Z",
+      "side": 1,
+      "message": "Change the comment to:\n\n// See if the screen is locked or if no lock set and the screen is off and get the wake lock to turn on the screen",
+      "revId": "2749940604229455dad49d28cd63ec8abcb7c7f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
