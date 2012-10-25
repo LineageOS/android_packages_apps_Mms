@@ -34,6 +34,7 @@ import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract.Profile;
 import android.support.v4.view.PagerAdapter;
@@ -156,6 +157,8 @@ public class QuickMessagePopup extends Activity implements
     private AlertDialog mEmojiDialog;
     private View mEmojiView;
 
+    //Fix not on the screen, if user not set lock and the screen is off.
+    private PowerManager mPM;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -185,6 +188,10 @@ public class QuickMessagePopup extends Activity implements
         // Load the views and Parse the intent to show the QuickMessage
         setupViews();
         parseIntent(getIntent().getExtras(), false);
+        
+        //Fix not on the screen, if user not set lock and the screen is off.
+        mPM = (PowerManager) getSystemService(Context.POWER_SERVICE);
+        mKeyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
     }
 
     private void setupViews() {
@@ -305,6 +312,11 @@ public class QuickMessagePopup extends Activity implements
 
         // Load and display the new message
         parseIntent(intent.getExtras(), true);
+
+        // Fix not on the screen, if user not set lock and the screen is off.
+		// If the pop up dialog show, the screen is off again, receive new message
+		// should on the screen again.
+        unlockScreen();
     }
 
     @Override
@@ -575,8 +587,10 @@ public class QuickMessagePopup extends Activity implements
         }
 
         // See if the screen is locked and get the wake lock to turn on the screen
-        mKeyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-        if (mKeyguardManager.inKeyguardRestrictedInputMode()) {
+        //Fix not on the screen, if user not set lock and the screen is off.
+        boolean isScreenOn = mPM.isScreenOn();
+        boolean inKeyguardRestrictedInputMode = mKeyguardManager.inKeyguardRestrictedInputMode();
+        if (inKeyguardRestrictedInputMode || ((!inKeyguardRestrictedInputMode) && !isScreenOn)) {
             ManageWakeLock.acquireFull(mContext);
             mScreenUnlocked = true;
         }
