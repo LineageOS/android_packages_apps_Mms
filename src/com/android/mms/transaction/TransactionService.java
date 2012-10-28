@@ -136,6 +136,10 @@ public class TransactionService extends Service implements Observer {
     private ConnectivityBroadcastReceiver mReceiver;
 
     private PowerManager.WakeLock mWakeLock;
+    
+    // Current mobile data status and a lock to control access to the flag (for Mms)
+    private boolean mMobileDataEnabledStatus = false;
+    private boolean mMobileDataEnabledLock = false;
 
     public Handler mToastHandler = new Handler() {
         @Override
@@ -489,6 +493,17 @@ public class TransactionService extends Service implements Observer {
     protected int beginMmsConnectivity() throws IOException {
         // Take a wake lock so we don't fall asleep before the message is downloaded.
         createWakeLock();
+        
+        // Get current mobile data status so we can set it back after download Mms
+        if (mMobileDataEnabledLock == false) {
+        	mMobileDataEnabledStatus = mConnMgr.getMobileDataEnabled();
+        	// Since beginMmsConnectivity will be called several times during 
+        	// Mms download process, acquire a lock to prevent false-positives
+        	mMobileDataEnabledLock = true;
+        }
+        // Now force mobile data connection so we can download Mms automatically!
+        if (!mMobileDataEnabledStatus)
+        	mConnMgr.setMobileDataEnabled(true);
 
         int result = mConnMgr.startUsingNetworkFeature(
                 ConnectivityManager.TYPE_MOBILE, Phone.FEATURE_ENABLE_MMS);
@@ -503,6 +518,10 @@ public class TransactionService extends Service implements Observer {
                 acquireWakeLock();
                 return result;
         }
+        
+        // Something wrong, reset mobile data connection to previous state
+        mConnMgr.setMobileDataEnabled(mMobileDataEnabledStatus);
+        mMobileDataEnabledLock = false;
 
         throw new IOException("Cannot establish MMS connectivity");
     }
@@ -519,6 +538,10 @@ public class TransactionService extends Service implements Observer {
                 mConnMgr.stopUsingNetworkFeature(
                         ConnectivityManager.TYPE_MOBILE,
                         Phone.FEATURE_ENABLE_MMS);
+                
+                // Set mobile data connection to previous state before Mms
+                mConnMgr.setMobileDataEnabled(mMobileDataEnabledStatus);
+                mMobileDataEnabledLock = false;
             }
         } finally {
             releaseWakeLock();
