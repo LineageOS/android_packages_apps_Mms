@@ -17,8 +17,20 @@
 
 package com.android.mms.transaction;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import com.android.mms.R;
+import com.android.mms.LogTag;
+import com.android.mms.util.RateController;
+import com.google.android.mms.pdu.GenericPdu;
+import com.google.android.mms.pdu.NotificationInd;
+import com.google.android.mms.pdu.PduHeaders;
+import com.google.android.mms.pdu.PduParser;
+import com.google.android.mms.pdu.PduPersister;
+import com.android.internal.telephony.Phone;
+import com.android.internal.telephony.TelephonyIntents;
+
+import android.provider.Telephony.Mms;
+import android.provider.Telephony.MmsSms;
+import android.provider.Telephony.MmsSms.PendingMessages;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -27,6 +39,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.database.Cursor;
+import android.database.sqlite.SqliteWrapper;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -36,22 +49,12 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.PowerManager;
-import android.provider.Telephony.Mms;
-import android.provider.Telephony.MmsSms;
-import android.provider.Telephony.MmsSms.PendingMessages;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.android.internal.telephony.Phone;
-import com.android.mms.LogTag;
-import com.android.mms.R;
-import com.android.mms.util.RateController;
-import com.google.android.mms.pdu.GenericPdu;
-import com.google.android.mms.pdu.NotificationInd;
-import com.google.android.mms.pdu.PduHeaders;
-import com.google.android.mms.pdu.PduParser;
-import com.google.android.mms.pdu.PduPersister;
+import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * The TransactionService of the MMS Client is responsible for handling requests
@@ -131,10 +134,6 @@ public class TransactionService extends Service implements Observer {
     private final ArrayList<Transaction> mPending  = new ArrayList<Transaction>();
     private ConnectivityManager mConnMgr;
     private ConnectivityBroadcastReceiver mReceiver;
-
-    // Current mobile data status and a lock to control access to the flag (for Mms)
-    private boolean mMobileDataEnabledStatus = false;
-    private boolean mMobileDataEnabledLock = false;
 
     private PowerManager.WakeLock mWakeLock;
 
@@ -389,6 +388,8 @@ public class TransactionService extends Service implements Observer {
             Log.v(TAG, "update transaction " + serviceId);
         }
 
+        boolean mEndMmsConnectivity = false;
+
         try {
             synchronized (mProcessing) {
                 mProcessing.remove(transaction);
@@ -405,7 +406,7 @@ public class TransactionService extends Service implements Observer {
                     if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                         Log.v(TAG, "update: endMmsConnectivity");
                     }
-                    endMmsConnectivity();
+                    mEndMmsConnectivity = true;
                 }
             }
 
@@ -456,8 +457,15 @@ public class TransactionService extends Service implements Observer {
             if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                 Log.v(TAG, "update: broadcast transaction result " + result);
             }
+
             // Broadcast the result of the transaction.
             sendBroadcast(intent);
+
+            // End Mms Connectivity only after all events are propagated or phone
+            //   will deep sleep not reporting incoming Mms to the user
+            if (mEndMmsConnectivity)
+                endMmsConnectivity();
+
         } finally {
             transaction.detach(this);
             MmsSystemEventReceiver.unRegisterForConnectionStateChanges(getApplicationContext());
@@ -491,17 +499,6 @@ public class TransactionService extends Service implements Observer {
         // Take a wake lock so we don't fall asleep before the message is downloaded.
         createWakeLock();
 
-        // Get current mobile data status so we can set it back after download Mms
-        if (mMobileDataEnabledLock == false) {
-            mMobileDataEnabledStatus = mConnMgr.getMobileDataEnabled();
-            // Since beginMmsConnectivity will be called several times during
-            // Mms download process, acquire a lock to prevent false-positives
-            mMobileDataEnabledLock = true;
-        }
-        // Now force mobile data connection so we can download Mms automatically!
-        if (!mMobileDataEnabledStatus)
-            mConnMgr.setMobileDataEnabled(true);
-
         int result = mConnMgr.startUsingNetworkFeature(
                 ConnectivityManager.TYPE_MOBILE, Phone.FEATURE_ENABLE_MMS);
 
@@ -515,10 +512,6 @@ public class TransactionService extends Service implements Observer {
                 acquireWakeLock();
                 return result;
         }
-
-        // Something wrong, reset mobile data connection to previous state
-        mConnMgr.setMobileDataEnabled(mMobileDataEnabledStatus);
-        mMobileDataEnabledLock = false;
 
         throw new IOException("Cannot establish MMS connectivity");
     }
@@ -535,10 +528,6 @@ public class TransactionService extends Service implements Observer {
                 mConnMgr.stopUsingNetworkFeature(
                         ConnectivityManager.TYPE_MOBILE,
                         Phone.FEATURE_ENABLE_MMS);
-
-                // Set mobile data connection to previous state before Mms
-                mConnMgr.setMobileDataEnabled(mMobileDataEnabledStatus);
-                mMobileDataEnabledLock = false;
             }
         } finally {
             releaseWakeLock();
