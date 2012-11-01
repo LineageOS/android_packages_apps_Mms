@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//8fY\u003d",
+        "filename": "src/com/android/mms/transaction/TransactionService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 391,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-11-01T16:31:03Z",
+      "side": 1,
+      "message": "Only member variables should be prefixed with m. Suggestion: \u0027needToEndMmsConnectivity\u0027.",
+      "revId": "9d16edd60ee1f2b9f703eaeb1fee6bc80aaa941d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
