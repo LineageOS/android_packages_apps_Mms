@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaX///14\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-11-03T19:13:32Z",
+      "side": 1,
+      "message": "Engels: Pushes MMS from outbox to the network\nDus ik ben het eigenlijk meer eens met de vertaling uit Patch set 1, omdat het niet \u0027zomaar\u0027 een bericht versturen is, maar je echt iets forceert.\n\n- Mms-berichten naar het netwerk sturen vanuit Postvak UIT",
+      "revId": "11a1ddb06a75416987e754bf462a1ef92b34f4f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
