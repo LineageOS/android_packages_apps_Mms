@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//8C8\u003d",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-11-03T01:18:49Z",
+      "side": 1,
+      "message": "Nitpick - whitespace error",
+      "revId": "4bb662884783af81e6809a6d898291a067da168f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
