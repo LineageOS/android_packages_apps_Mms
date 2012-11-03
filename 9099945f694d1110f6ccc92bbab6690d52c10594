@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//8Fk\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 4297
+      },
+      "writtenOn": "2012-11-03T00:01:14Z",
+      "side": 1,
+      "message": "Mms-berichten uit Postvak UIT versturen?",
+      "revId": "9099945f694d1110f6ccc92bbab6690d52c10594",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
