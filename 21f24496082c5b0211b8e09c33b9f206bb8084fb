@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3///Y8\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 310,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "mohl bych poprosit o zastupne sekvence pro nativni unicode znaky pro „ a “? tj. \\u201e a \\u201f",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///aI\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "Prosim, v co nejmensi mire pouzivat \"vase, vas a pod.\" - tj. \"Sprava SMS sablon\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///ZI\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 362,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "Zde vlozte text sablony",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///aE\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "tecka na konci - pokud zacnes novou vetu, ukonci bych ji teckou",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///aA\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "\"Zmenit\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Z4\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "inspiroval bych se z GB - \"Varování: podobne gesto je jiz prirazene k jine sablone!\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///aM\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "on \u003d zap, off \u003d vyp, ... \u003d \\u2026",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Z0\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 393,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "Znaky, ktere nejsou podporovany v textu SMS (narodni znaky), budou nahrazeny.",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Zw\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "j. c. - \"Kompletni casovy udaj\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Zo\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 401,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "Zobrazeni casu i datumu v informacich o zprave.",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Zk\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "z GB: \"Pouzit cas odeslani\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///ZU\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": "Zde napiste odpoved.",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///ZQ\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-06T05:33:53Z",
+      "side": 1,
+      "message": ":) kdo ze tu zpravu odesila? \"Zprava je odesilana\\u2026\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
