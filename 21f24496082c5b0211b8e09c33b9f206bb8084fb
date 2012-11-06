@@ -19,6 +19,40 @@
     },
     {
       "key": {
+        "uuid": "AAAAa3///Yg\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 350,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Po?ítadlo zpráv",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Yc\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 352,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "P?idá po?ítadlo po?tu odesílaných zpráv (nap?. 1/2)",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAa3///aI\u003d",
         "filename": "res/values-cs/strings.xml",
         "patchSetId": 1
@@ -30,6 +64,40 @@
       "writtenOn": "2012-11-06T05:33:53Z",
       "side": 1,
       "message": "Prosim, v co nejmensi mire pouzivat \"vase, vas a pod.\" - tj. \"Sprava SMS sablon\"",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///YY\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Spravovat šablony SMS",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Yk\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Citlivost gest",
       "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +121,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAa3///YQ\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 362,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Zde vložte text šablony",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAa3///aE\u003d",
         "filename": "res/values-cs/strings.xml",
         "patchSetId": 1
@@ -64,6 +149,23 @@
       "writtenOn": "2012-11-06T05:33:53Z",
       "side": 1,
       "message": "tecka na konci - pokud zacnes novou vetu, ukonci bych ji teckou",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///YI\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Vložit nebo zm?nit text šablony, eventuáln? vytvo?it gesto, kterým bude šablona vyvolána",
       "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -104,6 +206,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAa3///X4\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Povolit vibrace b?hem hovoru",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAa3///aM\u003d",
         "filename": "res/values-cs/strings.xml",
         "patchSetId": 1
@@ -121,6 +240,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAa3///Xs\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Odstranit znaky Unicode",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAa3///Z0\u003d",
         "filename": "res/values-cs/strings.xml",
         "patchSetId": 1
@@ -132,6 +268,57 @@
       "writtenOn": "2012-11-06T05:33:53Z",
       "side": 1,
       "message": "Znaky, ktere nejsou podporovany v textu SMS (narodni znaky), budou nahrazeny.",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Xk\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 393,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Odstranit diakritiku, která snižuje výchozí po?et znak? zprávy (160).",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Xg\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 396,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Podpora smajlík?",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Xc\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Povolit podporu unicode smajlík?, sada 471 obsahuje p?kné emotikony",
       "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -189,6 +376,91 @@
     },
     {
       "key": {
+        "uuid": "AAAAa3///XA\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "P?vodní ?asové údaje",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///WU\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 407,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Smajlík",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///WM\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Rychlé zprávy",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///WI\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 414,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Povolit Rychlé zprávy",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///WE\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 415,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Zobrazit vyskakovací dialog Rychlých zpráv",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAa3///ZU\u003d",
         "filename": "res/values-cs/strings.xml",
         "patchSetId": 1
@@ -200,6 +472,23 @@
       "writtenOn": "2012-11-06T05:33:53Z",
       "side": 1,
       "message": "Zde napiste odpoved.",
+      "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3///Vo\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 4632
+      },
+      "writtenOn": "2012-11-06T06:39:52Z",
+      "side": 1,
+      "message": "Zde napište odpov??",
       "revId": "21f24496082c5b0211b8e09c33b9f206bb8084fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
