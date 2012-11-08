@@ -40,6 +40,7 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchRecentSuggestions;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -96,6 +97,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Preference mMmsReadReportPref;
     private Preference mManageSimPref;
     private Preference mClearHistoryPref;
+    private CheckBoxPreference mMmsAutoRetrieval;
+    private CheckBoxPreference mMmsRetrievalDuringRoaming;
     private ListPreference mVibrateWhenPref;
     private CheckBoxPreference mEnableNotificationsPref;
     private Recycler mSmsRecycler;
@@ -147,6 +150,16 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
+
+        // Mms auto-retrieval
+        boolean useMmsAutoRetrieval = Settings.System.getString(getContentResolver(),
+                Settings.System.MMS_AUTO_RETRIEVAL).equals("1") ? true : false;
+        boolean useMmsRetrievalDuringRoaming = Settings.System.getString(getContentResolver(),
+                Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING).equals("1") ? true : false;
+        mMmsAutoRetrieval = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
+        mMmsAutoRetrieval.setChecked(useMmsAutoRetrieval);
+        mMmsRetrievalDuringRoaming = (CheckBoxPreference) findPreference(RETRIEVAL_DURING_ROAMING);
+        mMmsRetrievalDuringRoaming.setChecked(useMmsRetrievalDuringRoaming);
 
         // QuickMessage
         mEnableQuickMessagePref = (CheckBoxPreference) findPreference(QUICKMESSAGE_ENABLED);
@@ -383,6 +396,16 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         } else if (preference == mEnableQmDarkThemePref) {
             // Update the actual "enable dark theme" value that is stored in secure settings.
             enableQmDarkTheme(mEnableQmDarkThemePref.isChecked(), this);
+
+        } else if (preference == mMmsAutoRetrieval) {
+            // Update the value in Settings.System
+            Settings.System.putString(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL,
+                    mMmsAutoRetrieval.isChecked() ? "1" : "0");
+
+        } else if (preference == mMmsRetrievalDuringRoaming) {
+            // Update the value in Settings.System
+            Settings.System.putString(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING,
+                    mMmsRetrievalDuringRoaming.isChecked() ? "1" : "0");
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
