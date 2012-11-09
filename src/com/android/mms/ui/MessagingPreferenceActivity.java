@@ -23,10 +23,12 @@ import com.android.mms.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -97,6 +99,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
     private Preference mMmsReadReportPref;
     private Preference mManageSimPref;
     private Preference mClearHistoryPref;
+    private CheckBoxPreference mMmsAutoRetrieval;
+    private CheckBoxPreference mMmsRetrievalDuringRoaming;
     private ListPreference mVibrateWhenPref;
     private Preference mManageTemplate;
     private Recycler mSmsRecycler;
@@ -124,6 +128,15 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
+
+        // Get the MMS retrieval settings. Defaults to enabled with roaming disabled
+        ContentResolver resolver = getContentResolver();
+        mMmsAutoRetrieval = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
+        mMmsAutoRetrieval.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MMS_AUTO_RETRIEVAL, 1) == 1);
+        mMmsRetrievalDuringRoaming = (CheckBoxPreference) findPreference(RETRIEVAL_DURING_ROAMING);
+        mMmsRetrievalDuringRoaming.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING, 0) == 1);
 
         if (!MmsApp.getApplication().getTelephonyManager().hasIccCard()) {
             // No SIM card, remove the SIM-related prefs
@@ -264,6 +277,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity {
         } else if (preference == mClearHistoryPref) {
             showDialog(CONFIRM_CLEAR_SEARCH_HISTORY_DIALOG);
             return true;
+        } else if (preference == mMmsAutoRetrieval) {
+            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL,
+                    mMmsAutoRetrieval.isChecked() ? 1 : 0);
+        } else if (preference == mMmsRetrievalDuringRoaming) {
+            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING,
+                    mMmsRetrievalDuringRoaming.isChecked() ? 1 : 0);
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
