@@ -383,9 +383,9 @@
     <string name="pref_summary_mms_use_sent_timestamp">Verzenddatum tonen i.p.v. ontvangstdatum in tijdsaanduidingen</string>
 
     <!-- Soft Keyboard Type -->
-    <string name="pref_keyboard_emoji">Emoji</string>
-    <string name="pref_keyboard_send">Enter om te versturen</string>
-    <string name="pref_keyboard_new_line">Enter voor een nieuwe regel</string>
+    <string name="pref_keyboard_emoji">Smiley-knop</string>
+    <string name="pref_keyboard_new_line">Enter-toets</string>
+    <string name="pref_keyboard_unknown">Onbekend, selecteer opnieuw a.u.b.</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
