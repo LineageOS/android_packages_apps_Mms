@@ -412,6 +412,7 @@
     <string name="pref_keyboard_emoji">Hangulatjel beszúrása</string>
     <string name="pref_keyboard_send">Üzenet elküldése</string>
     <string name="pref_keyboard_new_line">Új sor beszúrása</string>
+    <string name="pref_keyboard_unknown">Ismeretlen, kérjük, válassza ki újra</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
