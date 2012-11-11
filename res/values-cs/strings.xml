@@ -406,15 +406,15 @@
     <string name="pref_summary_mms_use_sent_timestamp">Zobrazí se pouze čas odeslání zprávy</string>
 
     <!-- Soft Keyboard Type -->
-    <string name="pref_keyboard_emoji">Smajlík</string>
-    <string name="pref_keyboard_send">Odeslat klávesou Enter</string>
-    <string name="pref_keyboard_new_line">Nová řádka klávesou Enter</string>
+    <string name="pref_keyboard_emoji">Zobrazit klávesu pro smajlíky</string>
+    <string name="pref_keyboard_send">Zobrazit klávesu Enter</string>
+    <string name="pref_keyboard_unknown">Neplatná volba, zkuste to znovu</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
-    <string name="pref_quickmessage">Rychlé zprávy</string>
-    <string name="pref_quickmessage_title">Povolit rychlé zprávy</string>
-    <string name="pref_quickmessage_summary">Zobrazit vyskakovací dialog Rychlých zpráv</string>
+    <string name="pref_quickmessage">Rychlá zpráva a odpověď</string>
+    <string name="pref_quickmessage_title">Zobrazovat Rychlé zprávy</string>
+    <string name="pref_quickmessage_summary">Zobrazit vyskakovací dialog Rychlých zpráv u příchozích SMS zpráv</string>
     <string name="pref_wake_unlock_title">Probudit a odemknout</string>
     <string name="pref_wake_unlock_summary">Probudí a odemkne zařízení při příchozí zprávě (pouze u obrazovky bez zabezpečení)</string>
     <string name="pref_close_all_title">Zavřít vše</string>
