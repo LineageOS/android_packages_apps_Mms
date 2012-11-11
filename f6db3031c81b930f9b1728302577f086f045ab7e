@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//9TQ\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-11-11T21:37:41Z",
+      "side": 1,
+      "message": "- Snelbericht\n\n\nik zou niet afwijken van het originele idee",
+      "revId": "f6db3031c81b930f9b1728302577f086f045ab7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//9S4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-11-11T21:37:41Z",
+      "side": 1,
+      "message": "- Snelbericht-pop-up tonen\n\n(dat het bij ontvangen van een smsje is lijkt me duidelijk genoeg)",
+      "revId": "f6db3031c81b930f9b1728302577f086f045ab7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
