@@ -24,6 +24,7 @@ import com.android.mms.R;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -40,6 +41,7 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchRecentSuggestions;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -90,6 +92,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Preference mMmsReadReportPref;
     private Preference mManageSimPref;
     private Preference mClearHistoryPref;
+    private CheckBoxPreference mMmsAutoRetrieval;
+    private CheckBoxPreference mMmsRetrievalDuringRoaming;
     private CheckBoxPreference mEnableMultipartSMS;
     private Preference mSmsToMmsTextThreshold;
     private ListPreference mVibrateWhenPref;
@@ -119,6 +123,15 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
+
+        // Get the MMS retrieval settings. Defaults to enabled with roaming disabled
+        ContentResolver resolver = getContentResolver();
+        mMmsAutoRetrieval = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
+        mMmsAutoRetrieval.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MMS_AUTO_RETRIEVAL, 1) == 1);
+        mMmsRetrievalDuringRoaming = (CheckBoxPreference) findPreference(RETRIEVAL_DURING_ROAMING);
+        mMmsRetrievalDuringRoaming.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING, 0) == 1);
 
         mEnableMultipartSMS = (CheckBoxPreference)findPreference("pref_key_sms_EnableMultipartSMS");
         mSmsToMmsTextThreshold = findPreference("pref_key_sms_SmsToMmsTextThreshold");
@@ -320,6 +333,14 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         } else if (preference == mEnableMultipartSMS) {
             //should be false when the checkbox is checked
             MmsConfig.setEnableMultipartSMS(!mEnableMultipartSMS.isChecked());
+        } else if (preference == mMmsAutoRetrieval) {
+            // Update the value in Settings.System
+            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL,
+                    mMmsAutoRetrieval.isChecked() ? 1 : 0);
+        } else if (preference == mMmsRetrievalDuringRoaming) {
+            // Update the value in Settings.System
+            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING,
+                    mMmsRetrievalDuringRoaming.isChecked() ? 1 : 0);
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);

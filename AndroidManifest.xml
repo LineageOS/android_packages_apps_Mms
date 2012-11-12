@@ -40,6 +40,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INSTALL_DRM" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <!-- Grant permission to system apps to access receiver -->
     <permission android:name="android.permission.MMS_PUSH"
                 android:protectionLevel="signatureOrSystem"
