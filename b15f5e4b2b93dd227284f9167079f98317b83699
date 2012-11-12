@@ -34,6 +34,24 @@
       "revId": "b15f5e4b2b93dd227284f9167079f98317b83699",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//9IA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 417,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-11-12T04:45:51Z",
+      "side": 1,
+      "message": "Is there a way to make it work/shorten it?  the whole reason why I changed the title is that users were confused as to what the dark theme applied to if QuickMessage is not turned on.  My commit tries to make it easier for the end user to see that we are in fact talking about 2 things - QuickMessage and Quick reply.",
+      "parentUuid": "AAAAa3//9IQ\u003d",
+      "revId": "b15f5e4b2b93dd227284f9167079f98317b83699",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
