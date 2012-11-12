@@ -34,6 +34,24 @@
       "revId": "bb9703d013a3134a32af9df70b10fb9d92e32b10",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//9BE\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 415,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-12T16:55:20Z",
+      "side": 1,
+      "message": "To co sem napsal vyse jsem obhlidl v GoSMS. Klidne bych se podival na jine SMS programy, ktere maji cestinu a umi pop-up okna se SMS.\nZatim ti tedy dam -1 aby to nahodou nekoho nenapadlo mergnout.",
+      "parentUuid": "AAAAa3//9CA\u003d",
+      "revId": "bb9703d013a3134a32af9df70b10fb9d92e32b10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
