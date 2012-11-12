@@ -16,6 +16,24 @@
       "revId": "bb9703d013a3134a32af9df70b10fb9d92e32b10",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//9CA\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 415,
+      "author": {
+        "id": 4951
+      },
+      "writtenOn": "2012-11-12T15:04:48Z",
+      "side": 1,
+      "message": "Aha...no nechal jsem to jako preklad ficury...a klidne to tak muze byt, ale udelam to az dnes odpoledne ;)",
+      "parentUuid": "AAAAa3//9FY\u003d",
+      "revId": "bb9703d013a3134a32af9df70b10fb9d92e32b10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
