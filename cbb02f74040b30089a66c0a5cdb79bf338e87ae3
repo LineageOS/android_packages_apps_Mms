@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//8jo\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-11-14T04:51:47Z",
+      "side": 1,
+      "message": "No need to give comment if it is self explanatory.",
+      "revId": "cbb02f74040b30089a66c0a5cdb79bf338e87ae3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
