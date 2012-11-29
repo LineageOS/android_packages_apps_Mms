@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//5ck\u003d",
+        "filename": "res/layout/message_list_item_recv.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2012-11-29T00:36:58Z",
+      "side": 1,
+      "message": "spelling mistake - needs to be \u0027received\u0027",
+      "revId": "03b9d46e06e29fe4cf0515e46ea5f09b511353c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
