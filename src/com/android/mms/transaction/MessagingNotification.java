@@ -985,7 +985,11 @@ public class MessagingNotification {
             }
         }
 
+        // Set light defaults
         defaults |= Notification.DEFAULT_LIGHTS;
+
+        // Since a QM Popup may wake and unlock we nee to prevent the light from being dismissed
+        defaults |= Notification.FLAG_FORCE_LED_SCREEN_OFF;
 
         noti.setDefaults(defaults);
 
