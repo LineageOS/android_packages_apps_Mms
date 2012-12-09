@@ -395,7 +395,7 @@
     <string name="pref_keyboard_new_line">Entrer pour sauter une ligne</string>
     <string name="pref_keyboard_unknown">Non défini, resélectionnez</string>
     <!-- QuickMessage -->
-    <string name="pref_quickmessage">QuickMessage</string>
+    <string name="pref_quickmessage">Réponse Rapide</string>
     <string name="pref_quickmessage_title">Activer QuickMessage</string>
     <string name="pref_quickmessage_summary">Afficher le pop-up QuickMessage</string>
     <string name="pref_wake_unlock_title">Réveiller et déverrouiller</string>
@@ -408,9 +408,10 @@
     <string name="button_close">Fermer</string>
     <string name="button_view">Afficher</string>
     <string name="button_templates">Modèles</string>
-    <string name="type_to_reply_text_enter_to_send">Entrer pour répondre</string>
+    <string name="type_to_reply_text_enter_to_send">Saisissez une réponse</string>
     <string name="toast_sending_message">Envoi du message</string>
     <string name="qm_quick_reply">Répondre</string>
+    <string name="qm_mark_read">Lu</string>
     <!-- Calendar -->
     <string name="menu_add_to_calendar">Ajouter au calendrier</string>
 </resources>
