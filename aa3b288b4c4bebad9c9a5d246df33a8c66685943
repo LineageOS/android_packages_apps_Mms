@@ -16,6 +16,24 @@
       "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//25w\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2012-12-10T21:24:36Z",
+      "side": 1,
+      "message": "\"Saisissez une réponse\" me parait mieux, plus facile à comprendre et tout le texte s\u0027affiche ici, en utilisant ta proposition la moitié n\u0027est pas affichée",
+      "parentUuid": "AAAAa3//254\u003d",
+      "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
