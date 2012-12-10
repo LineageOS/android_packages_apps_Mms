@@ -52,6 +52,24 @@
       "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//25E\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2012-12-10T23:16:31Z",
+      "side": 1,
+      "message": "Avez-vous lu ma réponse ?\n\n\u003d\u003e Comme il a été traduit ligne 85 et ligne 126 ( https://github.com/CyanogenMod/android_packages_apps_Mms/blob/jellybean/res/values-fr/strings.xml#L85 ) on utilise l\u0027impératif. Je rappelle que ce texte est situé dans la zone d\u0027écriture du pop-up Réponse Rapide.",
+      "parentUuid": "AAAAa3//25o\u003d",
+      "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
