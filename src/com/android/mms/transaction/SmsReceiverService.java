@@ -604,6 +604,8 @@ public class SmsReceiverService extends Service {
             return null;
         } else if (sms.isReplace()) {
             return replaceMessage(context, msgs, error);
+        } else if (MmsConfig.isSuppressedSprintVVM(sms.getOriginatingAddress())) {
+            return null;
         } else {
             return storeMessage(context, msgs, error);
         }
