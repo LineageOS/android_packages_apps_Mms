@@ -34,6 +34,24 @@
       "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAa3//25o\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2012-12-10T21:32:52Z",
+      "side": 1,
+      "message": "Oui mais comme il avait été proposé Saisir une réponse pour ne pas utiliser le -ez comme il avait été dit dans un commentaire précédent, j\u0027ai proposé autre chose.",
+      "parentUuid": "AAAAa3//25w\u003d",
+      "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
