@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3//28k\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 1039
+      },
+      "writtenOn": "2012-12-10T14:21:41Z",
+      "side": 1,
+      "message": "On n\u0027utilise pas \"ez\"; donc plutôt \"Saisir une réponse\"",
+      "revId": "6d2f0b6094cbc26d6e78345d12602b6dec4a84ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
