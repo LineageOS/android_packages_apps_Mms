@@ -70,6 +70,24 @@
       "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAbH///7A\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2012-12-11T05:41:34Z",
+      "side": 1,
+      "message": "Perso je verrai bien \"Tapez votre réponse ici...\" (idem pour les lignes 85 et 126), j\u0027ai un G-Note donc ça rentre mais sur un smartphone plus petit je sais pas, à vérifier/confirmer)",
+      "parentUuid": "AAAAa3//25E\u003d",
+      "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
