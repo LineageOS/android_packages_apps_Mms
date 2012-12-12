@@ -88,6 +88,24 @@
       "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAbH///vM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2012-12-12T00:27:23Z",
+      "side": 1,
+      "message": "J\u0027ai bien analysé vos réponses, néanmoins j\u0027y répondrai par deux points : \n\n* La place est réduite, et même avec un écran dernière génération d\u0027un smartphone 4,7\", l\u0027espace disponible est (déjà) relativement faible. \u003d\u003e https://www.dropbox.com/s/98zhcv212m0ccx4/2012-12-10%2017.12.50.png \n\n* La traduction courante d\u0027un \"Type text\" est généralement \"Saisissez un texte\". C\u0027est une formule courante en français lors d\u0027une demande de saisi de texte. Un exemple \u003d\u003e https://www.dropbox.com/s/abmkuh9jdgtf6zh/2012-12-11%2018.10.08.png",
+      "parentUuid": "AAAAbH///7A\u003d",
+      "revId": "aa3b288b4c4bebad9c9a5d246df33a8c66685943",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
