@@ -34,6 +34,23 @@
       "revId": "aaa59ae9cbeea85b2c5d9bb68300617e56e1c871",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAbH//+MY\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 452,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2012-12-17T14:46:57Z",
+      "side": 1,
+      "message": "Gelesen bevorzuge ich auch.",
+      "revId": "aaa59ae9cbeea85b2c5d9bb68300617e56e1c871",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
