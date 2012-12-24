@@ -422,5 +422,9 @@
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Szybka odpowiedź</string>
+    <string name="qm_mark_read">Przeczytana</string>
+
+    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="menu_add_to_calendar">Dodaj do kalendarza</string>
 
 </resources>
