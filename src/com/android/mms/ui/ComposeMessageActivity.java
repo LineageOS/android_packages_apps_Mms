@@ -361,15 +361,15 @@ public class ComposeMessageActivity extends Activity
 
             for (int i = start; i < end; i++) {
                 char c = source.charAt(i);
+                String s = String.valueOf(c);
 
                 // Character is encodable by GSM, skip filtering
-                if (gsm.canEncode(c)) {
+                if (gsm.canEncode(c) || s.matches(".*[^\\x3040-\\x309F].*")) {
                     output.append(c);
                 }
                 // Character requires Unicode, try to replace it
                 else {
                     unfiltered = false;
-                    String s = String.valueOf(c);
 
                     // Try normalizing the character into Unicode NFKD form and
                     // stripping out diacritic mark characters.
