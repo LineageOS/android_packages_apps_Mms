@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAcH///OY\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-01-04T17:37:00Z",
+      "side": 1,
+      "message": "Ez az URL itt biztosan rossz!",
+      "revId": "f59858c942cfedf7eb14112c0f233e60db91d1bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcH///OU\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 342,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-01-04T17:37:00Z",
+      "side": 1,
+      "message": "üzenetekküld? -\u003e üzenetküld?\n\nSzámomra elég érdekes ez a mondat... jó lenne összevetni az eredeti angollal. Ezt hogyan lehet megtenni?",
+      "revId": "f59858c942cfedf7eb14112c0f233e60db91d1bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
