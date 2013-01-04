@@ -442,6 +442,7 @@
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Válasz</string>
+    <string name="qm_mark_read">Elolvasva</string>
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Hozzáadás a naptárhoz</string>
