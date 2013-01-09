@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAcn///dw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2013-01-09T22:18:15Z",
+      "side": 1,
+      "message": "DRM\u003eGDN ?",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn///ds\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2013-01-09T22:18:15Z",
+      "side": 1,
+      "message": "Remplacer les  ... par  …",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn///d8\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 339,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2013-01-09T22:18:15Z",
+      "side": 1,
+      "message": "http://go/droidanizer ??? 404",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn///eE\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2013-01-09T22:18:15Z",
+      "side": 1,
+      "message": "supprimé",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn///eI\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 2990
+      },
+      "writtenOn": "2013-01-09T22:18:15Z",
+      "side": 1,
+      "message": "471 belles émoticônes  (émotion+icône tous les 2 féminin)",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
