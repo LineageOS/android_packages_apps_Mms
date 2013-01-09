@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAcn///wc\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-01-09T04:03:06Z",
+      "side": 1,
+      "message": "Mon avis : \"Inconnu, veuillez resélectionner\" suffit, \"veuillez\" et \"s\u0027il vous plait\" ça fait deux formules de politesse.",
+      "revId": "b5c7005f23cfd4d65a80449e3646476bb695a63a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
