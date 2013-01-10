@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAcn///Xs\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-01-10T01:08:05Z",
+      "side": 1,
+      "message": "Traduction provenant de l\u0027AOSP (msgid\u003d), normalement on y touche pas.",
+      "parentUuid": "AAAAcn///dw\u003d",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAcn///ds\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAcn///Xk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-01-10T01:08:05Z",
+      "side": 1,
+      "message": "Idem, mais c\u0027est vrai que je mets toujours les trois points qui utilisent un seul caractère.",
+      "parentUuid": "AAAAcn///ds\u003d",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAcn///d8\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2013-01-09T22:18:15Z",
       "side": 1,
       "message": "http://go/droidanizer ??? 404",
+      "revId": "a45a056caf9d22277fc834740130307d6df22961",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn///Xo\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 339,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-01-10T01:08:05Z",
+      "side": 1,
+      "message": "Idem normalement on y touche pas.",
+      "parentUuid": "AAAAcn///d8\u003d",
       "revId": "a45a056caf9d22277fc834740130307d6df22961",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
