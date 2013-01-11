@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAcn//+vs\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-01-11T05:46:43Z",
+      "side": 1,
+      "message": "Montrer la touche des émoticônes",
+      "revId": "bbdd6f3afa355338f4983271259b88add9a2e535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn//+vw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-01-11T05:46:43Z",
+      "side": 1,
+      "message": "Montrer la touche Entrée",
+      "revId": "bbdd6f3afa355338f4983271259b88add9a2e535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn//+vg\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-01-11T05:46:43Z",
+      "side": 1,
+      "message": "Réponse rapide",
+      "revId": "bbdd6f3afa355338f4983271259b88add9a2e535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn//+vo\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-01-11T05:46:43Z",
+      "side": 1,
+      "message": "Montrer le pop-up",
+      "revId": "bbdd6f3afa355338f4983271259b88add9a2e535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn//+vk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 410,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-01-11T05:46:43Z",
+      "side": 1,
+      "message": "Afficher le pop-up QuickMessage pour les messages SMS entrants?",
+      "revId": "bbdd6f3afa355338f4983271259b88add9a2e535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
