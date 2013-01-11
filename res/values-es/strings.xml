@@ -30,7 +30,6 @@
     <string name="menu_preferences" msgid="4693148116114749414">"Ajustes"</string>
     <string name="menu_add_address_to_contacts" msgid="2313624913486309940">"Añadir <xliff:g id="NAME">%s</xliff:g> a contactos"</string>
     <string name="menu_call" msgid="5877123227307074690">"Llamar"</string>
-    <string name="menu_search" msgid="2289469305728821360">"Buscar"</string>
     <string name="menu_delete_all" msgid="8853352701914512057">"Eliminar conversaciones"</string>
     <string name="menu_delete" msgid="1851666911396479006">"Eliminar cadena"</string>
     <string name="menu_undelivered_messages" msgid="3896857623211780616">"Mensajes no entregados"</string>
@@ -106,9 +105,6 @@
     <string name="discard_message_reason" msgid="2667664943003796133">"El mensaje se descartará porque los destinatarios no son válidos."</string>
     <string name="has_invalid_recipient" msgid="1485388396900997383">"Destinatarios no válidos: &lt;<xliff:g id="NAME">%1$s</xliff:g>&gt;"</string>
     <string name="invalid_destination" msgid="7643854177921895615">"La dirección que has introducido no es válida."</string>
-    <string name="service_not_activated" msgid="9178218144019626176">"No se ha activado el servicio en la red."</string>
-    <string name="service_message_not_found" msgid="1908877102600048515">"El mensaje ha caducado o no está disponible."</string>
-    <string name="service_network_problem" msgid="5418984934499160536">"Error de red"</string>
     <string name="invalid_recipient_message" msgid="7315539322634238519">"Corrige la información de destinatarios para que se pueda enviar el mensaje."</string>
     <string name="cannot_send_message" msgid="3918913277571649400">"No se puede enviar el mensaje."</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"Los destinatarios del mensaje no son válidos."</string>
@@ -230,8 +226,6 @@
     <string name="confirm_delete_SIM_message" msgid="767624259182679915">"Este mensaje se eliminará de la tarjeta SIM."</string>
     <string name="delete_unlocked" msgid="7545321606698162261">"Eliminar mensajes bloqueados"</string>
     <string name="delete" msgid="1409973060081564612">"Eliminar"</string>
-    <string name="select_conversations" msgid="5754828781497722394">"Seleccionar conversaciones"</string>
-    <string name="no_conversations" msgid="2095684444005566703">"No hay conversaciones"</string>
     <string name="cannot_get_details" msgid="6493664168168047746">"No se pueden obtener detalles."</string>
     <string name="message_details_title" msgid="9223295113731634528">"Detalles del mensaje"</string>
     <string name="message_type_label" msgid="7975373966795945566">"Tipo: "</string>
