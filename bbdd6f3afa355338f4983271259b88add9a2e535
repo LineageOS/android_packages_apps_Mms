@@ -72,6 +72,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAcn//9zk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 5470
+      },
+      "writtenOn": "2013-01-13T19:08:59Z",
+      "side": 1,
+      "message": "resélectionner me semble plus correct. Enfin, c\u0027est mon avis.\n\nSi on prend:\n\nsélectionner avec le préfixe re\n\nNon ?",
+      "revId": "bbdd6f3afa355338f4983271259b88add9a2e535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAcn//+vg\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 5
