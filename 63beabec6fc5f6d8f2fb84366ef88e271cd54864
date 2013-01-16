@@ -16,6 +16,24 @@
       "revId": "63beabec6fc5f6d8f2fb84366ef88e271cd54864",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn//8u0\u003d",
+        "filename": "res/values-iw/arrays.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5248
+      },
+      "writtenOn": "2013-01-16T05:17:25Z",
+      "side": 1,
+      "message": "It refers into strings.xml It must stay there because it\u0027s an array",
+      "parentUuid": "AAAAcn//84o\u003d",
+      "revId": "63beabec6fc5f6d8f2fb84366ef88e271cd54864",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
