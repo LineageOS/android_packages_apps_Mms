@@ -16,6 +16,24 @@
       "revId": "8a50dbf632c64f08dbd86273c5a77442fb47dc2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAcn//7p4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-01-19T21:07:47Z",
+      "side": 1,
+      "message": "Gesendet bedeutet, dass Du die Nachricht abgeschickt hast, wohingegen \"Zugestellt\" bedeutet, dass der Empfänger die Nachricht auch empfangen hat.",
+      "parentUuid": "AAAAcn//7q8\u003d",
+      "revId": "8a50dbf632c64f08dbd86273c5a77442fb47dc2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
