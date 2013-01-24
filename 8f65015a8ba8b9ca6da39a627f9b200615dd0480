@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAc3//+nM\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 448,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2013-01-24T16:27:32Z",
+      "side": 1,
+      "message": "Jenom spis takova drobnost - nemelo by to byt spis ve smyslu \"Oznacit jako prectene\"? Asi si budu muset poslat MMS, jinak nebudu vedet, vo co de.",
+      "revId": "8f65015a8ba8b9ca6da39a627f9b200615dd0480",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
