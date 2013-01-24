@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAc3//+p4\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 420,
+      "author": {
+        "id": 2270
+      },
+      "writtenOn": "2013-01-24T14:39:43Z",
+      "side": 1,
+      "message": "Tady toto slovní spojení mi p?íjde takové nešikovné... Asi bych napsal rad?ji:\nVybrat typ virtuální klávesnice pro psaní zpráv",
+      "revId": "b8d9827303c15b4d2a7f154139d9bf53408e4bce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
