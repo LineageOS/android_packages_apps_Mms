@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAc3//+pI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2054
+      },
+      "writtenOn": "2013-01-24T15:47:50Z",
+      "side": 1,
+      "message": "\u0027invoermethode\u0027 is misschien technisch gezien beter, maar voor een gewone gebruiker lijkt me \u0027toetsenbord\u0027 duidelijker.",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+pA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 328,
+      "author": {
+        "id": 2054
+      },
+      "writtenOn": "2013-01-24T15:47:50Z",
+      "side": 1,
+      "message": "Waarom in HOOFDLETTERS?",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
