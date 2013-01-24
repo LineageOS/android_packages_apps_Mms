@@ -51,6 +51,24 @@
       "revId": "8f65015a8ba8b9ca6da39a627f9b200615dd0480",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+iA\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 448,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2013-01-24T19:46:30Z",
+      "side": 1,
+      "message": "Uz na to koukam, myslim ze \"Precteno\" nebo \"Prectene\" by se tam veslo.\nChtel jsem udelat screenshot, ale po stisku power butonku se notifikacni lista zavre.",
+      "parentUuid": "AAAAc3//+jg\u003d",
+      "revId": "8f65015a8ba8b9ca6da39a627f9b200615dd0480",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
