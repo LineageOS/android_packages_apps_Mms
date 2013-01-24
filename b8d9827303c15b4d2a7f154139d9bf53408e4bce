@@ -16,6 +16,24 @@
       "revId": "b8d9827303c15b4d2a7f154139d9bf53408e4bce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+po\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 420,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2013-01-24T15:18:26Z",
+      "side": 1,
+      "message": "Ono to je uplne jinak a cele spatne.\nVyznam je takovy, ze si uzivatel ma vybrat, zda se na klavesnici zobrazi na klavese Enter bud smile ( :-) ) a nebo bude enter\ntj:\npref_title_input_type \u003d Chovani klavesy Enter\npref_summary_input_type \u003d Zvolte vvychozi chovani klavesy Enter pri psani zpravy\n\n(to jsou jenom priklady jak bych to asi prelozil z kontextu ja)",
+      "parentUuid": "AAAAc3//+p4\u003d",
+      "revId": "b8d9827303c15b4d2a7f154139d9bf53408e4bce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
