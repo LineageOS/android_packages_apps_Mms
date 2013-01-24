@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAc3//+iE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "Whitespace",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+hg\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "- Gesprek verwijderen",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+hU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "Het is een BIJlage, die voeg je bij, niet in :)",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//+pI\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -19,6 +70,58 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//+iI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "Mee eens",
+      "parentUuid": "AAAAc3//+pI\u003d",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+hM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "Mms",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+hE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "geweigerd, omdat (komma)",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//+pA\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -30,6 +133,23 @@
       "writtenOn": "2013-01-24T15:47:50Z",
       "side": 1,
       "message": "Waarom in HOOFDLETTERS?",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//+g8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 339,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-01-24T20:40:13Z",
+      "side": 1,
+      "message": "http://go/droidanizer bestaat helemaal niet?? Geen geldige link.\n\nDit is sowieso in het Engels ook fout. En waarschijnlijk de rest van de talen ook. \nIk zou niet weten wat de goede link is ....\nMisschien moet dit opgelost worden in een aparte patch.",
       "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
