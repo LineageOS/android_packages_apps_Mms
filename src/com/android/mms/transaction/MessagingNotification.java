@@ -68,6 +68,7 @@ import com.android.mms.R;
 import com.android.mms.data.Contact;
 import com.android.mms.data.Conversation;
 import com.android.mms.data.WorkingMessage;
+import com.android.mms.layout.MmsNotificationStyle;
 import com.android.mms.model.SlideModel;
 import com.android.mms.model.SlideshowModel;
 import com.android.mms.quickmessage.QmMarkRead;
@@ -868,6 +869,7 @@ public class MessagingNotification {
 
         final Notification.Builder noti = new Notification.Builder(context)
                 .setWhen(mostRecentNotification.mTimeMillis);
+        final MmsNotificationStyle notiStyle = new MmsNotificationStyle(context, noti);
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         boolean privacyMode = sp.getBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, false);
@@ -1046,7 +1048,7 @@ public class MessagingNotification {
                     CharSequence qmText = context.getText(R.string.qm_quick_reply);
                     PendingIntent qmPendingIntent = PendingIntent.getActivity(context, 0, qmIntent,
                             PendingIntent.FLAG_UPDATE_CURRENT);
-                    noti.addAction(R.drawable.ic_reply, qmText, qmPendingIntent);
+                    notiStyle.addAction(R.drawable.ic_reply, qmText, qmPendingIntent);
                 }
 
                 // Add the 'Mark as read' action
@@ -1056,7 +1058,7 @@ public class MessagingNotification {
                 mrIntent.putExtra(QmMarkRead.SMS_THREAD_ID, mostRecentNotification.mThreadId);
                 PendingIntent mrPendingIntent = PendingIntent.getBroadcast(context, 0, mrIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
-                noti.addAction(R.drawable.ic_menu_done_holo_dark, markReadText, mrPendingIntent);
+                notiStyle.addAction(R.drawable.ic_menu_done_holo_dark, markReadText, mrPendingIntent);
 
                 // Add the Call action
                 CharSequence callText = context.getText(R.string.menu_call);
@@ -1064,7 +1066,7 @@ public class MessagingNotification {
                 callIntent.setData(mostRecentNotification.mSender.getPhoneUri());
                 PendingIntent callPendingIntent = PendingIntent.getActivity(context, 0, callIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
-                noti.addAction(R.drawable.ic_menu_call, callText, callPendingIntent);
+                notiStyle.addAction(R.drawable.ic_menu_call, callText, callPendingIntent);
 
             }
 
@@ -1163,6 +1165,9 @@ public class MessagingNotification {
                     }
                 }
             }
+
+            notiStyle.restyleNotificationActionButtons(notification.bigContentView,
+                R.layout.centered_notification_action);
 
             // Trigger the QuickMessage pop-up activity if enabled
             // But don't show the QuickMessage if the user is in a call or the phone is ringing
