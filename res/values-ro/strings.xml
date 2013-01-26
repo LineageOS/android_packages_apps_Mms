@@ -403,6 +403,5 @@
     <string name="button_view">"Vizualizaţi"</string>
     <string name="type_to_reply_text_enter_to_send">"Introduceţi text pentru a răspunde"</string>
     <string name="toast_sending_message">"Expediere mesaj"</string>
-    <string name="qm_quick_reply">"Răspuns rapid"</string>
 
 </resources>

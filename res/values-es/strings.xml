@@ -407,7 +407,6 @@
     <string name="button_templates">Plantillas</string>
     <string name="type_to_reply_text_enter_to_send">Escribir mensaje</string>
     <string name="toast_sending_message">Enviando mensaje\u2026</string>
-    <string name="qm_quick_reply">Responder</string>
 
     <!-- CYANOGENMOD EDITS START -->
 
@@ -417,7 +416,6 @@
     <string name="pref_keyboard_unknown">Desconocido. Por favor, seleccionar nuevamente</string>
     <string name="pref_title_input_type">Tipo de teclado</string>
     <string name="pref_summary_input_type">Comportamiento de la tecla Entrar al escribir mensajes</string>
-    <string name="qm_mark_read">Leer</string>
 
     <!-- CYANOGENMOD ADDITIONS END -->
 </resources>

@@ -450,10 +450,6 @@
     <!-- QM Toast -->
     <string name="toast_sending_message">Nachricht senden\u2026</string>
 
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Antworten</string>
-    <string name="qm_mark_read">Gelesen</string>
-
     <!-- **** CYANOGENMOD EDITS END **** -->
 </resources>
 

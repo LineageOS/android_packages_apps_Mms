@@ -440,10 +440,6 @@
     <!-- QM Toast -->
     <string name="toast_sending_message">Το μήνυμα αποστέλλεται</string>
 
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Απάντηση</string>
-    <string name="qm_mark_read">Διαβάστηκε</string>
-
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Προσθήκη στο ημερολόγιο</string>
 </resources>

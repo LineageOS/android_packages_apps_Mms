@@ -408,6 +408,5 @@
     <string name="button_templates">Viestipohjat</string>
     <string name="type_to_reply_text_enter_to_send">Kirjoita vastataksesi</string>
     <string name="toast_sending_message">Lähetetään</string>
-    <string name="qm_quick_reply">Vastaa</string>
 
 </resources>
