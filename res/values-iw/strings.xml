@@ -449,10 +449,6 @@
     <!-- QM Toast -->
     <string name="toast_sending_message">שולח הודעה</string>
 
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">הגב</string>
-    <string name="qm_mark_read">נקראה</string>
-
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
 </resources>

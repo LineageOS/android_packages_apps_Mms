@@ -351,7 +351,6 @@
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
     <!-- CYANOGENMOD EDITS -->
-    <string name="qm_mark_read">Gelezen</string>
     <string name="pref_title_sms_split_counter">Sms-teller</string>
     <string name="pref_summary_sms_split_counter">Teller toevoegen aan sms-berichten, zoals: (1/2)</string>
      <string name="prefs_templates_settings">Sms-sjablonen</string>
@@ -412,7 +411,6 @@
     <string name="button_templates">Sjablonen</string>
     <string name="type_to_reply_text_enter_to_send">Typ om te beantwoorden</string>
     <string name="toast_sending_message">Bericht wordt verzonden\u2026</string>
-    <string name="qm_quick_reply">Snel beantwoorden</string>
     <string name="pref_title_input_type">Invoermethode</string>
     <string name="pref_summary_input_type">Kies de te gebruiken invoermethode om berichten op te stellen</string>
     <string name="menu_add_to_calendar">Toevoegen aan agenda</string>

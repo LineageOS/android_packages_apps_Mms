@@ -420,8 +420,6 @@
     <string name="button_templates">Modèles</string>
     <string name="type_to_reply_text_enter_to_send">Saisissez une réponse</string>
     <string name="toast_sending_message">Envoi du message</string>
-    <string name="qm_quick_reply">Répondre</string>
-    <string name="qm_mark_read">Lu</string>
 
     <!-- Calendar -->
     <string name="menu_add_to_calendar">Ajouter au calendrier</string>

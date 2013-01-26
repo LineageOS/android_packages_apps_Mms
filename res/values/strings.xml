@@ -899,9 +899,6 @@
     <!-- QM Toast -->
     <string name="toast_sending_message">Sending message</string>
 
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Reply</string>
-    <string name="qm_mark_read">Read</string>
 
     <!-- Privacy mode -->
     <string name="pref_title_notification_privacy_mode_enabled">Privacy mode</string>

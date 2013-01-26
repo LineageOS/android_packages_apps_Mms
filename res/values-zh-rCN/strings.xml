@@ -443,10 +443,6 @@
     <!-- QM Toast -->
     <string name="toast_sending_message">信息发送中</string>
 
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">回复</string>
-    <string name="qm_mark_read">已读</string>
-
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">添加日历提醒</string>
 </resources>

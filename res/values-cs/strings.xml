@@ -443,10 +443,6 @@
     <!-- QM Toast -->
     <string name="toast_sending_message">Zpráva je odesílána\u2026</string>
 
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Odpovědět</string>
-    <string name="qm_mark_read">Přečteno</string>
-
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Přidat do kalendáře</string>
 </resources>
