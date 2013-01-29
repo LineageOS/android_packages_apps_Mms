@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//9Qg\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAc3//+iE\u003d",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//+hg\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-01-24T20:40:13Z",
       "side": 1,
       "message": "- Gesprek verwijderen",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//9Qc\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAc3//+hg\u003d",
       "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -64,6 +100,24 @@
       "writtenOn": "2013-01-24T21:01:05Z",
       "side": 1,
       "message": "Eens. Misschien \u0027TOEvoegen\u0027?",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//9QY\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Ik hou het dan maar op \u0027Bijvoegen\u0027",
+      "parentUuid": "AAAAc3//+go\u003d",
       "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -105,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//9QU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Invoermethode wordt wel vaker gebruikt (als er een invoermethode geopend is, wordt ook de melding getoond waardoor je van invoermethode kunt wisselen)",
+      "parentUuid": "AAAAc3//+pI\u003d",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//+hM\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -116,6 +188,24 @@
       "writtenOn": "2013-01-24T20:40:13Z",
       "side": 1,
       "message": "Mms",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//9QQ\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAc3//+hM\u003d",
       "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -139,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//9QM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAc3//+hE\u003d",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//+pA\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -156,6 +264,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//9QI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 328,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Geen idee, maar het is ook zo in het Engels...",
+      "parentUuid": "AAAAc3//+pA\u003d",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//+g8\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 2
@@ -167,6 +293,24 @@
       "writtenOn": "2013-01-24T20:40:13Z",
       "side": 1,
       "message": "http://go/droidanizer bestaat helemaal niet?? Geen geldige link.\n\nDit is sowieso in het Engels ook fout. En waarschijnlijk de rest van de talen ook. \nIk zou niet weten wat de goede link is ....\nMisschien moet dit opgelost worden in een aparte patch.",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//9QE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 339,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-01-29T02:12:45Z",
+      "side": 1,
+      "message": "Geen idee (het is een AOSP-string, dus dan moet het ook naar AOSP gestuurd moeten).\nhttps://code.google.com/p/android/issues/detail?id\u003d43420",
+      "parentUuid": "AAAAc3//+g8\u003d",
       "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
