@@ -1,0 +1,12 @@
+Change-Id: I0f4b64e19c9e099f1c23c7bfc04cc5bb2f98c38e
+Code-Review+2: Danny Baumann <dannybaumann@web.de>
+Code-Review+1: Igor Sokolov <wildfatduck@gmail.com>
+Code-Review+1: Dmitriy Chermenev <chdiman86@gmail.com>
+Code-Review+1: Pavel Kirpichyov <pavel.kirpichyov@gmail.com>
+Verified+1: Cid
+Code-Review+1: Vladislav Koldobskiy <nevergone.ru@gmail.com>
+Submitted-by: Danny Baumann <dannybaumann@web.de>
+Submitted-at: Thu, 31 Jan 2013 04:18:10 -0800
+Reviewed-on: http://review.cyanogenmod.org/31097
+Project: CyanogenMod/android_packages_apps_Mms
+Branch: refs/heads/cm-10.1
