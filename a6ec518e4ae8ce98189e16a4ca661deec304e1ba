@@ -350,6 +350,24 @@
       "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8qo\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 339,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-01-31T00:58:22Z",
+      "side": 1,
+      "message": "Is ook een beetje een theoretisch probleem, want als je in de Java code kijkt kan je zien dat de melding waar deze string bij hoort niet actief is (en dus niet getoond kan worden).",
+      "parentUuid": "AAAAc3//8r8\u003d",
+      "revId": "a6ec518e4ae8ce98189e16a4ca661deec304e1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
