@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAc3//8CA\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 908,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T18:58:18Z",
+      "side": 1,
+      "message": "Add \u0027this will also disable Quick reply\u0027 to the summary string",
+      "revId": "6210e32226e1fcbe58c3d6fd2c5cd9a661e75092",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8B8\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 912,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T18:58:18Z",
+      "side": 1,
+      "message": "Do we have to say \u0027incoming\u0027 ? I suggest using \u0027New message received\u0027",
+      "revId": "6210e32226e1fcbe58c3d6fd2c5cd9a661e75092",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
