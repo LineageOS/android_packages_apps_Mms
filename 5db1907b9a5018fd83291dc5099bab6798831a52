@@ -16,6 +16,58 @@
       "revId": "5db1907b9a5018fd83291dc5099bab6798831a52",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//75g\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 908,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-01T23:21:25Z",
+      "side": 1,
+      "message": "David, why do we need this in the summary? Making the quick reply checkbox(es) dependant on this one should be sufficient, shouldn\u0027t it?",
+      "parentUuid": "AAAAc3//76Q\u003d",
+      "revId": "5db1907b9a5018fd83291dc5099bab6798831a52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//75Y\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 895,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-01T23:21:25Z",
+      "side": 1,
+      "message": "Why don\u0027t you build the context text for privacy mode at the place where it\u0027s used instead of using this variable with large scope?",
+      "revId": "5db1907b9a5018fd83291dc5099bab6798831a52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//75U\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 350,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-01T23:21:25Z",
+      "side": 1,
+      "message": "I think this should be done via android:dependant in the XML.",
+      "revId": "5db1907b9a5018fd83291dc5099bab6798831a52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
