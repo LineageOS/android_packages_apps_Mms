@@ -70,6 +70,91 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//8RQ\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 875,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:14:20Z",
+      "side": 1,
+      "message": "use { and } here for both the if and the else blocks - its the standard we use for CM and it makes it easier to read",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8Q4\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 913,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:14:20Z",
+      "side": 1,
+      "message": "indentation incorrect both here and below",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8RE\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 943,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:14:20Z",
+      "side": 1,
+      "message": "indentation incorrect both here and below",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8Q0\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1021,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:14:20Z",
+      "side": 1,
+      "message": "Not sure I agree with this - a quickmessage dialog can still be useful.  I would probably only want to disable the Wake and unlock feature, not the whole thing",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8Qw\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1083,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:14:20Z",
+      "side": 1,
+      "message": "indentation is wrong. here and other places",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//8RY\u003d",
         "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
         "patchSetId": 1
