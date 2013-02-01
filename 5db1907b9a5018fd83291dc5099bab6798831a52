@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAc3//76Q\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 908,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T23:02:16Z",
+      "side": 1,
+      "message": "lower case r on reply",
+      "revId": "5db1907b9a5018fd83291dc5099bab6798831a52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
