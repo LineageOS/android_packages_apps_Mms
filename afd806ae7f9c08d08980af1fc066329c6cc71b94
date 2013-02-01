@@ -50,6 +50,40 @@
       "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8Rc\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:03:46Z",
+      "side": 1,
+      "message": "No, dark theme is not dependent on the Quick Message popup since it applied to the Quick reply as well.",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//8RY\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 440,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-01T02:03:46Z",
+      "side": 1,
+      "message": "I\u0027m not sure I would disable quickmessage when privacy mode is turned on, the device still needs to be unlocked for the QM popup to be seen.",
+      "revId": "afd806ae7f9c08d08980af1fc066329c6cc71b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
