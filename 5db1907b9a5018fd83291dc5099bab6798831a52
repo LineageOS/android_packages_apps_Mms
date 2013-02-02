@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAc3//73o\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 908,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-02T01:08:42Z",
+      "side": 1,
+      "message": "Danny, since Quick reply is below the fold (i.e. scrolled off the screen) when the user selects the Privacy mode, there is no visual indication of how they interact with each other.  Adding a explanation in the summary helps.\n\nI am imagining myself as a new user setting up my phone from scratch, I always start from the top.  If I wanted to use privacy mode, and then \u0027discover\u0027 Quick reply when I scroll further down, I would probably want to know why it is disabled - leading either to questions on XDA or having to scroll up and uncheck items to try and figure out what disabled Quick reply.",
+      "parentUuid": "AAAAc3//75g\u003d",
+      "revId": "5db1907b9a5018fd83291dc5099bab6798831a52",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAc3//75Y\u003d",
         "filename": "src/com/android/mms/transaction/MessagingNotification.java",
         "patchSetId": 3
