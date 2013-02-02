@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAc3//73c\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-02T01:12:54Z",
+      "side": 1,
+      "message": "Indien nie gekies nie, sal die \\ \"ligte\\\" tema gebruik word",
+      "revId": "8319c81e3a4563ba0f5a76d5621a15ec6479ba0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//73Y\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 443,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-02T01:12:54Z",
+      "side": 1,
+      "message": "Maak oop",
+      "revId": "8319c81e3a4563ba0f5a76d5621a15ec6479ba0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAc3//73U\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 450,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-02T01:12:54Z",
+      "side": 1,
+      "message": "Boodskap word gestuur",
+      "revId": "8319c81e3a4563ba0f5a76d5621a15ec6479ba0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
