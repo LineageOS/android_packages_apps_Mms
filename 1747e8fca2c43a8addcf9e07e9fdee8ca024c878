@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH///0k\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 867,
+      "author": {
+        "id": 3255
+      },
+      "writtenOn": "2013-02-05T20:07:30Z",
+      "side": 0,
+      "message": "If notificationSet is empty, NoSuchElementException is thrown, here.",
+      "revId": "1747e8fca2c43a8addcf9e07e9fdee8ca024c878",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

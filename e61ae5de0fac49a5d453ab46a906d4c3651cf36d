@@ -51,6 +51,24 @@
       "revId": "e61ae5de0fac49a5d453ab46a906d4c3651cf36d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///0g\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 878,
+      "author": {
+        "id": 3255
+      },
+      "writtenOn": "2013-02-05T20:07:30Z",
+      "side": 1,
+      "message": "updateNotification() may not be invoked with an empty notificationSet.",
+      "parentUuid": "AAAAdH///0w\u003d",
+      "revId": "e61ae5de0fac49a5d453ab46a906d4c3651cf36d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
