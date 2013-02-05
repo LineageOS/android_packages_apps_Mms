@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH///zI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 420,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-02-05T21:26:12Z",
+      "side": 1,
+      "message": "Verzender \u003d afzender?",
+      "revId": "ffafc4940d488834f0c32124b410a0e963e3857c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
