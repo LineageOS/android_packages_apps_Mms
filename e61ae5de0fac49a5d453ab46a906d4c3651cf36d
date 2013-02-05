@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAdH///0o\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 875,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-05T20:06:54Z",
+      "side": 1,
+      "message": "This is based on old code - Privacy mode should default to false (a fix for this was merged a couple of days ago).  You may need to rebase (see http://review.cyanogenmod.org/#/c/31373/)",
+      "revId": "e61ae5de0fac49a5d453ab46a906d4c3651cf36d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///0w\u003d",
         "filename": "src/com/android/mms/transaction/MessagingNotification.java",
         "patchSetId": 2
@@ -13,6 +30,24 @@
       "writtenOn": "2013-02-05T19:53:03Z",
       "side": 1,
       "message": "On an unrelated (to this particular patch) note, would this not be a possible NPE if you have no notifications ?",
+      "revId": "e61ae5de0fac49a5d453ab46a906d4c3651cf36d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///0c\u003d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 878,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-05T20:06:54Z",
+      "side": 1,
+      "message": "Christian, this code only gets called when there are notifications to show - thus not an issue.",
+      "parentUuid": "AAAAdH///0w\u003d",
       "revId": "e61ae5de0fac49a5d453ab46a906d4c3651cf36d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
