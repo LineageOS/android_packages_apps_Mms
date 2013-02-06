@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH///vc\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 421,
+      "author": {
+        "id": 5470
+      },
+      "writtenOn": "2013-02-06T00:20:12Z",
+      "side": 1,
+      "message": "à 365 \"Emoji\" est mis au pluriel sans majuscule. On garde lequel ?",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
