@@ -245,6 +245,23 @@
       "revId": "7f743334b107bec30c19222e424a5dc950059674",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///Zg\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-06T22:22:29Z",
+      "side": 1,
+      "message": "Dont do this.",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
