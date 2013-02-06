@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///tw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Cette traduction est là depuis le début.\nMais je suis assez d\u0027accord. Par contre je ne sais pas si le \u0027s\u0027 est judicieux, étant un mot étranger. Le remplacement par frimousse n\u0027est pas vraiment judicieux également.\nEn effet \u0027Emoji\u0027 et \u0027Smiley\u0027 sont différenciés dans l\u0027application. Les \u0027Smiley\u0027 étant les émoticônes \"classiques\", et \u0027Emoji\u0027 les émoticônes étendues.\nJe serai pour garder le terme \u0027Emoji\u0027 pour ceux-ci, et \u0027émoticônes\u0027 pour les \u0027Smiley\u0027.",
+      "parentUuid": "AAAAdH///uw\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///vI\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -89,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///ts\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 373,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Vrai, je ne l\u0027ai pas vu celui-là, j\u0027ai pourtant corrigé les autres.",
+      "parentUuid": "AAAAdH///uo\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///uk\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -100,6 +136,24 @@
       "writtenOn": "2013-02-06T01:04:20Z",
       "side": 1,
       "message": "remplacer l\u0027espace devant \"?\" par un espace insécable : \"Continuer\\u00A0?\"",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///to\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Merci",
+      "parentUuid": "AAAAdH///uk\u003d",
       "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -123,6 +177,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///tk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Merci",
+      "parentUuid": "AAAAdH///ug\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///uY\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -134,6 +206,24 @@
       "writtenOn": "2013-02-06T01:04:20Z",
       "side": 1,
       "message": "remplacer les ... par \\u2026 (les trois points sur un seul caractère). il n\u0027est possible de traduire on/off ?",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///tg\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 407,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Je n\u0027ai pas fait attention aux autres traductions que celle du mode de confidentialité. J\u0027ai simplement corrigé quelques fautes d\u0027orthographe.\nAlors pour le on/off, on pourrait mettre \u0027vibre/ne vibre pas\u0027 mais ça va faire long. Je n\u0027ai pas vraiment de préférence ici.",
+      "parentUuid": "AAAAdH///uY\u003d",
       "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -193,6 +283,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///tU\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 421,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Merci pour la réponse, mais que penses-tu de remplacer par \u0027Afficher la touche des émoticônes\u0027, puisque la touche ne renvoie qu\u0027à un échantillon d\u0027émoticônes classiques.",
+      "parentUuid": "AAAAdH///uE\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///uM\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -210,6 +318,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///tc\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 437,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "Merci",
+      "parentUuid": "AAAAdH///uM\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///uI\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -221,6 +347,24 @@
       "writtenOn": "2013-02-06T01:04:20Z",
       "side": 1,
       "message": "réponse sans le R majuscule",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///tY\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-06T01:22:58Z",
+      "side": 1,
+      "message": "J\u0027ai volontairement laissé la majuscule, puisque cela fait référence à une fonctionnalité (cohérence avec le texte d\u0027origine \u0027Quick reply\u0027).",
+      "parentUuid": "AAAAdH///uI\u003d",
       "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
