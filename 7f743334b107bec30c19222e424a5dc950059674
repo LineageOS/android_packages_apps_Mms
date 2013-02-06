@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///Z8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-02-06T21:50:50Z",
+      "side": 1,
+      "message": "Ich mag den Punkt ;)\n\nAbsender und Nichtrichteninhalt (nicht) in der Statusleiste verbergen (anzeigen). \"Schnell antowrten\" deaktiveren.",
+      "parentUuid": "AAAAdH///a8\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///cI\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "\u0027Benutzerdefiniertes Vibrationsmuster\u0027 wird zu lang sein, aber man könnte auch nur \u0027Benutzerdefiniert\u0027 verwenden.",
       "parentUuid": "AAAAdH///bI\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///Z4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-02-06T21:50:50Z",
+      "side": 1,
+      "message": "benutzerdefiniert - sofern das nicht schon zu lang ist und nein das N4, SGS3 oder OX+ sind nicht passende Geräte zum Testen ;)",
+      "parentUuid": "AAAAdH///a4\u003d",
       "revId": "7f743334b107bec30c19222e424a5dc950059674",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
