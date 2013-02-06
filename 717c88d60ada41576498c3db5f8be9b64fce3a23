@@ -72,6 +72,42 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///c4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 5639
+      },
+      "writtenOn": "2013-02-06T20:04:38Z",
+      "side": 1,
+      "message": "Meine Übersetzung hält sich recht genau an die englische Vorlage, allerdings hat Kim Recht, wenn er Statusbar mit Statusleiste übersetzt, das hatte ich schlicht und einfach übersehen.\n\nMit dem Rest stimme ich nicht überein. In Summe:\n\n\"Verstecke Absender und Nachrichteninhalt in der Statusleiste und deaktiviere die Schnellantwort\"",
+      "parentUuid": "AAAAdH///dk\u003d",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///cs\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 5639
+      },
+      "writtenOn": "2013-02-06T20:04:38Z",
+      "side": 1,
+      "message": "\", und\" schreibt man im Deutschen ganz sicher nicht!",
+      "parentUuid": "AAAAdH///do\u003d",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///ds\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -101,6 +137,24 @@
       "side": 1,
       "message": "Grundsätzlich ja, aber dann hätten wir eine Nachricht und 2 Nachrichten. ;) Sieht doof aus. Lieber nur Zahlen.",
       "parentUuid": "AAAAdH///ds\u003d",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///c8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 461,
+      "author": {
+        "id": 5639
+      },
+      "writtenOn": "2013-02-06T20:04:38Z",
+      "side": 1,
+      "message": "Das mit Ziffer \"1\" usw ist aus der engl. Standardübersetzung übernommen. Die Übersetzung sollte in allen Sprachen ähnlich formatiert sein. Außerdem ja Markus, sollten wenn dann immer Ziffern verwendet werden",
+      "parentUuid": "AAAAdH///dY\u003d",
       "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
