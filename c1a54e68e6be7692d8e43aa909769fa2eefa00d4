@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAdH///uw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "\"Activer les Emojis\" soit on garde le terme d\u0027origine asiatique auquel cas je pense qu\u0027il faut le laisser avec une majuscule soit on utilise le terme français \"frimousses\" : http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche\u003d111833",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///vI\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -13,6 +30,74 @@
       "writtenOn": "2013-02-06T00:34:11Z",
       "side": 1,
       "message": "A remplacer par \"Insérer un Emoji\" ? (pour la cohérence avec \"Insérer une émoticône\")",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///uo\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 373,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "\"au message ex :\", il y a toujours un espace devant un caractère de ponctuation composé de deux éléments comme ;:!? etc...",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///uk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "remplacer l\u0027espace devant \"?\" par un espace insécable : \"Continuer\\u00A0?\"",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///ug\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "idem au dessus : espace insécable",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///uY\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 407,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "remplacer les ... par \\u2026 (les trois points sur un seul caractère). il n\u0027est possible de traduire on/off ?",
       "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -48,6 +133,58 @@
       "side": 1,
       "message": "Emoji est un mot Japonais donc je ne vois pas de problème à le laisser avec une majuscule et sans \u0027s\u0027. Par contre, je changerais bien plutôt en \"Afficher la touche des smiley\" ou \"Afficher la touche des émoticônes\" (je ne sais pas vraiment quelle traduction utilisée, la traduction conseillée de \"frimousse\" n\u0027étant pas utilisée), car la touche \u0027Entrée\u0027 permet d\u0027accéder au \"smileys\" classiques et non aux Emoji.",
       "parentUuid": "AAAAdH///vc\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///uE\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 421,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "Pour ma par je préférerai soit le terme Emoji soit frimousse. Mais frimousse est très peu utilisé donc je rejoins Eric, Emoji avec une majuscule",
+      "parentUuid": "AAAAdH///vM\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///uM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 437,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "Le bouton \\\u0027Fermer\\\u0027   \u003c\u003d ajouter les \u0027 pour plus de lisibilité",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///uI\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:04:20Z",
+      "side": 1,
+      "message": "réponse sans le R majuscule",
       "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
