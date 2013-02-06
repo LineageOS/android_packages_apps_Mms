@@ -16,6 +16,23 @@
       "revId": "7c6dac170d7034b2107135e845517288655e54fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///sk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-02-06T01:43:21Z",
+      "side": 1,
+      "message": "Un détail typographique : \"Réponse Rapide\" (majuscule)",
+      "revId": "7c6dac170d7034b2107135e845517288655e54fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
