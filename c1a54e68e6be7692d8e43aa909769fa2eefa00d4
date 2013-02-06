@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///t4\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-02-06T01:10:45Z",
+      "side": 1,
+      "message": "\"Activer les Emojis\" me semble être la solution la plus appropriée",
+      "parentUuid": "AAAAdH///uw\u003d",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///vI\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2013-02-06T00:34:11Z",
       "side": 1,
       "message": "A remplacer par \"Insérer un Emoji\" ? (pour la cohérence avec \"Insérer une émoticône\")",
+      "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///t8\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-02-06T01:10:45Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "AAAAdH///vI\u003d",
       "revId": "c1a54e68e6be7692d8e43aa909769fa2eefa00d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
