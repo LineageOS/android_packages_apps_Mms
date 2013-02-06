@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///a8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-06T21:11:02Z",
+      "side": 1,
+      "message": "Ich finde nur Klammern immer so unschön in Beschreibungen, ich guck mal, ob mir nicht vil etwas besseres einfällt.",
+      "parentUuid": "AAAAdH///cM\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///cI\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -65,6 +83,24 @@
       "side": 1,
       "message": "benutzerdefiniert ist besser. \"eigenes\" verweist auf einen besitz, den man nicht unbedingt versteht.",
       "parentUuid": "AAAAdH///cI\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///a4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-06T21:11:02Z",
+      "side": 1,
+      "message": "\u0027Benutzerdefiniertes Vibrationsmuster\u0027 wird zu lang sein, aber man könnte auch nur \u0027Benutzerdefiniert\u0027 verwenden.",
+      "parentUuid": "AAAAdH///bI\u003d",
       "revId": "7f743334b107bec30c19222e424a5dc950059674",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -106,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///a0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-06T21:11:02Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "AAAAdH///bE\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///4Q\u003d",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
@@ -134,6 +188,24 @@
       "writtenOn": "2013-02-05T09:44:50Z",
       "side": 1,
       "message": "\"Call\" kleingeschrieben?",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///aw\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 844,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-06T21:11:02Z",
+      "side": 1,
+      "message": "Yes. Will change it :)",
+      "parentUuid": "AAAAdH///4M\u003d",
       "revId": "7f743334b107bec30c19222e424a5dc950059674",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
