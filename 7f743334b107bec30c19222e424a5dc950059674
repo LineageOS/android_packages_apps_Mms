@@ -72,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///ZM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-06T22:35:01Z",
+      "side": 1,
+      "message": "Bei deaktiviert vs. deaktivieren müssen wir aber IMHO mal eine Ausnahme machen, da es eine direkte Auswirkung des Setzens der Checkbox beschreibt.\n\nInsofern stehe ich zu meinem von Kim zitierten Vorschlag ;)",
+      "parentUuid": "AAAAdH///Z8\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///cI\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
