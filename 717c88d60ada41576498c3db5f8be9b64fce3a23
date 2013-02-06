@@ -108,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///cA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-06T20:28:17Z",
+      "side": 1,
+      "message": "Die bestehenden Übersetzungen sind alle so geschrieben, dass sie die Auswirkung und nicht die Tätigkeit beschreibt (\u0027XYZ erlauben\u0027 an Stelle von \u0027Erlaube XYZ\u0027). Das sollten wir auch hier so handhaben - Konsistenz ist wichtig. Ob wir nun \u0027nicht...anzeigen\u0027 oder \u0027verstecken\u0027 verwenden, ist mir persönlich fast egal, obwohl ich zu ersterem tendiere.\n\nKeine Kommentare zu meinem Vorschlag?",
+      "parentUuid": "AAAAdH///c4\u003d",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///ds\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
