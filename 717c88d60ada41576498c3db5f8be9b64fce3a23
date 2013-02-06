@@ -50,6 +50,24 @@
       "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///dY\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 461,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-02-06T19:50:00Z",
+      "side": 1,
+      "message": "Grundsätzlich ja, aber dann hätten wir eine Nachricht und 2 Nachrichten. ;) Sieht doof aus. Lieber nur Zahlen.",
+      "parentUuid": "AAAAdH///ds\u003d",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
