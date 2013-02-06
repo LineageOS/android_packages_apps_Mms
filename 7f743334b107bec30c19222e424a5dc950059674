@@ -19,6 +19,57 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///cM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-02-06T20:30:07Z",
+      "side": 1,
+      "message": "Vorschlag aus dem andreren Commit:\r\n\r\nAbsender und Nachrichteninhalt nicht in der Statusleiste anzeigen (deaktiviert \\\"Schnell antworten\")",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///cI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-02-06T20:30:07Z",
+      "side": 1,
+      "message": "In anderen Übersetzungen haben wir oft \"benutzerdefiniertes\" verwendet.",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///cE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-02-06T20:30:07Z",
+      "side": 1,
+      "message": "Bei Anruf vibrieren",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///4Q\u003d",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
