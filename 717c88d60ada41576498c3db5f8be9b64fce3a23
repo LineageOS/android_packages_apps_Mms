@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH///do\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-02-06T19:48:03Z",
+      "side": 1,
+      "message": "Vorschlag:\r\nAbsender und Nachrichteninhalt nicht in der Statusleiste anzeigen, und Schnellantwort deaktivieren.",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///ds\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 461,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-02-06T19:48:03Z",
+      "side": 1,
+      "message": "Traditionell schreibt man Zahlen bis Zwölf nicht als Ziffer, sondern mit ihren Namen.\r\nWir könnten also folgendes schreiben:\r\n\"Eine ungelesene Nachricht\"",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
