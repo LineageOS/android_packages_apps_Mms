@@ -53,6 +53,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///bI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 5639
+      },
+      "writtenOn": "2013-02-06T21:06:50Z",
+      "side": 1,
+      "message": "benutzerdefiniert ist besser. \"eigenes\" verweist auf einen besitz, den man nicht unbedingt versteht.",
+      "parentUuid": "AAAAdH///cI\u003d",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///cE\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -64,6 +82,24 @@
       "writtenOn": "2013-02-06T20:30:07Z",
       "side": 1,
       "message": "Bei Anruf vibrieren",
+      "revId": "7f743334b107bec30c19222e424a5dc950059674",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///bE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 5639
+      },
+      "writtenOn": "2013-02-06T21:06:50Z",
+      "side": 1,
+      "message": "Besser!",
+      "parentUuid": "AAAAdH///cE\u003d",
       "revId": "7f743334b107bec30c19222e424a5dc950059674",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
