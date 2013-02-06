@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH///sw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-02-06T01:41:55Z",
+      "side": 1,
+      "message": "\u003d\u003ddésactiver la fonction \\\u0027Réponse rapide\\\u0027\u003d\u003d ce sera clair, pour le reste beau boulot.",
+      "revId": "7c6dac170d7034b2107135e845517288655e54fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
