@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAdH///hY\u003d",
+        "filename": "res/layout/centered_notification_action.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-06T14:36:04Z",
+      "side": 1,
+      "message": "Please add CM Copyright notice under AOSP copyright notice.\n\nCopyright (C) 2013 The CyanogenMod Project",
+      "revId": "1475b16e02e0100287021f16261eb486a4dbc73f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///mQ\u003d",
         "filename": "src/com/android/mms/layout/MmsNotificationStyle.java",
         "patchSetId": 3
