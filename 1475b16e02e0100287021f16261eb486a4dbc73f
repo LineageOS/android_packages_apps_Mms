@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH///mQ\u003d",
+        "filename": "src/com/android/mms/layout/MmsNotificationStyle.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 3255
+      },
+      "writtenOn": "2013-02-06T06:36:01Z",
+      "side": 1,
+      "message": "Using com.android.internal.R is what botters me about this implementation.\n\nIt works, because It matches the resources used to create the default framework\u0027s action view container. But... They are internal to the framework and may change in future releases of Android.\n\nI not sure if this is a big deal at all, since CM can change change this as needed. Can\u0027t we?",
+      "revId": "1475b16e02e0100287021f16261eb486a4dbc73f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH///mM\u003d",
+        "filename": "src/com/android/mms/layout/MmsNotificationStyle.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 3255
+      },
+      "writtenOn": "2013-02-06T06:36:01Z",
+      "side": 1,
+      "message": "Se my first comment.",
+      "revId": "1475b16e02e0100287021f16261eb486a4dbc73f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
