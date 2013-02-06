@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdH///c0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-02-06T20:02:48Z",
+      "side": 1,
+      "message": "Kims Vorschlag gefällt mir auch besser :) Nur das Komma vor dem und sieht komisch aus.\n\nVielleicht in zwei Sätzen.",
+      "parentUuid": "AAAAdH///dM\u003d",
+      "revId": "717c88d60ada41576498c3db5f8be9b64fce3a23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdH///ds\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
