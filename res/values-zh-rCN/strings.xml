@@ -449,4 +449,14 @@
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">添加日历提醒</string>
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">隐私模式</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">在状态栏中隐藏发件人和邮件并禁用快速回复</string>
+    <string name="notification_single_title_privacy_mode">新信息</string>
+    <string name="notification_single_text_privacy_mode">1 未读信息</string>
+    <string name="notification_multiple_title_privacy_mode">新信息</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> 未读信息</string>
+    <string name="notification_ticker_privacy_mode">接受到新信息</string>
+
 </resources>
