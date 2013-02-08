@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH//+6E\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 425,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-02-08T17:15:26Z",
+      "side": 1,
+      "message": "Nem adom fel... :-)\n\nBontsuk ketté ezt az összetett mondatot!\n\nÍrja be, vagy módosítsa a sablon szövegét. Opcionálisan tá\nrsíthat hozzá kézmozdulatot is.",
+      "revId": "358aa9b14aba0cac73b8d8d84e81962326a2bf7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
