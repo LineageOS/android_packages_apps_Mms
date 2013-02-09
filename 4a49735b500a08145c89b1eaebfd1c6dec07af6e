@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH//+vA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 355,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-02-09T03:31:38Z",
+      "side": 1,
+      "message": "Mijn glazen bol voorspelde al dat eens deze strings vertaald zouden moeten worden, en daarom staan zij al hier (en ook hieronder)",
+      "revId": "4a49735b500a08145c89b1eaebfd1c6dec07af6e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
