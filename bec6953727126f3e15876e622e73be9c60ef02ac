@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH//+no\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 417,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-02-09T06:17:32Z",
+      "side": 1,
+      "message": "In the settings we are using \u0027Mensaje Rápido\u0027. i think we should use an unified term:\n\nResponder\nRespuesta rápida (my preference)\nMensaje rápido\n\nSelect one a apply to settings also.",
+      "revId": "bec6953727126f3e15876e622e73be9c60ef02ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
