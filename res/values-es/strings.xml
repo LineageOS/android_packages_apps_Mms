@@ -376,7 +376,6 @@
     <string name="template_cancel_confirm_title">Aviso</string>
     <string name="template_cancel_confirm_text">Se va a borrar la plantilla. ¿Continuar?</string>
     <string name="gestures_already_present">Aviso: ¡Un gesto similar ya ha sido asociado a otra plantilla!</string>
-    <string name="pref_title_mms_notification_vibrate_settings">"Opciones de Vibración"</string>
     <string name="pref_title_mms_notification_vibrate_pattern">"Patrón de vibración"</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">"Cambiar patrón de vibración"</string>
     <string name="pref_title_mms_notification_vibrate_call">"Vibración durante llamadas"</string>
@@ -416,7 +415,6 @@
     <string name="pref_keyboard_new_line">Mostrar tecla Entrar</string>
     <string name="pref_keyboard_unknown">Desconocido. Por favor, seleccionar nuevamente</string>
     <string name="pref_title_input_type">Tipo de teclado</string>
-    <string name="pref_summary_input_type">Comportamiento de la tecla Entrar al escribir mensajes</string>
     <string name="qm_mark_read">Leer</string>
 
     <!-- CYANOGENMOD ADDITIONS END -->
