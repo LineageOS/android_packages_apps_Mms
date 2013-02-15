@@ -16,6 +16,24 @@
       "revId": "434a1a41c1ab9a88b4d03444cb2f9b1654caf091",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+ww\u003d",
+        "filename": "res/values-zh-rCN/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-02-15T22:58:26Z",
+      "side": 0,
+      "message": "This was changed in the English strings, so I did it here too.",
+      "parentUuid": "AAAAdX//+64\u003d",
+      "revId": "434a1a41c1ab9a88b4d03444cb2f9b1654caf091",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
