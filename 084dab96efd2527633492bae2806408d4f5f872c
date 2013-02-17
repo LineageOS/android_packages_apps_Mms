@@ -1,0 +1,633 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdX//+QU\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "SMS sjablone",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+QQ\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Sjablone",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+QM\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Administreer SMS sjablone",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+QI\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Sjabloon teks",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+QE\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Voeg of verander die sjabloon teks en die geassosieerde, opsionele, gebaar",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+QA\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Verander",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+P8\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Sjablone",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+P4\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Nuwe  sjabloon",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+P0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Plaas sjabloon",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Pw\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Daar is geen sjablone beskikbaar nie",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Ps\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Kies \\\u0027n sjabloon",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Po\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 396,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Die sjabloon gaan verwyder word. Gaan voort?",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Pk\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Waarskuwing: \\\u0027n soortgelyke gebaar is alreeds geassosieer met \\\u0027n ander sjabloon!",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Pg\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vibrasie instellings",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+PY\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 401,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vibrasie patroon",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+PU\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 402,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Verander die vibrasie patroon",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+PQ\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Laat vibrasies toe tydens \\\u0027n oproep",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+PI\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Pasgemaakte vibrasie patroon",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+O8\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Af/aan formaat in millisekondes ...",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+O0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Volledige tydstempel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Ow\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 410,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vertoon beide die datum en die tyd in die tydstempel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Os\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "tydstempel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Oo\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 414,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vertoon die gestuurde tyd in plaas van die ontvangs tyd in die tydstempel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+OM\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 420,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vertoon die glimlaggies-sleutel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+OQ\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 421,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vertoon die invoer-sleutel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+OI\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 426,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Kies die sagte sleutelbord tipe om te gebruik tydens die skep van boodskappe",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+OE\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Kitsantwoord",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+N8\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Opspring venster",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+OA\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 432,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Vertoon die Kitsboodskap opspring venster vir inkomende boodskappe",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Nk\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Aktiveer en ontsluit",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+NQ\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Aktiveer en ontsluit die toestel met inkomende bookskappe (slegs onveilige slotskerms)",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+NI\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Maak almal toe",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+NE\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Die Toemaak-knoppie maak alle boodskappe toe.",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Mg\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap opspring venster",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Mc\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 439,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "van",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+MY\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 442,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Maak toe",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+MU\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 444,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:12:39Z",
+      "side": 1,
+      "message": "Sjablone",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
