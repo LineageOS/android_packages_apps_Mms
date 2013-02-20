@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8nc\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 936,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-02-20T17:14:09Z",
+      "side": 1,
+      "message": "- http://www.englishforums.com/English/InformationOrInformations/gzdmw/post.htm seems to say \u0027informations\u0027 is wrong\n- It seems in the English translations \"Can\u0027t\" and \"Couldn\u0027t\" is used, so I prefer \"Can\u0027t\" because it\u0027s shorter (and it seems \"Can\u0027t\" is used in Settings more often)",
+      "parentUuid": "AAAAdX//8oA\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8o8\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 1
