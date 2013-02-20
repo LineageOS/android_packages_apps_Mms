@@ -72,9 +72,13 @@ import android.preference.PreferenceManager;
 import android.provider.CalendarContract;
 import android.provider.CalendarContract.Events;
 import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds;
 import android.provider.ContactsContract.CommonDataKinds.Email;
+import android.provider.ContactsContract.CommonDataKinds.Event;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 import android.provider.ContactsContract.Contacts;
+import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Intents;
 import android.provider.ContactsContract.QuickContact;
 import android.provider.MediaStore.Images;
@@ -146,6 +150,7 @@ import com.android.mms.transaction.MessagingNotification;
 import com.android.mms.ui.MessageListView.OnSizeChangedListener;
 import com.android.mms.ui.MessageUtils.ResizeImageResultCallback;
 import com.android.mms.ui.RecipientsEditor.RecipientContextMenuInfo;
+import com.android.mms.util.DateUtils;
 import com.android.mms.util.DraftCache;
 import com.android.mms.util.EmojiParser;
 import com.android.mms.util.PhoneNumberFormatter;
@@ -205,6 +210,7 @@ public class ComposeMessageActivity extends Activity
     public static final int REQUEST_CODE_ECM_EXIT_DIALOG  = 107;
     public static final int REQUEST_CODE_ADD_CONTACT      = 108;
     public static final int REQUEST_CODE_PICK             = 109;
+    public static final int REQUEST_CODE_INSERT_CONTACT_INFO = 110;
 
     private static final String TAG = "Mms/compose";
 
@@ -227,6 +233,7 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_ADD_TO_CONTACTS       = 13;
 
     private static final int MENU_EDIT_MESSAGE          = 14;
+    private static final int MENU_INSERT_CONTACT_INFO   = 15;
     private static final int MENU_VIEW_SLIDESHOW        = 16;
     private static final int MENU_VIEW_MESSAGE_DETAILS  = 17;
     private static final int MENU_DELETE_MESSAGE        = 18;
@@ -2874,6 +2881,9 @@ public class ComposeMessageActivity extends Activity
             }
         }
 
+        menu.add(0, MENU_INSERT_CONTACT_INFO, 0, R.string.menu_insert_contact_info)
+            .setIcon(android.R.drawable.ic_menu_add);
+
         if (getRecipients().size() > 1) {
             menu.add(0, MENU_GROUP_PARTICIPANTS, 0, R.string.menu_group_participants);
         }
@@ -2968,6 +2978,10 @@ public class ComposeMessageActivity extends Activity
                 break;
             case MENU_INSERT_EMOJI:
                 showEmojiDialog();
+                break;
+            case MENU_INSERT_CONTACT_INFO:
+                Intent intentInsertContactInfo = new Intent(Intent.ACTION_PICK, Contacts.CONTENT_URI);
+                startActivityForResult(intentInsertContactInfo, REQUEST_CODE_INSERT_CONTACT_INFO);
                 break;
             case MENU_GROUP_PARTICIPANTS: {
                 Intent intent = new Intent(this, RecipientListActivity.class);
@@ -3231,6 +3245,10 @@ public class ComposeMessageActivity extends Activity
                 if (data != null) {
                     processPickResult(data);
                 }
+                break;
+
+            case REQUEST_CODE_INSERT_CONTACT_INFO:
+                showContactInfoDialog(data.getData());
                 break;
 
             default:
@@ -4630,6 +4648,138 @@ public class ComposeMessageActivity extends Activity
         editText.setText("");
 
         mEmojiDialog.show();
+    }
+
+    private void showContactInfoDialog(Uri contactUri) {
+        String contactId = null;
+        String displayName = null;
+        Cursor contactCursor = getContentResolver().query(contactUri,
+                new String[] { Contacts._ID, Contacts.DISPLAY_NAME}, null, null, null);
+        if ((contactCursor != null) && (contactCursor.moveToFirst())) {
+            contactId = contactCursor.getString(0);
+            displayName = contactCursor.getString(1);
+            contactCursor.close();
+        } else {
+            Toast.makeText(this, R.string.cannot_find_contact, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        final Cursor entryCursor = getContentResolver().query(Data.CONTENT_URI,
+                new String[] {
+                    Data._ID,
+                    Data.DATA1,
+                    Data.DATA2,
+                    Data.DATA3,
+                    Data.MIMETYPE
+                },
+                Data.CONTACT_ID + "=? AND ("
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=?)",
+                new String[] {
+                    contactId,
+                    CommonDataKinds.Phone.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Email.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Event.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.StructuredPostal.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Website.CONTENT_ITEM_TYPE
+                },
+                Data.MIMETYPE
+            );
+
+        if ((entryCursor != null) && (entryCursor.moveToFirst())) {
+            final int itemsCount = entryCursor.getCount();
+            final int dataIndex = entryCursor.getColumnIndex(Data.DATA1);
+            final int typeIndex = entryCursor.getColumnIndex(Data.DATA2);
+            final int labelIndex = entryCursor.getColumnIndex(Data.DATA3);
+            final int mimeTypeIndex = entryCursor.getColumnIndex(Data.MIMETYPE);
+            final CharSequence[] itemsData = new CharSequence[itemsCount];
+            final boolean[] itemsChecked = new boolean[itemsCount];
+
+            for (int counter = 0; counter < itemsCount; counter++) {
+                 entryCursor.moveToPosition(counter);
+                 String data = entryCursor.getString(dataIndex);
+                 int type = entryCursor.getInt(typeIndex);
+                 String label = entryCursor.getString(labelIndex);
+                 String mimeType = entryCursor.getString(mimeTypeIndex);
+                 if (mimeType.equals(Phone.CONTENT_ITEM_TYPE)) {
+                     itemsData[counter] = Phone.getTypeLabel(getResources(), type, label)
+                                    + ": " + data;
+                 } else if (mimeType.equals(Email.CONTENT_ITEM_TYPE)) {
+                     itemsData[counter] = Email.getTypeLabel(getResources(), type, label)
+                                    + ": " + data;
+                 } else if (mimeType.equals(Event.CONTENT_ITEM_TYPE)) {
+                     try {
+                         /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                         Date date = sdf.parse(data);
+                         java.text.DateFormat dateFormat = DateFormat.getDateFormat(getApplicationContext());
+                         data = dateFormat.format(date);
+                     } catch (ParseException e) {
+                         try {
+                             Log.e(TAG, "Cannot parse string as \'yyyy-MM-dd\': " + data);
+                             SimpleDateFormat sdf = new SimpleDateFormat("--MM-dd");
+                             Date date = sdf.parse(data);
+                             java.text.DateFormat dateFormat = DateFormat.getDateFormat(getApplicationContext());
+                             data = dateFormat.format(date);*/
+                             data = DateUtils.formatDate(getApplicationContext(), data);
+                             int typeResource = Event.getTypeResource(type);
+                             if (typeResource == com.android.internal.R.string.eventTypeCustom) {
+                                 itemsData[counter] = label + ": " + data;
+                             } else {
+                                 itemsData[counter] = getString(typeResource) + ": " + data;
+                             }
+                         } catch (Exception eBis) {
+                             Log.e(TAG, "Cannot find date format: " + data);
+                         //}
+                         }
+                 } else if (mimeType.equals(StructuredPostal.CONTENT_ITEM_TYPE)) {
+                     itemsData[counter] = StructuredPostal.getTypeLabel(getResources(), type, label)
+                                    + ": " + data;
+                 } else {
+                     itemsData[counter] = data;
+                 }
+                 // Item is not checked by default
+                 itemsChecked[counter] = false;
+            }
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setIcon(R.drawable.ic_contact_picture);
+            builder.setTitle(displayName);
+
+            builder.setMultiChoiceItems(itemsData, null, new DialogInterface.OnMultiChoiceClickListener() {
+                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                    itemsChecked[which] = isChecked;
+                }
+            });
+
+            builder.setPositiveButton(R.string.insert_contact_info_positive_button, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    for (int counter = 0; counter < itemsCount; counter++) {
+                        if (itemsChecked[counter]) {
+                            int start = mTextEditor.getSelectionStart();
+                            int end = mTextEditor.getSelectionEnd();
+                            mTextEditor.getText().replace(Math.min(start, end), Math.max(start, end), itemsData[counter] + "\n");
+                        }
+                    }
+                    dialog.dismiss();
+                }
+            });
+
+            builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+            entryCursor.close();
+
+            builder.show();
+        } else {
+            Toast.makeText(this, R.string.cannot_find_contact, Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 
     @Override
