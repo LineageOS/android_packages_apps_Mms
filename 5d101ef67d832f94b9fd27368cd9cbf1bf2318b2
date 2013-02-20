@@ -33,6 +33,228 @@
       "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oA\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 936,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "I haven\u0027t seen it being used so far.",
+      "parentUuid": "AAAAdX//8pQ\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8o8\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2887,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "Please split this line into two (like line 2867-2869)",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8o4\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2986,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "Line wrap unneeded here, it seems?",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8o0\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4657,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "This newline should be removed.",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oI\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4662,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "- Please follow coding style (put spaces around braces and after the if\n- Please null-check the cursor\n- Cursor must be closed\n\nif (contactCursor !\u003d null) {\n    if (contactCursor.moveToFirst()) {\n        //assign variables\n    }\n    contactCursor.close();\n}",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8os\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4666,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "} else {",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8ok\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4695,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "entryCursor must be null checked",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8og\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4704,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "What does \u0027cpt\u0027 stand for?",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oc\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4718,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "There may be more date formats, see packages/apps/Contacts/src/com/android/contacts/util/DateUtils.java. I\u0027m not sure whether there\u0027s a framework function to parse it.",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oY\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4730,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "You should skip adding the date if it couldn\u0027t be parsed.",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oU\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4737,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "typo: default",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oE\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4740,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "You need to close entryCursor.",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8oM\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4750,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-02-20T17:03:53Z",
+      "side": 1,
+      "message": "This can be shortened to itemsChecked[which] \u003d isChecked;",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
