@@ -90,6 +90,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8mI\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-20T18:48:37Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be better to move other values too?",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8o8\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 1
