@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdX//8pM\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 935,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-02-20T16:45:04Z",
+      "side": 1,
+      "message": "Hmmm... Is there a limit for menu options? Although I would prefer information, I think that would not fit",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8pQ\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 936,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-02-20T16:45:04Z",
+      "side": 1,
+      "message": "In accordance with the AOSP strings:\n\n- Couldn\\\u0027t insert contact information\n- Couldn\\\u0027t insert information from the chosen contact\n\nIs the plural \u0027form\u0027 (don\u0027t know how you say it in English) of \u0027information\u0027 even being used, generally speaking?",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
