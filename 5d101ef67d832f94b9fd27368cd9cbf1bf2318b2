@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8oQ\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 935,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Well, it fits. Done :)",
+      "parentUuid": "AAAAdX//8pM\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8pQ\u003d",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
@@ -89,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8nw\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2887,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//8o8\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8o4\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 1
@@ -100,6 +136,24 @@
       "writtenOn": "2013-02-20T17:03:53Z",
       "side": 1,
       "message": "Line wrap unneeded here, it seems?",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8ns\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2986,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//8o4\u003d",
       "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -123,6 +177,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8no\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4657,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//8o0\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8oI\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 1
@@ -140,6 +212,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8nY\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4662,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//8oI\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8os\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 1
@@ -151,6 +241,24 @@
       "writtenOn": "2013-02-20T17:03:53Z",
       "side": 1,
       "message": "} else {",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8nU\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4666,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//8os\u003d",
       "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -185,6 +293,24 @@
       "writtenOn": "2013-02-20T17:03:53Z",
       "side": 1,
       "message": "What does \u0027cpt\u0027 stand for?",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8nM\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4704,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Sorry french use. Will change it to counter",
+      "parentUuid": "AAAAdX//8og\u003d",
       "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -259,6 +385,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8nI\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4740,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//8oE\u003d",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//8oM\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 1
@@ -270,6 +414,24 @@
       "writtenOn": "2013-02-20T17:03:53Z",
       "side": 1,
       "message": "This can be shortened to itemsChecked[which] \u003d isChecked;",
+      "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8nE\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4750,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-20T17:42:32Z",
+      "side": 1,
+      "message": "My bad. Done",
+      "parentUuid": "AAAAdX//8oM\u003d",
       "revId": "5d101ef67d832f94b9fd27368cd9cbf1bf2318b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
