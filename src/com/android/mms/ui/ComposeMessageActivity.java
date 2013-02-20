@@ -72,9 +72,13 @@ import android.preference.PreferenceManager;
 import android.provider.CalendarContract;
 import android.provider.CalendarContract.Events;
 import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds;
 import android.provider.ContactsContract.CommonDataKinds.Email;
+import android.provider.ContactsContract.CommonDataKinds.Event;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
 import android.provider.ContactsContract.Contacts;
+import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Intents;
 import android.provider.ContactsContract.QuickContact;
 import android.provider.MediaStore.Images;
@@ -95,6 +99,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.format.DateFormat;
 import android.text.method.TextKeyListener;
 import android.text.style.URLSpan;
 import android.text.util.Linkify;
@@ -170,8 +175,11 @@ import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.text.Normalizer;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -205,6 +213,7 @@ public class ComposeMessageActivity extends Activity
     public static final int REQUEST_CODE_ECM_EXIT_DIALOG  = 107;
     public static final int REQUEST_CODE_ADD_CONTACT      = 108;
     public static final int REQUEST_CODE_PICK             = 109;
+    public static final int REQUEST_CODE_INSERT_CONTACT_INFO = 110;
 
     private static final String TAG = "Mms/compose";
 
@@ -227,6 +236,7 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_ADD_TO_CONTACTS       = 13;
 
     private static final int MENU_EDIT_MESSAGE          = 14;
+    private static final int MENU_INSERT_CONTACT_INFO   = 15;
     private static final int MENU_VIEW_SLIDESHOW        = 16;
     private static final int MENU_VIEW_MESSAGE_DETAILS  = 17;
     private static final int MENU_DELETE_MESSAGE        = 18;
@@ -2874,6 +2884,8 @@ public class ComposeMessageActivity extends Activity
             }
         }
 
+        menu.add(0, MENU_INSERT_CONTACT_INFO, 0, R.string.menu_insert_contact_info).setIcon(android.R.drawable.ic_menu_add);
+
         if (getRecipients().size() > 1) {
             menu.add(0, MENU_GROUP_PARTICIPANTS, 0, R.string.menu_group_participants);
         }
@@ -2968,6 +2980,11 @@ public class ComposeMessageActivity extends Activity
                 break;
             case MENU_INSERT_EMOJI:
                 showEmojiDialog();
+                break;
+            case MENU_INSERT_CONTACT_INFO:
+                Intent intentInsertContactInfo = new Intent(Intent.ACTION_PICK,
+                        Contacts.CONTENT_URI);
+                startActivityForResult(intentInsertContactInfo, REQUEST_CODE_INSERT_CONTACT_INFO);
                 break;
             case MENU_GROUP_PARTICIPANTS: {
                 Intent intent = new Intent(this, RecipientListActivity.class);
@@ -3231,6 +3248,10 @@ public class ComposeMessageActivity extends Activity
                 if (data != null) {
                     processPickResult(data);
                 }
+                break;
+
+            case REQUEST_CODE_INSERT_CONTACT_INFO:
+                showContactInfoDialog(data.getData());
                 break;
 
             default:
@@ -4630,6 +4651,127 @@ public class ComposeMessageActivity extends Activity
         editText.setText("");
 
         mEmojiDialog.show();
+    }
+
+    private void showContactInfoDialog(Uri contactUri) {
+
+        String contactId = null;
+        String displayName = null;
+        Cursor contactCursor = getContentResolver().query(contactUri,
+                new String[] {Contacts._ID, Contacts.DISPLAY_NAME}, null, null, null);
+        if(contactCursor.moveToFirst()){
+            contactId = contactCursor.getString(0);
+            displayName = contactCursor.getString(1);
+        }
+        else {
+            Toast.makeText(this, R.string.cannot_find_contact, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        final Cursor entryCursor = getContentResolver().query(Data.CONTENT_URI,
+                new String[] {
+                    Data._ID,
+                    Data.DATA1,
+                    Data.DATA2,
+                    Data.DATA3,
+                    Data.MIMETYPE
+                },
+                Data.CONTACT_ID + "=? AND ("
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=?)",
+                new String[] {
+                    contactId,
+                    CommonDataKinds.Phone.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Email.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Event.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.StructuredPostal.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Website.CONTENT_ITEM_TYPE
+                },
+                Data.MIMETYPE
+            );
+
+        final int itemsCount = entryCursor.getCount();
+        final int dataIndex = entryCursor.getColumnIndex(Data.DATA1);
+        final int typeIndex = entryCursor.getColumnIndex(Data.DATA2);
+        final int labelIndex = entryCursor.getColumnIndex(Data.DATA3);
+        final int mimeTypeIndex = entryCursor.getColumnIndex(Data.MIMETYPE);
+        final CharSequence[] itemsData = new CharSequence[itemsCount];
+        final boolean[] itemsChecked = new boolean[itemsCount];
+
+        for (int cpt = 0; cpt < itemsCount; cpt++) {
+             entryCursor.moveToPosition(cpt);
+             String data = entryCursor.getString(dataIndex);
+             int type = entryCursor.getInt(typeIndex);
+             String label = entryCursor.getString(labelIndex);
+             String mimeType = entryCursor.getString(mimeTypeIndex);
+             if (mimeType.equals(Phone.CONTENT_ITEM_TYPE)) {
+                 itemsData[cpt] = Phone.getTypeLabel(getResources(), type, label)
+                                + ": " + data;
+             } else if (mimeType.equals(Email.CONTENT_ITEM_TYPE)) {
+                 itemsData[cpt] = Email.getTypeLabel(getResources(), type, label)
+                                + ": " + data;
+             } else if (mimeType.equals(Event.CONTENT_ITEM_TYPE)) {
+                 try {
+                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                     Date date = sdf.parse(data);
+                     java.text.DateFormat dateFormat = DateFormat.getDateFormat(getApplicationContext());
+                     data = dateFormat.format(date);
+                 } catch (ParseException e) {
+                     Log.e(TAG, "Cannot parse string as \'yyyy-MM-dd\': " + data);
+                 }
+                 int typeResource = Event.getTypeResource(type);
+                 if (typeResource == com.android.internal.R.string.eventTypeCustom) {
+                     itemsData[cpt] = label + ": " + data;
+                 } else {
+                     itemsData[cpt] = getString(typeResource) + ": " + data;
+                 }
+             } else if (mimeType.equals(StructuredPostal.CONTENT_ITEM_TYPE)) {
+                 itemsData[cpt] = StructuredPostal.getTypeLabel(getResources(), type, label)
+                                + ": " + data;
+             } else {
+                 itemsData[cpt] = data;
+             }
+             // Item is not checked by defaut
+             itemsChecked[cpt] = false;
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.ic_contact_picture);
+        builder.setTitle(displayName);
+
+        builder.setMultiChoiceItems(itemsData, null, new DialogInterface.OnMultiChoiceClickListener() {
+            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                if (isChecked) {
+                    itemsChecked[which] = true;
+                } else {
+                    itemsChecked[which] = false;
+                }
+            }
+        });
+
+        builder.setPositiveButton(R.string.insert_contact_info_positive_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                for (int cpt = 0; cpt < itemsCount; cpt++) {
+                    if (itemsChecked[cpt]) {
+                        int start = mTextEditor.getSelectionStart();
+                        int end = mTextEditor.getSelectionEnd();
+                        mTextEditor.getText().replace(Math.min(start, end), Math.max(start, end), itemsData[cpt] + "\n");
+                    }
+                }
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.show();
     }
 
     @Override
