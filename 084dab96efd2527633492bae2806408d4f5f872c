@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8iQ\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+QU\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+QQ\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -65,6 +83,24 @@
       "writtenOn": "2013-02-20T01:58:09Z",
       "side": 1,
       "message": "Sjablone? I do not know such a word?",
+      "parentUuid": "AAAAdX//+QQ\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8iU\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "AAAAdX//+QQ\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
@@ -107,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8iY\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+QM\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+QI\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -135,6 +189,24 @@
       "writtenOn": "2013-02-20T01:58:09Z",
       "side": 1,
       "message": "Sjablone? I do not know such a word?",
+      "parentUuid": "AAAAdX//+QI\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8ic\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "AAAAdX//+QI\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
@@ -177,6 +249,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8ig\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+QE\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+QA\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -212,6 +302,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8jA\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Changed to Verander: Done",
+      "parentUuid": "AAAAdX//86E\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+P8\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -240,6 +348,24 @@
       "writtenOn": "2013-02-20T01:58:09Z",
       "side": 1,
       "message": "Sjablone? I do not know such a word?",
+      "parentUuid": "AAAAdX//+P8\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8ik\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 388,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "AAAAdX//+P8\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
@@ -317,6 +443,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8io\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 390,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+P0\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+Pw\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -345,6 +489,24 @@
       "writtenOn": "2013-02-20T01:58:09Z",
       "side": 1,
       "message": "Sjablone? I do not know such a word?",
+      "parentUuid": "AAAAdX//+Pw\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8is\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "AAAAdX//+Pw\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
@@ -387,6 +549,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8iw\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Ps\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+Po\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -398,6 +578,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Die sjabloon gaan verwyder word. Gaan voort?",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8i0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 396,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Po\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -421,6 +619,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8i4\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Pk\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+Pg\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -432,6 +648,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Vibrasie instellings",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8iE\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Pg\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -472,6 +706,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8hw\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 402,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+PU\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+PQ\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -483,6 +735,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Laat vibrasies toe tydens \\\u0027n oproep",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8h0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+PQ\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -506,6 +776,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8h4\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+PI\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+O8\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -517,6 +805,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Af/aan formaat in millisekondes ...",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8h8\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+O8\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -557,6 +863,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8hQ\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 410,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Ow\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+Os\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -574,6 +898,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8hM\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Os\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+Oo\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -585,6 +927,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Vertoon die gestuurde tyd in plaas van die ontvangs tyd in die tydstempel",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8hI\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 414,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Oo\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -642,6 +1002,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8hE\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 426,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+OI\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+OE\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -653,6 +1031,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Kitsantwoord",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8hA\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+OE\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -676,6 +1072,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8g8\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+N8\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+OA\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -687,6 +1101,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Vertoon die Kitsboodskap opspring venster vir inkomende boodskappe",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8g4\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 432,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+OA\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -710,6 +1142,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8gw\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Nk\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+NQ\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -727,6 +1177,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//8g0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+NQ\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//+NI\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 4
@@ -738,6 +1206,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Maak almal toe",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8gs\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+NI\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -772,6 +1258,24 @@
       "writtenOn": "2013-02-17T01:12:39Z",
       "side": 1,
       "message": "Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap opspring venster",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8go\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+Mg\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -841,6 +1345,42 @@
       "side": 1,
       "message": "Sjablone? I do not know such a word?",
       "parentUuid": "AAAAdX//+MU\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8gk\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 444,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//+MU\u003d",
+      "revId": "084dab96efd2527633492bae2806408d4f5f872c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//8gg\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 444,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-02-21T00:32:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAdX//86c\u003d",
       "revId": "084dab96efd2527633492bae2806408d4f5f872c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
