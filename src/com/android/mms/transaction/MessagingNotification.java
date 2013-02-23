@@ -64,6 +64,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.android.mms.LogTag;
+import com.android.mms.MmsConfig;
 import com.android.mms.R;
 import com.android.mms.data.Contact;
 import com.android.mms.data.Conversation;
@@ -795,6 +796,9 @@ public class MessagingNotification {
             Bitmap attachmentBitmap,
             Contact contact,
             int attachmentType) {
+        if (MmsConfig.isSuppressedSprintVVM(address)) {
+            return null;
+        }
         Intent clickIntent = ComposeMessageActivity.createIntent(context, threadId);
         clickIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP
@@ -806,7 +810,6 @@ public class MessagingNotification {
                 0, senderInfo.length() - 2);
         CharSequence ticker = buildTickerMessage(
                 context, address, subject, message);
-
         return new NotificationInfo(isSms,
                 clickIntent, message, subject, ticker, timeMillis,
                 senderInfoName, attachmentBitmap, contact, attachmentType, threadId);
@@ -963,31 +966,27 @@ public class MessagingNotification {
         int defaults = 0;
 
         if (isNew) {
-            String vibrateWhen;
-            if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN)) {
-                vibrateWhen =
-                    sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN, null);
-            } else if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE)) {
-                vibrateWhen =
-                        sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE, false) ?
-                    context.getString(R.string.prefDefault_vibrate_true) :
-                    context.getString(R.string.prefDefault_vibrate_false);
-            } else {
-                vibrateWhen = context.getString(R.string.prefDefault_vibrateWhen);
-            }
-
             TelephonyManager mTM = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
             boolean callStateIdle = mTM.getCallState() == TelephonyManager.CALL_STATE_IDLE;
             boolean vibrateOnCall = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_CALL, true);
 
-            boolean vibrateAlways = vibrateWhen.equals("always");
-            boolean vibrateSilent = vibrateWhen.equals("silent");
-            AudioManager audioManager =
-                (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
-            boolean nowSilent =
-                audioManager.getRingerMode() == AudioManager.RINGER_MODE_VIBRATE;
-
-            if ((vibrateAlways || vibrateSilent && nowSilent) && (vibrateOnCall || (!vibrateOnCall && callStateIdle))) {
+            boolean vibrate = false;
+            if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE)) {
+                // The most recent change to the vibrate preference is to store a boolean
+                // value in NOTIFICATION_VIBRATE. If prefs contain that preference, use that
+                // first.
+                vibrate = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE,
+                        false);
+            } else if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN)) {
+                // This is to support the pre-JellyBean MR1.1 version of vibrate preferences
+                // when vibrate was a tri-state setting. As soon as the user opens the Messaging
+                // app's settings, it will migrate this setting from NOTIFICATION_VIBRATE_WHEN
+                // to the boolean value stored in NOTIFICATION_VIBRATE.
+                String vibrateWhen =
+                        sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN, null);
+                vibrate = "always".equals(vibrateWhen);
+            }
+            if (vibrate && (vibrateOnCall || (!vibrateOnCall && callStateIdle))) {
                 /* WAS: notificationdefaults |= Notification.DEFAULT_VIBRATE;*/
                 String mVibratePattern = "custom".equals(sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, null))
                         ? sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN_CUSTOM, "0,1200")

@@ -2309,7 +2309,7 @@ public class ComposeMessageActivity extends Activity
                 mWorkingMessage.unDiscard();    // it was discarded in onStop().
 
                 sanityCheckConversation();
-            } else if (isRecipientsEditorVisible()) {
+            } else if (isRecipientsEditorVisible() && recipientCount() > 0) {
                 if (LogTag.VERBOSE) {
                     log("onRestart: goToConversationList");
                 }
@@ -4191,31 +4191,34 @@ public class ComposeMessageActivity extends Activity
      * @param listSizeChange the amount the message list view size has vertically changed
      */
     private void smoothScrollToEnd(boolean force, int listSizeChange) {
-        int last = mMsgListView.getLastVisiblePosition();
-        int newPosition = mMsgListAdapter.getCount() - 1;
-        if (last < 0 || newPosition < 0) {
+        int lastItemVisible = mMsgListView.getLastVisiblePosition();
+        int lastItemInList = mMsgListAdapter.getCount() - 1;
+        if (lastItemVisible < 0 || lastItemInList < 0) {
             if (LogTag.VERBOSE || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
-                Log.v(TAG, "smoothScrollToEnd: last=" + last + ", newPos=" + newPosition +
+                Log.v(TAG, "smoothScrollToEnd: lastItemVisible=" + lastItemVisible +
+                        ", lastItemInList=" + lastItemInList +
                         ", mMsgListView not ready");
             }
             return;
         }
 
-        View lastChild = mMsgListView.getChildAt(last - mMsgListView.getFirstVisiblePosition());
-        int bottom = 0;
-        int height = 0;
-        if (lastChild != null) {
-            bottom = lastChild.getBottom();
-            height = lastChild.getHeight();
+        View lastChildVisible =
+                mMsgListView.getChildAt(lastItemVisible - mMsgListView.getFirstVisiblePosition());
+        int lastVisibleItemBottom = 0;
+        int lastVisibleItemHeight = 0;
+        if (lastChildVisible != null) {
+            lastVisibleItemBottom = lastChildVisible.getBottom();
+            lastVisibleItemHeight = lastChildVisible.getHeight();
         }
 
         if (LogTag.VERBOSE || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
-            Log.v(TAG, "smoothScrollToEnd newPosition: " + newPosition +
+            Log.v(TAG, "smoothScrollToEnd newPosition: " + lastItemInList +
                     " mLastSmoothScrollPosition: " + mLastSmoothScrollPosition +
                     " first: " + mMsgListView.getFirstVisiblePosition() +
-                    " last: " + last +
-                    " bottom: " + bottom +
-                    " bottom + listSizeChange: " + (bottom + listSizeChange) +
+                    " lastItemVisible: " + lastItemVisible +
+                    " lastVisibleItemBottom: " + lastVisibleItemBottom +
+                    " lastVisibleItemBottom + listSizeChange: " +
+                    (lastVisibleItemBottom + listSizeChange) +
                     " mMsgListView.getHeight() - mMsgListView.getPaddingBottom(): " +
                     (mMsgListView.getHeight() - mMsgListView.getPaddingBottom()) +
                     " listSizeChange: " + listSizeChange);
@@ -4234,45 +4237,50 @@ public class ComposeMessageActivity extends Activity
         // attachment thumbnail, such as picture. In this situation, we want to scroll the list so
         // the bottom of the thumbnail is visible and the top of the item is scroll off the screen.
         int listHeight = mMsgListView.getHeight();
-        if (force || ((listSizeChange != 0 || newPosition != mLastSmoothScrollPosition) &&
-                bottom + listSizeChange <=
-                        listHeight - mMsgListView.getPaddingBottom()) ||
-                        height > listHeight) {
+        boolean lastItemTooTall = lastVisibleItemHeight > listHeight;
+        boolean willScroll = force ||
+                ((listSizeChange != 0 || lastItemInList != mLastSmoothScrollPosition) &&
+                lastVisibleItemBottom + listSizeChange <=
+                    listHeight - mMsgListView.getPaddingBottom());
+        if (willScroll || (lastItemTooTall && lastItemInList == lastItemVisible)) {
             if (Math.abs(listSizeChange) > SMOOTH_SCROLL_THRESHOLD) {
                 // When the keyboard comes up, the window manager initiates a cross fade
                 // animation that conflicts with smooth scroll. Handle that case by jumping the
                 // list directly to the end.
                 if (LogTag.VERBOSE || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
-                    Log.v(TAG, "keyboard state changed. setSelection=" + newPosition);
+                    Log.v(TAG, "keyboard state changed. setSelection=" + lastItemInList);
                 }
-                if (height > listHeight) {
+                if (lastItemTooTall) {
                     // If the height of the last item is taller than the whole height of the list,
                     // we need to scroll that item so that its top is negative or above the top of
                     // the list. That way, the bottom of the last item will be exposed above the
                     // keyboard.
-                    mMsgListView.setSelectionFromTop(newPosition, listHeight - height);
+                    mMsgListView.setSelectionFromTop(lastItemInList,
+                            listHeight - lastVisibleItemHeight);
                 } else {
-                    mMsgListView.setSelection(newPosition);
+                    mMsgListView.setSelection(lastItemInList);
                 }
-            } else if (newPosition - last > MAX_ITEMS_TO_INVOKE_SCROLL_SHORTCUT) {
+            } else if (lastItemInList - lastItemVisible > MAX_ITEMS_TO_INVOKE_SCROLL_SHORTCUT) {
                 if (LogTag.VERBOSE || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
-                    Log.v(TAG, "too many to scroll, setSelection=" + newPosition);
+                    Log.v(TAG, "too many to scroll, setSelection=" + lastItemInList);
                 }
-                mMsgListView.setSelection(newPosition);
+                mMsgListView.setSelection(lastItemInList);
             } else {
                 if (LogTag.VERBOSE || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
-                    Log.v(TAG, "smooth scroll to " + newPosition);
+                    Log.v(TAG, "smooth scroll to " + lastItemInList);
                 }
-                if (height > listHeight) {
+                if (lastItemTooTall) {
                     // If the height of the last item is taller than the whole height of the list,
                     // we need to scroll that item so that its top is negative or above the top of
                     // the list. That way, the bottom of the last item will be exposed above the
-                    // keyboard.
-                    mMsgListView.setSelectionFromTop(newPosition, listHeight - height);
+                    // keyboard. We should use smoothScrollToPositionFromTop here, but it doesn't
+                    // seem to work -- the list ends up scrolling to a random position.
+                    mMsgListView.setSelectionFromTop(lastItemInList,
+                            listHeight - lastVisibleItemHeight);
                 } else {
-                    mMsgListView.smoothScrollToPosition(newPosition);
+                    mMsgListView.smoothScrollToPosition(lastItemInList);
                 }
-                mLastSmoothScrollPosition = newPosition;
+                mLastSmoothScrollPosition = lastItemInList;
             }
         }
     }
@@ -4650,136 +4658,132 @@ public class ComposeMessageActivity extends Activity
         mEmojiDialog.show();
     }
 
-    private void showContactInfoDialog(Uri contactUri) {
-        String contactId = null;
-        String displayName = null;
-        Cursor contactCursor = getContentResolver().query(contactUri,
-                new String[] { Contacts._ID, Contacts.DISPLAY_NAME}, null, null, null);
-        if ((contactCursor != null) && (contactCursor.moveToFirst())) {
-            contactId = contactCursor.getString(0);
-            displayName = contactCursor.getString(1);
-            contactCursor.close();
-        } else {
-            Toast.makeText(this, R.string.cannot_find_contact, Toast.LENGTH_SHORT).show();
-            return;
+    private CharSequence[] getContactInfoData(long contactId) {
+        final String[] projection = new String[] {
+            Data.DATA1, Data.DATA2, Data.DATA3, Data.MIMETYPE
+        };
+        final String where = Data.CONTACT_ID + "=? AND ("
+                + Data.MIMETYPE + "=? OR "
+                + Data.MIMETYPE + "=? OR "
+                + Data.MIMETYPE + "=? OR "
+                + Data.MIMETYPE + "=? OR "
+                + Data.MIMETYPE + "=?)";
+        final String[] whereArgs = new String[] {
+            String.valueOf(contactId),
+            CommonDataKinds.Phone.CONTENT_ITEM_TYPE,
+            CommonDataKinds.Email.CONTENT_ITEM_TYPE,
+            CommonDataKinds.Event.CONTENT_ITEM_TYPE,
+            CommonDataKinds.StructuredPostal.CONTENT_ITEM_TYPE,
+            CommonDataKinds.Website.CONTENT_ITEM_TYPE
+        };
+
+        final Cursor cursor = getContentResolver().query(Data.CONTENT_URI,
+                projection, where, whereArgs, Data.MIMETYPE);
+
+        if (cursor == null) {
+            return null;
         }
 
-        final Cursor entryCursor = getContentResolver().query(Data.CONTENT_URI,
-                new String[] {
-                    Data._ID,
-                    Data.DATA1,
-                    Data.DATA2,
-                    Data.DATA3,
-                    Data.MIMETYPE
-                },
-                Data.CONTACT_ID + "=? AND ("
-                        + Data.MIMETYPE + "=? OR "
-                        + Data.MIMETYPE + "=? OR "
-                        + Data.MIMETYPE + "=? OR "
-                        + Data.MIMETYPE + "=? OR "
-                        + Data.MIMETYPE + "=?)",
-                new String[] {
-                    contactId,
-                    CommonDataKinds.Phone.CONTENT_ITEM_TYPE,
-                    CommonDataKinds.Email.CONTENT_ITEM_TYPE,
-                    CommonDataKinds.Event.CONTENT_ITEM_TYPE,
-                    CommonDataKinds.StructuredPostal.CONTENT_ITEM_TYPE,
-                    CommonDataKinds.Website.CONTENT_ITEM_TYPE
-                },
-                Data.MIMETYPE
-            );
+        final int count = cursor.getCount();
+        final int dataIndex = cursor.getColumnIndex(Data.DATA1);
+        final int typeIndex = cursor.getColumnIndex(Data.DATA2);
+        final int labelIndex = cursor.getColumnIndex(Data.DATA3);
+        final int mimeTypeIndex = cursor.getColumnIndex(Data.MIMETYPE);
 
-        if ((entryCursor != null) && (entryCursor.moveToFirst())) {
-            final int itemsCount = entryCursor.getCount();
-            final int dataIndex = entryCursor.getColumnIndex(Data.DATA1);
-            final int typeIndex = entryCursor.getColumnIndex(Data.DATA2);
-            final int labelIndex = entryCursor.getColumnIndex(Data.DATA3);
-            final int mimeTypeIndex = entryCursor.getColumnIndex(Data.MIMETYPE);
-            final CharSequence[] itemsData = new CharSequence[itemsCount];
-            final boolean[] itemsChecked = new boolean[itemsCount];
+        if (count == 0) {
+            cursor.close();
+            return null;
+        }
 
-            for (int counter = 0; counter < itemsCount; counter++) {
-                 entryCursor.moveToPosition(counter);
-                 String data = entryCursor.getString(dataIndex);
-                 int type = entryCursor.getInt(typeIndex);
-                 String label = entryCursor.getString(labelIndex);
-                 String mimeType = entryCursor.getString(mimeTypeIndex);
-                 if (mimeType.equals(Phone.CONTENT_ITEM_TYPE)) {
-                     itemsData[counter] = Phone.getTypeLabel(getResources(), type, label)
-                                    + ": " + data;
-                 } else if (mimeType.equals(Email.CONTENT_ITEM_TYPE)) {
-                     itemsData[counter] = Email.getTypeLabel(getResources(), type, label)
-                                    + ": " + data;
-                 } else if (mimeType.equals(Event.CONTENT_ITEM_TYPE)) {
-                     try {
-                         /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                         Date date = sdf.parse(data);
-                         java.text.DateFormat dateFormat = DateFormat.getDateFormat(getApplicationContext());
-                         data = dateFormat.format(date);
-                     } catch (ParseException e) {
-                         try {
-                             Log.e(TAG, "Cannot parse string as \'yyyy-MM-dd\': " + data);
-                             SimpleDateFormat sdf = new SimpleDateFormat("--MM-dd");
-                             Date date = sdf.parse(data);
-                             java.text.DateFormat dateFormat = DateFormat.getDateFormat(getApplicationContext());
-                             data = dateFormat.format(date);*/
-                             data = DateUtils.formatDate(getApplicationContext(), data);
-                             int typeResource = Event.getTypeResource(type);
-                             if (typeResource == com.android.internal.R.string.eventTypeCustom) {
-                                 itemsData[counter] = label + ": " + data;
-                             } else {
-                                 itemsData[counter] = getString(typeResource) + ": " + data;
-                             }
-                         } catch (Exception eBis) {
-                             Log.e(TAG, "Cannot find date format: " + data);
-                         //}
-                         }
-                 } else if (mimeType.equals(StructuredPostal.CONTENT_ITEM_TYPE)) {
-                     itemsData[counter] = StructuredPostal.getTypeLabel(getResources(), type, label)
-                                    + ": " + data;
-                 } else {
-                     itemsData[counter] = data;
-                 }
-                 // Item is not checked by default
-                 itemsChecked[counter] = false;
+        final CharSequence[] entries = new CharSequence[count];
+
+        for (int i = 0; i < count; i++) {
+            cursor.moveToPosition(i);
+
+            String data = cursor.getString(dataIndex);
+            int type = cursor.getInt(typeIndex);
+            String label = cursor.getString(labelIndex);
+            String mimeType = cursor.getString(mimeTypeIndex);
+
+            if (mimeType.equals(Phone.CONTENT_ITEM_TYPE)) {
+                entries[i] = Phone.getTypeLabel(getResources(), type, label) + ": " + data;
+            } else if (mimeType.equals(Email.CONTENT_ITEM_TYPE)) {
+                entries[i] = Email.getTypeLabel(getResources(), type, label) + ": " + data;
+            } else if (mimeType.equals(Event.CONTENT_ITEM_TYPE)) {
+                data = DateUtils.formatDate(getApplicationContext(), data);
+                int typeResource = Event.getTypeResource(type);
+
+                if (typeResource != com.android.internal.R.string.eventTypeCustom) {
+                    label = getString(typeResource);
+                }
+                entries[i] = label + ": " + data;
+            } else if (mimeType.equals(StructuredPostal.CONTENT_ITEM_TYPE)) {
+                entries[i] = StructuredPostal.getTypeLabel(getResources(), type, label)
+                        + ": " + data;
+            } else {
+                entries[i] = data;
             }
+        }
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setIcon(R.drawable.ic_contact_picture);
-            builder.setTitle(displayName);
+        cursor.close();
 
-            builder.setMultiChoiceItems(itemsData, null, new DialogInterface.OnMultiChoiceClickListener() {
-                public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                    itemsChecked[which] = isChecked;
-                }
-            });
+        return entries;
+    }
 
-            builder.setPositiveButton(R.string.insert_contact_info_positive_button, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    for (int counter = 0; counter < itemsCount; counter++) {
-                        if (itemsChecked[counter]) {
-                            int start = mTextEditor.getSelectionStart();
-                            int end = mTextEditor.getSelectionEnd();
-                            mTextEditor.getText().replace(Math.min(start, end), Math.max(start, end), itemsData[counter] + "\n");
-                        }
-                    }
-                    dialog.dismiss();
-                }
-            });
+    private void showContactInfoDialog(Uri contactUri) {
+        long contactId = -1;
+        String displayName = null;
 
-            builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                }
-            });
+        final String[] projection = new String[] {
+            Contacts._ID, Contacts.DISPLAY_NAME
+        };
+        final Cursor cursor = getContentResolver().query(contactUri,
+                projection, null, null, null);
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                contactId = cursor.getLong(0);
+                displayName = cursor.getString(1);
+            }
+            cursor.close();
+        }
 
-            entryCursor.close();
+        final CharSequence[] entries = (contactId >= 0) ? getContactInfoData(contactId) : null;
 
-            builder.show();
-        } else {
+        if (contactId < 0 || entries == null) {
             Toast.makeText(this, R.string.cannot_find_contact, Toast.LENGTH_SHORT).show();
             return;
         }
+
+        final boolean[] itemsChecked = new boolean[entries.length];
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.ic_contact_picture);
+        builder.setTitle(displayName);
+
+        builder.setMultiChoiceItems(entries, null, new DialogInterface.OnMultiChoiceClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
+                itemsChecked[which] = isChecked;
+            }
+        });
+
+        builder.setPositiveButton(R.string.insert_contact_info_positive_button,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                for (int i = 0; i < entries.length; i++) {
+                    if (itemsChecked[i]) {
+                        int start = mTextEditor.getSelectionStart();
+                        int end = mTextEditor.getSelectionEnd();
+                        mTextEditor.getText().replace(
+                                Math.min(start, end), Math.max(start, end), entries[i] + "\n");
+                    }
+                }
+            }
+        });
+        builder.setNegativeButton(android.R.string.cancel, null);
+
+        builder.show();
     }
 
     @Override

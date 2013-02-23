@@ -75,25 +75,6 @@ public class DateUtils {
         FORMAT_WITHOUT_YEAR_DAY_FIRST.setTimeZone(UTC_TIMEZONE);
     }
 
-    /**
-     * Parses the supplied string to see if it looks like a date. If so,
-     * returns the date.  Otherwise, returns null.
-     */
-    public static Date parseDate(String string) {
-        ParsePosition parsePosition = new ParsePosition(0);
-        for (int i = 0; i < DATE_FORMATS.length; i++) {
-            SimpleDateFormat f = DATE_FORMATS[i];
-            synchronized (f) {
-                parsePosition.setIndex(0);
-                Date date = f.parse(string, parsePosition);
-                if (parsePosition.getIndex() == string.length()) {
-                    return date;
-                }
-            }
-        }
-        return null;
-    }
-
     private static final Date getUtcDate(int year, int month, int dayOfMonth) {
         final Calendar calendar = Calendar.getInstance(UTC_TIMEZONE, Locale.US);
         calendar.set(Calendar.YEAR, year);
