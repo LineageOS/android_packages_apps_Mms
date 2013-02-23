@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdX//7lg\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 911,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-23T21:03:04Z",
+      "side": 1,
+      "message": "I did a search through all the android string resources and the shortened form \"info\" is used pervasively.  IMHO this should follow the same pattern.\n\nIt will look better as well IMHO.  The current string is quite long even on a Mako which would probably make it wrap on a lower res device",
+      "revId": "8e4dc29f1e1081413dc04e75d55043c6e4ba9b38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
