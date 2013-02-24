@@ -103,6 +103,7 @@ import android.text.method.TextKeyListener;
 import android.text.style.URLSpan;
 import android.text.util.Linkify;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
@@ -127,6 +128,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.LinearLayout;
 
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
@@ -3584,12 +3586,13 @@ public class ComposeMessageActivity extends Activity
 
         CharSequence text = mWorkingMessage.getText();
 
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
+
         // TextView.setTextKeepState() doesn't like null input.
+        boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
         if (text != null) {
             // Restore the emojis if necessary
-            SharedPreferences prefs = PreferenceManager
-                    .getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
-            boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
             if (enableEmojis) {
                 mTextEditor.setTextKeepState(EmojiParser.getInstance().addEmojiSpans(text));
             } else {
@@ -3599,6 +3602,26 @@ public class ComposeMessageActivity extends Activity
             mTextEditor.setSelection(mTextEditor.length());
         } else {
             mTextEditor.setText("");
+        }
+
+        boolean enableQuickEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_QUICK_EMOJIS, false);
+        if (enableQuickEmojis && enableEmojis) {
+            ImageButton quickEmojis = (ImageButton) mBottomPanel.findViewById(R.id.quick_emoji_button_mms);
+            quickEmojis.setVisibility(View.VISIBLE);
+            quickEmojis.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showEmojiDialog();
+                }
+            });
+
+            // Change margin on text editor for better visual style/usability
+            Resources r = getResources();
+            int marginLeft = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, r.getDisplayMetrics());
+
+            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)mTextEditor.getLayoutParams();
+            params.setMargins(marginLeft, 0, 0, 0); //substitute parameters for left, top, right, bottom
+            mTextEditor.setLayoutParams(params);
         }
     }
 
