@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdX//7Ig\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 480,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-25T00:03:43Z",
+      "side": 1,
+      "message": "Il faudrait voir si ça fait pas trop long. En anglais il à été décidé de garder \"info\" car \"information\" était trop long. Et \"info\" était déjà utilisé à d\u0027autres endroits.\nSi ça fait trop long on pourrait penser à \"Insérer les détails d\u0027un contact\"",
+      "revId": "dbf1f1adec444dd4abc6c50a628adbd34fa03606",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//7Ic\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 481,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-02-25T00:03:43Z",
+      "side": 1,
+      "message": "Pareil ici.",
+      "revId": "dbf1f1adec444dd4abc6c50a628adbd34fa03606",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
