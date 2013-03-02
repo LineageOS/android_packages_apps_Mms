@@ -1,0 +1,9 @@
+Change-Id: If3f23ea8158714c00d756f191dc6a6a99d47ae82
+Code-Review+1: Pavel Volkov <marshmollow@gmail.com>
+Code-Review+2: Marco Brohet <therbom@gmail.com>
+Verified+1: Cid
+Submitted-by: Marco Brohet <therbom@gmail.com>
+Submitted-at: Sat, 02 Mar 2013 06:39:34 -0800
+Reviewed-on: http://review.cyanogenmod.org/33062
+Project: CyanogenMod/android_packages_apps_Mms
+Branch: refs/heads/cm-10.1
