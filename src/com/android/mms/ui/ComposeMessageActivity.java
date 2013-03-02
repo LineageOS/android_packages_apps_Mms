@@ -247,7 +247,7 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_LOCK_MESSAGE          = 28;
     private static final int MENU_UNLOCK_MESSAGE        = 29;
     private static final int MENU_COPY_TO_DRM_PROVIDER  = 30;
-    private static final int MENU_INSERT_TEMPLATE 		= 31;
+    private static final int MENU_INSERT_TEMPLATE       = 31;
 
     private static final int RECIPIENTS_MAX_LENGTH = 312;
 
