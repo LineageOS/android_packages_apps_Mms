@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeH///9I\u003d",
+        "filename": "res/values-fr/arrays.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-04T17:42:44Z",
+      "side": 1,
+      "message": "it could be :\n\n    \u003cstring-array name\u003d\"pref_mms_notification_vibrate_pattern_entries\"\u003e\n        \u003citem\u003eNormale\u003c/item\u003e\t\n        \u003citem\u003eMoyenne\u003c/item\u003e\n        \u003citem\u003eLongue\u003c/item\u003e\n        \u003citem\u003ePlusieurs courtes\u003c/item\u003e\n        \u003citem\u003ePlusieurs longues\u003c/item\u003e\n        \u003citem\u003e@string/pref_mms_custom_option\u003c/item\u003e\n    \u003c/string-array\u003e",
+      "revId": "3b09df1d8579ca4d461125eae0d895da65d696ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
