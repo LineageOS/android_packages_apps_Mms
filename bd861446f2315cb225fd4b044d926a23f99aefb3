@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeH///z4\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "diaporama not diapositive !",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///z0\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "diaporama not diapositive !",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///zw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "un nouveau diaporama",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///zk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "Impossible d\\\u0027ajouter d\\\u0027autres image au diaporama ?",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///zg\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "sur un diaporama",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///zc\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "Durée de l\u0027image dans le diaporama ?\nou \nDurée totale du diaporama ?",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///zQ\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 298,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "Image ?",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeH///zM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 3150
+      },
+      "writtenOn": "2013-03-05T02:03:27Z",
+      "side": 1,
+      "message": "Modifier le diaporama ?",
+      "revId": "bd861446f2315cb225fd4b044d926a23f99aefb3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
