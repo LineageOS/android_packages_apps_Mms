@@ -247,7 +247,7 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_LOCK_MESSAGE          = 28;
     private static final int MENU_UNLOCK_MESSAGE        = 29;
     private static final int MENU_COPY_TO_DRM_PROVIDER  = 30;
-    private static final int MENU_INSERT_TEMPLATE 		= 31;
+    private static final int MENU_INSERT_TEMPLATE       = 31;
 
     private static final int RECIPIENTS_MAX_LENGTH = 312;
 
@@ -285,7 +285,7 @@ public class ComposeMessageActivity extends Activity
 
     private AttachmentEditor mAttachmentEditor;
 
-    private MessageListView mMsgListView;        // ListView for messages in this conversation
+    private MessageListView mMsgListView;       // ListView for messages in this conversation
     public MessageListAdapter mMsgListAdapter;  // and its corresponding ListAdapter
 
     private RecipientsEditor mRecipientsEditor;  // UI control for editing recipients
@@ -902,7 +902,7 @@ public class ComposeMessageActivity extends Activity
         int selStart = -1;
         int selEnd = -1;
 
-        //check if message sender is selected
+        // Check if message sender is selected
         textView = (TextView) msglistItem.findViewById(R.id.text_view);
         if (textView != null) {
             text = textView.getText();
@@ -911,7 +911,7 @@ public class ComposeMessageActivity extends Activity
         }
 
         if (selStart == -1) {
-            //sender is not being selected, it may be within the message body
+            // Sender is not being selected, it may be within the message body
             textView = (TextView) msglistItem.findViewById(R.id.body_text_view);
             if (textView != null) {
                 text = textView.getText();
@@ -934,7 +934,7 @@ public class ComposeMessageActivity extends Activity
             }
         }
 
-        //no uri was selected
+        // No uri was selected
         return null;
     }
 
