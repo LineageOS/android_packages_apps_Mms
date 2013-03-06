@@ -247,7 +247,7 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_LOCK_MESSAGE          = 28;
     private static final int MENU_UNLOCK_MESSAGE        = 29;
     private static final int MENU_COPY_TO_DRM_PROVIDER  = 30;
-    private static final int MENU_INSERT_TEMPLATE 		= 31;
+    private static final int MENU_INSERT_TEMPLATE       = 31;
 
     private static final int RECIPIENTS_MAX_LENGTH = 312;
 
@@ -285,7 +285,7 @@ public class ComposeMessageActivity extends Activity
 
     private AttachmentEditor mAttachmentEditor;
 
-    private MessageListView mMsgListView;        // ListView for messages in this conversation
+    private MessageListView mMsgListView;       // ListView for messages in this conversation
     public MessageListAdapter mMsgListAdapter;  // and its corresponding ListAdapter
 
     private RecipientsEditor mRecipientsEditor;  // UI control for editing recipients
@@ -296,7 +296,7 @@ public class ComposeMessageActivity extends Activity
     private boolean mPossiblePendingNotification;   // If the message list has changed, we may have
                                                     // a pending notification to deal with.
 
-    private boolean mToastForDraftSave;   // Whether to notify the user that a draft is being saved
+    private boolean mToastForDraftSave; // Whether to notify the user that a draft is being saved
 
     private boolean mSentMessage;       // true if the user has sent a message while in this
                                         // activity. On a new compose message case, when the first
@@ -378,51 +378,51 @@ public class ComposeMessageActivity extends Activity
 
                     // Special case characters that don't get stripped by the
                     // above technique.
-                    s = s.replace("Œ", "OE");
-                    s = s.replace("œ", "oe");
+                    s = s.replace("\u0152", "OE");
+                    s = s.replace("\u0153", "oe");
                     s = s.replace("\u0141", "L");
                     s = s.replace("\u0142", "l");
-                    s = s.replace("Đ", "DJ");
-                    s = s.replace("đ", "dj");
-                    s = s.replace("Α", "A");
-                    s = s.replace("Β", "B");
-                    s = s.replace("Ε", "E");
-                    s = s.replace("Ζ", "Z");
-                    s = s.replace("Η", "H");
-                    s = s.replace("Ι", "I");
-                    s = s.replace("Κ", "K");
-                    s = s.replace("Μ", "M");
-                    s = s.replace("Ν", "N");
-                    s = s.replace("Ο", "O");
-                    s = s.replace("Ρ", "P");
-                    s = s.replace("Τ", "T");
-                    s = s.replace("Υ", "Y");
-                    s = s.replace("Χ", "X");
-                    s = s.replace("α", "A");
-                    s = s.replace("β", "B");
-                    s = s.replace("γ", "Γ");
-                    s = s.replace("δ", "Δ");
-                    s = s.replace("ε", "E");
-                    s = s.replace("ζ", "Z");
-                    s = s.replace("η", "H");
-                    s = s.replace("θ", "Θ");
-                    s = s.replace("ι", "I");
-                    s = s.replace("κ", "K");
-                    s = s.replace("λ", "Λ");
-                    s = s.replace("μ", "M");
-                    s = s.replace("ν", "N");
-                    s = s.replace("ξ", "Ξ");
-                    s = s.replace("ο", "O");
-                    s = s.replace("π", "Π");
-                    s = s.replace("ρ", "P");
-                    s = s.replace("σ", "Σ");
-                    s = s.replace("τ", "T");
-                    s = s.replace("υ", "Y");
-                    s = s.replace("φ", "Φ");
-                    s = s.replace("χ", "X");
-                    s = s.replace("ψ", "Ψ");
-                    s = s.replace("ω", "Ω");
-                    s = s.replace("ς", "Σ");
+                    s = s.replace("\u0110", "DJ");
+                    s = s.replace("\u0111", "dj");
+                    s = s.replace("\u0391", "A");
+                    s = s.replace("\u0392", "B");
+                    s = s.replace("\u0395", "E");
+                    s = s.replace("\u0396", "Z");
+                    s = s.replace("\u0397", "H");
+                    s = s.replace("\u0399", "I");
+                    s = s.replace("\u039a", "K");
+                    s = s.replace("\u039c", "M");
+                    s = s.replace("\u039d", "N");
+                    s = s.replace("\u039f", "O");
+                    s = s.replace("\u03a1", "P");
+                    s = s.replace("\u03a4", "T");
+                    s = s.replace("\u03a5", "Y");
+                    s = s.replace("\u03a7", "X");
+                    s = s.replace("\u03b1", "A");
+                    s = s.replace("\u03b2", "B");
+                    s = s.replace("\u03b3", "\u0393");
+                    s = s.replace("\u03b4", "\u0394");
+                    s = s.replace("\u03b5", "E");
+                    s = s.replace("\u03b6", "Z");
+                    s = s.replace("\u03b7", "H");
+                    s = s.replace("\u03b8", "\u0398");
+                    s = s.replace("\u03b9", "I");
+                    s = s.replace("\u03ba", "K");
+                    s = s.replace("\u03bb", "\u039b");
+                    s = s.replace("\u03bc", "M");
+                    s = s.replace("\u03bd", "N");
+                    s = s.replace("\u03be", "\u039e");
+                    s = s.replace("\u03bf", "O");
+                    s = s.replace("\u03c0", "\u03a0");
+                    s = s.replace("\u03c1", "P");
+                    s = s.replace("\u03c3", "\u03a3");
+                    s = s.replace("\u03c4", "T");
+                    s = s.replace("\u03c5", "Y");
+                    s = s.replace("\u03c6", "\u03a6");
+                    s = s.replace("\u03c7", "X");
+                    s = s.replace("\u03c8", "\u03a8");
+                    s = s.replace("\u03c9", "\u03a9");
+                    s = s.replace("\u03c2", "\u03a3");
 
                     output.append(s);
                 }
@@ -902,7 +902,7 @@ public class ComposeMessageActivity extends Activity
         int selStart = -1;
         int selEnd = -1;
 
-        //check if message sender is selected
+        // Check if message sender is selected
         textView = (TextView) msglistItem.findViewById(R.id.text_view);
         if (textView != null) {
             text = textView.getText();
@@ -911,7 +911,7 @@ public class ComposeMessageActivity extends Activity
         }
 
         if (selStart == -1) {
-            //sender is not being selected, it may be within the message body
+            // Sender is not being selected, it may be within the message body
             textView = (TextView) msglistItem.findViewById(R.id.body_text_view);
             if (textView != null) {
                 text = textView.getText();
@@ -934,7 +934,7 @@ public class ComposeMessageActivity extends Activity
             }
         }
 
-        //no uri was selected
+        // No uri was selected
         return null;
     }
 
@@ -2528,7 +2528,7 @@ public class ComposeMessageActivity extends Activity
         runOnUiThread(new Runnable() {
             public void run() {
                 handleAddAttachmentError(error, R.string.type_picture);
-                onMessageSent();        // now requery the list of messages
+                onMessageSent();        // Now requery the list of messages
             }
         });
     }
