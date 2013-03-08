@@ -1,0 +1,9 @@
+Change-Id: I0987160f636f1727ba81e1cfdf141f4ad560a0e3
+Code-Review+2: Marco Brohet <therbom@gmail.com>
+Verified+1: Marco Brohet <therbom@gmail.com>
+Code-Review+1: Thibault LEMOINE <thibaultblizz@gmail.com>
+Submitted-by: Marco Brohet <therbom@gmail.com>
+Submitted-at: Fri, 08 Mar 2013 12:46:32 -0800
+Reviewed-on: http://review.cyanogenmod.org/33086
+Project: CyanogenMod/android_packages_apps_Mms
+Branch: refs/heads/gingerbread
