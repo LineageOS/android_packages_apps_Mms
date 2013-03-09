@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//+G4\u003d",
+        "filename": "res/values-pt/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-09T13:59:58Z",
+      "side": 1,
+      "message": "From the cm-10.1 branch:\n\n    \u003cstring name\u003d\"qm_mark_read\"\u003eLida\u003c/string\u003e",
+      "revId": "a85ae526ada70328fe28b2301dbe1dc16aad261e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
