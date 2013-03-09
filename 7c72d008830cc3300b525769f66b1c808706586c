@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//+GI\u003d",
+        "filename": "res/values-uk/arrays.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-09T14:24:36Z",
+      "side": 1,
+      "message": "Can you also create the line:\n\n\u003c!-- CYANOGENMOD ADDITIONS --\u003e\n\nabove the array added by CM?",
+      "revId": "7c72d008830cc3300b525769f66b1c808706586c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
