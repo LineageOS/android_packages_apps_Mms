@@ -153,6 +153,7 @@ public class QuickMessagePopup extends Activity implements
     private boolean mDarkTheme = false;
     private boolean mFullTimestamp = false;
     private boolean mStripUnicode = false;
+    private boolean mStripAll = false;
     private boolean mEnableEmojis = false;
     private int mInputMethod;
 
@@ -189,6 +190,7 @@ public class QuickMessagePopup extends Activity implements
         mWakeAndUnlock = prefs.getBoolean(MessagingPreferenceActivity.QM_LOCKSCREEN_ENABLED, false);
         mDarkTheme = prefs.getBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, false);
         mStripUnicode = prefs.getBoolean(MessagingPreferenceActivity.STRIP_UNICODE, false);
+        mStripAll = prefs.getBoolean(MessagingPreferenceActivity.STRIP_ALL, false);
         mEnableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
@@ -943,6 +945,12 @@ public class QuickMessagePopup extends Activity implements
         private Pattern diacritics =
             Pattern.compile("\\p{InCombiningDiacriticalMarks}");
 
+        private boolean mStripAll = false;
+
+        StripUnicode(boolean stripAll) {
+            mStripAll = stripAll;
+        }
+
         public CharSequence filter(CharSequence source, int start, int end,
                                    Spanned dest, int dstart, int dend) {
 
@@ -953,7 +961,7 @@ public class QuickMessagePopup extends Activity implements
                 char c = source.charAt(i);
 
                 // Character is encodable by GSM, skip filtering
-                if (gsm.canEncode(c)) {
+                if (mStripAll == false && gsm.canEncode(c)) {
                     output.append(c);
                 }
                 // Character requires Unicode, try to replace it
@@ -1133,7 +1141,7 @@ public class QuickMessagePopup extends Activity implements
                 LengthFilter lengthFilter = new LengthFilter(MmsConfig.getMaxTextLimit());
 
                 if (mStripUnicode) {
-                    qmReplyText.setFilters(new InputFilter[] { new StripUnicode(), lengthFilter });
+                    qmReplyText.setFilters(new InputFilter[] { new StripUnicode(mStripAll), lengthFilter });
                 } else {
                     qmReplyText.setFilters(new InputFilter[] { lengthFilter });
                 }
