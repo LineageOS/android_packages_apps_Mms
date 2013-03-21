@@ -207,11 +207,13 @@
 
     <!-- Extra Settings -->
     <PreferenceCategory android:title="@string/pref_extra_settings">
-        <CheckBoxPreference
-            android:key="pref_key_strip_unicode"
-            android:title="@string/pref_title_strip_unicode"
-            android:summary="@string/pref_summary_strip_unicode"
-            android:defaultValue="false" />
+        <ListPreference
+            android:key="pref_key_stripping"
+            android:title="@string/pref_title_stripping"
+            android:summary="@string/pref_summary_stripping"
+            android:defaultValue="@string/pref_stripping_default_value"
+            android:entries="@array/pref_stripping_entries"
+            android:entryValues="@array/pref_stripping_values" />
 
         <CheckBoxPreference
             android:key="pref_key_enable_emojis"

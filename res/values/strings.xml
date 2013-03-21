@@ -880,8 +880,9 @@
     <string name="pref_extra_settings">Extra settings</string>
 
     <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Strip unicode</string>
-    <string name="pref_summary_strip_unicode">Substitute common characters that are not supported in 160 character SMS messages</string>
+    <string name="pref_title_stripping">Unicode stripping</string>
+    <string name="pref_summary_stripping">Substitute characters in the SMS messages</string>
+    <string name="pref_stripping_default_value">1</string>
 
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji support</string>
