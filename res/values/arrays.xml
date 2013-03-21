@@ -139,5 +139,17 @@
         <item>80</item> <!-- InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE constant  -->
     </string-array>
 
+    <string-array name="pref_stripping_entries" translatable="false">
+        <item>@string/pref_stripping_leave_intact</item>
+        <item>@string/pref_stripping_non_encodable</item>
+        <item>@string/pref_stripping_all</item>
+    </string-array>
+
+    <string-array name="pref_stripping_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
