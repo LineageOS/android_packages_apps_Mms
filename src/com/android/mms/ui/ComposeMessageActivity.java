@@ -418,12 +418,17 @@ public class ComposeMessageActivity extends Activity
     // to 16-bit Unicode encoding (70 char limit).
 
     private class StripUnicode implements InputFilter {
-
         private CharsetEncoder gsm =
             Charset.forName("gsm-03.38-2000").newEncoder();
 
         private Pattern diacritics =
             Pattern.compile("\\p{InCombiningDiacriticalMarks}");
+
+        private boolean mStripAll = false;
+
+        StripUnicode(boolean stripAll) {
+            mStripAll = stripAll;
+        }
 
         public CharSequence filter(CharSequence source, int start, int end,
                                    Spanned dest, int dstart, int dend) {
@@ -435,7 +440,7 @@ public class ComposeMessageActivity extends Activity
                 char c = source.charAt(i);
 
                 // Character is encodable by GSM, skip filtering
-                if (gsm.canEncode(c)) {
+                if (mStripAll == false && gsm.canEncode(c)) {
                     output.append(c);
                 }
                 // Character requires Unicode, try to replace it
@@ -2051,6 +2056,7 @@ public class ComposeMessageActivity extends Activity
                 .getInt(MessagingPreferenceActivity.GESTURE_SENSITIVITY_VALUE, 3);
         boolean showGesture = prefs.getBoolean(MessagingPreferenceActivity.SHOW_GESTURE, false);
         boolean stripUnicode = prefs.getBoolean(MessagingPreferenceActivity.STRIP_UNICODE, false);
+        boolean stripAll = prefs.getBoolean(MessagingPreferenceActivity.STRIP_ALL, false);
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
 
@@ -2076,7 +2082,7 @@ public class ComposeMessageActivity extends Activity
         LengthFilter lengthFilter = new LengthFilter(MmsConfig.getMaxTextLimit());
 
         if (stripUnicode) {
-            mTextEditor.setFilters(new InputFilter[] { new StripUnicode(), lengthFilter });
+            mTextEditor.setFilters(new InputFilter[] { new StripUnicode(stripAll), lengthFilter });
         } else {
             mTextEditor.setFilters(new InputFilter[] { lengthFilter });
         }

@@ -882,6 +882,8 @@
     <!-- Strip unicode -->
     <string name="pref_title_strip_unicode">Strip unicode</string>
     <string name="pref_summary_strip_unicode">Substitute common characters that are not supported in 160 character SMS messages</string>
+    <string name="pref_title_strip_all">Strip all</string>
+    <string name="pref_summary_strip_all">Substitute all non-ASCII characters in the SMS message</string>
 
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji support</string>
