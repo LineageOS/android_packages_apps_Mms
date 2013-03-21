@@ -78,6 +78,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     // Emoji and Unicode
     public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
     public static final String STRIP_UNICODE             = "pref_key_strip_unicode";
+    public static final String UNICODE_STRIPPING         = "pref_key_stripping";
+    public static final String UNICODE_STRIPPING_VALUE   = "pref_key_stripping_value";
 
     // Split sms
     public static final String SMS_SPLIT_COUNTER        = "pref_key_sms_split_counter";
@@ -131,6 +133,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Recycler mMmsRecycler;
     private Preference mManageTemplate;
     private ListPreference mGestureSensitivity;
+    private ListPreference mUnicodeStripping;
+    private CharSequence[] mUnicodeStrippingEntries;
     private static final int CONFIRM_CLEAR_SEARCH_HISTORY_DIALOG = 3;
 
     // Keyboard input type
@@ -182,6 +186,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mRingtonePref = (RingtonePreference) findPreference(NOTIFICATION_RINGTONE);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
+        mUnicodeStripping = (ListPreference) findPreference(UNICODE_STRIPPING);
+        mUnicodeStrippingEntries = getResources().getTextArray(R.array.pref_stripping_entries);
 
         // Get the MMS retrieval settings. Defaults to enabled with roaming disabled
         mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
@@ -314,6 +320,20 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                 int value = Integer.parseInt((String) newValue);
                 sharedPreferences.edit().putInt(GESTURE_SENSITIVITY_VALUE, value).commit();
                 mGestureSensitivity.setSummary(String.valueOf(value));
+                return true;
+            }
+        });
+
+        String unicodeStripping = String.valueOf(sharedPreferences.getInt(UNICODE_STRIPPING_VALUE, 1));
+        mUnicodeStripping.setSummary(unicodeStripping);
+        mUnicodeStripping.setValue(unicodeStripping);
+        mUnicodeStripping.setSummary(mUnicodeStrippingEntries[Integer.parseInt(mUnicodeStripping.getValue())]);
+        mUnicodeStripping.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int value = Integer.parseInt((String) newValue);
+                sharedPreferences.edit().putInt(UNICODE_STRIPPING_VALUE, value).commit();
+                mUnicodeStripping.setSummary(mUnicodeStrippingEntries[value]);
                 return true;
             }
         });
