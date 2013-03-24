@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//4a4\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 328,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T22:07:17Z",
+      "side": 1,
+      "message": "Why are you setting the summary twice?",
+      "revId": "4ada7e356ccaed8784a162aab88cfaf7334d73c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4a0\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T22:07:17Z",
+      "side": 1,
+      "message": "Isn\u0027t there already a preference change listener in this file?  Why not use it?",
+      "revId": "4ada7e356ccaed8784a162aab88cfaf7334d73c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4as\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 336,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T22:07:17Z",
+      "side": 1,
+      "message": "Why not use the getvalue method? That way you don\u0027t have to load the entries in a array first.  Let the xml take care of that for you.",
+      "revId": "4ada7e356ccaed8784a162aab88cfaf7334d73c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
