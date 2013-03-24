@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAeX//4W8\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 884,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-24T23:35:34Z",
+      "side": 1,
+      "message": "I thought there was a rule that Android apps should not use negative words (\u0027instead of \u0027do not show\u0027: \u0027hide\u0027). What about:\n- Leave characters intact",
+      "revId": "58a22f69aae548845b2d54da7d885143d50b2d39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//4Yw\u003d",
         "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
         "patchSetId": 7
