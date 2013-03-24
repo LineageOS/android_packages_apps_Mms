@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//4Yw\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 948,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T22:45:46Z",
+      "side": 1,
+      "message": "what is this method used for?",
+      "revId": "58a22f69aae548845b2d54da7d885143d50b2d39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4Ys\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 429,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T22:45:46Z",
+      "side": 1,
+      "message": "what is this method used for?",
+      "revId": "58a22f69aae548845b2d54da7d885143d50b2d39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
