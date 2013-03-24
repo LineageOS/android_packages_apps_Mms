@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//4fM\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 443,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-24T17:57:49Z",
+      "side": 1,
+      "message": "Minor nitpick: If (!mStripAll \u0026\u0026 ...) would provide better readability.",
+      "revId": "b127f648040e1d701e903427e7e9d18cf64a6cac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
