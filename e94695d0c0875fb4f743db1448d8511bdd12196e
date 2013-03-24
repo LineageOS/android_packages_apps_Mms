@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//4bo\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T21:41:27Z",
+      "side": 1,
+      "message": "Put these 3 strings in strings.xml and reference them by @string/ here .  See above",
+      "revId": "e94695d0c0875fb4f743db1448d8511bdd12196e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4bs\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 883,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T21:41:27Z",
+      "side": 1,
+      "message": "Use the original text",
+      "revId": "e94695d0c0875fb4f743db1448d8511bdd12196e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4bw\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 884,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-24T21:41:27Z",
+      "side": 1,
+      "message": "Use the original text",
+      "revId": "e94695d0c0875fb4f743db1448d8511bdd12196e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
