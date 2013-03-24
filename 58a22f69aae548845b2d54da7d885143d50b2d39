@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//4YI\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 948,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-24T23:26:11Z",
+      "side": 1,
+      "message": "This is a constructor which is necessary to pass the current value into the class.",
+      "parentUuid": "AAAAeX//4Yw\u003d",
+      "revId": "58a22f69aae548845b2d54da7d885143d50b2d39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//4Ys\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 7
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-24T22:45:46Z",
       "side": 1,
       "message": "what is this method used for?",
+      "revId": "58a22f69aae548845b2d54da7d885143d50b2d39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4YM\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 429,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-24T23:26:11Z",
+      "side": 1,
+      "message": "This is a constructor which is necessary to pass the current value into the class.",
+      "parentUuid": "AAAAeX//4Ys\u003d",
       "revId": "58a22f69aae548845b2d54da7d885143d50b2d39",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
