@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//4WA\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-25T00:25:35Z",
+      "side": 1,
+      "message": "I think it would be good to keep the \u0027unicode\u0027 in there, e.g. as \u0027pref_key_unicode_stripping\u0027. The same applies to the strings and arrays.",
+      "revId": "1a12144aeb739f014879f52566fe7306228f991a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4WE\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 444,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-25T00:25:35Z",
+      "side": 1,
+      "message": "Some constants for the values would be nice. Also mStriping -\u003e mStripping (also in the constructor).",
+      "revId": "1a12144aeb739f014879f52566fe7306228f991a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4WI\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-25T00:25:35Z",
+      "side": 1,
+      "message": "I think it\u0027s better to make the variable an int and do the String conversion in the line below. That will avoid the back-and-forth conversion in the setSummary line.",
+      "revId": "1a12144aeb739f014879f52566fe7306228f991a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
