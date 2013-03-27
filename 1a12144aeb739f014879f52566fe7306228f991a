@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//4U8\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-27T06:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//4WA\u003d",
+      "revId": "1a12144aeb739f014879f52566fe7306228f991a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//4WE\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 8
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//4U4\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 444,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-27T06:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//4WE\u003d",
+      "revId": "1a12144aeb739f014879f52566fe7306228f991a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//4WI\u003d",
         "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
         "patchSetId": 8
@@ -47,6 +83,24 @@
       "writtenOn": "2013-03-25T00:25:35Z",
       "side": 1,
       "message": "I think it\u0027s better to make the variable an int and do the String conversion in the line below. That will avoid the back-and-forth conversion in the setSummary line.",
+      "revId": "1a12144aeb739f014879f52566fe7306228f991a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//4U0\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-27T06:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//4WI\u003d",
       "revId": "1a12144aeb739f014879f52566fe7306228f991a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
