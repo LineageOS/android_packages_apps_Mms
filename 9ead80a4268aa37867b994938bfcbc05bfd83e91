@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//2rw\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-28T18:18:46Z",
+      "side": 1,
+      "message": "Please add a line break here (to keep line length \u003c\u003d 100 chars).",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2rs\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 950,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-28T18:18:46Z",
+      "side": 1,
+      "message": "This mStripping is redundant at the moment. There are two options to fix the redundancy:\n\n- Remove mStripping + constructor and use mUnicodeStripping of the outer class\n- Make the class private static\n\nI think I prefer the latter option.\nAlso, I think mStripping and the stripping parameter can be converted to a boolean mStripNonDecodableOnly.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2rk\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1142,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-28T18:18:46Z",
+      "side": 1,
+      "message": "As per the suggestion above, one could have this here:\n\nboolean stripNonDecodableOnly \u003d mUnicodeStripping \u003d\u003d MessagingPreferenceActivity.UNICODE_STRIPPING_NON_DECODABLE;\nqmReplyText.setFilters(new InputFilter[] { new StripUnicode(stripNonDecodableOnly, lengthFilter });",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2rg\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-28T18:18:46Z",
+      "side": 1,
+      "message": "See comments in QuickMessagePopup.java.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2rc\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 2058,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-28T18:18:46Z",
+      "side": 1,
+      "message": "This needs a line break.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2rU\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-28T18:18:46Z",
+      "side": 1,
+      "message": "Having two different keys for one thing seems wrong to me. Please unify to one key (e.g. pref_key_unicode_stripping_mode) to be used in both shared prefs and XML.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
