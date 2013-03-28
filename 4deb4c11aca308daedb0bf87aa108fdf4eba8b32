@@ -16,6 +16,24 @@
       "revId": "4deb4c11aca308daedb0bf87aa108fdf4eba8b32",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2yg\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-28T08:09:11Z",
+      "side": 1,
+      "message": "Yes, this one is actually unused but I\u0027m referring to it from the arrays.xml. Do you want me to remove it?",
+      "parentUuid": "AAAAeX//2yo\u003d",
+      "revId": "4deb4c11aca308daedb0bf87aa108fdf4eba8b32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
