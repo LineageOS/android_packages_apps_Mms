@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//2yo\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2013-03-28T08:04:52Z",
+      "side": 1,
+      "message": "this one unused.no need?",
+      "revId": "4deb4c11aca308daedb0bf87aa108fdf4eba8b32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
