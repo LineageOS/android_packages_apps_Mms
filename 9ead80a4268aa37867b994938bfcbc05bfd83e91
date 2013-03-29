@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//2go\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-29T07:05:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//2rw\u003d",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//2rs\u003d",
         "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
         "patchSetId": 11
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-28T18:18:46Z",
       "side": 1,
       "message": "This mStripping is redundant at the moment. There are two options to fix the redundancy:\n\n- Remove mStripping + constructor and use mUnicodeStripping of the outer class\n- Make the class private static\n\nI think I prefer the latter option.\nAlso, I think mStripping and the stripping parameter can be converted to a boolean mStripNonDecodableOnly.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2fQ\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 950,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-29T07:05:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//2rs\u003d",
       "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//2fA\u003d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1142,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-29T07:05:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//2rk\u003d",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//2rg\u003d",
         "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
         "patchSetId": 11
@@ -64,6 +118,24 @@
       "writtenOn": "2013-03-28T18:18:46Z",
       "side": 1,
       "message": "See comments in QuickMessagePopup.java.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2fM\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-29T07:05:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//2rg\u003d",
       "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//2gM\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 2058,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-29T07:05:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//2rc\u003d",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//2rU\u003d",
         "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
         "patchSetId": 11
@@ -98,6 +188,24 @@
       "writtenOn": "2013-03-28T18:18:46Z",
       "side": 1,
       "message": "Having two different keys for one thing seems wrong to me. Please unify to one key (e.g. pref_key_unicode_stripping_mode) to be used in both shared prefs and XML.",
+      "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//2f4\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 262
+      },
+      "writtenOn": "2013-03-29T07:05:22Z",
+      "side": 1,
+      "message": "I tried my best to combine the two keys into one but I did not manage. The problem is that the Preferences is saving the value of the ListPreference by default as String. Once I start overwriting it by Integer, it ends up in cast problems. I think we should leave it as it is because it works the same way like in the case of gestureSensitivity.",
+      "parentUuid": "AAAAeX//2rU\u003d",
       "revId": "9ead80a4268aa37867b994938bfcbc05bfd83e91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
