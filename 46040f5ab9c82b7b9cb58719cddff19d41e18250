@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///30\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 382,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-02T13:33:52Z",
+      "side": 1,
+      "message": "Yes, better.",
+      "parentUuid": "AAAAen///+M\u003d",
+      "revId": "46040f5ab9c82b7b9cb58719cddff19d41e18250",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///+Q\u003d",
         "filename": "res/values-es/strings.xml",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///2M\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-02T13:33:52Z",
+      "side": 1,
+      "message": "For a normal user, example my mother, Unicode is an unknow term, and \"no-codificables\" is more bizarre.\n\nI prefer to use a common term for this action. Replace unsupported characters.\n\nAnd this makes me think that maybe it\u0027s better \"Sustituir solamente los caracteres no soportados\"\n\nAny ideas?",
+      "parentUuid": "AAAAen///+Q\u003d",
+      "revId": "46040f5ab9c82b7b9cb58719cddff19d41e18250",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///+A\u003d",
         "filename": "res/values-es/strings.xml",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2013-04-02T01:25:26Z",
       "side": 1,
       "message": "This string is not properly translated (\"no compatibles\" doesn\u0027t fit with the previous string. Unicode chars are always compatibles, but some of them are not printable in screen)\n\n\"Sustituir todos los caracteres Unicode\"",
+      "revId": "46040f5ab9c82b7b9cb58719cddff19d41e18250",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///2Q\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-02T13:33:52Z",
+      "side": 1,
+      "message": "Same as above.",
+      "parentUuid": "AAAAen///+A\u003d",
       "revId": "46040f5ab9c82b7b9cb58719cddff19d41e18250",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
