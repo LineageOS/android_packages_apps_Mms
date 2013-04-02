@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///qI\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-02T19:17:26Z",
+      "side": 1,
+      "message": "Yes. It needs any reference about \"cleaner\" of text.",
+      "parentUuid": "AAAAen///sg\u003d",
+      "revId": "c274c7235cac0e7620b9ea1691c1f424070d8e5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///wg\u003d",
         "filename": "res/values-es/strings.xml",
         "patchSetId": 2
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "IHMO, this summary need to explain, what Emoji is. djMesias, up to you",
       "parentUuid": "AAAAen///wg\u003d",
+      "revId": "c274c7235cac0e7620b9ea1691c1f424070d8e5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///qE\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-02T19:17:26Z",
+      "side": 1,
+      "message": "I think that not needs be touched.",
+      "parentUuid": "AAAAen///sc\u003d",
       "revId": "c274c7235cac0e7620b9ea1691c1f424070d8e5d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
