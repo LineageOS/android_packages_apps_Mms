@@ -34,6 +34,24 @@
       "revId": "8f5e444812c8643afa75d0f9e35d5599dd84886e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///2A\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 449,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T13:36:09Z",
+      "side": 1,
+      "message": "Das finde ich etwas kurz. Was stört dich an \u0027Unicode-Behandlung\u0027?",
+      "parentUuid": "AAAAen///3E\u003d",
+      "revId": "8f5e444812c8643afa75d0f9e35d5599dd84886e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
