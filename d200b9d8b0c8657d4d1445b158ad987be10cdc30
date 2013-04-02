@@ -72,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///xM\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 403,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-04-02T16:28:12Z",
+      "side": 1,
+      "message": "A 2 új javaslatod egy kicsit ellentmond egymásnak.\nAmennyiben ez a javaslat a jó, akkor\n\n\"Helyettesítse a nem kódolható karaktereket\"",
+      "parentUuid": "AAAAen///xY\u003d",
+      "revId": "d200b9d8b0c8657d4d1445b158ad987be10cdc30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///yc\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "Összes unicode karakter helyettesítse",
       "parentUuid": "AAAAen///yc\u003d",
+      "revId": "d200b9d8b0c8657d4d1445b158ad987be10cdc30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///xI\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-04-02T16:28:12Z",
+      "side": 1,
+      "message": "Ha az el?z?n indulunk el, akkor ez pedig\n\n\"Helyettesítse az összes unicode karaktert\"\n\nvagy ha az eredeti a jó javaslat, akkor\n\n\"Az összes unicode karakter helyettesítése\"",
+      "parentUuid": "AAAAen///xU\u003d",
       "revId": "d200b9d8b0c8657d4d1445b158ad987be10cdc30",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
