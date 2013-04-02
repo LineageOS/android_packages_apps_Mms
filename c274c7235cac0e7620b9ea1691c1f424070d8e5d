@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///sg\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-04-02T18:57:52Z",
+      "side": 1,
+      "message": "SferaDev, IHMO i think this setting need an \"Unicode\" in somewhere. djMesias up to you",
+      "parentUuid": "AAAAen///wk\u003d",
+      "revId": "c274c7235cac0e7620b9ea1691c1f424070d8e5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///wg\u003d",
         "filename": "res/values-es/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-02T17:10:02Z",
       "side": 1,
       "message": "Same: \"Habilitar soporte para texto Emoji\"",
+      "revId": "c274c7235cac0e7620b9ea1691c1f424070d8e5d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///sc\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-04-02T18:57:52Z",
+      "side": 1,
+      "message": "IHMO, this summary need to explain, what Emoji is. djMesias, up to you",
+      "parentUuid": "AAAAen///wg\u003d",
       "revId": "c274c7235cac0e7620b9ea1691c1f424070d8e5d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
