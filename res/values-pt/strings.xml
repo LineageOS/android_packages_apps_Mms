@@ -381,6 +381,8 @@
     <string name="menu_insert_emoji">Inserir emojis</string>
     <string name="pref_title_enable_emojis">Suporte emoji</string>
     <string name="pref_summary_enable_emojis">Ativa o suporte a emojis unicode, um conjunto de 471 emoticons</string>
+    <string name="pref_title_enable_softbank_encodidng">SoftBank emoji</string>
+    <string name="pref_summary_enable_softbank_encodidng">Utilizar codificação Softbank emoji</string>
     <string name="pref_quickmessage">Mensagem Rápida e Resposta</string>
     <string name="pref_quickmessage_title">Exibir Mensagem Rápida</string>
     <string name="pref_quickmessage_summary">Exibe a caixa de diálogo da Mensagem Rápida para mensagens SMS recebidas</string>
