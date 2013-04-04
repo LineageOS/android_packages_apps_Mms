@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//+7w\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-04T19:47:45Z",
+      "side": 1,
+      "message": "Above, four new translations to review.",
+      "revId": "ee1670d46b48e3b5dca5117c2fdfd3049af41f73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+70\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-04-04T19:47:45Z",
+      "side": 1,
+      "message": "Above, three new translations to review.",
+      "revId": "ee1670d46b48e3b5dca5117c2fdfd3049af41f73",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
