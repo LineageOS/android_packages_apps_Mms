@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007-2008 Esmertec AG
-     Copyright (C) 2007-2008 The Android Open Source Project
-     Copyright (C) 2013 The CyanogenMod Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -320,7 +322,7 @@
     <string name="pick_too_many_recipients" msgid="650087588867628044">"Troppi destinatari"</string>
     <string name="adding_recipients" msgid="2962810172527532357">"Aggiunta destinatari..."</string>
     <string name="draft_separator" msgid="5402575086540243019">", "</string>
-    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
+    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
     <string name="message_count_notification" msgid="3629968600032690007">"<xliff:g id="NUMBER">%1$s</xliff:g> nuovi messaggi"</string>
   <plurals name="message_count_notification_overflow">
     <item quantity="one" msgid="3340591167508150806">"+ <xliff:g id="NUMBER">%1$s</xliff:g> altro messaggio"</item>
@@ -340,6 +342,7 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
+<<<<<<< HEAD
     <string name="menu_add_to_calendar">Aggiungi al calendario</string>
     <string name="button_close">Chiudi</string>
     <string name="button_view">Visualizza</string>
@@ -411,4 +414,6 @@
     <string name="menu_insert_contact_info">Inserisci info contatto</string>
     <string name="cannot_find_contact">Non è possibile inserire le informazioni del contatto selezionato</string>
     <string name="insert_contact_info_positive_button">Inserisci</string>
+=======
+>>>>>>> Mms: Update italian translation
 </resources>
