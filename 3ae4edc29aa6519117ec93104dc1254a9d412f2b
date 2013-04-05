@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//+bY\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-04-05T20:27:58Z",
+      "side": 1,
+      "message": "\"Conserver les caractères (intacts)?\"",
+      "revId": "3ae4edc29aa6519117ec93104dc1254a9d412f2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
