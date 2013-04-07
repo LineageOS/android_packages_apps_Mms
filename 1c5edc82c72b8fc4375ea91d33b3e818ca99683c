@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//9sw\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "Move everything above\n    \u003c!-- **** CYANOGENMOD ADDITIONS END **** --\u003e\nplease.",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9tY\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "Whitespace error",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9tU\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "recommend, not recommand.",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9ss\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "We should use seconds instead of s for all the options here.",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9ts\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 922,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "Move everything above\n    \u003c!-- **** CYANOGENMOD ADDITIONS END **** --\u003e\nplease.",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9to\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 923,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "Delay SMS delivery",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9tg\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 924,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "Delay the delivery of SMS messages by the specified time, in which you may cancel the message delivery",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9tc\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 925,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "Delay SMS delivery duration",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9tQ\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 926,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "3 seconds (Recommended)",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9s0\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 928,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-07T09:39:14Z",
+      "side": 1,
+      "message": "SMS delivery countdown",
+      "revId": "1c5edc82c72b8fc4375ea91d33b3e818ca99683c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
