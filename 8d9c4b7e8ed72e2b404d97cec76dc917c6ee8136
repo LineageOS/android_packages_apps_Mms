@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//9lA\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 5002,
+      "author": {
+        "id": 3755
+      },
+      "writtenOn": "2013-04-07T20:05:18Z",
+      "side": 1,
+      "message": "for loop should be use here.",
+      "revId": "8d9c4b7e8ed72e2b404d97cec76dc917c6ee8136",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//9lM\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 3755
+      },
+      "writtenOn": "2013-04-07T20:05:18Z",
+      "side": 1,
+      "message": "Remove spaces.",
+      "revId": "8d9c4b7e8ed72e2b404d97cec76dc917c6ee8136",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
