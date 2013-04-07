@@ -87,4 +87,26 @@
         <item>2</item>
     </string-array>
 
+    <string-array name="delay_send_duration_values" translatable="false">
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
+    </string-array>
+
+    <string-array name="delay_send_duration_entries" translatable="false">
+        <item>@string/delay_send_duration_options_default_entry_1</item>
+        <item>@string/delay_send_duration_options_entry_2</item>
+        <item>@string/delay_send_duration_options_entry_3</item>
+        <item>@string/delay_send_duration_options_entry_4</item>
+        <item>@string/delay_send_duration_options_entry_5</item>
+        <item>@string/delay_send_duration_options_entry_6</item>
+        <item>@string/delay_send_duration_options_entry_7</item>
+        <item>@string/delay_send_duration_options_entry_8</item>
+    </string-array>
+
 </resources>

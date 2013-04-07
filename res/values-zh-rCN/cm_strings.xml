@@ -97,4 +97,17 @@
     <string name="menu_insert_contact_info">插入联系人信息</string>
     <string name="cannot_find_contact">无法插入选中的联系人信息</string>
     <string name="insert_contact_info_positive_button">插入</string>
+    <string name="pref_title_delay_send">延迟发送短信</string>
+    <string name="pref_summary_delay_send">发送短信时延迟指定的秒数, 您可在这个期间内取消发送中的信息</string>
+    <string name="delay_duration_title">延迟发送短信时间</string>
+    <string name="delay_send_duration_options_default_entry_1">3秒 (默认)</string>
+    <string name="delay_send_duration_options_entry_2">4秒</string>
+    <string name="delay_send_duration_options_entry_3">5秒</string>
+    <string name="delay_send_duration_options_entry_4">6秒</string>
+    <string name="delay_send_duration_options_entry_5">7秒</string>
+    <string name="delay_send_duration_options_entry_6">8秒</string>
+    <string name="delay_send_duration_options_entry_7">9秒</string>
+    <string name="delay_send_duration_options_entry_8">10秒</string>
+    <string name="remaining_delay_time">短信将会在&lt;font color="red"&gt;&lt;big&gt;%1$d&lt;/big&gt;&lt;/font&gt;秒后发送</string>
+    <string name="sent_countdown">短信发送倒计时中</string>
 </resources>
