@@ -476,4 +476,11 @@
     <string name="pref_summary_sms_split_counter">在分割的消息中加入编号，例如：(1/2)</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <string name="pref_title_delay_send">延迟发送短信</string>
+    <string name="pref_summary_delay_send">发送短信时延迟指定的秒数, 您可在这个期间内取消发送中的信息</string>
+    <string name="delay_duration_title">延迟发送短信时间</string>
+    <string name="delay_send_duration_recommend">3秒 (推荐)</string>
+    <string name="remaining_delay_time">短信将会在&lt;font color="red"&gt;&lt;big&gt;%1$d&lt;/big&gt;&lt;/font&gt;秒后发送</string>
+    <string name="sent_countdown">短信发送倒计时中</string>
 </resources>

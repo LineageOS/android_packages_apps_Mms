@@ -919,4 +919,11 @@
     <string name="insert_contact_info_positive_button">Insert</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <string name="pref_title_delay_send">Delay SMS delivery</string>
+    <string name="pref_summary_delay_send">Delay the delivery of SMS messages by the specified time, in which you may cancel the message delivery</string>
+    <string name="delay_duration_title">Delay SMS delivery duration</string>
+    <string name="delay_send_duration_recommend">3 seconds (Recommend)</string>
+    <string name="remaining_delay_time">SMS will be sent after &lt;font color="red"&gt;&lt;big&gt;%1$d&lt;/big&gt;&lt;/font&gt; seconds</string>
+    <string name="sent_countdown">SMS delivery countdown</string>
 </resources>
