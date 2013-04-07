@@ -152,4 +152,26 @@
     </string-array>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+    <string-array name="delay_send_duration_values" translatable="false">
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>10000</item>
+    </string-array>
+    
+    <string-array name="delay_send_duration_entries">
+        <item>@string/delay_send_duration_recommand</item>
+        <item>4 s</item>
+        <item>5 s</item>
+        <item>6 s</item>
+        <item>7 s</item>
+        <item>8 s</item>
+        <item>9 s</item>
+        <item>10 s</item>
+    </string-array>
 </resources>
