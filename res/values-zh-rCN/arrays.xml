@@ -72,4 +72,15 @@
   </string-array>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
+  <string-array name="delay_send_duration_entries">
+        <item>@string/delay_send_duration_recommand</item>
+        <item>4秒</item>
+        <item>5秒</item>
+        <item>6秒</item>
+        <item>7秒</item>
+        <item>8秒</item>
+        <item>9秒</item>
+        <item>10秒</item>
+    </string-array>
 </resources>
