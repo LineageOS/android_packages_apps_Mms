@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//9G0\u003d",
+        "filename": "res/values-ja/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 47
+      },
+      "writtenOn": "2013-04-09T11:58:42Z",
+      "side": 1,
+      "message": "\"SoftBank??????????????\" is better, I think.",
+      "revId": "331dd23ee2216495cab775b49adbcfd9bacfd180",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
