@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//8Bs\u003d",
+        "filename": "res/values-ja/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 377,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2013-04-12T16:08:29Z",
+      "side": 1,
+      "message": "Could you remove second \"no\" like you did on patch set 4?",
+      "revId": "62a158d8471659fc535350738819578fdaa7f116",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
