@@ -375,5 +375,16 @@
 
          <receiver android:name=".quickmessage.ClearAllReceiver" />
 
+        <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
+        <activity android:name="BlacklistSetting"
+                android:exported="false"
+                android:label="@string/blacklist_title"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         </application>
 </manifest>
