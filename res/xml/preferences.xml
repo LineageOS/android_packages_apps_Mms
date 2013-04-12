@@ -245,4 +245,18 @@
             android:entries="@array/pref_entries_input_type"
             android:entryValues="@array/pref_values_input_type" />
     </PreferenceCategory>
+
+    <!-- Blacklist settings -->
+    <PreferenceCategory android:title="@string/blacklist_title">
+        <PreferenceScreen
+            android:key="button_blacklist"
+            android:title="@string/blacklist_title"
+            android:persistent="false">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.mms"
+                android:targetClass="com.android.mms.BlacklistSetting" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

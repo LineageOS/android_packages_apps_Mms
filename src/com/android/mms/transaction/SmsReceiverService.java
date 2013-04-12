@@ -24,6 +24,9 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -31,6 +34,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SqliteWrapper;
 import android.net.Uri;
@@ -40,6 +44,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.Process;
+import android.preference.PreferenceManager;
 import android.provider.Telephony.Sms;
 import android.provider.Telephony.Sms.Inbox;
 import android.provider.Telephony.Sms.Intents;
@@ -52,6 +57,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.android.internal.telephony.TelephonyIntents;
+import com.android.mms.Blacklist;
 import com.android.mms.LogTag;
 import com.android.mms.MmsConfig;
 import com.android.mms.R;
@@ -105,6 +111,12 @@ public class SmsReceiverService extends Service {
 
     private int mResultCode;
 
+    // Blacklist
+    public static final String REMOVE_BLACKLIST = "com.android.phone.REMOVE_BLACKLIST";
+    public static final String EXTRA_NUMBER = "number";
+    public static final int BL_NOTIFICATION_ID = 19992; // just something random
+    private Blacklist mBlacklist;
+
     @Override
     public void onCreate() {
         // Temporarily removed for this duplicate message track down.
@@ -120,6 +132,8 @@ public class SmsReceiverService extends Service {
 
         mServiceLooper = thread.getLooper();
         mServiceHandler = new ServiceHandler(mServiceLooper);
+
+        mBlacklist = new Blacklist(this);
     }
 
     @Override
@@ -438,9 +452,57 @@ public class SmsReceiverService extends Service {
             return replaceMessage(context, msgs, error);
         } else if (MmsConfig.isSuppressedSprintVVM(sms.getOriginatingAddress())) {
             return null;
+        } else if (isBlacklisted(sms.getOriginatingAddress())) {
+            return null;
         } else {
             return storeMessage(context, msgs, error);
         }
+    }
+
+    private boolean isBlacklisted(String number) {
+        if (TextUtils.isEmpty(number)) {
+            number = "0000";
+        }
+        int listType = mBlacklist.isListed(number);
+        if (listType != Blacklist.MATCH_NONE) {
+            if (Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE) || LogTag.DEBUG_SEND) {
+                Log.v(TAG, "Incoming message from " + number + " blocked.");
+            }
+            showBlacklistNotification(number, listType);
+            return true;
+        }
+        return false;
+    }
+
+    private void showBlacklistNotification(String number, int listType) {
+        Context ctx = getApplicationContext();
+        if (!PreferenceManager.getDefaultSharedPreferences(ctx).
+                getBoolean("button_notify", false)) {
+            return;
+        }
+
+        // Build the basic notification
+        Resources res = ctx.getResources();
+        Notification.Builder builder = new Notification.Builder(ctx);
+        builder.setSmallIcon(R.drawable.ic_block_contact_holo_dark);
+        builder.setContentTitle(res.getString(R.string.blacklist_title));
+        String message = res.getString(R.string.blacklist_notification, number);
+        builder.setContentText(message);
+
+        // Add the 'Remove block' notification action only for MATCH_LIST items since
+        // MATCH_REGEX items does not have an associated specific number to unblock
+        if (listType == Blacklist.MATCH_LIST) {
+            Intent intent = new Intent(REMOVE_BLACKLIST);
+            intent.putExtra(EXTRA_NUMBER, number);
+            PendingIntent pi = PendingIntent.getBroadcast(ctx, 0, intent,
+                    PendingIntent.FLAG_UPDATE_CURRENT);
+            CharSequence action = ctx.getText(R.string.unblock_number);
+            builder.addAction(R.drawable.ic_unblock_contact_holo_dark, action, pi);
+        }
+
+        // Post the notification
+        NotificationManager nm = (NotificationManager) ctx.getSystemService(Context.NOTIFICATION_SERVICE);
+        nm.notify(BL_NOTIFICATION_ID, builder.build());
     }
 
     /**
