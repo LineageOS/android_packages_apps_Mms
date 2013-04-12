@@ -61,4 +61,12 @@
         <item name="android:textColor">#999999</item>
     </style>
 
+    <!-- Preference Style for the phone number preferences -->
+    <style name="EditPhoneNumberPreference">
+        <item name="enableButtonText">@string/enable</item>
+        <item name="disableButtonText">@string/disable</item>
+        <item name="changeNumButtonText">@string/change_num</item>
+        <item name="confirmMode">activation</item>
+    </style>
+
 </resources>
