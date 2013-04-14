@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//6v8\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 866,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "Android design guidelines writing style guideline suggest making the title meaningful to the action.  Suggest we just say \"Delete?\"\n\nSee http://developer.android.com/design/patterns/confirming-acknowledging.html",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6v4\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 868,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "Android design guidelines writing style guideline suggest the following: \u0027Delete the selected template?\u0027\n\nSee http://developer.android.com/design/patterns/confirming-acknowledging.html",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6v0\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 869,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "Android design guidelines writing style guideline suggest the following: \u0027Delete the selected templates?\u0027\n\nI\u0027m not sure we need the count in the dialog\n\nSee http://developer.android.com/design/patterns/confirming-acknowledging.html",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6vY\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 871,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "Android design guidelines writing style guideline suggests not using words like this to scare users. Suggest we just just say \"A similar gesture is already associated with another template\"",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6vU\u003d",
+        "filename": "src/com/android/mms/templates/TemplatesListActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "You can do this with just \n\nbuilder.setNegativeButton(R.string.no, null);",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6vA\u003d",
+        "filename": "src/com/android/mms/templates/TemplatesListActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "spacing after (TextView)",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6vQ\u003d",
+        "filename": "src/com/android/mms/templates/TemplatesListActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "spacing after (TextView)",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6vM\u003d",
+        "filename": "src/com/android/mms/templates/TemplatesListActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "spacing after (ViewGroup)",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6vE\u003d",
+        "filename": "src/com/android/mms/templates/TemplatesListActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 205,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-14T19:41:22Z",
+      "side": 1,
+      "message": "spacing",
+      "revId": "431510122265d510fdf3a22722091714e685f948",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
