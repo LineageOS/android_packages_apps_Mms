@@ -62,9 +62,13 @@
     <string name="template_not_present_error">Il n\'y a pas de modèles</string>
     <string name="template_not_present_error_title">Erreur</string>
     <string name="template_select">Sélectionner un modèle</string>
-    <string name="template_cancel_confirm_title">Attention</string>
-    <string name="template_cancel_confirm_text">Le modèle va être supprimé. Continuer\u00A0?</string>
+    <string name="template_confirm_dialog_title">Supprimer\u00A0?</string>
+    <plurals name="template_confirm_delete_conversation">
+        <item quantity="one">Un modèle sera supprimé.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> modèles seront supprimés.</item>
+    </plurals>
     <string name="gestures_already_present">Attention\u00A0: Un geste similaire est associé à un autre modèle\u00A0!</string>
+    <string name="select_template">Selectioner des modèles</string>
     <string name="pref_title_templates_show_gesture">Gestes</string>
     <string name="pref_summary_templates_show_gesture">Afficher la trace du geste</string>
     <string name="pref_title_template_gestures_sensitivity">Sensibilité du geste</string>
