@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//6Lc\u003d",
+        "filename": "res/values-zh-rCN/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Why change the comment?",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6LY\u003d",
+        "filename": "res/values-zh-rCN/cm_arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Incorrectness Indentation. It\u0027s should be four white spaces not two.",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6LU\u003d",
+        "filename": "res/values-zh-rCN/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Please remove the additional empty line",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6LQ\u003d",
+        "filename": "res/values-zh-rCN/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Please remove the additional empty line",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6LM\u003d",
+        "filename": "res/values-zh-rCN/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Please remove the additional empty line",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6LI\u003d",
+        "filename": "res/values-zh-rCN/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Please remove the additional empty line",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//6LE\u003d",
+        "filename": "res/values-zh-rCN/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 4359
+      },
+      "writtenOn": "2013-04-16T11:46:39Z",
+      "side": 1,
+      "message": "Please remove the additional empty line",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
