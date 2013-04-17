@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//54g\u003d",
+        "filename": "res/values-zh-rCN/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-17T04:19:41Z",
+      "side": 1,
+      "message": "We\u0027re reverting back to the original AOSP header now that we\u0027re moving CM translations to separate files.",
+      "parentUuid": "AAAAen//6Lc\u003d",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//6LY\u003d",
         "filename": "res/values-zh-rCN/cm_arrays.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-16T11:46:39Z",
       "side": 1,
       "message": "Incorrectness Indentation. It\u0027s should be four white spaces not two.",
+      "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//52c\u003d",
+        "filename": "res/values-zh-rCN/cm_arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-17T04:19:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//6LY\u003d",
       "revId": "e557d8e62b0d4a241814e0d45df40987a7120410",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
