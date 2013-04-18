@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//5ds\u003d",
+        "filename": "res/values-zh-rCN/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 492,
+      "author": {
+        "id": 1642
+      },
+      "writtenOn": "2013-04-18T06:00:35Z",
+      "side": 1,
+      "message": "should it be put into cm-string?",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//5d0\u003d",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1642
+      },
+      "writtenOn": "2013-04-18T06:00:35Z",
+      "side": 1,
+      "message": "remove this whitespace",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//5eA\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 1642
+      },
+      "writtenOn": "2013-04-18T06:00:35Z",
+      "side": 1,
+      "message": "remove this whitespace",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//5eE\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1642
+      },
+      "writtenOn": "2013-04-18T06:00:35Z",
+      "side": 1,
+      "message": "Use english here, or remove it, you give this patch, it shows your contribution",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
