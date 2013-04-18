@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//5fE\u003d",
+        "filename": "res/layout/compose_message_activity.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-18T05:18:25Z",
+      "side": 1,
+      "message": "Formatting needs to match the other items in this layout.  Also,  the right margin needs to be 8dp.",
+      "revId": "7c3144df99f8c9bad6d7a3f077f94c5cafd91f55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
