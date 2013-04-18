@@ -34,6 +34,24 @@
       "revId": "c487a26962633d76ac20f76fe7dada68961a585a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//5Ec\u003d",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 5637
+      },
+      "writtenOn": "2013-04-18T21:24:57Z",
+      "side": 1,
+      "message": "If we use \"Emoji\" word in translation, CM can make Emoji emoticons/ideograms more recognizable in Poland ;)",
+      "parentUuid": "AAAAen//5Gk\u003d",
+      "revId": "c487a26962633d76ac20f76fe7dada68961a585a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
