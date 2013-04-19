@@ -36,8 +36,6 @@
     <string name="template_not_present_error">Δεν υπάρχουν καθορισμένα πρότυπα</string>
     <string name="template_not_present_error_title">Σφάλμα</string>
     <string name="template_select">Επιλογή προτύπου</string>
-    <string name="template_cancel_confirm_title">Προσοχή</string>
-    <string name="template_cancel_confirm_text">Το πρότυπο θα διαγραφεί. Συνέχεια;</string>
     <string name="gestures_already_present">Προσοχή: Μια παρόμοια κίνηση είναι συνδεδεμένη με ένα άλλο πρότυπο!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Μοτίβο δόνησης</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Αλλαγή μοτίβου δόνησης</string>
