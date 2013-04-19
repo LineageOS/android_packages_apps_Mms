@@ -16,6 +16,24 @@
       "revId": "7c3144df99f8c9bad6d7a3f077f94c5cafd91f55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//4/U\u003d",
+        "filename": "res/layout/compose_message_activity.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 2464
+      },
+      "writtenOn": "2013-04-19T01:02:10Z",
+      "side": 1,
+      "message": "If the right margin extends to 8 dip we\u0027re essentially back where we started at in terms of the button taking up a large amount of unneeded space. Is this a UX requirement? If I drop the text edit margin down to 0 when the emoji button is enabled it looks better, but before I submit the patch I want to make sure I\u0027m not violating a UX rule.",
+      "parentUuid": "AAAAen//5fE\u003d",
+      "revId": "7c3144df99f8c9bad6d7a3f077f94c5cafd91f55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
