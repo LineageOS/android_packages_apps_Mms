@@ -34,6 +34,24 @@
       "revId": "7c3144df99f8c9bad6d7a3f077f94c5cafd91f55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//48I\u003d",
+        "filename": "res/layout/compose_message_activity.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-04-19T02:53:20Z",
+      "side": 1,
+      "message": "Kenneth, see http://developer.android.com/design/style/metrics-grids.html and specifically the reference about the 8dp spacing.\n\nThe spacing currently looks much better to the right of the icon but the left seems too close to the edge of the screen and is inconsistent with the rest of the app and android.\n\nI suspect it is 4dp currently so adding an additional 4dp is not going to make a major difference space wise - though it will definitely make it feel less \u0027squashed up\u0027.",
+      "parentUuid": "AAAAen//4/U\u003d",
+      "revId": "7c3144df99f8c9bad6d7a3f077f94c5cafd91f55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
