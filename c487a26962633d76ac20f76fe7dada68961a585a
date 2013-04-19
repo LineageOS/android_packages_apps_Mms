@@ -52,6 +52,24 @@
       "revId": "c487a26962633d76ac20f76fe7dada68961a585a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//5AY\u003d",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 4566
+      },
+      "writtenOn": "2013-04-19T00:13:53Z",
+      "side": 1,
+      "message": "Odkad pamietam w CM zawsze bylo \u0027Emoji\u0027, popieram init0-a i tez jestem za \u0027Emoji\u0027 :) ale moze to tylko kwestia przyzwyczajenia z mojej strony.",
+      "parentUuid": "AAAAen//5Ec\u003d",
+      "revId": "c487a26962633d76ac20f76fe7dada68961a585a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
