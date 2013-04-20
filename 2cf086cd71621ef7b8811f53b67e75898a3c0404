@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//4YI\u003d",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-04-20T17:54:16Z",
+      "side": 1,
+      "message": "Une ligne blanche évitable, non ?",
+      "revId": "2cf086cd71621ef7b8811f53b67e75898a3c0404",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
