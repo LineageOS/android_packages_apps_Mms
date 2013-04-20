@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//4Q8\u003d",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-04-20T23:55:37Z",
+      "side": 1,
+      "message": "Odin shablon budet udaljon.",
+      "revId": "61bd4634f7fa231b8c14cd016f638b76d5a6812f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//4Q4\u003d",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-04-20T23:55:37Z",
+      "side": 1,
+      "message": "Budet udaleno \u003cxliff:g id\u003d\"number\" example\u003d\"15\"\u003e%1$s\u003c/xliff:g\u003e shablona\n(ov)\u003c/item\u003e",
+      "revId": "61bd4634f7fa231b8c14cd016f638b76d5a6812f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
