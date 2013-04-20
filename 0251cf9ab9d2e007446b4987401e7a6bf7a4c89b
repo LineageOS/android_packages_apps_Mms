@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//4ik\u003d",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-20T04:26:59Z",
+      "side": 1,
+      "message": "Sélectionner des modèles",
+      "revId": "0251cf9ab9d2e007446b4987401e7a6bf7a4c89b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
