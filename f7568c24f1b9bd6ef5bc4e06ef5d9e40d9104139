@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAen//4mw\u003d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-20T01:31:47Z",
+      "side": 1,
+      "message": "Please shorten commit title to:\n\n\"Mms: Allow to delay sending SMS\"\n\nYou can add the rest below. Just remember: \u0027speical\u0027 should be \u0027special\u0027",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//5ds\u003d",
         "filename": "res/values-zh-rCN/strings.xml",
         "patchSetId": 4
@@ -13,6 +30,23 @@
       "writtenOn": "2013-04-18T06:00:35Z",
       "side": 1,
       "message": "should it be put into cm-string?",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//4ms\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-20T01:31:47Z",
+      "side": 1,
+      "message": "translatable\u003d\"false\" should come after the name",
       "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
