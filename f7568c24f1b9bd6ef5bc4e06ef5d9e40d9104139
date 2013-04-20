@@ -53,6 +53,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//4bc\u003d",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 3679
+      },
+      "writtenOn": "2013-04-20T17:08:17Z",
+      "side": 1,
+      "message": "this line is pointless.",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//5d0\u003d",
         "filename": "res/xml/preferences.xml",
         "patchSetId": 4
