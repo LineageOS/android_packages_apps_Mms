@@ -63,9 +63,13 @@
     <string name="template_not_present_error">Non sono stati definiti dei modelli</string>
     <string name="template_not_present_error_title">Errore</string>
     <string name="template_select">Seleziona un modello</string>
-    <string name="template_cancel_confirm_title">Attenzione</string>
-    <string name="template_cancel_confirm_text">Il modello verrà cancellato. Continuare?</string>
-    <string name="gestures_already_present">Attenzione! Una gesture simile è associata ad un altro template</string>
+    <string name="template_confirm_dialog_title">Cencellare?</string>
+    <plurals name="template_confirm_delete_conversation">
+        <item quantity="one">Un modello sarà eliminato.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> modelli saranno eliminati.</item>
+    </plurals>
+    <string name="gestures_already_present">Una gesture simile è già associata con un altro modello</string>
+    <string name="select_template">Seleziona modelli</string>
     <string name="pref_title_templates_show_gesture">Gesture</string>
     <string name="pref_summary_templates_show_gesture">Mostra traccia della gesture</string>
     <string name="pref_title_template_gestures_sensitivity">Sensibilità gesture</string>
