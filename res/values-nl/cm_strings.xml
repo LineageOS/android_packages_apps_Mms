@@ -87,4 +87,10 @@
     <string name="pref_unicode_stripping_leave_intact">Tekens intact laten</string>
     <string name="pref_unicode_stripping_non_encodable">Niet-encodeerbare tekens omzetten</string>
     <string name="pref_unicode_stripping_all">Alle Unicode-tekens omzetten</string>
+    <string name="template_confirm_dialog_title">Verwijderen?</string>
+    <string name="select_template">Kies sjabloon</string>
+    <string name="pref_title_enable_quick_emojis">Snelle Emoji-knop</string>
+    <string name="pref_summary_enable_quick_emojis">Knop tonen naast tekstinvoergebied om snel toegang te krijgen tot Emoji\'s</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank-Emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">SoftBank-Emoji\'s gebruiken</string>
 </resources>
