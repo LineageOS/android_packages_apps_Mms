@@ -110,4 +110,7 @@
 
     <string name="pref_title_enable_softbank_encoding">Emotikony SoftBank</string>
     <string name="pref_summary_enable_softbank_encoding">Używaj kodowania SoftBank dla emotikon</string>
+
+    <string name="pref_title_enable_quick_emojis">Przycisk szybkich emotikon</string>
+    <string name="pref_summary_enable_quick_emojis">Wyświetlaj przycisk szybkiego dostępu do emotikon obok pola tekstowego</string>
 </resources>
