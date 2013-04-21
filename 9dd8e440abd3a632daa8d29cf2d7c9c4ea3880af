@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//364\u003d",
+        "filename": "res/values-zh-rCN/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 3679
+      },
+      "writtenOn": "2013-04-21T15:06:08Z",
+      "side": 1,
+      "message": "remove this, because this unneeded. All translation in separate commit.",
+      "revId": "9dd8e440abd3a632daa8d29cf2d7c9c4ea3880af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
