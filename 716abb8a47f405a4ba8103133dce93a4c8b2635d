@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//4Ps\u003d",
+        "filename": "res/values-cs/cm_arrays.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T00:17:33Z",
+      "side": 1,
+      "message": "Should be on two lines, not?",
+      "revId": "716abb8a47f405a4ba8103133dce93a4c8b2635d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//4Po\u003d",
+        "filename": "res/values-cs/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-21T00:17:33Z",
+      "side": 1,
+      "message": "See cm_arrays.xml",
+      "revId": "716abb8a47f405a4ba8103133dce93a4c8b2635d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
