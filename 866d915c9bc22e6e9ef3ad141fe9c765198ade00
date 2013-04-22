@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//3M8\u003d",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-04-22T20:44:13Z",
+      "side": 1,
+      "message": "[...] dostepu do emotikon Emoji obok pola [...]?\n\nIm suggesting this, as we agreed last time that we will call Emojis as Emojis, not emoticons.",
+      "revId": "866d915c9bc22e6e9ef3ad141fe9c765198ade00",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
