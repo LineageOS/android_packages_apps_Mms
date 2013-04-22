@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//3VE\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-22T17:17:37Z",
+      "side": 1,
+      "message": "- Geen sjablonen ingesteld",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//3VY\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-22T17:17:37Z",
+      "side": 1,
+      "message": "- Sjablonen selecteren\n\nZie r.39\n\nDit moet meervoud zijn omdat het om de te verwijderen sjablonen gaat\n\n\nIk mis de Plurals die bij deze optie horen\n\n\u003cplurals name\u003d\"template_confirm_delete_conversation\"\u003e\n        \u003citem quantity\u003d\"one\"\u003eOne template will be deleted.\u003c/item\u003e\n        \u003citem quantity\u003d\"other\"\u003e\u003cxliff:g id\u003d\"number\" example\u003d\"15\"\u003e%1$s\u003c/xliff:g\u003e templates will be deleted.\u003c/item\u003e\n    \u003c/plurals\u003e",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//3U0\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-22T17:17:37Z",
+      "side": 1,
+      "message": "- Emoji-knop\n\nAnders lijken het net \"snelle emoji\u0027s\" :-p.\nZo is het toch duidelijk genoeg?",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//3Uw\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-22T17:17:37Z",
+      "side": 1,
+      "message": "- Knop tonen naast tekstinvoer om snel toegang te krijgen tot Emoji\\\u0027s",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//3Ug\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-22T17:17:37Z",
+      "side": 1,
+      "message": "ik zou hier wel t woord \"encoding\" bij laten, omdat het niet andere smileys zijn, maar een andere codering.\n\nhttp://en.wikipedia.org/wiki/Emoji#SoftBank_Encoding\n\n- SoftBank-codering voor Emoji\\\u0027s gebruiken",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
