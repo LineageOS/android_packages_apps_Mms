@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//3h0\u003d",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 3589
+      },
+      "writtenOn": "2013-04-22T02:19:17Z",
+      "side": 1,
+      "message": "C\u0027est \"Sélectionner\" avec double \u0027n\u0027, n\u0027est-ce pas ?\n\nhttps://fr.wiktionary.org/wiki/s%C3%A9lectionner",
+      "revId": "4608d335ced1743d2b7942932f8fdf98d61a1653",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
