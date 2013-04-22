@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAen//3UM\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-04-22T17:19:31Z",
+      "side": 1,
+      "message": "- Sjabloon invoegen\n\nnet zoals je smileys invoegt, kan je ook een sjabloon invoegen, invoeren heb je al eerder gegaan toen je de sjablonen maakte.",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//3VE\u003d",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
