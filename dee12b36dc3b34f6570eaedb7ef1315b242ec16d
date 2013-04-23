@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAe3///1M\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-23T20:03:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//3UM\u003d",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//3VE\u003d",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-22T17:17:37Z",
       "side": 1,
       "message": "- Geen sjablonen ingesteld",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAe3///1I\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-23T20:03:30Z",
+      "side": 1,
+      "message": "Done (voor hieronder)",
+      "parentUuid": "AAAAen//3VE\u003d",
       "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAe3///1E\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-23T20:03:30Z",
+      "side": 1,
+      "message": "Done; ik zal ernaar kijken.",
+      "parentUuid": "AAAAen//3VY\u003d",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//3U0\u003d",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2013-04-22T17:17:37Z",
       "side": 1,
       "message": "- Emoji-knop\n\nAnders lijken het net \"snelle emoji\u0027s\" :-p.\nZo is het toch duidelijk genoeg?",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAe3///1A\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-23T20:03:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//3U0\u003d",
       "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAe3///08\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-23T20:03:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//3Uw\u003d",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//3Ug\u003d",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -98,6 +188,24 @@
       "writtenOn": "2013-04-22T17:17:37Z",
       "side": 1,
       "message": "ik zou hier wel t woord \"encoding\" bij laten, omdat het niet andere smileys zijn, maar een andere codering.\n\nhttp://en.wikipedia.org/wiki/Emoji#SoftBank_Encoding\n\n- SoftBank-codering voor Emoji\\\u0027s gebruiken",
+      "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAe3///04\u003d",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-23T20:03:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//3Ug\u003d",
       "revId": "dee12b36dc3b34f6570eaedb7ef1315b242ec16d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
