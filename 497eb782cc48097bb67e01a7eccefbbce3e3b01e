@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfX///rc\u003d",
+        "filename": "res/values-nb/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-05-02T00:47:01Z",
+      "side": 1,
+      "message": "\\\u0027Hurtigsvar\\\u0027 instead of \u0027\\Hurtigsvar\\\u0027",
+      "revId": "497eb782cc48097bb67e01a7eccefbbce3e3b01e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
