@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfX///iA\u003d",
+        "filename": "src/com/android/mms/ui/MessageUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 437,
+      "author": {
+        "id": 596
+      },
+      "writtenOn": "2013-05-02T10:49:13Z",
+      "side": 1,
+      "message": "Requires null check for mmp.\n\nI believe that devices that set config_mms_content_disposition_support to false create an instance where pdu headers are ignored.\n\nSee:\nhttps://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/config.xml#L804",
+      "revId": "92cef42dff67e3b9c1fdc2139383c106f5253982",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
