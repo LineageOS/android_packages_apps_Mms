@@ -1522,7 +1522,7 @@ public class WorkingMessage {
 
         Uri uri;
         try {
-            if (cursor.moveToFirst()) {
+            if (cursor != null && cursor.moveToFirst()) {
                 uri = ContentUris.withAppendedId(Mms.Draft.CONTENT_URI,
                         cursor.getLong(MMS_ID_INDEX));
                 String subject = MessageUtils.extractEncStrFromCursor(cursor, MMS_SUBJECT_INDEX,
@@ -1536,7 +1536,8 @@ public class WorkingMessage {
                 return uri;
             }
         } finally {
-            cursor.close();
+            if (cursor != null)
+                cursor.close();
         }
 
         return null;
