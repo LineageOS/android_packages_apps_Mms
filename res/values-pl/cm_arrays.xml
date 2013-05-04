@@ -13,19 +13,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-  <string-array name="pref_mms_notification_vibrate_pattern_entries">
-    <item>Normalna</item>
-    <item>Średnia wibracja</item>
-    <item>Długa wibracja</item>
-    <item>Kilkukrotna krótka</item>
-    <item>Kilkukrotna długa</item>
-    <item>@string/pref_title_mms_notification_vibrate_custom</item>
-  </string-array>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="pref_mms_notification_vibrate_pattern_entries">
+        <item>Normalna</item>
+        <item>Średnia wibracja</item>
+        <item>Długa wibracja</item>
+        <item>Kilkukrotna krótka</item>
+        <item>Kilkukrotna długa</item>
+        <item>@string/pref_title_mms_notification_vibrate_custom</item>
+    </string-array>
 </resources>
-
-

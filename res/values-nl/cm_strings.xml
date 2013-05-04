@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
     <string name="qm_mark_read">Gelezen</string>
     <string name="pref_title_sms_split_counter">Sms-teller</string>
     <string name="pref_summary_sms_split_counter">Teller toevoegen aan sms-berichten, zoals: (1/2)</string>
-     <string name="prefs_templates_settings">Sms-sjablonen</string>
+    <string name="prefs_templates_settings">Sms-sjablonen</string>
     <string name="pref_title_templates_manage">Sjablonen</string>
     <string name="pref_summary_templates_manage">Sms-sjablonen beheren</string>
     <string name="pref_title_templates_show_gesture">Gebaar</string>
