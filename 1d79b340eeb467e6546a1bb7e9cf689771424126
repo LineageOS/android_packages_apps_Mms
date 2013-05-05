@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfX//+Vg\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1521,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-05-05T18:21:01Z",
+      "side": 1,
+      "message": "it may be better to do \n\nif (cursor \u003d\u003d null) {\n    return null;\n}\n\nhere and remove the checks below since the try block only needs to be attempted if that check passes",
+      "revId": "1d79b340eeb467e6546a1bb7e9cf689771424126",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfX//+Vc\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1525,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-05-05T18:21:01Z",
+      "side": 1,
+      "message": "see above",
+      "revId": "1d79b340eeb467e6546a1bb7e9cf689771424126",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfX//+VY\u003d",
+        "filename": "src/com/android/mms/data/WorkingMessage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1539,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-05-05T18:21:01Z",
+      "side": 1,
+      "message": "see above",
+      "revId": "1d79b340eeb467e6546a1bb7e9cf689771424126",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfX//+Vs\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4389,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-05-05T18:21:01Z",
+      "side": 1,
+      "message": "why  no null check here?",
+      "revId": "1d79b340eeb467e6546a1bb7e9cf689771424126",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfX//+Vw\u003d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4449,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-05-05T18:21:01Z",
+      "side": 1,
+      "message": "Cursor \u003d\u003d null is checked already 3 lines above this",
+      "revId": "1d79b340eeb467e6546a1bb7e9cf689771424126",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
