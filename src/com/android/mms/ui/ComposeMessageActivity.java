@@ -2106,6 +2106,11 @@ public class ComposeMessageActivity extends Activity
             params.setMargins(0, 0, 0, 0);
             mTextEditor.setLayoutParams(params);
         }
+        
+        //set text size of editor
+        mTextEditor.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_COMPOSE_TEXT_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_COMPOSE_TEXT_SIZE_DEFAULT))));
 
         initialize(savedInstanceState, 0);
 

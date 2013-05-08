@@ -87,8 +87,8 @@ public class MessageListItem extends LinearLayout implements
     private static final boolean DEBUG = false;
     private static final boolean DEBUG_DONT_LOAD_IMAGES = false;
 
-    static final int MSG_LIST_EDIT    = 1;
-    static final int MSG_LIST_PLAY    = 2;
+    static final int MSG_LIST_EDIT = 1;
+    static final int MSG_LIST_PLAY = 2;
     static final int MSG_LIST_DETAILS = 3;
 
     private View mMmsView;
@@ -108,16 +108,18 @@ public class MessageListItem extends LinearLayout implements
     private QuickContactDivot mAvatar;
     static private Drawable sDefaultContactImage;
     private Presenter mPresenter;
-    private int mPosition;      // for debugging
+    private int mPosition; // for debugging
     private ImageLoadedCallback mImageLoadedCallback;
     private boolean mMultiRecipients;
+    private SharedPreferences prefs;
 
     public MessageListItem(Context context) {
         super(context);
         mDefaultCountryIso = MmsApp.getApplication().getCurrentCountryIso();
 
         if (sDefaultContactImage == null) {
-            sDefaultContactImage = context.getResources().getDrawable(R.drawable.ic_contact_picture);
+            sDefaultContactImage = context.getResources()
+                    .getDrawable(R.drawable.ic_contact_picture);
         }
     }
 
@@ -129,7 +131,8 @@ public class MessageListItem extends LinearLayout implements
         mDefaultCountryIso = MmsApp.getApplication().getCurrentCountryIso();
 
         if (sDefaultContactImage == null) {
-            sDefaultContactImage = context.getResources().getDrawable(R.drawable.ic_contact_picture);
+            sDefaultContactImage = context.getResources()
+                    .getDrawable(R.drawable.ic_contact_picture);
         }
     }
 
@@ -144,12 +147,25 @@ public class MessageListItem extends LinearLayout implements
         mDetailsIndicator = (ImageView) findViewById(R.id.details_indicator);
         mAvatar = (QuickContactDivot) findViewById(R.id.avatar);
         mMessageBlock = findViewById(R.id.message_block);
+
+        // get preferences
+        prefs = PreferenceManager
+                .getDefaultSharedPreferences(super.getContext());
+
+        // set text sizes
+        mDateView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_DATE_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_DATE_SIZE_DEFAULT))));
+        mBodyTextView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_TEXT_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_TEXT_SIZE_DEFAULT))));
+
     }
 
     public void bind(MessageItem msgItem, boolean convHasMultiRecipients, int position) {
         if (DEBUG) {
             Log.v(TAG, "bind for item: " + position + " old: " +
-                   (mMessageItem != null ? mMessageItem.toString() : "NULL" ) +
+                    (mMessageItem != null ? mMessageItem.toString() : "NULL") +
                     " new " + msgItem.toString());
         }
         boolean sameItem = mMessageItem != null && mMessageItem.mMsgId == msgItem.mMsgId;
@@ -159,10 +175,12 @@ public class MessageListItem extends LinearLayout implements
         mMultiRecipients = convHasMultiRecipients;
 
         setLongClickable(false);
-        setClickable(false);    // let the list view handle clicks on the item normally. When
-                                // clickable is true, clicks bypass the listview and go straight
-                                // to this listitem. We always want the listview to handle the
-                                // clicks first.
+        /*
+         * let the list view handle clicks on the item normally. When clickable
+         * is true, clicks bypass the listview and go straight to this listitem.
+         * We always want the listview to handle the clicks first.
+         */
+        setClickable(false);
 
         switch (msgItem.mMessageType) {
             case PduHeaders.MESSAGE_TYPE_NOTIFICATION_IND:
@@ -175,18 +193,25 @@ public class MessageListItem extends LinearLayout implements
     }
 
     public void unbind() {
-        // Clear all references to the message item, which can contain attachments and other
-        // memory-intensive objects
+        /*
+         * Clear all references to the message item, which can contain
+         * attachments and other memory-intensive objects
+         */
         if (mImageView != null) {
-            // Because #setOnClickListener may have set the listener to an object that has the
-            // message item in its closure.
+            /*
+             * Because #setOnClickListener may have set the listener to an
+             * object that has the message item in its closure.
+             */
             mImageView.setOnClickListener(null);
         }
         if (mSlideShowButton != null) {
             // Because #drawPlaybackButton sets the tag to mMessageItem
             mSlideShowButton.setTag(null);
         }
-        // leave the presenter in case it's needed when rebound to a different MessageItem.
+        /*
+         * Leave the presenter in case it's needed when rebound to a different
+         * MessageItem.
+         */
         if (mPresenter != null) {
             mPresenter.cancelBackgroundLoading();
         }
@@ -204,13 +229,13 @@ public class MessageListItem extends LinearLayout implements
         showMmsView(false);
 
         String msgSizeText = mContext.getString(R.string.message_size_label)
-                                + String.valueOf((mMessageItem.mMessageSize + 1023) / 1024)
-                                + mContext.getString(R.string.kilobyte);
+                + String.valueOf((mMessageItem.mMessageSize + 1023) / 1024)
+                + mContext.getString(R.string.kilobyte);
 
         mBodyTextView.setText(formatMessage(mMessageItem, null,
-                                            mMessageItem.mSubject,
-                                            mMessageItem.mHighlight,
-                                            mMessageItem.mTextContentType));
+                mMessageItem.mSubject,
+                mMessageItem.mHighlight,
+                mMessageItem.mTextContentType));
 
         mDateView.setText(buildTimestampLine(msgSizeText + " " + mMessageItem.mTimestamp));
 
@@ -225,9 +250,12 @@ public class MessageListItem extends LinearLayout implements
                 boolean dataSuspended = (MmsApp.getApplication().getTelephonyManager()
                         .getDataState() == TelephonyManager.DATA_SUSPENDED);
 
-                // If we're going to automatically start downloading the mms attachment, then
-                // don't bother showing the download button for an instant before the actual
-                // download begins. Instead, show downloading as taking place.
+                /*
+                 * If we're going to automatically start downloading the mms
+                 * attachment, then don't bother showing the download button for
+                 * an instant before the actual download begins. Instead, show
+                 * downloading as taking place.
+                 */
                 if (autoDownload && !dataSuspended) {
                     showDownloadingAttachment();
                     break;
@@ -266,7 +294,10 @@ public class MessageListItem extends LinearLayout implements
             // Never show "Me" for messages I sent.
             return timestamp;
         }
-        // This is a group conversation, show the sender's name on the same line as the timestamp.
+        /*
+         * This is a group conversation, show the sender's name on the same line
+         * as the timestamp.
+         */
         return mContext.getString(R.string.message_timestamp_format, mMessageItem.mContact,
                 timestamp);
     }
@@ -303,44 +334,53 @@ public class MessageListItem extends LinearLayout implements
             mDownloadButton.setVisibility(View.GONE);
             mDownloadingLabel.setVisibility(View.GONE);
         }
-        // Since the message text should be concatenated with the sender's
-        // address(or name), I have to display it here instead of
-        // displaying it by the Presenter.
+        /*
+         * Since the message text should be concatenated with the sender's
+         * address(or name), I have to display it here instead of displaying it
+         * by the Presenter.
+         */
         mBodyTextView.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
 
         boolean haveLoadedPdu = mMessageItem.isSms() || mMessageItem.mSlideshow != null;
-        // Here we're avoiding reseting the avatar to the empty avatar when we're rebinding
-        // to the same item. This happens when there's a DB change which causes the message item
-        // cache in the MessageListAdapter to get cleared. When an mms MessageItem is newly
-        // created, it has no info in it except the message id. The info is eventually loaded
-        // and bindCommonMessage is called again (see onPduLoaded below). When we haven't loaded
-        // the pdu, we don't want to call updateAvatarView because it
-        // will set the avatar to the generic avatar then when this method is called again
-        // from onPduLoaded, it will reset to the real avatar. This test is to avoid that flash.
+        /*
+         * Here we're avoiding reseting the avatar to the empty avatar when
+         * we're rebinding to the same item. This happens when there's a DB
+         * change which causes the message item cache in the MessageListAdapter
+         * to get cleared. When an mms MessageItem is newly created, it has no
+         * info in it except the message id. The info is eventually loaded and
+         * bindCommonMessage is called again (see onPduLoaded below). When we
+         * haven't loaded the pdu, we don't want to call updateAvatarView
+         * because it will set the avatar to the generic avatar then when this
+         * method is called again from onPduLoaded, it will reset to the real
+         * avatar. This test is to avoid that flash.
+         */
         if (!sameItem || haveLoadedPdu) {
             boolean isSelf = Sms.isOutgoingFolder(mMessageItem.mBoxId);
             String addr = isSelf ? null : mMessageItem.mAddress;
             updateAvatarView(addr, isSelf);
         }
 
-        // Get and/or lazily set the formatted message from/on the
-        // MessageItem.  Because the MessageItem instances come from a
-        // cache (currently of size ~50), the hit rate on avoiding the
-        // expensive formatMessage() call is very high.
+        /*
+         * Get and/or lazily set the formatted message from/on the MessageItem.
+         * Because the MessageItem instances come from a cache (currently of
+         * size ~50), the hit rate on avoiding the expensive formatMessage()
+         * call is very high.
+         */
         CharSequence formattedMessage = mMessageItem.getCachedFormattedMessage();
         if (formattedMessage == null) {
             formattedMessage = formatMessage(mMessageItem,
-                                             mMessageItem.mBody,
-                                             mMessageItem.mSubject,
-                                             mMessageItem.mHighlight,
-                                             mMessageItem.mTextContentType);
+                    mMessageItem.mBody,
+                    mMessageItem.mSubject,
+                    mMessageItem.mHighlight,
+                    mMessageItem.mTextContentType);
             mMessageItem.setCachedFormattedMessage(formattedMessage);
         }
         if (!sameItem || haveLoadedPdu) {
             mBodyTextView.setText(formattedMessage);
         }
 
-        // Debugging code to put the URI of the image attachment in the body of the list item.
+        // Debugging code to put the URI of the image attachment in the body of
+        // the list item.
         if (DEBUG) {
             String debugText = null;
             if (mMessageItem.mSlideshow == null) {
@@ -358,12 +398,14 @@ public class MessageListItem extends LinearLayout implements
             mBodyTextView.setText(mPosition + ": " + debugText);
         }
 
-        // If we're in the process of sending a message (i.e. pending), then we show a "SENDING..."
-        // string in place of the timestamp.
+        /*
+         * If we're in the process of sending a message (i.e. pending), then we
+         * show a "SENDING..." string in place of the timestamp.
+         */
         if (!sameItem || haveLoadedPdu) {
             mDateView.setText(buildTimestampLine(mMessageItem.isSending() ?
                     mContext.getResources().getString(R.string.sending_message) :
-                        mMessageItem.mTimestamp));
+                    mMessageItem.mTimestamp));
         }
         if (mMessageItem.isSms()) {
             showMmsView(false);
@@ -388,8 +430,10 @@ public class MessageListItem extends LinearLayout implements
                 mMessageItem.setOnPduLoaded(new MessageItem.PduLoadedCallback() {
                     public void onPduLoaded(MessageItem messageItem) {
                         if (DEBUG) {
-                            Log.v(TAG, "PduLoadedCallback in MessageListItem for item: " + mPosition +
-                                    " " + (mMessageItem == null ? "NULL" : mMessageItem.toString()) +
+                            Log.v(TAG, "PduLoadedCallback in MessageListItem for item: "
+                                    + mPosition +
+                                    " " + (mMessageItem == null ? "NULL" : mMessageItem.toString())
+                                    +
                                     " passed in item: " +
                                     (messageItem == null ? "NULL" : messageItem.toString()));
                         }
@@ -439,8 +483,10 @@ public class MessageListItem extends LinearLayout implements
             if (DEBUG_DONT_LOAD_IMAGES) {
                 return;
             }
-            // Make sure we're still pointing to the same message. The list item could have
-            // been recycled.
+            /*
+             * Make sure we're still pointing to the same message. The list item
+             * could have been recycled.
+             */
             MessageItem msgItem = mListItem.mMessageItem;
             if (msgItem != null && msgItem.getMessageId() == mMessageId) {
                 if (imageLoaded.mIsVideo) {
@@ -482,10 +528,11 @@ public class MessageListItem extends LinearLayout implements
     private void showMmsView(boolean visible) {
         if (mMmsView == null) {
             mMmsView = findViewById(R.id.mms_view);
-            // if mMmsView is still null here, that mean the mms section hasn't been inflated
+            // if mMmsView is still null here, that mean the mms section hasn't
+            // been inflated
 
             if (visible && mMmsView == null) {
-                //inflate the mms view_stub
+                // inflate the mms view_stub
                 View mmsStub = findViewById(R.id.mms_layout_view_stub);
                 mmsStub.setVisibility(View.VISIBLE);
                 mMmsView = findViewById(R.id.mms_view);
@@ -505,13 +552,12 @@ public class MessageListItem extends LinearLayout implements
 
     private void inflateDownloadControls() {
         if (mDownloadButton == null) {
-            //inflate the download controls
+            // inflate the download controls
             findViewById(R.id.mms_downloading_view_stub).setVisibility(VISIBLE);
             mDownloadButton = (Button) findViewById(R.id.btn_download_msg);
             mDownloadingLabel = (TextView) findViewById(R.id.label_downloading);
         }
     }
-
 
     private LineHeightSpan mSpan = new LineHeightSpan() {
         @Override
@@ -522,13 +568,13 @@ public class MessageListItem extends LinearLayout implements
     };
 
     TextAppearanceSpan mTextSmallSpan =
-        new TextAppearanceSpan(mContext, android.R.style.TextAppearance_Small);
+            new TextAppearanceSpan(mContext, android.R.style.TextAppearance_Small);
 
-    ForegroundColorSpan mColorSpan = null;  // set in ctor
+    ForegroundColorSpan mColorSpan = null; // set in ctor
 
     private CharSequence formatMessage(MessageItem msgItem, String body,
-                                       String subject, Pattern highlight,
-                                       String contentType) {
+            String subject, Pattern highlight,
+            String contentType) {
         SpannableStringBuilder buf = new SpannableStringBuilder();
 
         SharedPreferences prefs = PreferenceManager
@@ -543,11 +589,19 @@ public class MessageListItem extends LinearLayout implements
                 EmojiParser emojiParser = EmojiParser.getInstance();
                 smilizedSubject = emojiParser.addEmojiSpans(smilizedSubject);
             }
-            // Can't use the normal getString() with extra arguments for string replacement
-            // because it doesn't preserve the SpannableText returned by addSmileySpans.
-            // We have to manually replace the %s with our text.
-            buf.append(TextUtils.replace(mContext.getResources().getString(R.string.inline_subject),
-                    new String[] { "%s" }, new CharSequence[] { smilizedSubject }));
+            /*
+             * Can't use the normal getString() with extra arguments for string
+             * replacement because it doesn't preserve the SpannableText
+             * returned by addSmileySpans. We have to manually replace the %s
+             * with our text.
+             */
+            buf.append(TextUtils.replace(
+                    mContext.getResources().getString(R.string.inline_subject),
+                    new String[] {
+                        "%s"
+                    }, new CharSequence[] {
+                        smilizedSubject
+                    }));
         }
 
         if (!TextUtils.isEmpty(body)) {
@@ -589,11 +643,14 @@ public class MessageListItem extends LinearLayout implements
                 mSlideShowButton.setVisibility(View.VISIBLE);
                 setLongClickable(true);
 
-                // When we show the mSlideShowButton, this list item's onItemClickListener doesn't
-                // get called. (It gets set in ComposeMessageActivity:
-                // mMsgListView.setOnItemClickListener) Here we explicitly set the item's
-                // onClickListener. It allows the item to respond to embedded html links and at the
-                // same time, allows the slide show play button to work.
+                /*
+                 * When we show the mSlideShowButton, this list item's
+                 * onItemClickListener doesn't get called. (It gets set in
+                 * ComposeMessageActivity: mMsgListView.setOnItemClickListener)
+                 * Here we explicitly set the item's onClickListener. It allows
+                 * the item to respond to embedded html links and at the same
+                 * time, allows the slide show play button to work.
+                 */
                 setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -617,66 +674,77 @@ public class MessageListItem extends LinearLayout implements
         if (mHandler != null) {
             Message msg = Message.obtain(mHandler, message);
             msg.obj = messageItem;
-            msg.sendToTarget(); // See ComposeMessageActivity.mMessageListItemHandler.handleMessage
+            msg.sendToTarget(); // See
+                                // ComposeMessageActivity.mMessageListItemHandler.handleMessage
         }
     }
 
     public void onMessageListItemClick() {
-        // If the message is a failed one, clicking it should reload it in the compose view,
-        // regardless of whether it has links in it
+        /*
+         * If the message is a failed one, clicking it should reload it in the
+         * compose view, regardless of whether it has links in it.
+         */
         if (mMessageItem != null &&
                 mMessageItem.isOutgoingMessage() &&
-                mMessageItem.isFailedMessage() ) {
+                mMessageItem.isFailedMessage()) {
 
-            // Assuming the current message is a failed one, reload it into the compose view so
-            // the user can resend it.
+            /*
+             * Assuming the current message is a failed one, reload it into the
+             * compose view so the user can resend it.
+             */
             sendMessage(mMessageItem, MSG_LIST_EDIT);
             return;
         }
 
-        // Check for links. If none, do nothing; if 1, open it; if >1, ask user to pick one
+        // Check for links. If none, do nothing; if 1, open it; if >1, ask user
+        // to pick one
         final URLSpan[] spans = mBodyTextView.getUrls();
 
         if (spans.length == 0) {
-            sendMessage(mMessageItem, MSG_LIST_DETAILS);    // show the message details dialog
+            sendMessage(mMessageItem, MSG_LIST_DETAILS); // show the message
+                                                         // details dialog
         } else if (spans.length == 1) {
             spans[0].onClick(mBodyTextView);
         } else {
             ArrayAdapter<URLSpan> adapter =
-                new ArrayAdapter<URLSpan>(mContext, android.R.layout.select_dialog_item, spans) {
-                @Override
-                public View getView(int position, View convertView, ViewGroup parent) {
-                    View v = super.getView(position, convertView, parent);
-                    try {
-                        URLSpan span = getItem(position);
-                        String url = span.getURL();
-                        Uri uri = Uri.parse(url);
-                        TextView tv = (TextView) v;
-                        Drawable d = mContext.getPackageManager().getActivityIcon(
-                                new Intent(Intent.ACTION_VIEW, uri));
-                        if (d != null) {
-                            d.setBounds(0, 0, d.getIntrinsicHeight(), d.getIntrinsicHeight());
-                            tv.setCompoundDrawablePadding(10);
-                            tv.setCompoundDrawables(d, null, null, null);
-                        }
-                        final String telPrefix = "tel:";
-                        if (url.startsWith(telPrefix)) {
-                            if ((mDefaultCountryIso == null) || mDefaultCountryIso.isEmpty()) {
-                                url = url.substring(telPrefix.length());
+                    new ArrayAdapter<URLSpan>(mContext, android.R.layout.select_dialog_item, spans) {
+                        @Override
+                        public View getView(int position, View convertView, ViewGroup parent) {
+                            View v = super.getView(position, convertView, parent);
+                            try {
+                                URLSpan span = getItem(position);
+                                String url = span.getURL();
+                                Uri uri = Uri.parse(url);
+                                TextView tv = (TextView) v;
+                                Drawable d = mContext.getPackageManager().getActivityIcon(
+                                        new Intent(Intent.ACTION_VIEW, uri));
+                                if (d != null) {
+                                    d.setBounds(0, 0, d.getIntrinsicHeight(),
+                                            d.getIntrinsicHeight());
+                                    tv.setCompoundDrawablePadding(10);
+                                    tv.setCompoundDrawables(d, null, null, null);
+                                }
+                                final String telPrefix = "tel:";
+                                if (url.startsWith(telPrefix)) {
+                                    if ((mDefaultCountryIso == null)
+                                            || mDefaultCountryIso.isEmpty()) {
+                                        url = url.substring(telPrefix.length());
+                                    }
+                                    else {
+                                        url = PhoneNumberUtils.formatNumber(
+                                                url.substring(telPrefix.length()),
+                                                mDefaultCountryIso);
+                                    }
+                                }
+                                tv.setText(url);
+                            } catch (android.content.pm.PackageManager.NameNotFoundException ex) {
+                                // it's ok if we're unable to set the drawable
+                                // for this view - the user
+                                // can still use it
                             }
-                            else {
-                                url = PhoneNumberUtils.formatNumber(
-                                        url.substring(telPrefix.length()), mDefaultCountryIso);
-                            }
+                            return v;
                         }
-                        tv.setText(url);
-                    } catch (android.content.pm.PackageManager.NameNotFoundException ex) {
-                        // it's ok if we're unable to set the drawable for this view - the user
-                        // can still use it
-                    }
-                    return v;
-                }
-            };
+                    };
 
             AlertDialog.Builder b = new AlertDialog.Builder(mContext);
 
@@ -706,7 +774,7 @@ public class MessageListItem extends LinearLayout implements
     }
 
     private void setOnClickListener(final MessageItem msgItem) {
-        switch(msgItem.mAttachmentType) {
+        switch (msgItem.mAttachmentType) {
             case WorkingMessage.IMAGE:
             case WorkingMessage.VIDEO:
                 mImageView.setOnClickListener(new OnClickListener() {
@@ -726,7 +794,7 @@ public class MessageListItem extends LinearLayout implements
             default:
                 mImageView.setOnClickListener(null);
                 break;
-            }
+        }
     }
 
     private void drawRightStatusIndicator(MessageItem msgItem) {
@@ -738,11 +806,15 @@ public class MessageListItem extends LinearLayout implements
             mLockedIndicator.setVisibility(View.GONE);
         }
 
-        // Delivery icon - we can show a failed icon for both sms and mms, but for an actual
-        // delivery, we only show the icon for sms. We don't have the information here in mms to
-        // know whether the message has been delivered. For mms, msgItem.mDeliveryStatus set
-        // to MessageItem.DeliveryStatus.RECEIVED simply means the setting requesting a
-        // delivery report was turned on when the message was sent. Yes, it's confusing!
+        /*
+         * Delivery icon - we can show a failed icon for both sms and mms, but
+         * for an actual delivery, we only show the icon for sms. We don't have
+         * the information here in mms to know whether the message has been
+         * delivered. For mms, msgItem.mDeliveryStatus set to
+         * MessageItem.DeliveryStatus.RECEIVED simply means the setting
+         * requesting a delivery report was turned on when the message was sent.
+         * Yes, it's confusing!
+         */
         if ((msgItem.isOutgoingMessage() && msgItem.isFailedMessage()) ||
                 msgItem.mDeliveryStatus == MessageItem.DeliveryStatus.FAILED) {
             mDeliveredIndicator.setImageResource(R.drawable.ic_list_alert_sms_failed);
@@ -755,13 +827,16 @@ public class MessageListItem extends LinearLayout implements
             mDeliveredIndicator.setVisibility(View.GONE);
         }
 
-        // Message details icon - this icon is shown both for sms and mms messages. For mms,
-        // we show the icon if the read report or delivery report setting was set when the
-        // message was sent. Showing the icon tells the user there's more information
-        // by selecting the "View report" menu.
+        /*
+         * Message details icon - this icon is shown both for sms and mms
+         * messages. For mms, we show the icon if the read report or delivery
+         * report setting was set when the message was sent. Showing the icon
+         * tells the user there's more information by selecting the
+         * "View report" menu.
+         */
         if (msgItem.mDeliveryStatus == MessageItem.DeliveryStatus.INFO || msgItem.mReadReport
                 || (msgItem.isMms() &&
-                        msgItem.mDeliveryStatus == MessageItem.DeliveryStatus.RECEIVED)) {
+                msgItem.mDeliveryStatus == MessageItem.DeliveryStatus.RECEIVED)) {
             mDetailsIndicator.setImageResource(R.drawable.ic_sms_mms_details);
             mDetailsIndicator.setVisibility(View.VISIBLE);
         } else {
