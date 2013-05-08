@@ -37,6 +37,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.android.mms.LogTag;
+import com.android.mms.MmsApp;
 import com.android.mms.R;
 import com.android.mms.data.Contact;
 import com.android.mms.data.ContactList;
@@ -48,7 +49,7 @@ import com.android.mms.util.SmileyParser;
  * This class manages the view for given conversation.
  */
 public class ConversationListItem extends RelativeLayout implements Contact.UpdateListener,
-            Checkable {
+        Checkable {
     private static final String TAG = "ConversationListItem";
     private static final boolean DEBUG = false;
 
@@ -58,6 +59,7 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
     private View mAttachmentView;
     private View mErrorIndicator;
     private QuickContactBadge mAvatarView;
+    private SharedPreferences prefs;
 
     static private Drawable sDefaultContactImage;
 
@@ -76,7 +78,8 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         super(context, attrs);
 
         if (sDefaultContactImage == null) {
-            sDefaultContactImage = context.getResources().getDrawable(R.drawable.ic_contact_picture);
+            sDefaultContactImage = context.getResources()
+                    .getDrawable(R.drawable.ic_contact_picture);
         }
     }
 
@@ -91,6 +94,21 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         mAttachmentView = findViewById(R.id.attachment);
         mErrorIndicator = findViewById(R.id.error);
         mAvatarView = (QuickContactBadge) findViewById(R.id.avatar);
+
+        // get preferences
+        prefs = PreferenceManager
+                .getDefaultSharedPreferences(super.getContext());
+
+        // set text sizes
+        mDateView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_LIST_DATE_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_LIST_DATE_SIZE_DEFAULT))));
+        mSubjectView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_LIST_SUBJECT_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_LIST_SUBJECT_SIZE_DEFAULT))));
+        mFromView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_LIST_NAME_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_LIST_NAME_SIZE_DEFAULT))));
     }
 
     public Conversation getConversation() {
@@ -177,16 +195,18 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
     }
 
     public final void bind(Context context, final Conversation conversation) {
-        //if (DEBUG) Log.v(TAG, "bind()");
+        // if (DEBUG) Log.v(TAG, "bind()");
 
         mConversation = conversation;
 
         updateBackground();
 
-        LayoutParams attachmentLayout = (LayoutParams)mAttachmentView.getLayoutParams();
+        LayoutParams attachmentLayout = (LayoutParams) mAttachmentView.getLayoutParams();
         boolean hasError = conversation.hasError();
-        // When there's an error icon, the attachment icon is left of the error icon.
-        // When there is not an error icon, the attachment icon is left of the date text.
+        // When there's an error icon, the attachment icon is left of the error
+        // icon.
+        // When there is not an error icon, the attachment icon is left of the
+        // date text.
         // As far as I know, there's no way to specify that relationship in xml.
         if (hasError) {
             attachmentLayout.addRule(RelativeLayout.LEFT_OF, R.id.error);
@@ -203,7 +223,8 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         // From.
         mFromView.setText(formatMessage());
 
-        // Register for updates in changes of any of the contacts in this conversation.
+        // Register for updates in changes of any of the contacts in this
+        // conversation.
         ContactList contacts = conversation.getRecipients();
 
         if (Log.isLoggable(LogTag.CONTACT, Log.DEBUG)) {
@@ -217,15 +238,16 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(mContext);
         boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
-        if(enableEmojis) {
+        if (enableEmojis) {
             EmojiParser emojiParser = EmojiParser.getInstance();
             smileySubject = emojiParser.addEmojiSpans(smileySubject);
         }
         mSubjectView.setText(smileySubject);
-        LayoutParams subjectLayout = (LayoutParams)mSubjectView.getLayoutParams();
-        // We have to make the subject left of whatever optional items are shown on the right.
+        LayoutParams subjectLayout = (LayoutParams) mSubjectView.getLayoutParams();
+        // We have to make the subject left of whatever optional items are shown
+        // on the right.
         subjectLayout.addRule(RelativeLayout.LEFT_OF, hasAttachment ? R.id.attachment :
-            (hasError ? R.id.error : R.id.date));
+                (hasError ? R.id.error : R.id.date));
 
         // Transmission error indicator.
         mErrorIndicator.setVisibility(hasError ? VISIBLE : GONE);

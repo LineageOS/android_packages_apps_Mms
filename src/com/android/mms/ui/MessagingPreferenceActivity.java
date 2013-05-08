@@ -47,6 +47,7 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.util.Log;
 import com.android.mms.MmsApp;
 import com.android.mms.MmsConfig;
 import com.android.mms.R;
@@ -55,69 +56,82 @@ import com.android.mms.transaction.TransactionService;
 import com.android.mms.util.Recycler;
 
 /**
- * With this activity, users can set preferences for MMS and SMS and
- * can access and manipulate SMS messages stored on the SIM.
+ * With this activity, users can set preferences for MMS and SMS and can access
+ * and manipulate SMS messages stored on the SIM.
  */
 public class MessagingPreferenceActivity extends PreferenceActivity
-            implements OnPreferenceChangeListener {
+        implements OnPreferenceChangeListener {
     // Symbolic names for the keys used for preference lookup
     public static final String MMS_DELIVERY_REPORT_MODE = "pref_key_mms_delivery_reports";
-    public static final String EXPIRY_TIME              = "pref_key_mms_expiry";
-    public static final String PRIORITY                 = "pref_key_mms_priority";
-    public static final String READ_REPORT_MODE         = "pref_key_mms_read_reports";
+    public static final String EXPIRY_TIME = "pref_key_mms_expiry";
+    public static final String PRIORITY = "pref_key_mms_priority";
+    public static final String READ_REPORT_MODE = "pref_key_mms_read_reports";
     public static final String SMS_DELIVERY_REPORT_MODE = "pref_key_sms_delivery_reports";
-    public static final String NOTIFICATION_ENABLED     = "pref_key_enable_notifications";
-    public static final String NOTIFICATION_VIBRATE     = "pref_key_vibrate";
-    public static final String NOTIFICATION_VIBRATE_WHEN= "pref_key_vibrateWhen";
-    public static final String NOTIFICATION_RINGTONE    = "pref_key_ringtone";
-    public static final String AUTO_RETRIEVAL           = "pref_key_mms_auto_retrieval";
+    public static final String NOTIFICATION_ENABLED = "pref_key_enable_notifications";
+    public static final String NOTIFICATION_VIBRATE = "pref_key_vibrate";
+    public static final String NOTIFICATION_VIBRATE_WHEN = "pref_key_vibrateWhen";
+    public static final String NOTIFICATION_RINGTONE = "pref_key_ringtone";
+    public static final String AUTO_RETRIEVAL = "pref_key_mms_auto_retrieval";
     public static final String RETRIEVAL_DURING_ROAMING = "pref_key_mms_retrieval_during_roaming";
-    public static final String AUTO_DELETE              = "pref_key_auto_delete";
-    public static final String GROUP_MMS_MODE           = "pref_key_mms_group_mms";
+    public static final String AUTO_DELETE = "pref_key_auto_delete";
+    public static final String GROUP_MMS_MODE = "pref_key_mms_group_mms";
 
     // Emoji
-    public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
-    public static final String ENABLE_QUICK_EMOJIS       = "pref_key_enable_quick_emojis";
-    public static final String SOFTBANK_EMOJIS           = "pref_key_enable_softbank_encoding";
+    public static final String ENABLE_EMOJIS = "pref_key_enable_emojis";
+    public static final String ENABLE_QUICK_EMOJIS = "pref_key_enable_quick_emojis";
+    public static final String SOFTBANK_EMOJIS = "pref_key_enable_softbank_encoding";
 
     // Unicode
-    public static final String UNICODE_STRIPPING            = "pref_key_unicode_stripping";
-    public static final String UNICODE_STRIPPING_VALUE      = "pref_key_unicode_stripping_value";
-    public static final int UNICODE_STRIPPING_LEAVE_INTACT  = 0;
+    public static final String UNICODE_STRIPPING = "pref_key_unicode_stripping";
+    public static final String UNICODE_STRIPPING_VALUE = "pref_key_unicode_stripping_value";
+    public static final int UNICODE_STRIPPING_LEAVE_INTACT = 0;
     public static final int UNICODE_STRIPPING_NON_DECODABLE = 1;
 
     // Split sms
-    public static final String SMS_SPLIT_COUNTER        = "pref_key_sms_split_counter";
+    public static final String SMS_SPLIT_COUNTER = "pref_key_sms_split_counter";
 
     // Templates
-    public static final String MANAGE_TEMPLATES         = "pref_key_templates_manage";
-    public static final String SHOW_GESTURE             = "pref_key_templates_show_gesture";
-    public static final String GESTURE_SENSITIVITY      = "pref_key_templates_gestures_sensitivity";
+    public static final String MANAGE_TEMPLATES = "pref_key_templates_manage";
+    public static final String SHOW_GESTURE = "pref_key_templates_show_gesture";
+    public static final String GESTURE_SENSITIVITY = "pref_key_templates_gestures_sensitivity";
     public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
 
     // Timestamps
-    public static final String FULL_TIMESTAMP            = "pref_key_mms_full_timestamp";
-    public static final String SENT_TIMESTAMP            = "pref_key_mms_use_sent_timestamp";
+    public static final String FULL_TIMESTAMP = "pref_key_mms_full_timestamp";
+    public static final String SENT_TIMESTAMP = "pref_key_mms_use_sent_timestamp";
 
     // Vibrate pattern
     public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
     public static final String NOTIFICATION_VIBRATE_PATTERN_CUSTOM = "pref_key_mms_notification_vibrate_pattern_custom";
-    public static final String NOTIFICATION_VIBRATE_CALL ="pre_key_mms_notification_vibrate_call";
+    public static final String NOTIFICATION_VIBRATE_CALL = "pre_key_mms_notification_vibrate_call";
 
     // Privacy mode
     public static final String PRIVACY_MODE_ENABLED = "pref_key_enable_privacy_mode";
 
     // Keyboard input type
-    public static final String INPUT_TYPE                = "pref_key_mms_input_type";
+    public static final String INPUT_TYPE = "pref_key_mms_input_type";
 
     // QuickMessage
-    public static final String QUICKMESSAGE_ENABLED      = "pref_key_quickmessage";
-    public static final String QM_LOCKSCREEN_ENABLED     = "pref_key_qm_lockscreen";
-    public static final String QM_CLOSE_ALL_ENABLED      = "pref_key_close_all";
-    public static final String QM_DARK_THEME_ENABLED     = "pref_dark_theme";
+    public static final String QUICKMESSAGE_ENABLED = "pref_key_quickmessage";
+    public static final String QM_LOCKSCREEN_ENABLED = "pref_key_qm_lockscreen";
+    public static final String QM_CLOSE_ALL_ENABLED = "pref_key_close_all";
+    public static final String QM_DARK_THEME_ENABLED = "pref_dark_theme";
+
+    // text sizes
+    public static final String CONVERSATION_TEXT_SIZE = "pref_key_conv_text_size";
+    public static final String CONVERSATION_DATE_SIZE = "pref_key_conv_date_size";
+    public static final String CONVERSATION_LIST_SUBJECT_SIZE = "pref_key_conv_list_subj_size";
+    public static final String CONVERSATION_LIST_NAME_SIZE = "pref_key_conv_list_name_size";
+    public static final String CONVERSATION_LIST_DATE_SIZE = "pref_key_conv_list_date_size";
+
+    public static final int CONVERSATION_TEXT_SIZE_DEFAULT = 16;
+    public static final int CONVERSATION_DATE_SIZE_DEFAULT = 14;
+    public static final int CONVERSATION_LIST_SUBJECT_SIZE_DEFAULT = 14;
+    public static final int CONVERSATION_LIST_NAME_SIZE_DEFAULT = 18;
+    public static final int CONVERSATION_LIST_DATE_SIZE_DEFAULT = 14;
 
     // Menu entries
-    private static final int MENU_RESTORE_DEFAULTS    = 1;
+    private static final int MENU_RESTORE_DEFAULTS = 1;
 
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;
@@ -153,6 +167,31 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mEnableQmCloseAllPref;
     private CheckBoxPreference mEnableQmDarkThemePref;
 
+    // text sizes
+    private ListPreference mConversationTextSize;
+    private CharSequence[] mConversationTextSizeEntries;
+    private CharSequence[] mConversationTextSizeValues;
+
+    private ListPreference mConversationDateSize;
+    private CharSequence[] mConversationDateSizeEntries;
+    private CharSequence[] mConversationDateSizeValues;
+
+    private ListPreference mConversationListSubjectSize;
+    private CharSequence[] mConversationListSubjectSizeEntries;
+    private CharSequence[] mConversationListSubjectSizeValues;
+
+    private ListPreference mConversationListNameSize;
+    private CharSequence[] mConversationListNameSizeEntries;
+    private CharSequence[] mConversationListNameSizeValues;
+
+    private ListPreference mConversationListDateSize;
+    private CharSequence[] mConversationListDateSizeEntries;
+    private CharSequence[] mConversationListDateSizeValues;
+
+    // avatar sizes - TODO
+    // private ListPreference mConversationAvatarSize;
+    // private ListPreference mConversationListAvatarSize;
+
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -167,7 +206,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     protected void onResume() {
         super.onResume();
 
-        // Since the enabled notifications pref can be changed outside of this activity,
+        // Since the enabled notifications pref can be changed outside of this
+        // activity,
         // we have to reload it whenever we resume.
         setEnabledNotificationsPref();
         registerListeners();
@@ -192,9 +232,11 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
         mUnicodeStripping = (ListPreference) findPreference(UNICODE_STRIPPING);
-        mUnicodeStrippingEntries = getResources().getTextArray(R.array.pref_unicode_stripping_entries);
+        mUnicodeStrippingEntries = getResources().getTextArray(
+                R.array.pref_unicode_stripping_entries);
 
-        // Get the MMS retrieval settings. Defaults to enabled with roaming disabled
+        // Get the MMS retrieval settings. Defaults to enabled with roaming
+        // disabled
         mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
         ContentResolver resolver = getContentResolver();
         mMmsAutoRetrievialPref.setChecked(Settings.System.getInt(resolver,
@@ -214,6 +256,36 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mInputTypeEntries = getResources().getTextArray(R.array.pref_entries_input_type);
         mInputTypeValues = getResources().getTextArray(R.array.pref_values_input_type);
 
+        // text sizes
+        mConversationTextSize = (ListPreference) findPreference(CONVERSATION_TEXT_SIZE);
+        mConversationTextSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_text_size);
+        mConversationTextSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_text_size);
+
+        mConversationDateSize = (ListPreference) findPreference(CONVERSATION_DATE_SIZE);
+        mConversationDateSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_date_size);
+        mConversationDateSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_date_size);
+
+        mConversationListSubjectSize = (ListPreference) findPreference(CONVERSATION_LIST_SUBJECT_SIZE);
+        mConversationListSubjectSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_list_subj_size);
+        mConversationListSubjectSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_list_subj_size);
+
+        mConversationListNameSize = (ListPreference) findPreference(CONVERSATION_LIST_NAME_SIZE);
+        mConversationListNameSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_list_name_size);
+        mConversationListNameSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_list_name_size);
+
+        mConversationListDateSize = (ListPreference) findPreference(CONVERSATION_LIST_DATE_SIZE);
+        mConversationListDateSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_list_date_size);
+        mConversationListDateSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_list_date_size);
 
         setMessagePreferences();
     }
@@ -223,12 +295,17 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         setPreferenceScreen(null);
         loadPrefs();
 
-        // NOTE: After restoring preferences, the auto delete function (i.e. message recycler)
-        // will be turned off by default. However, we really want the default to be turned on.
+        // NOTE: After restoring preferences, the auto delete function (i.e.
+        // message recycler)
+        // will be turned off by default. However, we really want the default to
+        // be turned on.
         // Because all the prefs are cleared, that'll cause:
-        // ConversationList.runOneTimeStorageLimitCheckForLegacyMessages to get executed the
-        // next time the user runs the Messaging app and it will either turn on the setting
-        // by default, or if the user is over the limits, encourage them to turn on the setting
+        // ConversationList.runOneTimeStorageLimitCheckForLegacyMessages to get
+        // executed the
+        // next time the user runs the Messaging app and it will either turn on
+        // the setting
+        // by default, or if the user is over the limits, encourage them to turn
+        // on the setting
         // manually.
     }
 
@@ -236,13 +313,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         if (!MmsApp.getApplication().getTelephonyManager().hasIccCard()) {
             // No SIM card, remove the SIM-related prefs
             PreferenceCategory smsCategory =
-                (PreferenceCategory)findPreference("pref_key_sms_settings");
+                    (PreferenceCategory) findPreference("pref_key_sms_settings");
             smsCategory.removePreference(mManageSimPref);
         }
 
         if (!MmsConfig.getSMSDeliveryReportsEnabled()) {
             PreferenceCategory smsCategory =
-                (PreferenceCategory)findPreference("pref_key_sms_settings");
+                    (PreferenceCategory) findPreference("pref_key_sms_settings");
             smsCategory.removePreference(mSmsDeliveryReportPref);
             if (!MmsApp.getApplication().getTelephonyManager().hasIccCard()) {
                 getPreferenceScreen().removePreference(smsCategory);
@@ -252,29 +329,30 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         if (!MmsConfig.getSplitSmsEnabled()) {
             // SMS Split disabled, remove SplitCounter pref
             PreferenceCategory smsCategory =
-            (PreferenceCategory)findPreference("pref_key_sms_settings");
+                    (PreferenceCategory) findPreference("pref_key_sms_settings");
             smsCategory.removePreference(mSmsSplitCounterPref);
         }
 
         if (!MmsConfig.getMmsEnabled()) {
             // No Mms, remove all the mms-related preferences
             PreferenceCategory mmsOptions =
-                (PreferenceCategory)findPreference("pref_key_mms_settings");
+                    (PreferenceCategory) findPreference("pref_key_mms_settings");
             getPreferenceScreen().removePreference(mmsOptions);
 
             PreferenceCategory storageOptions =
-                (PreferenceCategory)findPreference("pref_key_storage_settings");
+                    (PreferenceCategory) findPreference("pref_key_storage_settings");
             storageOptions.removePreference(findPreference("pref_key_mms_delete_limit"));
         } else {
             PreferenceCategory mmsOptions =
-                    (PreferenceCategory)findPreference("pref_key_mms_settings");
+                    (PreferenceCategory) findPreference("pref_key_mms_settings");
             if (!MmsConfig.getMMSDeliveryReportsEnabled()) {
                 mmsOptions.removePreference(mMmsDeliveryReportPref);
             }
             if (!MmsConfig.getMMSReadReportsEnabled()) {
                 mmsOptions.removePreference(mMmsReadReportPref);
             }
-            // If the phone's SIM doesn't know it's own number, disable group mms.
+            // If the phone's SIM doesn't know it's own number, disable group
+            // mms.
             if (!MmsConfig.getGroupMmsEnabled() ||
                     TextUtils.isEmpty(MessageUtils.getLocalNumber())) {
                 mmsOptions.removePreference(mMmsGroupMmsPref);
@@ -292,16 +370,20 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         setEnabledQmCloseAllPref();
         setEnabledQmDarkThemePref();
 
-        // If needed, migrate vibration setting from the previous tri-state setting stored in
-        // NOTIFICATION_VIBRATE_WHEN to the boolean setting stored in NOTIFICATION_VIBRATE.
-        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        // If needed, migrate vibration setting from the previous tri-state
+        // setting stored in
+        // NOTIFICATION_VIBRATE_WHEN to the boolean setting stored in
+        // NOTIFICATION_VIBRATE.
+        final SharedPreferences sharedPreferences = PreferenceManager
+                .getDefaultSharedPreferences(this);
         if (sharedPreferences.contains(NOTIFICATION_VIBRATE_WHEN)) {
             String vibrateWhen = sharedPreferences.
                     getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN, null);
             boolean vibrate = "always".equals(vibrateWhen);
             SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
             prefsEditor.putBoolean(NOTIFICATION_VIBRATE, vibrate);
-            prefsEditor.remove(NOTIFICATION_VIBRATE_WHEN);  // remove obsolete setting
+            prefsEditor.remove(NOTIFICATION_VIBRATE_WHEN); // remove obsolete
+                                                           // setting
             prefsEditor.apply();
             mVibratePref.setChecked(vibrate);
         }
@@ -316,7 +398,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             }
         });
 
-        String gestureSensitivity = String.valueOf(sharedPreferences.getInt(GESTURE_SENSITIVITY_VALUE, 3));
+        String gestureSensitivity = String.valueOf(sharedPreferences.getInt(
+                GESTURE_SENSITIVITY_VALUE, 3));
         mGestureSensitivity.setSummary(gestureSensitivity);
         mGestureSensitivity.setValue(gestureSensitivity);
         mGestureSensitivity.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
@@ -329,7 +412,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             }
         });
 
-        int unicodeStripping = sharedPreferences.getInt(UNICODE_STRIPPING_VALUE, UNICODE_STRIPPING_LEAVE_INTACT);
+        int unicodeStripping = sharedPreferences.getInt(UNICODE_STRIPPING_VALUE,
+                UNICODE_STRIPPING_LEAVE_INTACT);
         mUnicodeStripping.setValue(String.valueOf(unicodeStripping));
         mUnicodeStripping.setSummary(mUnicodeStrippingEntries[unicodeStripping]);
         mUnicodeStripping.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
@@ -358,6 +442,81 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mInputTypePref.setValue(inputType);
         adjustInputTypeSummary(mInputTypePref.getValue());
         mInputTypePref.setOnPreferenceChangeListener(this);
+
+        // read in text size values, set summary
+        String conversationTextSize = sharedPreferences.getString(CONVERSATION_TEXT_SIZE,
+                Integer.toString(CONVERSATION_TEXT_SIZE_DEFAULT));
+        mConversationTextSize.setValue(conversationTextSize);
+        mConversationTextSize.setSummary(mConversationTextSize.getEntry());
+        mConversationTextSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_TEXT_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationDateSize = sharedPreferences.getString(CONVERSATION_DATE_SIZE,
+                Integer.toString(CONVERSATION_DATE_SIZE_DEFAULT));
+        mConversationDateSize.setValue(conversationDateSize);
+        mConversationDateSize.setSummary(mConversationDateSize.getEntry());
+        mConversationDateSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_DATE_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationListSubjectSize = sharedPreferences.getString(
+                CONVERSATION_LIST_SUBJECT_SIZE,
+                Integer.toString(CONVERSATION_LIST_SUBJECT_SIZE_DEFAULT));
+        mConversationListSubjectSize.setValue(conversationListSubjectSize);
+        mConversationListSubjectSize.setSummary(mConversationListSubjectSize.getEntry());
+        mConversationListSubjectSize
+                .setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                    @Override
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        sharedPreferences.edit()
+                                .putString(CONVERSATION_LIST_SUBJECT_SIZE, (String) newValue)
+                                .commit();
+                        updateTextSizeSummary(preference, (String) newValue);
+                        return true;
+                    }
+                });
+
+        String conversationListNameSize = sharedPreferences.getString(CONVERSATION_LIST_NAME_SIZE,
+                Integer.toString(CONVERSATION_LIST_NAME_SIZE_DEFAULT));
+        mConversationListNameSize.setValue(conversationListNameSize);
+        mConversationListNameSize.setSummary(mConversationListNameSize.getEntry());
+        mConversationListNameSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_LIST_NAME_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationListDateSize = sharedPreferences.getString(CONVERSATION_LIST_DATE_SIZE,
+                Integer.toString(CONVERSATION_LIST_DATE_SIZE_DEFAULT));
+        mConversationListDateSize.setValue(conversationListDateSize);
+        mConversationListDateSize.setSummary(mConversationListDateSize.getEntry());
+        mConversationListDateSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_LIST_DATE_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
     }
 
     private void setRingtoneSummary(String soundValue) {
@@ -368,13 +527,15 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     }
 
     private void setEnabledNotificationsPref() {
-        // The "enable notifications" setting is really stored in our own prefs. Read the
+        // The "enable notifications" setting is really stored in our own prefs.
+        // Read the
         // current value and set the checkbox to match.
         mEnableNotificationsPref.setChecked(getNotificationEnabled(this));
     }
 
     private void setEnabledPrivacyModePref() {
-        // The "enable privacy mode" setting is really stored in our own prefs. Read the
+        // The "enable privacy mode" setting is really stored in our own prefs.
+        // Read the
         // current value and set the checkbox to match.
         boolean isPrivacyModeEnabled = getPrivacyModeEnabled(this);
         mEnablePrivacyModePref.setChecked(isPrivacyModeEnabled);
@@ -389,25 +550,29 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     }
 
     private void setEnabledQuickMessagePref() {
-        // The "enable quickmessage" setting is really stored in our own prefs. Read the
+        // The "enable quickmessage" setting is really stored in our own prefs.
+        // Read the
         // current value and set the checkbox to match.
         mEnableQuickMessagePref.setChecked(getQuickMessageEnabled(this));
     }
 
     private void setEnabledQmLockscreenPref() {
-        // The "enable quickmessage on lock screen " setting is really stored in our own prefs. Read the
+        // The "enable quickmessage on lock screen " setting is really stored in
+        // our own prefs. Read the
         // current value and set the checkbox to match.
         mEnableQmLockscreenPref.setChecked(getQmLockscreenEnabled(this));
     }
 
     private void setEnabledQmCloseAllPref() {
-        // The "enable close all" setting is really stored in our own prefs. Read the
+        // The "enable close all" setting is really stored in our own prefs.
+        // Read the
         // current value and set the checkbox to match.
         mEnableQmCloseAllPref.setChecked(getQmCloseAllEnabled(this));
     }
 
     private void setEnabledQmDarkThemePref() {
-        // The "Use dark theme" setting is really stored in our own prefs. Read the
+        // The "Use dark theme" setting is really stored in our own prefs. Read
+        // the
         // current value and set the checkbox to match.
         mEnableQmDarkThemePref.setChecked(getQmDarkThemeEnabled(this));
     }
@@ -439,7 +604,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                 return true;
 
             case android.R.id.home:
-                // The user clicked on the Messaging icon in the action bar. Take them back from
+                // The user clicked on the Messaging icon in the action bar.
+                // Take them back from
                 // wherever they came from
                 finish();
                 return true;
@@ -474,11 +640,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             return true;
 
         } else if (preference == mEnableNotificationsPref) {
-            // Update the actual "enable notifications" value that is stored in secure settings.
+            // Update the actual "enable notifications" value that is stored in
+            // secure settings.
             enableNotifications(mEnableNotificationsPref.isChecked(), this);
 
         } else if (preference == mEnablePrivacyModePref) {
-            // Update the actual "enable private mode" value that is stored in secure settings.
+            // Update the actual "enable private mode" value that is stored in
+            // secure settings.
             enablePrivacyMode(mEnablePrivacyModePref.isChecked(), this);
 
             // Update "enable quickmessage" checkbox state
@@ -488,24 +656,29 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             mEnableQmDarkThemePref.setEnabled(!mEnablePrivacyModePref.isChecked());
 
         } else if (preference == mEnableQuickMessagePref) {
-            // Update the actual "enable quickmessage" value that is stored in secure settings.
+            // Update the actual "enable quickmessage" value that is stored in
+            // secure settings.
             enableQuickMessage(mEnableQuickMessagePref.isChecked(), this);
 
         } else if (preference == mEnableQmLockscreenPref) {
-            // Update the actual "enable quickmessage on lockscreen" value that is stored in secure settings.
+            // Update the actual "enable quickmessage on lockscreen" value that
+            // is stored in secure settings.
             enableQmLockscreen(mEnableQmLockscreenPref.isChecked(), this);
 
         } else if (preference == mEnableQmCloseAllPref) {
-            // Update the actual "enable close all" value that is stored in secure settings.
+            // Update the actual "enable close all" value that is stored in
+            // secure settings.
             enableQmCloseAll(mEnableQmCloseAllPref.isChecked(), this);
 
         } else if (preference == mEnableQmDarkThemePref) {
-            // Update the actual "enable dark theme" value that is stored in secure settings.
+            // Update the actual "enable dark theme" value that is stored in
+            // secure settings.
             enableQmDarkTheme(mEnableQmDarkThemePref.isChecked(), this);
 
         } else if (preference == mMmsRetrievalDuringRoamingPref) {
             // Update the value in Settings.System
-            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING,
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING,
                     mMmsRetrievalDuringRoamingPref.isChecked() ? 1 : 0);
 
         } else if (preference == mMmsAutoRetrievialPref) {
@@ -530,41 +703,41 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     }
 
     NumberPickerDialog.OnNumberSetListener mSmsLimitListener =
-        new NumberPickerDialog.OnNumberSetListener() {
-            public void onNumberSet(int limit) {
-                mSmsRecycler.setMessageLimit(MessagingPreferenceActivity.this, limit);
-                setSmsDisplayLimit();
-            }
-    };
+            new NumberPickerDialog.OnNumberSetListener() {
+                public void onNumberSet(int limit) {
+                    mSmsRecycler.setMessageLimit(MessagingPreferenceActivity.this, limit);
+                    setSmsDisplayLimit();
+                }
+            };
 
     NumberPickerDialog.OnNumberSetListener mMmsLimitListener =
-        new NumberPickerDialog.OnNumberSetListener() {
-            public void onNumberSet(int limit) {
-                mMmsRecycler.setMessageLimit(MessagingPreferenceActivity.this, limit);
-                setMmsDisplayLimit();
-            }
-    };
+            new NumberPickerDialog.OnNumberSetListener() {
+                public void onNumberSet(int limit) {
+                    mMmsRecycler.setMessageLimit(MessagingPreferenceActivity.this, limit);
+                    setMmsDisplayLimit();
+                }
+            };
 
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
             case CONFIRM_CLEAR_SEARCH_HISTORY_DIALOG:
                 return new AlertDialog.Builder(MessagingPreferenceActivity.this)
-                    .setTitle(R.string.confirm_clear_search_title)
-                    .setMessage(R.string.confirm_clear_search_text)
-                    .setPositiveButton(android.R.string.ok, new AlertDialog.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            SearchRecentSuggestions recent =
-                                ((MmsApp)getApplication()).getRecentSuggestions();
-                            if (recent != null) {
-                                recent.clearHistory();
+                        .setTitle(R.string.confirm_clear_search_title)
+                        .setMessage(R.string.confirm_clear_search_text)
+                        .setPositiveButton(android.R.string.ok, new AlertDialog.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                SearchRecentSuggestions recent =
+                                        ((MmsApp) getApplication()).getRecentSuggestions();
+                                if (recent != null) {
+                                    recent.clearHistory();
+                                }
+                                dialog.dismiss();
                             }
-                            dialog.dismiss();
-                        }
-                    })
-                    .setNegativeButton(android.R.string.cancel, null)
-                    .setIconAttribute(android.R.attr.alertDialogIcon)
-                    .create();
+                        })
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .setIconAttribute(android.R.attr.alertDialogIcon)
+                        .create();
         }
         return super.onCreateDialog(id);
     }
@@ -572,14 +745,14 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getNotificationEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean notificationsEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.NOTIFICATION_ENABLED, true);
+                prefs.getBoolean(MessagingPreferenceActivity.NOTIFICATION_ENABLED, true);
         return notificationsEnabled;
     }
 
     public static void enableNotifications(boolean enabled, Context context) {
         // Store the value of notifications in SharedPreferences
         SharedPreferences.Editor editor =
-            PreferenceManager.getDefaultSharedPreferences(context).edit();
+                PreferenceManager.getDefaultSharedPreferences(context).edit();
 
         editor.putBoolean(MessagingPreferenceActivity.NOTIFICATION_ENABLED, enabled);
 
@@ -589,14 +762,14 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getPrivacyModeEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean privacyModeEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, false);
+                prefs.getBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, false);
         return privacyModeEnabled;
     }
 
     public static void enablePrivacyMode(boolean enabled, Context context) {
         // Store the value of private mode in SharedPreferences
         SharedPreferences.Editor editor =
-            PreferenceManager.getDefaultSharedPreferences(context).edit();
+                PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, enabled);
         editor.apply();
     }
@@ -604,14 +777,14 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getQuickMessageEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean quickMessageEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.QUICKMESSAGE_ENABLED, false);
+                prefs.getBoolean(MessagingPreferenceActivity.QUICKMESSAGE_ENABLED, false);
         return quickMessageEnabled;
     }
 
     public static void enableQuickMessage(boolean enabled, Context context) {
         // Store the value of notifications in SharedPreferences
         SharedPreferences.Editor editor =
-            PreferenceManager.getDefaultSharedPreferences(context).edit();
+                PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean(MessagingPreferenceActivity.QUICKMESSAGE_ENABLED, enabled);
         editor.apply();
     }
@@ -619,13 +792,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getQmLockscreenEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean qmLockscreenEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.QM_LOCKSCREEN_ENABLED, false);
+                prefs.getBoolean(MessagingPreferenceActivity.QM_LOCKSCREEN_ENABLED, false);
         return qmLockscreenEnabled;
     }
 
     public static void enableQmLockscreen(boolean enabled, Context context) {
         SharedPreferences.Editor editor =
-            PreferenceManager.getDefaultSharedPreferences(context).edit();
+                PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean(MessagingPreferenceActivity.QM_LOCKSCREEN_ENABLED, enabled);
         editor.apply();
     }
@@ -633,20 +806,20 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getQmCloseAllEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean qmCloseAllEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.QM_CLOSE_ALL_ENABLED, false);
+                prefs.getBoolean(MessagingPreferenceActivity.QM_CLOSE_ALL_ENABLED, false);
         return qmCloseAllEnabled;
     }
 
     public static void enableQmCloseAll(boolean enabled, Context context) {
         SharedPreferences.Editor editor =
-            PreferenceManager.getDefaultSharedPreferences(context).edit();
+                PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean(MessagingPreferenceActivity.QM_CLOSE_ALL_ENABLED, enabled);
         editor.apply();
     }
 
     public static void enableQmDarkTheme(boolean enabled, Context context) {
         SharedPreferences.Editor editor =
-            PreferenceManager.getDefaultSharedPreferences(context).edit();
+                PreferenceManager.getDefaultSharedPreferences(context).edit();
         editor.putBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, enabled);
         editor.apply();
     }
@@ -654,7 +827,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static boolean getQmDarkThemeEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean qmDarkThemeEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, false);
+                prefs.getBoolean(MessagingPreferenceActivity.QM_DARK_THEME_ENABLED, false);
         return qmDarkThemeEnabled;
     }
 
@@ -662,16 +835,52 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mRingtonePref.setOnPreferenceChangeListener(this);
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         boolean result = false;
         if (preference == mRingtonePref) {
-            setRingtoneSummary((String)newValue);
+            setRingtoneSummary((String) newValue);
             result = true;
         } else if (preference == mInputTypePref) {
-            adjustInputTypeSummary((String)newValue);
+            adjustInputTypeSummary((String) newValue);
             result = true;
         }
         return result;
+    }
+
+    private void updateTextSizeSummary(Preference cur, String newValue) {
+        CharSequence[] entryArray = null;
+        CharSequence[] valArray = null;
+        if (cur == mConversationTextSize) {
+            entryArray = mConversationTextSizeEntries;
+            valArray = mConversationTextSizeValues;
+        } else if (cur == mConversationDateSize) {
+            entryArray = mConversationDateSizeEntries;
+            valArray = mConversationDateSizeValues;
+        } else if (cur == mConversationListDateSize) {
+            entryArray = mConversationListDateSizeEntries;
+            valArray = mConversationListDateSizeValues;
+        } else if (cur == mConversationListNameSize) {
+            entryArray = mConversationListNameSizeEntries;
+            valArray = mConversationListNameSizeValues;
+        } else if (cur == mConversationListSubjectSize) {
+            entryArray = mConversationListSubjectSizeEntries;
+            valArray = mConversationListSubjectSizeValues;
+        } else {
+            Log.e("updateTextSizeSummary", "Unknown text size change!");
+        }
+
+        if (valArray == null || entryArray == null) {
+            Log.e("updateTextSizeSummary", "No entry or value array!");
+        } else {
+            for (int i = 0; i < valArray.length; i++) {
+                if (valArray[i].equals(newValue)) {
+                    Log.i("updateTextSizeSummary", "updating " + cur.getKey() + " to " + newValue);
+                    cur.setSummary(entryArray[i]);
+                    return;
+                }
+            }
+        }
     }
 
     private void adjustInputTypeSummary(String value) {
@@ -686,9 +895,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     }
 
     // For the group mms feature to be enabled, the following must be true:
-    //  1. the feature is enabled in mms_config.xml (currently on by default)
-    //  2. the feature is enabled in the mms settings page
-    //  3. the SIM knows its own phone number
+    // 1. the feature is enabled in mms_config.xml (currently on by default)
+    // 2. the feature is enabled in the mms settings page
+    // 3. the SIM knows its own phone number
     public static boolean getIsGroupMmsEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean groupMmsPrefOn = prefs.getBoolean(
