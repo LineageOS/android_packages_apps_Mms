@@ -179,6 +179,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.text.Normalizer;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -202,18 +203,19 @@ import java.util.regex.Pattern;
 public class ComposeMessageActivity extends Activity
         implements View.OnClickListener, TextView.OnEditorActionListener,
         MessageStatusListener, Contact.UpdateListener, OnGesturePerformedListener,
-        LoaderManager.LoaderCallbacks<Cursor>  {
-    public static final int REQUEST_CODE_ATTACH_IMAGE     = 100;
-    public static final int REQUEST_CODE_TAKE_PICTURE     = 101;
-    public static final int REQUEST_CODE_ATTACH_VIDEO     = 102;
-    public static final int REQUEST_CODE_TAKE_VIDEO       = 103;
-    public static final int REQUEST_CODE_ATTACH_SOUND     = 104;
-    public static final int REQUEST_CODE_RECORD_SOUND     = 105;
-    public static final int REQUEST_CODE_CREATE_SLIDESHOW = 106;
-    public static final int REQUEST_CODE_ECM_EXIT_DIALOG  = 107;
-    public static final int REQUEST_CODE_ADD_CONTACT      = 108;
-    public static final int REQUEST_CODE_PICK             = 109;
+        LoaderManager.LoaderCallbacks<Cursor> {
+    public static final int REQUEST_CODE_ATTACH_IMAGE        = 100;
+    public static final int REQUEST_CODE_TAKE_PICTURE        = 101;
+    public static final int REQUEST_CODE_ATTACH_VIDEO        = 102;
+    public static final int REQUEST_CODE_TAKE_VIDEO          = 103;
+    public static final int REQUEST_CODE_ATTACH_SOUND        = 104;
+    public static final int REQUEST_CODE_RECORD_SOUND        = 105;
+    public static final int REQUEST_CODE_CREATE_SLIDESHOW    = 106;
+    public static final int REQUEST_CODE_ECM_EXIT_DIALOG     = 107;
+    public static final int REQUEST_CODE_ADD_CONTACT         = 108;
+    public static final int REQUEST_CODE_PICK                = 109;
     public static final int REQUEST_CODE_INSERT_CONTACT_INFO = 110;
+    public static final int REQUEST_CODE_ADD_RECIPIENTS      = 111;
 
     private static final String TAG = "Mms/compose";
 
@@ -222,56 +224,57 @@ public class ComposeMessageActivity extends Activity
     private static final boolean LOCAL_LOGV = false;
 
     // Menu ID
-    private static final int MENU_ADD_SUBJECT           = 0;
-    private static final int MENU_DELETE_THREAD         = 1;
-    private static final int MENU_ADD_ATTACHMENT        = 2;
-    private static final int MENU_DISCARD               = 3;
-    private static final int MENU_SEND                  = 4;
-    private static final int MENU_CALL_RECIPIENT        = 5;
-    private static final int MENU_CONVERSATION_LIST     = 6;
-    private static final int MENU_DEBUG_DUMP            = 7;
+    private static final int MENU_ADD_SUBJECT              = 0;
+    private static final int MENU_DELETE_THREAD            = 1;
+    private static final int MENU_ADD_ATTACHMENT           = 2;
+    private static final int MENU_DISCARD                  = 3;
+    private static final int MENU_SEND                     = 4;
+    private static final int MENU_CALL_RECIPIENT           = 5;
+    private static final int MENU_CONVERSATION_LIST        = 6;
+    private static final int MENU_DEBUG_DUMP               = 7;
 
     // Context menu ID
-    private static final int MENU_VIEW_CONTACT          = 12;
-    private static final int MENU_ADD_TO_CONTACTS       = 13;
+    private static final int MENU_VIEW_CONTACT             = 12;
+    private static final int MENU_ADD_TO_CONTACTS          = 13;
 
-    private static final int MENU_EDIT_MESSAGE          = 14;
-    private static final int MENU_INSERT_CONTACT_INFO   = 15;
-    private static final int MENU_VIEW_SLIDESHOW        = 16;
-    private static final int MENU_VIEW_MESSAGE_DETAILS  = 17;
-    private static final int MENU_DELETE_MESSAGE        = 18;
-    private static final int MENU_SEARCH                = 19;
-    private static final int MENU_DELIVERY_REPORT       = 20;
-    private static final int MENU_FORWARD_MESSAGE       = 21;
-    private static final int MENU_CALL_BACK             = 22;
-    private static final int MENU_SEND_EMAIL            = 23;
-    private static final int MENU_COPY_MESSAGE_TEXT     = 24;
-    private static final int MENU_COPY_TO_SDCARD        = 25;
-    private static final int MENU_INSERT_SMILEY         = 26;
-    private static final int MENU_ADD_ADDRESS_TO_CONTACTS = 27;
-    private static final int MENU_LOCK_MESSAGE          = 28;
-    private static final int MENU_UNLOCK_MESSAGE        = 29;
-    private static final int MENU_SAVE_RINGTONE         = 30;
-    private static final int MENU_PREFERENCES           = 31;
-    private static final int MENU_GROUP_PARTICIPANTS    = 32;
-    private static final int MENU_INSERT_EMOJI          = 33;
-    private static final int MENU_ADD_TEMPLATE          = 34;
-    private static final int MENU_ADD_TO_BLACKLIST      = 35;
+    private static final int MENU_EDIT_MESSAGE             = 14;
+    private static final int MENU_INSERT_CONTACT_INFO      = 15;
+    private static final int MENU_VIEW_SLIDESHOW           = 16;
+    private static final int MENU_VIEW_MESSAGE_DETAILS     = 17;
+    private static final int MENU_DELETE_MESSAGE           = 18;
+    private static final int MENU_SEARCH                   = 19;
+    private static final int MENU_DELIVERY_REPORT          = 20;
+    private static final int MENU_FORWARD_MESSAGE          = 21;
+    private static final int MENU_CALL_BACK                = 22;
+    private static final int MENU_SEND_EMAIL               = 23;
+    private static final int MENU_COPY_MESSAGE_TEXT        = 24;
+    private static final int MENU_COPY_TO_SDCARD           = 25;
+    private static final int MENU_INSERT_SMILEY            = 26;
+    private static final int MENU_ADD_ADDRESS_TO_CONTACTS  = 27;
+    private static final int MENU_LOCK_MESSAGE             = 28;
+    private static final int MENU_UNLOCK_MESSAGE           = 29;
+    private static final int MENU_SAVE_RINGTONE            = 30;
+    private static final int MENU_PREFERENCES              = 31;
+    private static final int MENU_GROUP_PARTICIPANTS       = 32;
+    private static final int MENU_INSERT_EMOJI             = 33;
+    private static final int MENU_ADD_TEMPLATE             = 34;
+    private static final int MENU_ADD_TO_BLACKLIST         = 35;
 
-    private static final int DIALOG_TEMPLATE_SELECT     = 1;
+    private static final int DIALOG_TEMPLATE_SELECT        = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
-    private static final int LOAD_TEMPLATE_BY_ID        = 0;
-    private static final int LOAD_TEMPLATES             = 1;
+    private static final int LOAD_TEMPLATE_BY_ID           = 0;
+    private static final int LOAD_TEMPLATES                = 1;
 
     // Add SMS to calendar reminder
-    private static final int MENU_ADD_TO_CALENDAR       = 35;
+    // TODO make this what it should be.  Conflicted with MENU_ADD_TO_BLACKLIST above
+    private static final int MENU_ADD_TO_CALENDAR          = 36;
 
     private static final int RECIPIENTS_MAX_LENGTH = 312;
 
     private static final int MESSAGE_LIST_QUERY_TOKEN = 9527;
     private static final int MESSAGE_LIST_QUERY_AFTER_DELETE_TOKEN = 9528;
 
-    private static final int DELETE_MESSAGE_TOKEN  = 9700;
+    private static final int DELETE_MESSAGE_TOKEN = 9700;
 
     private static final int CHARS_REMAINING_BEFORE_COUNTER_SHOWN = 10;
 
@@ -326,17 +329,18 @@ public class ComposeMessageActivity extends Activity
     private View mAttachmentEditorScrollView;
 
     private MessageListView mMsgListView;        // ListView for messages in this conversation
-    public MessageListAdapter mMsgListAdapter;  // and its corresponding ListAdapter
+    public MessageListAdapter mMsgListAdapter;   // and its corresponding ListAdapter
 
     private RecipientsEditor mRecipientsEditor;  // UI control for editing recipients
     private ImageButton mRecipientsPicker;       // UI control for recipients picker
+    private ImageButton mRecipientsSelector;     // UI control for recipients selector
 
     // For HW keyboard, 'mIsKeyboardOpen' indicates if the HW keyboard is open.
     // For SW keyboard, 'mIsKeyboardOpen' should always be true.
     private boolean mIsKeyboardOpen;
-    private boolean mIsLandscape;                // Whether we're in landscape mode
+    private boolean mIsLandscape;       // Whether we're in landscape mode
 
-    private boolean mToastForDraftSave;   // Whether to notify the user that a draft is being saved
+    private boolean mToastForDraftSave; // Whether to notify the user that a draft is being saved
 
     private boolean mSentMessage;       // true if the user has sent a message while in this
                                         // activity. On a new compose message case, when the first
@@ -355,7 +359,7 @@ public class ComposeMessageActivity extends Activity
     private boolean mEnableQuickEmojis;
 
     private boolean mWaitingForSubActivity;
-    private int mLastRecipientCount;            // Used for warning the user on too many recipients.
+    private int mLastRecipientCount;    // Used for warning the user on too many recipients.
     private AttachmentTypeSelectorAdapter mAttachmentTypeSelectorAdapter;
 
     private boolean mSendingMessage;    // Indicates the current message is sending, and shouldn't send again.
@@ -376,7 +380,7 @@ public class ComposeMessageActivity extends Activity
     private int mInputMethod;
 
     private int mLastSmoothScrollPosition;
-    private boolean mScrollOnSend;      // Flag that we need to scroll the list to the end.
+    private boolean mScrollOnSend;          // Flag that we need to scroll the list to the end.
 
     private int mSavedScrollPosition = -1;  // we save the ListView's scroll position in onPause(),
                                             // so we can remember it after re-entering the activity.
@@ -486,7 +490,6 @@ public class ComposeMessageActivity extends Activity
         }
     };
 
-
     private void viewMmsMessageAttachment(final int requestCode) {
         SlideshowModel slideshow = mWorkingMessage.getSlideshow();
         if (slideshow == null) {
@@ -520,7 +523,6 @@ public class ComposeMessageActivity extends Activity
             }, R.string.building_slideshow_title);
         }
     }
-
 
     private final Handler mMessageListItemHandler = new Handler() {
         @Override
@@ -1051,7 +1053,7 @@ public class ComposeMessageActivity extends Activity
             }
             Uri contactUri = null;
             boolean knownPrefix = true;
-            if ("mailto".equalsIgnoreCase(prefix))  {
+            if ("mailto".equalsIgnoreCase(prefix)) {
                 contactUri = getContactUriForEmail(uriString);
             } else if ("tel".equalsIgnoreCase(prefix)) {
                 contactUri = getContactUriForPhoneNumber(uriString);
@@ -1867,12 +1869,17 @@ public class ComposeMessageActivity extends Activity
             View stubView = stub.inflate();
             mRecipientsEditor = (RecipientsEditor) stubView.findViewById(R.id.recipients_editor);
             mRecipientsPicker = (ImageButton) stubView.findViewById(R.id.recipients_picker);
+            mRecipientsSelector = (ImageButton) stubView.findViewById(R.id.recipients_selector);
+            mRecipientsSelector.setVisibility(View.VISIBLE);
         } else {
             mRecipientsEditor = (RecipientsEditor)findViewById(R.id.recipients_editor);
             mRecipientsEditor.setVisibility(View.VISIBLE);
             mRecipientsPicker = (ImageButton)findViewById(R.id.recipients_picker);
+            mRecipientsSelector = (ImageButton)findViewById(R.id.recipients_selector);
+            mRecipientsSelector.setVisibility(View.VISIBLE);
         }
         mRecipientsPicker.setOnClickListener(this);
+        mRecipientsSelector.setOnClickListener(this);
 
         mRecipientsEditor.setAdapter(new ChipsRecipientAdapter(this));
         mRecipientsEditor.populate(recipients);
@@ -3222,10 +3229,19 @@ public class ComposeMessageActivity extends Activity
                 showContactInfoDialog(data.getData());
                 break;
 
+            case REQUEST_CODE_ADD_RECIPIENTS:
+                insertNumbersIntoRecipientsEditor((String[])data.getExtra("com.android.mms.ui.AddRecipients"));
+                break;
+
             default:
                 if (LogTag.VERBOSE) log("bail due to unknown requestCode=" + requestCode);
                 break;
         }
+    }
+
+    private void insertNumbersIntoRecipientsEditor(String[] numbers) {
+        ContactList list = ContactList.getByNumbers(Arrays.asList(numbers), true);
+        mRecipientsEditor.populate(list);
     }
 
     private void processPickResult(final Intent data) {
@@ -3589,9 +3605,11 @@ public class ComposeMessageActivity extends Activity
             confirmSendMessageIfNeeded();
         } else if ((v == mRecipientsPicker)) {
             launchMultiplePhonePicker();
-        }
-        else if((v == mQuickEmoji)) {
+        } else if ((v == mQuickEmoji)) {
             showEmojiDialog();
+        } else if (v == mRecipientsSelector) {
+            Intent intent = new Intent(ComposeMessageActivity.this, AddRecipientsList.class);
+            startActivityForResult(intent, REQUEST_CODE_ADD_RECIPIENTS);
         }
     }
 
@@ -3732,7 +3750,6 @@ public class ComposeMessageActivity extends Activity
                     // perform the delayed loading now, after keyboard opens
                     loadMessagesAndDraft(3);
                 }
-
 
                 // The message list view changed size, most likely because the keyboard
                 // appeared or disappeared or the user typed/deleted chars in the message
