@@ -154,4 +154,10 @@
     <!-- MMS push permission -->
     <string name="label_mms_push">MMS Push</string>
     <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
+
+    <!-- Add recipients -->
+    <string name="add_recipients">Add recipients</string>
+    <string name="groups_header">Groups</string>
+    <string name="loading_recipients">Loading contacts and groups</string>
+    <string name="no_recipients">No possible recipients</string>
 </resources>
