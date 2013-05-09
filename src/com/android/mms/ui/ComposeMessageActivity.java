@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 Esmertec AG.
+ * Copyright (C) 2013 The CyanogenMod Project
  * Copyright (C) 2008 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -177,6 +178,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.text.Normalizer;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -201,17 +203,18 @@ public class ComposeMessageActivity extends Activity
         implements View.OnClickListener, TextView.OnEditorActionListener,
         MessageStatusListener, Contact.UpdateListener, OnGesturePerformedListener,
         LoaderManager.LoaderCallbacks<Cursor>  {
-    public static final int REQUEST_CODE_ATTACH_IMAGE     = 100;
-    public static final int REQUEST_CODE_TAKE_PICTURE     = 101;
-    public static final int REQUEST_CODE_ATTACH_VIDEO     = 102;
-    public static final int REQUEST_CODE_TAKE_VIDEO       = 103;
-    public static final int REQUEST_CODE_ATTACH_SOUND     = 104;
-    public static final int REQUEST_CODE_RECORD_SOUND     = 105;
-    public static final int REQUEST_CODE_CREATE_SLIDESHOW = 106;
-    public static final int REQUEST_CODE_ECM_EXIT_DIALOG  = 107;
-    public static final int REQUEST_CODE_ADD_CONTACT      = 108;
-    public static final int REQUEST_CODE_PICK             = 109;
-    public static final int REQUEST_CODE_INSERT_CONTACT_INFO = 110;
+    public static final int REQUEST_CODE_ATTACH_IMAGE           = 100;
+    public static final int REQUEST_CODE_TAKE_PICTURE           = 101;
+    public static final int REQUEST_CODE_ATTACH_VIDEO           = 102;
+    public static final int REQUEST_CODE_TAKE_VIDEO             = 103;
+    public static final int REQUEST_CODE_ATTACH_SOUND           = 104;
+    public static final int REQUEST_CODE_RECORD_SOUND           = 105;
+    public static final int REQUEST_CODE_CREATE_SLIDESHOW       = 106;
+    public static final int REQUEST_CODE_ECM_EXIT_DIALOG        = 107;
+    public static final int REQUEST_CODE_ADD_CONTACT            = 108;
+    public static final int REQUEST_CODE_PICK                   = 109;
+    public static final int REQUEST_CODE_INSERT_CONTACT_INFO    = 110;
+    public static final int REQUEST_CODE_ADD_RECIPIENTS         = 111;
 
     private static final String TAG = "Mms/compose";
 
@@ -322,6 +325,7 @@ public class ComposeMessageActivity extends Activity
 
     private RecipientsEditor mRecipientsEditor;  // UI control for editing recipients
     private ImageButton mRecipientsPicker;       // UI control for recipients picker
+    private ImageButton mRecipientsSelector;     // UI control for recipients selector
 
     // For HW keyboard, 'mIsKeyboardOpen' indicates if the HW keyboard is open.
     // For SW keyboard, 'mIsKeyboardOpen' should always be true.
@@ -1971,12 +1975,17 @@ public class ComposeMessageActivity extends Activity
             View stubView = stub.inflate();
             mRecipientsEditor = (RecipientsEditor) stubView.findViewById(R.id.recipients_editor);
             mRecipientsPicker = (ImageButton) stubView.findViewById(R.id.recipients_picker);
+            mRecipientsSelector = (ImageButton) stubView.findViewById(R.id.recipients_selector);
+            mRecipientsSelector.setVisibility(View.VISIBLE);
         } else {
             mRecipientsEditor = (RecipientsEditor)findViewById(R.id.recipients_editor);
             mRecipientsEditor.setVisibility(View.VISIBLE);
             mRecipientsPicker = (ImageButton)findViewById(R.id.recipients_picker);
+            mRecipientsSelector = (ImageButton)findViewById(R.id.recipients_selector);
+            mRecipientsSelector.setVisibility(View.VISIBLE);
         }
         mRecipientsPicker.setOnClickListener(this);
+        mRecipientsSelector.setOnClickListener(this);
 
         mRecipientsEditor.setAdapter(new ChipsRecipientAdapter(this));
         mRecipientsEditor.populate(recipients);
@@ -3274,10 +3283,19 @@ public class ComposeMessageActivity extends Activity
                 showContactInfoDialog(data.getData());
                 break;
 
+            case REQUEST_CODE_ADD_RECIPIENTS:
+                insertNumbersIntoRecipientsEditor((String[])data.getExtra("com.android.mms.ui.AddRecipients"));
+                break;
+
             default:
                 if (LogTag.VERBOSE) log("bail due to unknown requestCode=" + requestCode);
                 break;
         }
+    }
+
+    private void insertNumbersIntoRecipientsEditor(String[] numbers) {
+        ContactList list = ContactList.getByNumbers(Arrays.asList(numbers), true);
+        mRecipientsEditor.populate(list);
     }
 
     private void processPickResult(final Intent data) {
@@ -3639,11 +3657,13 @@ public class ComposeMessageActivity extends Activity
     public void onClick(View v) {
         if ((v == mSendButtonSms || v == mSendButtonMms) && isPreparedForSending()) {
             confirmSendMessageIfNeeded();
-        } else if ((v == mRecipientsPicker)) {
+        } else if (v == mRecipientsPicker) {
             launchMultiplePhonePicker();
-        }
-        else if((v == mQuickEmoji)) {
+        } else if (v == mQuickEmoji) {
             showEmojiDialog();
+        } else if (v == mRecipientsSelector) {
+            Intent intent = new Intent(ComposeMessageActivity.this, AddRecipientsList.class);
+            startActivityForResult(intent, REQUEST_CODE_ADD_RECIPIENTS);
         }
     }
 
