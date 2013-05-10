@@ -104,6 +104,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAfn//+P8\u003d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1850
+      },
+      "writtenOn": "2013-05-10T20:48:20Z",
+      "side": 1,
+      "message": "This should be \"duration\".",
+      "revId": "f7568c24f1b9bd6ef5bc4e06ef5d9e40d9104139",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//5eE\u003d",
         "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
         "patchSetId": 4
