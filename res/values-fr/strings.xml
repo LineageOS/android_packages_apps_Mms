@@ -24,6 +24,7 @@
     <string name="menu_call_back" msgid="7538482331117914146">"Appeler <xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_send_email" msgid="671366308915241664">"Envoyer un e-mail à <xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_compose_new" msgid="3763437973691046238">"Nouveau message"</string>
+    <string name="menu_mark_all_read">Marquer tout comme lu</string>
     <string name="menu_preferences" msgid="4693148116114749414">"Paramètres"</string>
     <string name="menu_add_address_to_contacts" msgid="2313624913486309940">"Ajouter \"<xliff:g id="NAME">%s</xliff:g>\" aux contacts"</string>
     <string name="menu_call" msgid="5877123227307074690">"Appeler"</string>
@@ -167,6 +168,12 @@
     <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Demander un accusé de réception pour chaque message envoyé"</string>
     <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Demander une confirmation de lecture pour chaque message envoyé"</string>
     <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Demander un accusé de réception pour chaque message envoyé"</string>
+    <string name="pref_title_max_sms_length">Longueur maximale du SMS</string>
+    <string name="pref_summary_max_sms_length">La longueur maximale autorisée pour les SMS</string>
+    <string name="pref_title_sms_split_160">SMS concaténé</string>
+    <string name="pref_summary_sms_split_160">Concaténation des SMS tous les 160 caractères</string>
+    <string name="pref_title_sms_split_counter">Compteur de séparation</string>
+    <string name="pref_summary_sms_split_counter">Ajouter un compteur au message. Exemple\u00A0: (1/2)</string>
     <string name="pref_summary_auto_delete" msgid="7719538116486177613">"Supprimer lorsque les limites suivantes sont atteintes"</string>
     <string name="pref_summary_delete_limit" msgid="597128041393045216">"<xliff:g id="COUNT">%1$s</xliff:g> messages par conversation"</string>
     <string name="pref_title_manage_sim_messages" msgid="7820895261757881177">"Gestion messages carte SIM"</string>
@@ -195,6 +202,7 @@
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Itinérance"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Récupérer automatiquement les messages en itinérance"</string>
     <string name="pref_title_save_location">Dossier sauvegarde pièces jointes</string>
+    <string name="pref_summary_save_location">Dossier dans lequel les pièces jointes doivent être enregistrées</string>
     <string name="to_label" msgid="2355268818058389047">"À "</string>
     <string name="confirm_dialog_title" msgid="5810813994465120375">"Supprimer"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Supprimer le message verrouillé\u00A0?"</string>
@@ -346,6 +354,10 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Paramètres supplémentaires</string>
 
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Conversion unicode</string>
+    <string name="pref_summary_strip_unicode">Remplace les caractères qui ne sont pas pris en charge dans les 160 caractères des messages SMS</string>
+
     <!-- Back to all threads -->
     <string name="pref_title_mms_back_to_all_threads">Retour à la liste des fils</string>
     <string name="pref_summary_mms_back_to_all_threads">Aller à la liste des fils lorsque la touche retour est appuyée</string>
@@ -353,6 +365,10 @@
     <!-- Toggle setting for enable/disable Black Background -->
     <string name="pref_title_mms_black_background">Fond noir</string>
     <string name="pref_summary_mms_black_background">Rendre l\'arrière-plan noir\n(Relancer l\'application)</string>
+
+    <!-- Toggle setting for always show character counter -->
+    <string name="pref_title_show_counter_always">Toujours afficher le compteur de caractères</string>
+    <string name="pref_summary_show_counter_always">Toujours afficher le compteur de caractères lors de la rédaction d\'un message</string>
 
     <!-- Custom user-agent -->
     <string name="pref_mms_custom_option">Personnalisé\u2026</string>
@@ -367,6 +383,10 @@
     <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Date originale</string>
     <string name="pref_summary_mms_use_sent_timestamp">Afficher la date d\'envoi au lieu de la date de réception</string>
+
+    <!-- Timestamp GMT Corection -->
+    <string name="pref_title_mms_use_sent_timestamp_gmt_correction">Indication de l\'heure GMT</string>
+    <string name="pref_summary_mms_use_sent_timestamp_gmt_correction">Activez si la date et l\'heure définis par votre opérateur mobile, n\'a pas déjà le décalage GMT</string>
 
     <!-- Only mobile numbers -->
     <string name="pref_title_only_mobile_numbers">Seulement numéros mobiles</string>
