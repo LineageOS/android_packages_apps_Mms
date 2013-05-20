@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "hmNVEcU",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-20T01:44:26Z",
+      "side": 1,
+      "message": "Marquer tous (les messages) comme lus",
+      "revId": "b5ef81e0a3a364c85da21785e24bc082737df96c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "hgNj7bI",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-20T01:44:26Z",
+      "side": 1,
+      "message": "Séparation SMS",
+      "revId": "b5ef81e0a3a364c85da21785e24bc082737df96c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "huNX4cg",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-20T01:44:26Z",
+      "side": 1,
+      "message": "Séparer les SMS tous les 160 caractères",
+      "revId": "b5ef81e0a3a364c85da21785e24bc082737df96c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "hsNc5e8",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-20T01:44:26Z",
+      "side": 1,
+      "message": "Pièces jointes (plus court et compréhensible)",
+      "revId": "b5ef81e0a3a364c85da21785e24bc082737df96c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "hmNs8Zw",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 389,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-20T01:44:26Z",
+      "side": 1,
+      "message": "définies\n\nn\u0027ont pas déjà...",
+      "revId": "b5ef81e0a3a364c85da21785e24bc082737df96c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
