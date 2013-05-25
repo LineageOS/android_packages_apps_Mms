@@ -16,6 +16,23 @@
       "revId": "9dd8e440abd3a632daa8d29cf2d7c9c4ea3880af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iI-RZf4",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-05-25T00:10:42Z",
+      "side": 1,
+      "message": "I\u0027d make it shorter. What about something like \"Sending in \u0026lt;font color\u003d\"red\"\u0026gt;\u0026lt;big\u0026gt;%1$d\u0026lt;/big\u0026gt;\u0026lt;/font\u0026gt; seconds...\"? (and this should be changed with plurals, \"1 second\" / \"%d seconds\")",
+      "revId": "9dd8e440abd3a632daa8d29cf2d7c9c4ea3880af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
