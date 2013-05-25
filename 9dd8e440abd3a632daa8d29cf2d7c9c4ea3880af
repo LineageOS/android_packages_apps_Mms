@@ -33,6 +33,40 @@
       "revId": "9dd8e440abd3a632daa8d29cf2d7c9c4ea3880af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iC-YGR0",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1850
+      },
+      "writtenOn": "2013-05-25T00:33:26Z",
+      "side": 1,
+      "message": "This line should be removed.",
+      "revId": "9dd8e440abd3a632daa8d29cf2d7c9c4ea3880af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iM-9HXA",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 1850
+      },
+      "writtenOn": "2013-05-25T00:33:26Z",
+      "side": 1,
+      "message": "This comment has been copied/pasted wrongly. We are not handling the quickmessage preference here.",
+      "revId": "9dd8e440abd3a632daa8d29cf2d7c9c4ea3880af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
