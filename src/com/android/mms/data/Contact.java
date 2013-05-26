@@ -780,8 +780,19 @@ public class Contact {
         private Contact getContactInfo(Contact c) {
             if (c.mIsMe) {
                 return getContactInfoForSelf();
-            } else if (Mms.isEmailAddress(c.mNumber) || isAlphaNumber(c.mNumber)) {
+            } else if (Mms.isEmailAddress(c.mNumber)) {
                 return getContactInfoForEmailAddress(c.mNumber);
+            } else if (isAlphaNumber(c.mNumber)) {
+                // Double check to verify if we are under a vanity address. In this
+                // case the way to retrieve the contact is through phone number contact.
+                Contact contact = getContactInfoForEmailAddress(c.mNumber);
+                if (!contact.existsInDatabase()) {
+                    Contact phoneContact = getContactInfoForPhoneNumber(c.mNumber);
+                    if (phoneContact.existsInDatabase()) {
+                        contact = phoneContact;
+                    }
+                }
+                return contact;
             } else {
                 return getContactInfoForPhoneNumber(c.mNumber);
             }
