@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "iDcdD74",
+        "filename": "src/com/android/mms/data/Contact.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 838,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-05-27T23:16:11Z",
+      "side": 1,
+      "message": "Why this extra function? \u0027Strict phone number\u0027  is not exactly a clear term :-) If you\u0027re OK with it, I\u0027ll collapse the function into getContactInfo with some explaining comment.",
+      "revId": "fa1e43933f0048aa107137c75b6b7b86619f61e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
