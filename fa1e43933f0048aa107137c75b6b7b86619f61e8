@@ -16,6 +16,24 @@
       "revId": "fa1e43933f0048aa107137c75b6b7b86619f61e8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iPd9V.g",
+        "filename": "src/com/android/mms/data/Contact.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 838,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-05-27T23:33:16Z",
+      "side": 1,
+      "message": "No problem. I\u0027m just trying to separate the function that uses only numbers from the alphanumerical one.",
+      "parentUuid": "iDcdD74",
+      "revId": "fa1e43933f0048aa107137c75b6b7b86619f61e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
