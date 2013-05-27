@@ -780,11 +780,18 @@ public class Contact {
         private Contact getContactInfo(Contact c) {
             if (c.mIsMe) {
                 return getContactInfoForSelf();
-            } else if (Mms.isEmailAddress(c.mNumber) || isAlphaNumber(c.mNumber)) {
+            } else if (Mms.isEmailAddress(c.mNumber)) {
                 return getContactInfoForEmailAddress(c.mNumber);
-            } else {
+            } else if (isAlphaNumber(c.mNumber)) {
+                Contact contact = getContactInfoForEmailAddress(c.mNumber);
+                if (contact.existsInDatabase()) {
+                    return contact;
+                }
+                // it wasn't an email address, so fall back to treating it
+                // as a (vanity) phone number
                 return getContactInfoForPhoneNumber(c.mNumber);
             }
+            return getContactInfoForStrictPhoneNumber(c.mNumber);
         }
 
         // Some received sms's have addresses such as "OakfieldCPS" or "T-Mobile". This
@@ -823,11 +830,18 @@ public class Contact {
         }
 
         /**
+         * Queries the caller id info with the phone number (requires an strict phone number).
+         * @return a Contact containing the caller id info corresponding to the number.
+         */
+        private Contact getContactInfoForStrictPhoneNumber(String number) {
+            return getContactInfoForPhoneNumber(PhoneNumberUtils.stripSeparators(number));
+        }
+
+        /**
          * Queries the caller id info with the phone number.
          * @return a Contact containing the caller id info corresponding to the number.
          */
         private Contact getContactInfoForPhoneNumber(String number) {
-            number = PhoneNumberUtils.stripSeparators(number);
             Contact entry = new Contact(number);
             entry.mContactMethodType = CONTACT_METHOD_TYPE_PHONE;
 
