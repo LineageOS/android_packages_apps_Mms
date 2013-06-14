@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "iJnQe1U",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-06-14T19:47:34Z",
+      "side": 1,
+      "message": "not sure \u0027druk\u0027 is the right translation here - maybe \u0027uitstoot\u0027?  have to think about this one a bit.\n@Marco, any suggested Dutch words we could look at?",
+      "revId": "e1d11411977faa6068b9d241b213577ebd6196df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iHnVp0E",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-06-14T19:47:34Z",
+      "side": 1,
+      "message": "Same comment as above - also not sure about \u0027uitkassie\u0027.  Marco, any suggestions from Dutch?",
+      "revId": "e1d11411977faa6068b9d241b213577ebd6196df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
