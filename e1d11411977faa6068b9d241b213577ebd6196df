@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "iFkPg.E",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-06-14T20:06:34Z",
+      "side": 1,
+      "message": "Dutch translation left it Push.\n\nMaybe stoot, not sure?",
+      "parentUuid": "iJnQe1U",
+      "revId": "e1d11411977faa6068b9d241b213577ebd6196df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "iHnVp0E",
         "filename": "res/values-af/cm_strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-06-14T19:47:34Z",
       "side": 1,
       "message": "Same comment as above - also not sure about \u0027uitkassie\u0027.  Marco, any suggestions from Dutch?",
+      "revId": "e1d11411977faa6068b9d241b213577ebd6196df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iDkUz-M",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-06-14T20:06:34Z",
+      "side": 1,
+      "message": "uitkassie is translation from outbox of android email program translation.",
+      "parentUuid": "iHnVp0E",
       "revId": "e1d11411977faa6068b9d241b213577ebd6196df",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
