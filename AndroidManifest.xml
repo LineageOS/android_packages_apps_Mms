@@ -66,8 +66,10 @@
         <service android:name=".transaction.TransactionService"
                  android:exported="false" />
 
+        <!-- Allow WRITE_SMS via direct call to service for 3rd party apps -->
         <service android:name=".transaction.SmsReceiverService"
-                 android:exported="false" />
+                 android:exported="true" 
+                 android:permission="android.permission.WRITE_SMS" />
 
         <activity android:name=".ui.ConversationList"
                   android:label="@string/app_label"
