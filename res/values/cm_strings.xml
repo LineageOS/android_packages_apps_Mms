@@ -16,6 +16,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Message options - Add SMS to calendar -->
     <string name="menu_add_to_calendar">Add to calendar</string>
+    
+    <!-- Alternative delivery reports //-->
+    <string name="pref_title_sms_delivery_reports_alternative">Use message prefix</string>
+    <string name="pref_summary_sms_delivery_reports_alternative">Request delivery report using a message prefix</string>
+    <string name="pref_title_sms_delivery_reports_alternative_prefix">Carrier delivery report prefix</string>
+    <string name="pref_summary_sms_delivery_reports_alternative_prefix"><xliff:g id="prefix" example="*0#">%1$s</xliff:g></string>
 
     <!-- QM - Dialog box buttons -->
     <string name="button_close">Close</string>

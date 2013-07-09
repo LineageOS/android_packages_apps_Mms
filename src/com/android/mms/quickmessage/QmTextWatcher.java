@@ -33,17 +33,20 @@ public class QmTextWatcher implements TextWatcher {
     private ImageButton mTemplateButton;
     private int mTemplateCount;
     private UnicodeFilter mUnicodeFilter;
+    private String mDeliveryReportAlternativePrefix;
     private Context mContext;
     private static final int CHARS_REMAINING_BEFORE_COUNTER_SHOWN = 30;
 
     public QmTextWatcher(Context context, TextView updateTextView, ImageButton sendButton,
-            ImageButton templateButton, int templateCount, UnicodeFilter unicodeFilter) {
+            ImageButton templateButton, int templateCount, UnicodeFilter unicodeFilter,
+            String deliveryReportAlternativePrefix) {
         mContext = context;
         mTextView = updateTextView;
         mSendButton = sendButton;
         mTemplateButton = templateButton;
         mTemplateCount = templateCount;
         mUnicodeFilter = unicodeFilter;
+        mDeliveryReportAlternativePrefix = deliveryReportAlternativePrefix;
     }
 
     public QmTextWatcher(Context context, TextView updateTextView) {
@@ -62,6 +65,11 @@ public class QmTextWatcher implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
+        // add alternative delivery report prefix
+        if (mDeliveryReportAlternativePrefix != null) {
+          s = mDeliveryReportAlternativePrefix + s;
+        }
+        
         // strip unicode for message length counting
         if (mUnicodeFilter != null) {
             s = mUnicodeFilter.filter(s);
