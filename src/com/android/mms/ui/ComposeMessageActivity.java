@@ -395,6 +395,8 @@ public class ComposeMessageActivity extends Activity
     // we should not load the draft.
     private boolean mShouldLoadDraft;
 
+    private String mDeliveryReportAlternativePrefix = null;
+
     private UnicodeFilter mUnicodeFilter = null;
 
     private Handler mHandler = new Handler();
@@ -1949,6 +1951,12 @@ public class ComposeMessageActivity extends Activity
                 MessagingPreferenceActivity.UNICODE_STRIPPING_LEAVE_INTACT);
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE, false);
+        boolean requestDeliveryReportAlternative = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALTERNATIVE, false);
+        String requestDeliveryReportAlternativePrefix = prefs.getString(
+               MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALTERNATIVE_PREFIX, "");
 
         mLibrary = TemplateGesturesLibrary.getStore(this);
 
@@ -1971,6 +1979,10 @@ public class ComposeMessageActivity extends Activity
 
         LengthFilter lengthFilter = new LengthFilter(MmsConfig.getMaxTextLimit());
         mTextEditor.setFilters(new InputFilter[] { lengthFilter });
+
+        if (requestDeliveryReport && requestDeliveryReportAlternative) {
+          mDeliveryReportAlternativePrefix = requestDeliveryReportAlternativePrefix;
+        }
 
         if (unicodeStripping != MessagingPreferenceActivity.UNICODE_STRIPPING_LEAVE_INTACT) {
             boolean stripNonDecodableOnly =
@@ -3597,6 +3609,9 @@ public class ComposeMessageActivity extends Activity
 
             updateSendButtonState();
 
+            // add delivery report prefix for the count
+            s = addDeliveryPrefixIfRequested(s);
+
             // strip unicode for counting characters
             s = stripUnicodeIfRequested(s);
             updateCounter(s, start, before, count);
@@ -3905,6 +3920,9 @@ public class ComposeMessageActivity extends Activity
             // send can change the recipients. Make sure we remove the listeners first and then add
             // them back once the recipient list has settled.
             removeRecipientsListeners();
+
+            // add delivery report prefix if active
+            mWorkingMessage.setText(addDeliveryPrefixIfRequested(mWorkingMessage.getText()));
 
             // strip unicode chars before sending (if applicable)
             mWorkingMessage.setText(stripUnicodeIfRequested(mWorkingMessage.getText()));
@@ -4803,6 +4821,13 @@ public class ComposeMessageActivity extends Activity
     private CharSequence stripUnicodeIfRequested(CharSequence text) {
         if (mUnicodeFilter != null) {
             text = mUnicodeFilter.filter(text);
+        }
+        return text;
+    }
+
+    private CharSequence addDeliveryPrefixIfRequested(CharSequence text) {
+        if (mDeliveryReportAlternativePrefix != null) {
+            text = mDeliveryReportAlternativePrefix + text;
         }
         return text;
     }
