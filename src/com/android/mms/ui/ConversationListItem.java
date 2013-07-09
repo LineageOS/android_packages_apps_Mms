@@ -217,10 +217,30 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(mContext);
         boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE, false);
+        boolean requestDeliveryReportAlternative = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALTERNATIVE, false);
+        String  requestDeliveryReportAlternativePrefix = prefs.getString(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALTERNATIVE_PREFIX, "");
+
+        // Strip out the delivery report prefix if present
+        if (requestDeliveryReport && requestDeliveryReportAlternative) {
+            if (smileySubject.length() >= requestDeliveryReportAlternativePrefix.length()) {
+                CharSequence subjectStart = smileySubject.subSequence(0,
+                        requestDeliveryReportAlternativePrefix.length());
+                if (subjectStart.toString().contentEquals(requestDeliveryReportAlternativePrefix)) {
+                    smileySubject = smileySubject.subSequence(
+                            requestDeliveryReportAlternativePrefix.length(), smileySubject.length());
+                }
+            }
+        }
+
         if(enableEmojis) {
             EmojiParser emojiParser = EmojiParser.getInstance();
             smileySubject = emojiParser.addEmojiSpans(smileySubject);
         }
+
         mSubjectView.setText(smileySubject);
         LayoutParams subjectLayout = (LayoutParams)mSubjectView.getLayoutParams();
         // We have to make the subject left of whatever optional items are shown on the right.
