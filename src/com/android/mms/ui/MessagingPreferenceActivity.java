@@ -32,6 +32,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.DialogPreference;
+import android.preference.EditTextPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
@@ -74,6 +76,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String RETRIEVAL_DURING_ROAMING = "pref_key_mms_retrieval_during_roaming";
     public static final String AUTO_DELETE              = "pref_key_auto_delete";
     public static final String GROUP_MMS_MODE           = "pref_key_mms_group_mms";
+
+    // Alternative (message prefix) delivery report request method
+    public static final String
+            SMS_DELIVERY_REPORT_MODE_ALT = "pref_key_sms_delivery_reports_alt";
+    public static final String
+            SMS_DELIVERY_REPORT_MODE_ALT_PREFIX = "pref_key_sms_delivery_reports_alt_prefix";
 
     // Emoji
     public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
@@ -120,6 +128,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;
+    private Preference mSmsDeliveryReportAlternativePref;
+    private EditTextPreference mSmsDeliveryReportAlternativePrefixPref;
     private CheckBoxPreference mSmsSplitCounterPref;
     private Preference mMmsLimitPref;
     private Preference mMmsDeliveryReportPref;
@@ -178,6 +188,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mManageSimPref = findPreference("pref_key_manage_sim_messages");
         mSmsLimitPref = findPreference("pref_key_sms_delete_limit");
         mSmsDeliveryReportPref = findPreference("pref_key_sms_delivery_reports");
+        mSmsDeliveryReportAlternativePref = findPreference("pref_key_sms_delivery_reports_alt");
+        mSmsDeliveryReportAlternativePrefixPref =
+                (EditTextPreference) findPreference("pref_key_sms_delivery_reports_alt_prefix");
         mSmsSplitCounterPref = (CheckBoxPreference) findPreference("pref_key_sms_split_counter");
         mMmsDeliveryReportPref = findPreference("pref_key_mms_delivery_reports");
         mMmsGroupMmsPref = findPreference("pref_key_mms_group_mms");
@@ -243,9 +256,23 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             PreferenceCategory smsCategory =
                 (PreferenceCategory)findPreference("pref_key_sms_settings");
             smsCategory.removePreference(mSmsDeliveryReportPref);
+            smsCategory.removePreference(mSmsDeliveryReportAlternativePref);
+            smsCategory.removePreference(mSmsDeliveryReportAlternativePrefixPref);
             if (!MmsApp.getApplication().getTelephonyManager().hasIccCard()) {
                 getPreferenceScreen().removePreference(smsCategory);
             }
+        } else {
+            mSmsDeliveryReportAlternativePrefixPref.setSummary(
+                    mSmsDeliveryReportAlternativePrefixPref.getText());
+            mSmsDeliveryReportAlternativePrefixPref.setOnPreferenceChangeListener(
+                    new Preference.OnPreferenceChangeListener() {
+                        @Override
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            final String summary = newValue.toString();
+                            mSmsDeliveryReportAlternativePrefixPref.setSummary(summary);
+                            return true;
+                    }
+            });
         }
 
         if (!MmsConfig.getSplitSmsEnabled()) {
