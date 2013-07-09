@@ -158,6 +158,7 @@ public class QuickMessagePopup extends Activity implements
     private UnicodeFilter mUnicodeFilter = null;
     private boolean mEnableEmojis = false;
     private int mInputMethod;
+    private String mRequestDeliveryReportAlternativePrefix = null;
 
     // Message pager
     private ViewPager mMessagePager;
@@ -197,6 +198,16 @@ public class QuickMessagePopup extends Activity implements
         mEnableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
+
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE, false);
+        boolean requestDeliveryReportAlternative = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALT, false);
+
+        if (requestDeliveryReport && requestDeliveryReportAlternative) {
+            mRequestDeliveryReportAlternativePrefix = prefs.getString(
+                    MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALT_PREFIX, "*0#");
+        }
 
         // Set the window features and layout
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -1049,8 +1060,9 @@ public class QuickMessagePopup extends Activity implements
                     mUnicodeFilter = new UnicodeFilter(stripNonDecodableOnly);
                 }
 
-                qmReplyText.addTextChangedListener(new QmTextWatcher(mContext, qmTextCounter, qmSendButton,
-                        qmTemplatesButton, mNumTemplates, mUnicodeFilter));
+                qmReplyText.addTextChangedListener(
+                        new QmTextWatcher(mContext, qmTextCounter, qmSendButton, qmTemplatesButton,
+                        mNumTemplates, mUnicodeFilter, mRequestDeliveryReportAlternativePrefix));
                 qmReplyText.setOnEditorActionListener(new OnEditorActionListener() {
                     @Override
                     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -1130,6 +1142,9 @@ public class QuickMessagePopup extends Activity implements
          * @param qm - qm we are replying to (for sender details)
          */
         private void sendMessageAndMoveOn(String message, QuickMessage qm) {
+            if (mRequestDeliveryReportAlternativePrefix != null) {
+              message = mRequestDeliveryReportAlternativePrefix + message;
+            }
             if (mUnicodeFilter != null) {
                 message = mUnicodeFilter.filter(message).toString();
             }
