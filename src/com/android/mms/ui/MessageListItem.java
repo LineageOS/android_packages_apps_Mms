@@ -534,6 +534,12 @@ public class MessageListItem extends LinearLayout implements
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(mContext);
         boolean enableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE, false);
+        boolean deliveryReportAlternative = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALT, false);
+        String  deliveryReportAlternativePrefix = prefs.getString(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALT_PREFIX, "*0#");
 
         boolean hasSubject = !TextUtils.isEmpty(subject);
         SmileyParser parser = SmileyParser.getInstance();
@@ -559,6 +565,19 @@ public class MessageListItem extends LinearLayout implements
                 if (hasSubject) {
                     buf.append(" - ");
                 }
+
+                // Strip out the delivery report prefix if present
+                if (requestDeliveryReport && deliveryReportAlternative) {
+                    if (body.length() >= deliveryReportAlternativePrefix.length()) {
+                        String subjectStart = body.substring(0,
+                                deliveryReportAlternativePrefix.length());
+                        if (subjectStart.toString().contentEquals(deliveryReportAlternativePrefix)){
+                            body = body.substring(
+                                    deliveryReportAlternativePrefix.length(), body.length());
+                        }
+                    }
+                }
+
                 CharSequence smileyBody = parser.addSmileySpans(body);
                 if (enableEmojis) {
                     EmojiParser emojiParser = EmojiParser.getInstance();
