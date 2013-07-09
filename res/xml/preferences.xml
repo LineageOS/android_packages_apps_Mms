@@ -60,6 +60,22 @@
 
         <CheckBoxPreference
             android:defaultValue="false"
+            android:key="pref_key_sms_delivery_reports_alt"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="pref_key_sms_delivery_reports"
+            android:summary="@string/pref_summary_sms_delivery_reports_alt"
+            android:title="@string/pref_title_sms_delivery_reports_alt" />
+
+        <EditTextPreference
+            android:defaultValue="*0#"
+            android:key="pref_key_sms_delivery_reports_alt_prefix"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="pref_key_sms_delivery_reports_alt"
+            android:summary="@string/pref_summary_sms_delivery_reports_alt_prefix"
+            android:title="@string/pref_title_sms_delivery_reports_alt_prefix" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
             android:key="pref_key_sms_split_counter"
             android:summary="@string/pref_summary_sms_split_counter"
             android:title="@string/pref_title_sms_split_counter" />

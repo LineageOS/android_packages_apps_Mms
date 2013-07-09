@@ -31,6 +31,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SqliteWrapper;
 import android.net.Uri;
@@ -40,6 +41,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.Process;
+import android.preference.PreferenceManager;
 import android.provider.Telephony.Sms;
 import android.provider.Telephony.Sms.Inbox;
 import android.provider.Telephony.Sms.Intents;
@@ -58,6 +60,7 @@ import com.android.mms.R;
 import com.android.mms.data.Contact;
 import com.android.mms.data.Conversation;
 import com.android.mms.ui.ClassZeroActivity;
+import com.android.mms.ui.MessagingPreferenceActivity;
 import com.android.mms.util.AddressUtils;
 import com.android.mms.util.Recycler;
 import com.android.mms.util.SendingProgressTokenManager;
@@ -299,6 +302,8 @@ public class SmsReceiverService extends Service {
         }
 
         if (mResultCode == Activity.RESULT_OK) {
+            stripDeliveryReportPrefix(uri);
+
             if (LogTag.DEBUG_SEND || Log.isLoggable(LogTag.TRANSACTION, Log.VERBOSE)) {
                 Log.v(TAG, "handleSmsSent move message to sent folder uri: " + uri);
             }
@@ -420,6 +425,50 @@ public class SmsReceiverService extends Service {
 
     // This must match REPLACE_PROJECTION.
     private static final int REPLACE_COLUMN_ID = 0;
+
+    /**
+     * Method to remove the delivery report prefix method if it
+     * is turned on in messaging preferences
+     */
+    private void stripDeliveryReportPrefix(Uri uri) {
+        Context context = getApplicationContext();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE, false);
+        boolean deliveryReportAlternative = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALT, false);
+
+        // Strip out the delivery report prefix if required
+        if (requestDeliveryReport && deliveryReportAlternative) {
+            String deliveryReportAlternativePrefix = prefs.getString(
+                    MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE_ALT_PREFIX, "*0#");
+
+            ContentResolver resolver = getContentResolver();
+            Cursor c = SqliteWrapper.query(this, resolver, uri, SEND_PROJECTION, null, null, null);
+
+            if (c != null) {
+                try {
+                    if (c.moveToFirst()) {
+                        String msgText = c.getString(SEND_COLUMN_BODY);
+                        if (msgText.length() >= deliveryReportAlternativePrefix.length()) {
+                            String subjectStart = msgText.substring(0,
+                                    deliveryReportAlternativePrefix.length());
+                            if (subjectStart.toString().
+                                    contentEquals(deliveryReportAlternativePrefix)) {
+                                msgText = msgText.substring(
+                                        deliveryReportAlternativePrefix.length(), msgText.length());
+                                ContentValues values = new ContentValues(1);
+                                values.put(Sms.BODY, msgText);
+                                SqliteWrapper.update(this, resolver, uri, values, null, null);
+                            }
+                        }
+                    }
+                } finally {
+                    c.close();
+                }
+            }
+        }
+    }
 
     /**
      * If the message is a class-zero message, display it immediately
