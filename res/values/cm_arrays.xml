@@ -84,4 +84,102 @@
         <item>2</item>
     </string-array>
 
+    <!-- Text sizes -->
+    <string-array name="pref_entries_conv_text_size">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp (default)</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </string-array>
+    <string-array name="pref_values_conv_text_size" translatable="false">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_entries_conv_date_size">
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp (default)</item>
+        <item>16sp</item>
+        <item>18sp</item>
+    </string-array>
+    <string-array name="pref_values_conv_date_size" translatable="false">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="pref_entries_conv_list_subj_size">
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp (default)</item>
+        <item>16sp</item>
+        <item>18sp</item>
+    </string-array>
+    <string-array name="pref_values_conv_list_subj_size" translatable="false">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="pref_entries_conv_list_name_size">
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp (default)</item>
+        <item>20sp</item>
+        <item>22sp</item>
+    </string-array>
+    <string-array name="pref_values_conv_list_name_size" translatable="false">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+    </string-array>
+    <string-array name="pref_entries_conv_list_date_size">
+        <item>8sp</item>
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp (default)</item>
+        <item>16sp</item>
+        <item>18sp</item>
+    </string-array>
+    <string-array name="pref_values_conv_list_date_size" translatable="false">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="pref_entries_conv_compose_text_size">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>14sp</item>
+        <item>16sp (default)</item>
+        <item>18sp</item>
+        <item>20sp</item>
+    </string-array>
+    <string-array name="pref_values_conv_compose_text_size" translatable="false">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+
 </resources>

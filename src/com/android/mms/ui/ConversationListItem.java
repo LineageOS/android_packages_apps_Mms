@@ -43,6 +43,7 @@ import com.android.mms.data.ContactList;
 import com.android.mms.data.Conversation;
 import com.android.mms.util.EmojiParser;
 import com.android.mms.util.SmileyParser;
+import com.android.mms.MmsApp;
 
 /**
  * This class manages the view for given conversation.
@@ -58,6 +59,7 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
     private View mAttachmentView;
     private View mErrorIndicator;
     private QuickContactBadge mAvatarView;
+    private SharedPreferences prefs;
 
     static private Drawable sDefaultContactImage;
 
@@ -91,6 +93,20 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         mAttachmentView = findViewById(R.id.attachment);
         mErrorIndicator = findViewById(R.id.error);
         mAvatarView = (QuickContactBadge) findViewById(R.id.avatar);
+
+        prefs = PreferenceManager
+                .getDefaultSharedPreferences(super.getContext());
+
+        // set text sizes
+        mDateView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_LIST_DATE_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_LIST_DATE_SIZE_DEFAULT))));
+        mSubjectView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_LIST_SUBJECT_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_LIST_SUBJECT_SIZE_DEFAULT))));
+        mFromView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_LIST_NAME_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_LIST_NAME_SIZE_DEFAULT))));
     }
 
     public Conversation getConversation() {

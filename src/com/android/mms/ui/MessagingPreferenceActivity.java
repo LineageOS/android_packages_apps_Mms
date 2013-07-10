@@ -17,6 +17,7 @@
 
 package com.android.mms.ui;
 
+import android.util.Log;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -115,6 +116,21 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String QM_CLOSE_ALL_ENABLED      = "pref_key_close_all";
     public static final String QM_DARK_THEME_ENABLED     = "pref_dark_theme";
 
+    // text sizes
+    public static final String CONVERSATION_TEXT_SIZE = "pref_key_conv_text_size";
+    public static final String CONVERSATION_DATE_SIZE = "pref_key_conv_date_size";
+    public static final String CONVERSATION_LIST_SUBJECT_SIZE = "pref_key_conv_list_subj_size";
+    public static final String CONVERSATION_LIST_NAME_SIZE = "pref_key_conv_list_name_size";
+    public static final String CONVERSATION_LIST_DATE_SIZE = "pref_key_conv_list_date_size";
+    public static final String CONVERSATION_COMPOSE_TEXT_SIZE = "pref_key_conv_compose_text_size";
+
+    public static final int CONVERSATION_TEXT_SIZE_DEFAULT = 16;
+    public static final int CONVERSATION_DATE_SIZE_DEFAULT = 14;
+    public static final int CONVERSATION_LIST_SUBJECT_SIZE_DEFAULT = 14;
+    public static final int CONVERSATION_LIST_NAME_SIZE_DEFAULT = 18;
+    public static final int CONVERSATION_LIST_DATE_SIZE_DEFAULT = 14;
+    public static final int CONVERSATION_COMPOSE_TEXT_SIZE_DEFAULT = 16;
+
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
@@ -151,6 +167,31 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mEnableQmLockscreenPref;
     private CheckBoxPreference mEnableQmCloseAllPref;
     private CheckBoxPreference mEnableQmDarkThemePref;
+
+    // text sizes
+    private ListPreference mConversationTextSize;
+    private CharSequence[] mConversationTextSizeEntries;
+    private CharSequence[] mConversationTextSizeValues;
+
+    private ListPreference mConversationDateSize;
+    private CharSequence[] mConversationDateSizeEntries;
+    private CharSequence[] mConversationDateSizeValues;
+
+    private ListPreference mConversationListSubjectSize;
+    private CharSequence[] mConversationListSubjectSizeEntries;
+    private CharSequence[] mConversationListSubjectSizeValues;
+
+    private ListPreference mConversationListNameSize;
+    private CharSequence[] mConversationListNameSizeEntries;
+    private CharSequence[] mConversationListNameSizeValues;
+
+    private ListPreference mConversationListDateSize;
+    private CharSequence[] mConversationListDateSizeEntries;
+    private CharSequence[] mConversationListDateSizeValues;
+
+    private ListPreference mConversationComposeTextSize;
+    private CharSequence[] mConversationComposeTextSizeEntries;
+    private CharSequence[] mConversationComposeTextSizeValues;
 
     @Override
     protected void onCreate(Bundle icicle) {
@@ -213,6 +254,42 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mInputTypeEntries = getResources().getTextArray(R.array.pref_entries_input_type);
         mInputTypeValues = getResources().getTextArray(R.array.pref_values_input_type);
 
+        // text sizes
+        mConversationTextSize = (ListPreference) findPreference(CONVERSATION_TEXT_SIZE);
+        mConversationTextSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_text_size);
+        mConversationTextSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_text_size);
+
+        mConversationDateSize = (ListPreference) findPreference(CONVERSATION_DATE_SIZE);
+        mConversationDateSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_date_size);
+        mConversationDateSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_date_size);
+
+        mConversationListSubjectSize = (ListPreference) findPreference(CONVERSATION_LIST_SUBJECT_SIZE);
+        mConversationListSubjectSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_list_subj_size);
+        mConversationListSubjectSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_list_subj_size);
+
+        mConversationListNameSize = (ListPreference) findPreference(CONVERSATION_LIST_NAME_SIZE);
+        mConversationListNameSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_list_name_size);
+        mConversationListNameSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_list_name_size);
+
+        mConversationListDateSize = (ListPreference) findPreference(CONVERSATION_LIST_DATE_SIZE);
+        mConversationListDateSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_list_date_size);
+        mConversationListDateSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_list_date_size);
+
+        mConversationComposeTextSize = (ListPreference) findPreference(CONVERSATION_COMPOSE_TEXT_SIZE);
+        mConversationComposeTextSizeEntries = getResources().getTextArray(
+                R.array.pref_entries_conv_compose_text_size);
+        mConversationComposeTextSizeValues = getResources().getTextArray(
+                R.array.pref_values_conv_compose_text_size);
 
         setMessagePreferences();
     }
@@ -357,6 +434,97 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mInputTypePref.setValue(inputType);
         adjustInputTypeSummary(mInputTypePref.getValue());
         mInputTypePref.setOnPreferenceChangeListener(this);
+
+        // read text size values, set summary
+        String conversationTextSize = sharedPreferences.getString(CONVERSATION_TEXT_SIZE,
+                Integer.toString(CONVERSATION_TEXT_SIZE_DEFAULT));
+        mConversationTextSize.setValue(conversationTextSize);
+        mConversationTextSize.setSummary(mConversationTextSize.getEntry());
+        mConversationTextSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_TEXT_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationDateSize = sharedPreferences.getString(CONVERSATION_DATE_SIZE,
+                Integer.toString(CONVERSATION_DATE_SIZE_DEFAULT));
+        mConversationDateSize.setValue(conversationDateSize);
+        mConversationDateSize.setSummary(mConversationDateSize.getEntry());
+        mConversationDateSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_DATE_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationListSubjectSize = sharedPreferences.getString(
+                CONVERSATION_LIST_SUBJECT_SIZE,
+                Integer.toString(CONVERSATION_LIST_SUBJECT_SIZE_DEFAULT));
+        mConversationListSubjectSize.setValue(conversationListSubjectSize);
+        mConversationListSubjectSize.setSummary(mConversationListSubjectSize.getEntry());
+        mConversationListSubjectSize
+                .setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                    @Override
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        sharedPreferences.edit()
+                                .putString(CONVERSATION_LIST_SUBJECT_SIZE, (String) newValue)
+                                .commit();
+                        updateTextSizeSummary(preference, (String) newValue);
+                        return true;
+                    }
+                });
+
+        String conversationListNameSize = sharedPreferences.getString(CONVERSATION_LIST_NAME_SIZE,
+                Integer.toString(CONVERSATION_LIST_NAME_SIZE_DEFAULT));
+        mConversationListNameSize.setValue(conversationListNameSize);
+        mConversationListNameSize.setSummary(mConversationListNameSize.getEntry());
+        mConversationListNameSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_LIST_NAME_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationListDateSize = sharedPreferences.getString(CONVERSATION_LIST_DATE_SIZE,
+                Integer.toString(CONVERSATION_LIST_DATE_SIZE_DEFAULT));
+        mConversationListDateSize.setValue(conversationListDateSize);
+        mConversationListDateSize.setSummary(mConversationListDateSize.getEntry());
+        mConversationListDateSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPreferences.edit().putString(CONVERSATION_LIST_DATE_SIZE, (String) newValue)
+                        .commit();
+                updateTextSizeSummary(preference, (String) newValue);
+                return true;
+            }
+        });
+
+        String conversationComposeTextSize = sharedPreferences.getString(
+                CONVERSATION_COMPOSE_TEXT_SIZE,
+                Integer.toString(CONVERSATION_COMPOSE_TEXT_SIZE_DEFAULT));
+        mConversationComposeTextSize.setValue(conversationComposeTextSize);
+        mConversationComposeTextSize.setSummary(mConversationComposeTextSize.getEntry());
+        mConversationComposeTextSize
+                .setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                    @Override
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        sharedPreferences.edit()
+                                .putString(CONVERSATION_COMPOSE_TEXT_SIZE, (String) newValue)
+                                .commit();
+                        updateTextSizeSummary(preference, (String) newValue);
+                        return true;
+                    }
+                });
     }
 
     private void setRingtoneSummary(String soundValue) {
@@ -695,5 +863,51 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         return MmsConfig.getGroupMmsEnabled() &&
                 groupMmsPrefOn &&
                 !TextUtils.isEmpty(MessageUtils.getLocalNumber());
+    }
+
+    /**
+     * Update the text size summary according to the changed preference and its
+     * new value.
+     *
+     * @param cur updated preference
+     * @param newValue new value to display
+     */
+    private void updateTextSizeSummary(Preference cur, String newValue) {
+        CharSequence[] entryArray = null;
+        CharSequence[] valArray = null;
+
+        if (cur == mConversationTextSize) {
+            entryArray = mConversationTextSizeEntries;
+            valArray = mConversationTextSizeValues;
+        } else if (cur == mConversationDateSize) {
+            entryArray = mConversationDateSizeEntries;
+            valArray = mConversationDateSizeValues;
+        } else if (cur == mConversationListDateSize) {
+            entryArray = mConversationListDateSizeEntries;
+            valArray = mConversationListDateSizeValues;
+        } else if (cur == mConversationListNameSize) {
+            entryArray = mConversationListNameSizeEntries;
+            valArray = mConversationListNameSizeValues;
+        } else if (cur == mConversationListSubjectSize) {
+            entryArray = mConversationListSubjectSizeEntries;
+            valArray = mConversationListSubjectSizeValues;
+        } else if (cur == mConversationComposeTextSize) {
+            entryArray = mConversationComposeTextSizeEntries;
+            valArray = mConversationComposeTextSizeValues;
+        } else {
+            Log.e("updateTextSizeSummary", "Unknown text size change!");
+        }
+
+        if (valArray == null || entryArray == null) {
+            Log.e("updateTextSizeSummary", "No entry or value array!");
+        } else {
+            for (int i = 0; i < valArray.length; i++) {
+                if (valArray[i].equals(newValue)) {
+                    Log.i("updateTextSizeSummary", "updating " + cur.getKey() + " to " + newValue);
+                    cur.setSummary(entryArray[i]);
+                    return;
+                }
+            }
+        }
     }
 }

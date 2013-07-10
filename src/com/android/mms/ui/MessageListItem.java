@@ -111,6 +111,7 @@ public class MessageListItem extends LinearLayout implements
     private int mPosition;      // for debugging
     private ImageLoadedCallback mImageLoadedCallback;
     private boolean mMultiRecipients;
+    private SharedPreferences prefs;
 
     public MessageListItem(Context context) {
         super(context);
@@ -144,6 +145,17 @@ public class MessageListItem extends LinearLayout implements
         mDetailsIndicator = (ImageView) findViewById(R.id.details_indicator);
         mAvatar = (QuickContactDivot) findViewById(R.id.avatar);
         mMessageBlock = findViewById(R.id.message_block);
+
+        prefs = PreferenceManager
+                .getDefaultSharedPreferences(super.getContext());
+
+        // set text sizes
+        mDateView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_DATE_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_DATE_SIZE_DEFAULT))));
+        mBodyTextView.setTextSize(Integer.parseInt(prefs.getString(
+                MessagingPreferenceActivity.CONVERSATION_TEXT_SIZE, Integer.toString(
+                        MessagingPreferenceActivity.CONVERSATION_TEXT_SIZE_DEFAULT))));
     }
 
     public void bind(MessageItem msgItem, boolean convHasMultiRecipients, int position) {

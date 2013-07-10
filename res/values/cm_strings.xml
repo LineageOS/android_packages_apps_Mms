@@ -150,4 +150,13 @@
     <!-- MMS push permission -->
     <string name="label_mms_push">MMS Push</string>
     <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
+
+    <!-- Text sizes -->
+    <string name="pref_text_sizes">Text size settings</string>
+    <string name="pref_title_conv_text_size">Conversation text size</string>
+    <string name="pref_title_conv_date_size">Conversation date size</string>
+    <string name="pref_title_conv_list_subj_size">Conversation list subject size</string>
+    <string name="pref_title_conv_list_name_size">Conversation list name size</string>
+    <string name="pref_title_conv_list_date_size">Conversation list date size</string>
+    <string name="pref_title_conv_compose_text_size">Compose message text size</string>
 </resources>

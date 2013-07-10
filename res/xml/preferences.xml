@@ -245,4 +245,38 @@
             android:entries="@array/pref_entries_input_type"
             android:entryValues="@array/pref_values_input_type" />
     </PreferenceCategory>
+
+    <!-- Text sizes -->
+    <PreferenceCategory android:title="@string/pref_text_sizes" >
+        <ListPreference
+            android:entries="@array/pref_entries_conv_text_size"
+            android:entryValues="@array/pref_values_conv_text_size"
+            android:key="pref_key_conv_text_size"
+            android:title="@string/pref_title_conv_text_size" />
+        <ListPreference
+            android:entries="@array/pref_entries_conv_date_size"
+            android:entryValues="@array/pref_values_conv_date_size"
+            android:key="pref_key_conv_date_size"
+            android:title="@string/pref_title_conv_date_size" />
+        <ListPreference
+            android:entries="@array/pref_entries_conv_list_subj_size"
+            android:entryValues="@array/pref_values_conv_list_subj_size"
+            android:key="pref_key_conv_list_subj_size"
+            android:title="@string/pref_title_conv_list_subj_size" />
+        <ListPreference
+            android:entries="@array/pref_entries_conv_list_name_size"
+            android:entryValues="@array/pref_values_conv_list_name_size"
+            android:key="pref_key_conv_list_name_size"
+            android:title="@string/pref_title_conv_list_name_size" />
+        <ListPreference
+            android:entries="@array/pref_entries_conv_list_date_size"
+            android:entryValues="@array/pref_values_conv_list_date_size"
+            android:key="pref_key_conv_list_date_size"
+            android:title="@string/pref_title_conv_list_date_size" />
+        <ListPreference
+            android:entries="@array/pref_entries_conv_compose_text_size"
+            android:entryValues="@array/pref_values_conv_compose_text_size"
+            android:key="pref_key_conv_compose_text_size"
+            android:title="@string/pref_title_conv_compose_text_size" />
+    </PreferenceCategory>
 </PreferenceScreen>
