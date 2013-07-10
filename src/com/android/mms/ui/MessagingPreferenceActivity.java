@@ -60,6 +60,13 @@ import com.android.mms.util.Recycler;
  */
 public class MessagingPreferenceActivity extends PreferenceActivity
             implements OnPreferenceChangeListener {
+
+    private static MessagingPreferenceActivity itself;
+
+    private MessagingPreferenceActivity(){
+        itself=this;
+    }
+
     // Symbolic names for the keys used for preference lookup
     public static final String MMS_DELIVERY_REPORT_MODE = "pref_key_mms_delivery_reports";
     public static final String EXPIRY_TIME              = "pref_key_mms_expiry";
@@ -152,6 +159,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mEnableQmCloseAllPref;
     private CheckBoxPreference mEnableQmDarkThemePref;
 
+    // mwi
+    private static boolean mEnableSprintVVM = Settings.System.getInt(itself.getContentResolver(), Settings.System.ENABLE_MWI_NOTIFICATION, 0) == 0;
+
+    public static boolean isSuppressedSprintVVM(String address) {
+        return mEnableSprintVVM && address.contentEquals("9016");
+    }
+
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -196,6 +210,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         // Get the MMS retrieval settings. Defaults to enabled with roaming disabled
         mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
         ContentResolver resolver = getContentResolver();
+
         mMmsAutoRetrievialPref.setChecked(Settings.System.getInt(resolver,
                 Settings.System.MMS_AUTO_RETRIEVAL, 1) == 1);
         mMmsRetrievalDuringRoamingPref = (CheckBoxPreference) findPreference(RETRIEVAL_DURING_ROAMING);
