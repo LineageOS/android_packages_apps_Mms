@@ -152,6 +152,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mEnableQmCloseAllPref;
     private CheckBoxPreference mEnableQmDarkThemePref;
 
+    // mwi
+    public static boolean isSuppressedSprintVVM(String address, Context context){
+        boolean mEnableSprintVVM = Settings.System.getInt(context.getContentResolver(), Settings.System.ENABLE_MWI_NOTIFICATION, 0) == 0;
+        return mEnableSprintVVM && address.contentEquals("9016");
+    }
+
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
