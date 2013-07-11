@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dac4157f_16a0c4f3",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-11T15:57:23Z",
+      "side": 1,
+      "message": "No, please don\u0027t do this. It\u0027ll leak the activity.",
+      "revId": "cff2328fdd0fe5f675c0eeafde0cb60df4394a8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_d6a92ce1",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-11T15:57:23Z",
+      "side": 1,
+      "message": "No. That way, it\u0027ll only be read once at startup. If you change the setting and leave the app running, it\u0027ll not be reflected.",
+      "revId": "cff2328fdd0fe5f675c0eeafde0cb60df4394a8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_96acd4ee",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-11T15:57:23Z",
+      "side": 1,
+      "message": "Just pass a context into here and query the setting each time this is called.\n\nI think it would also make sense to move this to some utility class like AddressUtils.",
+      "revId": "cff2328fdd0fe5f675c0eeafde0cb60df4394a8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
