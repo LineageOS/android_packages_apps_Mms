@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dac4157f_e12468b0",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2013-07-11T23:49:21Z",
+      "side": 1,
+      "message": "I need to make the object static, this is only way i have been able to do it.",
+      "revId": "b9cb21bddb3c1987cf3c361d8331cd008a2638fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
