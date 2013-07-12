@@ -16,6 +16,24 @@
       "revId": "b9cb21bddb3c1987cf3c361d8331cd008a2638fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_615f380f",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-12T00:18:55Z",
+      "side": 1,
+      "message": "No, you don\u0027t need the static reference, as I explained earlier. Just pass a context into the method checking the settings. A context should be available almost everywhere - services are contexts as well, and broadcast receivers have them, too.",
+      "parentUuid": "dac4157f_e12468b0",
+      "revId": "b9cb21bddb3c1987cf3c361d8331cd008a2638fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
