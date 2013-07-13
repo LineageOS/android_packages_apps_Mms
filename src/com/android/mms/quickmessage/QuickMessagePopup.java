@@ -37,6 +37,7 @@ import android.os.Parcelable;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract.Profile;
+import android.provider.Telephony.BlacklistUtils;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.InputFilter;
@@ -164,8 +165,9 @@ public class QuickMessagePopup extends Activity implements
 
     // Options menu items
     private static final int MENU_INSERT_SMILEY = 1;
-    private static final int MENU_INSERT_EMOJI = 3;
     private static final int MENU_ADD_TEMPLATE = 2;
+    private static final int MENU_INSERT_EMOJI = 3;
+    private static final int MENU_ADD_TO_BLACKLIST = 4;
 
     // Smiley and Emoji support
     private AlertDialog mSmileyDialog;
@@ -388,6 +390,13 @@ public class QuickMessagePopup extends Activity implements
             .setIcon(android.R.drawable.ic_menu_add)
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         }
+
+        // Add to Blacklist item (if enabled)
+        if (BlacklistUtils.isBlacklistEnabled(this)) {
+            menu.add(0, MENU_ADD_TO_BLACKLIST, 0, R.string.add_to_blacklist)
+                    .setIcon(R.drawable.ic_block_message_holo_dark)
+                    .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+        }
     }
 
     @Override
@@ -403,6 +412,10 @@ public class QuickMessagePopup extends Activity implements
 
             case MENU_ADD_TEMPLATE:
                 selectTemplate();
+                return true;
+
+            case MENU_ADD_TO_BLACKLIST:
+                confirmAddBlacklist();
                 return true;
 
             default:
@@ -592,6 +605,31 @@ public class QuickMessagePopup extends Activity implements
         editText.setText("");
 
         mEmojiDialog.show();
+    }
+
+    /**
+     * Copied from ComposeMessageActivity.java, this method displays a pop-up a dialog confirming
+     * adding the current senders number to the blacklist
+     */
+    private void confirmAddBlacklist() {
+        // Get the sender number
+        final String number = mCurrentQm.getFromNumber()[0];
+        if (number == null) {
+            return;
+        }
+
+        // Show dialog
+        final String message = getString(R.string.add_to_blacklist_message, number);
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.add_to_blacklist)
+                .setMessage(message)
+                .setPositiveButton(R.string.alert_dialog_yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        BlacklistUtils.add(getApplicationContext(), number, BlacklistUtils.BLOCK_MESSAGES);
+                    }
+                })
+                .setNegativeButton(R.string.alert_dialog_no, null)
+                .show();
     }
 
     /**
