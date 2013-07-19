@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.os.SystemProperties;
 import android.provider.Telephony.Mms;
 import android.telephony.PhoneNumberUtils;
 import android.text.Annotation;
@@ -55,6 +56,9 @@ public class RecipientsEditor extends RecipientEditTextView {
     private char mLastSeparator = ',';
     private Runnable mOnSelectChipRunnable;
     private final AddressValidator mInternalValidator;
+
+    private static final char SBC_CHAR_START = 65281;
+    private static final char SBC_CHAR_END = 65373;
 
     /** A noop validator that does not munge invalid texts and claims any address is valid */
     private class AddressValidator implements Validator {
@@ -178,6 +182,10 @@ public class RecipientsEditor extends RecipientEditTextView {
         if (isMms) {
             return MessageUtils.isValidMmsAddress(number);
         } else {
+            if (hasInvalidCharacter(number)) {
+                return false;
+            }
+
             // TODO: PhoneNumberUtils.isWellFormedSmsAddress() only check if the number is a valid
             // GSM SMS address. If the address contains a dialable char, it considers it a well
             // formed SMS addr. CDMA doesn't work that way and has a different parser for SMS
@@ -187,12 +195,53 @@ public class RecipientsEditor extends RecipientEditTextView {
         }
     }
 
-    public boolean hasValidRecipient(boolean isMms) {
-        for (String number : mTokenizer.getNumbers()) {
-            if (isValidAddress(number, isMms))
-                return true;
+    /**
+     * Return true if the number contains invalid character.
+     */
+    private boolean hasInvalidCharacter(String number) {
+        char[] charNumber = number.toCharArray();
+        int count = charNumber.length;
+        if (!SystemProperties.getBoolean("persist.env.mms.filtchar", true)) {
+            for (int i = 0; i < count; i++) {
+                if (charNumber[i] >= SBC_CHAR_START && charNumber[i] <= SBC_CHAR_END) {
+                    return true;
+                }
+            }
+        } else{
+            for (int i = 0; i < count; i++) {
+                if (i == 0 && charNumber[i] == '+') {
+                    continue;
+                }
+                if (!isValidCharacter(charNumber[i])) {
+                    return true;
+                }
+            }
         }
         return false;
+    }
+
+    private boolean isValidCharacter(char c) {
+        return (c >= '0' && c <= '9') || c == '-' || c == '(' || c == ')' || c == ' ';
+    }
+
+    public int hasValidRecipient(boolean isMms) {
+        int validNum = 0;
+        int invalidNum = 0;
+        for (String number : mTokenizer.getNumbers()) {
+            if (isValidAddress(number, isMms)) {
+                validNum++;
+            } else {
+                invalidNum++;
+            }
+        }
+        int count = mTokenizer.getNumbers().size();
+        if (validNum == count) {
+            return MessageUtils.ALL_RECIPIENTS_VALID;
+        } else if (invalidNum == count) {
+            return MessageUtils.ALL_RECIPIENTS_INVALID;
+        }
+        return invalidNum;
+
     }
 
     public boolean hasInvalidRecipient(boolean isMms) {
