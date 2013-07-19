@@ -195,6 +195,8 @@
     <string name="resize_image_error_information">This picture is too large to send, even when resized.</string>
     <!-- String prepended to forwarded messages to indicate they were forwarded -->
     <string name="forward_prefix">Fwd:\u0020</string>
+    <!-- Dialog box title that appears when a draft message will not be saved due to invalid recipients -->
+    <string name="discard_message">Discard</string>
     <!-- Dialog message text explaining that a draft message will not be saved due to invalid recipients -->
     <string name="discard_message_reason">Your message will be discarded because it has no valid recipients.</string>
     <!-- Dialog box title indicating which recipients are invalid when the user tries to send a message with invalid recipients -->
@@ -777,6 +779,8 @@
 
     <!-- In message list items, this string builds the timestamp line when the message is in a group [CHAR LIMIT=NONE] -->
     <string name="message_timestamp_format"><xliff:g id="string" example="Fred Flinstone">%1$s</xliff:g>\u0020-\u0020<xliff:g id="string" example="9:39AM">%2$s</xliff:g></string>
-
+    
+    <string name="discard_message_reason_all_invalid">Your message will be discarded because all the recipients are invalid.</string>
+    <string name="discard_message_reason_some_invalid">Your message will be discarded because it has some invalid recipients.</string>
 </resources>
 
