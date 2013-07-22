@@ -782,5 +782,6 @@
     
     <string name="discard_message_reason_all_invalid">Your message will be discarded because all the recipients are invalid.</string>
     <string name="discard_message_reason_some_invalid">Your message will be discarded because it has some invalid recipients.</string>
+    <string name="menu_copy_url">Copy url <xliff:g id="extractedurl">%s</xliff:g></string>
 </resources>
 
