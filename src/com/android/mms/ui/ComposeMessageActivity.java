@@ -216,6 +216,9 @@ public class ComposeMessageActivity extends Activity
     public static final int REQUEST_CODE_ADD_CONTACT      = 108;
     public static final int REQUEST_CODE_PICK             = 109;
     public static final int REQUEST_CODE_INSERT_CONTACT_INFO = 110;
+    public static final int REQUEST_CODE_ATTACH_ADD_CONTACT_INFO     = 111;
+    public static final int REQUEST_CODE_ATTACH_ADD_CONTACT_VCARD    = 112;
+    public static final int REQUEST_CODE_ATTACH_REPLACE_CONTACT_INFO = 113;
 
     private static final String TAG = "Mms/compose";
 
@@ -463,6 +466,12 @@ public class ComposeMessageActivity extends Activity
         }, R.string.building_slideshow_title);
     }
 
+    private void pickContacts(int mode, int requestCode) {
+        Intent intent = new Intent(this, MultiPickContactsActivity.class);
+        intent.putExtra(MultiPickContactsActivity.MODE, mode);
+        startActivityForResult(intent, requestCode);
+    }
+
     private final Handler mAttachmentEditorHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -481,12 +490,16 @@ public class ComposeMessageActivity extends Activity
                 case AttachmentEditor.MSG_PLAY_VIDEO:
                 case AttachmentEditor.MSG_PLAY_AUDIO:
                 case AttachmentEditor.MSG_PLAY_SLIDESHOW:
-                    viewMmsMessageAttachment(msg.what);
+                case AttachmentEditor.MSG_VIEW_VCARD:
+                    if (mWorkingMessage.getSlideshow() != null) {
+                         viewMmsMessageAttachment(msg.what);
+                    }
                     break;
 
                 case AttachmentEditor.MSG_REPLACE_IMAGE:
                 case AttachmentEditor.MSG_REPLACE_VIDEO:
                 case AttachmentEditor.MSG_REPLACE_AUDIO:
+                case AttachmentEditor.MSG_REPLACE_VCARD:
                     showAddAttachmentDialog(true);
                     break;
 
@@ -556,6 +569,7 @@ public class ComposeMessageActivity extends Activity
                             case WorkingMessage.IMAGE:
                             case WorkingMessage.VIDEO:
                             case WorkingMessage.AUDIO:
+                            case WorkingMessage.VCARD:
                             case WorkingMessage.SLIDESHOW:
                                 MessageUtils.viewMmsMessageAttachment(ComposeMessageActivity.this,
                                         msgItem.mMessageUri, msgItem.mSlideshow,
@@ -1219,6 +1233,7 @@ public class ComposeMessageActivity extends Activity
                         break;
                     case WorkingMessage.VIDEO:
                     case WorkingMessage.IMAGE:
+                    case WorkingMessage.VCARD:
                         if (haveSomethingToCopyToSDCard(msgItem.mMsgId)) {
                             menu.add(0, MENU_COPY_TO_SDCARD, 0, R.string.copy_to_sdcard)
                             .setOnMenuItemClickListener(l);
@@ -1586,7 +1601,8 @@ public class ComposeMessageActivity extends Activity
             }
 
             if (ContentType.isImageType(type) || ContentType.isVideoType(type) ||
-                    ContentType.isAudioType(type) || DrmUtils.isDrmType(type)) {
+                    ContentType.isAudioType(type) || DrmUtils.isDrmType(type)
+                    || type.toLowerCase().equals(ContentType.TEXT_VCARD.toLowerCase())) {
                 result = true;
                 break;
             }
@@ -1739,8 +1755,10 @@ public class ComposeMessageActivity extends Activity
             type = MmsApp.getApplication().getDrmManagerClient()
                     .getOriginalMimeType(part.getDataUri());
         }
-        if (!ContentType.isImageType(type) && !ContentType.isVideoType(type) &&
-                !ContentType.isAudioType(type)) {
+        if (!ContentType.isImageType(type)
+                && !ContentType.isVideoType(type)
+                && !ContentType.isAudioType(type)
+                && !(ContentType.TEXT_VCARD.toLowerCase().equals(type.toLowerCase()))) {
             return true;    // we only save pictures, videos, and sounds. Skip the text parts,
                             // the app (smil) parts, and other type that we can't handle.
                             // Return true to pretend that we successfully saved the part so
@@ -3181,6 +3199,17 @@ public class ComposeMessageActivity extends Activity
                 editSlideshow();
                 break;
 
+            case AttachmentTypeSelectorAdapter.ADD_CONTACT_AS_TEXT:
+                pickContacts(MultiPickContactsActivity.MODE_INFO,
+                        replace ? REQUEST_CODE_ATTACH_REPLACE_CONTACT_INFO
+                                : REQUEST_CODE_ATTACH_ADD_CONTACT_INFO);
+                break;
+
+            case AttachmentTypeSelectorAdapter.ADD_CONTACT_AS_VCARD:
+                pickContacts(MultiPickContactsActivity.MODE_VCARD,
+                        REQUEST_CODE_ATTACH_ADD_CONTACT_VCARD);
+                break;
+
             default:
                 break;
         }
@@ -3348,6 +3377,36 @@ public class ComposeMessageActivity extends Activity
 
             case REQUEST_CODE_INSERT_CONTACT_INFO:
                 showContactInfoDialog(data.getData());
+                break;
+
+            case REQUEST_CODE_ATTACH_REPLACE_CONTACT_INFO:
+                // Caused by user choose to replace the attachment, so we need remove
+                // the attachment and then add the contact info to text.
+                if (data != null) {
+                    mWorkingMessage.removeAttachment(true);
+                }
+            case REQUEST_CODE_ATTACH_ADD_CONTACT_INFO:
+                if (data != null) {
+                    String newText = mWorkingMessage.getText() +
+                        data.getStringExtra(MultiPickContactsActivity.EXTRA_INFO);
+                    mWorkingMessage.setText(newText);
+                }
+                break;
+
+            case REQUEST_CODE_ATTACH_ADD_CONTACT_VCARD:
+                if (data != null) {
+                    // In a case that a draft message has an attachment whose type is slideshow,
+                    // then reopen it and replace the attachment through attach icon, we have to
+                    // remove the old attachement silently first.
+                    if (mWorkingMessage != null) {
+                        mWorkingMessage.removeAttachment(false);
+                    }
+                    String extraVCard = data.getStringExtra(MultiPickContactsActivity.EXTRA_VCARD);
+                    if (extraVCard != null) {
+                        Uri vcard = Uri.parse(extraVCard);
+                        addVcard(vcard);
+                    }
+                }
                 break;
 
             default:
@@ -3597,6 +3656,11 @@ public class ComposeMessageActivity extends Activity
         handleAddAttachmentError(result, R.string.type_audio);
     }
 
+    private void addVcard(Uri uri) {
+        int result = mWorkingMessage.setAttachment(WorkingMessage.VCARD, uri, false);
+        handleAddAttachmentError(result, R.string.type_vcard);
+    }
+
     AsyncDialog getAsyncDialog() {
         if (mAsyncDialog == null) {
             mAsyncDialog = new AsyncDialog(this);
@@ -3707,6 +3771,10 @@ public class ComposeMessageActivity extends Activity
             } else if (type.startsWith("video/") ||
                     (wildcard && uri.toString().startsWith(mVideoUri))) {
                 addVideo(uri, append);
+            } else if (SystemProperties.getBoolean("persist.env.mms.vcard", true)
+                    && (type.equals("text/x-vcard")
+                    || (wildcard && isVcardFile(uri)))) {
+                addVcard(uri);
             }
         }
     }
@@ -5174,5 +5242,12 @@ public class ComposeMessageActivity extends Activity
                 return builder.create();
         }
         return super.onCreateDialog(id, args);
+    }
+
+    // Get the path of uri and compare it to ".vcf" to judge whether it is a
+    // vcard file.
+    private boolean isVcardFile(Uri uri) {
+        String path = uri.getPath();
+        return null != path && path.toLowerCase().endsWith(".vcf");
     }
 }

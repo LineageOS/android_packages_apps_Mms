@@ -546,4 +546,13 @@ public class SlideView extends AbsoluteLayout implements
 
     public void setVideoThumbnail(String name, Bitmap bitmap) {
     }
+
+    @Override
+    public void setVcard(Uri lookupUri, String name) {
+    }
+
+    @Override
+    public void setVcardVisibility(boolean visible) {
+    }
+
 }
