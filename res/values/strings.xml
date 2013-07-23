@@ -783,5 +783,8 @@
     <string name="discard_message_reason_all_invalid">Your message will be discarded because all the recipients are invalid.</string>
     <string name="discard_message_reason_some_invalid">Your message will be discarded because it has some invalid recipients.</string>
     <string name="menu_copy_url">Copy url <xliff:g id="extractedurl">%s</xliff:g></string>
+    <!-- Gray hint displayed in the search field in Contacts when empty -->
+    <string name="search_bar_hint">Search contacts</string>
+    <string name="contact_app_not_found">Can not find contacts application</string>
 </resources>
 
