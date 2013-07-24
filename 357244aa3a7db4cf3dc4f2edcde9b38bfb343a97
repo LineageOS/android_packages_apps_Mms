@@ -1,0 +1,191 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3acd31a7_f75f9a73",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "The default value here must match the pref\u0027s defaultValue attribute, otherwise you\u0027ll get non-expected behaviour if the value is left at default.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_57d88eef",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 1015,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "This can be done when loading the values from the prefs, I think. Just don\u0027t fetch the prefix if any of the two values is false.\n\nIn this case, I think you only need to keep the prefix as a member variable.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_b7e7e2ab",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 1986,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "See earlier comment (only fetch prefix if any is true).",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_37fcf23d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 3926,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "One time get text/set text should be enough (just chain the method calls or use a variable).",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_b79ec205",
+        "filename": "src/com/android/mms/ui/ConversationListItem.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "I wonder whether it wouldn\u0027t make more sense to strip the prefix when copying the message to the sent folder.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_77770ad5",
+        "filename": "src/com/android/mms/ui/MessageListItem.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 579,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "See earlier comment.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_177e96ae",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "Please wrap those lines at 100 chars.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_f749da8f",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "Please wrap this line.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_b743626c",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "Indention should be 8.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_97486689",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "Indention missing here.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_775eea46",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:25:18Z",
+      "side": 1,
+      "message": "Summary is set differently than on initial load here, is this intended? If not, I\u0027d suggest factoring the summary generation into a helper method.",
+      "revId": "357244aa3a7db4cf3dc4f2edcde9b38bfb343a97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
