@@ -69,6 +69,24 @@
       "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_e3a59cb5",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-27T00:28:17Z",
+      "side": 1,
+      "message": "Hmm, I don\u0027t understand yet. On initial load, the summary is pref_summary_sms_delivery_reports_alt_prefix with the value inserted. After change, it\u0027s only the value. Why is this difference intended?",
+      "parentUuid": "3acd31a7_c3b3c009",
+      "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
