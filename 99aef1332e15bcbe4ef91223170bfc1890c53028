@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3acd31a7_a3e1e400",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 456,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-27T00:05:37Z",
+      "side": 1,
+      "message": "toString() is unneeded here, it\u0027s already a string.",
+      "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_03d3f839",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-27T00:05:37Z",
+      "side": 1,
+      "message": "Comment from PS7 is still valid here: The summary is different after changing the value compared to the initial setup. This doesn\u0027t look correct.",
+      "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
