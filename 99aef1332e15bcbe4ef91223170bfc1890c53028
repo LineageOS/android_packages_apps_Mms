@@ -87,6 +87,24 @@
       "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_a3afa493",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 6647
+      },
+      "writtenOn": "2013-07-27T00:32:33Z",
+      "side": 1,
+      "message": "Right I understand now, the difference is not intended. So I should just set the value on initial load and then again on change and just remove the summary from the xml entirely?",
+      "parentUuid": "3acd31a7_e3a59cb5",
+      "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
