@@ -23,6 +23,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.provider.Telephony;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
@@ -149,7 +150,12 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
             if (contact.existsInDatabase()) {
                 mAvatarView.assignContactUri(contact.getUri());
             } else {
-                mAvatarView.assignContactFromPhone(contact.getNumber(), true);
+                // identify it is phone number or email address,handle it respectively
+                if (Telephony.Mms.isEmailAddress(contact.getNumber())) {
+                    mAvatarView.assignContactFromEmail(contact.getNumber(), true);
+                } else {
+                    mAvatarView.assignContactFromPhone(contact.getNumber(), true);
+               }
             }
         } else {
             // TODO get a multiple recipients asset (or do something else)
