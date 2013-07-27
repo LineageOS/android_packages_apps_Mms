@@ -1334,6 +1334,9 @@ public class WorkingMessage {
 
         // Be paranoid and clean any draft SMS up.
         deleteDraftSmsMessage(threadId);
+
+        // if convert one Mms Draft to Sms and send it,so need delete Mms Draft.
+        deleteDraftMmsMessage(threadId);
     }
 
     private void sendSmsWorker(String msgText, String semiSepRecipients, long threadId) {
@@ -1812,6 +1815,11 @@ public class WorkingMessage {
         SqliteWrapper.delete(mActivity, mContentResolver,
                 ContentUris.withAppendedId(Sms.Conversations.CONTENT_URI, threadId),
                 SMS_DRAFT_WHERE, null);
+    }
+
+    private void deleteDraftMmsMessage(long threadId) {
+        SqliteWrapper.delete(mActivity, mContentResolver,Mms.Draft.CONTENT_URI,
+                Mms.THREAD_ID + " = " +threadId, null);
     }
 
     private void asyncDeleteDraftMmsMessage(Conversation conv) {
