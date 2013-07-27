@@ -463,6 +463,10 @@ public class RecipientsEditor extends RecipientEditTextView {
             while (i < cursor && text.charAt(i) == ' ') {
                 i++;
             }
+            //filter Full width space
+            while (i < cursor && text.charAt(i) == '\u3000') {
+                i++;
+            }
 
             return i;
         }
