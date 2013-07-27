@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3acd31a7_63cbcc73",
+        "filename": "src/com/android/mms/transaction/SmsReceiverService.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 456,
+      "author": {
+        "id": 6647
+      },
+      "writtenOn": "2013-07-27T00:22:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3acd31a7_a3e1e400",
+      "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3acd31a7_03d3f839",
         "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
         "patchSetId": 11
@@ -30,6 +48,24 @@
       "writtenOn": "2013-07-27T00:05:37Z",
       "side": 1,
       "message": "Comment from PS7 is still valid here: The summary is different after changing the value compared to the initial setup. This doesn\u0027t look correct.",
+      "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_c3b3c009",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 6647
+      },
+      "writtenOn": "2013-07-27T00:22:11Z",
+      "side": 1,
+      "message": "Yes I intended the summary to change. The initial value of the custom prefix preference is set as the summary on load. If the user changes the preference (eg. from *0# to *N# or whatever) the callback updates the summary to show the current prefix.\n\nYou mentioned refactoring it a little before but there are several other onPrefenceChangeListeners directly written into this function for other preferences. Let me know what you think.",
+      "parentUuid": "3acd31a7_03d3f839",
       "revId": "99aef1332e15bcbe4ef91223170bfc1890c53028",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
