@@ -1185,9 +1185,7 @@ public class ComposeMessageActivity extends Activity
             // to the clipboard, so we currently do SMS only.
             if (msgItem.isSms()) {
                 // Message type is sms. Only allow "edit" if the message has a single recipient
-                if (getRecipients().size() == 1 &&
-                        (msgItem.mBoxId == Sms.MESSAGE_TYPE_OUTBOX ||
-                                msgItem.mBoxId == Sms.MESSAGE_TYPE_FAILED)) {
+                if (getRecipients().size() == 1 && msgItem.mBoxId == Sms.MESSAGE_TYPE_FAILED) {
                     menu.add(0, MENU_EDIT_MESSAGE, 0, R.string.menu_edit)
                     .setOnMenuItemClickListener(l);
                 }
