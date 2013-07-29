@@ -67,8 +67,19 @@ public class AsyncDialog {
     public void clearPendingProgressDialog() {
         // remove any callback to display a progress spinner
         mHandler.removeCallbacks(mShowProgressDialogRunnable);
-        // clear the dialog so any pending dialog.dismiss() call can be avoided
-        mProgressDialog = null;
+
+        /*
+         * We need to call dismiss() here to ensure this ProgressDialog will
+         * dismiss if ComposeMessageActivity's onPause() is called in advance.
+         * If ComposeMessageActivity's onPause() is called in advance, then
+         * ModalDialogAsyncTask's onPostExecute() method won't dismiss the
+         * ProgressDialog because mProgressDialog has already been null.
+         */
+        if (mProgressDialog != null && mProgressDialog.isShowing()) {
+            mProgressDialog.dismiss();
+            // clear the dialog so any pending dialog.dismiss() call can be avoided
+            mProgressDialog = null;
+        }
     }
 
     /**
