@@ -83,7 +83,13 @@ public class MmsThumbnailPresenter extends Presenter {
                             ((SlideViewInterface)mView).setVideoThumbnail(null,
                                     imageLoaded.mBitmap);
                         } else if (slide.hasImage() && !imageLoaded.mIsVideo) {
-                            ((SlideViewInterface)mView).setImage(null, imageLoaded.mBitmap);
+                            // only when Loaded uri is match current ImageModel uri,
+                            // it is allowed to update image.
+                            String uri = imageLoaded.getUri();
+                            Uri imageUri = slide.getImage().getUri();
+                            if (uri != null && uri.equals(imageUri.toString())) {
+                                ((SlideViewInterface)mView).setImage(null, imageLoaded.mBitmap);
+                            }
                         }
                     }
                 }
