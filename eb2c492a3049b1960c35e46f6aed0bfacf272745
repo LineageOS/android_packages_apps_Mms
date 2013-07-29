@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aca2d91_99241bb0",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-29T21:43:05Z",
+      "side": 1,
+      "message": "Please order those alphabetically.",
+      "revId": "eb2c492a3049b1960c35e46f6aed0bfacf272745",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
