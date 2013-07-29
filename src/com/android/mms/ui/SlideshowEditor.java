@@ -19,6 +19,7 @@ package com.android.mms.ui;
 
 import android.content.Context;
 import android.net.Uri;
+import android.os.SystemProperties;
 import android.util.Log;
 
 import com.android.mms.model.AudioModel;
@@ -37,8 +38,10 @@ import com.google.android.mms.MmsException;
  */
 public class SlideshowEditor {
     private static final String TAG = "Mms:slideshow";
-
-    public static final int MAX_SLIDE_NUM = 10;
+    private static final int MAX_SLIDE_NUM_DEFAULT_VALUE = 10;
+    public static final int MAX_SLIDE_NUM = SystemProperties
+            .getInt("persist.env.c.mms.maxslidenum",
+                    MAX_SLIDE_NUM_DEFAULT_VALUE);
 
     private final Context mContext;
     private SlideshowModel mModel;
