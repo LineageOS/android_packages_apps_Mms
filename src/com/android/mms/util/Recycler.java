@@ -204,26 +204,38 @@ public abstract class Recycler {
                     Log.e(TAG, "SMS: deleteMessagesForThread got back null cursor");
                     return;
                 }
-                int count = cursor.getCount();
-                int numberToDelete = count - keep;
-                if (LOCAL_DEBUG) {
-                    Log.v(TAG, "SMS: deleteMessagesForThread keep: " + keep +
-                            " count: " + count +
-                            " numberToDelete: " + numberToDelete);
-                }
-                if (numberToDelete <= 0) {
-                    return;
-                }
-               // Move to the keep limit and then delete everything older than that one.
-                cursor.move(keep);
-                long latestDate = cursor.getLong(COLUMN_SMS_DATE);
 
-                long cntDeleted = SqliteWrapper.delete(context, resolver,
-                        ContentUris.withAppendedId(Sms.Conversations.CONTENT_URI, threadId),
-                        "locked=0 AND date<" + latestDate,
-                        null);
+                // Use to count the sms message without draft.
+                int count = 0;
+
+                // the newest message to delete.
+                long latestDate = 0;
+
+                // If there is a draft in the conversation. Don't count it and
+                // don't delete it.
+                for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
+                    if (Sms.MESSAGE_TYPE_DRAFT == cursor.getLong(COLUMN_SMS_TYPE)) {
+                        continue;
+                    }
+                    count++;
+                    if (count == keep) {
+                        latestDate = cursor.getLong(COLUMN_SMS_DATE);
+                        break;
+                    }
+                }
+
+                // Delete the sms message older than latestDate. Can't delete
+                // the draft.
+                long cntDeleted = SqliteWrapper
+                        .delete(context,
+                                resolver,
+                                ContentUris.withAppendedId(Sms.Conversations.CONTENT_URI, threadId),
+                                "locked=0 AND date<" + latestDate + " AND type <>"
+                                        + Sms.MESSAGE_TYPE_DRAFT, null);
+
                 if (LOCAL_DEBUG) {
-                    Log.v(TAG, "SMS: deleteMessagesForThread cntDeleted: " + cntDeleted);
+                    Log.v(TAG, "SMS: deleteMessagesForThread: keep:" + keep + ",cntDeleted:"
+                            + cntDeleted);
                 }
             } finally {
                 if (cursor != null) {
