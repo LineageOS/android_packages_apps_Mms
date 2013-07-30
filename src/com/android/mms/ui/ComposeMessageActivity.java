@@ -930,6 +930,12 @@ public class ComposeMessageActivity extends Activity
                 updateTitle(mRecipientsPickList);
                 mRecipientsPickList = null;
             } else {
+                // If we have gone to zero recipients, we need to update the title.
+                if (0 == s.length()) {
+                    ContactList contacts = mRecipientsEditor.constructContactsFromInput(false);
+                    updateTitle(contacts);
+                }
+
                 // Walk backwards in the text box, skipping spaces. If the last
                 // character is a comma, update the title bar.
                 for (int pos = s.length() - 1; pos >= 0; pos--) {
