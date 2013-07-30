@@ -436,6 +436,11 @@ public class ComposeMessageActivity extends Activity
     private boolean mIsProcessPickedRecipients = false;
     private int mExistsRecipientsCount = 0;
 
+    /**
+     * Whether the audio attachment player activity is launched and running
+     */
+    private boolean mIsAudioPlayerActivityRunning = false;
+
     @SuppressWarnings("unused")
     public static void log(String logMsg) {
         Thread current = Thread.currentThread();
@@ -550,6 +555,11 @@ public class ComposeMessageActivity extends Activity
                     if (mTempMmsUri == null) {
                         return;
                     }
+
+                    if(isAudioPlayerActivityRunning(requestCode)) {
+                        return;
+                    }
+
                     MessageUtils.launchSlideshowActivity(ComposeMessageActivity.this, mTempMmsUri,
                             requestCode);
                 }
@@ -557,6 +567,22 @@ public class ComposeMessageActivity extends Activity
         }
     }
 
+    private boolean isAudioPlayerActivityRunning(int requestCode) {
+        // When the attachment is Audio, if the mIsAudioPlayerActivityRunning is true,
+        // that means user is continuously clicking the play button, we return this
+        // thread and cancel this click event; else we put it to true and response this
+        // event.
+        if (requestCode == AttachmentEditor.MSG_PLAY_AUDIO) {
+            if (mIsAudioPlayerActivityRunning) {
+                return true;
+            } else {
+                mIsAudioPlayerActivityRunning = true;
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
 
     private final Handler mMessageListItemHandler = new Handler() {
         @Override
@@ -3334,6 +3360,12 @@ public class ComposeMessageActivity extends Activity
                     }
                 }
             }
+        }
+
+        if (requestCode == AttachmentEditor.MSG_PLAY_AUDIO) {
+            // When the audio has finished to play, we put the
+            // mIsAudioPlayerActivityRunning to false.
+            mIsAudioPlayerActivityRunning = false;
         }
 
         if (resultCode != RESULT_OK){
