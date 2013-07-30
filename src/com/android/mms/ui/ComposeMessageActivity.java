@@ -648,6 +648,9 @@ public class ComposeMessageActivity extends Activity
             if ((keyCode == KeyEvent.KEYCODE_DEL) && (mSubjectTextEditor.length() == 0)) {
                 showSubjectEditor(false);
                 mWorkingMessage.setSubject(null, true);
+                if (null == mRecipientsEditor) {
+                    mTextEditor.requestFocus();
+                }
                 return true;
             }
             return false;
