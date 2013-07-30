@@ -4282,7 +4282,10 @@ public class ComposeMessageActivity extends Activity
                 new Runnable() {
                     @Override
                     public void run() {
-                        drawTopPanel(false);
+                        // It decides whether or not to display the subject editText view,
+                        // according to the situation whether there's subject
+                        // or the editText view is visible before leaving it.
+                        drawTopPanel(isSubjectEditorVisible());
                         drawBottomPanel();
                         updateSendButtonState();
                     }
