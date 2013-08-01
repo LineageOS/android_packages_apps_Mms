@@ -1697,6 +1697,7 @@ public class ComposeMessageActivity extends Activity
 
             if (ContentType.isImageType(type) || ContentType.isVideoType(type) ||
                     ContentType.isAudioType(type) || DrmUtils.isDrmType(type)
+                    || type.toLowerCase().equals(ContentType.AUDIO_OGG.toLowerCase())
                     || type.toLowerCase().equals(ContentType.TEXT_VCARD.toLowerCase())) {
                 result = true;
                 break;
