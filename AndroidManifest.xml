@@ -120,21 +120,21 @@
                 <data android:scheme="mms" />
                 <data android:scheme="mmsto" />
             </intent-filter>
-           <intent-filter>
-               <action android:name="android.intent.action.SEND" />
-               <category android:name="android.intent.category.DEFAULT" />
-               <data android:mimeType="image/*" />
-           </intent-filter>
-           <intent-filter>
-               <action android:name="android.intent.action.SEND" />
-               <category android:name="android.intent.category.DEFAULT" />
-               <data android:mimeType="text/plain" />
-           </intent-filter>
-           <intent-filter>
-               <action android:name="android.intent.action.SEND_MULTIPLE" />
-               <category android:name="android.intent.category.DEFAULT" />
-               <data android:mimeType="image/*" />
-           </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
         </activity>
 
         <activity-alias android:name=".ui.ForwardMessageActivity"
@@ -171,6 +171,11 @@
         <activity android:name=".ui.SlideshowEditActivity"
             android:theme="@style/MmsHoloTheme"
             android:label="@string/edit_slideshow_activity" />
+
+        <activity android:name=".ui.AddRecipientsList"
+            android:label="@string/add_recipients"
+            android:theme="@style/MmsHoloTheme">
+        </activity>
 
         <activity android:name=".ui.RecipientListActivity"
             android:theme="@style/MmsHoloTheme"
@@ -345,7 +350,7 @@
         </activity>
 
         <!-- Widget -->
-        <receiver android:name=".widget.MmsWidgetProvider"  android:label="@string/app_label">
+        <receiver android:name=".widget.MmsWidgetProvider" android:label="@string/app_label">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
