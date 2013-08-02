@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_753edbb9",
+        "filename": "res/values-es/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-02T22:26:08Z",
+      "side": 1,
+      "message": "ok, not redundant",
+      "parentUuid": "1aca2d91_d243856b",
+      "revId": "b0bac4d37cf9cb17630c9bf6f6c0d71ce112bf1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_52589556",
         "filename": "res/values-es/cm_strings.xml",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_d556cf05",
+        "filename": "res/values-es/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-02T22:26:08Z",
+      "side": 1,
+      "message": "This is for a reason. To see the number/contact in nofication textbox. With your translate, the number looks cropped. I tested it with cm-10.1 in XHDPI device.",
+      "parentUuid": "1aca2d91_52589556",
+      "revId": "b0bac4d37cf9cb17630c9bf6f6c0d71ce112bf1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_1231fd0b",
         "filename": "res/values-es/cm_strings.xml",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2013-08-02T21:10:04Z",
       "side": 1,
       "message": "What about \"Los mensajes de %s seran bloqueados\"?\n\nNote: It\u0027s not me. Gerrit doesn\u0027t allow me to put accents on comments :)",
+      "revId": "b0bac4d37cf9cb17630c9bf6f6c0d71ce112bf1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_b55b532e",
+        "filename": "res/values-es/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-08-02T22:26:08Z",
+      "side": 1,
+      "message": "Yes better. I\u0027ll add this to Dialer too.",
+      "parentUuid": "1aca2d91_1231fd0b",
       "revId": "b0bac4d37cf9cb17630c9bf6f6c0d71ce112bf1d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
