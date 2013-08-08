@@ -92,4 +92,26 @@
     <string name="insert_contact_info_positive_button">Вставить</string>
     <string name="label_mms_push">Передача MMS</string>
     <string name="desc_mms_push">Передавать MMS из исходящих в сеть</string>
+
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">Чёрный список</string>
+    <string name="blacklist_summary_disabled">Выключен</string>
+    <string name="blacklist_summary">Входящие сообщения от абонентов из чёрного списка будут отклоняться</string>
+
+    <!-- Blacklist notifications -->
+    <string name="blacklist_notification">Вызов от %s отклонён</string>
+    <string name="blacklist_notification_private_number">Вызов от неизвестного номера отклонён</string>
+    <string name="blacklist_notification_list_private">Скрытый</string>
+    <string name="blacklist_notification_unknown_number">Заблокирован неизвестный номер %s</string>
+    <string name="blacklist_notification_multiple"><xliff:g id="count">%d</xliff:g> звонка (ов) было отклонено</string>
+    <string name="unblock_number">Разблокировать</string>
+
+    <!-- Blacklist management -->
+    <string name="add_to_blacklist">Добавить в чёрный список</string>
+    <string name="add_to_blacklist_message">Будущие вызовы от %s будут отклонены</string>
+
+    <!-- Generic blacklist handling -->
+    <string name="alert_dialog_yes">Да</string>
+    <string name="alert_dialog_no">Нет</string>
+
 </resources>
