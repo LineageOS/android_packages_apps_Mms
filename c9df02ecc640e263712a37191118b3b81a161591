@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_74dba6ee",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-08-10T05:42:07Z",
+      "side": 1,
+      "message": "Vozmozhno, \"soobshenie ot %s zablokirovano\" (ili \"udaleno\")?",
+      "revId": "c9df02ecc640e263712a37191118b3b81a161591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
