@@ -2475,6 +2475,10 @@ public class ComposeMessageActivity extends Activity
         // reset mMessagesAndDraftLoaded
         mMessagesAndDraftLoaded = false;
 
+        CharSequence text = mWorkingMessage.getText();
+        if (text != null) {
+            mTextEditor.setTextKeepState(text);
+        }
         if (!DEFER_LOADING_MESSAGES_AND_DRAFT) {
             loadMessagesAndDraft(1);
         } else {
