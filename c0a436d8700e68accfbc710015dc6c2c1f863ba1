@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_faa538b5",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-08-13T08:12:54Z",
+      "side": 1,
+      "message": "Please remove this whiteline",
+      "revId": "c0a436d8700e68accfbc710015dc6c2c1f863ba1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
