@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_e440f709",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-08-15T23:01:49Z",
+      "side": 1,
+      "message": "Mozhet \"Soobscheniy: \u003cxliff:g id\u003d\"number\" example\u003d\"3\"\u003e%1$s\u003c/xliff:g\u003e\"\".",
+      "revId": "9d6c2fdf4382779459345347352a685f8f860785",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
