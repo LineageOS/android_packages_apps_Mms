@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_e27226ad",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-08-16T22:39:09Z",
+      "side": 1,
+      "message": "\"Disattivata\", Sto usando sempre \"Attivato\" - \"Disattivato\".",
+      "revId": "77cd32ca5fcfc61df252bd4de4d606251653d64f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae975fb_c26842bd",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-08-16T22:39:09Z",
+      "side": 1,
+      "message": "provenienti dai numeri presenti nella blacklist",
+      "revId": "77cd32ca5fcfc61df252bd4de4d606251653d64f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae975fb_82623ad7",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-08-16T22:39:09Z",
+      "side": 1,
+      "message": "un messaggio da un numero privato",
+      "revId": "77cd32ca5fcfc61df252bd4de4d606251653d64f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae975fb_429b32ca",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-08-16T22:39:09Z",
+      "side": 1,
+      "message": "Aggiungi alla blacklist\nAggiungi in blacklist\nche ne pensi?",
+      "revId": "77cd32ca5fcfc61df252bd4de4d606251653d64f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
