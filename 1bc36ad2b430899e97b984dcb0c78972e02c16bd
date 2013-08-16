@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae975fb_9fc73545",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-16T19:11:49Z",
+      "side": 1,
+      "message": "Suppression de l\u0027article ? \"Message de x bloque\"",
+      "revId": "1bc36ad2b430899e97b984dcb0c78972e02c16bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae975fb_7fc4913f",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-16T19:11:49Z",
+      "side": 1,
+      "message": "Suppression de l\u0027article ?",
+      "revId": "1bc36ad2b430899e97b984dcb0c78972e02c16bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae975fb_5fc1cd2d",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-08-16T19:11:49Z",
+      "side": 1,
+      "message": "Suppression de l\u0027article ?",
+      "revId": "1bc36ad2b430899e97b984dcb0c78972e02c16bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
