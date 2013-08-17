@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_d3514610",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3951,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-17T23:21:55Z",
+      "side": 1,
+      "message": "This will e.g. show \u0027Unsupported docx format\u0027 or something ... is this really good UX?",
+      "revId": "b58feb5b12598b005202849f204df8dbc0a901e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_f34c4a78",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3974,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-17T23:21:55Z",
+      "side": 1,
+      "message": "String fileName \u003d uri.getLastPathSegment();",
+      "revId": "b58feb5b12598b005202849f204df8dbc0a901e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_13310eed",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3980,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-17T23:21:55Z",
+      "side": 1,
+      "message": "!\u003d !\u003d !equals() - IOW, this is broken (but still works because they basically check for emptiness thrice)",
+      "revId": "b58feb5b12598b005202849f204df8dbc0a901e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
