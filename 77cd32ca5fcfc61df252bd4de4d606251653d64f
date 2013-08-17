@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "dae975fb_02e88a7b",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-08-17T05:26:54Z",
+      "side": 1,
+      "message": "outbox con In uscita",
+      "revId": "77cd32ca5fcfc61df252bd4de4d606251653d64f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae975fb_e27226ad",
         "filename": "res/values-it/cm_strings.xml",
         "patchSetId": 1
