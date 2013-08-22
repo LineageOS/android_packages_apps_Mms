@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_f008b593",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-08-22T04:25:45Z",
+      "side": 1,
+      "message": "Isn\u0027t there also a dot needed after \u0027conversations\u0027?",
+      "revId": "1061ab9ddbc192e879b5f7b6f02d20db0efdfc7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_d0fdb16f",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-08-22T04:25:45Z",
+      "side": 1,
+      "message": "Please add an empty line after the last import",
+      "revId": "1061ab9ddbc192e879b5f7b6f02d20db0efdfc7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
