@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_90ca894e",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-08-22T03:36:19Z",
+      "side": 1,
+      "message": "the , after the Please needs to be removed.",
+      "revId": "be9676f421d6abee36d00a25c9c7f19647d37d84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
