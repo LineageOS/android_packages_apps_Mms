@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_b05c6dee",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-08-22T00:58:43Z",
+      "side": 1,
+      "message": "The android design guidelines writing style recommends not using scary words like \"Error\" and be more descriptive and \u0027friendly\u0027, providing information on how to resolve the issue if possible.\n\nNot sure what to use though - Maybe \"The messaging database is  full, please delete some conversations\" ?",
+      "revId": "3766b2e11fc9a2939e5b6f7341fff6a79b61bf8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
