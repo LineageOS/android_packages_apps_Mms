@@ -1,0 +1,361 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_61e75941",
+        "filename": "res/layout/add_recipients_list_screen.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This should be moved to the ActionBar.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_21ff1103",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "GMembership -\u003e GroupMembership",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e108e92a",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "Where is this used? I think this should be nuked.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_a1966192",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This constructor is unused.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_81935da3",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "Why use a separate method for that?",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_01040d13",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This should be static final",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_a113015c",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This should also be static final.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_81ac7dee",
+        "filename": "src/com/android/mms/data/GMembership.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "A better way for looping IMHO is this:\n\ncursor.moveToPosition(-1);\nwhile (cursor.moveToNext()) {\n    memberships.add(new GroupMembership(cursor));\n}\ncursor.close();",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_61907996",
+        "filename": "src/com/android/mms/data/Group.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "Unused constructor -\u003e nuke.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_418d757a",
+        "filename": "src/com/android/mms/data/Group.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "Why a separate method?",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_21827153",
+        "filename": "src/com/android/mms/data/Group.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "... and here: All of this should be static final.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e1f22906",
+        "filename": "src/com/android/mms/data/Group.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "It doesn\u0027t look very effective to me to fetch all data from the DB, just to throw most of it away right afterwards. I\u0027d probably do an additional selection instead (GROUPS_SELECTION + \" AND \" + Groups._ID + \" \u003d ?\")",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_c1f725f4",
+        "filename": "src/com/android/mms/data/PhoneNumber.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "As before, unused",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_a1dd4172",
+        "filename": "src/com/android/mms/data/PhoneNumber.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "As before, inefficient.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_41e4553a",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This is unused and can be nuked.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_21d03153",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "Why not use a Set? Would save the various contains() checks.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_81da3d77",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "\"numbers\"?",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_01d52d42",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This can be nuked.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_e1c909ae",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "This is just wrong, but fortunately goes away when using the ActionBar.",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_81c11d83",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "for (GroupMembership membership : mGroupMemberships)",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_c1ce05b4",
+        "filename": "src/com/android/mms/ui/AddRecipientsList.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-22T19:35:14Z",
+      "side": 1,
+      "message": "for (long gid : groupIdWithContactsId.keySet())",
+      "revId": "4f16035ce44d27e0579b47c3d3d49f1638fd4f09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
