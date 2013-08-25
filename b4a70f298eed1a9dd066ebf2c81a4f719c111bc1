@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "baee8101_bcaf9fe2",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-08-25T23:27:07Z",
+      "side": 1,
+      "message": "Tol\u0027ko parol\u0027 ili feiskontrol\u0027 i graficheskiy kluch s pin-kodom suda tozhe vhodyat?",
+      "revId": "b4a70f298eed1a9dd066ebf2c81a4f719c111bc1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_9c65fbe2",
         "filename": "res/values-ru/cm_strings.xml",
         "patchSetId": 1
