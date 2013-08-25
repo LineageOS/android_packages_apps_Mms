@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -106,4 +107,6 @@
     <string name="add_to_blacklist_message">Los mensajes de %s serán bloqueados</string>
     <string name="alert_dialog_yes">Sí</string>
     <string name="alert_dialog_no">No</string>
+    <string name="storage_is_full">La base de datos de mensajes está llena. Por favor, borra algunas conversaciones.</string>
+    <string name="menu_resend">Reenviar</string>
 </resources>
