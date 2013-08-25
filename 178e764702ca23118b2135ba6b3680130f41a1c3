@@ -88,6 +88,24 @@
       "revId": "178e764702ca23118b2135ba6b3680130f41a1c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_d1b80ce8",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2013-08-25T19:28:24Z",
+      "side": 1,
+      "message": "Ostavlyaem tak?",
+      "parentUuid": "baee8101_16044a13",
+      "revId": "178e764702ca23118b2135ba6b3680130f41a1c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
