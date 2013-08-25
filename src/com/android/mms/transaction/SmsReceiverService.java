@@ -35,6 +35,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SqliteWrapper;
 import android.net.Uri;
@@ -44,6 +45,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.Message;
 import android.os.Process;
+import android.preference.PreferenceManager;
 import android.provider.Telephony.Sms;
 import android.provider.Telephony.Sms.Inbox;
 import android.provider.Telephony.Sms.Intents;
@@ -67,6 +69,7 @@ import com.android.mms.data.Contact;
 import com.android.mms.data.Conversation;
 import com.android.mms.ui.ClassZeroActivity;
 import com.android.mms.util.AddressUtils;
+import com.android.mms.ui.MessagingPreferenceActivity;
 import com.android.mms.util.Recycler;
 import com.android.mms.util.SendingProgressTokenManager;
 import com.android.mms.widget.MmsWidgetProvider;
@@ -116,6 +119,13 @@ public class SmsReceiverService extends Service {
     private static final int SEND_COLUMN_STATUS     = 4;
 
     private int mResultCode;
+
+    // SMS Sending Delay
+    public static Uri mCurrentSendingUri = Uri.EMPTY;
+    public static final String ACTION_SENT_COUNT_DOWN ="com.android.mms.transaction.SENT_COUNT_DOWN";
+    public static final String DATA_COUNT_DOWN = "DATA_COUNT_DOWN";
+    public static final String DATA_MESSAGE_URI = "DATA_MESSAGE_URI";
+    private static final long TIMMER_DURATION = 1000;
 
     // Blacklist support
     private static final String REMOVE_BLACKLIST = "com.android.mms.action.REMOVE_BLACKLIST";
@@ -261,6 +271,12 @@ public class SmsReceiverService extends Service {
         }
     }
 
+    public static void cancelSendingMessage() {
+        synchronized(SmsReceiverService.mCurrentSendingUri) {
+            SmsReceiverService.mCurrentSendingUri.notifyAll();
+        }
+    }
+
     private void handleServiceStateChanged(Intent intent) {
         // If service just returned, start sending out the queued messages
         ServiceState serviceState = ServiceState.newFromBundle(intent.getExtras());
@@ -273,6 +289,55 @@ public class SmsReceiverService extends Service {
         if (!mSending) {
             sendFirstQueuedMessage();
         }
+    }
+
+    private boolean isQueuedMessageCancel(Uri msgUri) {
+        mCurrentSendingUri = msgUri;
+
+        long sendDelay = MessagingPreferenceActivity.getMessageSendDelayDuration(getApplicationContext());
+        if (sendDelay > 0) {
+            boolean oldSending = mSending;
+            mSending = true;
+            boolean isCancelSending = false;
+            try {
+                int countDown = (int) sendDelay / 1000;
+                while (countDown >= 0 && !isCancelSending) {
+                    Intent intent = new Intent(SmsReceiverService.ACTION_SENT_COUNT_DOWN);
+                    intent.putExtra(DATA_COUNT_DOWN, countDown);
+                    intent.putExtra(DATA_MESSAGE_URI, msgUri);
+                    sendBroadcast(intent);
+                    if (countDown > 0) {
+                        long start = System.currentTimeMillis();
+                        synchronized (SmsReceiverService.mCurrentSendingUri) {
+                            SmsReceiverService.mCurrentSendingUri
+                                    .wait(SmsReceiverService.TIMMER_DURATION);
+                        }
+                        long end = System.currentTimeMillis();
+                        if (end - start < SmsReceiverService.TIMMER_DURATION) {
+                            isCancelSending = true;
+                        } else {
+                            isCancelSending = false;
+                        }
+                        Log.d(TAG, "SmsReceiverService.mWaitForSending.wait return in "
+                                + (end - start) + " ms");
+                    }
+                    countDown--;
+                }
+            } catch (InterruptedException e) {
+                Log.d(TAG, "sendFirstQueuedMessage: user cancel send " + msgUri);
+                isCancelSending = true;
+            } finally {
+                SmsReceiverService.mCurrentSendingUri = Uri.EMPTY;
+            }
+            if (isCancelSending) {
+                mSending = false;
+                messageFailedToSend(msgUri, SmsManager.RESULT_ERROR_GENERIC_FAILURE);
+                unRegisterForServiceStateChanges();
+                return true;
+            }
+            mSending = oldSending;
+        }
+        return false;
     }
 
     private void handleSendInactiveMessage() {
@@ -300,6 +365,10 @@ public class SmsReceiverService extends Service {
 
                     int msgId = c.getInt(SEND_COLUMN_ID);
                     Uri msgUri = ContentUris.withAppendedId(Sms.CONTENT_URI, msgId);
+
+                    if (isQueuedMessageCancel(msgUri)) {
+                        return;
+                    }
 
                     SmsMessageSender sender = new SmsSingleRecipientSender(this,
                             address, msgText, threadId, status == Sms.STATUS_PENDING,
