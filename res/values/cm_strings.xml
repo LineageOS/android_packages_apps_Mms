@@ -13,7 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Message options - Add SMS to calendar -->
     <string name="menu_add_to_calendar">Add to calendar</string>
 
@@ -177,5 +179,15 @@
 
     <!-- Context menu item on an failed message for resending -->
     <string name="menu_resend">Resend</string>
+
+    <!-- Delay delivery -->
+    <string name="pref_title_send_delay">Delivery delay</string>
+    <string name="send_delay_immediate">Send immediately</string>
+    <string name="send_delay_3seconds">3 seconds</string>
+    <string name="send_delay_5seconds">5 seconds</string>
+    <string name="send_delay_10seconds">10 seconds</string>
+    <string name="send_delay_20seconds">20 seconds</string>
+    <string name="send_delay_30seconds">30 seconds</string>
+    <string name="sent_countdown">Message delivery countdown</string>
 
 </resources>
