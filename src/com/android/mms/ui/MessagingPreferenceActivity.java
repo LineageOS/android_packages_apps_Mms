@@ -122,6 +122,11 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
+    public static final String DELAY_SEND_ENABLED     = "pref_key_delay_send";
+    public static final String DELAY_SEND_DURATION     = "pref_delay_send_duration";
+    private CheckBoxPreference mEnableDelaySendMessagePref;
+    private ListPreference mDelaySendMessagDurationPref;
+
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;
     private CheckBoxPreference mSmsSplitCounterPref;
@@ -233,6 +238,11 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
         // Blacklist screen - Needed for setting summary
         mBlacklist = (PreferenceScreen) findPreference(BLACKLIST);
+
+        // SMS Sending Delay
+        mEnableDelaySendMessagePref = (CheckBoxPreference) findPreference(DELAY_SEND_ENABLED);
+        mDelaySendMessagDurationPref = (ListPreference) findPreference(DELAY_SEND_DURATION);
+        mDelaySendMessagDurationPref.setSummary(mDelaySendMessagDurationPref.getEntry());
 
         setMessagePreferences();
     }
@@ -377,6 +387,37 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mInputTypePref.setValue(inputType);
         adjustInputTypeSummary(mInputTypePref.getValue());
         mInputTypePref.setOnPreferenceChangeListener(this);
+
+        setEnabledDelaySendMessagePref();
+        mDelaySendMessagDurationPref.setOnPreferenceChangeListener(this);
+    }
+
+    private void setEnabledDelaySendMessagePref() {
+        // The "SMS Sending Delay" setting is really stored in our own prefs. Read the
+        // current value and set the checkbox to match.
+        boolean isEnable = getDelaySendMessageEnabled(this);
+        mEnableDelaySendMessagePref.setChecked(isEnable);
+    }
+
+    public static boolean getDelaySendMessageEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean quickMessageEnabled =
+            prefs.getBoolean(MessagingPreferenceActivity.DELAY_SEND_ENABLED, false);
+        return quickMessageEnabled;
+    }
+
+    public void enableDelaySendMessage(boolean enabled, Context context) {
+        // Store the value of notifications in SharedPreferences
+        SharedPreferences.Editor editor =
+            PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putBoolean(MessagingPreferenceActivity.DELAY_SEND_ENABLED, enabled);
+        editor.apply();
+    }
+    public static long getDelaySendMessageDuration(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        long duraiton = Long.valueOf(
+                prefs.getString(MessagingPreferenceActivity.DELAY_SEND_DURATION, "5000"));
+        return duraiton;
     }
 
     private void setRingtoneSummary(String soundValue) {
@@ -535,6 +576,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             if (checked) {
                 startMmsDownload();
             }
+        } else if (preference == mEnableDelaySendMessagePref){
+            enableDelaySendMessage(mEnableDelaySendMessagePref.isChecked(), this);
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -688,6 +731,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             result = true;
         } else if (preference == mInputTypePref) {
             adjustInputTypeSummary((String)newValue);
+            result = true;
+        } else if (preference == mDelaySendMessagDurationPref) {
+            String value = (String) newValue;
+            mDelaySendMessagDurationPref.setValue(value);
+            mDelaySendMessagDurationPref.setSummary(mDelaySendMessagDurationPref
+                    .getEntry());
             result = true;
         }
         return result;

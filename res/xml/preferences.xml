@@ -54,6 +54,22 @@
 
         <CheckBoxPreference
             android:defaultValue="false"
+            android:key="pref_key_delay_send"
+            android:summary="@string/pref_summary_delay_send"
+            android:title="@string/pref_title_delay_send" />
+
+        <ListPreference
+            android:key="pref_delay_send_duration"
+            android:persistent="true"
+            android:dependency="pref_key_delay_send"
+            android:dialogTitle="@string/delay_duration_title"
+            android:title="@string/delay_duration_title"
+            android:entries="@array/delay_send_duration_entries"
+            android:entryValues="@array/delay_send_duration_values"
+            android:defaultValue="5000"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
             android:key="pref_key_sms_delivery_reports"
             android:summary="@string/pref_summary_sms_delivery_reports"
             android:title="@string/pref_title_sms_delivery_reports" />

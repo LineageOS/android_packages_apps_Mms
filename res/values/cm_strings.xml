@@ -13,7 +13,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Message options - Add SMS to calendar -->
     <string name="menu_add_to_calendar">Add to calendar</string>
 
@@ -177,5 +180,17 @@
 
     <!-- Context menu item on an failed message for resending -->
     <string name="menu_resend">Resend</string>
+
+    <!--Delay delivery-->
+    <string name="pref_title_delay_send">Delay delivery</string>
+    <string name="pref_summary_delay_send">Delay the delivery of SMS messages by the specified time, during which you may cancel the message</string>
+    <string name="delay_duration_title">Delay duration</string>
+    <string name="delay_send_duration_options_entry_1">3 seconds</string>
+    <string name="delay_send_duration_options_entry_2">5 seconds (Default)</string>
+    <string name="delay_send_duration_options_entry_3">10 seconds</string>
+    <string name="delay_send_duration_options_entry_4">15 seconds</string>
+    <string name="delay_send_duration_options_entry_5">20 seconds</string>
+    <string name="delay_send_duration_options_entry_6">30 seconds</string>
+    <string name="sent_countdown">SMS delivery countdown</string>
 
 </resources>
