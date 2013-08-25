@@ -70,6 +70,24 @@
       "revId": "178e764702ca23118b2135ba6b3680130f41a1c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_16044a13",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-08-25T06:57:22Z",
+      "side": 1,
+      "message": "Robota poslushali, poslushaem zhivyh ludey: http://tinyurl.com/mm4jqgr\nMne lichno kazhetsya bol\u0027she na \"emodzhi\" pohozhe, chem na \"emodzi\".\nNa samom dele chto-to srednee.",
+      "parentUuid": "baee8101_cb25ffc2",
+      "revId": "178e764702ca23118b2135ba6b3680130f41a1c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
