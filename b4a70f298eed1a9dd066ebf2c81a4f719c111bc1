@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_dc5ca3ef",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-08-26T00:40:16Z",
+      "side": 1,
+      "message": "Hm. Nu voobshe, dlya feiskontrolya trebuetsya zadat\u0027 graf.kluch/pin/parol\u0027 (i kak mne kazhetsya, pod termin \"parol\" ih mozhno i sgruppirovat\u0027). Tak ono kak-to proshe dlya ponimaniya.\n A chto Pavel dumaet po etomu povodu?",
+      "parentUuid": "baee8101_fc408709",
+      "revId": "b4a70f298eed1a9dd066ebf2c81a4f719c111bc1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_9c65fbe2",
         "filename": "res/values-ru/cm_strings.xml",
         "patchSetId": 1
