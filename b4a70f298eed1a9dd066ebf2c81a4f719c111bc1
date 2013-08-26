@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_fc408709",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-08-26T00:35:11Z",
+      "side": 1,
+      "message": "Ne znayu, vryadli pri feiskontrole avtorazblokirovka srabotaet. K tomu zhe, krome parolya i drugie bezopasnye sposoby razblokirovki est\u0027. Proshlyi variant podrazumeval ih vse, a zdes\u0027 konkretika - parol\u0027.",
+      "parentUuid": "baee8101_3ce96f1b",
+      "revId": "b4a70f298eed1a9dd066ebf2c81a4f719c111bc1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_9c65fbe2",
         "filename": "res/values-ru/cm_strings.xml",
         "patchSetId": 1
