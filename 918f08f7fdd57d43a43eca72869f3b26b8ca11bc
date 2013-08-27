@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baee8101_8ce4aa3b",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 6563
+      },
+      "writtenOn": "2013-08-27T05:02:58Z",
+      "side": 1,
+      "message": "Why use the last dot?",
+      "revId": "918f08f7fdd57d43a43eca72869f3b26b8ca11bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
