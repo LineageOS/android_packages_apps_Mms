@@ -33,6 +33,24 @@
       "revId": "918f08f7fdd57d43a43eca72869f3b26b8ca11bc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baee8101_1f7c5a71",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 4045
+      },
+      "writtenOn": "2013-08-27T09:08:59Z",
+      "side": 1,
+      "message": "C\u0027est un toast, le point est donc utilise ici. :)\nSinon +1 pour le commentaire de Leo.",
+      "parentUuid": "baee8101_8ce4aa3b",
+      "revId": "918f08f7fdd57d43a43eca72869f3b26b8ca11bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
