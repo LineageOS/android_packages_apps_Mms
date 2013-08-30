@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_6fa3cd9f",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 404,
+      "author": {
+        "id": 6608
+      },
+      "writtenOn": "2013-08-30T01:35:29Z",
+      "side": 1,
+      "message": "Not edited after copy/paste from QS",
+      "revId": "9f22d79132b6b9f555d2ad21560e24a959232bf1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_4fa01191",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 6608
+      },
+      "writtenOn": "2013-08-30T01:35:29Z",
+      "side": 1,
+      "message": "Not edited after copy/paste from QS",
+      "revId": "9f22d79132b6b9f555d2ad21560e24a959232bf1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
