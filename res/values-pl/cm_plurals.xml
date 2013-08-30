@@ -16,6 +16,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="template_confirm_delete_conversation">
         <item quantity="one">Szablon zostanie usunięty.</item>
-        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> szablony zostaną usunięte.</item>
+        <item quantity="two"><xliff:g id="number" example="15">%1$s</xliff:g> Szablony zostaną usunięte.</item>
+        <item quantity="three"><xliff:g id="number" example="15">%1$s</xliff:g> Szablony zostaną usunięte.</item>
+        <item quantity="four"><xliff:g id="number" example="15">%1$s</xliff:g> Szablony zostaną usunięte.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> Szablonów zostanie usuniętych.</item>
     </plurals>
 </resources>
