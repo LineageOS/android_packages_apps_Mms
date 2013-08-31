@@ -34,6 +34,24 @@
       "revId": "95737b088efd68e5bbb7285fb9efcba3b6b2097e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_60519a62",
+        "filename": "res/layout/add_recipients_list_screen.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-08-31T23:38:11Z",
+      "side": 1,
+      "message": "Personally, I prefer a space before.  Makes it more readable.  I do it in all the code I write/edit.",
+      "parentUuid": "3ae2911b_a0eb02b0",
+      "revId": "95737b088efd68e5bbb7285fb9efcba3b6b2097e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
