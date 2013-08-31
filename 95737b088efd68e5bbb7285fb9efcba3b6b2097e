@@ -16,6 +16,24 @@
       "revId": "95737b088efd68e5bbb7285fb9efcba3b6b2097e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_404e9ec2",
+        "filename": "res/layout/add_recipients_list_screen.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-31T23:33:18Z",
+      "side": 1,
+      "message": "Probably because I worked from PS10 while you uploaded PS11 ;)",
+      "parentUuid": "3ae2911b_a0eb02b0",
+      "revId": "95737b088efd68e5bbb7285fb9efcba3b6b2097e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
