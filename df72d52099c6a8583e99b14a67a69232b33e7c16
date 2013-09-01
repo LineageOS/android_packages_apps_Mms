@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_bb57b3c9",
+        "filename": "res/values-pl/cm_plurals.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-01T03:57:24Z",
+      "side": 1,
+      "message": "Whitespace error (a tab should consist of four spaces)",
+      "revId": "df72d52099c6a8583e99b14a67a69232b33e7c16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae2911b_9b5cf7ee",
+        "filename": "res/values-pl/cm_plurals.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-01T03:57:24Z",
+      "side": 1,
+      "message": "If you translate it like this, the output would be:\n\n15Szablonów zostanie usuni?tych.\n\nI don\u0027t know if you want that capital S there but I think the space between the number and \u0027Szablonów\u0027 should stay.",
+      "revId": "df72d52099c6a8583e99b14a67a69232b33e7c16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
