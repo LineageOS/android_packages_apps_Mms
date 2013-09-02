@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae2911b_462fd6a1",
+        "filename": "res/values-pl/cm_plurals.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-02T06:35:27Z",
+      "side": 1,
+      "message": "Still a whitespace error",
+      "revId": "1caadeec319b2002364a7c7bfc8a675c19c5c27a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
