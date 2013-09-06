@@ -108,4 +108,12 @@
     <string name="alert_dialog_no">Нет</string>
     <string name="menu_resend">Повторить отправку</string>
     <string name="storage_is_full">База сообщений переполнена. Пожалуйста, удалите несколько цепочек.</string>
+    <string name="select_recipients">Выбор получателей</string>
+    <string name="groups_header">Группы</string>
+    <string name="no_recipients">Контакты не найдены</string>
+    <string name="no_recipients_mobile_only">Ничего не найдено. Попробуйте отключить фильтр \"Только мобильные\".</string>
+    <string name="menu_done">Готово</string>
+    <string name="menu_mobile">Только мобильные</string>
+    <string name="menu_groups">Показывать группы</string>
+    <string name="fastscroll_index_groups">Грп</string> <!-- CHAR LIMIT=3 -->
 </resources>
