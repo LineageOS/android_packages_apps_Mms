@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba076199_3c062921",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-09-07T09:57:51Z",
+      "side": 1,
+      "message": "A esli bez kapsloka? Chto-to ne ochen\u0027 viglyadit.",
+      "revId": "dce51e3972e40426bc1d0d7576a36a325920efa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
