@@ -16,6 +16,24 @@
       "revId": "dce51e3972e40426bc1d0d7576a36a325920efa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_37c4023f",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2013-09-07T16:15:37Z",
+      "side": 1,
+      "message": "Ya tak ponimau, eto stroka budet pri skrolle po spisku grupp? Togda, kak mne kazhetsya, kapslok luchshe vyglyadit.",
+      "parentUuid": "ba076199_3c062921",
+      "revId": "dce51e3972e40426bc1d0d7576a36a325920efa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
