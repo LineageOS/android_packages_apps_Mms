@@ -87,6 +87,24 @@
       "revId": "d45743a857b67c4c07457bdeafd745bb0bf51023",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_2ff94a4e",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-09-08T19:43:09Z",
+      "side": 1,
+      "message": "Ik zou de voorkeur geven aan GRP (zonder punt)",
+      "parentUuid": "ba076199_fddc0b1a",
+      "revId": "d45743a857b67c4c07457bdeafd745bb0bf51023",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
