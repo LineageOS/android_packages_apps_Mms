@@ -70,6 +70,24 @@
       "revId": "dce51e3972e40426bc1d0d7576a36a325920efa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_d20b717c",
+        "filename": "res/values-ru/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-09-09T01:37:09Z",
+      "side": 1,
+      "message": "https://dl.dropboxusercontent.com/u/16268774/Screenshots/Tablet/IMG_20130908_173530.JPG\n\nMne kazhetsya, chto tri bukvi kapsom ne vlezut.",
+      "parentUuid": "ba076199_1288e921",
+      "revId": "dce51e3972e40426bc1d0d7576a36a325920efa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
