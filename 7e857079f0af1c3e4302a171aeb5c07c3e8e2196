@@ -122,6 +122,24 @@
       "revId": "7e857079f0af1c3e4302a171aeb5c07c3e8e2196",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_5bce835b",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 6563
+      },
+      "writtenOn": "2013-09-12T20:06:32Z",
+      "side": 1,
+      "message": "Je viens de vérifier dans l\u0027appli, mettre \"Mobiles uniquement\" me semble mieux (vérifié sur un i9100)",
+      "parentUuid": "9a0c5dc1_903f3ad6",
+      "revId": "7e857079f0af1c3e4302a171aeb5c07c3e8e2196",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
