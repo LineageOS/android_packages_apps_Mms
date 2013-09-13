@@ -140,6 +140,24 @@
       "revId": "7e857079f0af1c3e4302a171aeb5c07c3e8e2196",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_76f95ec8",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-09-13T04:25:56Z",
+      "side": 1,
+      "message": "+1\nSans oublié le pluriel donc.\nEt il faudrait assurer la cohérence avec une autre traduction très similaire (je ne me souvient plus où, désole...), à savoir si c\u0027est bien \"mobile\" et non \"portable\".",
+      "parentUuid": "9a0c5dc1_5bce835b",
+      "revId": "7e857079f0af1c3e4302a171aeb5c07c3e8e2196",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
