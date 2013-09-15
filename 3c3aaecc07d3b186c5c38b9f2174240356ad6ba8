@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_5a09e530",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 4617
+      },
+      "writtenOn": "2013-09-15T04:23:11Z",
+      "side": 1,
+      "message": "\"Numéro de mobile uniquement\" \u003d\u003e \"Mobiles uniquement\"",
+      "revId": "3c3aaecc07d3b186c5c38b9f2174240356ad6ba8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
