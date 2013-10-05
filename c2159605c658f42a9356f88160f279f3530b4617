@@ -33,6 +33,91 @@
       "revId": "c2159605c658f42a9356f88160f279f3530b4617",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_ffc0bfe2",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-10-05T02:25:42Z",
+      "side": 1,
+      "message": "... private nommer ...",
+      "revId": "c2159605c658f42a9356f88160f279f3530b4617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_9fb5f37f",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-10-05T02:25:42Z",
+      "side": 1,
+      "message": "Onblokkeer",
+      "revId": "c2159605c658f42a9356f88160f279f3530b4617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_bfba376d",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-10-05T02:25:42Z",
+      "side": 1,
+      "message": "... blokkeerlys",
+      "revId": "c2159605c658f42a9356f88160f279f3530b4617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_5fb0cb8b",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-10-05T02:25:42Z",
+      "side": 1,
+      "message": "passende ? \n\nalso \\\u0027Slegs Mobiele nommers\\\u0027",
+      "revId": "c2159605c658f42a9356f88160f279f3530b4617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_7fad8f30",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-10-05T02:25:42Z",
+      "side": 1,
+      "message": "\\\u0027Slegs Mobiele nommers\\\u0027",
+      "revId": "c2159605c658f42a9356f88160f279f3530b4617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
