@@ -104,6 +104,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_a56c6a09",
+        "filename": "res/values-af/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 3269
+      },
+      "writtenOn": "2013-10-06T21:41:46Z",
+      "side": 1,
+      "message": "ooreenkomstige klink beter.... so het dit verander daarna toe.",
+      "parentUuid": "9a41bdd9_5fb0cb8b",
+      "revId": "c2159605c658f42a9356f88160f279f3530b4617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_7fad8f30",
         "filename": "res/values-af/cm_strings.xml",
         "patchSetId": 3
