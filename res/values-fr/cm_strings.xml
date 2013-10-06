@@ -116,4 +116,6 @@
     <string name="menu_mobile">Mobiles uniquement</string>
     <string name="menu_groups">Afficher les groupes</string>
     <string name="fastscroll_index_groups">GR</string>
+    <string name="pref_compose_edit_lines">Nombre max. de lignes d\'édition</string>
+    <string name="pref_compose_edit_lines_summary">Nombre maximal de lignes pour l\'édition de SMS</string>
 </resources>
