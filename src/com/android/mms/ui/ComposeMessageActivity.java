@@ -2048,8 +2048,9 @@ public class ComposeMessageActivity extends Activity
             LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)mTextEditor.getLayoutParams();
             params.setMargins(0, 0, 0, 0);
             mTextEditor.setLayoutParams(params);
+           
         }
-
+        
         initialize(savedInstanceState, 0);
 
         if (TRACE) {
@@ -2446,6 +2447,7 @@ public class ComposeMessageActivity extends Activity
                 | InputType.TYPE_TEXT_FLAG_AUTO_CORRECT
                 | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
                 | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+        mTextEditor.setMaxLines(prefs.getInt(MessagingPreferenceActivity.SMS_EDIT_MAX_LINES,3));
 
         mIsRunning = true;
         updateThreadIdIfRunning();

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Message options - Add SMS to calendar -->
     <string name="menu_add_to_calendar">Add to calendar</string>
 
@@ -187,4 +189,10 @@
     <string name="menu_mobile">Mobile numbers only</string>
     <string name="menu_groups">Show groups</string>
     <string name="fastscroll_index_groups">GR</string> <!-- CHAR LIMIT=3 -->
+
+
+    <!-- Text Edit maximum number of lines -->
+    <string name="pref_compose_edit_lines">SMS edit max lines</string>
+    <string name="pref_compose_edit_lines_summary">Maximum number of lines for editing an SMS</string>
+
 </resources>
