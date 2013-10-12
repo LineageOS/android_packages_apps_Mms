@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_4246b6c0",
+        "filename": "res/values-zh-rTW/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 7437
+      },
+      "writtenOn": "2013-10-12T20:06:36Z",
+      "side": 1,
+      "message": "????????? \u003d SMS \u003d Short Message Service \u003d text message \u003d ?????????? \u003d message???? SMS ? MMS ????????????????????\n\n???AOSP ??? message (?? message ?? SMS????? SMS ? MMS??????) ?????????????????????????????????? (You can refer to Messaging app)???? message ?????????? AOSP ?????",
+      "parentUuid": "3a50d1a3_c202c66f",
+      "revId": "8f4d8b485bb49833438b9b521a7ffae11f6b3edf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_62f8927d",
         "filename": "res/values-zh-rTW/cm_strings.xml",
         "patchSetId": 3
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_823cbe30",
+        "filename": "res/values-zh-rTW/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 7437
+      },
+      "writtenOn": "2013-10-12T20:06:36Z",
+      "side": 1,
+      "message": "???????????????????? \u0027 \u0027???????????AOSP ???????",
+      "parentUuid": "3a50d1a3_62f8927d",
+      "revId": "8f4d8b485bb49833438b9b521a7ffae11f6b3edf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_22f28a9b",
         "filename": "res/values-zh-rTW/cm_strings.xml",
         "patchSetId": 3
@@ -47,6 +83,24 @@
       "writtenOn": "2013-10-12T18:14:12Z",
       "side": 1,
       "message": "??",
+      "revId": "8f4d8b485bb49833438b9b521a7ffae11f6b3edf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_22492ad1",
+        "filename": "res/values-zh-rTW/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 7437
+      },
+      "writtenOn": "2013-10-12T20:06:36Z",
+      "side": 1,
+      "message": "???????????????\n\n\u003cstring name\u003d\"error_apn_empty\" msgid\u003d\"6056233831214537267\"\u003e\"APN ?????\"\u003c/string\u003e\n\n(https://github.com/CyanogenMod/android_packages_apps_Settings/blob/cm-10.2/res/values-zh-rTW/strings.xml)",
+      "parentUuid": "3a50d1a3_22f28a9b",
       "revId": "8f4d8b485bb49833438b9b521a7ffae11f6b3edf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
