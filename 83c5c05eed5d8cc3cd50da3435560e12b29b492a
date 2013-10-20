@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a50d1a3_39e5d8a7",
+        "filename": "res/values-nl/cm_plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-20T04:05:53Z",
+      "side": 1,
+      "message": "\u0027een\u0027 of \u0027één\u0027? Hierboven wordt het laatste gebruikt.",
+      "revId": "83c5c05eed5d8cc3cd50da3435560e12b29b492a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
