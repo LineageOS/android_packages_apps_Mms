@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_5720abf7",
+        "filename": "res/values-de/cm_plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-10-21T19:00:53Z",
+      "side": 1,
+      "message": "z klein, Gedankenstrich OK",
+      "parentUuid": "3a50d1a3_f72457b0",
+      "revId": "f0b392610329631a5505e84c71dca2b845a99eb5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_7c258ec0",
         "filename": "res/values-de/cm_strings.xml",
         "patchSetId": 1
