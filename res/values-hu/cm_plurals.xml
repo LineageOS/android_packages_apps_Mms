@@ -18,4 +18,8 @@
         <item quantity="one">Egy sablon törlésre kerül.</item>
         <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> sablon törlésre kerül.</item>
     </plurals>
+    <plurals name="remaining_delay_time">
+        <item quantity="one">Küldés 1 másodperc múlva, érintse meg a megszakításhoz.</item>
+        <item quantity="other">Küldés %1$d másodperc múlva, érintse meg a megszakításhoz.</item>
+    </plurals>
 </resources>
