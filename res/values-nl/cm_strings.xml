@@ -14,6 +14,25 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="mms1">MMS (1)</string>
+    <string name="mms2">MMS (2)</string>
+    <string name="mms3">MMS (3)</string>
+    <string name="sub1">ABON. (1)</string>
+    <string name="sub2">ABON. (2)</string>
+    <string name="sub3">ABON. (3)</string>
+    <string name="select_subscription_title">Abonnement selecteren</string>
+    <string name="subscription1_title">Abonnement 1</string>
+    <string name="subscription2_title">Abonnement 2</string>
+    <string name="subscription3_title">Abonnement 3</string>
+    <string name="pending_mms_title">Mms-bericht bezig op ander abonnement.</string>
+    <string name="pending_mms">Berichten: een of meer mms-berichten bezig.</string>
+    <string name="pending_mms_text">Raak aan om van abonnement te wisselen.</string>
+    <string name="abort_mms">Berichten: mms-bericht annuleren</string>
+    <string name="abort_mms_text">Raak aan om te annuleren en terug te gaan.</string>
+    <string name="progress_mms_title">MMS-verzending op ander abonnement bezig</string>
+    <string name="progress_mms">Berichten: mms-bericht bezig\u2026</string>
+    <string name="progress_mms_text">Raak aan om opnieuw te proberen</string>
+
     <string name="qm_mark_read">Gelezen</string>
     <string name="pref_title_sms_split_counter">Sms-teller</string>
     <string name="pref_summary_sms_split_counter">Teller toevoegen aan sms-berichten, zoals: (1/2)</string>
