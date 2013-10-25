@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_3b55d71c",
+        "filename": "res/values-hu/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-10-25T00:49:45Z",
+      "side": 1,
+      "message": "mobilszámok\n\nszerintem egyben",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_db30730a",
+        "filename": "res/values-hu/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-10-25T00:49:45Z",
+      "side": 1,
+      "message": "kéZbesítési\n\nmásrész szerintem: Üzenetkézbesítési egyben",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_fb352ff7",
+        "filename": "res/values-hu/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-10-25T00:49:45Z",
+      "side": 1,
+      "message": "újrapróbálkozáshoz egyben",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
