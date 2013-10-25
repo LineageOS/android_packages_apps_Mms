@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a4dcd0f_3e0065aa",
+        "filename": "res/values-hu/cm_plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-10-25T05:00:27Z",
+      "side": 1,
+      "message": "nem kell a one-os sor.",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_3b55d71c",
         "filename": "res/values-hu/cm_strings.xml",
         "patchSetId": 1
@@ -13,6 +30,24 @@
       "writtenOn": "2013-10-25T00:49:45Z",
       "side": 1,
       "message": "mobilszámok\n\nszerintem egyben",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_de2b8132",
+        "filename": "res/values-hu/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-10-25T05:00:27Z",
+      "side": 1,
+      "message": "szerintem is",
+      "parentUuid": "1a4dcd0f_3b55d71c",
       "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -36,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_fe30bda0",
+        "filename": "res/values-hu/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-10-25T05:00:27Z",
+      "side": 1,
+      "message": ":) szerintem is",
+      "parentUuid": "1a4dcd0f_db30730a",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_fb352ff7",
         "filename": "res/values-hu/cm_strings.xml",
         "patchSetId": 1
@@ -47,6 +100,24 @@
       "writtenOn": "2013-10-25T00:49:45Z",
       "side": 1,
       "message": "újrapróbálkozáshoz egyben",
+      "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_9e25f95d",
+        "filename": "res/values-hu/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-10-25T05:00:27Z",
+      "side": 1,
+      "message": "egyben, igen",
+      "parentUuid": "1a4dcd0f_fb352ff7",
       "revId": "91aecc5e0611002fbb0c5a8f3377ce0e4e3fdd7f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
