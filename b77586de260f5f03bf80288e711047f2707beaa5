@@ -16,6 +16,57 @@
       "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_8f74e5cf",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2013-10-26T08:58:23Z",
+      "side": 1,
+      "message": "Doorgaans wordt \u0027touch\u0027 vertaald met \u0027tik\u0027 i.p.v.\u0027raak aan\u0027 of ben ik in de war met Windows 8? :-)",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_2f811190",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2013-10-26T08:58:23Z",
+      "side": 1,
+      "message": "Idem",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_4f7eddaf",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2013-10-26T08:58:23Z",
+      "side": 1,
+      "message": "Idem",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
