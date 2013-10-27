@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_0ae203d6",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-27T02:52:53Z",
+      "side": 1,
+      "message": "één\n\nEn \"Bezig\" vind ik ook een beetje vaag, is \"onderweg\" niet passender?\n\n- Berichten: één of meer mms onderweg.",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_8f74e5cf",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -36,6 +53,23 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_aae66fe6",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-27T02:52:53Z",
+      "side": 1,
+      "message": "2x \"bericht\" vind ik een beetje dubbelop?\n\n- Berichten: mms annuleren",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_2f811190",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -47,6 +81,40 @@
       "writtenOn": "2013-10-26T08:58:23Z",
       "side": 1,
       "message": "Idem",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_caebbbaf",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-27T02:52:53Z",
+      "side": 1,
+      "message": "Mms",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_6ad147fb",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-27T02:52:53Z",
+      "side": 1,
+      "message": "- Berichten: mms onderweg\\u2026",
       "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
