@@ -246,6 +246,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_cad5fbb9",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-27T03:26:58Z",
+      "side": 1,
+      "message": "\"Afhandelend\" vind ik echt een woord wat niemand in het dagelijks leven gebruikt.\n\n\"worden verwerkt\" vind ik dan de mooiste.",
+      "parentUuid": "1a4dcd0f_8a6a9319",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_4f7eddaf",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
