@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_2a201ff7",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "- Mms-bericht afhandelend op ander abonnement.",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_0ae203d6",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -30,6 +47,24 @@
       "writtenOn": "2013-10-27T02:52:53Z",
       "side": 1,
       "message": "één\n\nEn \"Bezig\" vind ik ook een beetje vaag, is \"onderweg\" niet passender?\n\n- Berichten: één of meer mms onderweg.",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_4a1d6bbc",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "- Berichten: één of meer mms afhandelend.",
+      "parentUuid": "1a4dcd0f_0ae203d6",
       "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +88,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_0a7e83e4",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "Done\n\n- Tik om van abonnement te wisselen",
+      "parentUuid": "1a4dcd0f_8f74e5cf",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_aae66fe6",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -64,6 +117,24 @@
       "writtenOn": "2013-10-27T02:52:53Z",
       "side": 1,
       "message": "2x \"bericht\" vind ik een beetje dubbelop?\n\n- Berichten: mms annuleren",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_aa82efc6",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_aae66fe6",
       "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +158,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_ca873bd6",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_2f811190",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_caebbbaf",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -98,6 +187,24 @@
       "writtenOn": "2013-10-27T02:52:53Z",
       "side": 1,
       "message": "Mms",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_6a6dc731",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "- Mms-verzending afhandelend op ander abonnement",
+      "parentUuid": "1a4dcd0f_caebbbaf",
       "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +228,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_8a6a9319",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "afhandelend?\nwordt afgehandeld?\n\nAnders: verwerken (verwerkend, wordt verwerkt)\n\nPersoonlijk vind ik \u0027onderweg\u0027 minder. Ook hoeft \u0027pending\u0027 niet te betekenen dat het \u0027op de weg\u0027 is (nog niet verstuurd, nog op telefoon). Maar dat is dan mijn benadering op de definitie van onderweg.",
+      "parentUuid": "1a4dcd0f_6ad147fb",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_4f7eddaf",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 1
@@ -132,6 +257,24 @@
       "writtenOn": "2013-10-26T08:58:23Z",
       "side": 1,
       "message": "Idem",
+      "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_2a77bf03",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-27T03:19:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_4f7eddaf",
       "revId": "b77586de260f5f03bf80288e711047f2707beaa5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
