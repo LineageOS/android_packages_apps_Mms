@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_7095b63e",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-28T01:21:20Z",
+      "side": 1,
+      "message": "Haakjes weggehaald, zodat het hetzelfde is als SIM-toolkit.\nMms is hier met hoofdletters, omdat de strings sub1/2/3 dat ook zijn.",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_9092c256",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-10-28T01:21:20Z",
+      "side": 1,
+      "message": "Ik heb hier maar het werkwoord verzenden gebruikt i.p.v. \u0027verzending verwerken\u0027.",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
