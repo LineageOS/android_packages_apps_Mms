@@ -19,6 +19,75 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_509c3a69",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-28T01:54:55Z",
+      "side": 1,
+      "message": "Dit is de tekst op de verzendknop komt te staan als je een MMS aan het opstellen bent. Ik heb geen idee of er wel 5 tekens op passen...\n\nVoor de zekerheid maar de spatie weglaten, zoals in het Engels?",
+      "parentUuid": "1a4dcd0f_7095b63e",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_f0878610",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-28T01:54:55Z",
+      "side": 1,
+      "message": "hier mag van mij ook de spatie weg, de punt laat al genoeg ruimte ertussen\n\n- ABON.1",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_d0860a13",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-28T01:54:55Z",
+      "side": 1,
+      "message": "Ik vind dit nu niet duidelijk maken dat er een ANDERE mms verwerkt wordt, want daar gaat het om. Nu lijkt het meer of de huidige mms op een ander abo wordt verwekt.\n\n\"Pending MMS on other subscription.\"\n\n- Er wordt nog mms verwerkt op ander abonnement.\n\nZoiets....zonder -bericht, als bij r.33",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_707cd620",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-28T01:54:55Z",
+      "side": 1,
+      "message": "één",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_9092c256",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 2
@@ -30,6 +99,24 @@
       "writtenOn": "2013-10-28T01:21:20Z",
       "side": 1,
       "message": "Ik heb hier maar het werkwoord verzenden gebruikt i.p.v. \u0027verzending verwerken\u0027.",
+      "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_90796232",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-10-28T01:54:55Z",
+      "side": 1,
+      "message": "Idem als hierboven, krijg nu niet het idee dat het om een ANDERE mms gaat, maar meer om de huidige en dat klopt niet.\n\n\"MMS transaction on other sub in progress\"\n\n- Er wordt nog mms verzonden op ander abonnement",
+      "parentUuid": "1a4dcd0f_9092c256",
       "revId": "b1ef30d531b6b868fd1542c8dc7d3c2fe00a3c19",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
