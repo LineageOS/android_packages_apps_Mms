@@ -198,4 +198,32 @@
     <string name="send_delay_30seconds">30 seconds</string>
     <string name="sent_countdown">Message delivery countdown</string>
 
+    <!-- Subscription selection strings -->
+    <string name="select_subscription_title">Select Subscription</string>
+    <string name="subscription1_title">Subscription 1</string>
+    <string name="subscription2_title">Subscription 2</string>
+    <string name="subscription3_title">Subscription 3</string>
+
+    <string name="pending_mms_title">Pending MMS on other subscription.</string>
+    <string name="pending_mms">Messaging: One or more MMS are pending.</string>
+    <string name="pending_mms_text">Touch to switch the subscription.</string>
+
+    <string name="abort_mms">Messaging: Abort MMS</string>
+    <string name="abort_mms_text">Touch to abort and switch back.</string>
+
+    <string name="progress_mms_title">MMS transaction on other sub in progress</string>
+    <string name="progress_mms">Messaging: MMS in progress...</string>
+    <string name="progress_mms_text">Touch to retry again</string>
+
+    <!-- Text to appear directly below the "Send" text on the MMS send button in case of DSDS. -->
+    <string name="mms1">MMS1</string>
+    <string name="mms2">MMS2</string>
+    <string name="mms3">MMS3</string>
+    <!-- Set Subscription screen: label sub 1 -->
+    <string name="sub1">SUB 1</string>
+    <!-- Set Subscription screen: label sub 2 -->
+    <string name="sub2">SUB 2</string>
+    <!-- Set Subscription screen: label sub 3 -->
+    <string name="sub3">SUB 3</string>
+
 </resources>
