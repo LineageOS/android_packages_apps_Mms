@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_baaa3884",
+        "filename": "res/values-cs/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2270
+      },
+      "writtenOn": "2013-10-30T05:53:19Z",
+      "side": 1,
+      "message": "závislé",
+      "revId": "29620d9d011226ac37f846f618353a2629cc9f7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
