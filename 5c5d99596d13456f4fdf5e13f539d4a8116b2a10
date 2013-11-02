@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_6ed8721e",
+        "filename": "res/values-cs/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 3875
+      },
+      "writtenOn": "2013-11-02T21:02:38Z",
+      "side": 1,
+      "message": "Dotykem opakovat?",
+      "revId": "5c5d99596d13456f4fdf5e13f539d4a8116b2a10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
