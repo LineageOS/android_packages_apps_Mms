@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_b0234505",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2013-11-11T13:14:30Z",
+      "side": 1,
+      "message": "All apostrophes need to be escaped with a \\, like \\\u0027",
+      "revId": "36826f4f4decaca419ca1a8787147c98b2a62e0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_5020a9f7",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 2681
+      },
+      "writtenOn": "2013-11-11T13:14:30Z",
+      "side": 1,
+      "message": "The quotes here will also need to be escaped with a \\, like \\\"\nWithout it, I don\u0027 think it will cause an error, but may not appear when used",
+      "revId": "36826f4f4decaca419ca1a8787147c98b2a62e0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
