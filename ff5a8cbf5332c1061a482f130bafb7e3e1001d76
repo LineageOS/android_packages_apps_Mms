@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_2beee622",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-11T23:15:40Z",
+      "side": 1,
+      "message": "These quotes have to be escaped too",
+      "revId": "ff5a8cbf5332c1061a482f130bafb7e3e1001d76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_cbf2ca06",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-11T23:15:40Z",
+      "side": 1,
+      "message": "typo (nutyl?jim?)",
+      "revId": "ff5a8cbf5332c1061a482f130bafb7e3e1001d76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_ebf78ef3",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-11T23:15:40Z",
+      "side": 1,
+      "message": "pasirinkt?",
+      "revId": "ff5a8cbf5332c1061a482f130bafb7e3e1001d76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_8bddb272",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-11T23:15:40Z",
+      "side": 1,
+      "message": "mygtukas",
+      "revId": "ff5a8cbf5332c1061a482f130bafb7e3e1001d76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_abdaf676",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 308
+      },
+      "writtenOn": "2013-11-11T23:15:40Z",
+      "side": 1,
+      "message": "greitai emocij? prieigai",
+      "revId": "ff5a8cbf5332c1061a482f130bafb7e3e1001d76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
