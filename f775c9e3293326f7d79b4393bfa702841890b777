@@ -1,0 +1,191 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da20952f_3cd87d1d",
+        "filename": "res/values-lt/cm_arrays.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "gimines susitvarkyk, nes google translate to nesupranta.\nVibracija Normalus?\nir sekan?ius paži?r?k, ypa? \"kartotinis\" akis bado, negi n?ra kuo to žodžio pakeist?",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_bcb48dd1",
+        "filename": "res/values-lt/cm_plurals.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "už -\u003e po",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_5cca1151",
+        "filename": "res/values-lt/cm_plurals.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "už -\u003e po",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_7cc7d545",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "žemiau esan?iame laukelyje",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_1cc4993e",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "N?ra šablon?",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_dcdce11a",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "Pakeitus žodžius vietomis (ne aklas google translate) tekstas tampa aiškus ir mielas akims: Laiko žymose rodyti dat? ir laik?",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_fce1a5d1",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "Laiko žym?se rodyti išsiuntimo dat?, o ne gavimo",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_9ce669e7",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "kam tuš?iažodžiaut?\nJei nepasirinkta, bus naudojama šviesi tema",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_bceb2db0",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "Juodasis s?rašas -\u003e paprasta banalyb?, Juodasis s?rašas tai jis ar ji?",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_5cd1b1fa",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "Aklas google translate?\nBus blokuojami pranešimai iš telefon? numeri?, esan?i? juodajame s?raše.",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_7ccef55b",
+        "filename": "res/values-lt/cm_strings.xml",
+        "patchSetId": 10
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 7905
+      },
+      "writtenOn": "2013-11-15T09:44:14Z",
+      "side": 1,
+      "message": "N?ra rasta :)))))))))) Nerasti atitinkantys kontaktai.",
+      "revId": "f775c9e3293326f7d79b4393bfa702841890b777",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
