@@ -126,6 +126,8 @@
     <string name="send_delay_20seconds">20 secondi</string>
     <string name="send_delay_30seconds">30 secondi</string>
     <string name="sent_countdown">Conto alla rovescia invio</string>
+
+    <!-- CAF -->
     <string name="mms1">MMS1</string>
     <string name="mms2">MMS2</string>
     <string name="mms3">MMS3</string>
