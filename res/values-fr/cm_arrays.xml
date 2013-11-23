@@ -28,11 +28,4 @@
         <item>11</item>
         <item>12 (plus strict)</item>
     </string-array>
-    <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>Normal</item>
-        <item>Vibration moyenne</item>
-        <item>Vibration longue</item>
-        <item>Plusieurs courtes</item>
-        <item>Plusieurs longues</item>
-    </string-array>
 </resources>

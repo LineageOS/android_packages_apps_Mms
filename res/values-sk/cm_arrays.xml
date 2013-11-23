@@ -28,13 +28,4 @@
       <item>11</item>
       <item>12 (najmenej citlivé)</item>
     </string-array>
-
-    <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>Normálny</item>
-        <item>Stredné vibrácie</item>
-        <item>Dlhé vibrácie</item>
-        <item>Viac krátkych</item>
-        <item>Viac dlhých</item>
-    </string-array>
-
 </resources>

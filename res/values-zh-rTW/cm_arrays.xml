@@ -28,11 +28,4 @@
         <item>11</item>
         <item>12 (最嚴格)</item>
     </string-array>
-    <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>正常</item>
-        <item>中等</item>
-        <item>長</item>
-        <item>多次 (短)</item>
-        <item>多次 (長)</item>
-    </string-array>
 </resources>
