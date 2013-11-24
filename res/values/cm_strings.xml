@@ -178,6 +178,10 @@
     <!-- Context menu item on an failed message for resending -->
     <string name="menu_resend">Resend</string>
 
+    <!-- Context menu item on a message for marking as unread -->
+    <string name="menu_as_unread">Mark As Unread</string>
+
+
     <!-- Multi recipients -->
     <string name="select_recipients">Select recipients</string>
     <string name="groups_header">Groups</string>

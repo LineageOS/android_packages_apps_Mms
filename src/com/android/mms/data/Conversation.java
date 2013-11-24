@@ -104,6 +104,7 @@ public class Conversation {
     private static Object sDeletingThreadsLock = new Object();
     private boolean mMarkAsReadBlocked;
     private boolean mMarkAsReadWaiting;
+    private boolean mMarkAsReadCanceled;
 
     private static Handler sToastHandler = new Handler();
 
@@ -354,6 +355,10 @@ public class Conversation {
             Contact.logWithTrace(TAG, "markAsRead mMarkAsReadWaiting: " + mMarkAsReadWaiting +
                     " mMarkAsReadBlocked: " + mMarkAsReadBlocked);
         }
+        if (mMarkAsReadCanceled) {
+            mMarkAsReadCanceled = false;
+            return;
+        }
         if (mMarkAsReadWaiting) {
             // We've already been asked to mark everything as read, but we're blocked.
             return;
@@ -418,6 +423,15 @@ public class Conversation {
                 return null;
             }
         }.execute();
+    }
+
+
+    public boolean isMarkAsReadBlocked() {
+        return mMarkAsReadBlocked;
+    }
+
+    public void cancelMarkAsRead(boolean cancelMarkAsRead) {
+        mMarkAsReadCanceled = cancelMarkAsRead;
     }
 
     /**
