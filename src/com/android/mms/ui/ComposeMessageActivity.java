@@ -1338,10 +1338,10 @@ public class ComposeMessageActivity extends Activity
 
             menu.add(0, MENU_DELETE_MESSAGE, 0, R.string.delete_message)
                 .setOnMenuItemClickListener(l);
-	
+
             if (!msgItem.isMe()) {
-            	menu.add(0, MENU_MARK_AS_UNREAD, 0, R.string.menu_as_unread)
-                	.setOnMenuItemClickListener(l);
+                menu.add(0, MENU_MARK_AS_UNREAD, 0, R.string.menu_as_unread)
+                    .setOnMenuItemClickListener(l);
             }
         }
     };
@@ -1609,10 +1609,10 @@ public class ComposeMessageActivity extends Activity
                     addEventToCalendar(mMsgItem.mSubject, mMsgItem.mBody);
                     return true;
                 }
-				case MENU_MARK_AS_UNREAD: {
-					markAsUnread(mMsgItem);
-					return true;	
-				}
+                case MENU_MARK_AS_UNREAD: {
+                    markAsUnread(mMsgItem);
+                    return true;
+                }
 
                 default:
                     return false;
