@@ -154,5 +154,8 @@
     <string name="menu_groups">Show groups</string>
     <string name="fastscroll_index_groups">GR</string> <!-- CHAR LIMIT=3 -->
 
+    <!-- Text Edit maximum number of lines -->
+    <string name="pref_compose_edit_lines">SMS edit max lines</string>
+    <string name="pref_compose_edit_lines_summary">Maximum number of lines for editing an SMS</string>
 
 </resources>
