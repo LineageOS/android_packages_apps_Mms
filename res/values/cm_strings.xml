@@ -164,4 +164,8 @@
     <string name="send_delay_30seconds">30 seconds</string>
     <string name="sent_countdown">Message delivery countdown</string>
 
+    <!-- Text Edit maximum number of lines -->
+    <string name="pref_compose_edit_lines">SMS edit max lines</string>
+    <string name="pref_compose_edit_lines_summary">Maximum number of lines for editing an SMS</string>
+
 </resources>
