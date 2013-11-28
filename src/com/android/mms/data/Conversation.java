@@ -101,6 +101,7 @@ public class Conversation {
     private static Object sDeletingThreadsLock = new Object();
     private boolean mMarkAsReadBlocked;
     private boolean mMarkAsReadWaiting;
+    private boolean mMarkAsReadCanceled;
 
     private Conversation(Context context) {
         mContext = context;
@@ -348,6 +349,10 @@ public class Conversation {
         if (DELETEDEBUG) {
             Contact.logWithTrace(TAG, "markAsRead mMarkAsReadWaiting: " + mMarkAsReadWaiting +
                     " mMarkAsReadBlocked: " + mMarkAsReadBlocked);
+        }
+        if (mMarkAsReadCanceled) {
+            mMarkAsReadCanceled = false;
+            return;
         }
         if (mMarkAsReadWaiting) {
             // We've already been asked to mark everything as read, but we're blocked.
