@@ -241,6 +241,7 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_ADD_TEMPLATE          = 34;
     private static final int MENU_ADD_TO_BLACKLIST      = 35;
     private static final int MENU_ADD_TO_CALENDAR       = 36;
+    private static final int MENU_MARK_AS_UNREAD        = 37;
 
     private static final int DIALOG_TEMPLATE_SELECT     = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
@@ -1195,6 +1196,11 @@ public class ComposeMessageActivity extends Activity
                 menu.add(0, MENU_DELETE_MESSAGE, 0, R.string.delete_message)
                     .setOnMenuItemClickListener(l);
             }
+
+            if (!msgItem.isMe()) {
+                menu.add(0, MENU_MARK_AS_UNREAD, 0, R.string.menu_as_unread)
+                    .setOnMenuItemClickListener(l);
+            }
         }
     };
 
@@ -1430,11 +1436,39 @@ public class ComposeMessageActivity extends Activity
                     return true;
                 }
 
+                case MENU_MARK_AS_UNREAD: {
+                    markAsUnread(mMsgItem);
+                    return true;
+                }
+
                 default:
                     return false;
             }
         }
     }
+
+    private void markAsUnread(MessageItem msgItem) {
+        mConversation.cancelMarkAsRead(true);
+        Uri uri;
+        if ("sms".equals(msgItem.mType)) {
+            uri = Sms.CONTENT_URI;
+        } else {
+            uri = Mms.CONTENT_URI;
+        }
+        final Uri unreadUri = ContentUris.withAppendedId(uri, msgItem.mMsgId);
+
+        final ContentValues values = new ContentValues(1);
+        values.put("read", Integer.valueOf(0));
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                getContentResolver().update(unreadUri,
+                        values, null, null);
+            }
+        }, "ComposeMessageActivity.markAsUnread").start();
+    }
+
 
     private void lockMessage(MessageItem msgItem, boolean locked) {
         Uri uri;
