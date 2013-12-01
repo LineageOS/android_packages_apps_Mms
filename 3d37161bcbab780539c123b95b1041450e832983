@@ -16,6 +16,24 @@
       "revId": "3d37161bcbab780539c123b95b1041450e832983",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_279388fc",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 8048
+      },
+      "writtenOn": "2013-12-01T13:28:50Z",
+      "side": 1,
+      "message": "Done.\nI\u0027ve uploaded the changes to branch cm-11.0.\nSee http://review.cyanogenmod.org/#/c/54759/",
+      "parentUuid": "fa80f949_e794a0e9",
+      "revId": "3d37161bcbab780539c123b95b1041450e832983",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
