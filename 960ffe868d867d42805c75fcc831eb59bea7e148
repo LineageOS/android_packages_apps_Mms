@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa80f949_fced168f",
+        "filename": "src/com/android/mms/ui/NumberPickerDialog.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6606
+      },
+      "writtenOn": "2013-12-03T07:36:22Z",
+      "side": 1,
+      "message": "Would this be ok?\nOr perhaps each arg. on a separate line, like most of surrounding code?",
+      "revId": "960ffe868d867d42805c75fcc831eb59bea7e148",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
