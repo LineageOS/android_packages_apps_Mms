@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa80f949_bcfd4e70",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-12-03T03:34:09Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "revId": "29af2dd1736f55bc7fff7126504c2fce60153b78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_1c09fa95",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-12-03T03:34:09Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "revId": "29af2dd1736f55bc7fff7126504c2fce60153b78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_fc03d674",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-12-03T03:34:09Z",
+      "side": 1,
+      "message": "use spaces instead of tabs",
+      "revId": "29af2dd1736f55bc7fff7126504c2fce60153b78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_3cdb9e1d",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 599,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-12-03T03:34:09Z",
+      "side": 1,
+      "message": "use spaces instead of tabs",
+      "revId": "29af2dd1736f55bc7fff7126504c2fce60153b78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_5cd8e21d",
+        "filename": "src/com/android/mms/ui/NumberPickerDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-12-03T03:34:09Z",
+      "side": 1,
+      "message": "wrap to 100 chars",
+      "revId": "29af2dd1736f55bc7fff7126504c2fce60153b78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
