@@ -16,6 +16,24 @@
       "revId": "bb92a5a21035c48a951e7730e617323cc332aff8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa80f949_3276653f",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 8048
+      },
+      "writtenOn": "2013-12-04T06:33:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa80f949_f2e8dd18",
+      "revId": "bb92a5a21035c48a951e7730e617323cc332aff8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
