@@ -344,4 +344,16 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
+    <string name="select_subscription_title">Wybierz subskrypcję</string>
+    <string name="subscription1_title">1. subskrypcja</string>
+    <string name="subscription2_title">2. subskrypcja</string>
+    <string name="subscription3_title">3. subskrypcja</string>
+    <string name="pending_mms_title">MMS oczekuje na inną subskrypcję.</string>
+    <string name="pending_mms">Wiadomość: Jeden lub więcej oczekujących MMS-ów.</string>
+    <string name="pending_mms_text">Naciśnij aby zmienić subskrypcję.</string>
+    <string name="abort_mms">Wiadomość: Odrzucono MMS</string>
+    <string name="abort_mms_text">Naciśnij aby przerwać i powrócić.</string>
+    <string name="progress_mms_title">Transakcja MMS-a na inny SUB w toku</string>
+    <string name="progress_mms">Wiadomość: MMS w toku...</string>
+    <string name="progress_mms_text">Naciśnij, aby wznowić</string>
 </resources>
