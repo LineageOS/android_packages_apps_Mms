@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa80f949_03142ef3",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 5637
+      },
+      "writtenOn": "2013-12-08T13:37:57Z",
+      "side": 1,
+      "message": "\"Trwa transakcja MMS na innej us?udze\"",
+      "revId": "10a36403a1910aa86ddd3fdfb4f329ee736fd483",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
