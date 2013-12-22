@@ -21,10 +21,12 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Parcelable;
+import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.Data;
+import android.provider.ContactsContract.PhoneLookup;
 import android.provider.ContactsContract.Presence;
 import android.provider.ContactsContract.Profile;
 import android.provider.Telephony.Mms;
@@ -842,6 +844,46 @@ public class Contact {
 
             if (Log.isLoggable(LogTag.CONTACT, Log.DEBUG)) {
                 log("queryContactInfoByNumber: number=" + number);
+            }
+
+            String cid = null;
+            Cursor cur = mContext.getContentResolver().query(
+                    Uri.withAppendedPath(PhoneLookup.CONTENT_FILTER_URI,
+                            Uri.encode(number)), null, null, null, null);
+            try {
+                if (cur.moveToFirst()) {
+                    cid = cur.getString(cur.getColumnIndex(ContactsContract.Contacts._ID));
+                }
+            } finally {
+                cur.close();
+            }
+
+            if (cid != null && !cid.isEmpty()) {
+                cur = mContext.getContentResolver().query(
+                        PHONES_WITH_PRESENCE_URI, CALLER_ID_PROJECTION,
+                        ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = ?",
+                        new String[] {
+                            cid
+                        }, null);
+                if (cur == null) {
+                    Log.w(TAG, "queryContactInfoByNumber(" + number + ") returned NULL cursor!"
+                            + " contact uri used " + PHONES_WITH_PRESENCE_URI);
+                    return entry;
+                }
+
+                try {
+                    if (cur.moveToFirst()) {
+                        fillPhoneTypeContact(entry, cur);
+                    }
+                    return entry;
+                } finally {
+                    cur.close();
+                }
+            }
+
+            if (Log.isLoggable(LogTag.CONTACT, Log.DEBUG)) {
+                log("queryContactInfoByNumber: no contact ID from PhoneLookup, falling back for number="
+                        + number);
             }
 
             String normalizedNumber = PhoneNumberUtils.normalizeNumber(number);
