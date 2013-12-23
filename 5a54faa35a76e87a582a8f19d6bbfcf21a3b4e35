@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba63e191_683e43ba",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-23T08:44:56Z",
+      "side": 1,
+      "message": "Ik mis deze strings\n\n\u003cstring name\u003d\"pref_title_send_delay\"\u003eDelivery delay\u003c/string\u003e\nVerzendingsvertraging\n\n    \u003cstring name\u003d\"send_delay_immediate\"\u003eSend immediately\u003c/string\u003e\nOnmiddellijk verzenden\n\n    \u003cstring name\u003d\"send_delay_3seconds\"\u003e3 seconds\u003c/string\u003e\n3 seconden\n\n    \u003cstring name\u003d\"send_delay_5seconds\"\u003e5 seconds\u003c/string\u003e\n5 seconden\n\n    \u003cstring name\u003d\"send_delay_10seconds\"\u003e10 seconds\u003c/string\u003e\n10 seconden\n\n    \u003cstring name\u003d\"send_delay_20seconds\"\u003e20 seconds\u003c/string\u003e\n20 seconden\n\n    \u003cstring name\u003d\"send_delay_30seconds\"\u003e30 seconds\u003c/string\u003e\n30 seconden\n\n    \u003cstring name\u003d\"sent_countdown\"\u003eMessage delivery countdown\u003c/string\u003e\nAftellen tot verzenden",
+      "revId": "5a54faa35a76e87a582a8f19d6bbfcf21a3b4e35",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
