@@ -164,7 +164,7 @@ public class MessageItem {
                 // For incoming messages, the ADDRESS field contains the sender.
                 mContact = Contact.get(mAddress, false).getName();
             }
-            mBody = cursor.getString(columnsMap.mColumnSmsBody);
+            mBody = ComposeMessageActivity.removeDeliveryReportPrefixIfRequested(cursor.getString(columnsMap.mColumnSmsBody), context);
 
             // Unless the message is currently in the progress of being sent, it gets a time stamp.
             if (!isOutgoingMessage()) {
