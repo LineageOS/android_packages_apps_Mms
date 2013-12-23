@@ -208,7 +208,7 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
         Contact.addListener(this);
 
         // Subject
-        mSubjectView.setText(conversation.getSnippet());
+        mSubjectView.setText(ComposeMessageActivity.removeDeliveryReportPrefixIfRequested(conversation.getSnippet(), context));
         LayoutParams subjectLayout = (LayoutParams)mSubjectView.getLayoutParams();
         // We have to make the subject left of whatever optional items are shown on the right.
         subjectLayout.addRule(RelativeLayout.LEFT_OF, hasAttachment ? R.id.attachment :
