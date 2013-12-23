@@ -51,7 +51,7 @@ public class MmsMessageSender implements MessageSender {
     private final long mMessageSize;
 
     // Default preference values
-    private static final boolean DEFAULT_DELIVERY_REPORT_MODE  = false;
+    public  static final boolean DEFAULT_DELIVERY_REPORT_MODE  = false;
     private static final boolean DEFAULT_READ_REPORT_MODE      = false;
     private static final long    DEFAULT_EXPIRY_TIME     = 7 * 24 * 60 * 60;
     private static final int     DEFAULT_PRIORITY        = PduHeaders.PRIORITY_NORMAL;

@@ -18,6 +18,7 @@
 package com.android.mms.ui;
 
 import static android.content.res.Configuration.KEYBOARDHIDDEN_NO;
+import static com.android.mms.transaction.MmsMessageSender.DEFAULT_DELIVERY_REPORT_MODE;
 import static com.android.mms.transaction.ProgressCallbackEntity.PROGRESS_ABORT;
 import static com.android.mms.transaction.ProgressCallbackEntity.PROGRESS_COMPLETE;
 import static com.android.mms.transaction.ProgressCallbackEntity.PROGRESS_START;
@@ -283,6 +284,8 @@ public class ComposeMessageActivity extends Activity
     // even if we tell it to (turning off and on the screen). So we need to force load the
     // messages+draft after the max delay.
     private static final int LOADING_MESSAGES_AND_DRAFT_MAX_DELAY_MS = 500;
+
+    private static final String DEFAULT_DELIVERY_REPORT_PREFIX = "";
 
     private ContentResolver mContentResolver;
 
@@ -3649,6 +3652,7 @@ public class ComposeMessageActivity extends Activity
 
             // strip unicode for counting characters
             s = stripUnicodeIfRequested(s);
+            s = addDeliveryReportPrefixIfRequested(s);
             updateCounter(s, start, before, count);
 
             ensureCorrectButtonHeight();
@@ -3958,8 +3962,12 @@ public class ComposeMessageActivity extends Activity
             // them back once the recipient list has settled.
             removeRecipientsListeners();
 
+            CharSequence s = mWorkingMessage.getText();
+            s = stripUnicodeIfRequested(s);
+            s = addDeliveryReportPrefixIfRequested(s);
+
             // strip unicode chars before sending (if applicable)
-            mWorkingMessage.setText(stripUnicodeIfRequested(mWorkingMessage.getText()));
+            mWorkingMessage.setText(s);
             mWorkingMessage.send(mDebugRecipients);
 
             mSentMessage = true;
@@ -4555,6 +4563,40 @@ public class ComposeMessageActivity extends Activity
         if (mUnicodeFilter != null) {
             text = mUnicodeFilter.filter(text);
         }
+        return text;
+    }
+
+    public CharSequence addDeliveryReportPrefixIfRequested(CharSequence text) {
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences((Context) ComposeMessageActivity.this);
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE,
+                DEFAULT_DELIVERY_REPORT_MODE);
+        String requestDeliveryReportPrefix = prefs.getString(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_PREFIX,
+                DEFAULT_DELIVERY_REPORT_PREFIX);
+
+        if (! mWorkingMessage.requiresMms() && requestDeliveryReport && requestDeliveryReportPrefix.length() > 0) {
+            text = requestDeliveryReportPrefix + text;
+        }
+
+        return text;
+    }
+
+    public static String removeDeliveryReportPrefixIfRequested(String text, Context context) {
+        SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(context);
+        boolean requestDeliveryReport = prefs.getBoolean(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE,
+                DEFAULT_DELIVERY_REPORT_MODE);
+        String requestDeliveryReportPrefix = prefs.getString(
+                MessagingPreferenceActivity.SMS_DELIVERY_REPORT_PREFIX,
+                DEFAULT_DELIVERY_REPORT_PREFIX);
+
+        if (requestDeliveryReport && requestDeliveryReportPrefix.length() > 0) {
+            text = text.replaceFirst("^" + Pattern.quote(requestDeliveryReportPrefix), "");
+        }
+
         return text;
     }
 
