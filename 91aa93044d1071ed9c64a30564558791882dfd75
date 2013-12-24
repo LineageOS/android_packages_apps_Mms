@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_30aaee71",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-12-24T21:37:38Z",
+      "side": 0,
+      "message": "It\u0027s called \"Messaging\". Let\u0027s drop the Android 1.6 terminology.",
+      "revId": "91aa93044d1071ed9c64a30564558791882dfd75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
