@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_6da09191",
+        "filename": "res/values-th/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-24T11:07:11Z",
+      "side": 1,
+      "message": "more bad xliff",
+      "revId": "2b63d484700f5897bcde6bf806c166e003f25954",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
