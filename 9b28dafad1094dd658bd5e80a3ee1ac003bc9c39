@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_61773ad5",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2013-12-27T07:02:52Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9a68dd71_e1032a75",
+      "revId": "9b28dafad1094dd658bd5e80a3ee1ac003bc9c39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a68dd71_a1dc5247",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 2
@@ -48,6 +66,24 @@
       "writtenOn": "2013-12-26T15:18:22Z",
       "side": 1,
       "message": "Idem Aftellen tot zenden?",
+      "revId": "9b28dafad1094dd658bd5e80a3ee1ac003bc9c39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_8174aecf",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2013-12-27T07:02:52Z",
+      "side": 1,
+      "message": "-1",
+      "parentUuid": "9a68dd71_a1dc5247",
       "revId": "9b28dafad1094dd658bd5e80a3ee1ac003bc9c39",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
