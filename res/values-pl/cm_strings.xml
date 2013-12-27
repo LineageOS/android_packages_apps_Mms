@@ -96,4 +96,12 @@
     <string name="menu_mobile">Tylko numery komórkowe</string>
     <string name="menu_groups">Pokaż grupy</string>
     <string name="fastscroll_index_groups">GR</string>
+    <string name="pref_title_send_delay">Opóźnienie wysłania wiadomości</string>
+    <string name="send_delay_immediate">Wyślij od razu</string>
+    <string name="send_delay_3seconds">3 sekundy</string>
+    <string name="send_delay_5seconds">5 sekund</string>
+    <string name="send_delay_10seconds">10 sekund</string>
+    <string name="send_delay_20seconds">20 sekund</string>
+    <string name="send_delay_30seconds">30 sekund</string>
+    <string name="sent_countdown">Odliczanie do wysłania wiadomości</string>
 </resources>
