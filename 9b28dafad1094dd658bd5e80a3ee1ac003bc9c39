@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_e1032a75",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-12-27T03:24:16Z",
+      "side": 1,
+      "message": "\u0027Verzendingsvertraging\u0027 past en is consistent met het gebruik van het werkwoord \u0027verzenden\u0027 steeds, i.t.t. \u0027zenden\u0027.",
+      "parentUuid": "9a68dd71_01d8be52",
+      "revId": "9b28dafad1094dd658bd5e80a3ee1ac003bc9c39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a68dd71_a1dc5247",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 2
