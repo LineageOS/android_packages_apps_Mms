@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_b3e7c3ab",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 5868
+      },
+      "writtenOn": "2013-12-28T13:53:08Z",
+      "side": 1,
+      "message": "Wysy?anie wiadomo?ci z opó?nieniem?",
+      "revId": "adc77df1e044a845fac52bbccd0a267ed33596d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_13f32f75",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 5868
+      },
+      "writtenOn": "2013-12-28T13:53:08Z",
+      "side": 1,
+      "message": "Maybe \"Wy?lij natychmiast\"?",
+      "revId": "adc77df1e044a845fac52bbccd0a267ed33596d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_33fc333e",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 5868
+      },
+      "writtenOn": "2013-12-28T13:53:08Z",
+      "side": 1,
+      "message": "Please add mising strings from 10.2 branch: http://review.cyanogenmod.org/#/c/55196/5/res/values-pl/cm_strings.xml",
+      "revId": "adc77df1e044a845fac52bbccd0a267ed33596d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
