@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "9a68dd71_a9c994ae",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-29T05:32:54Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"qm_quick_reply\"\u003eReply\u003c/string\u003e\n\n- Beantwoorden\n\npast beter in een button van de pop-up",
+      "revId": "9b28dafad1094dd658bd5e80a3ee1ac003bc9c39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_c9ce48b4",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-29T05:32:54Z",
+      "side": 1,
+      "message": "mag van mij met een gewone \"en\"",
+      "revId": "9b28dafad1094dd658bd5e80a3ee1ac003bc9c39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a68dd71_01d8be52",
         "filename": "res/values-nl/cm_strings.xml",
         "patchSetId": 2
