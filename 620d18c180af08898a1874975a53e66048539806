@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_e99a2cc5",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-12-29T03:30:08Z",
+      "side": 1,
+      "message": "Do we need to put this string between \"\" ?",
+      "revId": "620d18c180af08898a1874975a53e66048539806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_495fb80e",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-12-29T03:30:08Z",
+      "side": 1,
+      "message": "Do we need to put this string between \"\" ?",
+      "revId": "620d18c180af08898a1874975a53e66048539806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_296284d9",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-12-29T03:30:08Z",
+      "side": 1,
+      "message": "tylko przy niezabezpieczonym ekranie blokady",
+      "revId": "620d18c180af08898a1874975a53e66048539806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_8965b0e2",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-12-29T03:30:08Z",
+      "side": 1,
+      "message": "b?d? blokowane",
+      "revId": "620d18c180af08898a1874975a53e66048539806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
