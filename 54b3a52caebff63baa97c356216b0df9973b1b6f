@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_44e79f40",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-12-29T11:36:30Z",
+      "side": 1,
+      "message": "\u0027Szybk? Odpowied?\u0027 -\u003e szybkie wiadomo?ci\n\n(we can also remove \u0027\u0027 here).",
+      "revId": "54b3a52caebff63baa97c356216b0df9973b1b6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_e4f7b3f3",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2013-12-29T11:36:30Z",
+      "side": 1,
+      "message": "S -\u003e s (lowercase)",
+      "revId": "54b3a52caebff63baa97c356216b0df9973b1b6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
