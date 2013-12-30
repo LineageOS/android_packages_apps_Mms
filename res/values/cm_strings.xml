@@ -164,4 +164,15 @@
     <string name="send_delay_30seconds">30 seconds</string>
     <string name="sent_countdown">Message delivery countdown</string>
 
+    <!-- Vibrate pattern -->
+    <string name="pref_title_mms_notification_vibrate_pattern">Vibrate pattern</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Change vibrate pattern</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Custom vibrate pattern</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Format off/on in milliseconds: off, on, off, on\u2026</string>
+    <string name="pref_mms_notification_vibrate_normal">Normal</string>
+    <string name="pref_mms_notification_vibrate_med_vib">Medium vibrate</string>
+    <string name="pref_mms_notification_vibrate_long_vib">Long vibrate</string>
+    <string name="pref_mms_notification_vibrate_mult_short">Multiple short</string>
+    <string name="pref_mms_notification_vibrate_mult_long">Multiple long</string>
+
 </resources>
