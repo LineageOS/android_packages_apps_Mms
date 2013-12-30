@@ -992,7 +992,14 @@ public class MessagingNotification {
                 vibrate = "always".equals(vibrateWhen);
             }
             if (vibrate) {
-                defaults |= Notification.DEFAULT_VIBRATE;
+                String pattern = sp.getString(
+                        MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, "0,1200");
+
+                if (!TextUtils.isEmpty(pattern)) {
+                    noti.setVibrate(parseVibratePattern(pattern));
+                } else {
+                    defaults |= Notification.DEFAULT_VIBRATE;
+                }
             }
 
             String ringtoneStr = sp.getString(MessagingPreferenceActivity.NOTIFICATION_RINGTONE,
@@ -1521,5 +1528,37 @@ public class MessagingNotification {
         } finally {
             cursor.close();
         }
+    }
+
+    // Parse the user provided custom vibrate pattern into a long[]
+    public static long[] parseVibratePattern(String stringPattern) {
+        ArrayList<Long> arrayListPattern = new ArrayList<Long>();
+        Long l;
+        String[] splitPattern = stringPattern.split(",");
+        int VIBRATE_PATTERN_MAX_SECONDS = 60000;
+        int VIBRATE_PATTERN_MAX_PATTERN = 100;
+
+        for (int i = 0; i < splitPattern.length; i++) {
+            try {
+                l = Long.parseLong(splitPattern[i].trim());
+            } catch (NumberFormatException e) {
+                return null;
+            }
+            if (l > VIBRATE_PATTERN_MAX_SECONDS) {
+                return null;
+            }
+            arrayListPattern.add(l);
+        }
+
+        int size = arrayListPattern.size();
+        if (size > 0 && size < VIBRATE_PATTERN_MAX_PATTERN) {
+            long[] pattern = new long[size];
+            for (int i = 0; i < pattern.length; i++) {
+                pattern[i] = arrayListPattern.get(i);
+            }
+            return pattern;
+        }
+
+        return null;
     }
 }
