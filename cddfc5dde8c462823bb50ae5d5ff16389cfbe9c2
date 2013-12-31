@@ -16,6 +16,23 @@
       "revId": "cddfc5dde8c462823bb50ae5d5ff16389cfbe9c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a5de9d1_0649bad0",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 3184
+      },
+      "writtenOn": "2013-12-31T08:46:05Z",
+      "side": 1,
+      "message": "Non so nemmeno dove venga visualizzata, non riesco a trovarla. Delucidazioni e proposte?",
+      "revId": "cddfc5dde8c462823bb50ae5d5ff16389cfbe9c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
