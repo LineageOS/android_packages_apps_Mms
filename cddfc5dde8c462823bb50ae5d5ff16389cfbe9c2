@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a5de9d1_06c45a3e",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 4631
+      },
+      "writtenOn": "2013-12-31T06:58:50Z",
+      "side": 1,
+      "message": "Mmm, l\u0027unica che mi lascia un po\u0027 in dubbio è quest\u0027ultima...non vi pare un po\u0027 inespressiva?\nAvete altre idee? Non so, tipo un \"Invia allo scadere\" o roba del genere?",
+      "revId": "cddfc5dde8c462823bb50ae5d5ff16389cfbe9c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
