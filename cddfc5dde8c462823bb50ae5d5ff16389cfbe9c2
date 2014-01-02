@@ -33,6 +33,24 @@
       "revId": "cddfc5dde8c462823bb50ae5d5ff16389cfbe9c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a5de9d1_cc03c375",
+        "filename": "res/values-it/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 4631
+      },
+      "writtenOn": "2014-01-02T09:30:36Z",
+      "side": 1,
+      "message": "Ho provato a cercare nelle varie impostazioni ma non ho trovato nulla, martedì che torno a lavoro controllo nei sorgenti dove viene utilizzata quella stringa (non ho i repo sottomano a casa).",
+      "parentUuid": "7a5de9d1_0649bad0",
+      "revId": "cddfc5dde8c462823bb50ae5d5ff16389cfbe9c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
