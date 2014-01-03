@@ -18,4 +18,8 @@
         <item quantity="one">Un modèle sera supprimé.</item>
         <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> modèles seront supprimés.</item>
     </plurals>
+    <plurals name="remaining_delay_time">
+        <item quantity="one">Envoi dans 1 seconde, appuyez pour annuler.</item>
+        <item quantity="other">Envoi dans %1$d secondes, appuyez pour annuler.</item>
+    </plurals>
 </resources>
