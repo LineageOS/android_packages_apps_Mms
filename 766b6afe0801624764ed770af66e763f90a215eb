@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_a5169e53",
+        "filename": "res/values-fr/cm_plurals.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2014-01-04T07:40:48Z",
+      "side": 1,
+      "message": "Envoi dans 1 seconde, appuyez pour annuler.",
+      "revId": "766b6afe0801624764ed770af66e763f90a215eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_450c8a42",
+        "filename": "res/values-fr/cm_plurals.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2014-01-04T07:40:48Z",
+      "side": 1,
+      "message": "Envoi dans %1$d secondes, appuyez pour annuler.",
+      "revId": "766b6afe0801624764ed770af66e763f90a215eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
