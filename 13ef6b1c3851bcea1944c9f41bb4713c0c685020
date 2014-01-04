@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_a5ec5e90",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2014-01-04T05:50:01Z",
+      "side": 1,
+      "message": "\"Décompte avant l\\\u0027envoi\"",
+      "revId": "13ef6b1c3851bcea1944c9f41bb4713c0c685020",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
