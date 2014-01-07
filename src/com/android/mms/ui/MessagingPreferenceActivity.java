@@ -163,6 +163,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     // Blacklist
     private PreferenceScreen mBlacklist;
 
+    // MMS User Agent
+    public static final String USER_AGENT               = "pref_key_mms_user_agent";
+    public static final String USER_AGENT_CUSTOM        = "pref_key_mms_user_agent_custom";
+
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
