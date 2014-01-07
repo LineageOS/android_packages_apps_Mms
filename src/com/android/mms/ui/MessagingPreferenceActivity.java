@@ -122,6 +122,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     // Delay send
     public static final String SEND_DELAY_DURATION       = "pref_key_send_delay";
 
+    // MMS User Agent
+    public static final String USER_AGENT                = "pref_key_mms_user_agent";
+    public static final String USER_AGENT_CUSTOM         = "pref_key_mms_user_agent_custom";
+
     private ListPreference mMessageSendDelayPref;
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;
