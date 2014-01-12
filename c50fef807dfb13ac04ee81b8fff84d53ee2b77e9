@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_d32a772c",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2602
+      },
+      "writtenOn": "2014-01-12T08:21:59Z",
+      "side": 1,
+      "message": "Peut être faudrait-t-il mettre des espaces insécables avant les points-virgules ?",
+      "revId": "c50fef807dfb13ac04ee81b8fff84d53ee2b77e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_93f63fd6",
+        "filename": "res/values-fr/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 2602
+      },
+      "writtenOn": "2014-01-12T08:21:59Z",
+      "side": 1,
+      "message": "Pas de majuscule après le point-virgule.",
+      "revId": "c50fef807dfb13ac04ee81b8fff84d53ee2b77e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
