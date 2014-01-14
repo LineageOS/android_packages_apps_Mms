@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_d9d055cc",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 5947
+      },
+      "writtenOn": "2014-01-14T10:07:09Z",
+      "side": 1,
+      "message": "If you really do not want to implement the feature for user-entered custom vibrate pattern I think those two lines (98,99) are unnecessary. But I strongly recommend introducing the feature, there are a few people who want this and, btw, what bad can happen if it is parsed before forwarding to hardware?",
+      "revId": "1d67c6875ba9f71b27b6c12ef3df4b40033d0d50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
