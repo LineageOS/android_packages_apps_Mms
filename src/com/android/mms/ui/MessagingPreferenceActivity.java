@@ -88,6 +88,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String GESTURE_SENSITIVITY      = "pref_key_templates_gestures_sensitivity";
     public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
 
+    // MMS Size
+    public static final String MMS_SIZE     			 = "pref_key_mms_size";
+    public static final String MMS_SIZE_VALUE   	     = "pref_key_mms_size_value";
+    
     // Timestamps
     public static final String FULL_TIMESTAMP            = "pref_key_mms_full_timestamp";
     public static final String SENT_TIMESTAMP            = "pref_key_mms_use_sent_timestamp";
@@ -131,6 +135,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Preference mSmsDeliveryReportPref;
     private CheckBoxPreference mSmsSplitCounterPref;
     private Preference mMmsLimitPref;
+    private ListPreference mMmsSize;
     private Preference mMmsDeliveryReportPref;
     private Preference mMmsGroupMmsPref;
     private Preference mMmsReadReportPref;
@@ -256,6 +261,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mUnicodeStripping = (ListPreference) findPreference(UNICODE_STRIPPING);
         mUnicodeStrippingEntries = getResources().getTextArray(R.array.pref_unicode_stripping_entries);
 
+        //MMS Size
+        mMmsSize = (ListPreference) findPreference(MMS_SIZE);
+        
         // QuickMessage
         mEnableQuickMessagePref = (CheckBoxPreference) findPreference(QUICKMESSAGE_ENABLED);
         mEnableQmLockscreenPref = (CheckBoxPreference) findPreference(QM_LOCKSCREEN_ENABLED);
@@ -387,6 +395,20 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             }
         });
 
+        String mmsSize = String.valueOf(sharedPreferences.getInt(MMS_SIZE_VALUE, (MmsConfig.getMaxMessageSize()/1024)));
+        mMmsSize.setSummary(mmsSize);
+        mMmsSize.setValue(mmsSize);
+        mMmsSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int value = Integer.parseInt((String) newValue);
+                sharedPreferences.edit().putInt(MMS_SIZE_VALUE, value).commit();
+                mMmsSize.setSummary(String.valueOf(value));
+                MmsConfig.setMaxMessageSize(value);
+                return true;
+            }
+        });
+        
         int unicodeStripping = sharedPreferences.getInt(UNICODE_STRIPPING_VALUE, UNICODE_STRIPPING_LEAVE_INTACT);
         mUnicodeStripping.setValue(String.valueOf(unicodeStripping));
         mUnicodeStripping.setSummary(mUnicodeStrippingEntries[unicodeStripping]);

@@ -38,6 +38,7 @@ public class MmsConfig {
     private static final String TAG = "MmsConfig";
     private static final boolean DEBUG = true;
     private static final boolean LOCAL_LOGV = false;
+	    public static final String MMS_SIZE_VALUE   	     = "pref_key_mms_size_value";
 
     private static final String DEFAULT_HTTP_KEY_X_WAP_PROFILE = "x-wap-profile";
     private static final String DEFAULT_USER_AGENT = "Android-Mms/2.0";
@@ -55,6 +56,7 @@ public class MmsConfig {
      */
     private static boolean mTransIdEnabled = false;
     private static boolean mMmsEnabled = true;                  // default to true
+
     private static int mMaxMessageSize = 300 * 1024;            // default to 300k max size
     private static String mUserAgent = DEFAULT_USER_AGENT;
     private static String mUaProfTagName = DEFAULT_HTTP_KEY_X_WAP_PROFILE;
@@ -108,7 +110,7 @@ public class MmsConfig {
     private static boolean mAliasEnabled = false;
     private static int mAliasRuleMinChars = 2;
     private static int mAliasRuleMaxChars = 48;
-
+	private static int mMmsMaxSize = 614400;
     private static int mMaxSubjectLength = 40;  // maximum number of characters allowed for mms
                                                 // subject
 
@@ -170,6 +172,13 @@ public class MmsConfig {
         }
        return mMaxMessageSize;
     }
+	
+	public static void setMaxMessageSize(int size){
+	        if (LOCAL_LOGV) {
+            Log.v(TAG, "MmsConfig.setMaxMessageSize(int size): " + size);
+        }
+		mMaxMessageSize = size*1024;
+	}
 
     /**
      * This function returns the value of "enabledTransID" present in mms_config file.
@@ -382,6 +391,11 @@ public class MmsConfig {
                         // int config tags go here
                         if ("maxMessageSize".equalsIgnoreCase(value)) {
                             mMaxMessageSize = Integer.parseInt(text);
+							if(mMaxMessageSize > mMmsMaxSize||mMaxMessageSize%102400!=0)
+							{
+								SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+								mMaxMessageSize=preferences.getInt(MMS_SIZE_VALUE, 300*1024); 
+							}							
                         } else if ("maxImageHeight".equalsIgnoreCase(value)) {
                             mMaxImageHeight = Integer.parseInt(text);
                         } else if ("maxImageWidth".equalsIgnoreCase(value)) {

@@ -137,6 +137,12 @@
             android:key="pref_key_mms_retrieval_during_roaming"
             android:title="@string/pref_title_mms_retrieval_during_roaming"
             android:summary="@string/pref_summary_mms_retrieval_during_roaming" />
+			
+					<ListPreference
+            android:entries="@array/pref_title_mms_size_entries"
+            android:entryValues="@array/pref_title_mms_size_values"
+            android:key="pref_key_mms_size"
+            android:title="@string/pref_title_mms_size" />
     </PreferenceCategory>
 
     <!-- Notification Settings -->
@@ -227,6 +233,12 @@
             android:summary="@string/pref_summary_templates_show_gesture"
             android:title="@string/pref_title_templates_show_gesture" />
 
+		<ListPreference
+            android:entries="@array/pref_title_mms_size_entries"
+            android:entryValues="@array/pref_title_mms_size_values"
+            android:key="pref_key_mms_size"
+            android:title="@string/pref_title_mms_size" />
+			
         <ListPreference
             android:entries="@array/pref_templates_gestures_sensitivity_entries"
             android:entryValues="@array/pref_templates_gestures_sensitivity_values"
