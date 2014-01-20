@@ -389,12 +389,15 @@ public class MmsConfig {
                     } else if ("int".equals(tag)) {
                         // int config tags go here
                         if ("maxMessageSize".equalsIgnoreCase(value)) {
-                            mMaxMessageSize = Integer.parseInt(text);
-                            if(mMaxMessageSize > mMmsMaxSize||mMaxMessageSize%102400!=0)
+                            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+                            mMaxMessageSize=preferences.getInt(MMS_SIZE_VALUE, 0);
+                            if  (mMaxMessageSize==0)
                             {
-                              SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-                              mMaxMessageSize=preferences.getInt(MMS_SIZE_VALUE, 300*1024); 
-                            }
+                                mMaxMessageSize = Integer.parseInt(text);
+                                if(mMaxMessageSize > mMmsMaxSize||mMaxMessageSize%102400!=0)
+                                {
+                                     mMaxMessageSize=300 * 1024;
+                                }
                         } else if ("maxImageHeight".equalsIgnoreCase(value)) {
                             mMaxImageHeight = Integer.parseInt(text);
                         } else if ("maxImageWidth".equalsIgnoreCase(value)) {
