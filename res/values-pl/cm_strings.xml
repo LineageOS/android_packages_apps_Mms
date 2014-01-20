@@ -106,4 +106,5 @@
     <string name="send_delay_20seconds">20 sekund</string>
     <string name="send_delay_30seconds">30 sekund</string>
     <string name="sent_countdown">Odliczanie do wysłania wiadomości</string>
+    <string name="pref_title_mms_size">Maks. rozmiar MMS (KB)</string>
 </resources>
