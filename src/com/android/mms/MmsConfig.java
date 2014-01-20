@@ -38,6 +38,7 @@ public class MmsConfig {
     private static final String TAG = "MmsConfig";
     private static final boolean DEBUG = true;
     private static final boolean LOCAL_LOGV = false;
+    public static final String MMS_SIZE_VALUE = "pref_key_mms_size_value";
 
     private static final String DEFAULT_HTTP_KEY_X_WAP_PROFILE = "x-wap-profile";
     private static final String DEFAULT_USER_AGENT = "Android-Mms/2.0";
@@ -54,23 +55,23 @@ public class MmsConfig {
      * Whether to hide MMS functionality from the user (i.e. SMS only).
      */
     private static boolean mTransIdEnabled = false;
-    private static boolean mMmsEnabled = true;                  // default to true
-    private static int mMaxMessageSize = 300 * 1024;            // default to 300k max size
+    private static boolean mMmsEnabled = true; // default to true
+    private static int mMaxMessageSize = 300 * 1024; // default to 300k max size
     private static String mUserAgent = DEFAULT_USER_AGENT;
     private static String mUaProfTagName = DEFAULT_HTTP_KEY_X_WAP_PROFILE;
     private static String mUaProfUrl = null;
     private static String mHttpParams = null;
     private static String mHttpParamsLine1Key = null;
     private static String mEmailGateway = null;
-    private static int mMaxImageHeight = MAX_IMAGE_HEIGHT;      // default value
-    private static int mMaxImageWidth = MAX_IMAGE_WIDTH;        // default value
-    private static int mRecipientLimit = Integer.MAX_VALUE;     // default value
-    private static int mDefaultSMSMessagesPerThread = 10000;    // default value
-    private static int mDefaultMMSMessagesPerThread = 1000;     // default value
-    private static int mMinMessageCountPerThread = 2;           // default value
-    private static int mMaxMessageCountPerThread = 5000;        // default value
-    private static int mHttpSocketTimeout = 60*1000;            // default to 1 min
-    private static int mMinimumSlideElementDuration = 7;        // default to 7 sec
+    private static int mMaxImageHeight = MAX_IMAGE_HEIGHT; // default value
+    private static int mMaxImageWidth = MAX_IMAGE_WIDTH; // default value
+    private static int mRecipientLimit = Integer.MAX_VALUE; // default value
+    private static int mDefaultSMSMessagesPerThread = 10000; // default value
+    private static int mDefaultMMSMessagesPerThread = 1000; // default value
+    private static int mMinMessageCountPerThread = 2; // default value
+    private static int mMaxMessageCountPerThread = 5000; // default value
+    private static int mHttpSocketTimeout = 60 * 1000; // default to 1 min
+    private static int mMinimumSlideElementDuration = 7; // default to 7 sec
     private static boolean mNotifyWapMMSC = false;
     private static boolean mAllowAttachAudio = true;
 
@@ -102,15 +103,15 @@ public class MmsConfig {
     // This is the max amount of storage multiplied by mMaxMessageSize that we
     // allow of unsent messages before blocking the user from sending any more
     // MMS's.
-    private static int mMaxSizeScaleForPendingMmsAllowed = 4;       // default value
+    private static int mMaxSizeScaleForPendingMmsAllowed = 4; // default value
 
     // Email gateway alias support, including the master switch and different rules
     private static boolean mAliasEnabled = false;
     private static int mAliasRuleMinChars = 2;
     private static int mAliasRuleMaxChars = 48;
-
+    private static int mMmsMaxSize = 614400;
     private static int mMaxSubjectLength = 40;  // maximum number of characters allowed for mms
-                                                // subject
+                                               // subject
 
     // If mEnableGroupMms is true, a message with multiple recipients, regardless of contents,
     // will be sent as a single MMS message with multiple "TO" fields set for each recipient.
@@ -168,7 +169,14 @@ public class MmsConfig {
         if (LOCAL_LOGV) {
             Log.v(TAG, "MmsConfig.getMaxMessageSize(): " + mMaxMessageSize);
         }
-       return mMaxMessageSize;
+        return mMaxMessageSize;
+    }
+
+    public static void setMaxMessageSize(int size) {
+        if (LOCAL_LOGV) {
+            Log.v(TAG, "MmsConfig.setMaxMessageSize(int size): " + size);
+        }
+        mMaxMessageSize = size * 1024;
     }
 
     /**
@@ -303,8 +311,8 @@ public class MmsConfig {
     public static final void beginDocument(XmlPullParser parser, String firstElementName) throws XmlPullParserException, IOException
     {
         int type;
-        while ((type=parser.next()) != parser.START_TAG
-                   && type != parser.END_DOCUMENT) {
+        while ((type = parser.next()) != parser.START_TAG
+                && type != parser.END_DOCUMENT) {
             ;
         }
 
@@ -318,11 +326,12 @@ public class MmsConfig {
         }
     }
 
-    public static final void nextElement(XmlPullParser parser) throws XmlPullParserException, IOException
+    public static final void nextElement(XmlPullParser parser) throws XmlPullParserException,
+            IOException
     {
         int type;
-        while ((type=parser.next()) != parser.START_TAG
-                   && type != parser.END_DOCUMENT) {
+        while ((type = parser.next()) != parser.START_TAG
+                && type != parser.END_DOCUMENT) {
             ;
         }
     }
@@ -381,7 +390,15 @@ public class MmsConfig {
                     } else if ("int".equals(tag)) {
                         // int config tags go here
                         if ("maxMessageSize".equalsIgnoreCase(value)) {
-                            mMaxMessageSize = Integer.parseInt(text);
+                            SharedPreferences preferences = PreferenceManager
+                                    .getDefaultSharedPreferences(context);
+                            mMaxMessageSize = preferences.getInt(MMS_SIZE_VALUE, 0);
+                            if (mMaxMessageSize == 0) {
+                                mMaxMessageSize = Integer.parseInt(text);
+                                if (mMaxMessageSize > mMmsMaxSize || mMaxMessageSize % 102400 != 0) {
+                                    mMaxMessageSize = 300 * 1024;
+                                }
+                            }
                         } else if ("maxImageHeight".equalsIgnoreCase(value)) {
                             mMaxImageHeight = Integer.parseInt(text);
                         } else if ("maxImageWidth".equalsIgnoreCase(value)) {
@@ -452,8 +469,8 @@ public class MmsConfig {
 
         if (errorStr != null) {
             String err =
-                String.format("MmsConfig.loadMmsSettings mms_config.xml missing %s setting",
-                        errorStr);
+                    String.format("MmsConfig.loadMmsSettings mms_config.xml missing %s setting",
+                            errorStr);
             Log.e(TAG, err);
         }
     }
