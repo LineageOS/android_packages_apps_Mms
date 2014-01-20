@@ -57,6 +57,7 @@ public class MmsConfig {
     private static boolean mTransIdEnabled = false;
     private static boolean mMmsEnabled = true;                  // default to true
     private static int mMaxMessageSize = 300 * 1024;            // default to 300k max size
+    private static int mUserMessageSize = 0;
     private static String mUserAgent = DEFAULT_USER_AGENT;
     private static String mUaProfTagName = DEFAULT_HTTP_KEY_X_WAP_PROFILE;
     private static String mUaProfUrl = null;
@@ -169,14 +170,14 @@ public class MmsConfig {
         if (LOCAL_LOGV) {
             Log.v(TAG, "MmsConfig.getMaxMessageSize(): " + mMaxMessageSize);
         }
-       return mMaxMessageSize;
+       return mUserMessageSize>0?mUserMessageSize:mMaxMessageSize;
     }
-	
-    public static void setMaxMessageSize(int size){
+
+    public static void setUserMessageSize(int size) {
         if (LOCAL_LOGV) {
-            Log.v(TAG, "MmsConfig.setMaxMessageSize(int size): " + size);
+            Log.v(TAG, "MmsConfig.setUserMessageSize(int size): " + size);
         }
-       mMaxMessageSize = size*1024;
+        mUserMessageSize = size * 1024;
     }
 
     /**
@@ -337,7 +338,8 @@ public class MmsConfig {
 
     private static void loadMmsSettings(Context context) {
         XmlResourceParser parser = context.getResources().getXml(R.xml.mms_config);
-
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        setUserMessageSizepreferences.getInt(MMS_SIZE_VALUE, 0));
         try {
             beginDocument(parser, "mms_config");
 
@@ -390,11 +392,6 @@ public class MmsConfig {
                         // int config tags go here
                         if ("maxMessageSize".equalsIgnoreCase(value)) {
                             mMaxMessageSize = Integer.parseInt(text);
-                            if(mMaxMessageSize > mMmsMaxSize||mMaxMessageSize%102400!=0)
-                            {
-                              SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-                              mMaxMessageSize=preferences.getInt(MMS_SIZE_VALUE, 300*1024); 
-                            }
                         } else if ("maxImageHeight".equalsIgnoreCase(value)) {
                             mMaxImageHeight = Integer.parseInt(text);
                         } else if ("maxImageWidth".equalsIgnoreCase(value)) {
