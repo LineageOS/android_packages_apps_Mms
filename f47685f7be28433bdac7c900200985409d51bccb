@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a5ae5dd_acb98730",
+        "filename": "res/values-pl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-21T12:57:06Z",
+      "side": 1,
+      "message": "Never put translations in new patches, only English.\n\nRemove this",
+      "revId": "f47685f7be28433bdac7c900200985409d51bccb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_2ca59703",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-21T12:57:06Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "f47685f7be28433bdac7c900200985409d51bccb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_4caa53d6",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-21T12:57:06Z",
+      "side": 1,
+      "message": "don\u0027t use tabs",
+      "revId": "f47685f7be28433bdac7c900200985409d51bccb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_ecaf7fe1",
+        "filename": "res/xml/preferences.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-21T12:57:06Z",
+      "side": 1,
+      "message": "don\u0027t use tabs",
+      "revId": "f47685f7be28433bdac7c900200985409d51bccb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a5ae5dd_0cad3be9",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-21T12:57:06Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "f47685f7be28433bdac7c900200985409d51bccb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
