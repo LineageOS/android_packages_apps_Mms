@@ -16,6 +16,24 @@
       "revId": "9b29212481cb85c7fe67df5a253cdc6657ba6f20",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_a79d445b",
+        "filename": "res/values-nl/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2014-01-22T12:09:59Z",
+      "side": 1,
+      "message": "Persoonlijk vind ik Gemiddeld mooier, Middellang klinkt een beetje als lang, maar goed is denk ik kwestie van smaak..",
+      "parentUuid": "3a57f1b5_c72ba032",
+      "revId": "9b29212481cb85c7fe67df5a253cdc6657ba6f20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
