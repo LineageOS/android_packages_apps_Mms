@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a57f1b5_44e7ae12",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-01-22T02:10:25Z",
+      "side": 1,
+      "message": "please wrap 100 chars",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_04f1b6cd",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-01-22T02:10:25Z",
+      "side": 1,
+      "message": "if (mMaxMessageSize \u003d\u003d 0) {",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_44cece84",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-01-22T02:10:25Z",
+      "side": 1,
+      "message": "same as above, code formatting issue",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_84b3660a",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 399,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-01-22T02:10:25Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_e4d7ba21",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-01-22T02:10:25Z",
+      "side": 1,
+      "message": "missing \u0027}\u0027 here",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
