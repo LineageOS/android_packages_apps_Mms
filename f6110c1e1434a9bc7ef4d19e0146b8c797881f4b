@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "3a57f1b5_6423ca06",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-01-22T05:11:38Z",
+      "side": 1,
+      "message": "See your source tree ;)\n\nhttps://github.com/CyanogenMod/android_development/blob/cm-11.0/ide/eclipse/android-formatting.xml",
+      "parentUuid": "3a57f1b5_04dbf61c",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a57f1b5_04f1b6cd",
         "filename": "src/com/android/mms/MmsConfig.java",
         "patchSetId": 6
