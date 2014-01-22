@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a57f1b5_e7781c92",
+        "filename": "res/values/cm_arrays.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-22T09:36:45Z",
+      "side": 1,
+      "message": "should have been translatable\u003d\"false\"\n\nwill create a patch to add it.",
+      "revId": "95079288cb029d0564bed74291683b79d865375e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
