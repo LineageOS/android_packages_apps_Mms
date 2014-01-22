@@ -16,6 +16,24 @@
       "revId": "95079288cb029d0564bed74291683b79d865375e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_07b9b82e",
+        "filename": "res/values/cm_arrays.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2014-01-22T10:15:23Z",
+      "side": 1,
+      "message": "I already submitted a patch to fix this :)",
+      "parentUuid": "3a57f1b5_e7781c92",
+      "revId": "95079288cb029d0564bed74291683b79d865375e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
