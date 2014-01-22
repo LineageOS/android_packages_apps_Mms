@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "3a57f1b5_a402226e",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-01-22T04:25:36Z",
+      "side": 1,
+      "message": "MMS size limit (KB)",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a57f1b5_44e7ae12",
         "filename": "src/com/android/mms/MmsConfig.java",
         "patchSetId": 6
@@ -81,6 +98,23 @@
       "writtenOn": "2014-01-22T02:10:25Z",
       "side": 1,
       "message": "missing \u0027}\u0027 here",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_04f2169b",
+        "filename": "src/com/android/mms/ui/MessagingPreferenceActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-01-22T04:25:36Z",
+      "side": 1,
+      "message": "wrap 100char",
       "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
