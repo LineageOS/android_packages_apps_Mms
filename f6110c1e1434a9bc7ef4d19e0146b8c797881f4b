@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "3a57f1b5_04dbf61c",
+        "filename": "src/com/android/mms/MmsConfig.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 5742
+      },
+      "writtenOn": "2014-01-22T05:06:57Z",
+      "side": 1,
+      "message": "Could you send me your eclipse settings (java formatter) ?",
+      "parentUuid": "3a57f1b5_44e7ae12",
+      "revId": "f6110c1e1434a9bc7ef4d19e0146b8c797881f4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a57f1b5_04f1b6cd",
         "filename": "src/com/android/mms/MmsConfig.java",
         "patchSetId": 6
