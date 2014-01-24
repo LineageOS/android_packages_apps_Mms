@@ -52,6 +52,24 @@
       "revId": "8f34fdf9bb12b9e4485269f50c34d8fac9b81116",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_f3169aa6",
+        "filename": "res/values-de/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 5681
+      },
+      "writtenOn": "2014-01-24T09:42:47Z",
+      "side": 1,
+      "message": "Muster hat ne andere bedeutung\nsiehe Duden: http://www.duden.de/rechtschreibung/Muster",
+      "parentUuid": "3a57f1b5_334672c0",
+      "revId": "8f34fdf9bb12b9e4485269f50c34d8fac9b81116",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
