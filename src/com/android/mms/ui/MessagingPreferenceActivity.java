@@ -88,6 +88,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String GESTURE_SENSITIVITY      = "pref_key_templates_gestures_sensitivity";
     public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
 
+    // MMS Size
+    public static final String MMS_SIZE                  = "pref_key_mms_size";
+    public static final String MMS_SIZE_VALUE            = "pref_key_mms_size_value";
+
     // Timestamps
     public static final String FULL_TIMESTAMP            = "pref_key_mms_full_timestamp";
     public static final String SENT_TIMESTAMP            = "pref_key_mms_use_sent_timestamp";
@@ -131,6 +135,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Preference mSmsDeliveryReportPref;
     private CheckBoxPreference mSmsSplitCounterPref;
     private Preference mMmsLimitPref;
+    private ListPreference mMmsSize;
     private Preference mMmsDeliveryReportPref;
     private Preference mMmsGroupMmsPref;
     private Preference mMmsReadReportPref;
@@ -159,6 +164,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     // Whether or not we are currently enabled for SMS. This field is updated in onResume to make
     // sure we notice if the user has changed the default SMS app.
     private boolean mIsSmsEnabled;
+
+    //MMS Size
+    mMmsSize = (ListPreference) findPreference(MMS_SIZE);
 
     // QuickMessage
     private CheckBoxPreference mEnableQuickMessagePref;
@@ -383,6 +391,18 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                 int value = Integer.parseInt((String) newValue);
                 sharedPreferences.edit().putInt(GESTURE_SENSITIVITY_VALUE, value).commit();
                 mGestureSensitivity.setSummary(String.valueOf(value));
+                return true;
+            }
+        });
+
+        String mmsSize = String.valueOf(sharedPreferences.getInt(MMS_SIZE_VALUE, 0));
+        mMmsSize.setValue(mmsSize);
+        mMmsSize.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int value = Integer.parseInt((String) newValue);
+                sharedPreferences.edit().putInt(MMS_SIZE_VALUE, value).commit();
+                MmsConfig.setUserMessageSize(value);
                 return true;
             }
         });
