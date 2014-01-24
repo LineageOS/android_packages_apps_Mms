@@ -16,6 +16,24 @@
       "revId": "8f34fdf9bb12b9e4485269f50c34d8fac9b81116",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_f3ba1ac0",
+        "filename": "res/values-de/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-01-24T08:56:07Z",
+      "side": 1,
+      "message": "Nein warum Modus? Man wählt doch zwischen unterschiedlichen Mustern aus.",
+      "parentUuid": "3a57f1b5_93aac684",
+      "revId": "8f34fdf9bb12b9e4485269f50c34d8fac9b81116",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
