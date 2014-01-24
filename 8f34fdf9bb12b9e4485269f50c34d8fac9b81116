@@ -70,6 +70,24 @@
       "revId": "8f34fdf9bb12b9e4485269f50c34d8fac9b81116",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a57f1b5_1377b603",
+        "filename": "res/values-de/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-01-24T09:58:05Z",
+      "side": 1,
+      "message": "Um ehrlich zu sein verstehe ich nicht warum hier deiner Meinung nach Muster nicht passen soll.\nEs ist eine Vorlage wie die Abfolge der Vibrationen erfolgen soll. Siehe hier:\nhttp://review.cyanogenmod.org/#/c/56586/6/res/values/cm_arrays.xml\n\nUnter \"Vibrationsmodus\" verstehe ich eher ein Auswahl ob es vibrieren soll oder nicht.\n\nAber da dieser Patch hier sowieso schon gemerged ist denke ich können wir die Diskussion an dieser Stelle denke ich beenden.\nWenn dir die Übersetzung nicht passt kannst du gerne einen Patch hochladen.",
+      "parentUuid": "3a57f1b5_f3169aa6",
+      "revId": "8f34fdf9bb12b9e4485269f50c34d8fac9b81116",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
