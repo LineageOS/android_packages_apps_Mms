@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2013-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,6 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <plurals name="template_confirm_delete_conversation">
+    <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> แม่แบบจะถูกลบ</item>
+  </plurals>
+  <plurals name="remaining_delay_time">
+    <item quantity="other">กำลังส่งใน 1 วินาที แตะเพื่อยกเลิก</item>
+  </plurals>
   <string name="menu_add_to_calendar">เพิ่มไปยังปฏิทิน</string>
   <string name="button_close">ปิด</string>
   <string name="button_view">ดู</string>
@@ -84,7 +91,7 @@
   <string name="blacklist_notification_private_number">บล็อคข้อความจากหมายเลขส่วนตัว</string>
   <string name="blacklist_notification_list_private">ส่วนตัว</string>
   <string name="blacklist_notification_unknown_number">บล็อคข้อความจากหมายเลขที่ไม่รู้จัก  %s</string>
-  <string name="blacklist_notification_multiple"><xliff:g id="count">%d</xliff:g>ข้อความโดนบล็อค</string>
+  <string name="blacklist_notification_multiple"><xliff:g id="count">%d</xliff:g> ข้อความโดนบล็อค</string>
   <string name="unblock_number">ปลดล็อค</string>
   <string name="add_to_blacklist">เพิ่มไปยังบัญชีดำ</string>
   <string name="add_to_blacklist_message">ข้อความในอนาคตจาก %s จะโดนบล็อค</string>
@@ -93,8 +100,37 @@
   <string name="select_recipients">เลือกผู้รับ</string>
   <string name="groups_header">กลุ่ม</string>
   <string name="no_recipients">ไม่พบผู้ติดต่อ</string>
-  <string name="no_recipients_mobile_only">ไม่พบรายชื่อผู้ติดต่อที่ต้องการ ลองอีกครั้งโดยไม่ใช้ตัวกรอง \"หมายเลขโทรศัพท์เท่านั้น\"</string>
+  <string name="no_recipients_mobile_only">ไม่พบรายชื่อผู้ติดต่อที่ต้องการ ลองอีกครั้งโดยไม่ใช้ตัวกรอง "หมายเลขโทรศัพท์เท่านั้น"</string>
   <string name="menu_done">เสร็จสิ้น</string>
   <string name="menu_mobile">หมายเลขโทรศัพท์เท่านั้น</string>
   <string name="menu_groups">แสดงกลุ่ม</string>
+  <string name="pref_title_send_delay">รส่งล่าช้า</string>
+  <string name="send_delay_immediate">ส่งได้ทันที</string>
+  <string name="send_delay_3seconds">3 วินาที</string>
+  <string name="send_delay_5seconds">5 วินาที</string>
+  <string name="send_delay_10seconds">10 วินาที</string>
+  <string name="send_delay_20seconds">20 วินาที</string>
+  <string name="send_delay_30seconds">30 วินาที</string>
+  <string name="sent_countdown">นับถอยหลังการส่งข้อความ</string>
+  <string name="pref_title_mms_notification_vibrate_pattern">รูปแบบการสั่น</string>
+  <string name="pref_summary_mms_notification_vibrate_pattern">เปลี่ยนรูปแบบการสั่น</string>
+  <string name="pref_mms_notification_vibrate_normal">ปกติ</string>
+  <string name="pref_mms_notification_vibrate_med_vib">สั่นปานกลาง</string>
+  <string name="pref_mms_notification_vibrate_long_vib">สั่นยาว</string>
+  <string name="pref_mms_notification_vibrate_mult_short">สั่นสั้นหลายครั้ง</string>
+  <string name="pref_mms_notification_vibrate_mult_long">สั่นยาวหลายครั้ง</string>
+  <string-array name="pref_templates_gestures_sensitivity_entries">
+    <item>1 (broadest)</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12 (strictest)</item>
+  </string-array>
 </resources>
