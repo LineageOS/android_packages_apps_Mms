@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -29,7 +30,7 @@
     <string name="template_ctx_menu_title">Veiksmai</string>
     <string name="template_list_title">Šablonai</string>
     <string name="template_new_title">Naujas šablonas</string>
-    <string name="template_insert">Įterpkite šabloną</string>
+    <string name="template_insert">Įterpti šabloną</string>
     <string name="template_gesture_draw">Nubrėžkite gestą į žemiau esantį laukelį</string>
     <string name="template_not_present_error">Nėra sudarytų šablonų</string>
     <string name="template_not_present_error_title">Klaida</string>
@@ -38,16 +39,16 @@
     <string name="gestures_already_present">Panašus gestas jau yra susietas su kitu šablonu</string>
     <string name="select_template">Pasirinkite šablonus</string>
     <string name="pref_title_notification_privacy_mode_enabled">Privatumo režimas</string>
-    <string name="pref_summary_notification_privacy_mode_enabled">Slėpti siuntėją ir pranešimą būsenos juostoje bei išjungti \'Greitą atsakymą\'</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">"Slėpti siuntėją ir pranešimą būsenos juostoje bei išjungti „Greitą atsakymą“"</string>
     <string name="notification_single_title_privacy_mode">Naujas pranešimas</string>
     <string name="notification_single_text_privacy_mode">Neperskaitytas 1 pranešimas</string>
     <string name="notification_multiple_title_privacy_mode">Nauji pranešimai</string>
     <string name="notification_multiple_text_privacy_mode">%1$s neperskaityti pranešimai</string>
     <string name="notification_ticker_privacy_mode">Gautas naujas pranešimas</string>
-    <string name="pref_title_mms_notification_vibrate_pattern">Vibracijos stilius</string>
-    <string name="pref_summary_mms_notification_vibrate_pattern">Pakeisti vibracijos stilių</string>
-    <string name="pref_title_mms_notification_vibrate_custom">Individualus vibracijos stilius</string>
-    <string name="pref_text_mms_notification_vibrate_custom">Formatas įjungti/išjungti milisekundėmis: išjungta, įjungta, išjungta, įjungta ...</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Vibravimo stilius</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Pakeisti vibravimo stilių</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Individualus vibravimo stilius</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Formatas įjungti / išjungti milisekundėmis: išjungta, įjungta, išjungta, įjungta\u2026</string>
     <string name="pref_extra_settings">Papildomi nustatymai</string>
     <string name="pref_title_enable_emojis">Emocijų palaikymas</string>
     <string name="pref_summary_enable_emojis">Įjungti emocijų palaikymą, iš 471 šypsenėles rinkinio</string>
@@ -55,20 +56,20 @@
     <string name="pref_title_mms_full_timestamp">Visos laiko žymos</string>
     <string name="pref_summary_mms_full_timestamp">Laiko žymose rodyti datą ir laiką</string>
     <string name="pref_title_mms_use_sent_timestamp">Originalios laiko žymos</string>
-    <string name="pref_summary_mms_use_sent_timestamp">Rodyti išsiuntimo datą o ne gautą datą, laiko žymose</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Laiko žymose rodyti išsiuntimo datą vietoj gaunamos datos</string>
     <string name="pref_title_input_type">Klaviatūros tipas</string>
     <string name="pref_keyboard_emoji">Rodyti šypsenėlių mygtuką</string>
     <string name="pref_keyboard_new_line">Rodyti naujos eilutės mygtuką</string>
     <string name="pref_keyboard_unknown">Nežinomas, prašome pasirinkti iš naujo</string>
     <string name="pref_title_sms_split_counter">SMS skaitliukas</string>
-    <string name="pref_summary_sms_split_counter">Prideda skaitliuką pranešimuose pvz. (1/2)</string>
+    <string name="pref_summary_sms_split_counter">Prideda skaitliuką pranešimuose pvz. (1 / 2)</string>
     <string name="pref_quickmessage">Greitas atsakymas</string>
     <string name="pref_quickmessage_title">Rodyti laikinąjį langą</string>
-    <string name="pref_quickmessage_summary">Rodyti greitų žinučių laikinąjį langą gaunamiems SMS pranešimams</string>
+    <string name="pref_quickmessage_summary">Rodyti greitų pranešimų laikinąjį langą gaunamiems SMS pranešimams</string>
     <string name="pref_wake_unlock_title">Pažadinti ir atrakinti</string>
     <string name="pref_wake_unlock_summary">Pažadinti ir atrakinti įrenginį gaunamiems pranešimams (tik nesaugus ekrano užraktas)</string>
     <string name="pref_close_all_title">Uždaryti viską</string>
-    <string name="pref_close_all_summary">Mygtukas \'Uždaryti\' uždaro visas žinutes</string>
+    <string name="pref_close_all_summary">"Mygtukas „Uždaryti“ uždaro visus pranešimus"</string>
     <string name="pref_dark_theme_title">Naudoti tamsią temą</string>
     <string name="pref_dark_theme_summary">Pagal nutylėjimą bus naudojama šviesi tema</string>
     <string name="message_counter_separator">išjungta</string>
@@ -83,12 +84,12 @@
     <string name="menu_insert_contact_info">Įveskite kontaktinę informaciją</string>
     <string name="cannot_find_contact">Negalima į pasirinktą kontaktą įvesti informacijos </string>
     <string name="insert_contact_info_positive_button">Įvesti</string>
-    <string name="pref_title_unicode_stripping">Pašalinti \'Unicode\'</string>
+    <string name="pref_title_unicode_stripping">"Pašalinti „Unicode“"</string>
     <string name="pref_unicode_stripping_leave_intact">Palikti nepaliestus simbolius</string>
-    <string name="pref_unicode_stripping_non_encodable">Pašalinti \'non-encodable\' simbolius</string>
-    <string name="pref_unicode_stripping_all">Pašalinti visus \'unicode\' simbolius</string>
-    <string name="pref_title_enable_softbank_encoding">\'SoftBank\' emocijos</string>
-    <string name="pref_summary_enable_softbank_encoding">Naudoti \'SoftBank\' emocijas koduojant</string>
+    <string name="pref_unicode_stripping_non_encodable">"Pašalinti „Non-encodable“ simbolius"</string>
+    <string name="pref_unicode_stripping_all">"Pašalinti visus „Unicode“ simbolius"</string>
+    <string name="pref_title_enable_softbank_encoding">"„SoftBank“ emocijos"</string>
+    <string name="pref_summary_enable_softbank_encoding">"Naudoti „SoftBank“ emocijų koduotę"</string>
     <string name="pref_title_enable_quick_emojis">Greitas emocijų mygtukas</string>
     <string name="pref_summary_enable_quick_emojis">Rodyti mygtuką šalia teksto įvesties greitai emocijų prieigai</string>
     <string name="label_mms_push">MMS siuntimas</string>
@@ -111,18 +112,18 @@
     <string name="select_recipients">Pasirinkite gavėjus</string>
     <string name="groups_header">Grupės</string>
     <string name="no_recipients">Kontaktų nerasta</string>
-    <string name="no_recipients_mobile_only">Nerasti atitinkantys kontaktai. Išjunkite filtrą \'tik mobilieji numeriai\' ir bandykite dar kartą.</string>
+    <string name="no_recipients_mobile_only">"Nerasti atitinkantys kontaktai. Išjunkite filtrą „Tik mobilieji numeriai“ ir bandykite dar kartą."</string>
     <string name="menu_done">Atlikta</string>
     <string name="menu_mobile">Tik mobilieji numeriai</string>
     <string name="menu_groups">Rodyti grupes</string>
     <string name="fastscroll_index_groups">GR</string>
     <string name="pref_title_send_delay">Siuntimo delsimas</string>
     <string name="send_delay_immediate">Siųsti iš karto</string>
-    <string name="send_delay_3seconds">3 sekundės</string>
-    <string name="send_delay_5seconds">5 sekundės</string>
-    <string name="send_delay_10seconds">10 sekundžių</string>
-    <string name="send_delay_20seconds">20 sekundžių</string>
-    <string name="send_delay_30seconds">30 sekundžių</string>
+    <string name="send_delay_3seconds">Delsti 3 sekundės</string>
+    <string name="send_delay_5seconds">Delsti 5 sekundės</string>
+    <string name="send_delay_10seconds">Delsti 10 sekundžių</string>
+    <string name="send_delay_20seconds">Delsti 20 sekundžių</string>
+    <string name="send_delay_30seconds">Delsti 30 sekundžių</string>
     <string name="sent_countdown">Pranešimo siuntimo laikmatis</string>
     <string name="mms1">MMS1</string>
     <string name="mms2">MMS2</string>
@@ -130,7 +131,7 @@
     <string name="sub1">PREN. 1</string>
     <string name="sub2">PREN. 2</string>
     <string name="sub3">PREN. 3</string>
-    <string name="select_subscription_title">Pasirinkite Prenumeratą</string>
+    <string name="select_subscription_title">Pasirinkite prenumeratą</string>
     <string name="subscription1_title">Prenumerata 1</string>
     <string name="subscription2_title">Prenumerata 2</string>
     <string name="subscription3_title">Prenumerata 3</string>
@@ -140,6 +141,6 @@
     <string name="abort_mms">Pranešimai: Nutraukti MMS pranešimą</string>
     <string name="abort_mms_text">Palieskite, kad nutrauktumėte ir vėl įjungtumėte.</string>
     <string name="progress_mms_title">Kitoje prenumeratoje vyksta MMS pranešimo tvarkymas</string>
-    <string name="progress_mms">Pranešimai: Tvarkomas MMS pranešimas...</string>
+    <string name="progress_mms">Pranešimai: Tvarkomas MMS pranešimas\u2026</string>
     <string name="progress_mms_text">Palieskite norėdami bandyti dar kartą</string>
 </resources>

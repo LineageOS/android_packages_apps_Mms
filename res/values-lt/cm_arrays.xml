@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,11 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>Normali</item>
-        <item>Vidutinė vibracija</item>
-        <item>Ilga vibracija</item>
-        <item>Kartotinė trumpa</item>
-        <item>Kartotinė ilga</item>
+        <item>Normalus</item>
+        <item>Vidutinis vibravimas</item>
+        <item>Ilgas vibravimas</item>
+        <item>Kartotinis trumpas</item>
+        <item>Kartotinis ilgas</item>
         <item>@string/pref_title_mms_notification_vibrate_custom</item>
     </string-array>
     <string-array name="pref_templates_gestures_sensitivity_entries">
