@@ -38,6 +38,7 @@ import org.apache.http.params.HttpProtocolParams;
 
 import android.content.Context;
 import android.net.http.AndroidHttpClient;
+import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Config;
@@ -172,7 +173,9 @@ public class HttpUtils {
             // value. Replace the occurrence of the string returned by
             // MmsConfig.getHttpParamsLine1Key() with the users telephone number inside
             // the value.
-            String extraHttpParams = MmsConfig.getHttpParams();
+            String extraHttpParams = (!SystemProperties.get("ro.mms_http_params", "").isEmpty() ?
+                                      SystemProperties.get("ro.mms_http_params", "") :
+                                      MmsConfig.getHttpParams());
 
             if (extraHttpParams != null) {
                 String line1Number = ((TelephonyManager)context
