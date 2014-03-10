@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_ccf2859a",
+        "filename": "res/values-da/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 2809
+      },
+      "writtenOn": "2014-03-10T19:34:23Z",
+      "side": 1,
+      "message": "Use \\u2026 and not ...?",
+      "revId": "a4bf42d6541a581473562d96f55756d003c7f1aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
