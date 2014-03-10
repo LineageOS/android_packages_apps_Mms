@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_0131d60b",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-03-10T08:36:53Z",
+      "side": 1,
+      "message": "http://en.wikipedia.org/wiki/Cell_Broadcast\n\nuse captital B",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
