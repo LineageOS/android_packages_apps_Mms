@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_8c6d1d35",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2014-03-11T00:33:55Z",
+      "side": 1,
+      "message": "2x \u003e",
+      "revId": "07f6b25ed2f5798cb584e9112ef8dd6c80cf8ddf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_6c6a591c",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2014-03-11T00:33:55Z",
+      "side": 1,
+      "message": "2x T",
+      "revId": "07f6b25ed2f5798cb584e9112ef8dd6c80cf8ddf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_cc772501",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2014-03-11T00:33:55Z",
+      "side": 1,
+      "message": "Typo: \u0027MEr\u0027 -\u003e \u0027Er\u0027",
+      "revId": "07f6b25ed2f5798cb584e9112ef8dd6c80cf8ddf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
