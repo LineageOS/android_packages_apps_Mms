@@ -52,6 +52,58 @@
       "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_d90082ad",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-03-12T08:35:28Z",
+      "side": 1,
+      "message": "It\u0027s not really consistent.\n\nhttps://github.com/CyanogenMod/android_packages_apps_CellBroadcastReceiver/blob/cm-11.0/res/values/strings.xml#L84\n\nBut since in Mms it isn\u0027t capitalized, I wouldn\u0027t do that here too.",
+      "parentUuid": "bae84128_a103ca0e",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_392c0e4a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-03-12T08:35:28Z",
+      "side": 1,
+      "message": "I\u0027d like to keep the edits to a minimum. I don\u0027t think that removing end periods will affect much.",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_19314aa3",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 819,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-03-12T08:35:28Z",
+      "side": 1,
+      "message": "Idem",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
