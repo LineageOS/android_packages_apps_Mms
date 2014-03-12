@@ -90,6 +90,24 @@
     },
     {
       "key": {
+        "uuid": "bae84128_19a66ac1",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-03-12T09:17:26Z",
+      "side": 1,
+      "message": "So we prefer android guidelines inconsistency?\n\nI really don\u0027t know what to do with these strings. You can take a look at Telephony to see the CAF string mess that is present. This is a problem we have since cm-10.2 and I haven\u0027t heard *any* official opinion on this, except rare comments on gerrit.\n\nI won\u0027t update any of my patches anymore until there is some opinion/solution from the team about the general translation issues we have.\n\nIf you want to merge this, feel free to edit/push/merge.",
+      "parentUuid": "bae84128_392c0e4a",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bae84128_19314aa3",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
