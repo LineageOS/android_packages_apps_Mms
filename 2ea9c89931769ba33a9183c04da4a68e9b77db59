@@ -108,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "bae84128_d99c026c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-03-12T09:50:32Z",
+      "side": 1,
+      "message": "I set up some ground rules when I created the Google+ Community, based on feedback from the crew:\n\nhttps://plus.google.com/115466530221473902570/posts/iQr5Rh4XEaJ\n\n- \"That means: (...) not changing AOSP behaviour, meaning: when something is wrong in all AOSP translations, we should not fix this (...)\"\n\nI am still not happy with changing AOSP (or in this case, CAF) translations, because I also have the responsibility to minimize the merge conflicts. With the cm_*.xml split that went fine. I do realise that AOSP/CAF translations need to be modified, but I can only accept the absolute necessary. Strict policy, or old times will rule again.\n\nNote that I\u0027m not happy with this too. We deliberately changed all \u0027Wi-Fi\u0027 strings in Dutch CM translations to \u0027wifi\u0027, because that was something AOSP was used. But a consistent approach feels better to me than an _absolute_ correct translation.",
+      "parentUuid": "bae84128_19a66ac1",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bae84128_19314aa3",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
