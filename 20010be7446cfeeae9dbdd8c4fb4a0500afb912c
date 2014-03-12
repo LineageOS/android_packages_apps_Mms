@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_b9681ebc",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-03-12T05:16:00Z",
+      "side": 1,
+      "message": "Horen die spaties hier en bij r. 39 wel?",
+      "revId": "20010be7446cfeeae9dbdd8c4fb4a0500afb912c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
