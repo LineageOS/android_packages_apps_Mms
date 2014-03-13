@@ -70,6 +70,24 @@
       "revId": "20010be7446cfeeae9dbdd8c4fb4a0500afb912c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_7ca5e402",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-03-13T02:51:37Z",
+      "side": 1,
+      "message": "Aanpassing is gedaan in deze patch: http://review.cyanogenmod.org/#/c/60838/1\n\nMaar ik zie die voorlopig nog niet gemerged worden, dus deze NL maar wel mergen en dan kunnen we het altijd alsnog daarna aanpassen",
+      "parentUuid": "bae84128_3c9b5ccb",
+      "revId": "20010be7446cfeeae9dbdd8c4fb4a0500afb912c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
