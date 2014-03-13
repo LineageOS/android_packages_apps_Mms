@@ -52,6 +52,24 @@
       "revId": "20010be7446cfeeae9dbdd8c4fb4a0500afb912c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_3c9b5ccb",
+        "filename": "res/values-nl/cm_caf.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-03-13T02:49:09Z",
+      "side": 1,
+      "message": "Zelfde als de Engelse bron idd dus lijkt m niet verstandig dit aan te passen in het NLs",
+      "parentUuid": "bae84128_d903620e",
+      "revId": "20010be7446cfeeae9dbdd8c4fb4a0500afb912c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
