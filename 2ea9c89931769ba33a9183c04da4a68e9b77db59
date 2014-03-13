@@ -126,6 +126,24 @@
     },
     {
       "key": {
+        "uuid": "bae84128_dcbb500d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-03-13T05:13:54Z",
+      "side": 1,
+      "message": "abort_mms below doesn\u0027t have the ending dot, neither any other messages in this app...\n\nCAF is nowhere near AOSP quality, that\u0027s why we have to do these changes. There are only 1-2 strings every 10 strings that follows some guidelines.\n\nAlso, in my opinion user experience is more important than merge conflicts... 11+ million people seeing crappy messages is more important than 1 person having to resolve merge conflicts only when there is some string update from upstream.\n\nThis also means that if we have bad original strings, the translations might follow the bag guidelines too.",
+      "parentUuid": "bae84128_d99c026c",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bae84128_19314aa3",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
@@ -137,6 +155,24 @@
       "writtenOn": "2014-03-12T08:35:28Z",
       "side": 1,
       "message": "Idem",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_7cca04a3",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 819,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-03-13T05:13:54Z",
+      "side": 1,
+      "message": "What do you mean?",
+      "parentUuid": "bae84128_19314aa3",
       "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
