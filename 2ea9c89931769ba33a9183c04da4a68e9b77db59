@@ -162,6 +162,24 @@
     },
     {
       "key": {
+        "uuid": "bae84128_92236f05",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-03-14T22:09:27Z",
+      "side": 1,
+      "message": "Full ack. Also merge conflicts in English strings are much less of a problem than in other languages, which the person doing the merge is likely to not understand.",
+      "parentUuid": "bae84128_dcbb500d",
+      "revId": "2ea9c89931769ba33a9183c04da4a68e9b77db59",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bae84128_19314aa3",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
