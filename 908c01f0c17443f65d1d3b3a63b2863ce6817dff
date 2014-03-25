@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_d6920057",
+        "filename": "res/values-de/cm_caf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-03-25T09:03:54Z",
+      "side": 1,
+      "message": "Hat jemand eine Idee um was es hier geht?",
+      "revId": "908c01f0c17443f65d1d3b3a63b2863ce6817dff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
