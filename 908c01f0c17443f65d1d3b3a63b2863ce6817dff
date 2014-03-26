@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "bae84128_26e21bd6",
+        "filename": "res/values-de/cm_caf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-03-26T07:56:29Z",
+      "side": 1,
+      "message": "War wohl zu müde. Hätte eigentlich \"Fehler: Speicher voll\" heißen sollen.",
+      "parentUuid": "bae84128_a3229db7",
+      "revId": "908c01f0c17443f65d1d3b3a63b2863ce6817dff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bae84128_d6920057",
         "filename": "res/values-de/cm_caf.xml",
         "patchSetId": 1
@@ -84,6 +102,24 @@
       "side": 1,
       "message": "Um den Typ des anzuhängenden Tons: Neue Nachricht erstellen -\u003e Büroklammer -\u003e Audio\n\nDemzufolge würde ich das hier \u0027Audiodatei\u0027 nennnen...",
       "parentUuid": "bae84128_d6920057",
+      "revId": "908c01f0c17443f65d1d3b3a63b2863ce6817dff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_c6d1affd",
+        "filename": "res/values-de/cm_caf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2014-03-26T07:56:29Z",
+      "side": 1,
+      "message": "Ok danke Danny. Ich habe die SMS-App nicht installiert daher konnte ich es nicht testen.",
+      "parentUuid": "bae84128_0330a900",
       "revId": "908c01f0c17443f65d1d3b3a63b2863ce6817dff",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
