@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7af24918_af4bb658",
+        "filename": "tests/src/com/android/mms/util/SmileyParserUnitTests.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-04-17T09:48:52Z",
+      "side": 1,
+      "message": "trailing whitespace",
+      "revId": "a484be19af4b05517e333b9f50fe69fc97aaa163",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af24918_ef73feb2",
+        "filename": "tests/src/com/android/mms/util/SmileyParserUnitTests.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-04-17T09:48:52Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "a484be19af4b05517e333b9f50fe69fc97aaa163",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af24918_cf78c292",
+        "filename": "tests/src/com/android/mms/util/SmileyParserUnitTests.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-04-17T09:48:52Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "a484be19af4b05517e333b9f50fe69fc97aaa163",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af24918_0f73cab2",
+        "filename": "tests/src/com/android/mms/util/SmileyParserUnitTests.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-04-17T09:48:52Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "a484be19af4b05517e333b9f50fe69fc97aaa163",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af24918_6f688ebb",
+        "filename": "tests/src/com/android/mms/util/SmileyParserUnitTests.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2014-04-17T09:48:52Z",
+      "side": 1,
+      "message": "see above comment",
+      "revId": "a484be19af4b05517e333b9f50fe69fc97aaa163",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
