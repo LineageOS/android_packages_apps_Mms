@@ -22,7 +22,7 @@
   <string name="button_templates">Шаблони</string>
   <string name="type_to_reply_text_enter_to_send">Додирните да бисте покушали поново</string>
   <string name="toast_sending_message">Слање поруке</string>
-  <string name="qm_quick_reply">Одговори</string>
+  <string name="qm_quick_reply">Одговорите</string>
   <string name="qm_mark_read">Прочитајте</string>
   <string name="message_counter_separator">Искључено</string>
   <string name="pref_title_notification_privacy_mode_enabled">Режим приватности</string>
@@ -74,10 +74,10 @@
   <string name="pref_title_mms_use_sent_timestamp">Оригинал временске ознаке</string>
   <string name="pref_summary_mms_use_sent_timestamp">Прикажи датум слања уместо датума пријема у временским ознакама</string>
   <string name="pref_title_input_type">Меки тип тастатуре</string>
-  <string name="pref_keyboard_emoji">Прикажи кључ Емотикона</string>
-  <string name="pref_keyboard_new_line">Прикажи Ентер кључ</string>
+  <string name="pref_keyboard_emoji">Прикажи тастер за Емотиконе</string>
+  <string name="pref_keyboard_new_line">Прикажи тастер Ентер</string>
   <string name="pref_keyboard_unknown">Непознато, молимо поново да одаберете</string>
-  <string name="pref_title_sms_split_counter">Бројач подела</string>
+  <string name="pref_title_sms_split_counter">Бројач подела порука</string>
   <string name="pref_summary_sms_split_counter">Додајте бројач при проширењу порука (1/2)</string>
   <string name="blacklist_title">Црна листа</string>
   <string name="blacklist_summary_disabled">Онемогућено</string>
