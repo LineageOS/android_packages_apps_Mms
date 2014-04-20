@@ -828,7 +828,8 @@ public class ComposeMessageActivity extends Activity
             final int subscription = i;
             smsBtns[i] = (Button) layout.findViewById(smsBtnIds[i]);
             smsBtns[i].setVisibility(View.VISIBLE);
-            smsBtns[i].setText(subString[i]);
+            smsBtns[i].setText(MSimTelephonyManager.getDefault().getNetworkOperatorName(i)
+                    + "-" + subString[i]);
             smsBtns[i].setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
