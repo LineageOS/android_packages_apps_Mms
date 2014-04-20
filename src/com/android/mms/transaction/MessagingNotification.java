@@ -1217,9 +1217,7 @@ public class MessagingNotification {
         buf.append(':').append(' ');
 
         if (MSimTelephonyManager.getDefault().isMultiSimEnabled()) {
-            int subscription = subId + 1;
-            buf.append("SUB" + subscription);
-            buf.append("-");
+            buf.append(MSimTelephonyManager.getDefault().getNetworkOperatorName(subId));
         }
 
         int offset = buf.length();
