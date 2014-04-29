@@ -282,7 +282,7 @@ public class ComposeMessageActivity extends Activity
 
     // To reduce janky interaction when message history + draft loads and keyboard opening
     // query the messages + draft after the keyboard opens. This controls that behavior.
-    private static final boolean DEFER_LOADING_MESSAGES_AND_DRAFT = false;
+    private static final boolean DEFER_LOADING_MESSAGES_AND_DRAFT = true;
 
     // The max amount of delay before we force load messages and draft.
     // 500ms is determined empirically. We want keyboard to have a chance to be shown before
