@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_bb76613c",
+        "filename": "src/com/android/mms/widget/MmsWidgetService.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 275,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-05-22T09:49:02Z",
+      "side": 1,
+      "message": "What is the plan with this TODO?",
+      "revId": "b01b23c30897faa27742cbeafa51409b92c6fc04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
