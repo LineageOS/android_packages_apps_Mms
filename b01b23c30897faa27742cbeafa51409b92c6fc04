@@ -16,6 +16,24 @@
       "revId": "b01b23c30897faa27742cbeafa51409b92c6fc04",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da0c15f0_01371cb1",
+        "filename": "src/com/android/mms/widget/MmsWidgetService.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 275,
+      "author": {
+        "id": 9554
+      },
+      "writtenOn": "2014-05-24T05:00:44Z",
+      "side": 1,
+      "message": "This TODO has been added in a previous version and it seems we still have this bug with the latest nightly: the image spans are correctly added but they are not visible in the text view of this widget.\nWe can maybe remove the use of this SmileyParser or let it there and wait for a fix (if someone else can confirm that this bug is due to the Android API and not this code).",
+      "parentUuid": "da0c15f0_bb76613c",
+      "revId": "b01b23c30897faa27742cbeafa51409b92c6fc04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
