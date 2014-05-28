@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da0c15f0_465da5e8",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 2510,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2014-05-28T10:41:00Z",
+      "side": 1,
+      "message": "Remove white space please",
+      "revId": "9586ba8c80a2bf713b782e383953e79b828856b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
