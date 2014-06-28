@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_369edb56",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 471,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2014-06-28T11:10:42Z",
+      "side": 1,
+      "message": "Please, remove old code.",
+      "revId": "0bc4fc367745f9e217e6ae569c9bc829e3345d1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_96a3679e",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 473,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2014-06-28T11:10:42Z",
+      "side": 1,
+      "message": "don\u0027t wrap this line (it fits in 100 characters)",
+      "revId": "0bc4fc367745f9e217e6ae569c9bc829e3345d1d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
