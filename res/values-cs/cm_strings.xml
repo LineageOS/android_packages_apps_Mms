@@ -33,8 +33,8 @@
   <string name="notification_multiple_text_privacy_mode">Nepřečtených zpráv: <xliff:g id="number" example="3">%1$s</xliff:g></string>
   <string name="notification_ticker_privacy_mode">Přijata nová zpráva</string>
   <string name="pref_quickmessage">Vyskakovací okno</string>
-  <string name="pref_dark_theme_title">Použít tmavé téma</string>
-  <string name="pref_dark_theme_summary">Pokud není vybráno, použije se výchozí \u201asvětlé\u2018 téma</string>
+  <string name="pref_dark_theme_title">Použít tmavý motiv</string>
+  <string name="pref_dark_theme_summary">Pokud není vybráno, použije se výchozí \u201asvětlý\u2018 motiv</string>
   <string name="pref_quickmessage_title">Zobrazovat vyskakovací okno</string>
   <string name="pref_quickmessage_summary">Zobrazit vyskakovací okno u příchozích SMS zpráv s možností rychlé odpovědi</string>
   <string name="pref_wake_unlock_title">Probudit a odemknout</string>
