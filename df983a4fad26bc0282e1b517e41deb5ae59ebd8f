@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_e6e784e2",
+        "filename": "res/values/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2014-07-09T09:02:41Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "df983a4fad26bc0282e1b517e41deb5ae59ebd8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_86e208d4",
+        "filename": "src/com/android/mms/transaction/MmsSystemEventReceiver.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2014-07-09T09:02:41Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "df983a4fad26bc0282e1b517e41deb5ae59ebd8f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
