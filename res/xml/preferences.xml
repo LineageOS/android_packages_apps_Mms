@@ -85,7 +85,7 @@
             android:defaultValue="0"/>
 
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="pref_key_sms_delivery_reports"
             android:summary="@string/pref_summary_sms_delivery_reports"
             android:title="@string/pref_title_sms_delivery_reports" />
@@ -113,7 +113,7 @@
             android:title="@string/pref_title_mms_group_mms" />
 
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="pref_key_mms_delivery_reports"
             android:summary="@string/pref_summary_mms_delivery_reports"
             android:title="@string/pref_title_mms_delivery_reports" />
