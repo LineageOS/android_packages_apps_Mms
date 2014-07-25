@@ -33,6 +33,24 @@
       "revId": "c046c388e77ee4584d2db6f870c7b51e34b734e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_d82fd7f4",
+        "filename": "src/com/android/mms/ui/ConversationOptionsActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 4229
+      },
+      "writtenOn": "2014-07-25T15:34:07Z",
+      "side": 1,
+      "message": "I\u0027m not sure what you mean by that. Do you mean that when you quit ConversationOptionFragments or the Mms applet and this finishes next? \n\nHm I\u0027m not sure what kind of check we want here?",
+      "parentUuid": "9a061dce_78afabe3",
+      "revId": "c046c388e77ee4584d2db6f870c7b51e34b734e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
