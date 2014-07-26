@@ -51,6 +51,24 @@
       "revId": "c046c388e77ee4584d2db6f870c7b51e34b734e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_3e26bb68",
+        "filename": "src/com/android/mms/ui/ConversationOptionsActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2014-07-26T14:21:36Z",
+      "side": 1,
+      "message": "A simple way to check is by using isActivityFinishing()\nhttp://developer.android.com/reference/android/app/Activity.html#isFinishing()\n\nThe likelyhood of it every happen is very small, however, you can\u0027t always assume that you\u0027re ui will be available to modify, even if we\u0027re talking microseconds in terms of execution.",
+      "parentUuid": "9a061dce_d82fd7f4",
+      "revId": "c046c388e77ee4584d2db6f870c7b51e34b734e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
