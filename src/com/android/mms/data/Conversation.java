@@ -109,6 +109,7 @@ public class Conversation {
     private static Object sDeletingThreadsLock = new Object();
     private boolean mMarkAsReadBlocked;
     private boolean mMarkAsReadWaiting;
+    private long mMarkAsReadTimestamp;  // Mark as read until this timestamp (in milliseconds)
     private boolean mHasMmsForward = false; // True if has forward mms
     private String mForwardRecipientNumber; // The recipient that the forwarded Mms received from
 
@@ -399,11 +400,22 @@ public class Conversation {
      * work is dispatched to a background thread. This function should
      * always be called from the UI thread.
      */
+    public static final long MARK_ALL_AS_READ = -1;
     public void markAsRead(final boolean updateNotifications) {
+        markAsRead(updateNotifications, MARK_ALL_AS_READ);
+    }
+
+    public void markAsRead(final boolean updateNotifications, long timestamp) {
         if (DELETEDEBUG) {
             Contact.logWithTrace(TAG, "markAsRead mMarkAsReadWaiting: " + mMarkAsReadWaiting +
                     " mMarkAsReadBlocked: " + mMarkAsReadBlocked);
         }
+
+        // Update timestamp
+        if (timestamp == MARK_ALL_AS_READ || (mMarkAsReadTimestamp != MARK_ALL_AS_READ && mMarkAsReadTimestamp < timestamp)) {
+            mMarkAsReadTimestamp = timestamp;
+        }
+
         if (mMarkAsReadWaiting) {
             // We've already been asked to mark everything as read, but we're blocked.
             return;
@@ -447,17 +459,30 @@ public class Conversation {
                         LogTag.debug("markAsRead: update read/seen for thread uri: " +
                                 threadUri);
                         try {
+                            String selection;
+                            String[] selectionArgs;
+                            if (mMarkAsReadTimestamp == MARK_ALL_AS_READ) {
+                                selection = UNREAD_SELECTION;
+                                selectionArgs = null;
+                            }
+                            else {
+                                selection = "(" + UNREAD_SELECTION + "AND date <= ?)";
+                                selectionArgs = new String[] { String.valueOf(mMarkAsReadTimestamp) };
+                            }
+
                             mContext.getContentResolver().update(threadUri,
-                                    sReadContentValues, UNREAD_SELECTION, null);
+                                    sReadContentValues, selection, selectionArgs);
                         } catch (SQLiteFullException e) {
                             Log.e(TAG, "Database is full");
                             e.printStackTrace();
                             showStorageFullToast(mContext);
                         }
-                        return null;
+                        // return null;
                     }
                     setHasUnreadMessages(false);
                 }
+                // Reset timestamp
+                mMarkAsReadTimestamp = 0;
 
                 if (updateNotifications) {
                     // Always update notifications regardless of the read state, which is usually
@@ -486,7 +511,7 @@ public class Conversation {
             if (!mMarkAsReadBlocked) {
                 if (mMarkAsReadWaiting) {
                     mMarkAsReadWaiting = false;
-                    markAsRead(true);
+                    markAsRead(true, 0);
                 }
             }
         }
