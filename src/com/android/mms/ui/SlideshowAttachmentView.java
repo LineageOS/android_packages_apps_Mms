@@ -101,8 +101,11 @@ public class SlideshowAttachmentView extends LinearLayout implements
     }
 
     public void setVideo(String name, Uri video) {
-        // TODO: get a thumbnail from the video
-        mImageView.setImageBitmap(null);
+        //Use MediaMetadataRetriever to get generate thumbnail
+        MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
+        mediaMetadataRetriever.setDataSource(mContext, video);
+        mImageView.setImageBitmap(mediaMetadataRetriever.getFrameAtTime(1000));
+        mediaMetadataRetriever.release();
     }
 
     public void setVideoVisibility(boolean visible) {
