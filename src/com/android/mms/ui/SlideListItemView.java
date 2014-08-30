@@ -258,8 +258,11 @@ public class SlideListItemView extends LinearLayout implements SlideViewInterfac
             mAttachmentIcon.setImageDrawable(null);
         }
 
-        // TODO: get a thumbnail from the video
-        mImagePreview.setImageBitmap(null);
+        //Use MediaMetadataRetriever to get generate thumbnail
+        MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
+        mediaMetadataRetriever.setDataSource(mContext, video);
+        mImagePreview.setImageBitmap(mediaMetadataRetriever.getFrameAtTime(1000));
+        mediaMetadataRetriever.release();
     }
 
     public void setVideoThumbnail(String name, Bitmap thumbnail) {
