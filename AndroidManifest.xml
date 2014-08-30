@@ -428,6 +428,14 @@
             android:taskAffinity=""
             android:excludeFromRecents="true"
             android:exported="true" />
+			
+		<!--QuickMessage for wear-->
+        <!-- This allows for users to reply to a message via voice using there Android Wear device -->
+        <activity android:name=".quickmessage.QuickMessageWear"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent"
+            android:excludeFromRecents="true"
+            android:exported="true"/>
 
          <receiver
             android:name=".quickmessage.QmMarkRead"

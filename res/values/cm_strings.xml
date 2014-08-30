@@ -192,4 +192,9 @@
     <string name="menu_conversation_options">Conversation options</string>
     <string name="pref_title_reset_convopt_to_default">Reset to default</string>
     <string name="pref_summary_reset_convopt_to_default">Resets the conversation setting to the application level setting</string>
+	
+	<!-- QuickMessage Wear-->
+	<string name="too_many_chars">Your text message is too long, please try again with a shorter message.</string>
+    <string name="voice_reply">What\'s your reply</string>
+    <string name="reply_by_voice">Reply using voice</string>
 </resources>
