@@ -16,7 +16,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.wwjbmsgs.quickmessage;
+package com.android.mms.quickmessage;
 
 import android.app.Activity;
 import android.content.Context;
@@ -28,10 +28,10 @@ import android.support.v4.app.RemoteInput;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.android.wwjbmsgs.MmsConfig;
-import com.android.wwjbmsgs.R;
-import com.android.wwjbmsgs.data.Conversation;
-import com.android.wwjbmsgs.transaction.SmsMessageSender;
+import com.android.mms.MmsConfig;
+import com.android.mms.R;
+import com.android.mms.data.Conversation;
+import com.android.mms.transaction.SmsMessageSender;
 
 /**
  * Created by Anthony on 8/29/2014.
@@ -45,11 +45,11 @@ public class QuickMessageWear extends Activity {
     Intent i;
     private WakeLock wakeLock;
     public static final String SMS_SENDER =
-            "com.android.wwjbmsgs.SMS_SENDER";
+            "com.android.mms.SMS_SENDER";
     public static final String SMS_THEAD_ID =
-            "com.android.wwjbmsgs.SMS_THREAD_ID";
+            "com.android.mms.SMS_THREAD_ID";
     public static final String SMS_CONATCT =
-            "com.android.wwjbmsgs.CONTACT";
+            "com.android.mms.CONTACT";
 
 
     public static final String EXTRA_VOICE_REPLY = "extra_voice_reply";
