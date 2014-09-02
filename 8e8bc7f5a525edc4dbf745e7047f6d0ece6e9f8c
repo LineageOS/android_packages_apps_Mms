@@ -1,0 +1,378 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_f0510710",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "You seem to be using those only locally in a method, so you should make them local variables.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_f02aa77d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "m prefix missing. The i variable also looks superfluous.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_d0b96b30",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "SMS_CONTACT\n\nAlso line wrap unneeded here and above.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_5020bb9b",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "wakeLock will always be null here.\n\nAlso, as you\u0027re doing all actions locally in parseIntent(), the wakelock is superfluous as there\u0027s nothing to do anymore at the point it\u0027s created.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_7037b7e3",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "onDestroy() {",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_30253fab",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "This will always evaluate to true.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_d034cbdf",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Better pass in the intent, as you\u0027re using it below.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_9041b33c",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "getMessageText() probably can be inlined here.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_305c1f25",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Long -\u003e long",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_703e97b9",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "new String[] {",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_b0482f5d",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Indent by 8",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_1074839a",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Srsly? Please make this a serious log message - and maybe add a toast?",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_f078e791",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Hardcoding the English \u0027to\u0027 is not an option. The string should probably rather look like this:\n\n\u003cstring name\u003d\"qm_wear_message_too_long\"\u003eYour message to \u003cxliff:g id\u003d\"name\"\u003e%s\u003c/xliff:g\u003e could not be sent because it was too long. Please try again with a shorter message\u003c/string\u003e\n\nand then be used like this:\n\nToast.makeText(mContext, getString(R.string.qm_wear_message_too_long, mContactName), Toast.LENGTH_LONG).show();\n\n\nPlease also indent by 8.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_506efbc9",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Line wrap looks unneeded here (and above)",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_906893bc",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Please sort alphabetically:\n\nimport android.support.v4.app.NotificationCompat;\nimport android.support.v4.app.NotificationCompat.WearableExtender;\t\t\timport android.support.v4.app.NotificationManagerCompat;\nimport android.support.v4.app.RemoteInput;",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_7065f7df",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 994,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Can kill the line wrap here.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_d0620bd8",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1066,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "// Wearable\n\n(here and below)",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_b05f8f0d",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1097,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Line wrap unneeded here.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_109be3ca",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1116,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "New? Does this even build?",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_f09f47b2",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1119,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Indention missing here.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_30aa5fd5",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1140,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Indention looks broken here and below.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_90aff3e2",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 1186,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-09-02T20:16:50Z",
+      "side": 1,
+      "message": "Line wrap unneeded here.",
+      "revId": "8e8bc7f5a525edc4dbf745e7047f6d0ece6e9f8c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
