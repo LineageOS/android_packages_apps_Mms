@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_35e243d6",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-09-09T00:40:18Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be mWakeLock?",
+      "revId": "39c28d8bc1efc7f1c2ddd27c97993d9a2c6b3d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_95e7d7e3",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-09-09T00:40:18Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be mWakeLock?",
+      "revId": "39c28d8bc1efc7f1c2ddd27c97993d9a2c6b3d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_d5d14ffd",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 1065,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-09-09T00:40:18Z",
+      "side": 1,
+      "message": "Small nit - add newline above",
+      "revId": "39c28d8bc1efc7f1c2ddd27c97993d9a2c6b3d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_b5ce5358",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 1078,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-09-09T00:40:18Z",
+      "side": 1,
+      "message": "Small nit - add newline above",
+      "revId": "39c28d8bc1efc7f1c2ddd27c97993d9a2c6b3d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_15dc6711",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 1089,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-09-09T00:40:18Z",
+      "side": 1,
+      "message": "Small nit - add newline above",
+      "revId": "39c28d8bc1efc7f1c2ddd27c97993d9a2c6b3d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_f5d8cb1f",
+        "filename": "src/com/android/mms/transaction/MessagingNotification.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 1097,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2014-09-09T00:40:18Z",
+      "side": 1,
+      "message": "Small nit - add newline above",
+      "revId": "39c28d8bc1efc7f1c2ddd27c97993d9a2c6b3d6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
