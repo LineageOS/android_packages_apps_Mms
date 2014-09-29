@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Sem zadajte text šablóny</string>
   <string name="template_empty_text">Textové pole nemôže byť prázdne</string>
   <string name="template_save">Uložiť</string>
-  <string name="template_ctx_menu_title">Akcie</string>
   <string name="template_edit">Upraviť</string>
   <string name="template_delete">Odstrániť</string>
   <string name="template_list_title">Šablóny</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Označiť ako neprečítané</string>
   <string name="menu_all_as_unread">Označiť všetko ako neprečítané</string>
   <string name="confirm_mark_unread_dialog_title">Označiť ako neprečítané?</string>
-  <string name="confirm_mark_unread_conversation">Konverzácia bude označená ako neprečítaná.</string>
   <string name="confirm_mark_unread_all_conversations">Všetky vlákna budú označené ako neprečítané.</string>
   <string name="select_recipients">Vyberte príjemcov</string>
   <string name="groups_header">Skupiny</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Vložiť smajlík</string>
   <string name="pref_title_enable_emoticons">Podpora emotikonov</string>
   <string name="pref_summary_enable_emoticons">Nahradiť textové emotikony s grafickými ekvivalentami</string>
-  <string name="normal_show">Normálny režim zobrazenia</string>
   <string name="cannot_play">Nie je možné zobraziť prezentáciu.</string>
   <string name="menu_conversation_options">Možnosti konverzácie</string>
   <string name="pref_title_reset_convopt_to_default">Obnoviť na predvolené</string>
   <string name="pref_summary_reset_convopt_to_default">Obnoviť nastavenie konverzácie na úroveň nastavenia aplikácie</string>
   <string name="failed_open_associated_activity_msg">Nepodarilo sa otvoriť priradenú aktivitu</string>
+  <string name="cell_broadcast_sender">Kanál informačných správ</string>
+  <string name="disk_storage_full_error">Chyba: Úložisko je plné.</string>
+  <string name="system_audio_item">Systémový zvuk</string>
+  <string name="external_audio_item">Externý zvuk</string>
+  <string name="pending_mms_title">Neodoslaná MMS na inom poskytovateľovi</string>
+  <string name="pending_mms">Správy: neodoslaná jedna alebo viacero MMS</string>
+  <string name="pending_mms_text">Dotykom prepnete poskytovateľa</string>
+  <string name="abort_mms">Správy: Zrušiť MMS</string>
+  <string name="abort_mms_text">Dotykom zrušíte a prepnete späť</string>
+  <string name="progress_mms_title">Prebiehajúca transakcia MMS na inom poskytovateľovi</string>
+  <string name="progress_mms">Správy: Spracovanie MMS\u2026</string>
+  <string name="progress_mms_text">Kliknite pre opakovanie</string>
 </resources>

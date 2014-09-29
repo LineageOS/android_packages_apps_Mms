@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Zde vložte text šablony</string>
   <string name="template_empty_text">Textové pole nemůže být prázdné</string>
   <string name="template_save">Uložit</string>
-  <string name="template_ctx_menu_title">Akce</string>
   <string name="template_edit">Upravit</string>
   <string name="template_delete">Smazat</string>
   <string name="template_list_title">Šablony</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Označit jako nepřečtené</string>
   <string name="menu_all_as_unread">Označit vše jako nepřečtené</string>
   <string name="confirm_mark_unread_dialog_title">Označit jako nepřečtené?</string>
-  <string name="confirm_mark_unread_conversation">Konverzace bude označena jako nepřečtená.</string>
   <string name="confirm_mark_unread_all_conversations">Všechny vlákna budou označena jako nepřečtená.</string>
   <string name="select_recipients">Zvolte příjemce</string>
   <string name="groups_header">Skupiny</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Vložit smajlík</string>
   <string name="pref_title_enable_emoticons">Podpora smajlíků</string>
   <string name="pref_summary_enable_emoticons">Nahradit textovou formu smajlíků jejich obrázkovým ekvivalentem</string>
-  <string name="normal_show">Normální režim zobrazení</string>
   <string name="cannot_play">Prezentaci nelze spustit.</string>
   <string name="menu_conversation_options">Možnosti konverzace</string>
   <string name="pref_title_reset_convopt_to_default">Obnovit výchozí</string>
   <string name="pref_summary_reset_convopt_to_default">Obnovit nastavení konverzace na úroveň nastavení aplikace</string>
   <string name="failed_open_associated_activity_msg">Selhalo otevření přidružené aktivity</string>
+  <string name="cell_broadcast_sender">Všesměrový kanál buňky</string>
+  <string name="disk_storage_full_error">Chyba: úložiště je plné.</string>
+  <string name="system_audio_item">Systémový zvuk</string>
+  <string name="external_audio_item">Externí zvuk</string>
+  <string name="pending_mms_title">Neodeslaná MMS na jiném poskytovateli</string>
+  <string name="pending_mms">Zprávy: neodesláno jedna nebo více MMS</string>
+  <string name="pending_mms_text">Dotykem přepnout poskytovatele</string>
+  <string name="abort_mms">Zprávy: zrušit MMS</string>
+  <string name="abort_mms_text">Dotykem zrušit a přepnout zpět</string>
+  <string name="progress_mms_title">Probíhá transakce MMS na jiném poskytovateli</string>
+  <string name="progress_mms">Zprávy: zpracovávání MMS\u2026</string>
+  <string name="progress_mms_text">Dotykem zkusit znovu</string>
 </resources>

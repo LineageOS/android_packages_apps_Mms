@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Inserir aqui o texto modelo</string>
   <string name="template_empty_text">O campo de texto não pode estar vazio</string>
   <string name="template_save">Salvar</string>
-  <string name="template_ctx_menu_title">Ações</string>
   <string name="template_edit">Editar</string>
   <string name="template_delete">Excluir</string>
   <string name="template_list_title">Modelos</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Marcar como não lida</string>
   <string name="menu_all_as_unread">Marcar todas como não lidas</string>
   <string name="confirm_mark_unread_dialog_title">Marcar como não lida?</string>
-  <string name="confirm_mark_unread_conversation">A conversar será marcada como não lida.</string>
   <string name="confirm_mark_unread_all_conversations">Todas as conversas serão marcadas como não lidas.</string>
   <string name="select_recipients">Selecionar destinatários</string>
   <string name="groups_header">Grupos</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Inserir Emoticon</string>
   <string name="pref_title_enable_emoticons">Suporte de emoticons</string>
   <string name="pref_summary_enable_emoticons">Substituir emticons de texto pela imagem equivalente</string>
-  <string name="normal_show">Modo de visualização normal</string>
   <string name="cannot_play">Não é possível exibir a apresentação de slides.</string>
   <string name="menu_conversation_options">Opções de conversa</string>
   <string name="pref_title_reset_convopt_to_default">Redefinir para o padrão</string>
   <string name="pref_summary_reset_convopt_to_default">Redefine a configuração de conversa para a configuração padrão do aplicativo</string>
   <string name="failed_open_associated_activity_msg">Falha ao abrir a atividade associada</string>
+  <string name="cell_broadcast_sender">Canal de transmissão celular</string>
+  <string name="disk_storage_full_error">Erro: O armazenamento está cheio.</string>
+  <string name="system_audio_item">Áudio do sistema</string>
+  <string name="external_audio_item">Áudio externo</string>
+  <string name="pending_mms_title">MMS pendente em outra assinatura</string>
+  <string name="pending_mms">Mensagem: Um ou mais MMS estão pendentes</string>
+  <string name="pending_mms_text">Toque para alternar a assinatura</string>
+  <string name="abort_mms">Mensagem: Cancelar MMS</string>
+  <string name="abort_mms_text">Toque para cancelar e voltar</string>
+  <string name="progress_mms_title">Transação MMS em outra assinatura em andamento</string>
+  <string name="progress_mms">Mensagem: MMS em andamento\u2026</string>
+  <string name="progress_mms_text">Toque para tentar novamente</string>
 </resources>

@@ -48,7 +48,6 @@
   <string name="template_insert_hint">여기에 템플릿 텍스트를 입력하세요</string>
   <string name="template_empty_text">텍스트 입력란은 비워둘 수 없습니다</string>
   <string name="template_save">저장</string>
-  <string name="template_ctx_menu_title">작업</string>
   <string name="template_edit">편집</string>
   <string name="template_delete">삭제</string>
   <string name="template_list_title">템플릿</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">읽지 않은 상태로 표시</string>
   <string name="menu_all_as_unread">모두 읽지 않은 상태로 표시</string>
   <string name="confirm_mark_unread_dialog_title">읽지 않은 상태로 표시할까요?</string>
-  <string name="confirm_mark_unread_conversation">이 대화를 읽지 않은 것으로 표시됩니다.</string>
   <string name="confirm_mark_unread_all_conversations">모든 스레드가 읽지 않은 것으로 표시됩니다.</string>
   <string name="select_recipients">받는 사람 선택</string>
   <string name="groups_header">그룹</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">이모티콘 삽입</string>
   <string name="pref_title_enable_emoticons">이모티콘 지원</string>
   <string name="pref_summary_enable_emoticons">텍스트 이모티콘을 그림으로 대체합니다</string>
-  <string name="normal_show">일반 모드로 보기</string>
   <string name="cannot_play">슬라이드 쇼를 표시할 수 없습니다</string>
   <string name="menu_conversation_options">대화 옵션</string>
   <string name="pref_title_reset_convopt_to_default">기본값으로 재설정</string>
   <string name="pref_summary_reset_convopt_to_default">대화 설정을 앱 수준 설정으로 재설정</string>
   <string name="failed_open_associated_activity_msg">연결된 액티비티를 열지 못했습니다</string>
+  <string name="cell_broadcast_sender">셀 브로드캐스트 채널</string>
+  <string name="disk_storage_full_error">오류: 저장소 가득 참</string>
+  <string name="system_audio_item">시스템 오디오</string>
+  <string name="external_audio_item">외부 오디오</string>
+  <string name="pending_mms_title">다른 회선에서 MMS 대기 중</string>
+  <string name="pending_mms">메시지: 하나 이상의 MMS가 대기 중</string>
+  <string name="pending_mms_text">터치하여 회선 변경</string>
+  <string name="abort_mms">메시지: MMS 중단하기</string>
+  <string name="abort_mms_text">터치하여 중단하고 되돌아가기</string>
+  <string name="progress_mms_title">다른 회선에서의 MMS 작업이 진행중</string>
+  <string name="progress_mms">메시지: MMS 작업 중\u2026</string>
+  <string name="progress_mms_text">터치하여 다시 시도</string>
 </resources>

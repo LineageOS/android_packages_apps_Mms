@@ -48,7 +48,6 @@
   <string name="template_insert_hint">在此输入模板文本</string>
   <string name="template_empty_text">文本栏不能为空</string>
   <string name="template_save">保存</string>
-  <string name="template_ctx_menu_title">动作</string>
   <string name="template_edit">编辑</string>
   <string name="template_delete">删除</string>
   <string name="template_list_title">模板</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">标记为未读</string>
   <string name="menu_all_as_unread">全部标记为未读</string>
   <string name="confirm_mark_unread_dialog_title">标记为未读？</string>
-  <string name="confirm_mark_unread_conversation">该会话将被标记为未读。</string>
   <string name="confirm_mark_unread_all_conversations">所有会话都将被都标记为未读。</string>
   <string name="select_recipients">选择收件人</string>
   <string name="groups_header">组</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">插入表情符号</string>
   <string name="pref_title_enable_emoticons">表情符号支持</string>
   <string name="pref_summary_enable_emoticons">用等同的图形替代文字表情符号</string>
-  <string name="normal_show">查看正常模式</string>
   <string name="cannot_play">无法展示幻灯片</string>
   <string name="menu_conversation_options">对话选项</string>
   <string name="pref_title_reset_convopt_to_default">重置默认设置</string>
   <string name="pref_summary_reset_convopt_to_default">将对话设置重置为应用级别设置</string>
   <string name="failed_open_associated_activity_msg">无法打开关联的活动</string>
+  <string name="cell_broadcast_sender">小区广播信道</string>
+  <string name="disk_storage_full_error">错误: 存储空间已满。</string>
+  <string name="system_audio_item">系统音频</string>
+  <string name="external_audio_item">外部音频</string>
+  <string name="pending_mms_title">其他订阅上有等待中的彩信</string>
+  <string name="pending_mms">信息：正在等待一个或多个彩信</string>
+  <string name="pending_mms_text">触摸以切换订阅</string>
+  <string name="abort_mms">信息：中止彩信</string>
+  <string name="abort_mms_text">触摸以中止并返回</string>
+  <string name="progress_mms_title">其他订阅上正在处理彩信传输</string>
+  <string name="progress_mms">信息：正在处理彩信\u2026</string>
+  <string name="progress_mms_text">触摸以重试</string>
 </resources>

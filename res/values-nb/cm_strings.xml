@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Sett inn tekst her</string>
   <string name="template_empty_text">Tekstfeltet kan ikke være tomt</string>
   <string name="template_save">Lagre</string>
-  <string name="template_ctx_menu_title">Handlinger</string>
   <string name="template_edit">Endre</string>
   <string name="template_delete">Slett</string>
   <string name="template_list_title">Maler</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Merk som ulest</string>
   <string name="menu_all_as_unread">Merk alle som ulest</string>
   <string name="confirm_mark_unread_dialog_title">Merk som ulest?</string>
-  <string name="confirm_mark_unread_conversation">Samtalen vil bli merket som ulest.</string>
   <string name="confirm_mark_unread_all_conversations">Alle emner vil bli merket som ulest.</string>
   <string name="select_recipients">Velg mottakere</string>
   <string name="groups_header">Grupper</string>
@@ -117,9 +115,21 @@
   <string name="menu_insert_smiley">Sett inn smilefjes</string>
   <string name="pref_title_enable_emoticons">Uttrykksikoner støtte</string>
   <string name="pref_summary_enable_emoticons">Erstatte tekst uttrykksikoner med grafiske ekvivalenter</string>
-  <string name="normal_show">Normal visningsmodus</string>
   <string name="cannot_play">Kan ikke vise lysbildefremvisningen.</string>
   <string name="menu_conversation_options">samtaleinnstillinger</string>
   <string name="pref_title_reset_convopt_to_default">Tilbakestill til standard</string>
   <string name="pref_summary_reset_convopt_to_default">Tilbakestiller samtaleinnstillingene til applikasjonens standardinnstillinger</string>
+  <string name="failed_open_associated_activity_msg">Kan ikke åpne tilknyttet aktivitet</string>
+  <string name="cell_broadcast_sender">Cellekringkastingskanal</string>
+  <string name="disk_storage_full_error">Feil: Lagring er full.</string>
+  <string name="system_audio_item">Systemlyd</string>
+  <string name="external_audio_item">Ekstern lyd</string>
+  <string name="pending_mms_title">Ventende MMS på andre abonnement</string>
+  <string name="pending_mms">Meldinger: Én eller flere MMS venter</string>
+  <string name="pending_mms_text">Trykk for å bytte abonnement</string>
+  <string name="abort_mms">Meldinger: Avbryte MMS</string>
+  <string name="abort_mms_text">Trykk for å avbryte og bytte tilbake</string>
+  <string name="progress_mms_title">MMS innhenting pågår</string>
+  <string name="progress_mms">Meldinger: MMS nedlastning i gang\u2026</string>
+  <string name="progress_mms_text">Trykk for å prøve på nytt</string>
 </resources>

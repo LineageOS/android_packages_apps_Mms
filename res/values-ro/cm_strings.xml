@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Introduceți aici textul șablonului</string>
   <string name="template_empty_text">Câmpul textului nu poate fi gol</string>
   <string name="template_save">Salvați</string>
-  <string name="template_ctx_menu_title">Acțiuni</string>
   <string name="template_edit">Editați</string>
   <string name="template_delete">Ștergeți</string>
   <string name="template_list_title">Șabloane</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Marcare ca necitit</string>
   <string name="menu_all_as_unread">Marchează toate ca necitite</string>
   <string name="confirm_mark_unread_dialog_title">Marcați ca necitit?</string>
-  <string name="confirm_mark_unread_conversation">Conversația va fi marcată ca necitită.</string>
   <string name="confirm_mark_unread_all_conversations">Toate subiectele vor fi marcate ca necitite.</string>
   <string name="select_recipients">Selectați destinatarii</string>
   <string name="groups_header">Grupuri</string>
@@ -117,7 +115,6 @@
   <string name="menu_insert_smiley">Inserați un emoticon</string>
   <string name="pref_title_enable_emoticons">Suport emoticoane</string>
   <string name="pref_summary_enable_emoticons">Substituie emoticoanele text cu echivalentele grafice</string>
-  <string name="normal_show">Vezi în modul normal</string>
   <string name="cannot_play">Slide show-ul nu poate fi prezentat.</string>
   <string name="menu_conversation_options">Opțiuni conversație</string>
   <string name="pref_title_reset_convopt_to_default">Resetare la valori implicite</string>

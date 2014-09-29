@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Írja be a sablon szövegét</string>
   <string name="template_empty_text">A mező nem lehet üres.</string>
   <string name="template_save">Mentés</string>
-  <string name="template_ctx_menu_title">Műveletek</string>
   <string name="template_edit">Szerkesztés</string>
   <string name="template_delete">Törlés</string>
   <string name="template_list_title">Sablonok</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Megjelölés olvasatlanként</string>
   <string name="menu_all_as_unread">Mindet olvasatlanként jelöl</string>
   <string name="confirm_mark_unread_dialog_title">Megjelölés olvasatlanként?</string>
-  <string name="confirm_mark_unread_conversation">Ez a beszélgetés meg lesz jelölve olvasatlanként.</string>
   <string name="confirm_mark_unread_all_conversations">Minden téma meg lesz jelölve olvasatlanként.</string>
   <string name="select_recipients">Válasszon címzetteket</string>
   <string name="groups_header">Csoportok</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Hangulatjel beszúrása</string>
   <string name="pref_title_enable_emoticons">Hangulatjel támogatás</string>
   <string name="pref_summary_enable_emoticons">Helyettesítse a szövegbeli hangulatát grafikus megfelelőjével</string>
-  <string name="normal_show">Megtekintés normál módban</string>
   <string name="cannot_play">Nem lehet elindítani a diavetítést.</string>
   <string name="menu_conversation_options">Beszélgetés beállítások</string>
   <string name="pref_title_reset_convopt_to_default">Beállítások visszaállítása alaphelyzetbe</string>
   <string name="pref_summary_reset_convopt_to_default">Visszaállítja a beszélgetés beállításokat az alkalmazáson belüli alapbeállításokra</string>
   <string name="failed_open_associated_activity_msg">Nem sikerült megnyitni a kapcsolódó tevékenységet</string>
+  <string name="cell_broadcast_sender">Hírszolgálati csatorna</string>
+  <string name="disk_storage_full_error">Hiba: Tárterülete megtelt.</string>
+  <string name="system_audio_item">Rendszerhang</string>
+  <string name="external_audio_item">Külső hang</string>
+  <string name="pending_mms_title">Függőben lévő MMS egy másik előfizetésen</string>
+  <string name="pending_mms">Üzenetkezelés: Egy vagy több MMS folyamatban van</string>
+  <string name="pending_mms_text">Érintse meg az előfizetés váltásához</string>
+  <string name="abort_mms">Üzenetkezelés: MMS elvetése</string>
+  <string name="abort_mms_text">Érintse meg a megszakításhoz és visszaváltáshoz</string>
+  <string name="progress_mms_title">Függőben lévő egyéb SUB MMS tranzakció</string>
+  <string name="progress_mms">Üzenetkezelés: MMS folyamatban\u2026</string>
+  <string name="progress_mms_text">Érintse meg az újrapróbáláshoz</string>
 </resources>

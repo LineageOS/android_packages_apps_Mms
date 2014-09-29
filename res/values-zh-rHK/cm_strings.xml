@@ -48,7 +48,6 @@
   <string name="template_insert_hint">將範本文字插入這裡</string>
   <string name="template_empty_text">文字欄位不可留空</string>
   <string name="template_save">儲存</string>
-  <string name="template_ctx_menu_title">操作</string>
   <string name="template_edit">編輯</string>
   <string name="template_delete">刪除</string>
   <string name="template_list_title">範本</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">標記為未讀</string>
   <string name="menu_all_as_unread">全部標為未讀</string>
   <string name="confirm_mark_unread_dialog_title">標記為未讀？</string>
-  <string name="confirm_mark_unread_conversation">談話將被標記為未讀。</string>
   <string name="confirm_mark_unread_all_conversations">所有的主題將被標記為未讀。 </string>
   <string name="select_recipients">選取收件人</string>
   <string name="groups_header">群組</string>
@@ -117,7 +115,6 @@
   <string name="menu_insert_smiley">插入表情符號</string>
   <string name="pref_title_enable_emoticons">表情符號支援</string>
   <string name="pref_summary_enable_emoticons">用等同的圖形來替代文字表情符號</string>
-  <string name="normal_show">查看正常模式</string>
   <string name="cannot_play">無法顯示幻燈片。</string>
   <string name="pref_title_reset_convopt_to_default">重設為預設值</string>
 </resources>

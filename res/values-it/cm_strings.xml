@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Inserisci qui il testo del modello</string>
   <string name="template_empty_text">Il testo non può essere vuoto</string>
   <string name="template_save">Salva</string>
-  <string name="template_ctx_menu_title">Azioni</string>
   <string name="template_edit">Modifica</string>
   <string name="template_delete">Elimina</string>
   <string name="template_list_title">Modelli</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Segna come non letto</string>
   <string name="menu_all_as_unread">Contrassegna tutti come non letti</string>
   <string name="confirm_mark_unread_dialog_title">Segnare come non letto?</string>
-  <string name="confirm_mark_unread_conversation">La conversazione verrà segnata come non letta.</string>
   <string name="confirm_mark_unread_all_conversations">Tutte le discussioni saranno contrassegnate come non lette.</string>
   <string name="select_recipients">Seleziona destinatari</string>
   <string name="groups_header">Gruppi</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Inserisci emoticon</string>
   <string name="pref_title_enable_emoticons">Supporto emoticon</string>
   <string name="pref_summary_enable_emoticons">Sostituisci le emoticon testuali con grafica equivalente</string>
-  <string name="normal_show">Visualizzazione normale</string>
   <string name="cannot_play">Impossibile eseguire slide show.</string>
   <string name="menu_conversation_options">Opzioni conversazione</string>
   <string name="pref_title_reset_convopt_to_default">Ripristina predefinito</string>
   <string name="pref_summary_reset_convopt_to_default">Ripristina le impostazioni della conversazione a quelle dell\'app</string>
   <string name="failed_open_associated_activity_msg">Impossibile aprire l\'activity associata</string>
+  <string name="cell_broadcast_sender">Canale cella broadcast</string>
+  <string name="disk_storage_full_error">Errore: memoria esaurita.</string>
+  <string name="system_audio_item">Audio di sistema</string>
+  <string name="external_audio_item">Audio esterno</string>
+  <string name="pending_mms_title">MMS in sospeso su un\'altro abbonamento</string>
+  <string name="pending_mms">Messaggistica: uno o più MMS sono in sospeso</string>
+  <string name="pending_mms_text">Tocca per cambiare l\'abbonamento</string>
+  <string name="abort_mms">Messaggistica: interruzione MMS</string>
+  <string name="abort_mms_text">Tocca per interrompere e tornare indietro</string>
+  <string name="progress_mms_title">Transazione MMS su un altro abbonamento in corso</string>
+  <string name="progress_mms">Messaggistica: MMS in corso\u2026</string>
+  <string name="progress_mms_text">Tocca per riprovare</string>
 </resources>

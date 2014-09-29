@@ -48,7 +48,6 @@
   <string name="template_insert_hint">අච්චුවේ පෙළ මෙතනට ඇතුළු කරන්න</string>
   <string name="template_empty_text">පෙළ ක්ෂේත්‍රය හිස් විය නොහැක</string>
   <string name="template_save">සුරකින්න</string>
-  <string name="template_ctx_menu_title">ක්‍රියා</string>
   <string name="template_edit">සකසන්න</string>
   <string name="template_delete">මකන්න</string>
   <string name="template_list_title">අච්චු</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">නොකියවූ ලෙස සලකුණු කරන්න</string>
   <string name="menu_all_as_unread">සියල්ල නොකියවූ ලෙස සලකුණු කරන්න</string>
   <string name="confirm_mark_unread_dialog_title">නොකියවූ ලෙස සලකුණු කරන්නද?</string>
-  <string name="confirm_mark_unread_conversation">සංවාදය නොකියවූ ලෙස සලකුණු කෙරෙණු ඇත.</string>
   <string name="confirm_mark_unread_all_conversations">සියලු පොටවල් නොකියවූ ලෙස සලකුණු කෙරෙණු ඇත.</string>
   <string name="select_recipients">ලබන්නන් තෝරන්න</string>
   <string name="groups_header">කණ්ඩායම්</string>
@@ -117,9 +115,21 @@
   <string name="menu_insert_smiley">ඉමෝට්කොනයක් එක් කරන්න</string>
   <string name="pref_title_enable_emoticons">ඉමෝට්කොන සහාය</string>
   <string name="pref_summary_enable_emoticons">පෙළ වෙනුවට චිත්‍රක ඉමෝට්කොන ආදේශ කරන්න</string>
-  <string name="normal_show">සාමාන්‍ය ප්‍රකාරය පෙන්වන්න</string>
   <string name="cannot_play">කදා දර්ශනය පිළිගැන්විය නොහැක.</string>
   <string name="menu_conversation_options">සංවාද විකල්ප</string>
   <string name="pref_title_reset_convopt_to_default">පෙරනිමියට යලි පිහිටුවන්න</string>
   <string name="pref_summary_reset_convopt_to_default">සංවාද සැකසීම යෙදුම මට්ටමේ සැකසීම වෙත යළි පිහිටුවන්න</string>
+  <string name="failed_open_associated_activity_msg">ආශ්‍රිත ක්‍රියාව විවෘත කිරීමට අසමත්විය</string>
+  <string name="cell_broadcast_sender">සෙල් විකාශන නාලිකාව</string>
+  <string name="disk_storage_full_error">දෝෂය: ආචයනය පිරි ඇත.</string>
+  <string name="system_audio_item">පද්ධති ශ්‍රව්‍ය</string>
+  <string name="external_audio_item">බාහිර ශ්‍රව්‍ය</string>
+  <string name="pending_mms_title">අනෙක් දායකත්වයේ අතීරිත MMS පණිවිඩය</string>
+  <string name="pending_mms">පනිවිඩ යැවීම: MMS පණිවිඩ එකක් හෝ කීපයක් අතීරිතය</string>
+  <string name="pending_mms_text">දායකත්වය මාරු කිරීමට ස්පර්ශ කරන්න</string>
+  <string name="abort_mms">පනිවිඩ යැවීම: MMS නවත්වන්න</string>
+  <string name="abort_mms_text">නවත්වා ආපස්සට මාරුවීමට ස්පර්ශ කරන්න</string>
+  <string name="progress_mms_title">අනෙක් දායකත්වයේ MMS කටයුත්තක් සිදුවෙමින් පවතී</string>
+  <string name="progress_mms">පනිවිඩ යැවීම: MMS කරමින්\u2026</string>
+  <string name="progress_mms_text">යලි උත්සාහ කිරීමට ස්පර්ශ කරන්න</string>
 </resources>

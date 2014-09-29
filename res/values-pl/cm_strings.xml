@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Tu wstaw tekst szablonu</string>
   <string name="template_empty_text">Pole tekstowe nie może być puste</string>
   <string name="template_save">Zapisz</string>
-  <string name="template_ctx_menu_title">Akcje</string>
   <string name="template_edit">Edytuj</string>
   <string name="template_delete">Usuń</string>
   <string name="template_list_title">Szablony</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Oznacz jako nieprzeczytane</string>
   <string name="menu_all_as_unread">Oznacz wszystkie jako nieprzeczytane</string>
   <string name="confirm_mark_unread_dialog_title">Oznaczyć jako nieprzeczytane?</string>
-  <string name="confirm_mark_unread_conversation">Rozmowa zostanie oznaczona jako nieprzeczytana.</string>
   <string name="confirm_mark_unread_all_conversations">Wszystkie rozmowy zostaną oznaczone jako nieprzeczytane.</string>
   <string name="select_recipients">Wybierz adresatów</string>
   <string name="groups_header">Grupy</string>
@@ -117,7 +115,6 @@
   <string name="menu_insert_smiley">Wstaw emotikonę</string>
   <string name="pref_title_enable_emoticons">Wsparcie dla emotikon</string>
   <string name="pref_summary_enable_emoticons">Zastępuj tekstowe emotikony ich graficznymi odpowiednikami</string>
-  <string name="normal_show">Tryb normalnego widoku</string>
   <string name="cannot_play">Nie można odtworzyć pokazu slajdów.</string>
   <string name="menu_conversation_options">Opcje rozmowy</string>
   <string name="pref_title_reset_convopt_to_default">Przywróć domyślne</string>

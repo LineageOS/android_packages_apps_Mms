@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Tik die sjabloon teks hier</string>
   <string name="template_empty_text">Die teks veld kan nie leeg wees nie</string>
   <string name="template_save">Stoor</string>
-  <string name="template_ctx_menu_title">Aksies</string>
   <string name="template_edit">Verander</string>
   <string name="template_delete">Verwyder</string>
   <string name="template_list_title">Sjablone</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Merk as ongelees</string>
   <string name="menu_all_as_unread">Merk alles as ongelees</string>
   <string name="confirm_mark_unread_dialog_title">Merk as ongelees?</string>
-  <string name="confirm_mark_unread_conversation">Die gesprek sal gemerk word as ongelees.</string>
   <string name="confirm_mark_unread_all_conversations">Alle drade sal gemerk word as ongelees.</string>
   <string name="select_recipients">Kies ontvangers</string>
   <string name="groups_header">Groepe</string>
@@ -117,9 +115,21 @@
   <string name="menu_insert_smiley">Voeg gesiggie by</string>
   <string name="pref_title_enable_emoticons">Emosikone ondersteuning</string>
   <string name="pref_summary_enable_emoticons">Vervang teks emosikone met grafiese ekwivalente</string>
-  <string name="normal_show">Kyk normaal modus</string>
   <string name="cannot_play">Kan nie skyfievertoning wys nie.</string>
   <string name="menu_conversation_options">Gesprek opsies</string>
   <string name="pref_title_reset_convopt_to_default">Herstel na standaard</string>
   <string name="pref_summary_reset_convopt_to_default">Herstel die gesprek instelling na die program vlak instelling</string>
+  <string name="failed_open_associated_activity_msg">Het misluk om gepaardgaande aktiwiteit te open</string>
+  <string name="cell_broadcast_sender">Sel uitsendings kanaal</string>
+  <string name="disk_storage_full_error">Fout: Stoor spasie is vol.</string>
+  <string name="system_audio_item">Stelsel klank</string>
+  <string name="external_audio_item">Eksterne klank</string>
+  <string name="pending_mms_title">Hangende MMS op ander inskrywing</string>
+  <string name="pending_mms">Boodskappe: Een of meer hangende MMS</string>
+  <string name="pending_mms_text">Raak die inskrywing om oor te skakel</string>
+  <string name="abort_mms">Boodskappe: Staak MMS</string>
+  <string name="abort_mms_text">Raak om te staak en terug te skakel</string>
+  <string name="progress_mms_title">MMS transaksie op ander inskrywing aan die gang</string>
+  <string name="progress_mms">Boodskappe: MMS aan die gang\u2026</string>
+  <string name="progress_mms_text">Raak om weer te probeer</string>
 </resources>

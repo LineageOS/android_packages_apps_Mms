@@ -48,7 +48,6 @@
   <string name="template_insert_hint">הזן כאן את מלל התבנית</string>
   <string name="template_empty_text">שדה המלל אינו יכול להשאר ריק</string>
   <string name="template_save">שמור</string>
-  <string name="template_ctx_menu_title">פעולות</string>
   <string name="template_edit">ערוך</string>
   <string name="template_delete">מחק</string>
   <string name="template_list_title">תבניות</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">סמן כלא נקרא</string>
   <string name="menu_all_as_unread">סמן את כולם כנקראו</string>
   <string name="confirm_mark_unread_dialog_title">סמן כלא נקרא?</string>
-  <string name="confirm_mark_unread_conversation">השיחה תסומן כלא נקראה.</string>
   <string name="confirm_mark_unread_all_conversations">כל השיחות יסומנו כלא נקראו.</string>
   <string name="select_recipients">בחר נמענים</string>
   <string name="groups_header">קבוצות</string>
@@ -117,7 +115,6 @@
   <string name="menu_insert_smiley">הוסף סמיילי</string>
   <string name="pref_title_enable_emoticons">תמיכה בסמלי רגשות</string>
   <string name="pref_summary_enable_emoticons">החלפת סימונים טקסטואליים בציוריים</string>
-  <string name="normal_show">תצוגה רגילה</string>
   <string name="cannot_play">אין אפשרות להציג שקופיות.</string>
   <string name="menu_conversation_options">אפשרויות שיחה</string>
   <string name="pref_title_reset_convopt_to_default">אפס לברירת מחדל</string>

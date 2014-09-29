@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Aseta pohjan teksti tähän</string>
   <string name="template_empty_text">Tekstikenttä ei voi olla tyhjä</string>
   <string name="template_save">Tallenna</string>
-  <string name="template_ctx_menu_title">Tehtävät</string>
   <string name="template_edit">Muokkaa</string>
   <string name="template_delete">Poista</string>
   <string name="template_list_title">Viestipohjat</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Merkitse lukemattomaksi</string>
   <string name="menu_all_as_unread">Merkitse kaikki lukemattomiksi</string>
   <string name="confirm_mark_unread_dialog_title">Merkitse lukemattomaksi?</string>
-  <string name="confirm_mark_unread_conversation">Keskustelu merkitään lukemattomaksi.</string>
   <string name="confirm_mark_unread_all_conversations">Kaikki viestiketjut merkitään lukemattomiksi.</string>
   <string name="select_recipients">Valitse vastaanottajat</string>
   <string name="groups_header">Ryhmät</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Lisää hymiö</string>
   <string name="pref_title_enable_emoticons">Hymiötuki</string>
   <string name="pref_summary_enable_emoticons">Korvaa tekstihymiöt graafisilla vastineilla</string>
-  <string name="normal_show">Katso normaalissa tilassa</string>
   <string name="cannot_play">Ei voida näyttää diaesitystä.</string>
   <string name="menu_conversation_options">Keskustelun asetukset</string>
   <string name="pref_title_reset_convopt_to_default">Palauta oletukset</string>
   <string name="pref_summary_reset_convopt_to_default">Palauttaa keskustelun asetukset sovelluksen oletuksiin</string>
   <string name="failed_open_associated_activity_msg">Liitetyn aktiviteetin suorittaminen epäonnistui</string>
+  <string name="cell_broadcast_sender">Cell Broadcast-kanava</string>
+  <string name="disk_storage_full_error">Virhe: Muisti on täynnä.</string>
+  <string name="system_audio_item">Järjestelmän ääni</string>
+  <string name="external_audio_item">Ulkoinen ääni</string>
+  <string name="pending_mms_title">Odottava MMS toisella tilauksella</string>
+  <string name="pending_mms">Viestit: Vähintään yksi MMS odottaa</string>
+  <string name="pending_mms_text">Kosketa vaihtaaksesi tilausta</string>
+  <string name="abort_mms">Viestit: Keskeytetään MMS:n lähetys</string>
+  <string name="abort_mms_text">Kosketa peruaksesi ja palataksesi</string>
+  <string name="progress_mms_title">MMS-tapahtuma käynnissä toisessa tilauksessa</string>
+  <string name="progress_mms">Viestit: MMS lähetetään\u2026</string>
+  <string name="progress_mms_text">Kosketa yrittääksesi uudelleen</string>
 </resources>

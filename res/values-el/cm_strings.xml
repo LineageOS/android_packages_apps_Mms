@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Εισάγετε το κείμενο του προτύπου εδώ</string>
   <string name="template_empty_text">Το πεδίο δεν μπορεί να είναι άδειο</string>
   <string name="template_save">Αποθήκευση</string>
-  <string name="template_ctx_menu_title">Ενέργειες</string>
   <string name="template_edit">Επεξεργασία</string>
   <string name="template_delete">Διαγραφή</string>
   <string name="template_list_title">Πρότυπα</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Επισήμανση ως μη αναγνωσμένο</string>
   <string name="menu_all_as_unread">Επισήμανση όλων ως μη αναγνωσμένα</string>
   <string name="confirm_mark_unread_dialog_title">Επισήμανση ως μη αναγνωσμένο;</string>
-  <string name="confirm_mark_unread_conversation">Η συνομιλία θα επισημανθεί ως μη αναγνωσμένη.</string>
   <string name="confirm_mark_unread_all_conversations">Όλα τα θέματα θα επισημανθούν ως μη αναγνωσμένα.</string>
   <string name="select_recipients">Επιλέξτε παραλήπτες</string>
   <string name="groups_header">Ομάδες</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Εισαγωγή smiley</string>
   <string name="pref_title_enable_emoticons">Υποστήριξη emoticon</string>
   <string name="pref_summary_enable_emoticons">Αντικατάσταση emoticon κειμένου με τα αντίστοιχα εικονίδια</string>
-  <string name="normal_show">Κανονική λειτουργία προβολής</string>
   <string name="cannot_play">Δεν είναι δυνατή η προβολή της παρουσίασης.</string>
   <string name="menu_conversation_options">Επιλογές συνομιλίας</string>
   <string name="pref_title_reset_convopt_to_default">Επαναφορά στις προεπιλογές</string>
   <string name="pref_summary_reset_convopt_to_default">Επαναφορά της ρύθμισης συνομιλίας στην προεπιλεγμένη ρύθμιση της εφαρμογής</string>
   <string name="failed_open_associated_activity_msg">Απέτυχε το άνοιγμα της συσχετισμένης δραστηριότητας</string>
+  <string name="cell_broadcast_sender">Κανάλι εκπομπών κινητής τηλεφωνίας</string>
+  <string name="disk_storage_full_error">Σφάλμα: Ο αποθηκευτικός χώρος είναι γεμάτος.</string>
+  <string name="system_audio_item">Ήχοι συστήματος</string>
+  <string name="external_audio_item">Εξωτερικοί ήχοι</string>
+  <string name="pending_mms_title">Εκκρεμεί MMS σε άλλη συνδρομή</string>
+  <string name="pending_mms">Μηνύματα: Ένα ή περισσότερα MMS εκκρεμούν</string>
+  <string name="pending_mms_text">Πιέστε για εναλλαγή της συνδρομής</string>
+  <string name="abort_mms">Μηνύματα: Ματαίωση MMS</string>
+  <string name="abort_mms_text">Πιέστε για να εγκαταλείψετε και να επιστρέψετε</string>
+  <string name="progress_mms_title">Συναλλαγή MMS σε άλλη συνδρομή σε εξέλιξη</string>
+  <string name="progress_mms">Μηνύματα: MMS σε εξέλιξη\u2026</string>
+  <string name="progress_mms_text">Πιέστε για επανάληψη</string>
 </resources>

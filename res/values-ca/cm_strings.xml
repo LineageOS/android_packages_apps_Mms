@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Inserta aquí la plantilla de text</string>
   <string name="template_empty_text">El camp de text no pot quedar buit</string>
   <string name="template_save">Desa</string>
-  <string name="template_ctx_menu_title">Accions</string>
   <string name="template_edit">Edita</string>
   <string name="template_delete">Esborra</string>
   <string name="template_list_title">Plantilles</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Marca\'l com a sense llegir</string>
   <string name="menu_all_as_unread">Marcal\'s tots com sense llegir</string>
   <string name="confirm_mark_unread_dialog_title">Marcar com a sense llegir?</string>
-  <string name="confirm_mark_unread_conversation">La conversa es marcarà com a no llegida.</string>
   <string name="confirm_mark_unread_all_conversations">Tots els fils seran marcats com a no llegits.</string>
   <string name="select_recipients">Selecciona recipients</string>
   <string name="groups_header">Grups</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Insereix una emoticona</string>
   <string name="pref_title_enable_emoticons">Suport d\'emoticones</string>
   <string name="pref_summary_enable_emoticons">Substitueix les emoticones de text amb els seus equivalents gràfics</string>
-  <string name="normal_show">Mostra el mode normal</string>
   <string name="cannot_play">No es pot mostrar la projecció de diapositives.</string>
   <string name="menu_conversation_options">Opcions de conversa</string>
   <string name="pref_title_reset_convopt_to_default">Restableix als valors per defecte</string>
   <string name="pref_summary_reset_convopt_to_default">Restableix la configuració de conversa a la configuració a nivell d\'aplicació</string>
   <string name="failed_open_associated_activity_msg">No s\'ha pogut obrir l\'activitat associada</string>
+  <string name="cell_broadcast_sender">Canal de radiodifusió</string>
+  <string name="disk_storage_full_error">Error: L\'emmagatzematge és ple.</string>
+  <string name="system_audio_item">So del sistema</string>
+  <string name="external_audio_item">So extern</string>
+  <string name="pending_mms_title">MMS pendent en una altra subscripció</string>
+  <string name="pending_mms">Missatgeria: Un o més MMS estan pendents</string>
+  <string name="pending_mms_text">Toca per canviar la subscripció</string>
+  <string name="abort_mms">Missatgeria: Avorta MMS</string>
+  <string name="abort_mms_text">Toca per avortar i tornar enrera</string>
+  <string name="progress_mms_title">Transacció MMS en altres subscripcions en curs</string>
+  <string name="progress_mms">Missatgeria: MMS en curs\u2026</string>
+  <string name="progress_mms_text">Toca per reintentar</string>
 </resources>

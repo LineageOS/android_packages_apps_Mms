@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Вставити сюди шаблон тексту</string>
   <string name="template_empty_text">Текстове поле не може бути пустим</string>
   <string name="template_save">Зберегти</string>
-  <string name="template_ctx_menu_title">Дії</string>
   <string name="template_edit">Редагувати</string>
   <string name="template_delete">Видалити</string>
   <string name="template_list_title">Шаблони</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Позначити як непрочитано</string>
   <string name="menu_all_as_unread">Помітити все як непрочитане</string>
   <string name="confirm_mark_unread_dialog_title">Позначити як непрочитано?</string>
-  <string name="confirm_mark_unread_conversation">Розмови будуть позначені як непрочитані.</string>
   <string name="confirm_mark_unread_all_conversations">Усі лацюжки будуть позначені як непрочитані.</string>
   <string name="select_recipients">Оберіть отримувачів</string>
   <string name="groups_header">Групи</string>
@@ -117,7 +115,6 @@
   <string name="menu_insert_smiley">Вставити смайлик</string>
   <string name="pref_title_enable_emoticons">Підтримка смайликів</string>
   <string name="pref_summary_enable_emoticons">Замінювати текстові смайлики графічними</string>
-  <string name="normal_show">Нормальний режим</string>
   <string name="cannot_play">Неможливо відтворити слайд-шоу.</string>
   <string name="menu_conversation_options">Параметри розмови</string>
   <string name="pref_title_reset_convopt_to_default">Скинути до типових</string>

@@ -48,7 +48,6 @@
   <string name="template_insert_hint">ここにテンプレートテキストを挿入してください</string>
   <string name="template_empty_text">テキストフィールドは空にできません</string>
   <string name="template_save">保存</string>
-  <string name="template_ctx_menu_title">動作</string>
   <string name="template_edit">編集</string>
   <string name="template_delete">削除</string>
   <string name="template_list_title">テンプレート</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">未読にする</string>
   <string name="menu_all_as_unread">すべて未読にする</string>
   <string name="confirm_mark_unread_dialog_title">未読にしますか？</string>
-  <string name="confirm_mark_unread_conversation">会話は未読になります。</string>
   <string name="confirm_mark_unread_all_conversations">すべてのスレッドが未読になります。</string>
   <string name="select_recipients">宛先を選択</string>
   <string name="groups_header">グループ</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">絵文字を挿入</string>
   <string name="pref_title_enable_emoticons">絵文字サポート</string>
   <string name="pref_summary_enable_emoticons">テキストの顔文字をそれに対応する絵文字で置き換える</string>
-  <string name="normal_show">通常モードで表示する</string>
   <string name="cannot_play">スライドショーを表示できません。</string>
   <string name="menu_conversation_options">会話のオプション</string>
   <string name="pref_title_reset_convopt_to_default">デフォルトに戻す</string>
   <string name="pref_summary_reset_convopt_to_default">会話の設定をアプリケーションレベルの設定にリセットする</string>
   <string name="failed_open_associated_activity_msg">関連付けられているアクティビティを開けませんでした</string>
+  <string name="cell_broadcast_sender">セルブロードキャストチャンネル</string>
+  <string name="disk_storage_full_error">エラー: ストレージがいっぱいです。</string>
+  <string name="system_audio_item">システムオーディオ</string>
+  <string name="external_audio_item">外部オーディオ</string>
+  <string name="pending_mms_title">他のサブスクリプションで保留中のMMS</string>
+  <string name="pending_mms">メッセージング: 1通以上のMMSが保留中です</string>
+  <string name="pending_mms_text">タップしてサブスクリプションを切り替える</string>
+  <string name="abort_mms">メッセージング: MMSを中断</string>
+  <string name="abort_mms_text">タップすると中断して元のサブスクリプションに切り替える</string>
+  <string name="progress_mms_title">他のサブでMMSの処理が進行中</string>
+  <string name="progress_mms">メッセージング: MMSが処理中です\u2026</string>
+  <string name="progress_mms_text">タップして再試行する</string>
 </resources>

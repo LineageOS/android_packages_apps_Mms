@@ -48,7 +48,6 @@
   <string name="template_insert_hint">Убаци овде текст шаблона</string>
   <string name="template_empty_text">Поље текста не може бити празно</string>
   <string name="template_save">Сачувај</string>
-  <string name="template_ctx_menu_title">Акције</string>
   <string name="template_edit">Уреди</string>
   <string name="template_delete">Избриши</string>
   <string name="template_list_title">Шаблони</string>
@@ -89,7 +88,6 @@
   <string name="menu_as_unread">Означи као непрочитано</string>
   <string name="menu_all_as_unread">Означи све као непрочитано</string>
   <string name="confirm_mark_unread_dialog_title">Означи као непрочитано?</string>
-  <string name="confirm_mark_unread_conversation">Преписка ће бити означена као непрочитана.</string>
   <string name="confirm_mark_unread_all_conversations">Сви низови ће бити означени као непрочитани.</string>
   <string name="select_recipients">Изабери примаоце</string>
   <string name="groups_header">Групе</string>
@@ -117,10 +115,21 @@
   <string name="menu_insert_smiley">Убаци смајли</string>
   <string name="pref_title_enable_emoticons">Подршка смајлија</string>
   <string name="pref_summary_enable_emoticons">Замени текстуалне смајлије са графичким еквивалентима</string>
-  <string name="normal_show">Погледај нормалан режим</string>
   <string name="cannot_play">Не могу се приказати слајдови.</string>
   <string name="menu_conversation_options">Опције преписке</string>
   <string name="pref_title_reset_convopt_to_default">Ресетуј на подразумевано</string>
   <string name="pref_summary_reset_convopt_to_default">Ресетуј подешавање преписке на ниво подешавања апликације</string>
   <string name="failed_open_associated_activity_msg">Отварање повезане активности није успело</string>
+  <string name="cell_broadcast_sender">Инфо сервис канал</string>
+  <string name="disk_storage_full_error">Грешка: Складиште је пуно.</string>
+  <string name="system_audio_item">Систем аудио звука</string>
+  <string name="external_audio_item">Спољни аудио звук</string>
+  <string name="pending_mms_title">Чекање MMS-а на друге претплате</string>
+  <string name="pending_mms">Порука: Једна или више MMS порука се чека</string>
+  <string name="pending_mms_text">Додирни да би се пребацио на претплату</string>
+  <string name="abort_mms">Порука: Откажи ММS</string>
+  <string name="abort_mms_text">Додирни да прекинеш и вратиш</string>
+  <string name="progress_mms_title">MMS трансакција на другу претплату у току</string>
+  <string name="progress_mms">Порука: ММS у току\u2026</string>
+  <string name="progress_mms_text">Додирни да покушаш поново</string>
 </resources>
