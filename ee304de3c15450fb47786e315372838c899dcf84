@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_79e818b5",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 10581
+      },
+      "writtenOn": "2014-10-02T12:59:24Z",
+      "side": 1,
+      "message": "I like the curlys even on the one-liners.",
+      "revId": "ee304de3c15450fb47786e315372838c899dcf84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_59027c70",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 845,
+      "author": {
+        "id": 10581
+      },
+      "writtenOn": "2014-10-02T12:59:24Z",
+      "side": 1,
+      "message": "suggestion:\n\n* add parens for clarity\n* put the constant value on the left-hand side of the comparison as it is safer.  this protects against a typo where a \u0027\u003d\u003d\u0027 is accidentally typed as a \u0027\u003d\u0027, this leads to an assignment that is legal which sets stripNonDecodableOnly as true in all cases.\n\nhttp://c2.com/cgi/wiki?CompareConstantsFromTheLeft\n\nboolean stripNonDecodableOnly \u003d (MessagingPreferenceActivity.UNICODE_STRIPPING_NON_DECODABLE \u003d\u003d mUnicodeStripping);",
+      "revId": "ee304de3c15450fb47786e315372838c899dcf84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
