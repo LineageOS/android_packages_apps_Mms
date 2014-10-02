@@ -16,6 +16,24 @@
       "revId": "d6904601dcf7a7bfa833cf9da3ac458badad1c41",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_f9c5483c",
+        "filename": "src/com/android/mms/quickmessage/QuickMessagePopup.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 811,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2014-10-02T12:27:42Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "7a1b2928_59b43cd0",
+      "revId": "d6904601dcf7a7bfa833cf9da3ac458badad1c41",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
