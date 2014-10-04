@@ -835,7 +835,7 @@ public class ComposeMessageActivity extends Activity
             int subID = i + 1;
             smsBtns[i] = (Button) layout.findViewById(smsBtnIds[i]);
             smsBtns[i].setVisibility(View.VISIBLE);
-            smsBtns[i].setText(MSimTelephonyManager.getDefault().getSimOperatorName(i)
+            smsBtns[i].setText(MSimTelephonyManager.getDefault().getNetworkOperatorName(i)
                     + "-" + subID);
             smsBtns[i].setOnClickListener(
                 new View.OnClickListener() {
