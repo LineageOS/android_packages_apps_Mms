@@ -1212,8 +1212,11 @@ public class MessagingNotification {
 
         if (MSimTelephonyManager.getDefault().isMultiSimEnabled()) {
             int subscription = subId + 1;
-            buf.append(MSimTelephonyManager.getDefault().getSimOperatorName(subId)
-                    + "-" + subscription);
+            String operatorName = MSimTelephonyManager.getDefault().getSimOperatorName(subId);
+            if (TextUtils.isEmpty(operatorName)) {
+                operatorName = MSimTelephonyManager.getDefault().getNetworkOperatorName(subId);
+            }
+            buf.append(operatorName + "-" + subscription);
         }
 
         int offset = buf.length();

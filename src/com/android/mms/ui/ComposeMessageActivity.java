@@ -833,10 +833,13 @@ public class ComposeMessageActivity extends Activity
         for (int i = 0; i < phoneCount; i++) {
             final int subscription = i;
             int subID = i + 1;
+            String operatorName = MSimTelephonyManager.getDefault().getSimOperatorName(i);
+            if (TextUtils.isEmpty(operatorName)) {
+                operatorName = MSimTelephonyManager.getDefault().getNetworkOperatorName(i);
+            }
             smsBtns[i] = (Button) layout.findViewById(smsBtnIds[i]);
             smsBtns[i].setVisibility(View.VISIBLE);
-            smsBtns[i].setText(MSimTelephonyManager.getDefault().getSimOperatorName(i)
-                    + "-" + subID);
+            smsBtns[i].setText(operatorName + "-" + subID);
             smsBtns[i].setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {

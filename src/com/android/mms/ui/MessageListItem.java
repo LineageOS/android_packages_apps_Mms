@@ -568,8 +568,11 @@ public class MessageListItem extends LinearLayout implements
         if (MSimTelephonyManager.getDefault().isMultiSimEnabled()
                 && !isSimCardMessage()) {
             int subscription = subId + 1;
-            buf.append(MSimTelephonyManager.getDefault().getSimOperatorName(subId)
-                    + "-" + subscription + ":");
+            String operatorName = MSimTelephonyManager.getDefault().getSimOperatorName(subId);
+            if (TextUtils.isEmpty(operatorName)) {
+                operatorName = MSimTelephonyManager.getDefault().getNetworkOperatorName(subId);
+            }
+            buf.append(operatorName + "-" + subscription + ":");
             buf.append("\n");
         }
 
