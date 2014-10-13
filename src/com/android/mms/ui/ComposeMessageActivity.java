@@ -4441,6 +4441,22 @@ public class ComposeMessageActivity extends Activity
         protected void onQueryComplete(int token, Object cookie, Cursor cursor) {
             switch(token) {
                 case MESSAGE_LIST_QUERY_TOKEN:
+                    /* test validity of cursor - sometimes (when repeatedly clicking on message 
+                    during and after Delivery delay) the cursor passed to this callback is invalid
+                    probably some more beautiful solution is possible */
+                    if(cursor != null && !cursor.isClosed()) {
+                        try {
+                            int cp = cursor.getPosition();
+                            cursor.moveToLast();
+                            cursor.moveToPosition(cp);
+                        }
+                        catch(IllegalStateException e) {
+                            cursor.close();
+                            Log.e(TAG, "Bad cursor.", e);
+                            return;
+                        }
+                    }
+
                     mConversation.blockMarkAsRead(false);
 
                     // check consistency between the query result and 'mConversation'
