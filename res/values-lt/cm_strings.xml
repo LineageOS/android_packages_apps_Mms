@@ -121,7 +121,7 @@
   <string name="pref_summary_reset_convopt_to_default">Atkuria pokalbio nustatymą į programos lygio parametrą</string>
   <string name="failed_open_associated_activity_msg">Nepavyko atidaryti susijusios veiklos</string>
   <string name="cell_broadcast_sender">Mobiliojo transliavimo kanalas</string>
-  <string name="disk_storage_full_error">Klaida: atmintinė pilna.</string>
+  <string name="disk_storage_full_error">Klaida: saugykla pilna.</string>
   <string name="system_audio_item">Sistemos garsas</string>
   <string name="external_audio_item">Išorinis garsas</string>
   <string name="pending_mms_title">Laukia MMS kitoje prenumeratoje</string>

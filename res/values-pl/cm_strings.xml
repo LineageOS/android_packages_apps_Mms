@@ -120,4 +120,6 @@
   <string name="pref_title_reset_convopt_to_default">Przywróć domyślne</string>
   <string name="pref_summary_reset_convopt_to_default">Resetuje ustawienia konwersacji do ustawień poziomu aplikacji</string>
   <string name="failed_open_associated_activity_msg">Nie udało się otworzyć powiązanych aktywności</string>
+  <string name="abort_mms">Wiadomość: MMS anulowany</string>
+  <string name="progress_mms_text">Dotknij, aby ponowić próbę</string>
 </resources>
