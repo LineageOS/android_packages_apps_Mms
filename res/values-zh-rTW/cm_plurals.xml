@@ -22,4 +22,7 @@
   <plurals name="remaining_delay_time">
     <item quantity="other">%1$d 秒後寄出，輕觸以取消。</item>
   </plurals>
+  <plurals name="confirm_mark_unread_conversation">
+    <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> 個會話將被標示為未讀。</item>
+  </plurals>
 </resources>

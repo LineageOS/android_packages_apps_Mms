@@ -119,4 +119,17 @@
   <string name="menu_conversation_options">אפשרויות שיחה</string>
   <string name="pref_title_reset_convopt_to_default">אפס לברירת מחדל</string>
   <string name="pref_summary_reset_convopt_to_default">איפוס ההגדרה השיחה אל ההגדרה ברמת היישום</string>
+  <string name="failed_open_associated_activity_msg">פתיחת חלון משוייך נכשלה</string>
+  <string name="cell_broadcast_sender">ערוץ שידורים סלולאריים</string>
+  <string name="disk_storage_full_error">שגיאה: האחסון מלא.</string>
+  <string name="system_audio_item">שמע מערכת</string>
+  <string name="external_audio_item">שמע חיצוני</string>
+  <string name="pending_mms_title">MMS ממתין לשליחה למנוי אחר</string>
+  <string name="pending_mms">הודעת MMS אחת או יותר נמצאת בתהליך שליחה</string>
+  <string name="pending_mms_text">גע כדי להחליף מנוי</string>
+  <string name="abort_mms">בטל MMS</string>
+  <string name="abort_mms_text">גע כדי לבטל ולהחזיר אחורה</string>
+  <string name="progress_mms_title">העברת MMS לנמען אחר נמצאת בתהליך</string>
+  <string name="progress_mms">הודעת MMS נמצאת בתהליך</string>
+  <string name="progress_mms_text">גע כדי לנסות שוב</string>
 </resources>

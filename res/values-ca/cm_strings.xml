@@ -68,11 +68,11 @@
   <string name="pref_unicode_stripping_leave_intact">Deixa els caràcters intactes</string>
   <string name="pref_unicode_stripping_non_encodable">Esquinça els caràcters no codificables</string>
   <string name="pref_unicode_stripping_all">Esquinça tots el caràcters unicode</string>
-  <string name="pref_title_mms_full_timestamp">Data y hora completa</string>
-  <string name="pref_summary_mms_full_timestamp">Mostra la data y l\'horate and time in timestamps</string>
-  <string name="pref_title_mms_use_sent_timestamp">Data y hora original</string>
+  <string name="pref_title_mms_full_timestamp">Data i hora completa</string>
+  <string name="pref_summary_mms_full_timestamp">Mostra la data i l\'hora</string>
+  <string name="pref_title_mms_use_sent_timestamp">Data i hora original</string>
   <string name="pref_summary_mms_use_sent_timestamp">Mostra la data d\'enviament enlloc de la de recepció</string>
-  <string name="pref_title_input_type">Teclat tipus suau</string>
+  <string name="pref_title_input_type">Tipus de teclat virtual</string>
   <string name="pref_keyboard_emoji">Mostra la tecla d\'emoticones</string>
   <string name="pref_keyboard_new_line">Mostra la tecla Enter</string>
   <string name="pref_keyboard_unknown">Desconegut, si us plau reselecciona</string>
