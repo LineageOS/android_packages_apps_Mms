@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_88e4fa3b",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 415,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-29T11:33:16Z",
+      "side": 1,
+      "message": "Line length",
+      "revId": "4875cdf6aa520ddff17b6be90a7fa48a374fa457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_e8cf6eb1",
+        "filename": "src/com/android/mms/data/Conversation.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 480,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-29T11:33:16Z",
+      "side": 1,
+      "message": "Just remove the line.",
+      "revId": "4875cdf6aa520ddff17b6be90a7fa48a374fa457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
