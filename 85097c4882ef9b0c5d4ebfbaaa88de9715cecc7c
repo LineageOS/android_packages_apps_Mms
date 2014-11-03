@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_5748be2d",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4444,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-03T21:09:19Z",
+      "side": 1,
+      "message": "Unnecessary comment.",
+      "revId": "85097c4882ef9b0c5d4ebfbaaa88de9715cecc7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_b755d2c7",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4447,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-03T21:09:19Z",
+      "side": 1,
+      "message": "if (...) {",
+      "revId": "85097c4882ef9b0c5d4ebfbaaa88de9715cecc7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_975256dc",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 4450,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-03T21:09:19Z",
+      "side": 1,
+      "message": "Why are you moving this twice?",
+      "revId": "85097c4882ef9b0c5d4ebfbaaa88de9715cecc7c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
