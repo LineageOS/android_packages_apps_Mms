@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_7d72f97d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-05T14:21:00Z",
+      "side": 1,
+      "message": "This commit message is overly long",
+      "revId": "6c2d1d18e449360e8cbc877dc6455ca2f4d2430f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_1d5dc5e9",
+        "filename": "src/com/android/mms/ui/ComposeMessageActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 4444,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-11-05T14:21:00Z",
+      "side": 1,
+      "message": "Unnecessary comment, the following code is pretty self-explanatory.",
+      "revId": "6c2d1d18e449360e8cbc877dc6455ca2f4d2430f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
