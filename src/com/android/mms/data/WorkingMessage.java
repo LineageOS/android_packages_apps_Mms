@@ -1455,6 +1455,10 @@ public class WorkingMessage {
                 // Create a new MMS message if one hasn't been made yet.
                 mmsUri = createDraftMmsMessage(persister, sendReq, slideshow, mmsUri,
                         mActivity, null);
+                if (mmsUri == null) {
+                    mStatusListener.onAttachmentError(UNKNOWN_ERROR);
+                    return;
+                }
             } else {
                 // Otherwise, sync the MMS message in progress to disk.
                 updateDraftMmsMessage(mmsUri, persister, slideshow, sendReq, null);
