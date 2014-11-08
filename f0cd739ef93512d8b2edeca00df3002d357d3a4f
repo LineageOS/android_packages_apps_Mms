@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a122d0e_d3b4f4d2",
+        "filename": "src/com/android/mms/quickmessage/QuickMessageWear.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 10
+      },
+      "writtenOn": "2014-11-08T07:44:20Z",
+      "side": 1,
+      "message": "Don\u0027t assign the copyrights for this new file to third parties. \"2014, The CyanogenMod Project\" will be sufficient.",
+      "revId": "f0cd739ef93512d8b2edeca00df3002d357d3a4f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
