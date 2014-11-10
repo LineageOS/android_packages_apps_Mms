@@ -23,7 +23,7 @@
   <string name="type_to_reply_text_enter_to_send">Digite para responder</string>
   <string name="toast_sending_message">A enviar a mensagem</string>
   <string name="qm_quick_reply">Responder</string>
-  <string name="qm_mark_read">Ler</string>
+  <string name="qm_mark_read">Lida</string>
   <string name="message_counter">%1$d de %2$d</string>
   <string name="pref_title_notification_privacy_mode_enabled">Modo de privacidade</string>
   <string name="pref_summary_notification_privacy_mode_enabled">Ocultar remetente e mensagem na barra de estado e desativar \'Resposta Rápida\'</string>

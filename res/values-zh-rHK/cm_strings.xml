@@ -38,7 +38,7 @@
   <string name="pref_quickmessage_title">顯示彈出式視窗</string>
   <string name="pref_quickmessage_summary">為收到的短訊顯示 QuickMessage 彈出式視窗</string>
   <string name="pref_wake_unlock_title">喚醒和解鎖</string>
-  <string name="pref_wake_unlock_summary">收到訊息時喚醒和解鎖裝置 (僅限不安全的鎖定螢幕)</string>
+  <string name="pref_wake_unlock_summary">收到訊息時喚醒和解鎖裝置（僅限不安全的鎖定畫面）</string>
   <string name="pref_close_all_title">全部關閉</string>
   <string name="pref_close_all_summary">關閉按鈕關閉所有訊息</string>
   <string name="prefs_templates_settings">短訊範本</string>

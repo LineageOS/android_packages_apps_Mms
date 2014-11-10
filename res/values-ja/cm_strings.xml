@@ -120,7 +120,7 @@
   <string name="pref_title_reset_convopt_to_default">デフォルトに戻す</string>
   <string name="pref_summary_reset_convopt_to_default">会話の設定をアプリケーションレベルの設定にリセットする</string>
   <string name="failed_open_associated_activity_msg">関連付けられているアクティビティを開けませんでした</string>
-  <string name="cell_broadcast_sender">セルブロードキャストチャンネル</string>
+  <string name="cell_broadcast_sender">緊急警報チャンネル</string>
   <string name="disk_storage_full_error">エラー: ストレージがいっぱいです。</string>
   <string name="system_audio_item">システムオーディオ</string>
   <string name="external_audio_item">外部オーディオ</string>
